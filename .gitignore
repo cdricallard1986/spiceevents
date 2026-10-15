@@ -18,6 +18,7 @@
 .DS_Store
 .cache/
 .env*
+!.env.example
 .pnp.*
 .pnpm-debug.log*
 .vercel

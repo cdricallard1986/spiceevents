@@ -19,7 +19,7 @@ export const OPTIONS: Option[] = [
     slug: { fr: "ouverture-de-bal", en: "first-dance-effects" },
     titre: { fr: "Ouverture de bal spectaculaire", en: "Spectacular first dance" },
     resume: {
-      fr: "Fumée lourde et étincelles froides, synchronisées à votre première danse.",
+      fr: "Fumée lourde et étincelles froides, synchronisées avec votre première danse.",
       en: "Low fog and cold sparks, synchronised with your first dance.",
     },
     image: "premiere-danse-rose",
@@ -28,7 +28,7 @@ export const OPTIONS: Option[] = [
     slug: { fr: "bar-a-vinyles", en: "vinyl-bar" },
     titre: { fr: "Bar à vinyles", en: "Vinyl bar" },
     resume: {
-      fr: "Vos invités piochent un disque, le DJ l'intègre à la soirée.",
+      fr: "Vos invités choisissent un disque, le DJ l'intègre à la soirée.",
       en: "Guests pick a record, the DJ blends it into the night.",
     },
     image: "vinyles",
@@ -47,9 +47,9 @@ export const OPTIONS: Option[] = [
     titre: { fr: "Photobooth", en: "Photobooth" },
     resume: {
       fr: "400 tirages, cadre personnalisé, photos envoyées dès le lundi.",
-      en: "400 prints, custom frame, all photos sent by Monday.",
+      en: "400 prints, a custom frame, all your photos sent the Monday after.",
     },
-    image: "piste-invites",
+    image: "presta-photobooth-temoins",
   },
   {
     slug: { fr: "guirlandes-lumineuses", en: "string-lights" },
@@ -67,7 +67,7 @@ export const OPTIONS: Option[] = [
       fr: "Un décor signature, personnalisable à vos initiales.",
       en: "A signature backdrop, personalised with your initials.",
     },
-    image: "chateau-cour",
+    image: "presta-mur-eau-colonnes",
   },
   {
     slug: { fr: "sonorisation-ceremonie-laique", en: "ceremony-sound" },

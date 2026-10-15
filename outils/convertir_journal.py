@@ -118,10 +118,85 @@ ADRESSES_ABIMEES = {
     "https://www.spiceevents.fr/performances-techniques-son-and-lumiereshttps://www.spiceevents.fr/performances-techniques-son-and-lumieres": "https://www.spiceevents.fr/performances-techniques-son-and-lumieres",
 }
 
-# Fautes de frappe évidentes (texte exact → correction), appliquées au Markdown.
+# Fautes de frappe et d'accord évidentes (texte exact → correction), appliquées au
+# Markdown. Le script signale toute correction qui ne trouve plus son texte.
 CORRECTIONS = [
     ("flyhts cases", "flight cases"),
+    ("de façon clair vos", "de façon claire vos"),
+    ("se rendant presque invisible.", "se rendant presque invisibles."),
+    ("et à durée jusque 5h", "et a duré jusqu’à 5h"),
+    ("qui à su émerveiller", "qui a su émerveiller"),
+    ("grâce au projections", "grâce aux projections"),
+    ("Cette fois ci", "Cette fois-ci"),
+    ("des guirlandes lumineuse. Ces guirlandes décoratives confère une atmosphère chaleureuse et romantiques",
+     "des guirlandes lumineuses. Ces guirlandes décoratives confèrent une atmosphère chaleureuse et romantique"),
+    ("une paire d'enceinte ", "une paire d'enceintes "),
+    ("Nous en avons profités", "Nous en avons profité"),
+    ("nous nous ferront", "nous nous ferons"),
+    ("vous pouvez comptez sur", "vous pouvez compter sur"),
+    ("Il offriront", "Ils offriront"),
+    ("les styles aussi différent", "les styles aussi diffèrent"),
+    ("vous laissez tenter", "vous laisser tenter"),
+    ("notre borde DJ", "notre borne DJ"),
+    ("l’un, voir LE plus", "l’un, voire LE plus"),
+    ("vers qui vous tournez", "vers qui vous tourner"),
+    ("toute le reste", "tout le reste"),
+    ("que lieu de votre mariage", "que le lieu de votre mariage"),
+    ("Evidemment dans", "Évidemment dans"),
+    ("Évidement,", "Évidemment,"),
+    ("Faites vous rêver comme", "Faites-vous rêver comme"),
+    ("Alors vous mariez dans", "Alors vous marier dans"),
+    ("déjà charmé par ce lieu", "déjà charmés par ce lieu"),
+    ("Tous aussi charmants", "Tout aussi charmants"),
+    ("lieux d’exceptions", "lieux d’exception"),
+    ("faire leur preuve", "faire leurs preuves"),
+    ("lui même ces enceintes", "lui-même ses enceintes"),
+    ("A Thousands Years", "A Thousand Years"),
+    ("opter pour cette chanson", "optez pour cette chanson"),
+    ("empruntez lui", "empruntez-lui"),
+    ("préférents", "préfèrent"),
+    ("beaucoup aimerait", "beaucoup aimeraient"),
+    ("tendance et original aussi", "tendance et originale aussi"),
+    ("praticularité", "particularité"),
+    ("quelques touche de", "quelques touches de"),
+    ("notree page", "notre page"),
+    ("chaque élément à son importance", "chaque élément a son importance"),
+    ("fournit par", "fourni par"),
+    ("et confier cette tâche", "et confiez cette tâche"),
+    ("Un aspet", "Un aspect"),
+    ("laissez leur la piste", "laissez-leur la piste"),
+    ("quatres thématiques", "quatre thématiques"),
+    ("lorsqu’un mouche", "lorsqu’une mouche"),
+    ("au tonalité chaude", "aux tonalités chaudes"),
+    ("la mise de scène", "la mise en scène"),
+    ("qui bougent de partout’”", "qui bougent de partout”"),
+    ("vous êtes sûr de devenir", "vous êtes sûrs de devenir"),
+    ("que nous cessons d’améliorer", "que nous ne cessons d’améliorer"),
+    ("vingt ans d’expériences", "vingt ans d’expérience"),
+    ("Conscient de son importance", "Conscients de son importance"),
+    ("de LD System,", "de LD Systems,"),
+    ("animations mis en place", "animations mises en place"),
+    ("à la poubelles", "à la poubelle"),
+    ("plus époustouflant les uns", "plus époustouflants les uns"),
+    ("nostalgie et fun assuré", "nostalgie et fun assurés"),
+    ("ne pasengendrer", "ne pas engendrer"),
+    ("il y a eu tout une logistique", "il y a eu toute une logistique"),
+    ("soi-mêmes", "soi-même"),
     ("personalisé", "personnalisé"),
+    ("ou d’un se mesure", "ou d’un événement se mesure"),  # mot oublié dans l'original
+]
+
+# Mise en forme ponctuelle (expression régulière → remplacement) : intertitre resté
+# dans un paragraphe, renvois « voir l'article » transformés en liens, lien erroné.
+MISE_EN_FORME = [
+    (r"dispositif technique\. L’approche Spice Events Chez Spice Events,",
+     "dispositif technique.\n\n## L’approche Spice Events\n\nChez Spice Events,"),
+    (r"(voir l’article : |voir article : )(Pourquoi la technique est invisible quand elle est bien faite \?)",
+     r"\1[\2](/journal/pourquoi-la-technique-est-invisible-quand-elle-est-bien-faite)"),
+    (r'voir article "(Comment un DJ lit une piste de danse \?)"',
+     r'voir article : [Comment un DJ lit-il une piste de danse ?](/journal/comment-un-dj-lit-il-une-piste-de-danse)'),
+    (r"\[Guirlandes lumineuses\]\(/animations/ouverture-de-bal\)", "[Guirlandes lumineuses](/animations/guirlandes-lumineuses)"),
+    (r"(\]\(/mariages\)) \)", r"\1)"),
 ]
 
 # --------------------------------------------------------------------------- #
@@ -144,6 +219,11 @@ ARTICLES_RETIRES = table_ts("ARTICLES_RETIRES")
 
 # Rapport de fin d'exécution : liens retirés, adresses inconnues, images manquantes.
 RAPPORT = {"liens_retires": [], "liens_inconnus": [], "images_manquantes": [], "alt_manquants": []}
+
+
+class Faible(str):
+    """Destination approximative (ancienne page disparue) : ce lien cède la place à un
+    lien voisin plus précis (« [jolies](…)[guirlandes lumineuses](…) »)."""
 
 
 def nouvelle_adresse(href, slugs, slug_article):
@@ -174,6 +254,8 @@ def nouvelle_adresse(href, slugs, slug_article):
         cible = PAGES_DISPARUES[chemin]
         if cible is None:
             RAPPORT["liens_retires"].append((slug_article, href))
+        elif cible != chemin:
+            return Faible(cible)
         return cible
     RAPPORT["liens_inconnus"].append((slug_article, href))
     return None
@@ -185,19 +267,38 @@ def nouvelle_adresse(href, slugs, slug_article):
 
 
 def lire_manifeste():
-    """Clé de stockage Strikingly (« 22139555/127095_238885 ») → fichier web."""
+    """Index des fichiers web : par clé de stockage Strikingly (« 22139555/127095_238885 »),
+    par URL d'origine et par identifiant de photo Unsplash."""
     index = {}
     with MANIFESTE.open() as f:
         for ligne in csv.DictReader(f):
-            m = re.search(r"/image/upload/(?:[^/]*,[^/]*/)?(\d+/[^/.]+)\.\w+$", ligne["url_original"])
-            if m and ligne["fichier_web"]:
-                index[m.group(1)] = ligne["fichier_web"]
+            fichier, url = ligne["fichier_web"], ligne["url_original"]
+            if not fichier:
+                continue  # image morte (non téléchargée lors de l'export)
+            index[url] = fichier
+            for cle in (cle_depuis_url(url), photo_unsplash(url)):
+                if cle:
+                    index[cle] = fichier
     return index
 
 
 def cle_depuis_url(url):
     m = re.search(r"/image/upload/(?:[^/]*,[^/]*/)?(\d+/[^/.]+)\.\w+$", url or "")
     return m.group(1) if m else None
+
+
+def photo_unsplash(url):
+    m = re.search(r"unsplash\S*?/(photo-[0-9a-f]+-[0-9a-f]+)", url or "")
+    return m.group(1) if m else None
+
+
+def trouver_image(manifeste, cle=None, url=None):
+    """Fichier web d'une image (clé de stockage ou URL), ou None si elle est introuvable."""
+    url = ("https:" + url) if url and url.startswith("//") else url
+    for candidat in (cle, url, cle_depuis_url(url), photo_unsplash(url)):
+        if candidat and candidat in manifeste:
+            return manifeste[candidat]
+    return None
 
 
 def copier_image(fichier, slug, nom):
@@ -223,38 +324,227 @@ def texte_brut(html):
     return BeautifulSoup(html or "", "html.parser").get_text(" ").strip()
 
 
+INLINE = ("strong", "b", "em", "i", "a")
+BLOCS = ("p", "h1", "h2", "h3", "h4", "li")
+MOT_FIN = re.compile(r"(\w+)$")
+MOT_DEBUT = re.compile(r"^(\w+)")
+
+
+def sortir_br(soupe):
+    """Remonte chaque <br> hors des balises en ligne (<strong>a<br>b</strong> →
+    <strong>a</strong><br><strong>b</strong>) pour pouvoir couper le paragraphe."""
+    for br in soupe.find_all("br"):
+        while br.parent is not None and br.parent.name in INLINE:
+            parent = br.parent
+            suite = soupe.new_tag(parent.name, attrs=dict(parent.attrs))
+            for frere in list(br.next_siblings):
+                suite.append(frere.extract())
+            parent.insert_after(br.extract())
+            br.insert_after(suite)
+
+
+def couper_aux_br(soupe):
+    """Un <br> dans un paragraphe ou un titre sépare deux blocs."""
+    for bloc in soupe.find_all(BLOCS[:-1]):
+        if not bloc.find("br", recursive=False):
+            continue
+        morceaux, courant = [], soupe.new_tag(bloc.name)
+        for enfant in list(bloc.contents):
+            if getattr(enfant, "name", None) == "br":
+                morceaux.append(courant)
+                courant = soupe.new_tag(bloc.name)
+            else:
+                courant.append(enfant.extract())
+        morceaux.append(courant)
+        for m in morceaux:
+            bloc.insert_before(m)
+        bloc.decompose()
+
+
+def meme_balise(a, b):
+    return getattr(a, "name", None) == getattr(b, "name", None) and a.name in INLINE and a.attrs == b.attrs
+
+
+def fusionner_voisins(soupe):
+    """<strong>a</strong><strong>b</strong> → <strong>ab</strong> (idem liens de même adresse),
+    y compris quand seuls des espaces les séparent."""
+    change = True
+    while change:
+        change = False
+        for el in soupe.find_all(INLINE):
+            suivant = el.next_sibling
+            espace = None
+            if isinstance(suivant, NavigableString) and not suivant.strip() and meme_balise(el, suivant.next_sibling):
+                espace, suivant = suivant, suivant.next_sibling
+            if suivant is not None and meme_balise(el, suivant):
+                if espace is not None:
+                    el.append(NavigableString(str(espace)))
+                    espace.extract()
+                for enfant in list(suivant.contents):
+                    el.append(enfant.extract())
+                suivant.decompose()
+                change = True
+                break
+
+
+def retirer_liens_faibles(soupe):
+    """Un lien approximatif collé à un lien précis est retiré (texte conservé)."""
+    for a in soupe.find_all("a", attrs={"data-faible": "1"}):
+        voisins = []
+        for frere in (a.previous_sibling, a.next_sibling):
+            if isinstance(frere, NavigableString) and not frere.strip():
+                frere = frere.previous_sibling if frere is a.previous_sibling else frere.next_sibling
+            voisins.append(frere)
+        if any(getattr(v, "name", None) == "a" and not v.get("data-faible") for v in voisins):
+            a.unwrap()
+    for a in soupe.find_all("a"):
+        a.attrs.pop("data-faible", None)
+    soupe.smooth()
+
+
+def etendre_aux_mots(soupe):
+    """Gras ou lien commencé/terminé au milieu d'un mot (« U<strong>ne</strong> »,
+    « <a>événements professio</a>nnels ») → étendu au mot entier. Un gras de une ou
+    deux lettres collé à un mot (lettrine accidentelle) est simplement retiré."""
+    change = True
+    while change:
+        change = False
+        for el in soupe.find_all(INLINE):
+            texte = el.get_text()
+            if el.name != "a" and len(texte.strip()) <= 2 and texte.strip():
+                avant, apres = el.previous_sibling, el.next_sibling
+                colle = (isinstance(avant, NavigableString) and MOT_FIN.search(str(avant))) or (
+                    isinstance(apres, NavigableString) and MOT_DEBUT.search(str(apres))
+                )
+                if colle:
+                    el.unwrap()
+                    change = True
+                    break
+            avant = el.previous_sibling
+            if isinstance(avant, NavigableString) and texte[:1].isalnum():
+                m = MOT_FIN.search(str(avant))
+                if m:
+                    avant.replace_with(NavigableString(str(avant)[: m.start()]))
+                    el.insert(0, NavigableString(m.group(1)))
+                    change = True
+            apres = el.next_sibling
+            if isinstance(apres, NavigableString) and texte[-1:].isalnum():
+                m = MOT_DEBUT.search(str(apres))
+                if m:
+                    apres.replace_with(NavigableString(str(apres)[m.end():]))
+                    el.append(NavigableString(m.group(1)))
+                    change = True
+        if change:
+            soupe.smooth()
+
+
+def espaces_hors_balises(soupe):
+    """« <strong> Spice Events </strong> » → « <strong>Spice Events</strong> » entouré d'espaces."""
+    for el in soupe.find_all(INLINE):
+        textes = el.find_all(string=True)
+        if textes and str(textes[0])[:1].isspace():
+            textes[0].replace_with(NavigableString(str(textes[0]).lstrip()))
+            el.insert_before(NavigableString(" "))
+        textes = el.find_all(string=True)
+        if textes and str(textes[-1])[-1:].isspace():
+            textes[-1].replace_with(NavigableString(str(textes[-1]).rstrip()))
+            el.insert_after(NavigableString(" "))
+
+
+def texte_gras(bloc):
+    """Texte du bloc s'il est entièrement en gras (titre déguisé ; une ponctuation finale
+    hors du gras est tolérée), sinon None."""
+    gras = []
+    for t in bloc.find_all(string=True):
+        if t.find_parent(["strong", "b"]):
+            gras.append(str(t))
+        elif re.sub(r"[\s.,;:]", "", str(t)):
+            return None
+        elif not str(t).strip():
+            gras.append(" ")
+    texte = re.sub(r"\s+", " ", "".join(gras)).strip()
+    return texte or None
+
+
 def nettoyer_html(html, slugs, slug_article):
     """Simplifie le HTML d'un bloc RichText avant conversion en Markdown."""
-    soupe = BeautifulSoup(html or "", "html.parser")
+    html = html or ""
+    for avant, apres in ESPACES.items():
+        html = html.replace(avant, apres)
+    soupe = BeautifulSoup(html, "html.parser")
     for balise in soupe.find_all(True):
         balise.attrs = {k: v for k, v in balise.attrs.items() if k == "href"}
     for balise in soupe.find_all(["span", "u", "font"]):
         balise.unwrap()
+    soupe.smooth()
     # Liens : nouvelle adresse, ou retrait (texte conservé).
     for a in soupe.find_all("a"):
         cible = nouvelle_adresse(a.get("href", ""), slugs, slug_article)
         if cible is None:
             a.unwrap()
         else:
-            a["href"] = cible
-    # Titres : les blocs longs mis en « titre » par erreur redeviennent des paragraphes.
-    for titre in soupe.find_all(["h1", "h2", "h3", "h4"]):
-        longueur = len(titre.get_text(" ").strip())
-        if longueur == 0:
-            titre.decompose()
-        elif longueur > 120:
-            titre.name = "p"
-        else:
-            titre.name = "h2"
-    # Un <br> à l'intérieur d'un paragraphe sépare deux paragraphes.
-    for bloc in soupe.find_all(["p", "h2", "blockquote"]):
-        for br in bloc.find_all("br"):
-            br.replace_with(NavigableString("\n\n"))
+            a["href"] = str(cible)
+            if isinstance(cible, Faible):
+                a["data-faible"] = "1"
+    soupe.smooth()
+    # Liens réduits à une ponctuation ou à des espaces : retirés.
+    for a in soupe.find_all("a"):
+        if not re.sub(r"[\s.,;:!?…]", "", a.get_text()):
+            a.unwrap()
+    soupe.smooth()
+    sortir_br(soupe)
+    couper_aux_br(soupe)
+    fusionner_voisins(soupe)
+    retirer_liens_faibles(soupe)
+    etendre_aux_mots(soupe)
+    fusionner_voisins(soupe)
+    espaces_hors_balises(soupe)
+    soupe.smooth()
+    for bloc in soupe.find_all(BLOCS):
+        texte = re.sub(r"\s+", " ", bloc.get_text()).strip()
+        if not texte:
+            bloc.decompose()
+            continue
+        # Titres : les blocs longs mis en « titre » par erreur redeviennent des paragraphes ;
+        # un paragraphe court entièrement en gras (sans point final) devient un intertitre.
+        if bloc.name in ("h1", "h2", "h3", "h4"):
+            bloc.name = "h2" if len(texte) <= 120 and not texte.endswith(".") else "p"
+        elif bloc.name == "p" and bloc.find_parent("blockquote") is None and len(texte) <= 120:
+            gras = texte_gras(bloc)
+            # « **De la musique pour chaque instant.** » : courte phrase sans autre ponctuation.
+            if gras and gras.endswith(".") and len(gras) <= 60 and not re.search(r"[.;:!?]", gras[:-1]):
+                gras = gras[:-1]
+            if gras and not gras.endswith((".", ":", "…", ",")):
+                bloc.clear()
+                bloc.append(NavigableString(gras))
+                bloc.name = "h2"
+            elif gras:
+                # Phrase entièrement en gras, morcelée par les liens : un seul gras.
+                for el in bloc.find_all(["strong", "b"]):
+                    el.unwrap()
+                gras_unique = soupe.new_tag("strong")
+                for enfant in list(bloc.contents):
+                    gras_unique.append(enfant.extract())
+                bloc.append(gras_unique)
+                soupe.smooth()
+                espaces_hors_balises(bloc)
+        if bloc.name == "h2":
+            for el in bloc.find_all(["strong", "b", "a"]):
+                el.unwrap()
+        # Fausse puce « ° » en début de paragraphe → élément de liste.
+        if bloc.name == "p" and re.match(r"^[°•]", texte):
+            premier = bloc.find(string=re.compile(r"[°•]"))
+            premier.replace_with(NavigableString(re.sub(r"^\s*[°•]\s*", "", str(premier))))
+            bloc.name = "li"
+    # Chaque élément dans sa liste ; les listes voisines sont réunies dans le Markdown.
+    for li in soupe.find_all("li"):
+        if li.parent is None or li.parent.name not in ("ul", "ol"):
+            li.wrap(soupe.new_tag("ul"))
     return str(soupe)
 
 
 def vers_markdown(html):
-    texte = markdownify(html, heading_style="ATX", bullets="-", escape_underscores=False, escape_asterisks=False)
+    texte = markdownify(html, heading_style="ATX", bullets="-", escape_misc=False)
     for avant, apres in ESPACES.items():
         texte = texte.replace(avant, apres)
     return texte
@@ -281,8 +571,10 @@ def recoller_liens(texte):
 
 def nettoyer_gras(texte):
     texte = texte.replace("****", "")
-    texte = re.sub(r"\*\*(\s*)\*\*", r"\1", texte)  # **Spice** **Events** → **Spice Events**
-    texte = re.sub(r"\*\*\s+([^*\n]+?)\s*\*\*", r" **\1**", texte)  # espaces dans le gras
+    texte = re.sub(r"\*\*([ \t]*)\*\*", r"\1", texte)  # **Spice** **Events** → **Spice Events**
+    # Ponctuation finale sortie du gras et des liens : « **Spice Events,** » → « **Spice Events**, ».
+    texte = re.sub(r"(?<![*\w])\*\*([^*\n]+?)([ \t]*)([,;:.]+)\*\*(?!\*)", r"**\1**\2\3", texte)
+    texte = re.sub(r"\[([^\]\n]+?)([,;:]+)\]\(([^)\s]+)\)", r"[\1](\3)\2", texte)
     return texte
 
 
@@ -290,7 +582,6 @@ def paragraphes(texte):
     return [p.strip() for p in re.split(r"\n\s*\n", texte) if p.strip()]
 
 
-GRAS_SEUL = re.compile(r"^(?:\*\*|__)([^*]+?)(?:\*\*|__)\s*:?$")
 PUCE = re.compile(r"^(?:\*\*)?[°•·](?:\*\*)?\s*")
 
 
@@ -306,15 +597,6 @@ def mettre_en_forme(blocs):
         # Fausse puce « ° » → vraie liste.
         if PUCE.match(p):
             sortie.append("- " + PUCE.sub("", p, count=1).strip())
-            continue
-        # Paragraphe entièrement en gras et court → intertitre.
-        m = GRAS_SEUL.match(p)
-        if m and len(m.group(1)) <= 120 and "](" not in m.group(1):
-            sortie.append("## " + m.group(1).strip().rstrip(":").strip())
-            continue
-        # Titre gras dont une partie est un lien ([**…**](u) **…**).
-        if len(p) <= 140 and re.fullmatch(r"(\s*(\*\*[^*]+\*\*|\[\*\*[^*\]]+\*\*\]\([^)]+\)))+\s*", p):
-            sortie.append("## " + re.sub(r"\*\*", "", p).strip())
             continue
         sortie.append(p)
     # Titre markdownify (h2) éventuellement en gras : « ## **Titre** » → « ## Titre ».
@@ -336,9 +618,18 @@ def echapper_mdx(ligne):
     return ligne.replace("{", "\\{").replace("}", "\\}").replace("<", "&lt;")
 
 
+CORRECTIONS_APPLIQUEES = set()
+
+
 def corriger(texte):
     for avant, apres in CORRECTIONS:
-        texte = texte.replace(avant, apres)
+        if avant in texte:
+            CORRECTIONS_APPLIQUEES.add(avant)
+            texte = texte.replace(avant, apres)
+    for motif, remplacement in MISE_EN_FORME:
+        texte, n = re.subn(motif, remplacement, texte)
+        if n:
+            CORRECTIONS_APPLIQUEES.add(motif)
     texte = re.sub(r"[ \t]{2,}", " ", texte)
     texte = re.sub(r"[ \t]+\n", "\n", texte)
     texte = re.sub(r" +([,.])(?=\s|$)", r"\1", texte)  # espace avant virgule/point
@@ -389,10 +680,12 @@ def convertir(chemin, slugs, manifeste, alts):
     sous_titre = texte_brut((entete.get("subTitle") or {}).get("value"))
 
     # Couverture : image de partage de l'ancien article.
-    cle = cle_depuis_url(meta["socialMediaConfig"].get("image")) or (entete.get("backgroundImage") or {}).get("storageKey")
-    fichier = manifeste.get(cle)
+    image_partage = meta["socialMediaConfig"].get("image")
+    fichier = trouver_image(manifeste, url=image_partage) or trouver_image(
+        manifeste, cle=(entete.get("backgroundImage") or {}).get("storageKey")
+    )
     if not fichier:
-        raise SystemExit(f"{slug} : couverture introuvable ({cle})")
+        raise SystemExit(f"{slug} : couverture introuvable ({image_partage})")
     couverture, _, _ = copier_image(fichier, slug, "couverture")
     couverture_alt = alt_de(fichier, alts, slug)
 
@@ -407,7 +700,7 @@ def convertir(chemin, slugs, manifeste, alts):
             else:
                 blocs.extend(paragraphes(md))
         elif comp.get("type") == "Image":
-            fichier = manifeste.get(comp.get("storageKey") or "") or manifeste.get(cle_depuis_url(comp.get("url")) or "")
+            fichier = trouver_image(manifeste, cle=comp.get("storageKey"), url=comp.get("url"))
             if not fichier:
                 RAPPORT["images_manquantes"].append((slug, comp.get("storageKey") or comp.get("url")))
                 continue
@@ -416,6 +709,9 @@ def convertir(chemin, slugs, manifeste, alts):
             alt = alt_de(fichier, alts, slug).replace('"', "&quot;")
             blocs.append(f'<PhotoArticle src="{src}" width={{{largeur}}} height={{{hauteur}}} alt="{alt}" />')
 
+    # Le titre de l'article répété en intertitre au début du corps : retiré.
+    if blocs and blocs[0].lstrip("# ").strip() == titre.strip():
+        blocs = blocs[1:]
     corps = "\n\n".join(blocs)
     corps = recoller_liens(nettoyer_gras(corps))
     corps = mettre_en_forme(paragraphes(corps))
@@ -464,6 +760,10 @@ def main():
     articles = [convertir(p, slugs, manifeste, alts) for p in sources]
 
     print(f"{len(articles)} articles écrits dans {SORTIE.relative_to(ROOT)}/")
+    inutiles = [a for a, _ in CORRECTIONS if a not in CORRECTIONS_APPLIQUEES]
+    inutiles += [m for m, _ in MISE_EN_FORME if m not in CORRECTIONS_APPLIQUEES]
+    if inutiles:
+        print("Corrections sans effet (texte introuvable) : " + " | ".join(inutiles))
     for cat in CATEGORIES:
         print(f"  {cat} : {sum(a['categorie'] == cat for a in articles)}")
     for cle, titre in (
