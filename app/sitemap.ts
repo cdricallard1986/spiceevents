@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
+import { articles } from "@/lib/journal/articles";
 import { planDuSite } from "@/lib/seo/plan";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Les articles du journal sont ajoutés quand le journal est en place.
-  return planDuSite([]);
+  return planDuSite(articles().map(({ slug, date }) => ({ slug, date })));
 }

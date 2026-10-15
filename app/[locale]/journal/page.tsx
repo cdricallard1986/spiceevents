@@ -48,8 +48,8 @@ export default async function PageJournal({ params }: Props) {
         </div>
       </section>
 
-      <nav aria-label={c.filtres} className="sticky top-0 z-10 border-y border-ligne bg-nuit/95 backdrop-blur">
-        <ul className="conteneur flex gap-x-8 gap-y-3 overflow-x-auto py-5 whitespace-nowrap">
+      <nav aria-label={c.filtres} className="border-y border-ligne">
+        <ul className="conteneur flex flex-wrap gap-x-8 gap-y-4 py-6">
           {rubriques.map((r) => (
             <li key={r.ancre}>
               <a href={`#${r.ancre}`} className={classesBouton("lien")}>
@@ -61,7 +61,7 @@ export default async function PageJournal({ params }: Props) {
       </nav>
 
       {rubriques.map((r, i) => (
-        <Section key={r.ancre} id={r.ancre} surtitre={c.hero.surtitre} titre={r.categorie} intro={c.rubriques[r.categorie]} alterne={i % 2 === 0}>
+        <Section key={r.ancre} id={r.ancre} surtitre={`${r.liste.length} article${r.liste.length > 1 ? "s" : ""}`} titre={r.categorie} intro={c.rubriques[r.categorie]} alterne={i % 2 === 0}>
           <ul className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
             {r.liste.map((a) => (
               <li key={a.slug}>

@@ -23,7 +23,7 @@ describe("pages d'option", () => {
     for (const [slug, c] of Object.entries(CONTENUS_OPTIONS)) {
       if (!c.avis) continue;
       const { auteurs, depuis } = c.avis;
-      expect(depuis?.fr ?? !depuis, slug).toBeTruthy();
+      if (depuis) expect(depuis.fr, slug).toBeTruthy();
       for (const l of ["fr", "en"] as const) {
         if (depuis && !depuis[l]) continue;
         const trouves = avis(l, "mariage").filter((a) => a.auteurs === auteurs && (!depuis || a.texte.includes(depuis[l]!)));
