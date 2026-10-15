@@ -44,13 +44,13 @@ Le français est servi à la racine (`/…`), l'anglais sous `/en/…` avec des 
 | `/galerie` | `/en/gallery` | galerie-photo-mariage, galerie-photo-evenementiel | Sélection resserrée des meilleures photos |
 | `/faq` | `/en/faq` | faq | Questions regroupées par thème, balisage FAQ pour Google |
 | `/contact` | `/en/contact` | contactez-nous | Formulaire unique et court (prénoms, date, lieu, invités, contact, message) |
-| `/journal` (blog) | — | blog | ~36 articles conservés, en français seulement (à confirmer) |
+| `/journal` (blog) | — | blog | 37 articles conservés, en français seulement |
 | `/recrutement` | — | on-recrute | Lien discret dans le pied de page, si le recrutement est toujours d'actualité |
 | `/mentions-legales`, `/confidentialite` | `/en/legal`, `/en/privacy` | — | Nouvelles, obligatoires |
 
 **Supprimées** (avec redirection 301 vers la page la plus proche, pour ne rien perdre en référencement) : `/booking-dj` → `/mariages`, `/accompagnement` → `/mariages#methode`, `/performances-techniques-son-and-lumieres` → `/a-propos#technique`, `/cedric-allard` → `/a-propos`, `/temoignages` → `/avis`, `/galerie-photo-*` → `/galerie`, `/contactez-nous` → `/contact`, `/blog/*` → `/journal/*`, `/pourquoi-nous-choisir` et `/test` → `/`. Chaque ancienne adresse d'option (`/photobooth`…) → `/animations/<option>`.
 
-### Blog : articles retirés (15)
+### Blog : articles retirés (14)
 
 Actualités datées ou hors sujet, sans valeur pour un couple en 2026 ; chacun redirigé (301) vers la page la plus proche :
 nouvel arrivage L-Acoustics (×2), régie Pioneer blanche, enceinte Maui5go, 10 ans de la Jungle, Amnesty International 2019, soirée blanche à Lagny, anniversaire de 30 ans, « un anniversaire de talent », ouverture de bal 2019 (doublon de la page), « Les robes tendances pour 2026 » (écrit en 2021), « Tendances mariage 2025 » (périmé), magicien (images mortes, prestation non proposée), EVJF.
@@ -83,17 +83,22 @@ Pas d'authentification sur un site vitrine, donc **sans objet** : rôles/RLS mul
 2. Socle Next.js : structure, bilinguisme, design system (couleurs, typographies, composants), en-têtes de sécurité, CI.
 3. Gabarits et pages : accueil, mariages, animations (+ 8 options), événementiel, à propos, avis, galerie, FAQ, contact, mentions légales.
 4. Réécriture des textes FR (corrections, une seule promesse claire par page, mots-clés locaux) puis **traduction EN**.
-5. Journal : migration des ~36 articles en MDX, catégories.
+5. Journal : migration des 37 articles en MDX, catégories.
 6. Formulaire : Supabase + Resend + anti-spam ; tests.
 7. Référencement : métadonnées, `hreflang`, données structurées, sitemap, redirections 301 (testées une à une).
 8. Recette : Lighthouse (objectif ≥ 95 partout), test sur mobile, relecture par Cédric sur l'adresse de pré-production Vercel.
 9. **Mise en ligne** : bascule du DNS chez OVH vers Vercel (**sans toucher aux enregistrements MX** pour ne pas couper les emails `@spiceevents.fr`), envoi du sitemap à Google Search Console, suivi des erreurs 404 pendant un mois, puis résiliation de Strikingly.
 
-## Questions ouvertes pour Cédric
+## Décisions de Cédric (15 octobre 2026)
 
-- Piste graphique A, B ou C (ou mélange).
-- **Zone d'intervention** à mettre en avant pour Google (ville, départements, régions ; déplacements dans toute la France ?).
-- Les avis des pages Événementiel et Accompagnement (« Marc L., Directeur marketing », « Sophie, Responsable événementiel d'entreprise »…) sont-ils de vrais clients ? Sinon ils seront retirés : publier de faux avis est une pratique commerciale trompeuse.
-- Note et nombre d'avis sur Mariages.net et sur Google, à afficher.
-- Où arrivent les demandes de contact : email seul, ou aussi dans le CRM ?
-- Journal traduit en anglais ou non ; recrutement toujours d'actualité ?
+- Piste graphique **B — Nuit de fête** (fond nuit, ivoire, accent doré ; Bodoni Moda + Manrope).
+- Zone mise en avant : **Île-de-France** (Paris dans les textes anglais).
+- Les avis des pages Événementiel et Accompagnement sont **réels** : tous conservés (44 avis).
+- Demandes de contact : **email à Cédric + accusé de réception + enregistrement en base Supabase**.
+- Journal en français seulement ; page recrutement conservée (lien dans le pied de page, FR).
+
+## Questions encore ouvertes
+
+- Mentions légales : forme juridique, adresse du siège, SIRET.
+- Note et nombre d'avis sur Mariages.net et Google (affichage éventuel).
+- Création du projet Supabase et du compte Resend (domaine d'envoi `spiceevents.fr`).

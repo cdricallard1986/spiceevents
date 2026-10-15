@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Copie les photos choisies dans public/images/ et génère lib/images.generated.ts.
 
-Source : contenu/images.source.json (clé → fichier de site-actuel/images/fichiers + alt FR/EN).
+Sources : contenu/images/*.json (un fichier par groupe de pages ; clé → fichier de
+site-actuel/images/fichiers + alt FR/EN). Les clés doivent être uniques entre fichiers.
 Usage : python3 outils/preparer_images.py
 """
 import json
@@ -11,14 +12,19 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "contenu" / "images.source.json"
+SOURCES = ROOT / "contenu" / "images"
 ORIGINES = ROOT / "site-actuel" / "images" / "fichiers"
 CIBLE = ROOT / "public" / "images"
 SORTIE = ROOT / "lib" / "images.generated.ts"
 
 
 def main():
-    donnees = json.loads(SOURCE.read_text())["images"]
+    donnees = {}
+    for f in sorted(SOURCES.glob("*.json")):
+        for cle, info in json.loads(f.read_text())["images"].items():
+            if cle in donnees:
+                raise SystemExit(f"Clé d'image en double : {cle} ({f.name})")
+            donnees[cle] = info
     CIBLE.mkdir(parents=True, exist_ok=True)
     lignes = [
         "// Fichier généré par outils/preparer_images.py — ne pas modifier à la main.",

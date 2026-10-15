@@ -9,6 +9,8 @@ import { SITE } from "@/contenu/site";
 import { EnTete } from "@/components/layout/EnTete";
 import { PiedDePage } from "@/components/layout/PiedDePage";
 import { PillNouvelleVersion } from "@/components/common/PillNouvelleVersion";
+import { JsonLd } from "@/components/common/JsonLd";
+import { entreprise } from "@/lib/seo/donneesStructurees";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -51,6 +53,7 @@ export default async function LayoutLangue({
           <main id="contenu">{children}</main>
           <PiedDePage />
           <PillNouvelleVersion />
+          <JsonLd donnees={entreprise(locale)} />
         </NextIntlClientProvider>
         <Analytics />
       </body>
