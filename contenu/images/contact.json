@@ -1,0 +1,12 @@
+{
+ "_comment": "Photos de la page Contact. Clé → fichier de site-actuel/images/fichiers + alt FR/EN.",
+ "images": {
+  "contact-maries-lumiere": {
+   "fichier": "22139555_28123_37279.jpg",
+   "alt": {
+    "fr": "Mariés enlacés sur la piste, entre deux colonnes de lumière",
+    "en": "Newlyweds embracing on the dance floor between two columns of light"
+   }
+  }
+ }
+}

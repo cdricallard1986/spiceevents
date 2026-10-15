@@ -1,10 +1,5 @@
 [
  {
-  "auteurs": "Alexis",
-  "categorie": "mariage",
-  "texte": "Spice Events a été largement à la hauteur de nos attentes et plus encore. Cédric Allard a su comprendre nos contraintes liées à un emploi du temps très chargé et nous a attribué Aurélien qui a su faire preuve de professionnalisme avec le sourire. A la fois discret et s'adaptant à chaque moment de la soirée il est top ! Un grand merci pour cette soirée où notre seule envie était de faire passer un bon moment à nos invités et profiter pleinement."
- },
- {
   "auteurs": "Mathilde",
   "categorie": "mariage",
   "texte": "Nous avons passé une soirée inoubliable avec une programmation musicale acclamée par nos invités ! Grande réactivité, professionnalisme, écoute attentive, flexibilité totale pour modeler une cérémonie sur mesure… Bref nous ne pouvons que recommander les services de Cédric."
@@ -156,7 +151,7 @@
  {
   "auteurs": "Alice & Thomas",
   "categorie": "mariage",
-  "texte": "Prestations parfaites par un prestataire de confiance Nous avons eu la joie de faire appel à Spice Events pour notre mariage. Nous apprécions énormément la musique et il était inconcevable qu'elle soit relayée au second plan. Nos contacts ont été supers, de notre 1er échange jusqu'au jour J ! Cédric & Aurélien ont parfaitement cernés nos goûts : quel plaisir de se laisser porter par la musique sans qu'il y ait le moindre impair ❤️ Au delà des choix musicaux & de la soirée (son + lumières), nous avions aussi confié à Spice Events la sono de la cérémonie laïque qui avait lieu en plein air. Un sans faute là aussi 👌🏼 Une entreprise de confiance.Spice Event a été plus qu'au top pour notre mariage. Super disponible avant pour préparer avec nous l'ambiance musicale, le DJ a pris beaucoup de temps pour tout préparer et une fois le jour J tout s'est très bien passé. Nous avons été très satisfaits et nos invités aussi ! Leur matériel (sono + lumière) nous a aussi bien sauvé la vie car celui du lieu rencontrait un problème. Un grand merci à eux que je recommande absolument."
+  "texte": "Prestations parfaites par un prestataire de confiance Nous avons eu la joie de faire appel à Spice Events pour notre mariage. Nous apprécions énormément la musique et il était inconcevable qu'elle soit relayée au second plan. Nos contacts ont été supers, de notre 1er échange jusqu'au jour J ! Cédric & Aurélien ont parfaitement cernés nos goûts : quel plaisir de se laisser porter par la musique sans qu'il y ait le moindre impair ❤️ Au delà des choix musicaux & de la soirée (son + lumières), nous avions aussi confié à Spice Events la sono de la cérémonie laïque qui avait lieu en plein air. Un sans faute là aussi 👌🏼 Une entreprise de confiance. Spice Event a été plus qu'au top pour notre mariage. Super disponible avant pour préparer avec nous l'ambiance musicale, le DJ a pris beaucoup de temps pour tout préparer et une fois le jour J tout s'est très bien passé. Nous avons été très satisfaits et nos invités aussi ! Leur matériel (sono + lumière) nous a aussi bien sauvé la vie car celui du lieu rencontrait un problème. Un grand merci à eux que je recommande absolument."
  },
  {
   "auteurs": "Sébastien & Guylaine",
@@ -176,7 +171,8 @@
  {
   "auteurs": "Léa & Floris",
   "categorie": "mariage",
-  "texte": "Un prestataire accessible, qui s'adapte à toutes les situations avec professionnalisme. Le bar a vinyle à été un véritable succès. De la cérémonie à la fin de soirée la sono a été gérée à merveille. Un professionnel de qualité, autant par son matériel que son travail. Il arrive à s'adapter rapidement aux demandes de chacun. Nous avions pris en sus le bar à vinyl, cela a beaucoup plu et a permis d'ambiancé dès le vin d'honneur. Nous sommes passé par lui également pour la location de tables et de chaises. Et autant qu'un mauvais DJ peut gâcher un mariage. Et là c'est en partie grâce à lui que le nôtre a été extraordinaire."
+  "texte": "Un prestataire accessible, qui s'adapte à toutes les situations avec professionnalisme. Le bar a vinyle à été un véritable succès. De la cérémonie à la fin de soirée la sono a été gérée à merveille. Un professionnel de qualité, autant par son matériel que son travail. Il arrive à s'adapter rapidement aux demandes de chacun. Nous avions pris en sus le bar à vinyl, cela a beaucoup plu et a permis d'ambiancé dès le vin d'honneur. Nous sommes passé par lui également pour la location de tables et de chaises. Et autant qu'un mauvais DJ peut gâcher un mariage. Et là c'est en partie grâce à lui que le nôtre a été extraordinaire.",
+  "cle": "Léa & Floris #2"
  },
  {
   "auteurs": "Justine & Victor",

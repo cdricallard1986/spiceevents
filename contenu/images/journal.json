@@ -1,0 +1,12 @@
+{
+ "_comment": "Photos du journal (page de liste). Les images des articles sont copiées par outils/convertir_journal.py dans public/journal/<slug>/.",
+ "images": {
+  "journal-guinguette": {
+   "fichier": "5439810_25488_609032.jpg",
+   "alt": {
+    "fr": "Invités sur une piste en plein air, sous des guirlandes guinguettes à la nuit tombée",
+    "en": "Guests on an open-air dance floor under festoon lights at dusk"
+   }
+  }
+ }
+}
