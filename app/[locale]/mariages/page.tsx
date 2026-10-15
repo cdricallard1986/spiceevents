@@ -173,7 +173,7 @@ export default async function PageMariages({ params }: Props) {
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.photos.lien} →</Bouton>
       </Section>
 
-      <GrandAvis citation={extrait(grand.texte, 320)} auteurs={grand.auteurs} image="presta-diner-chateau" />
+      <GrandAvis citation={extrait(grand.texte, 320)} auteurs={grand.auteurs} image="presta-chapiteau-nuit" />
 
       <Section surtitre={c.avis.surtitre} titre={c.avis.titre}>
         <GrilleAvis liste={choisis} />

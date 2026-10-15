@@ -21,8 +21,9 @@ type Props = { params: Promise<{ locale: Locale; slug: string }> };
 // Articles en français seulement : aucune page anglaise générée, les autres adresses renvoient une 404.
 export const dynamicParams = false;
 
-export function generateStaticParams({ params }: { params: { locale: Locale } }) {
-  return params.locale === "fr" ? articles().map((a) => ({ slug: a.slug })) : [];
+export function generateStaticParams() {
+  // Donne aussi la langue : seules les adresses françaises sont générées.
+  return articles().map((a) => ({ locale: "fr", slug: a.slug }));
 }
 
 /** Composants disponibles dans les fichiers MDX du journal. */

@@ -39,7 +39,8 @@ describe("redirections 301", () => {
   it("mènent vers des pages qui existent", () => {
     for (const r of liste) {
       if (r.destination.includes(":")) continue; // motifs (/journal/:slug)
-      expect(cheminsValides.has(r.destination), `${r.source} → ${r.destination}`).toBe(true);
+      const page = r.destination.split("#")[0];
+      expect(cheminsValides.has(page), `${r.source} → ${r.destination}`).toBe(true);
     }
   });
 

@@ -24,7 +24,7 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/pourquoi-nous-choisir": "/",
   "/test": "/",
   "/booking-dj": "/mariages",
-  "/accompagnement": "/mariages",
+  "/accompagnement": "/mariages#methode",
   "/performances-techniques-son-and-lumieres": "/a-propos",
   "/cedric-allard": "/a-propos",
   "/temoignages": "/avis",

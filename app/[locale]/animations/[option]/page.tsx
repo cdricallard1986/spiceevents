@@ -21,8 +21,9 @@ import { Bouton } from "@/components/ui/Bouton";
 type Props = { params: Promise<{ locale: Locale; option: string }> };
 
 /** Chaque option, sous son slug traduit, dans la langue de la page parente. */
-export function generateStaticParams({ params }: { params: { locale: Locale } }) {
-  return OPTIONS.map((o) => ({ option: o.slug[params.locale] }));
+export function generateStaticParams({ params }: { params: { locale: string } }) {
+  const locale = params.locale as Locale;
+  return OPTIONS.map((o) => ({ option: o.slug[locale] }));
 }
 
 /** Adresse de l'option dans une langue (slug traduit). */

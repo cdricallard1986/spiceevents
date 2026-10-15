@@ -17,7 +17,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return metadonnees({ locale, href: "/animations", seo: ANIMATIONS[locale].seo, image: "presta-photobooth-temoins" });
+  return metadonnees({ locale, href: "/animations", seo: ANIMATIONS[locale].seo, image: "presta-chateau-mapping" });
 }
 
 export default async function PageAnimations({ params }: Props) {
