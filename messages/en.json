@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "mariages": "Weddings",
+    "animations": "Entertainment",
+    "evenementiel": "Events",
+    "avis": "Reviews",
+    "galerie": "Gallery",
+    "journal": "Journal",
+    "aPropos": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "devis": "Check my date",
+    "menu": "Menu",
+    "fermer": "Close menu",
+    "accueil": "Spice Events, back to home",
+    "principale": "Main navigation",
+    "langue": "Change language",
+    "autreLangue": "Français"
+  },
+  "pied": {
+    "accroche": "DJ, sound, lighting and entertainment for weddings and events in Paris and Île-de-France.",
+    "explorer": "Explore",
+    "contact": "Get in touch",
+    "suivre": "Follow us",
+    "recrutement": "Careers",
+    "mentions": "Legal notice",
+    "confidentialite": "Privacy",
+    "droits": "All rights reserved.",
+    "awards": "Mariages.net Wedding Awards"
+  },
+  "commun": {
+    "enSavoirPlus": "Learn more",
+    "voirTout": "See all",
+    "lireAvis": "Read all reviews",
+    "appeler": "Call",
+    "ecrire": "Email",
+    "filAriane": "Breadcrumb",
+    "accueil": "Home",
+    "precedent": "Previous",
+    "suivant": "Next"
+  },
+  "version": {
+    "disponible": "New version available",
+    "recharger": "Reload"
+  }
+}

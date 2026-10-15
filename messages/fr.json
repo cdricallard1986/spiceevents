@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "mariages": "Mariages",
+    "animations": "Animations",
+    "evenementiel": "Événements",
+    "avis": "Avis",
+    "galerie": "Galerie",
+    "journal": "Journal",
+    "aPropos": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "devis": "Vérifier ma date",
+    "menu": "Menu",
+    "fermer": "Fermer le menu",
+    "accueil": "Spice Events, retour à l'accueil",
+    "principale": "Navigation principale",
+    "langue": "Changer de langue",
+    "autreLangue": "English"
+  },
+  "pied": {
+    "accroche": "DJ, son, lumière et animations pour les mariages et les événements en Île-de-France.",
+    "explorer": "Explorer",
+    "contact": "Nous joindre",
+    "suivre": "Nous suivre",
+    "recrutement": "On recrute",
+    "mentions": "Mentions légales",
+    "confidentialite": "Confidentialité",
+    "droits": "Tous droits réservés.",
+    "awards": "Wedding Awards Mariages.net"
+  },
+  "commun": {
+    "enSavoirPlus": "En savoir plus",
+    "voirTout": "Tout voir",
+    "lireAvis": "Lire tous les avis",
+    "appeler": "Appeler",
+    "ecrire": "Écrire",
+    "filAriane": "Fil d'Ariane",
+    "accueil": "Accueil",
+    "precedent": "Précédent",
+    "suivant": "Suivant"
+  },
+  "version": {
+    "disponible": "Nouvelle version disponible",
+    "recharger": "Recharger"
+  }
+}
