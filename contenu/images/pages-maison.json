@@ -1,0 +1,250 @@
+{
+ "_comment": "Photos des pages À propos, Avis, Galerie, FAQ, Recrutement et pages légales. Clé → fichier de site-actuel/images/fichiers + alt FR/EN.",
+ "images": {
+  "maison-mariage-danse-genou": {
+   "fichier": "780786_198910_954689.jpg",
+   "alt": {
+    "fr": "Première danse des mariés sous des projections lumineuses bleues, entourés des invités",
+    "en": "The couple's first dance under blue light projections, surrounded by guests"
+   }
+  },
+  "maison-mariage-danse-gobos": {
+   "fichier": "780786_979944_856219.jpg",
+   "alt": {
+    "fr": "Mariés qui dansent sur une piste parsemée de taches de lumière",
+    "en": "Newlyweds dancing on a floor dotted with spots of light"
+   }
+  },
+  "maison-mariage-mariee-piste": {
+   "fichier": "22139555_135111_862108.jpg",
+   "alt": {
+    "fr": "La mariée, bras levés, face à une piste de danse pleine",
+    "en": "The bride with her arms raised, facing a packed dance floor"
+   }
+  },
+  "maison-mariage-piste-verte": {
+   "fichier": "22139555_892054_345458.jpg",
+   "alt": {
+    "fr": "Piste de danse d'un mariage sous les faisceaux verts et la boule à facettes",
+    "en": "Wedding dance floor under green beams and a mirror ball"
+   }
+  },
+  "maison-mariage-lasers": {
+   "fichier": "780786_493030_776932.jpg",
+   "alt": {
+    "fr": "Invités qui dansent sous des lasers roses et bleus",
+    "en": "Guests dancing under pink and blue lasers"
+   }
+  },
+  "maison-mariage-chapiteau-fete": {
+   "fichier": "22139555_354386_552180.jpg",
+   "alt": {
+    "fr": "Soirée de mariage sous un chapiteau décoré de guirlandes lumineuses",
+    "en": "Wedding party in a marquee decorated with fairy lights"
+   }
+  },
+  "maison-mariage-chapiteau-ovation": {
+   "fichier": "780786_916066_605700.jpg",
+   "alt": {
+    "fr": "Invités debout qui acclament les mariés sous un chapiteau transparent",
+    "en": "Guests on their feet cheering the couple in a clear marquee"
+   }
+  },
+  "maison-mariage-charpente": {
+   "fichier": "780786_580952_130163.jpg",
+   "alt": {
+    "fr": "Grande salle à charpente en bois mise en lumière pour un dîner de mariage",
+    "en": "Timber-framed hall lit up for a wedding dinner"
+   }
+  },
+  "maison-mariage-salle-etoiles": {
+   "fichier": "780786_439797_988562.jpg",
+   "alt": {
+    "fr": "Dîner de mariage dans une salle gothique, étoiles projetées au sol",
+    "en": "Wedding dinner in a Gothic hall with stars projected on the floor"
+   }
+  },
+  "maison-mariage-diner-rouge": {
+   "fichier": "780786_4125_123796.jpg",
+   "alt": {
+    "fr": "Salle de réception éclairée en rouge et or pour un dîner de mariage",
+    "en": "Reception room lit in red and gold for a wedding dinner"
+   }
+  },
+  "maison-mariage-diner-violet": {
+   "fichier": "780786_357394_288815.jpg",
+   "alt": {
+    "fr": "Dîner de mariage sous un éclairage violet et des motifs lumineux",
+    "en": "Wedding dinner under purple lighting and light patterns"
+   }
+  },
+  "maison-mariage-chateau-rose": {
+   "fichier": "780786_830815_313375.jpg",
+   "alt": {
+    "fr": "Château illuminé en rose à la nuit tombée, braséro au premier plan",
+    "en": "Château lit in pink at nightfall, with a fire pit in the foreground"
+   }
+  },
+  "maison-mariage-facade-projection": {
+   "fichier": "780786_852635_925766.jpg",
+   "alt": {
+    "fr": "Façade de château habillée de projections lumineuses rouges",
+    "en": "Château façade dressed with red light projections"
+   }
+  },
+  "maison-mariage-chapiteau-nuit": {
+   "fichier": "780786_86838_843122.jpg",
+   "alt": {
+    "fr": "Chapiteau transparent illuminé dans un jardin, de nuit",
+    "en": "Illuminated clear marquee in a garden at night"
+   }
+  },
+  "maison-mariage-ceremonie-cour": {
+   "fichier": "780786_5969_583205.jpg",
+   "alt": {
+    "fr": "Cérémonie laïque en plein air dans la cour d'un domaine",
+    "en": "Outdoor celebrant-led ceremony in an estate courtyard"
+   }
+  },
+  "maison-mariage-ceremonie-arbres": {
+   "fichier": "780786_602438_980455.jpg",
+   "alt": {
+    "fr": "Cérémonie laïque sous les arbres, avec pupitre et guitariste",
+    "en": "Celebrant-led ceremony under the trees, with a lectern and a guitarist"
+   }
+  },
+  "maison-mariage-maries-micro": {
+   "fichier": "22139555_423505_735614.jpg",
+   "alt": {
+    "fr": "Mariés souriants qui prennent la parole au micro pendant la cérémonie",
+    "en": "Smiling newlyweds speaking into the microphone during the ceremony"
+   }
+  },
+  "maison-mariage-cour-gobos": {
+   "fichier": "780786_679885_261678.jpg",
+   "alt": {
+    "fr": "Cour de château préparée pour la soirée : enceintes, colonnes lumineuses et piste éclairée",
+    "en": "Château courtyard set up for the party: speakers, light columns and a lit dance floor"
+   }
+  },
+  "maison-evenement-bal": {
+   "fichier": "22139555_18260_907002.jpg",
+   "alt": {
+    "fr": "Grande soirée dansante vue d'en haut, traversée de faisceaux lumineux",
+    "en": "Large dance party seen from above, crossed by light beams"
+   }
+  },
+  "maison-evenement-gala": {
+   "fichier": "22139555_935169_97228.jpg",
+   "alt": {
+    "fr": "Dîner de gala dans une salle de bal historique mise en lumière, avec écran",
+    "en": "Gala dinner in a lit historic ballroom, with a screen"
+   }
+  },
+  "maison-evenement-scene-dj": {
+   "fichier": "22139555_283289_784705.jpg",
+   "alt": {
+    "fr": "DJ sur une scène en structure, entouré du public",
+    "en": "DJ on a truss stage, surrounded by the crowd"
+   }
+  },
+  "maison-evenement-soiree-lumiere": {
+   "fichier": "22139555_319632_59824.jpg",
+   "alt": {
+    "fr": "Soirée d'entreprise sous une lumière jaune intense",
+    "en": "Corporate party under intense yellow light"
+   }
+  },
+  "maison-evenement-concert": {
+   "fichier": "22139555_142237_78072.jpg",
+   "alt": {
+    "fr": "Public qui danse devant une régie DJ sur scène",
+    "en": "Crowd dancing in front of a DJ booth on stage"
+   }
+  },
+  "maison-evenement-lancement-auto": {
+   "fichier": "22139555_100386_994325.jpg",
+   "alt": {
+    "fr": "Lancement de voiture mis en lumière sous structures",
+    "en": "Car launch lit up under truss structures"
+   }
+  },
+  "maison-evenement-seminaire": {
+   "fichier": "22139555_205094_937059.jpg",
+   "alt": {
+    "fr": "Scène et chaises installées pour un séminaire",
+    "en": "Stage and seating set up for a seminar"
+   }
+  },
+  "maison-evenement-structure": {
+   "fichier": "22139555_250592_302561.jpg",
+   "alt": {
+    "fr": "Grande scène équipée de structures et de projecteurs",
+    "en": "Large stage fitted with trusses and moving lights"
+   }
+  },
+  "maison-evenement-feu-artifice": {
+   "fichier": "22139555_116177_745374.jpg",
+   "alt": {
+    "fr": "Feu d'artifice au-dessus d'un concert en station de ski",
+    "en": "Fireworks above a concert at a ski resort"
+   }
+  },
+  "maison-evenement-cabine-dj": {
+   "fichier": "780786_800183_965679.jpg",
+   "alt": {
+    "fr": "Cabine DJ « Let's Dance » encadrée de projecteurs",
+    "en": "“Let's Dance” DJ booth framed by stage lights"
+   }
+  },
+  "maison-evenement-dj-vue-haut": {
+   "fichier": "780786_96912_672867.jpg",
+   "alt": {
+    "fr": "DJ aux platines vu d'en haut, sous des faisceaux violets",
+    "en": "DJ at the decks seen from above, under purple beams"
+   }
+  },
+  "maison-evenement-faisceaux": {
+   "fichier": "22139555_568461_541759.jpg",
+   "alt": {
+    "fr": "Scène traversée de faisceaux lumineux bleus",
+    "en": "Stage crossed by blue light beams"
+   }
+  },
+  "maison-cedric-portrait": {
+   "fichier": "22139555_990981_578108.jpg",
+   "alt": {
+    "fr": "DJ aux platines, mains sur la table de mixage, sous des traînées de lumière",
+    "en": "DJ at the decks, hands on the mixer, under light trails"
+   }
+  },
+  "maison-console": {
+   "fichier": "22139555_12081_23996.jpg",
+   "alt": {
+    "fr": "Console de mixage numérique en régie",
+    "en": "Digital mixing console at front of house"
+   }
+  },
+  "maison-atelier-mx": {
+   "fichier": "22139555_835865_791304.jpg",
+   "alt": {
+    "fr": "Atelier de MX Événement : matériel rangé et préparé",
+    "en": "MX Événement's workshop: equipment stored and prepared"
+   }
+  },
+  "maison-cedric-dessus": {
+   "fichier": "22139555_679163_321012.jpg",
+   "alt": {
+    "fr": "DJ aux platines vu d'en haut, entre les projecteurs",
+    "en": "DJ at the decks seen from above, between the stage lights"
+   }
+  },
+  "maison-recrutement-platines": {
+   "fichier": "22139555_459188_251264.jpg",
+   "alt": {
+    "fr": "Mains d'un DJ sur les platines, piste de danse en arrière-plan",
+    "en": "A DJ's hands on the decks, dance floor in the background"
+   }
+  }
+ }
+}
