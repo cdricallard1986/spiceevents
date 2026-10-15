@@ -3,7 +3,7 @@ import type { ContenuOption } from "./types";
 export const PHOTOBOOTH: ContenuOption = {
   image: "presta-invites-chapiteau",
   galerie: ["presta-photobooth-temoins", "presta-photobooth-mariee", "presta-photobooth-borne", "presta-photobooth-jardin"],
-  avis: { auteurs: "Beth & Liam", depuis: "Le photobooth", image: "presta-photobooth-mariee" },
+  avis: { auteurs: "Beth & Liam", depuis: { fr: "Le photobooth", en: "The photo booth was" }, image: "presta-photobooth-mariee" },
   textes: {
     fr: {
       seo: {

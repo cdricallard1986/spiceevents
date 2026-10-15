@@ -19,13 +19,16 @@ describe("pages d'option", () => {
     }
   });
 
-  it("les avis cités existent, et la phrase de départ s'y trouve", () => {
-    const tous = avis("fr", "mariage");
+  it("les avis cités existent, et la phrase de départ s'y trouve dans chaque langue renseignée", () => {
     for (const [slug, c] of Object.entries(CONTENUS_OPTIONS)) {
       if (!c.avis) continue;
       const { auteurs, depuis } = c.avis;
-      const trouves = tous.filter((a) => a.auteurs === auteurs && (!depuis || a.texte.includes(depuis)));
-      expect(trouves.length, slug).toBeGreaterThan(0);
+      expect(depuis?.fr ?? !depuis, slug).toBeTruthy();
+      for (const l of ["fr", "en"] as const) {
+        if (depuis && !depuis[l]) continue;
+        const trouves = avis(l, "mariage").filter((a) => a.auteurs === auteurs && (!depuis || a.texte.includes(depuis[l]!)));
+        expect(trouves.length, `${slug} (${l})`).toBeGreaterThan(0);
+      }
     }
   });
 

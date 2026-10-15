@@ -23,9 +23,10 @@ export type ContenuOption = {
   /** 3 à 6 photos réelles de l'option. */
   galerie: CleImage[];
   /**
-   * Avis de mariés qui parle de l'option. `depuis` : début de la phrase à citer
-   * (sert aussi à distinguer deux avis des mêmes auteurs).
+   * Avis de mariés qui parle de l'option. `depuis` : début de la phrase à citer, par langue
+   * (sert aussi à distinguer deux avis des mêmes auteurs). Si la phrase est introuvable
+   * dans une langue (traduction absente), l'avis n'est pas affiché dans cette langue.
    */
-  avis?: { auteurs: string; depuis?: string; image: CleImage };
+  avis?: { auteurs: string; depuis?: Partial<Bilingue<string>>; image: CleImage };
   textes: Bilingue<TextesOption>;
 };

@@ -44,15 +44,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-/** Citation d'un avis à partir de la phrase qui parle de l'option (le début de l'avis à défaut). */
+/** Citation d'un avis, à partir de la phrase qui parle de l'option ; rien si elle est introuvable. */
 function citation(c: ContenuOption, locale: Locale) {
   if (!c.avis) return undefined;
   const { auteurs, depuis } = c.avis;
-  const candidats = avis(locale, "mariage").filter((a) => a.auteurs === auteurs);
-  const choisi = candidats.find((a) => depuis && a.texte.includes(depuis)) ?? candidats[0];
+  const fragment = depuis?.[locale];
+  if (depuis && !fragment) return undefined;
+  const choisi = avis(locale, "mariage").find((a) => a.auteurs === auteurs && (!fragment || a.texte.includes(fragment)));
   if (!choisi) return undefined;
-  const debut = depuis ? choisi.texte.indexOf(depuis) : -1;
-  return { texte: extrait(debut >= 0 ? choisi.texte.slice(debut) : choisi.texte, 260), auteurs };
+  const texte = fragment ? choisi.texte.slice(choisi.texte.indexOf(fragment)) : choisi.texte;
+  return { texte: extrait(texte, 260), auteurs };
 }
 
 /** Quatre autres options, à la suite de celle-ci dans la liste. */

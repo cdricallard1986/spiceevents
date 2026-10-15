@@ -12,7 +12,7 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
   textes: {
     fr: {
       seo: {
-        titre: "Guirlandes lumineuses guinguette pour mariage en Île-de-France | Spice Events",
+        titre: "Guirlandes guinguette pour mariage en Île-de-France | Spice Events",
         description:
           "Guirlandes guinguette en intérieur comme en extérieur : une lumière chaude pour le cocktail, le dîner et la piste. Installation sur mesure et sécurisée, Paris et Île-de-France.",
       },
@@ -58,7 +58,7 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
     },
     en: {
       seo: {
-        titre: "Festoon string lights for weddings in Paris & Île-de-France | Spice Events",
+        titre: "Festoon string lights for weddings in Paris | Spice Events",
         description:
           "Festoon lights indoors and out: warm light for drinks, dinner and the dance floor. Tailored, safe installation in Paris and the Île-de-France region.",
       },

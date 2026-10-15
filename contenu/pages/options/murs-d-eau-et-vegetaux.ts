@@ -13,7 +13,7 @@ export const MURS_D_EAU_ET_VEGETAUX: ContenuOption = {
   textes: {
     fr: {
       seo: {
-        titre: "Mur d'eau et mur végétal personnalisés pour mariage et événement | Spice Events",
+        titre: "Mur d'eau & mur végétal personnalisés | Spice Events",
         description:
           "Murs d'eau et murs végétaux personnalisables (initiales, logo, néon) pour votre entrée, votre espace photo ou votre stand. Mariages et événements en Île-de-France.",
       },
@@ -64,7 +64,7 @@ export const MURS_D_EAU_ET_VEGETAUX: ContenuOption = {
     },
     en: {
       seo: {
-        titre: "Personalised water walls & green walls for weddings and events | Spice Events",
+        titre: "Personalised water walls & green walls | Spice Events",
         description:
           "Water walls and green walls you can personalise (initials, logo, neon) for your entrance, photo area or stand. Weddings and events in Paris and Île-de-France.",
       },

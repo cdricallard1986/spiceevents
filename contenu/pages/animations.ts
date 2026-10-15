@@ -13,7 +13,7 @@ type Animations = {
 export const ANIMATIONS: Bilingue<Animations> = {
   fr: {
     seo: {
-      titre: "Animations de mariage en Île-de-France : photobooth, bar à vinyles… | Spice Events",
+      titre: "Animations de mariage et de soirée en Île-de-France | Spice Events",
       description:
         "Photobooth, bar à vinyles, livre d'or audio, ouverture de bal, guirlandes, murs d'eau, sonorisation de cérémonie : des animations sur mesure pour votre mariage à Paris et en Île-de-France.",
     },

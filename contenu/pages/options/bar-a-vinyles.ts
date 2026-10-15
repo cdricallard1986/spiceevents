@@ -3,7 +3,7 @@ import type { ContenuOption } from "./types";
 export const BAR_A_VINYLES: ContenuOption = {
   image: "presta-vinyles-salon",
   galerie: ["vinyles", "presta-vinyles-installation", "presta-vinyles-veranda", "presta-vinyles-platine"],
-  avis: { auteurs: "Léa & Floris", depuis: "Le bar a vinyle", image: "presta-vinyles-installation" },
+  avis: { auteurs: "Léa & Floris", depuis: { fr: "Le bar a vinyle" }, image: "presta-vinyles-installation" },
   textes: {
     fr: {
       seo: {

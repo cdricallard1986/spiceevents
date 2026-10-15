@@ -7,7 +7,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = {
   textes: {
     fr: {
       seo: {
-        titre: "Sonorisation déportée multi-espaces pour mariage et événement | Spice Events",
+        titre: "Sonorisation déportée pour mariage et événement | Spice Events",
         description:
           "Cérémonie, cocktail, dîner, salle annexe : une sonorisation coordonnée dans chaque espace, sans coupure. Mariages et événements à Paris et en Île-de-France.",
       },

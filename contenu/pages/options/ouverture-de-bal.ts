@@ -9,11 +9,11 @@ export const OUVERTURE_DE_BAL: ContenuOption = {
     "presta-bal-etincelles-fumee",
     "presta-bal-fumee-nb",
   ],
-  avis: { auteurs: "Clémentine & Kévin", depuis: "Notre ouverture de bal", image: "premiere-danse-rose" },
+  avis: { auteurs: "Clémentine & Kévin", depuis: { fr: "Notre ouverture de bal", en: "Our first dance" }, image: "premiere-danse-rose" },
   textes: {
     fr: {
       seo: {
-        titre: "Ouverture de bal spectaculaire : étincelles froides & fumée lourde | Spice Events",
+        titre: "Ouverture de bal : étincelles froides & fumée lourde | Spice Events",
         description:
           "Étincelles froides et fumée lourde synchronisées avec votre première danse : un effet spectaculaire, testé et sécurisé. Mariages à Paris et en Île-de-France.",
       },

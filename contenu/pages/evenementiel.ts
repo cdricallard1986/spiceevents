@@ -19,7 +19,7 @@ type Evenementiel = {
 export const EVENEMENTIEL: Bilingue<Evenementiel> = {
   fr: {
     seo: {
-      titre: "DJ, son & lumière pour soirées privées et événements d'entreprise en Île-de-France | Spice Events",
+      titre: "Soirées privées & événements d'entreprise en Île-de-France | Spice Events",
       description:
         "Anniversaires, soirées privées, séminaires, galas, lancements de produit : direction musicale, sonorisation, éclairage et coordination clé en main à Paris et en Île-de-France.",
     },
@@ -150,7 +150,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
   },
   en: {
     seo: {
-      titre: "DJ, sound & lighting for private parties and corporate events in Paris | Spice Events",
+      titre: "DJ for private parties & corporate events in Paris | Spice Events",
       description:
         "Birthdays, private parties, seminars, galas, product launches: music direction, sound, lighting and turnkey coordination in Paris and the Île-de-France region.",
     },
