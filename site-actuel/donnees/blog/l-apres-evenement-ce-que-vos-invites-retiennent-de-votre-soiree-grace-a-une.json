@@ -1,0 +1,488 @@
+{
+ "blogPostMeta": {
+  "id": 60362587,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-03-04T07:23:40.536-08:00",
+  "publishedAt": "2026-03-04T07:28:26.144-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/l-apres-evenement-ce-que-vos-invites-retiennent-de-votre-soiree-grace-a-une",
+  "customSlug": null,
+  "editCount": 91,
+  "publishedEditCount": 26,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/l-apres-evenement-ce-que-vos-invites-retiennent-de-votre-soiree-grace-a-une",
+   "title": "L’après-événement : ce que vos invités retiennent de votre soirée grâce à une technique bien pensée",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/414909_853794.jpeg",
+   "description": "On parle souvent du jour J, de la playlist parfaite ou encore de l’ouverture de bal. Pourtant, la véritable réussite d’un mariage ou d’un  se mesure souvent après coup. Dans les jours qui suivent, ce que retiennent réellement vos invités n’est pas un détail isolé, mais une impression globale :...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi l’accompagnement en amont est aussi important que le jour J ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-l-accompagnement-en-amont-est-aussi-important-que-le-jour-j",
+  "nextBlogPostId": 60979558,
+  "prevBlogPostTitle": "Une ambiance intergénérationnelle",
+  "prevBlogPostRelativeUrl": "/blog/une-ambiance-intergenerationnelle",
+  "prevBlogPostId": 59987511
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_c755a00e-9d69-437e-bf28-c7dc8ad5a2bf",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_55a4fa75-2150-4f24-9dcd-b99d18ff69d4",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_3459f2b4-1fce-478c-9611-c85496d72139",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p><strong>L’après-événement : ce que vos invités retiennent de votre soirée grâce à une technique bien pensée</strong></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_863bf78d-966c-4c3b-a380-7927bc80f963",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Tout est dans le détail</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_502a6d18-ce66-4f67-af15-6dbd264b4151",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/414909_853794",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1365,
+    "w": 2048,
+    "s": 2028601,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_29057fa5-5540-46cd-8411-7ec8e4ca4d16",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_1d70d2bb-ab31-4e5e-ab8e-ef248bc6b514",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_ef85f2e2-7ae6-4510-a280-3bc90e3d0d6b",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_06db9533-cd42-45e5-899d-a471afa7fa3f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_cef3b19c-828c-4c81-bd58-f39b70c0abef",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_39ee59e6-bed3-4fb6-8d85-f0e2ed7eac6c",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_d0699cbe-6147-4092-a8a8-026f5f90b5e0",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f880daab-b682-4325-ac7d-91373dfa12be",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "581e0cda-8b8c-4a42-bf0d-c8ba3844fd51",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">On parle souvent du jour J, de la playlist parfaite ou encore de l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u>ouverture de bal</u></a></span><span style=\"color: #000000;\">. Pourtant, la véritable réussite d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou d’un  se mesure souvent après coup. Dans les jours qui suivent, ce que retiennent réellement vos invités n’est pas un détail isolé, mais une impression globale : une ambiance, une énergie, une sensation de fluidité. C’est précisément là qu’une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumiereshttps://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique bien pensée</u></a></span><span style=\"color: #000000;\"> fait toute la différence.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f880daab-b682-4325-ac7d-91373dfa12be",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "28942d5e-f3ea-43c9-907d-a38750c7f603",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2b2fecfd-28dc-484e-baf2-fd76fabd4b31",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d614e191-02f5-485b-b908-e370f163d55e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La technique, fondation invisible de l’expérience</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7af88903-3b10-4699-a554-dab498a0a0c7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9cb06c38-353b-48e3-b498-d13d5048130e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, l’expérience nous montre qu’une soirée mémorable repose avant tout sur une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>préparation technique rigoureuse</u></a></span><span style=\"color: #000000;\">. Lorsque </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieresVV\" data-type=\"undefined\" target=\"_self\"><u>le son, la lumière</u></a></span><span style=\"color: #000000;\"> et le déroulé sont parfaitement maîtrisés, tout paraît naturel aux yeux des invités. À l’inverse, le moindre déséquilibre technique peut casser la dynamique, même avec une excellente sélection musicale. La </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique</u></a></span><span style=\"color: #000000;\"> n’est pas un simple support logistique : elle constitue la fondation invisible de l’expérience vécue (</span><span style=\"color: #000000;\"><em>voir l’article : Pourquoi la technique est invisible quand elle est bien faite ?</em></span><span style=\"color: #000000;\">).</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "82c28a64-734e-4bf6-85f1-303979ce286c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "16c3f1c5-0856-472c-8800-cde434920528",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0e6c97c6-b9c3-47d9-8bb7-d1c1d5c0934f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "bca3bf61-fbb2-4bf2-882a-c2e53537fd7c",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/664801_833802",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1433,
+     "w": 2048,
+     "s": 2595268,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "65af3d77-3fb3-40ae-986b-31e21453e42a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b5c7b3bb-e545-4703-ae9b-ac660b90b80e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Le rôle déterminant du son</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "154f83be-fe6e-47d2-bb65-56bdca070cc6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "07eb39fa-2d48-4981-b208-97f376e6d0a3",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>Le son</u></a></span><span style=\"color: #000000;\"> est souvent le premier facteur déterminant. Un système audio bien calibré doit s’adapter aux différents temps de la soirée. Pendant le dîner, il doit permettre aux invités d’échanger confortablement tout en installant une atmosphère chaleureuse. Au moment des temps forts, il doit gagner en présence sans jamais devenir agressif. Enfin, sur la piste de danse, il doit délivrer une énergie claire et enveloppante qui donne envie de rester danser. Cette gestion fine des niveaux et des transitions demande une réelle expertise terrain et une lecture constante de la salle.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1d301544-b95d-4318-b6f1-c2f248a44da6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9cd7cc9a-3b92-4e74-bfc2-d4f66c912d83",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "acaa765e-9c8e-4ffc-b865-18a5d730b863",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "83c10a62-9094-4eb0-bd18-949f34c9b71a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>L’impact visuel de la lumière</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9a74a31d-539e-42d8-87c0-65b0d412fd2f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a57f53d6-9051-4c02-af1b-ba7508361486",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>La lumière</u></a></span><span style=\"color: #000000;\"> joue également un rôle majeur dans la mémoire émotionnelle de vos invités. Avant même de se souvenir d’un morceau précis, ils retiennent une ambiance visuelle. Une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>mise en lumière cohérente</u></a></span><span style=\"color: #000000;\"> valorise le lieu de réception, accompagne les moments clés et soutient la montée en puissance de la soirée. Une lumière statique ou mal adaptée peut rapidement donner une impression plate, tandis qu’un éclairage évolutif crée une véritable dynamique. L’objectif n’est jamais d’en faire trop, mais de soutenir chaque moment avec justesse.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "314b63f5-0f6e-4fdd-8e2c-040825feaa9c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "40d39fa9-a3fa-4884-ae23-f21e6c7dd486",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d0d9a5f1-3abe-441c-9fe9-816d78f43717",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "9ea3e37e-aacd-4c96-9979-e3e6279b8f08",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/744283_441724",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1296,
+     "w": 2048,
+     "s": 2151096,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "29b4e582-543c-48ee-b1b6-a51ee64c5827",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1bb68e1c-3df1-488f-9e7c-59df5d335551",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>La fluidité, véritable signature professionnelle</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "65ed337f-1c11-423a-b64f-afcc9720603b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0ab77dfa-54c2-4441-a824-0d3f9ff7c0b5",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Au-delà du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>son et de la lumière</u></a></span><span style=\"color: #000000;\">, la fluidité du déroulé reste l’un des marqueurs les plus forts de professionnalisme. Lorsque tout s’enchaîne naturellement — les discours, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>les animations</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u>l’ouverture de bal</u></a></span><span style=\"color: #000000;\">, la soirée dansante — les invités perçoivent immédiatement la qualité de l’organisation. Cette impression de facilité est en réalité le fruit d’une coordination précise en amont et d’une capacité d’adaptation en temps réel. Anticiper les temps forts, communiquer avec les autres prestataires et ajuster le rythme de la soirée sont des éléments essentiels pour maintenir l’énergie collective.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e1bf659b-fd7d-4ba0-88e0-8f0f2d3614b3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1106114b-2ea4-4ca5-815e-ef8ceee2101b",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "17bcb803-bc7b-4339-8d88-ad760a74f98e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2b218521-905a-46af-8f9d-3e141d2d6a74",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Une approche globale signée Spice Events</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "18406104-6ea1-4193-bd40-e8c0c5883421",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d6a152cf-f955-47cb-93b2-45a98feaa6a5",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">C’est pourquoi </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> adopte une vision globale de chaque événement. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>La technique</u></a></span><span style=\"color: #000000;\">, l’animation et la structure de la soirée sont pensées ensemble, jamais séparément. Cette approche permet non seulement de sécuriser le bon déroulement du jour J, mais surtout de maximiser l’impact émotionnel après l’événement. Car ce sont bien les retours des invités, les messages reçus le lendemain et les souvenirs partagés qui mesurent la réussite réelle d’une soirée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c584d668-1e9c-459d-a152-715ae58ed65a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "41c22ff9-3d4c-4bbd-a448-60401bafcda2",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "91ad8eaa-ef33-43e3-b415-88ab42a546df",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "4e22fa41-9d47-40b2-8027-ffed9b9eda92",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/780951_62320",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1365,
+     "w": 2048,
+     "s": 2043247,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d9b900dd-83c9-45ce-841c-7405f14a97a6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a9fe69a5-768d-4588-aad2-52047692c03b",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Créer un souvenir qui dure</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ea80a838-f267-494b-b693-ac8eee549478",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "71ca0aec-b51d-4405-8254-6a42104b5178",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">En définitive, une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique bien pensée</u></a></span><span style=\"color: #000000;\"> ne se voit pas toujours, mais elle se ressent durablement. Elle permet de créer une atmosphère immersive, de maintenir une piste de danse active et d’offrir une expérience cohérente du début à la fin. Pour les mariés comme pour leurs invités, c’est souvent ce niveau de maîtrise qui transforme une belle soirée en souvenir marquant.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bea32289-8dca-4866-b5cd-8ca17f337cd9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a833213e-9a01-47ba-831e-fc34e5ad7838",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

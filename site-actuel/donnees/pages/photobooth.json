@@ -1,0 +1,1006 @@
+{
+ "type": "Page",
+ "id": "f_b5d2274a-be74-4e6c-8593-0873371be0f4",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_07d61056-9b5a-4e93-b005-f891fb99f3bb",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_dbe90686-b009-436e-bc5b-0fb5cb18253e",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_a729f39f-43b8-4832-99ac-68e3a7eefd43",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_17c7b1a4-c15f-4790-8970-69dacb16de9d",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_99781e42-c6fb-4529-814f-8eefc223418e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Photobooth</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d3ac3076-b72d-425f-811e-cec9381d12ae",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default\"><em>Capturez, imprimez et partagez vos plus beaux moments</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_b3a2f878-8742-4a80-985b-3f0be1d48783",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/483493_211472",
+         "storage": "s",
+         "format": "jpeg",
+         "h": 920,
+         "w": 736,
+         "s": 107067,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_b93236b7-966d-4f63-a87c-c435bb3cc956",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_f9682dfc-406f-4cc7-b3fe-dcae3edca26b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_33b23d8d-b9ab-411b-94cd-62374f9de338",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_f199b56b-34f1-4ddb-b0d8-1a216d1b854b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_ff898846-22a6-4ce5-afb4-41ea2cc561fa",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_08c7d7b3-82a0-44a0-9154-b2d1b2af52c5",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_77f64596-722b-451e-9c59-6ed9e61b37ee",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_64a733b0-150d-4ebe-89cd-0baf0da3ddf1",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_849971c3-3fc2-4faa-9334-83039551de87",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_9807841d-ce4c-420d-83a4-94c07c91f226",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_687cae26-164d-4ddf-a346-def279f454e4",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_b151cb3e-dd45-4c92-92b2-3cce35d86ef2",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_e42d1ec4-6d26-42e1-8906-577e74616531",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte accueil",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8afb88a3-7945-4a95-b783-7470801089ff",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_e10b62ee-3e14-424c-a466-f3261858355a",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_1780b828-d986-4c5b-9f80-46c5bfe57297",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_594032d2-ab0a-4be9-968e-a04abe783802",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_8fd3cd4a-631d-4912-8184-ae29e7f4d5a6",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_b722cbbd-0ac1-418f-84e4-d100e0bbb8c2",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_9e27e45b-ec6b-4fb0-8855-a43cf2a44f8b",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_34a7f5eb-95bf-4499-a3a7-5eb283bd0960",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-title s-font-title s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"color: #000000;\">Le Photobooth by Spice Events</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_9d61dbf1-c183-4c03-b75e-427da88880c4",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_03f9f7a3-5d42-4f5a-bbd5-ddc296854ae8",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_5213c1e9-b49c-46f1-82c1-227029764e1e",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_905d73f5-2669-4a03-a1e5-5b3bb36fb87f",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "6c2469e8-4b7d-45fa-9b6f-b8c8ec56b6df",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_eb284565-dbb9-4eb4-9499-d058209c57ea",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Des souvenirs instantanés, capturés avec style.</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_ae03d692-87d9-4735-b10f-e4aad5ad012d",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_c0bc97f2-6093-4066-962d-642313d9b4db",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_1c1949be-9d47-465f-bb4b-b049e33e21ec",
+                 "defaultValue": false,
+                 "alignment": "justify",
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Le Photobooth immortalise vos instants forts avec fun et créativité. Vos invités repartent avec une photo imprimée directement ou une version numérique envoyée par mail. Avec ou sans accessoires, cette animation apporte de la spontanéité et crée des souvenirs à garder, que ce soit pour un mariage, un anniversaire ou un événement corporate.</span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_53e3d2b1-4de2-4c7b-beef-e33ea0dd17e2",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_a15f055a-901f-4bcb-8c82-48f24f7db33e",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_1c7f4802-79ee-44ea-b321-ea7fef7d3e3f",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_9706ed3d-a84c-49aa-8d42-f7cb234ff1a3",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "padding": {
+      "top": "none",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_1c6a94d1-3f71-45ca-9391-eac1931a1986",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_5faf4698-93f4-4cbc-8cd0-5f73582b6181",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_2cd1603a-000c-4272-842d-8be89e426707",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_85f16c49-f3c7-4430-b37a-80c041264b46",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_b7038935-ed34-4e57-9b24-881504fdd3bb",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/573542_871649.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/573542_871649.jpg",
+       "description": "photobooth blanc",
+       "storageKey": "22139555/573542_871649",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1104,
+       "w": 736,
+       "s": 88931,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_0497bd97-182a-411f-9b50-75e732ed8a6f",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/468500_536706.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/468500_536706.jpg",
+       "description": "photobooth blanc",
+       "storageKey": "22139555/468500_536706",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1104,
+       "w": 736,
+       "s": 69925,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_46d324a9-9f2a-4a8c-ae31-b927510f0652",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/751520_104267.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/751520_104267.jpg",
+       "description": "photobooth blanc dans un décor floral",
+       "storageKey": "22139555/751520_104267",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 781,
+       "w": 640,
+       "s": 115571,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_32818d1e-1529-46e5-a0ef-8a194ffb7609",
+   "defaultValue": true,
+   "template_name": "text",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_d80802fd-f6eb-4945-b375-2e1cfd14a05e",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Bullet points",
+     "sync_key": null,
+     "layout_variation": "text-two-button",
+     "padding": {
+      "top": "none",
+      "bottom": "normal"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_bd88c3c3-6a82-48d8-b6f9-d75090343412",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "focus": null
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_ef6f15b7-9a4b-42bf-aac6-f06350fd7e8e",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_95822a46-a423-45e0-b35b-dca909465c0f",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_427dfa8e-42dd-491b-9cdf-cb10aca6a779",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_634f5b2e-d73e-4716-9f9a-3d19aad69ae6",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_af724298-d85e-43dd-bbce-f9fb7e0b0a47",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: center; font-size: 28px;\"><span style=\"color: #000000;\"><strong>Les éléments inclus dans notre prestation</strong></span></h2></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_ea31e536-9160-4e4d-9387-b84919ab1da2",
+         "defaultValue": false,
+         "alignment": "left",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span class=\"s-text-color-default\">Pour que votre animation se déroule en toute sérénité et avec style, chaque prestation comprend les éléments essentiels suivants :</span></p><ul><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">400 tirages photos</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Personnalisation du cadre imprimé sur les photos</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Envoie de toutes les photos prises en version numériques dès le lundi</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Déplacement du photobooth entre le cocktail et le repas</span></li></ul><p class=\" s-text-color-default s-rich-text-wrapper\"><span style=\"display: inline-block\"></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_b7ab5098-47e5-497b-8dac-0b91ff736853",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_cfdb1963-9af0-45a0-9574-e0dbc1398f28",
+         "defaultValue": true,
+         "url": "",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": null,
+         "storage": null,
+         "format": null,
+         "h": null,
+         "w": null,
+         "focus": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_88a15ba1-14b7-4fdc-89c5-44745d336baa",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_c9871847-3bc8-4d3a-a36e-65a2e0bda879",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h2 class=\" s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: center; font-size: 28px;\"><strong>Les petits plus qui font la différence</strong></h2></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_8faa03a5-bfba-421b-a71d-c2d1ab0b772c",
+         "defaultValue": false,
+         "alignment": "left",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper\" style=\"text-align: left; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-text-color-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\">Pour aller au‑delà de l’animation classique, voici les options qui apportent ce petit “plus” à votre événement : </span><span style=\"color: var(--s-pre-color2);\" class=\"s-text-color-default s-rich-text-wrapper\">(devis sur demande)</span></p><ul><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default s-text-color-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Mur photocall de fond</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Habillage de la borne sur mesure</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Livraison et installation</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Tirage photo illimité</span></li><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Accesoires déo et déguisement </span></li></ul></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_0c9e9e1e-e522-40ec-84b4-cfdaf6563936",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_405f89a3-a040-46df-9bad-7fa4d2158025",
+         "defaultValue": true,
+         "url": "",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": null,
+         "storage": null,
+         "format": null,
+         "h": null,
+         "w": null,
+         "focus": null
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_902376d8-b8ef-403a-b4a5-06af44f33dc8",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_9562a762-95dc-45f6-a163-d55375f4f9d9",
+       "defaultValue": true,
+       "value": "Use a text section to describe your values, or show more info, or summarize a topic, or tell a story. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_81bd2dde-f52e-49fe-b8b8-c2d3ed0e649c",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_6e416b34-7ef8-48df-a4b5-968832a63185",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_e17be3d5-f327-4fe5-ae7f-b2d81b51a065",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     },
+     "padding": {
+      "top": "normal",
+      "bottom": "none"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_cdcf3e5d-9dec-4356-b97a-cc9f64dc4fd5",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Envie d’un Photobooth pour votre événement ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_6923cd27-d23d-4495-86b1-6eebd26e3d18",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Contactez Spice Events et donnez vie à vos plus beaux instants.</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_250b0ed8-5aa7-44df-ab35-4ff5159de5eb",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/97764_439855",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 919,
+     "w": 736,
+     "s": 65498,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_053b20ef-df02-4b91-a181-6f979d73a47d",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Photobooth",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1761844314051#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1761844414484#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_25b49bd3-9601-479f-a16d-0a083908f663"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_8ba44476-af4b-4ad0-b627-5835291cb08c"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_3d235452-5be2-4599-91f7-f7104d8357b4",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_0f249402-a25a-4078-a43c-5fc2d65c463a"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_d7cd2b9e-94fb-464f-a063-346af14ebb41"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_1976ace8-17fd-4beb-98fa-dfe070f0b245"
+          },
+          "$item1761844314051#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_fa0d2336-b9b3-490d-8f7c-4b7b1f11fe29"
+          },
+          "$item1761844414484#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_4d3c9303-35dc-433c-a89d-69e2389003bc"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1761844414484#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_36d30e61-fc79-4a65-8872-bd6292a8e7b7"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_f2f0b895-ab4a-463b-ba7f-f972e18ce388"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1761844314051#date",
+         "$item1761844414484#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1761844314051#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1761844414484#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Photobooth",
+ "description": "Capturez vos plus beaux sourires avec notre Photo Booth fun et personnalisable.",
+ "uid": "98a0082d-40f9-464f-ba88-6e8814a33821",
+ "path": "/photobooth",
+ "pageTitle": "Photobooth",
+ "autoPath": true,
+ "authorized": true
+}

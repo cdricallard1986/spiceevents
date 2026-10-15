@@ -1,0 +1,502 @@
+{
+ "blogPostMeta": {
+  "id": 61585713,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-03-31T16:03:54.620-07:00",
+  "publishedAt": "2026-03-31T16:27:33.011-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/trop-d-animations-le-piege",
+  "customSlug": null,
+  "editCount": 223,
+  "publishedEditCount": 198,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/trop-d-animations-le-piege",
+   "title": "Trop d'animations : le piège",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/100085_196783.png",
+   "description": "Lors de la préparation d’un mariage ou d’un événement, il est naturel de vouloir surprendre et divertir ses invités. Photobooth, bar à vinyles, livre d'or audio, guirlandes lumineuses ou autres animations : les possibilités sont nombreuses et séduisantes. Pourtant, multiplier les animations sans...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi investir dans du matériel fiable est plus responsable pour l’environnement ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-investir-dans-du-materiel-fiable-est-plus-responsable-pour",
+  "nextBlogPostId": 62694170,
+  "prevBlogPostTitle": "Comment un bon éclairage fait paraître un lieu plus haut de gamme",
+  "prevBlogPostRelativeUrl": "/blog/comment-un-bon-eclairage-fait-paraitre-un-lieu-plus-haut-de-gamme",
+  "prevBlogPostId": 61370348
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_b73cb499-6d05-4a0a-96af-8352d567af6d",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_aef1271f-25c3-4f13-8b2c-9fc8e40feca1",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_52578db3-1c0b-4653-aff9-a1edf6c6dca8",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Trop d'animations : le piège</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_4747ad69-681d-4986-a6da-c4e2ca87458f",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Comment garder une expérience qualitative</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_77b0723c-73a0-4691-b84a-d65581d38024",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/100085_196783",
+    "storage": "s",
+    "format": "png",
+    "h": 800,
+    "w": 800,
+    "s": 1265479,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_8aa2aa65-d9b1-4738-bc94-26e2deb592f2",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_dc5ae6ba-c565-4942-9782-fda680277721",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_91d573c2-2ffe-4f75-8f73-bed701bd41bd",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_de0456ff-82f8-49ea-ae50-b010af51fd13",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_86dbe846-bca4-49ca-bcba-25e2a17d39c6",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_3ecd68ed-2523-451f-9920-4af6889bbe00",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_e166fbca-0b70-4139-a3d9-573d1bf598a8",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "b97271e6-a7e3-4ba3-9a01-64eaa786e678",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a760c711-7a60-4eca-9a93-841e78c1a326",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Lors de la préparation d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, il est naturel de vouloir surprendre et divertir ses invités. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/livre-d-or-audio\" data-type=\"undefined\" target=\"_self\"><u>livre d'or audio</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes lumineuses</u></a></span><span style=\"color: #000000;\"> ou autres </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> : les possibilités sont nombreuses et séduisantes. Pourtant, multiplier les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> sans véritable stratégie peut produire l’effet inverse de celui recherché. Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, nous observons régulièrement qu’un excès d’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations </u></a></span><span style=\"color: #000000;\">nuit à la fluidité et à l’impact global de la soirée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b97271e6-a7e3-4ba3-9a01-64eaa786e678",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dfacae4a-6ad1-4a5d-9365-b4b260a1b095",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "892f7a14-9df6-44ed-8da4-cd1536a505f1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "81a6627c-e434-4c11-8912-841170f8d7a1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>L’</strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u><strong>animation</strong></u></a></span><span style=\"color: #000000;\"><strong> doit servir l’expérience, pas la surcharger</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "009ba3d4-cf8b-44fa-b377-3d93f4377c03",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "55951cac-2562-4987-98ea-245b5f541a0c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations tendances</u></a></span><span style=\"color: #000000;\"> apportent une vraie valeur lorsqu’elles sont bien intégrées à la soirée et cohérentes avec l’ambiance souhaitée. L’objectif n’est pas d’occuper chaque minute, mais de créer des moments forts mémorables. Une accumulation d’activités peut fragmenter l’attention des invités, casser la dynamique de la piste de danse et diluer l’émotion. Comme le rappelle notre approche chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> doivent donner du style à l’événement et créer des souvenirs, pas saturer le programme.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e6ef9886-ef77-4eb2-8e85-6b51370020f8",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "0e27de21-1fce-4594-8f66-0273eebe0cd2",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/398818_228654",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 736,
+     "w": 736,
+     "s": 51975,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4fd4135c-162f-49e1-bac1-7e18e78e95e2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "72e7c283-60a9-499e-87c3-eb1e28bd7ddf",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><br><span style=\"color: #000000;\"><strong>Le risque de casser la dynamique de la soirée</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9a37cf20-7ad2-4542-8b0f-21e4eb626f1e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a42c259d-c667-4e1f-a12e-a742c1241cca",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Une soirée réussie repose sur un rythme progressif. Lorsque les</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u> animations</u></a></span><span style=\"color: #000000;\"> s’enchaînent trop vite ou sont trop nombreuses, la montée en puissance devient difficile à maintenir. Les invités passent d’une activité à une autre sans véritable temps d’immersion. Résultat : la piste de danse met plus de temps à se remplir ou se vide plus rapidement. La clé est de préserver des respirations naturelles et de laisser l’ambiance musicale faire son travail.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9a37cf20-7ad2-4542-8b0f-21e4eb626f1e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1bc87dae-f4d3-47cb-bcb5-d059aebb45ab",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "54cfa130-1799-4e2a-87e1-91f4a1bddb69",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "19be98c8-c4a7-4b2d-bc99-80fe8999fc83",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>La qualité prime toujours sur la quantité</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "686e7dd7-782e-44c7-9599-a1c54f3442f9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0c6588a8-9422-4fb0-8ce6-941274234652",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animation</u></a></span><span style=\"color: #000000;\"> bien choisie et parfaitement exécutée aura toujours plus d’impact que plusieurs </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> moyennes. Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>photobooth</u></a></span><span style=\"color: #000000;\"> bien placé ou un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\"> peuvent devenir de véritables points d’attractions et générer des souvenirs forts. À l’inverse, multiplier les dispositifs peut diluer l’attention et créer une impression de dispersion. L’enjeu est donc de sélectionner les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> en fonction du profil des invités, du lieu et du timing global.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2bd9c6dc-45ea-45fe-a618-80d5f27c96b6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a6f5d5dd-47bc-4795-94af-2146025f3f83",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/310081_7973",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 564,
+     "w": 564,
+     "s": 186297,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "686e7dd7-782e-44c7-9599-a1c54f3442f9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5cf1cbe2-a84a-44a0-b585-074b08535f3d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "95e68d9a-e5d7-417a-ad46-72ef6533f647",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8fc7b0d1-6067-4f08-bee3-2df7312457f5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>Une question de cohérence et de timing</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "db0cabc3-8592-46f5-9d1e-bb3552e52943",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0a18f60b-31f9-4f4a-bcc0-f46820368c95",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Toutes les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> ne sont pas adaptées à tous les moments de la journée. Certaines fonctionnent parfaitement pendant le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>cocktail</u></a></span><span style=\"color: #000000;\">, d’autres prennent tout leur sens en soirée. Sans une vision d’ensemble du déroulé, le risque est de créer des chevauchements ou des temps morts. Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, l’intégration des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> se fait toujours en lien avec le planning global afin de préserver la fluidité de l’événement. Nous vous conseillons de prévoir vos </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> entre la fin du dîner et avant l'arrivée de la pièce montée. Choix stratégique ! Cela permet de ne pasengendrer du retard sur le service du traiteur et à vos invités de digérer un peu tout en s'amusant !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "db0cabc3-8592-46f5-9d1e-bb3552e52943",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5e084467-0839-481f-98a0-3bf31fd7f449",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ec0e6cca-5ee5-4004-948d-31dd3953aee5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c943ba87-a52d-4e01-9e38-983e031e35a1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>L’importance du regard professionnel</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cd4e3117-4f20-4c68-90ce-d36984de679f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ffb853da-027b-4dd3-b30a-2c3366c18b70",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Parce qu’ils interviennent sur de nombreux événements, les professionnels de l’événementiel disposent d’un recul précieux sur ce qui fonctionne réellement en conditions réelles. Leur rôle est aussi de conseiller, parfois de tempérer certaines envies et d’orienter vers les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> les plus pertinentes. Cette phase de conseil permet d’éviter l’effet “catalogue” et de construire une soirée équilibrée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a419f27d-4a98-4a38-8dbe-b3c019f88319",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "7abd94d5-9975-4c11-8540-70f2f8139996",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/986728_695756",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1080,
+     "w": 1623,
+     "s": 242531,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "351a5ac4-bf88-4d42-99cb-a4d7aefa7ef4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c24c43e2-a3fd-419c-a1b9-3474cfe4ec99",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>L’approche Spice Events</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "692b7578-d54c-4d4d-8c3e-6b17368f0f6c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0d90aed9-22a6-4692-8459-e2812976168a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animation</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>s tendanc</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>es</u></a></span><span style=\"color: #000000;\"> sont proposées comme des leviers d’ambiance ciblés et non comme une accumulation systématique. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\"> ou autres concepts sont intégrés de manière réfléchie pour renforcer l’expérience sans nuire au rythme de la soirée. Chaque recommandation tient compte du lieu, du nombre d’invités, du style recherché et du déroulé global.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "692b7578-d54c-4d4d-8c3e-6b17368f0f6c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1a3788ce-f503-4d3b-b380-3ee99d816ea0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7e7990e7-b6ee-4f26-a4fa-265790b1937b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "76fcd2e2-cdd9-4a81-96f2-8cc61fef7956",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><strong>Trouver le juste équilibre</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c90a3a24-754b-4fa8-a51e-a6ed70dc8cd3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d651f60c-7f5e-4100-9d51-19eb171fe6c8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Une soirée mémorable n’est pas celle qui propose le plus d’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\">, mais celle qui maintient l’attention et l’énergie des invités du début à la fin. Le bon équilibre repose sur une sélection pertinente, un timing maîtrisé et une vision d’ensemble cohérente. Bien dosées, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> deviennent de véritables accélérateurs d’ambiance. Mal calibrées, elles peuvent au contraire fragmenter l’expérience.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "12511262-7d4a-402a-9310-851e21fced64",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bfb69aee-c0c8-4790-8710-d41b47ad9658",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

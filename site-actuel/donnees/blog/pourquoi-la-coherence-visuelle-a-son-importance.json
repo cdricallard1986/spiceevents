@@ -1,0 +1,470 @@
+{
+ "blogPostMeta": {
+  "id": 62828676,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-04-30T05:57:07.054-07:00",
+  "publishedAt": "2026-04-30T06:09:10.038-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-la-coherence-visuelle-a-son-importance",
+  "customSlug": null,
+  "editCount": 70,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-la-coherence-visuelle-a-son-importance",
+   "title": "Pourquoi la cohérence visuelle a son importance ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/853986_804536.jpeg",
+   "description": "Avant même que la musique ne démarre ou que la soirée ne prenne son rythme, vos invités perçoivent d’abord une ambiance visuelle. Le regard capte l’éclairage, l’harmonie des couleurs, l’intégration du matériel et l’atmosphère générale du lieu. Cette première impression conditionne immédiatement...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi le plan B météo doit être pensé d’un point de vue technique ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-le-plan-b-meteo-doit-etre-pense-d-un-point-de-vue-technique",
+  "nextBlogPostId": 62829196,
+  "prevBlogPostTitle": "Pourquoi investir dans du matériel fiable est plus responsable pour l’environnement ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-investir-dans-du-materiel-fiable-est-plus-responsable-pour",
+  "prevBlogPostId": 62694170
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_426c98dc-8f1b-4d41-a9cd-350368288158",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_fa60d781-74e6-4d3d-9a39-60c9d427feef",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_c6ad76a4-cdfd-459e-82a8-852890078523",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>Pourquoi la cohérence visuelle a son importance ?</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_81a0447a-892c-4c7d-825e-8378552b6416",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Un aspet qui fera toute la différence</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_e8ed05ae-2a39-471a-9d5c-2eb9a80ffb8f",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/853986_804536",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 819,
+    "w": 819,
+    "s": 96372,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_c4808aeb-ec9e-4564-a971-d1cf2dca6ddc",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_6f43c04e-f2db-4ec3-8091-21287c5b3fc4",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_de1ade31-dd2c-4568-9e64-d2d3654366b2",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "cf9fd75f-3ee6-4d80-a989-df3ccf52c212",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "543e3de2-6098-4c7d-a6b4-8ac1665fda24",
+     "defaultValue": false,
+     "value": "<p>Avant même que la musique ne démarre ou que la soirée ne prenne son rythme, vos invités perçoivent d’abord une ambiance visuelle. Le regard capte l’éclairage, l’harmonie des couleurs, l’intégration du matériel et l’atmosphère générale du lieu. Cette première impression conditionne immédiatement la perception globale de l’événement. Une cohérence visuelle soignée installe une sensation de professionnalisme et d’élégance dès les premières minutes.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f27b8965-1ec3-4660-88d0-390e4102afdb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "822bdf39-b1ff-4a72-9b9f-6094cc9e0989",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>Une ambiance qui renforce l’expérience globale</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b0f843fa-060f-413e-90ce-b853a1c192c8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f49974f5-4fdb-417f-a511-cd41b48ee209",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">La cohérence visuelle ne relève pas uniquement de l’esthétique. Elle participe directement à l’expérience vécue par les invités. Lorsque la lumière, la scénographie et l’environnement technique sont alignés avec le style du mariage ou de l’événement, l’immersion est plus forte et plus naturelle. À l’inverse, des éléments visuels disparates ou mal intégrés peuvent créer une rupture perceptible, même si la prestation musicale est de qualité. L’objectif est que chaque composante visuelle soutienne l’ambiance plutôt que de la perturber.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1d916889-a02e-4666-b23c-75f9e5a65133",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d1c76838-39ed-4613-a492-62648359ffe1",
+     "defaultValue": false,
+     "value": "<p class=\" p4\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "05e7f9ca-41b1-4ef0-a020-4aec99ad5eaf",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "588d313c-e945-4900-a1ad-9d67e6eda0e1",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/825266_751046",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 738,
+     "w": 1118,
+     "s": 128909,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bae54e47-35e2-4fd8-9a75-e7d6b67a1d59",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dfdb73fa-97fb-4bba-8612-243ff30faa2f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>L’importance de l’intégration technique</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5e2a70a0-796e-492d-834b-0c08b7549f19",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d80b07d9-a29d-43bc-bce3-3456d8755072",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">Une cohérence visuelle réussie passe aussi par la discrétion et la qualité d’intégration du matériel. Le positionnement des éclairages, la gestion des câbles, la propreté des installations et le choix des effets lumineux contribuent à l’image globale de la soirée. Chez Spice Events, la technique n’est jamais pensée de manière isolée : elle est intégrée au décor et au lieu pour rester élégante tout en étant performante. Cette exigence participe fortement à la perception haut de gamme d’un événement (voir article : Pourquoi la technique est invisible quand elle est bien faite ?).</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d65243ca-b397-44f1-b442-e6c93ecc2d25",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "03615bfc-715f-4246-abb4-52d97435d350",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>Une narration visuelle tout au long de la soirée</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8a4d3feb-8ab6-467e-abb9-a46b7b508e54",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "696f2a45-7da2-488b-80fb-46f97e310324",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>U</strong>ne soirée réussie évolue dans le temps, et la cohérence visuelle doit suivre cette progression. L’ambiance lumineuse du cocktail, celle du dîner et celle de la soirée dansante ne répondent pas aux mêmes objectifs. Une mise en lumière bien pensée accompagne ces transitions et crée une véritable narration visuelle. Cette évolution subtile permet de maintenir l’attention des invités et de renforcer les temps forts sans rupture brutale.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "224185af-a08d-4d7f-be14-e1ab8dbb9b17",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "220e420c-9bdd-4f31-a317-afcb94b95f4d",
+     "defaultValue": false,
+     "value": "<p class=\" p4\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "92d86cda-17ca-4a56-93c0-6440c1269e61",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "3e67f64a-5eb8-4e3c-9fc9-9b4439dffaa9",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/150089_475047",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1440,
+     "w": 2560,
+     "s": 367705,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "630693c2-4387-4b33-9d38-71172038435f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "028bcd71-1c1b-4d69-819f-f0f2998fa383",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>Valoriser le lieu et les moments clés</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2bca8627-84a1-408a-85c4-04d2352969f9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8ea41913-7b3a-420d-9e02-073ba0c511be",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">Chaque lieu de réception possède ses propres atouts architecturaux et son identité. Une approche visuelle cohérente permet de les mettre en valeur plutôt que de les masquer. L’éclairage peut souligner un volume, réchauffer une salle ou dynamiser une piste de danse. Il joue également un rôle clé lors des moments importants comme l’entrée des mariés, l’ouverture de bal ou certaines animations. Lorsqu’elle est bien maîtrisée, la lumière devient un véritable outil de mise en scène.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a1fef747-8570-48fd-9b43-214d17be9f01",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dd12a220-f982-419d-a2e0-53c11fac628e",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>Une signature professionnelle perceptible</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "70ad979a-c6c2-4154-85ee-b544c532460a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a52ca2a4-5506-41b4-a46d-140a9f139e9b",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">Même si les invités ne l’analysent pas consciemment, la cohérence visuelle est immédiatement ressentie. Elle contribue à cette impression souvent exprimée après coup : “tout était propre, beau et fluide”. Cette perception est un marqueur fort de professionnalisme. Elle renforce la crédibilité du prestataire et participe à la mémorisation positive de l’événement.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2b11c8b3-d346-49f7-a22a-8238a8bb4f0d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d9329a62-45d1-4c94-9415-67d1b3a5a63a",
+     "defaultValue": false,
+     "value": "<p class=\" p4\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "42cdd639-2124-41a2-9dc6-b89a487c5027",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "48c19511-adc6-4f48-9a13-b1c76e8a3890",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/81727_571695",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1024,
+     "w": 768,
+     "s": 110840,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "411a871d-d7fb-4444-9890-37015c287241",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dd837c7f-2da1-4548-8800-0bed79b642ab",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>L’approche Spice Events</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d4e95700-593a-4231-a7af-8ea1576454ea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "70b69515-f536-4f29-850f-9b389fcf1b27",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">Chez Spice Events, chaque projet fait l’objet d’une réflexion visuelle globale. Le choix des éclairages, leur implantation, leur intensité et leur évolution sont pensés en cohérence avec le lieu, le format de l’événement et les attentes des clients. Cette approche permet de créer des ambiances élégantes, immersives et parfaitement maîtrisées, sans jamais tomber dans la surcharge.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9eda3992-116e-426f-b9c4-c797b7ec577d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0cd2dc08-0aa9-454f-9e7f-750cfd8add56",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><strong>Une cohérence qui fait la différence</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "428a7825-bebb-4d06-92c9-d4b06d47e867",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9a733b9e-9695-4077-9810-89ccce509685",
+     "defaultValue": false,
+     "value": "<p class=\" p3\">La cohérence visuelle est souvent invisible lorsqu’elle est réussie, mais son absence se remarque immédiatement. Elle contribue à la qualité perçue de l’événement, à l’immersion des invités et à la force des souvenirs laissés. Pour un mariage ou une soirée professionnelle, c’est un levier essentiel pour passer d’une simple prestation technique à une véritable expérience.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "eb4d810b-20bb-4069-8989-2037becb9cf7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dc27de1f-d5e1-4cc7-96ba-fdbba786c64a",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

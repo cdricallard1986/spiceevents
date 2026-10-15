@@ -1,0 +1,397 @@
+{
+ "blogPostMeta": {
+  "id": 62829196,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-04-30T06:11:51.809-07:00",
+  "publishedAt": "2026-04-30T06:32:24.694-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-le-plan-b-meteo-doit-etre-pense-d-un-point-de-vue-technique",
+  "customSlug": null,
+  "editCount": 68,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-le-plan-b-meteo-doit-etre-pense-d-un-point-de-vue-technique",
+   "title": "Pourquoi le plan B météo doit être pensé d’un point de vue technique ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/500136_315791.jpeg",
+   "description": "Lorsqu’un mariage ou un événement comporte des moments en extérieur, la question de la météo est inévitable. Pourtant, le plan B est encore trop souvent envisagé uniquement sous l’angle logistique ou esthétique. En réalité, il s’agit avant tout d’un sujet technique. Un repli mal anticipé peut...",
+   "fbAppId": "138736959550286"
+  },
+  "prevBlogPostTitle": "Pourquoi la cohérence visuelle a son importance ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-la-coherence-visuelle-a-son-importance",
+  "prevBlogPostId": 62828676
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_d59fdd74-f365-4f7a-ab6c-0a17db552f17",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_cd4301f3-177f-4e78-9dff-9440a4624ace",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_b057ece2-fc1b-47e1-ac49-ce38b9f6696e",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\">Pourquoi le plan B météo doit être pensé d’un point de vue technique ?</span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_8b6e52c3-ab03-402b-8763-ab8a0f6d4fd5",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Tout ce qu'il faut anticiper pour un événement réussi</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_66de8110-b898-49f9-811f-882bff50b5c1",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/500136_315791",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1414,
+    "w": 2121,
+    "s": 317109,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_a6c1069d-d763-4e8f-8010-786364e8da0e",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a291c817-efa9-4e13-a1f3-63bd35d7d1c2",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_e89ba9cc-b231-46f6-8c12-d688f302db10",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "97cb3817-4e25-4795-b377-015cd9f18d35",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "151355ae-327a-4157-93f1-98d861bab964",
+     "defaultValue": false,
+     "value": "<p>Lorsqu’un mariage ou un événement comporte des moments en extérieur, la question de la météo est inévitable. Pourtant, le plan B est encore trop souvent envisagé uniquement sous l’angle logistique ou esthétique. En réalité, il s’agit avant tout d’un sujet technique. Un repli mal anticipé peut impacter la qualité sonore, la mise en lumière, l’alimentation électrique ou encore la fluidité du déroulé. Chez Spice Events, l’anticipation technique fait partie intégrante de la préparation, car une ambiance réussie ne doit jamais dépendre d’un aléa météo. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "541520f2-abdf-4074-896b-4ba15a481e2f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "324debe2-6661-40e3-8eca-6092c916e301",
+     "defaultValue": false,
+     "value": "<p><strong>La technique, pilier de la continuité de l’événement </strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c519dfda-e71c-4c41-aad7-d050794a6a0e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9cdd71ac-dfec-427f-a6e9-fd5d03b00214",
+     "defaultValue": false,
+     "value": "<p>Un événement repose sur un équilibre précis entre émotion et performance technique. C’est pourquoi chaque installation est calibrée, testée et optimisée pour garantir un rendu fiable et immersif, quelles que soient les contraintes du lieu. Lorsque la météo impose un changement de configuration, seule une préparation technique rigoureuse permet de maintenir ce niveau d’exigence. Sans cela, le risque est de dégrader l’expérience des invités au moment le plus important. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f85546d6-8454-4d80-8ed5-999af903b572",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "7c48ceb3-247a-4645-944b-17ccf9ec8589",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/278219_717650",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1536,
+     "w": 1024,
+     "s": 180346,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8609fb5e-e0b6-4fba-a28c-196d3b9240bc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9c439e3e-5e36-40c2-8e97-bdb75092ef38",
+     "defaultValue": false,
+     "value": "<p><strong>Des contraintes techniques très concrètes</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4372b9b6-e40f-4294-9aa6-192057a4a305",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "df70bed2-311d-4661-aebf-09377f90f00f",
+     "defaultValue": false,
+     "value": "<p>Passer d’un plan A extérieur à un plan B intérieur ne consiste pas simplement à déplacer du matériel. Les paramètres acoustiques changent, la diffusion sonore doit être recalibrée, et la mise en lumière doit être repensée en fonction du nouvel espace. Les besoins électriques peuvent également évoluer, tout comme les contraintes de câblage et de sécurité. Chez Spice Events, chaque prestation est conçue comme une véritable mise en scène technique où chaque réglage compte, ce qui permet d’absorber plus sereinement ce type d’imprévu. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7916a5ae-f590-4873-b96b-0f29d247eca4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1948d5a1-3862-4b1d-b3ed-1cbd1fa90ce8",
+     "defaultValue": false,
+     "value": "<p><strong>L’importance des tests et des redondances</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "94ff9dea-4d28-4302-9a68-957ce6d88c7f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "12e063dd-7439-4680-9059-93ffa0e63bfb",
+     "defaultValue": false,
+     "value": "<p>Un plan B météo fiable repose sur la capacité à sécuriser l’installation. C’est pourquoi nos configurations intègrent des contrôles complets du matériel, des tests son et lumière ainsi que des systèmes de secours prêts à être activés si nécessaire. Cette logique de redondance est essentielle lorsque les conditions deviennent incertaines. Elle garantit la continuité de la prestation sans coupure ni dégradation perceptible pour les invités. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "596e5f53-5d61-4834-978a-ffb96e24f0c4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "467e483c-0fa3-419d-b792-87af1e7fc3fa",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/889110_520935",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 427,
+     "w": 645,
+     "s": 69136,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a7ca4abd-dad8-4ed4-95cf-b178f8f71a86",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ebfd3c5f-bc29-488d-aaf4-9733a8a10f70",
+     "defaultValue": false,
+     "value": "<p><strong>Une coordination indispensable avec le lieu et les prestataires </strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fd97fa08-208b-43e3-a0db-76439466a9a4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2f9e9b01-353b-406f-99d0-234921b3e075",
+     "defaultValue": false,
+     "value": "<p>Penser le plan B d’un point de vue technique implique également une communication étroite avec le lieu de réception et les autres intervenants. L’espace de repli doit être compatible avec la diffusion sonore, l’implantation lumière et les normes de sécurité. L’équipe technique doit pouvoir adapter rapidement la configuration sans perturber le timing global. Cette anticipation fait partie d’une approche professionnelle où rien n’est laissé au hasard. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ef5181bd-151f-4044-8220-ae33e3bd6524",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9ef022f4-faa1-401a-a29b-17332d2103b3",
+     "defaultValue": false,
+     "value": "<p><strong>Transformer un risque en simple ajustement </strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b85b1c1f-f5af-494e-b988-d5bd0253fc91",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1dd9fd35-62c8-496d-9a92-8041f6d10482",
+     "defaultValue": false,
+     "value": "<p>Lorsque le plan B est correctement pensé en amont, la météo cesse d’être une source de stress. Le basculement éventuel devient un simple ajustement opérationnel, invisible pour les invités. L’objectif n’est pas seulement de “sauver” la prestation, mais de maintenir le même niveau d’exigence et d’émotion quel que soit le scénario. C’est dans cette capacité d’adaptation maîtrisée que se mesure la solidité d’un dispositif technique. L’approche Spice Events Chez Spice Events, la fiabilité repose sur un matériel professionnel haut de gamme, une préparation minutieuse et une exécution sans faille. Notre partenariat technique et nos procédures de vérification nous permettent d’anticiper les contraintes météo avec sérieux et méthode. Chaque événement est préparé avec l’idée qu’un imprévu peut survenir, afin que la qualité de l’expérience reste constante du premier au dernier moment. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f6964947-ff33-4cff-baef-447b52e8d663",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "3c47946a-9595-4f75-b33b-d4a1dafd16d7",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/48456_718213",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1000,
+     "w": 1000,
+     "s": 207338,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "de8ede1c-9252-484a-9ee2-8759d8fbb4c3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "75c19569-75d0-4e7e-838e-a0d84415a7c1",
+     "defaultValue": false,
+     "value": "<p><strong>Anticiper pour préserver l’expérience </strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "16ca386a-5e16-4fa8-9e3e-a78f7966e55f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "de4da639-0193-4ff4-aa1e-a18c627ef18f",
+     "defaultValue": false,
+     "value": "<p>Un plan B météo n’est pas une option de confort, mais une composante essentielle de la réussite technique d’un événement. Lorsqu’il est pensé correctement, il protège la fluidité, la qualité sonore et l’impact visuel de la soirée. Pour les mariés comme pour leurs invités, cela fait toute la différence entre une adaptation subie et une expérience parfaitement maîtrisée.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "42155c0e-af69-425c-8af9-80ccc025345d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3c8aa941-315b-45f1-9323-366240c4084b",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,490 @@
+{
+ "blogPostMeta": {
+  "id": 20941909,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-06-20T03:23:30.707-07:00",
+  "publishedAt": "2022-06-20T03:55:51.886-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/enterrer-sa-vie-de-celibataire",
+  "customSlug": null,
+  "editCount": 282,
+  "publishedEditCount": 261,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/enterrer-sa-vie-de-celibataire",
+   "title": "Enterrer sa vie de célibataire",
+   "image": "https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "Le grand jour approche et vous ne savez toujours pas comment fêter la fin de votre vie de célibataire ? Pas de panique, Spice Events a toujours de bonnes idées et vole à votre secours.  Soirée pyjama Comme lorsque vous étiez plus jeunes, organiser une super soirée pyjama avec vos copines afin de...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Nos idées de décoration pour vos tables de mariage",
+  "nextBlogPostRelativeUrl": "/blog/nos-idees-de-decoration-pour-vos-tables-de-mariage",
+  "nextBlogPostId": 21552160,
+  "prevBlogPostTitle": "Nos astuces pour trouver le lieu de mariage idéal",
+  "prevBlogPostRelativeUrl": "/blog/nos-astuces-pour-trouver-le-lieu-de-mariage-ideal",
+  "prevBlogPostId": 19791299
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_5682ba98-413d-4f77-8c1a-df12ee0d9ff1",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_61aa8d34-0d46-4f2e-980d-d16f6e6ca014",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_0a9f0d3e-8637-4a3d-842b-8dab8abaede2",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\"s-rich-text-wrapper\">Enterrer sa vie de célibataire</p></div>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_422c6b24-9cdb-41c2-bd08-c934f4c90660",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p>Les idées qu'ils vous manquaient</p></div>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_cfed4aca-d53d-4417-8be6-e7a24db31721",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_7423e6a9-5e49-4d3b-aa98-a2d5a1588574",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a54b211f-1f5a-4beb-9abf-d03860f15940",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_e3859349-1a79-4045-8757-df1caf091955",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_6cf0dc95-4a17-490a-aa07-998520603e66",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_fdf33483-bc3c-46ab-8214-c1ef1eee333e",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_c11e8322-9ec6-4b02-8158-a6a1a9dc555f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_7cea7eaf-f6e1-4a20-a588-f1a1a0f2400f",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "a4b60dfc-c123-4dec-b370-20d516be3d8c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c8e4a03d-5af9-4b1f-99e7-4d7e69e9baa5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Le grand jour approche et vous ne savez toujours pas comment fêter la fin de votre vie de célibataire ? Pas de panique, Spice Events a toujours de bonnes idées et vole à votre secours. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "81e32f33-c0fd-477e-af63-b45210a6a09b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6c834787-2fa6-459c-bb12-70523176b757",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Soirée pyjama</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d67f6a37-8dad-4202-b257-67d87ad07c1b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "70054086-71ff-4706-9df4-e865bf45f477",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Comme lorsque vous étiez plus jeunes, organiser une super soirée pyjama avec vos copines afin de dire oui à votre moitié. Pour ça, rien de mieux qu’un moment de détente, sans chichi, à se raconter des potins, accompagné de délicieux pop-corn et d’un bon classique comme La Boum, Dirty Dancing ou encore Grease. Et si vous préférez la musique, notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\"> n’attends que vous !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e987da4f-68d2-4bac-bdce-a01644baa60e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ef9094e3-0542-405e-af95-a101452c3bc1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Alors sortez votre plus beau pyjama et votre paire de chaussettes préférée et détendez-vous !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e987da4f-68d2-4bac-bdce-a01644baa60e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "361c2a08-47ce-45fc-a4a9-63b7669eba48",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: inherit;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "63e08d77-1e53-4494-bfbd-09a9d6845548",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "47dec5b2-fc5d-46b9-9dbe-7832d0704df7",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: inherit;\"><span style=\"color: #000000;\"><strong>Une décoration de charme</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7faa89e-b35b-4ae2-bd9d-cce430c83ea0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "acdc9e83-7347-4857-96c1-e3b567fed32a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Si vous décidez de fêter ce moment dans un lieu fixe, cette idée est faite pour vous. Choisissez nos </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-soiree-privee\" data-type=\"\" target=\"_blank\">jolies guirlandes lumineuses</a></span><span style=\"color: #000000;\"> et donnez une tout autre ambiance à votre pièce. Elles apporteront légèreté, douceur et raffinement. Parfait pour une soirée sur un thème champêtre et élégant. Si vous ajoutez à cela nos </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-soiree-privee\" data-type=\"\" target=\"_blank\">lettres lumineuses</a></span><span style=\"color: #000000;\">, vous êtes sûrs d’épater vos amis !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7faa89e-b35b-4ae2-bd9d-cce430c83ea0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fdc4f994-7511-474a-b273-3ec93952038a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: inherit;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bb8dcc30-5b80-4043-8f04-765ea7dc1546",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d2f25968-542c-47ba-bdfe-9c52bd295d60",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>En route vers le mariage</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6534c5f2-af84-4548-8763-3fed95179c4c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e218eba0-2b0c-429b-b6e8-34042ca58690",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Parce qu'il n'y a pas que le Jour-J que votre entrée compte. Faites vous remarquer au volant d’une  </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">voiture de collection</a></span><span style=\"color: #000000;\">. Avec nos partenaires choisissez la voiture de collection de votre choix : 2CV, Van, DS, Mustang... et laissez-vous transporter le temps d'un instant.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9256bd82-423c-4a3b-b13c-55e644c6c715",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6b210e50-2d98-4979-944e-d376fbac4557",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Ce voyage au cœur des années 60/70 ne sera que partie remise si vous décidez de vous prêter une nouvelle fois au jeu le jour de votre cérémonie.  </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e6f548e4-17dd-46f6-8524-67e61ffb184f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "bbbb2041-cfa0-4a61-aeed-7d3bdc50817b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/388644_826760",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 817,
+     "w": 1200,
+     "s": 2016287,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9256bd82-423c-4a3b-b13c-55e644c6c715",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8d3e7a52-9335-456c-8011-0d69215e15fa",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Laissez-vous transporter</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9256bd82-423c-4a3b-b13c-55e644c6c715",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d4fd5daa-c209-4ce9-8d7e-99d70ee54a20",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Pour un enterrement de vie de célibataire, il existe d’autres animations que celle des fameux/ses gogo-danseur/ses. Alors si vous souhaitez en avoir pleins les yeux lors de cette journée sans passer par là, Spice Events vous propose de vous rendre sur sa page </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>booking DJ</u></a></span><span style=\"color: #000000;\"> et de vous laisser emporter par la musique !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9256bd82-423c-4a3b-b13c-55e644c6c715",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3b5c0907-e415-4828-afb8-ef6de288c3f0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9256bd82-423c-4a3b-b13c-55e644c6c715",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "671ab970-3562-4f7b-bcc3-032630b5f5a6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #1c1c1c;\"><strong>Retour en enfance et nostalgie</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "abb577c8-d6b1-41d8-bf1b-1043045dfbc1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d00c2ccb-aae7-4aa0-bbe4-cce2551847ac",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Pour un retour en enfance garanti, notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-soiree-privee\" data-type=\"\" target=\"_blank\">magicien</a></span><span style=\"color: #000000;\"> vous attend ! Suspens, réflexions et théories seront au rendez-vous. Notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\"><u>,</u></span><span style=\"color: #000000;\"> lui, vous offrira un moment de nostalgie et de convivialité. Vous trouverez à coup sûr la chanson qui a bercé votre enfance ou qui vous fait penser à un proche. Joie et émotion assurés.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "abb577c8-d6b1-41d8-bf1b-1043045dfbc1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2bfca60d-54cd-41e6-8e7f-9711a8528dcb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: inherit;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c33eca8a-f320-4df2-8c6c-924ece2e5489",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6a7547d4-a88e-4012-a8ea-fa54913285cb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Se créer des souvenirs avant tout !</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "67316b2d-dd3e-4245-882c-deafa167c097",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1580a509-6910-4cf7-aa6f-46d992c4181f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Les souvenirs dans la tête c’est bien mais entre les mains c’est mieux ! Avec notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">, c’est possible. Profitez de votre soirée tout en passant de temps à autre devant son objectif et immortalisez ces petites secondes à tout jamais. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "615d69b0-c346-4e74-9da0-c6c79b92e66f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "82b1780e-67ce-419e-9843-9168af929ecf",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Vous pouvez ensuite décider d’en faire un album dédié ou simplement d’accrocher vos petits clichés un peu partout chez vous et de les admirer dès que vous passerez devant. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f8aaa7a3-c7ac-498d-9fd1-7ea1dcca1fcc",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f5c8317e-cdf6-4983-8658-0d62b4dabeb2",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/311602_815573",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 5142234,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a48dc777-ac8b-47c8-9b21-414f3092a691",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "19390200-d5a7-4865-bd64-5c13b8d154d6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Et voilà vous êtes prêts à enterrer votre vie de célibataire. Toute l’équipe Spice Events est maintenant impatiente de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">vous revoir</a></span><span style=\"color: #000000;\"> pour le grand jour !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cfa9a994-0d1f-4a76-809d-da809017c189",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9e85b216-91f1-4244-aea2-d77fcff530ee",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,1149 @@
+{
+ "type": "Page",
+ "id": "f_10ea1b50-d5db-4938-b1b0-c0154648df72",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_33f9c955-4fbc-491f-a437-f5bf3802a044",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_26fa1098-7360-4a71-a855-1cc716cb078a",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_b1e5f37f-d3b9-4ed5-a961-22dec53e6f9f",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_30dcd3de-960e-4aac-974b-774d525e1aa0",
+       "defaultValue": null,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_5d26ebb9-1ef3-4b4a-884c-bf9bd7e66f24",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Guirlandes lumineuses </p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_43acf807-54b1-4f28-b614-8cc4d8fa008a",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default\"><em>Faites briller votre lieu avec élégance</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_6780b890-41a4-41eb-b288-d9b9628b064c",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/578672_700822",
+         "storage": "s",
+         "format": "jpeg",
+         "h": 777,
+         "w": 1600,
+         "s": 99105,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_dab9f84b-3b08-42e3-b0d5-7e2fa16d2575",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_2f9d8fc2-bf21-4ce8-a628-cd23fe13f5ff",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_5b362465-203f-4477-9459-61746f123c33",
+          "defaultValue": false,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_d07a32c8-5bb9-43f2-a13b-3d58c346a8fb",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_5dc82549-98d5-4312-b702-48b083cfa449",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_70b4f8c9-ca0c-4dfb-a338-76bd31dc8945",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_f4c73915-f893-4aca-85d0-3f4775ec1308",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_61505ba5-d6c3-4dec-9e08-df8acd276e5c",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_7cdf6afa-de89-45c0-8d4a-6b85431531fe",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_9d35574a-8b2b-48bb-bd73-c1b838ff1b4b",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_aa84a490-05f3-440b-aa41-ea486fe291e7",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_fd141fa0-5b81-437e-8c33-7aa7ee6e1d8c",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_a88b37a1-8cfe-4448-875e-b0430c380614",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte intro",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_52468431-a65d-4a5d-9eba-99f11443eb38",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_4dbfae23-3467-4a90-b61e-1ec52faf9441",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_2b85d67f-6ad2-4889-8762-c13a75ba7e63",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_47eee67b-c8af-4b4d-8286-2a64e10718a4",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_651a0a85-f18e-4795-8483-2e6206fcf143",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_a07905ab-4e69-4f71-9c80-70f2a021d146",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_113f8209-859a-4fe5-9122-34e53538fab9",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_70aaf55c-705d-4e2e-adf5-da7112bed3f9",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"color: #000000;\">Quand l’élégance rencontre le professionnalisme</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_cddf7579-aabb-437d-b318-31076bae25a0",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_747a1850-e262-4f84-99f4-02e655f0881c",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_0c95af2c-59a4-4009-ba55-47eb3176b0aa",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_69aabed4-cc0e-4033-89ee-2d84843c63ec",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_91310004-f1ea-42c5-9b3e-135e7a41498e",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_3970ad72-c37a-4ccc-b72f-1f7aa62175cd",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Illuminez chacun de vos instants</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_ed1dffd4-808f-4247-bc65-e25ab2f133f6",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_e6d9944e-2e4c-4bab-a287-9beb0765e31b",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_3672ae40-e193-4344-adf7-7cf3db87a724",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Les guirlandes lumineuses apportent une touche de magie et de chaleur à tous vos événements. Mariages, soirées privées ou événements professionnels, elles transforment n’importe quel espace en un lieu élégant, accueillant et mémorable. Installées au-dessus de la piste de danse, le long des murs ou pour sublimer des zones spécifiques comme les buffets ou la scène, chaque guirlande est pensée pour créer une ambiance unique et immersive. Nos équipes adaptent la disposition et l’intensité lumineuse selon la configuration de votre lieu, en intérieur comme en extérieur, pour un rendu harmonieux et sécurisé. Avec cette installation, vos invités se sentiront plongés dans une atmosphère conviviale et féérique, parfaite pour profiter pleinement de chaque instant. </span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_5cfdca41-b68e-4c37-889e-fb4df09d787f",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_c8c6e2e7-dd9c-4b7c-a28c-b2b4265c44a3",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_32edbcb9-a38f-4b84-91ec-9028e3757135",
+   "defaultValue": true,
+   "template_name": "process",
+   "template_version": "beta-s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_47d81fa3-cd98-4a68-afd8-6feabf0ee857",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Comment ça fonctionnne",
+     "sync_key": null,
+     "layout_variation": "horizontal"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_965f0f7b-14f0-4694-9740-3538671d3bb7",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_3f0a396e-940d-40df-9ffc-e5069350de81",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default public-DraftStyleDefault-block public-DraftStyleDefault-ltr s-title s-font-title s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Comment cela fonctionne ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_cf14fbd5-4eb9-4909-96b6-1cf3f981de3a",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_c1791e77-dd0a-45e7-97cd-4473a3056f78",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_75ed3cf3-3779-4941-adac-e1430e1c23c5",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Découverte de l'espace</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_09c4c797-20ae-48c5-8d95-d33993e68172",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"font-size: unset;\"><span class=\"s-text-color-default\">Nous évaluons la disposition, l’architecture et l’ambiance souhaitée afin de procéder à l'installation.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_e60c143d-b717-4adf-bd2c-3269b80efee8",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_9c73834d-a8a1-44e2-8c90-0fa0a3618e1b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Installation </span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_58bbdd5b-d341-40a7-90f3-c4820cc11914",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"font-size: unset;\"><span class=\"s-text-color-default\">Les guirlandes sont posées avec soin pour créer un rendu élégant et homogène.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_cc326ce9-1b2c-4d68-99a1-a9c92a8c09ed",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_1925672e-5a2a-4f68-b973-baf5bd1e48f0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Test &amp; sécurité</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b6042629-16d3-4d2a-b3bd-fc29547755eb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"font-size: unset;\"><span class=\"s-text-color-default\">Les guirlandes sont vérifiées avant l’événement. Nous prévoyons du matériel de remplacement afin d'éviter tout imprévu.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4670de85-dcb0-43d1-964b-eb5fd7433587",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_7aace350-9185-4cda-a1c9-e972fa1cc645",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Ambiance sur mesure</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_dfa65c8f-fee7-4cb4-9c8b-62c9727bbef7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"font-size: unset;\"><span class=\"s-text-color-default\">Nous ajustons les emplacements des gurilandes afin qu'elles épousent parfaitement l'ambiance souhaitée.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_02b5ba3b-efdb-45df-a966-f5f597c32cc4",
+       "defaultValue": true,
+       "value": "Ajouter un titre",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_ec7b42b5-d7e6-4853-a2fa-000059301671",
+       "defaultValue": true,
+       "value": "Add subtitle",
+       "backupValue": null,
+       "version": null
+      }
+     }
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_f6c4045e-90b7-4c0e-847e-3ae06067b8d2",
+     "defaultValue": true,
+     "value": "Add subtitle",
+     "backupValue": null,
+     "version": null
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_2a65787f-b2b0-49a5-9b84-6b584e188cfb",
+   "defaultValue": true,
+   "template_name": "gallery1",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_230f43de-6812-4d0c-9eee-976237a7ba5d",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_f5597479-04a7-4dd9-81bc-aab8c725973a",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_9d977864-9043-4b70-901a-810598b1ea34",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_c3e166b8-3794-4f6e-a01d-21a9d974755e",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_a04b449c-817f-4a61-a8d8-182061bf8aed",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_3926db68-f720-46e8-8072-80fa22612f4e",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/48278_955248.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/48278_955248.jpeg",
+       "description": "guirlandes guingettes dans une salle de mariage",
+       "storageKey": "22139555/48278_955248",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 846,
+       "w": 564,
+       "s": 108228,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_13c7d535-dc38-478d-8831-a9abe49a89fa",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/335517_855913.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/335517_855913.jpeg",
+       "description": "guirlandes lumineuses guinguettes au dessus d'une table de mariage ",
+       "storageKey": "22139555/335517_855913",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 667,
+       "w": 534,
+       "s": 84336,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_541385a2-2abd-4de0-99fb-18f7b8e525fd",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/24629_877383.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/24629_877383.jpeg",
+       "description": "guirlandes guinguettes au dessus des mariés",
+       "storageKey": "22139555/24629_877383",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 1350,
+       "w": 1080,
+       "s": 244972,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_f9a3fa49-fc69-4596-b86d-6d6c570d3b5c",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_9a1c1088-4a26-4393-bac8-67abfd60a220",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Idées",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_d3c0c63e-ce79-44c0-bf19-be8c9ebc108d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Idées d'utilisation</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_7ad35229-73c8-4e09-80fa-9dab03b67d58",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les guirlandes lumineuses sont bien plus qu’un simple éclairage : ce sont de véritables éléments de mise en scène. Elles s’adaptent à toutes les ambiances et permettent de sublimer chaque moment de votre événement. Que ce soit pour créer une atmosphère romantique, chaleureuse ou festive, voici comment les intégrer à votre décor pour qu'elles apportent cette touche visuelle qui transforme un lieu ordinaire en décor inoubliable :</p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><strong>Cocktail et réception</strong> : créez des zones conviviales et chaleureuses,</li><li style=\"text-align: justify;\"><strong>Dîner et banquet</strong> : ajoutez une touche intimiste à vos tables et espaces,</li><li style=\"text-align: justify;\"><strong>Piste de danse</strong> : mettez en valeur le centre de votre événement,</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><strong>Espaces extérieurs</strong> : guirlandes résistantes et adaptées aux terrasses ou jardins.</li></ul></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_a9b098e7-cf89-4a56-9f0d-830a5f454c0a",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_bc01463f-8eba-48a5-8133-c474aa0eca86",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_7ed8f863-8681-41e1-87ec-bd6bdc70c992",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_a15dc3e9-bed6-41c9-b26f-db72771ad586",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_47991fea-108c-4141-820c-ac22d58e9e5d",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_dc42b630-04ba-4e91-ab19-fe17f6b81c8f",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_e2ba1ba3-75d0-46ee-8390-e7b305ef3153",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_4effde27-c0a9-45cc-b68e-fe64ae3ffa3a",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_930761ff-0fb8-4989-a2d9-18c94a500043",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Envie de briller avec nos guirlandes ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_4082726e-54ce-44a8-a157-2471fe4d8304",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\"><em>Discutons ensemble de la mise en lumière de votre lieu</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_4affb407-288a-4b99-a2ca-4c82677ebd5d",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/744408_306415",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 1280,
+     "w": 896,
+     "s": 253008,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_5e4b05fd-a445-4f55-b412-efb66947d4af",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Guirlandes lumineuses",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1762262716791#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1762262718908#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_80895d43-db84-40a5-ae95-66238d3e4f6e"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_d5b8fb12-c5d6-421d-a81b-93cf918335b3"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_9ef64ea9-16e5-4980-9313-461d3140adff",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_67d00f00-bcd7-4551-aedc-880b0c7650fa"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_7457685d-bf74-4993-b8b3-d61796a8e4cb"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_735d0983-dc84-4494-abae-2d472da775c9"
+          },
+          "$item1762262716791#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_b0a33430-5fd9-4af4-bba3-ba320049ca16"
+          },
+          "$item1762262718908#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_f010b8d4-0111-443a-9431-42ab850dda76"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1762262716791#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_3c39967c-74b9-42f8-9c99-b4cc96abc1ae"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_41e04c31-5a0e-43f3-a32d-802e44fd5b33"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1762262718908#date",
+         "$item1762262716791#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1762262716791#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1762262718908#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Guirlandes lumineuses",
+ "description": "Créez une ambiance chaleureuse et féérique grâce à nos guirlandes lumineuses.",
+ "uid": "e1755f4d-c5d0-48e7-9c5d-02d739edb6e8",
+ "path": "/guirlandes-lumineuses",
+ "pageTitle": "Guirlandes lumineuses",
+ "autoPath": true,
+ "authorized": true
+}

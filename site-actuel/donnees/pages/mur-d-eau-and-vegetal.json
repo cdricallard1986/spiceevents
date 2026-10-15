@@ -1,0 +1,1346 @@
+{
+ "type": "Page",
+ "id": "f_2cd72cf1-a91b-4d01-b73c-6aed2ee128ea",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_933895b4-7174-4718-b265-f986b219d3e2",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_27d0c21a-e7dd-4163-bb06-7c3466e19e5a",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\",\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_076d3cf1-59a9-49e1-9594-6c703b0a416e",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_a4fe2f98-68d0-4ac0-8cbb-a5be30580a9c",
+       "defaultValue": null,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_78880461-0609-4e11-9465-c0cb310a480e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Murs d'eau</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_9a325c50-3aa4-4184-9a99-ac860c57a374",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-custom s-text-font-size-over-40\" style=\"font-size: 50px;\"><em>Une signature aquatique moderne et hypnotique</em></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_808be98a-a5ed-434e-b9c5-f9e005747a30",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/904509_224581",
+         "storage": "s",
+         "format": "jpg",
+         "h": 1536,
+         "w": 2048,
+         "s": 800655,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_4e72fb1c-00b7-4a07-b034-72c76e9a9432",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_ea4b51ca-0690-4be5-9880-ee7d98fd229c",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_319329b9-e975-4360-ae17-9f49ca72f3dc",
+          "defaultValue": false,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_727f27fb-8b16-4954-9df2-2b306096a651",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_6834d29a-8544-4fbc-a6e6-6ceb42837d0c",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_dc45f038-c3d9-444b-8c30-881744aa52ae",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Murs végéteaux</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4eb2805a-9957-4feb-ae9f-0f5b2aedc4d7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-40\" style=\"font-size: 50px;\"><span class=\"s-text-color-default\"><em>La nature réinventée pour sublimer votre événement</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_3eb73d7f-366e-49bb-bc61-f683d80dd561",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/782530_212333",
+         "storage": "s",
+         "format": "jpg",
+         "h": 4284,
+         "w": 4762,
+         "s": 4349202,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_ca7862c0-337e-4f6e-b535-7f64b6a9a03b",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_d528858a-95cb-4ee7-b938-493371c070a6",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_0948b65b-0fa9-45a0-a61d-aa48e91c523e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_30e24cd3-34af-407e-a6f1-b3bd9356fef6",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_89d993c1-6054-445c-b1b6-9d83d6f48058",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_0f778e7d-878b-4225-9239-326d2f3e3c00",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_b72ef890-7f40-49e3-ae8e-d95652ef32ec",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_d3f4f264-3a1c-49e7-b6ed-92fea82dc092",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_b05d393a-4329-4ecb-85e3-e23485904788",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_bdeddcbb-a7b4-4927-8fbf-29c468b77944",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_0cc6d8dd-eb37-48f9-823e-3312c21f4ec2",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_9c2e5a25-33a8-4aee-9399-ccd8982a90aa",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_d2399439-ae8f-4ac3-852f-10c3e9b82f6c",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte intro",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_55a15b95-28d8-45c0-a921-c52e2a8d488b",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Offrez une signature visuelle inoubliable</h1><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><em>Des installations spectaculaires pour marquer les esprits</em></p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"display: inline-block\"></span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_467e867b-a3e1-4d11-8f67-763f5bbb3d21",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Apportez une identité forte, élégante et immersive à vos <a href=\"http://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariages</a>, cocktails, stands ou soirées d’entreprise grâce à nos murs d’eau et murs végétaux entièrement personnalisables. Ces décors créent une atmosphère unique dès l’arrivée de vos invités et transforment n’importe quel espace en une expérience visuelle marquante. Leur modularité permet de les intégrer parfaitement à vos espaces photo, à un <a href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\">photobooth</a>, à une zone d’accueil ou même à votre scénographie globale. </p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_32539223-4b27-43b5-9ed7-84ef5938f64c",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_6d408852-8a88-434a-9cc6-c11520221709",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_bdcf5c5e-261d-468a-af43-48344e7bfa1b",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": true,
+     "focus": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_f0256d32-d859-4f91-96bf-726fc615b69e",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_b64b90dd-9131-43e4-9269-9a03e76dacc9",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_ee2209fc-7a1f-4e83-b607-b61c147d970a",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_78f61a0d-9e5e-438d-a497-a42c53b6b060",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_9961d388-e61f-43eb-b1ad-274a68b3fb18",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Murs d'eau utilisation",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_2c95efbc-91d3-4a80-bb09-3efd2a8f0df9",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Nos murs d'eau</h1><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><em>L’élégance en mouvement à travers des jeux d’eau captivants et personnalisables</em></p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"display: inline-block\"></span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_37969fa1-a34d-477f-ba2e-7544b91ac16e",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Nos murs d’eau offrent un rendu visuel spectaculaire grâce à un flux continu qui capte naturellement l’attention. Chaque mur peut être personnalisé avec :</p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les initiales des mariés</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Le logo de votre entreprise</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Des motifs ou messages sur mesure</li></ul><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Ils sont parfaits pour :</p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Structurer une entrée élégante</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Créer une zone photo originale</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Mettre en valeur un <a href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\">photobooth</a></li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Sublimer un cocktail, une scène, un buffet ou un espace VIP</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Renforcer votre branding lors d’événements professionnels</li></ul><p class=\" s-rich-text-wrapper\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Nous vous aidons à choisir l’emplacement le plus impactant : lumière ambiante, distance par rapport à la circulation des invités, cohérence avec votre décoration lumineuse ou vos autres animations.</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_4155b0f0-8108-4969-b505-15421daa726c",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_88913183-4b02-4020-856b-f6a98187ae01",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_bfcc33ca-3916-45c7-b4dc-5b9ceae6e29d",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": true,
+     "focus": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_37a9bd60-de3f-4c32-a506-ed546010a351",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_c0e0925f-6c9a-4aaf-8caf-e17be2f7e50a",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_4badcf94-f2a3-4ee4-8760-c4e3c3aeb14d",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_97b990a2-bbec-42da-8830-4cf61c688da5",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_55c9bbe0-95d6-4bf0-9b79-66c3218a9a40",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie murs d'eau",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_eb80a119-f506-4a86-895d-fd1763cffd3e",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_534bd113-b7dd-4369-ba07-a495b5cb158b",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_757419f8-98c4-475f-b8cc-815f69b17157",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_e98545c8-e971-4e8c-92f1-261e703c8d37",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_41abbb5c-4104-4e2e-8198-57a95bd7251e",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/402511_15824.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/402511_15824.jpg",
+       "storageKey": "22139555/402511_15824",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 768,
+       "w": 1024,
+       "s": 227568,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_6b5c8116-f673-464b-b9b4-8aad2d445323",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/105949_24666.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/105949_24666.jpg",
+       "storageKey": "22139555/105949_24666",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2000,
+       "w": 1500,
+       "s": 2451648,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_3a1c7cdc-e61e-4795-aa09-3364cbbf9dc3",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/516200_605140.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/516200_605140.jpg",
+       "storageKey": "22139555/516200_605140",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1333,
+       "w": 2000,
+       "s": 3176632,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_fbd3236a-f02f-45a8-8b13-e4a401d6cb3d",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/175629_172491.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/175629_172491.jpg",
+       "storageKey": "22139555/175629_172491",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2350,
+       "w": 2560,
+       "s": 1268831,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_ac1ccbbf-4d31-4074-b974-22632f4b479e",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/957274_88975.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/957274_88975.jpg",
+       "storageKey": "22139555/957274_88975",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1500,
+       "w": 2000,
+       "s": 3750551,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_1850b022-6eb9-47ef-9b93-6f7bcff72bff",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/399897_639878.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/399897_639878.jpg",
+       "storageKey": "22139555/399897_639878",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1536,
+       "w": 2048,
+       "s": 1219218,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_775392ee-a299-47a2-8cae-6bee8a0a2c58",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_cd73509a-e192-40a0-8c76-a62b6b30d59e",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Murs végétaux utilisation",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_4f21ac6c-1a80-49e2-87e9-5b740461a8d3",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Nos murs végétaux</h1><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><em>Un décor vivant, immersif et modulable</em></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_0fb8051e-bba9-4ef3-8b56-cfb1055dda81",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Nos murs végétaux créent une ambiance fraîche, naturelle et moderne, idéale pour tous les événements. Ils peuvent être sublimés avec :</p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Des néons personnalisés (noms, slogans, dates, messages)</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Des stickers adaptés à votre thème ou identité visuelle</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Des éléments décoratifs ou floraux selon la saison</li></ul><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Ils sont parfaits pour :</p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les zones photo et photocalls</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les arrière-plans pour vos prises de parole ou interviews</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les espaces dédiés au <a href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\">photobooth</a></li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les <a href=\"http://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariages</a> naturels, élégants ou modernes</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Les stands <a href=\"http://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événementiels</a> souhaitant une touche premium</li></ul><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Nous vous <a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">accompagnons</a> également pour harmoniser ce mur avec vos autres éléments visuels : des <a href=\"http://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\">guirlandes lumineuses</a>, des <a href=\"http://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\">animations tendances</a>, mise en lumière ou décoration globale.</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_0c913646-8cd4-497a-a19f-571ecff8d7d5",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_e964c24d-24da-435d-becf-e4c1e8ab72d0",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_df9d0dfb-cc04-4982-8e80-a940e339f5c2",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": true,
+     "focus": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_4866a37f-3d39-4d24-808e-24b5ffe5328f",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_8689341d-8f3e-4086-9caa-c28bcaec4eaa",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_afaecf0e-8e93-4ce2-a5f9-77f0fd93bd1f",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_a474c2fa-89e7-4ba2-9145-eecfa4e25dc7",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_e1a5cf33-aba2-455b-83f0-a3c97ca379ce",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie murs végétaux",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_825e10f6-8c59-496b-8696-a38ace206244",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_ec48ad1b-f9ae-453f-ad0a-27fc85fa31b7",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_0122f3a2-99ad-445b-bb36-31415fe7be1b",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_556f8736-3a27-4774-a951-5088165e6edd",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_dea3299c-f19c-45a9-82a9-ae58a58263a3",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/479413_932159.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/479413_932159.jpg",
+       "storageKey": "22139555/479413_932159",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1440,
+       "w": 1920,
+       "s": 1830236,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_378a73e2-be48-4c9e-b563-5d0486d11134",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/35861_625191.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/35861_625191.jpg",
+       "storageKey": "22139555/35861_625191",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1536,
+       "w": 2048,
+       "s": 1766761,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_a4b1b983-4a35-43db-a588-5a169e240fdf",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/479574_357115.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/479574_357115.jpg",
+       "storageKey": "22139555/479574_357115",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1920,
+       "w": 2560,
+       "s": 1448975,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_4aca913b-168c-4e7f-923e-e02e95b5e786",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/375476_203102.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/375476_203102.jpg",
+       "storageKey": "22139555/375476_203102",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1500,
+       "w": 2000,
+       "s": 2724796,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_ff2d35ce-60dd-4e3b-96ce-c852f2e261ca",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/455402_254231.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/455402_254231.jpg",
+       "storageKey": "22139555/455402_254231",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1760,
+       "w": 1920,
+       "s": 2201216,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_f8794d8b-2dc7-4d4c-a6f6-832e8308d10d",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/39177_651746.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/39177_651746.jpg",
+       "storageKey": "22139555/39177_651746",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1536,
+       "w": 2048,
+       "s": 1693326,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_67ad001b-dc81-41c1-b45d-d5e8fc98d07b",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_753abf15-7f9f-4564-a0ab-439122eac2ee",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Murs végétaux utilisation",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_34fc22f2-f658-4d62-81e8-3b409cb9d8f7",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Personalisation &amp; option </h1><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><em>Stickers, néons et détails sur mesure</em></p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"display: inline-block\"></span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_63de7f60-afc0-4643-aa2c-f3686ccd9a6e",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Chaque mur — d’eau ou végétal — peut être personnalisé pour refléter votre thème, votre identité visuelle ou l’ambiance que vous souhaitez créer.  Vous pouvez personnaliser votre mur avec :</p><p class=\" s-rich-text-wrapper\"><span style=\"display: inline-block\"></span></p><ul><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><u><strong>Stickers sur mesure </strong></u>: Initiales, logo d’entreprise, date clé, message ou motif décoratif adaptés à votre événement.</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><strong>Néons LED personnalisés</strong> : Parfait pour les murs végétaux : noms, slogans, hashtags ou messages lumineux qui deviennent un vrai point focal.</li><li class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><strong>Éléments décoratifs supplémentaires</strong> : Fleurs, végétation, accessoires assortis à votre thème pour harmoniser l’ensemble.</li></ul><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Nous vous <a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">guidons</a> pour choisir l’endroit le plus esthétique et photogénique : derrière un <a href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\">photobooth</a>, en zone photo, en fond de stand ou pour vos prises de parole. Notre équipe vous <a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">accompagne</a> dans le choix des couleurs, des matériaux, des effets lumineux et des options les plus harmonieuses. Nous veillons également à une installation sécurisée et parfaitement intégrée à vos autres éléments visuels, qu’il s’agisse de <a href=\"http://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariages</a>, d’<a href=\"http://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événements</a> professionnel ou de scénographies plus complètes.</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_9226990b-67de-4c87-bb99-1ead8e634651",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_e4025b7f-1046-469e-88aa-68ad193cb02b",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8ee4e77d-01e5-425c-87bd-556b3ef45e28",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": true,
+     "focus": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_1d588990-d05b-4321-8b2e-7850f7bf45ce",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_d2c8d8db-7f99-44f6-8f29-bb837da3ef7e",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_ef67e2f6-de19-41f7-be34-9b78bcb76231",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_3a96e2d4-8554-4c57-9ecb-79a3cfa3db5c",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_b6702bde-4892-4ce2-a698-7e694be28a2d",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_fe88c2b3-7dc3-4fbc-abc2-97ad5711357d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\">Transformez vos événements </h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_f2a1383d-3b83-4a68-a0bd-3ac7bc374f9b",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-text-color-default\"><em>Contactez nous pour créer un décor qui fera sensation</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_da33ab84-26e8-4c22-8714-ec2b1939d517",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/735086_117198",
+     "storage": "s",
+     "format": "jpg",
+     "h": 1920,
+     "w": 2560,
+     "s": 787482,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_30584fe6-9360-4ebd-b324-4bfcc63dd9db",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire personnalisé14",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1763463406988#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1763463409504#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_082fd396-e67e-42a9-9947-1ee2e57f77d1"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_702cb04b-45b7-4700-aafb-7cc714cbabdc"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_98a6b37c-b667-485e-8a15-9212f99ad31e",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_dac81ca4-4f14-49fe-ac10-e8981688c193"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_1d427430-3410-487e-b54c-d23f88556af9"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_eb92c832-433f-498b-807e-cf4ad16fa828"
+          },
+          "$item1763463406988#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_45719154-fae3-4174-b939-e51dc955bf52"
+          },
+          "$item1763463409504#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "MM/DD/YYYY",
+           "isRequired": false,
+           "id": "f_f5a9ff9a-5db7-4c17-afb7-246abc9af645"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1763463406988#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_3d60534c-8735-4210-bf4d-10df2f7a4860"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_daae6fcc-79f5-4d5d-9b88-d22305cc44ad"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1763463409504#date",
+         "$item1763463406988#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1763463406988#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1763463409504#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Mur d'eau & végétal",
+ "uid": "c20b1b19-9e10-44ef-9aaa-fb02c3d47979",
+ "path": "/mur-d-eau-and-vegetal",
+ "autoPath": true,
+ "authorized": true
+}

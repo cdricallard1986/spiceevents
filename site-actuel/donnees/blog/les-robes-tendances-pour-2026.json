@@ -1,0 +1,881 @@
+{
+ "blogPostMeta": {
+  "id": 18159734,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-11-24T05:22:10.921-08:00",
+  "publishedAt": "2021-11-24T05:49:28.721-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/les-robes-tendances-pour-2026",
+  "customSlug": null,
+  "editCount": 550,
+  "publishedEditCount": 546,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/les-robes-tendances-pour-2026",
+   "title": "Les robes tendances pour 2026",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5439810/102881_277927.jpeg",
+   "description": "Princesse, sirène, minimaliste, classique… Vous ne savez pas quel type de robe choisir pour votre mariage ?  Spice Events a répertorié pour vous les 10 plus belles tendances pour l'année 2026 !  La robe cathédrale La robe de mariée coupe cathédrale incarne la grandeur et le raffinement absolu....",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Mariage pluvieux, mariage heureux ?",
+  "nextBlogPostRelativeUrl": "/blog/mariage-pluvieux-mariage-heureux",
+  "nextBlogPostId": 18526506,
+  "prevBlogPostTitle": "Pourquoi engager un DJ professionnel pour votre événement ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-engager-un-dj-professionnel-pour-votre-evenement",
+  "prevBlogPostId": 17980606
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_36c3ecd7-ced2-44f8-8d3b-f0eaadf68d17",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_6862bfe4-daa1-44b0-b71c-6154cca5d473",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_c9c6fb8e-0277-48c7-bd61-b90b43891f16",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Les robes tendances pour 2026</p></div>",
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_2eac6a69-55b3-42a9-ad2b-9c04a5c2baeb",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>C'est l'heure pour vous de briller mesdames.</p></div>",
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_43ffe365-3c31-41ec-b4c4-a0e783b2d28a",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "5439810/102881_277927",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3456,
+    "w": 5184,
+    "s": 3660666,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_f44309d9-fde5-421c-b784-b77cb8400339",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_57c11413-c0d8-4d91-9833-6743a1d91e09",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_d13698a9-dc8b-48d1-b95c-0fee19911a9d",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_d923f68a-901e-4d48-a017-698db0386bcc",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_8e073810-a623-4fe7-a424-c714b646472b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_bcb51be6-90bb-44e6-b566-d355627c2179",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_bd36d5e4-cddf-4637-9fc0-bbe7333a9863",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "cad59143-4eb0-4a87-9606-2ee76a80cd7e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "98d9acb9-24fa-4305-b0ae-280c662026f5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Princesse, sirène, minimaliste, classique… Vous ne savez pas quel type de robe choisir pour votre mariage ? </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9bb5c7e0-bbc5-45af-a821-884de9352732",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9e07d9ca-c2d5-466e-833a-c502eb9fa067",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Spice Events a répertorié pour vous les 10 plus belles tendances pour l'année 2026 !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9bb5c7e0-bbc5-45af-a821-884de9352732",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0d113ddc-7d43-4464-a581-208ab7b0d7a9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5e11346d-b936-4ee0-a0ec-3f7c91328d7d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5f22a677-8a28-496f-80e3-45ecd92a97d4",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe cathédrale</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f1dd66a6-2020-4c9d-8b20-72ffef092d8b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "89719530-54fb-4536-83de-62ec7f24dc9c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée coupe cathédrale incarne la grandeur et le raffinement absolu. Avec sa longue traîne majestueuse et son volume impressionnant, elle apporte une allure royale et solennelle, parfaite pour les cérémonies prestigieuses. Chaque mouvement devient une véritable mise en scène, offrant une présence spectaculaire tout en conservant élégance et harmonie. C’est le choix parfait pour les mariées qui rêvent d’un effet “wow” dès leur entrée, entre tradition, noblesse et romantisme.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "43485829-bbc9-444c-ad68-ac8ecd54df07",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "96e691bf-e08a-425f-a265-351e4dc02676",
+     "defaultValue": false,
+     "value": "<p class=\" style=\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b0174ae6-b8f4-42a4-84d0-412885e80086",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "8878963b-8e61-41bd-a3cc-a368c98cd7f6",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/792984_481072",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1200,
+     "w": 675,
+     "s": 106240,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d2398bc9-0d45-4953-ba21-35592799f558",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0cb07aa7-a372-4e02-885e-b5aee3ac390a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d2398bc9-0d45-4953-ba21-35592799f558",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "674f0fc4-17f9-46ca-9c85-d907b946518f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Robe dentelle à manches longues</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6838a280-773c-4cc8-955f-14e9ee05b68f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b39f8e9d-2b32-45f5-84ba-066ac0f04b83",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée en dentelle intégrale est un véritable hommage au romantisme. Avec ses motifs délicats et ses textures raffinées, elle offre un rendu à la fois sophistiqué, doux et résolument féminin. Chaque détail de dentelle capte la lumière et sublime la silhouette avec élégance. C’est le choix idéal pour une mariée qui souhaite une allure poétique, romantique et riche en caractère, tout en conservant une grande finesse visuelle.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ff8cfd5d-8ba9-4fe7-8279-d2c068552bf9",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "cdf51592-9844-4e3f-96f4-49466783cbb3",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/299848_810856",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1200,
+     "w": 600,
+     "s": 126106,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "73ef770d-dd79-40fa-84c6-c0cf08826805",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0a492245-cbfa-49c7-b0b2-99d14ce754a5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "73ef770d-dd79-40fa-84c6-c0cf08826805",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1f46d4da-b150-4271-8167-74f58a753b7c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La traditionnelle robe classique</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1499d1a6-c210-47a7-b817-7053cd99cd75",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dec0dd21-2188-42cb-804f-9efa10ff103a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée classique incarne l’élégance intemporelle. Souvent blanche ou ivoire, elle mise sur des lignes pures, des tissus raffinés et une silhouette harmonieuse qui traverse les modes sans jamais perdre de sa grâce. Qu’elle soit fluide, structurée ou satinée, elle reflète l’essence même du mariage : la simplicité chic, la douceur et le romantisme. C’est le choix parfait pour une mariée qui souhaite un style à la fois sobre, féminin et indéniablement élégant.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4d72a6da-7eb5-4364-8ec2-35f783f02bc6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "df44b5d7-972c-4ef0-8637-60d8ec636b0e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/403997_244084",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1104,
+     "w": 736,
+     "s": 53119,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fa566615-2f73-48a3-9578-6495bc3bb259",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "09f2449a-96fc-4e56-ab78-2264b925c09c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fa566615-2f73-48a3-9578-6495bc3bb259",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bc813330-13a5-4638-955f-c025b01508da",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La mythique robe princesse</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "84b387de-38d8-4d4b-afe8-adeb9035c661",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c4f3b10c-a637-458e-9719-f627634335aa",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La mythique robe princesse représente le rêve intemporel de nombreuses mariées. Avec son jupon ample, sa taille marquée et sa silhouette féerique, elle crée un effet spectaculaire tout en mettant merveilleusement en valeur la silhouette. Elle apporte ce mélange parfait de romantisme, de magie et de grandeur, digne des contes de fées. C’est la robe idéale pour celles qui souhaitent vivre un moment d’exception, et faire de leur entrée un souvenir absolument inoubliable.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "59157993-441a-49c3-891a-ea53c3953d00",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "915d6c6c-f9b5-4b5c-9457-ccc6e896a6e5",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/987665_297217",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1104,
+     "w": 736,
+     "s": 155545,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6bf38940-0c38-4bd6-8a5b-aa61fe1a961d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f7a294eb-0008-4aa1-8896-dcc105addf9d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6bf38940-0c38-4bd6-8a5b-aa61fe1a961d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0515804b-0be9-467b-b720-8c38894b28d8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La </strong></span><span style=\"color: #000000;\"><em><strong>Old Money Wedding Dress</strong></em></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "db1deac1-4fef-4144-b4aa-03a0426ce3ba",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2a973614-e349-40ea-8b78-d202c1043033",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée </span><span style=\"color: #000000;\"><em>Old Money</em></span><span style=\"color: #000000;\"> incarne une élégance intemporelle, loin des tendances éphémères. Silhouette épurée, matières nobles comme le satin duchesse ou la dentelle, détails raffinés mais jamais ostentatoires : tout est pensé pour un style à la fois sobre, luxueux et maîtrisé. Cette esthétique puise dans l’héritage des grandes maisons et des mariages d’antan, où la sophistication résidait dans la qualité des lignes et la discrétion des ornements. Porter une robe old money, c’est choisir une allure classique, confidentielle et profondément chic, qui transcende les modes.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ab5f7419-dffa-42af-910e-b0eb3bbc5a17",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "d6f247f8-8218-42c4-9f09-cc0b60863ca1",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/861139_805653",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1000,
+     "w": 700,
+     "s": 73984,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "24278a12-dbc9-4550-883d-a51c26a0511a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3e37195b-3c07-44eb-8287-53c0d2779302",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "24278a12-dbc9-4550-883d-a51c26a0511a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6885f64b-dd62-4c19-903e-08cce04a7e3c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe 2 en 1</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "40272f8f-39f7-41c5-a62c-7ee74435c045",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a2412816-20e1-4017-88ab-7f39ad31a904",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée 2 en 1 séduit par son côté modulable et ingénieux. Avec sa traîne amovible, elle offre aux mariées le luxe d’une silhouette spectaculaire pour la cérémonie, puis la liberté d’un look plus léger pour la soirée. En un geste, la robe se transforme : majestueuse et solennelle d’abord, moderne et pratique ensuite. Cette option est idéale pour celles qui souhaitent profiter pleinement de leur journée sans renoncer à l’effet “wow”. Une pièce polyvalente, pensée pour allier élégance, confort et mouvement, tout au long du mariage.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3a7b7175-1421-4fd9-81c2-7446f8730b27",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a83e513e-ff01-4c0c-b3e1-527cb810f0c1",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/715389_76107",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1188,
+     "w": 1179,
+     "s": 180559,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1fe00af9-aa5f-47c3-b225-837831500e50",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dc57ba31-74bc-4e81-873a-7f0b32e543a1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1fe00af9-aa5f-47c3-b225-837831500e50",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f5eb524c-e6a6-432d-8df4-f960eb79b7a6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe minimaliste</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "04c75a65-e427-4e12-9b71-765dda962de8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6459277b-d2c6-4ec8-bb8a-3f676a082441",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée en satin ultra simple incarne l’élégance pure. Sans fioritures, elle mise sur des lignes épurées, une matière lumineuse et une silhouette parfaitement maîtrisée. Son minimalisme crée un effet sophistiqué et intemporel, laissant toute la beauté de la mariée s’exprimer naturellement. Un choix moderne, chic et assuré, pour celles qui savent que la simplicité peut être absolument spectaculaire.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bbb38dc7-77fc-4288-a51d-010b16768fa1",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "196ed971-5bf0-43c0-8da3-60e2bc818cc4",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/981120_433653",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1200,
+     "w": 600,
+     "s": 97108,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c95f0398-6fb6-44ae-8867-0fd79d75a64f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "029da602-2d24-4ced-8cb6-a1fe12bd5e26",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c95f0398-6fb6-44ae-8867-0fd79d75a64f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1558e4af-1658-47b6-9edf-3eb2485ba5a1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe sirène </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "02aa4f56-dfbd-4627-b1f8-63c36f27a5a8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6c484678-94ac-4da0-b9c6-266840467153",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">La robe de mariée sirène sublime la silhouette grâce à sa coupe ajustée du buste jusqu’aux hanches, puis délicatement évasée au niveau des genoux. Elle met en valeur les courbes avec élégance et crée une allure féminine, raffinée et assumée. C’est la coupe idéale pour celles qui recherchent un style glamour et sophistiqué tout en conservant une belle liberté de mouvement.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1fe8d301-3a23-485c-a8ec-726ed2c45ff0",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "ef728a3c-95ae-4141-82c4-20a34ea22824",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/79526_431674",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1800,
+     "w": 1200,
+     "s": 204571,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2401925a-c8e2-48b5-bc27-566715fd69af",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "24ae0dff-bb7d-456a-b37f-c25af83dc38b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2401925a-c8e2-48b5-bc27-566715fd69af",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "98be642a-eb10-4968-8a11-60b57979e526",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe courte</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c4d09b73-9200-4d2e-9930-0c627e85cd4b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7ff97067-52fe-41cf-a58a-123d73f1c791",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">La robe de mariée courte offre une allure moderne et légère, parfaite pour un mariage estival, civil ou décontracté. Elle allie confort et élégance, mettant en valeur les jambes tout en restant chic et raffinée, idéale pour danser et profiter pleinement de la journée. Polyvalente, elle peut se porter avec des accessoires audacieux pour un look unique. C’est le choix parfait pour celles qui veulent allier liberté de mouvement et style contemporain.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "42c8f484-7747-42c3-a75c-52414eb4cbbb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a978f408-8302-4314-8401-18d636e455bf",
+     "defaultValue": false,
+     "value": "<p class=\" style=\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "58380be6-df38-46d1-aaa8-2c2dcf46c6a3",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "58331e7e-3e4c-4e9a-8189-2023de5f497e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/433786_445608",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1500,
+     "w": 1000,
+     "s": 162242,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7a60ce1e-8290-45c3-aea4-84761b895585",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8f23b338-5c88-4dbe-bfa6-c8cd185f3802",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7a60ce1e-8290-45c3-aea4-84761b895585",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2ffcafb0-6833-452b-bf95-cd43364cf013",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La robe bohème chic</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a0a3ef0d-a863-4bd5-aeff-c759c2d5bcc1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e27322c8-7e9e-4249-9da8-8bc615861bcc",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La robe de mariée bohème chic allie élégance raffinée et esprit libre. Elle se distingue par des matières fluides, des dentelles délicates et des détails subtils qui apportent sophistication et romantisme. Parfaite pour un mariage en plein air ou dans un cadre intimiste, elle se complète idéalement avec des accessoires discrets, une coiffure naturelle et des bijoux fins, créant un look à la fois moderne et intemporel.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "084a8750-a437-46d7-8eb9-e80477b426d3",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "38b4bc81-5a0d-4787-847d-33f96532c60f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/281385_796985",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1538,
+     "w": 1024,
+     "s": 179326,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "672050b5-2bc3-4648-8417-8031304e874d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9d68bbf9-6a28-480b-8594-877d8b1555c1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous espérons que Spice Events vous aura aidé dans vos recherches ! N'hésitez pas à aller visiter notre page \"</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>Mariages</u></a></span><span style=\"color: #000000;\">\" pour trouver d'autes idées.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7859a29f-a261-431d-a347-f2a18dedb4ed",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8781b1a4-ab0b-420e-a232-e1a4611d676c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

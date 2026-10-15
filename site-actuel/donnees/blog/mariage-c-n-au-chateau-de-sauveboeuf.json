@@ -1,0 +1,312 @@
+{
+ "blogPostMeta": {
+  "id": 500217,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2018-02-06T01:17:55.508-08:00",
+  "publishedAt": "2019-08-27T01:17:55.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/mariage-c-n-au-chateau-de-sauveboeuf",
+  "customSlug": null,
+  "editCount": 330,
+  "publishedEditCount": 328,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Mariages"
+  ],
+  "categories": [
+   {
+    "id": 365909,
+    "name": "Mariages"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/mariage-c-n-au-chateau-de-sauveboeuf",
+   "title": "Mariage C&N au Château de Sauveboeuf",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/556447_241470.jpeg",
+   "description": "Encore une belle cérémonie sous le signe de l'amour pour Spice Events. Nos flyhts cases se sont installés dans le magnifique château de Sauveboeuf datant du XVIIᵉ siècle, en Dordogne. Pour accompagner cette décoration champêtre, nos équipes se sont chargées de la sonorisation de la cérémonie...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Quels sont les indispensables pour un événement réussi ?",
+  "nextBlogPostRelativeUrl": "/blog/quels-sont-les-indispensables-pour-un-evenement-reussi",
+  "nextBlogPostId": 15438677,
+  "prevBlogPostTitle": "Mariage L&M près de Massiac",
+  "prevBlogPostRelativeUrl": "/blog/mariage-l-m-pres-de-massiac",
+  "prevBlogPostId": 2151080
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_29167204-83f1-4e8f-93fa-fcac34e51571",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_6c6cb88a-cd3e-400c-bee7-17eb07094afd",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_cd6baa0e-781a-4785-92fb-b3930cd649fe",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Mariage C&amp;N au Château de Sauveboeuf</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_f511a5f2-331e-4e7f-b094-e6ffe74528ce",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "",
+    "backupValue": null,
+    "version": null
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_9c1d2ce2-1c93-45be-b038-0095df16d906",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/556447_241470",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3932,
+    "w": 9810,
+    "s": 2655564,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_eff3444e-5b77-4376-9f6a-4adb7f28f986",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_3b75de40-d059-4ae7-86eb-406da5fda905",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_f6be4c41-c8e8-4b1c-892f-0e4113bc28c4",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_8235d644-9832-4031-a454-12d9b75d0b5c",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_360093d3-344e-4c4e-b55a-ce3782ee82b0",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_cc7d2ba0-4cb8-4d94-bd74-f6697943f2a4",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_b546fcd6-9713-450f-a6f4-a709a5a75c78",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_37dd81e1-a270-4330-8149-dbd6a8ae5202",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_0c6df12f-eb06-4608-a490-6dac85dd745f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/333314_987784",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 881867,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_d999fbc3-6f8c-4b29-b399-06e8a9bb9e18",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "834428b8-6167-4272-8bfb-c57982328d15",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Encore une belle cérémonie sous le signe de l'amour pour Spice Events. Nos flyhts cases se sont installés dans le magnifique château de Sauveboeuf datant du XVIIᵉ siècle, en Dordogne.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f8b5bc31-2640-4114-ab5c-6c090c401910",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a7bdd3fc-654e-41ae-8a28-cb33a5d3df24",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour accompagner cette décoration champêtre, nos équipes se sont chargées de la sonorisation de la cérémonie religieuse. La sonorisation de votre cérémonie est un atout essentiel pour le bon déroulement de celle-ci : elle permet aux personnes du fond d'entendre de façon clair vos discours, d'avoir une musique sans grésillement &amp; apporte une réelle qualité sonore pour vos animations. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_d999fbc3-6f8c-4b29-b399-06e8a9bb9e18",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "86f984b6-3306-478c-a8f9-75be88aec31c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous avons également éclairé le repas avec des projecteurs LED sur batterie BOXKOLOR de la marque CHAUVET.  Ces projecteurs offrent une ambiance champêtre et chaleureuse, qui s'inscrit parfaitement dans la thématique choisie par nos deux mariés. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cf71bf79-fd7c-41a7-8431-717073ee2a51",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "36559c9e-1216-4a24-9d74-d56f58c9e3af",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Le repas quant à lui était sonorisé avec 4 enceintes LD Systems MAUI5GO. Ces enceintes design se dissimulent parfaitement dans le décor, se rendant presque invisible. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_d999fbc3-6f8c-4b29-b399-06e8a9bb9e18",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "45afa735-1e35-40ee-8658-f09f5bc42aa5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La soirée se déroulait dans la pièce du bas et à durée jusque 5h du matin.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d83b53e1-9137-49e5-a126-cfaa7d342602",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0555dbfd-6019-4517-b309-64898cfcca87",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6336588f-8dd3-4d43-9de9-4d9eeb181787",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_a978722b-e554-4ef7-b471-59fd8b4e000e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/698859_144939",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 656437,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "53f2d2fb-1051-42b6-ab39-4c8cecfc7ffb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4cc10ecd-2016-4aa3-8e8e-a8132ebf0a37",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

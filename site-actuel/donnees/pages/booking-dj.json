@@ -1,0 +1,2106 @@
+{
+ "type": "Page",
+ "id": "f_0940af69-2c0c-47e3-82fb-a0fad1e9f619",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_e7b212c3-fc40-4d53-8487-7afc60cd8d46",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_5bbf3f7e-2d4b-446f-8302-315517d8c068",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Image accueil",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_117c48ab-f40b-4eb0-863b-0344ead8cf48",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\"><span class=\"s-text-color-default\">BOOKING DJ</span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_a28b612d-3c62-4c15-bc32-826c9a602b27",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><em>Réservez le son, l’émotion et l’énergie qui feront la différence.</em></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_8d5866de-ff63-47c5-acf3-f4d5a5fce19a",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_d079b966-4d61-474f-9a5e-68012bedc12f",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_cc44476e-3c6e-464c-a152-41dae833bccc",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_1744f930-19b7-4552-bfcf-7d81fc662378",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_eded02ea-b080-4440-874c-397e939ea056",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_50b7f27d-8bd6-40ad-b727-ec24906469c4",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/990981_578108",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 2560,
+     "w": 3840,
+     "s": 2205350,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_c9f7e674-c081-4030-8487-29094f82e2ef",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_3d9d331b-5cae-493f-8155-5dce686085b2",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Bouton",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_fc40f192-cd31-44ff-aad8-3984f74824e4",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Nos DJ expérimentés</h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_950285e2-cbc9-467a-89e3-dd0f269aa762",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>L’expérience et la passion au service de votre événement</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_c18aea0b-95fa-49d2-9197-ec536096d47a",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_edc5fe39-a619-4900-a32a-40f0a2c39898",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_fab4c5e7-6b83-4517-869b-1727c5f60b57",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_51663a9e-5d35-46ce-b8b8-3e24974dfb72",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_9f2501b9-1d0b-4f24-81d2-e97a5f83b682",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_76185a6d-f710-48c8-b291-692468bd010a",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_9f6053a4-9b04-421d-a0b4-f98ebe50f659",
+   "defaultValue": true,
+   "template_name": "new_grid",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_234b3935-af59-4793-840f-9e240ccc91d9",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": true,
+     "hidden_mobile_section": false,
+     "name": "Cédric",
+     "sync_key": null,
+     "layout_variation": "grid-1-2--extraLarge-none-wide",
+     "display_settings": {},
+     "padding": {
+      "top": "none",
+      "bottom": "none"
+     },
+     "layout_config": {
+      "vertical_alignment": "middle",
+      "showTitle": false,
+      "textAlignment": "center"
+     }
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_024c6254-3ca9-41d6-a8fd-96b419098fdb",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_2a8163b9-4f85-4ce2-9044-a9e017e059e2",
+       "defaultValue": null,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_47eece1d-5911-4b2d-84c7-e479a0871014",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_29ec6ca6-8313-4182-b465-431cfac758c2",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_daad3fca-da96-466a-8a6c-0bc9f02bbd64",
+          "defaultValue": true,
+          "link_url": null,
+          "thumb_url": "",
+          "url": "",
+          "caption": "",
+          "description": "",
+          "new_target": true
+         },
+         "current": "image"
+        },
+        "email1": {
+         "type": "EmailForm",
+         "id": "f_1f75fba7-6beb-46f3-bb24-b59cfe134319",
+         "defaultValue": false,
+         "hideMessageBox": false,
+         "hide_name": false,
+         "hide_email": false,
+         "hide_phone_number": true,
+         "name_label": "Nom",
+         "name_format": "single",
+         "first_name_label": "First Name",
+         "last_name_label": "Last Name",
+         "email_label": "E-mail",
+         "phone_number_label": "电话",
+         "message_label": "留言",
+         "submit_label": "Soumettre",
+         "thanksMessage": "Merci pour votre soumission!",
+         "recipient": "",
+         "label": ""
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_4a5830c0-f66e-4cb2-9d8d-1ab5109a800b",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_10e62d57-9aca-4baa-928c-c79f8019628d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_e3b9c418-940b-4e8a-bd93-5937a643f5e4",
+         "defaultValue": false,
+         "value": "",
+         "backupValue": null,
+         "version": null,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         }
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_b5c1fb23-5552-4ccb-a927-e22f1bf34f90",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "linkUrl": "http://www.spiceevents.fr/cedric-allard",
+         "linkTarget": "_self",
+         "clickable": "true",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/361913_789864",
+         "storage": "s",
+         "format": "jpg",
+         "h": 4393,
+         "w": 2929,
+         "s": 2951734,
+         "useImage": true,
+         "noCompression": null,
+         "focus": null
+        }
+       },
+       "layout_config": {
+        "layout_component": "button",
+        "media_position": "noImage"
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_06f5ca98-77a6-459e-ba4c-eabcdb926e3b",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_547fdfbd-2156-4019-bb8a-d932059c615c",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_d40f6f81-0420-486f-8365-7b2178af4dac",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_66e5ab28-d9dd-43de-9b30-e6924422347f",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "email1": {
+         "type": "EmailForm",
+         "id": "f_52dc7fd2-cb03-4dd2-bd63-9a06e88ddbdf",
+         "defaultValue": null,
+         "hideMessageBox": false,
+         "hide_name": false,
+         "hide_email": false,
+         "hide_phone_number": true,
+         "name_label": "名字",
+         "name_format": "single",
+         "first_name_label": "First Name",
+         "last_name_label": "Last Name",
+         "email_label": "邮箱",
+         "phone_number_label": "电话",
+         "message_label": "留言",
+         "submit_label": "提交",
+         "thanksMessage": "感谢提交",
+         "recipient": "",
+         "label": ""
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_de4b50d7-8d5d-4aee-b924-a7f9245e4588",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "https://www.strikingly.com/",
+         "new_target": null,
+         "version": "2"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_ebfa1ca9-f11f-49f9-8fb9-d7ead38bbd13",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><strong>\"</strong><span style=\"color: #000000;\"><strong>Parce qu’un bon DJ ne se cache pas derrière son ordi — il vit la soirée avec vous.\"</strong></span></h3><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 22px;\"><span style=\"display: inline-block\"></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_95342431-3f6f-4670-aa24-14f56da6fad5",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 17px;\"><span style=\"color: #000000;\">\"DJ depuis plus de 20 ans, j'ai transformé ma passion pour la musique en une véritable vocation. Après mes débuts lors de soirées étudiantes et d’événements privés, j'ai animé plus de </span><span style=\"color: #000000;\"><strong>350 mariages, soirées et événements professionnels</strong></span><span style=\"color: #000000;\"> à travers la France. Ce que je recherche avant tout, c’est </span><span style=\"color: #000000;\"><strong>le plaisir du partage</strong></span><span style=\"color: #000000;\">, cette énergie unique qui se crée lorsque la musique rassemble les gens et fait naître des émotions sincères.  Pour moi, chaque prestation est une histoire à raconter, un moment à faire vivre pleinement — toujours avec écoute, bienveillance et une passion intacte pour mon métier.\" _ </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/cedric-allard\" data-type=\"undefined\" target=\"_self\">Cédric Allard.</a></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_1d5f27ec-a10a-434c-83c0-bd506ea870aa",
+         "defaultValue": false,
+         "url": "",
+         "textColor": "",
+         "backgroundVariation": "",
+         "sizing": "",
+         "userClassName": "",
+         "linkUrl": null,
+         "linkTarget": "_blank",
+         "clickable": "",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": null,
+         "storage": null,
+         "format": null,
+         "h": null,
+         "w": null,
+         "s": null,
+         "useImage": false,
+         "noCompression": null,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "type": null,
+          "value": "#FFFFFF"
+         }
+        }
+       },
+       "layout_config": {
+        "layout_component": "button",
+        "media_position": "noImage"
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_5e5725ab-ff29-441f-bfad-ccdb0ec0c6f3",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_f3cfe32d-cf19-4c78-b62d-bff06b4c0937",
+        "defaultValue": null,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_bd7c05a4-3ca5-4144-9501-1774a259a700",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "",
+        "url": "",
+        "caption": "",
+        "description": "",
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "email1": {
+       "type": "EmailForm",
+       "id": "f_7f85fa85-b88f-44c7-930a-900fb26a2499",
+       "defaultValue": null,
+       "hideMessageBox": false,
+       "hide_name": false,
+       "hide_email": false,
+       "hide_phone_number": true,
+       "name_label": "名字",
+       "name_format": "single",
+       "first_name_label": "First Name",
+       "last_name_label": "Last Name",
+       "email_label": "邮箱",
+       "phone_number_label": "电话",
+       "message_label": "留言",
+       "submit_label": "提交",
+       "thanksMessage": "感谢提交",
+       "recipient": "",
+       "label": ""
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_827b0bdd-b495-4de2-b367-6182d5f872be",
+       "defaultValue": null,
+       "alignment": "center",
+       "text": "",
+       "size": "medium",
+       "mobile_size": "automatic",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "https://www.strikingly.com/",
+       "new_target": null
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_013648a2-9398-41b2-bc29-34c45930dfa6",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_ee6c7c95-1b45-4f9e-96d5-7194b4f5dcee",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_2b8b54f7-2499-4bdd-bc35-ec35f0a1ec2a",
+       "defaultValue": true,
+       "url": "",
+       "textColor": "overlay",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "userClassName": null,
+       "linkUrl": null,
+       "linkTarget": "_blank",
+       "clickable": "",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null,
+       "noCompression": null,
+       "backgroundColor": {
+        "themeColorRangeIndex": null,
+        "type": null,
+        "value": "#E8EAEC"
+       }
+      }
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_99f04dda-0887-4211-9892-b770b6435a71",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_6a2c61a7-9b4a-45c1-bd1b-ac8a5c54d82e",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_06e8ff40-c3fa-4612-bc0f-20341cfccd17",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_29e1b521-7bb6-4c23-82b2-fbeef26db9c1",
+   "defaultValue": true,
+   "template_name": "new_grid",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_a4f3054a-3c71-40e3-bedc-8da729e3622d",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": true,
+     "name": "Cédric (o)",
+     "sync_key": null,
+     "layout_variation": "grid-1-2--extraLarge-none-wide",
+     "display_settings": {},
+     "padding": {
+      "top": "none",
+      "bottom": "none"
+     },
+     "layout_config": {
+      "vertical_alignment": "middle",
+      "showTitle": false,
+      "textAlignment": "center"
+     }
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_20e883c5-e417-4447-a575-39b96dc90bcc",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_dda33342-9032-4897-ac10-ede589d17d37",
+       "defaultValue": null,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_cb3cfe03-0434-4e6a-9cb3-6a02859726dc",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_78b917f4-55f6-4c0d-9bbb-d90d462d5b0b",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_e35f2a7f-fcff-495d-8201-78987fcc5682",
+          "defaultValue": true,
+          "link_url": null,
+          "thumb_url": "",
+          "url": "",
+          "caption": "",
+          "description": "",
+          "new_target": true
+         },
+         "current": "image"
+        },
+        "email1": {
+         "type": "EmailForm",
+         "id": "f_d461b20b-6db6-4e65-96af-d60845da7e56",
+         "defaultValue": false,
+         "hideMessageBox": false,
+         "hide_name": false,
+         "hide_email": false,
+         "hide_phone_number": true,
+         "name_label": "Nom",
+         "name_format": "single",
+         "first_name_label": "First Name",
+         "last_name_label": "Last Name",
+         "email_label": "E-mail",
+         "phone_number_label": "电话",
+         "message_label": "留言",
+         "submit_label": "Soumettre",
+         "thanksMessage": "Merci pour votre soumission!",
+         "recipient": "",
+         "label": ""
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_3c02e809-27ce-4b7f-95d1-9e470c761cb3",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_1117f8dc-2ac3-4bc5-8a6b-c257504de66e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_cd19e217-aa2a-4364-bb2f-637dbb49d09b",
+         "defaultValue": false,
+         "value": "",
+         "backupValue": null,
+         "version": null,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         }
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_9e0fa15f-39b2-4c5d-a981-526edd1822a5",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "linkUrl": "http://www.spiceevents.fr/cedric-allard",
+         "linkTarget": "_self",
+         "clickable": "true",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/361913_789864",
+         "storage": "s",
+         "format": "jpg",
+         "h": 4393,
+         "w": 2929,
+         "s": 2951734,
+         "useImage": true,
+         "noCompression": null,
+         "focus": null
+        }
+       },
+       "layout_config": {
+        "layout_component": "button",
+        "media_position": "noImage"
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_e8c8736e-c700-4241-9031-650294835012",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_4ef8074c-92bb-4f1c-a9db-edceb5f95a5d",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_d6d30f65-1d3f-41d8-8f00-d4416329f18b",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_13ac2d49-7bc2-43cb-9a1e-521f34e69f4c",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "email1": {
+         "type": "EmailForm",
+         "id": "f_9004ad83-30a2-4ca7-98fe-559c46b966d1",
+         "defaultValue": null,
+         "hideMessageBox": false,
+         "hide_name": false,
+         "hide_email": false,
+         "hide_phone_number": true,
+         "name_label": "名字",
+         "name_format": "single",
+         "first_name_label": "First Name",
+         "last_name_label": "Last Name",
+         "email_label": "邮箱",
+         "phone_number_label": "电话",
+         "message_label": "留言",
+         "submit_label": "提交",
+         "thanksMessage": "感谢提交",
+         "recipient": "",
+         "label": ""
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_ef17da9e-d8cb-456b-9581-4d125cd06d74",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "https://www.strikingly.com/",
+         "new_target": null,
+         "version": "2"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2cf51389-6f22-489d-8d1f-a1e6f02e23d4",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><strong>\"</strong><span style=\"color: #000000;\"><strong>Parce qu’un bon DJ ne se cache pas derrière son ordi — il vit la soirée avec vous.\"</strong></span></h3><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 22px;\"><span style=\"display: inline-block\"></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_206aa365-bffe-4064-9b46-f78d639ffb61",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 17px;\"><span style=\"color: #000000;\">\"DJ depuis plus de 20 ans, j'ai transformé ma passion pour la musique en une véritable vocation. Après mes débuts lors de soirées étudiantes et d’événements privés, j'ai animé plus de </span><span style=\"color: #000000;\"><strong>350 mariages, soirées et événements professionnels</strong></span><span style=\"color: #000000;\"> à travers la France. Ce que je recherche avant tout, c’est </span><span style=\"color: #000000;\"><strong>le plaisir du partage</strong></span><span style=\"color: #000000;\">, cette énergie unique qui se crée lorsque la musique rassemble les gens et fait naître des émotions sincères.  Pour moi, chaque prestation est une histoire à raconter, un moment à faire vivre pleinement — toujours avec écoute, bienveillance et une passion intacte pour mon métier.\" _ </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/cedric-allard\" data-type=\"undefined\" target=\"_self\">Cédric Allard</a></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_a89a1a0d-1250-4bfa-adf4-d9070f4463c9",
+         "defaultValue": false,
+         "url": "",
+         "textColor": "",
+         "backgroundVariation": "",
+         "sizing": "",
+         "userClassName": "",
+         "linkUrl": null,
+         "linkTarget": "_blank",
+         "clickable": "",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": null,
+         "storage": null,
+         "format": null,
+         "h": null,
+         "w": null,
+         "s": null,
+         "useImage": false,
+         "noCompression": null,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "type": null,
+          "value": "#FFFFFF"
+         }
+        }
+       },
+       "layout_config": {
+        "layout_component": "button",
+        "media_position": "noImage"
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_fdcbe551-b999-44ad-b3d1-a1aa7b35da75",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_221f792b-e5e9-4f24-8444-14e8ace50222",
+        "defaultValue": null,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_5035ad58-459a-4546-8297-517f25ddf8e1",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "",
+        "url": "",
+        "caption": "",
+        "description": "",
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "email1": {
+       "type": "EmailForm",
+       "id": "f_f20775fc-4ec9-4660-b518-d3f837b54f66",
+       "defaultValue": null,
+       "hideMessageBox": false,
+       "hide_name": false,
+       "hide_email": false,
+       "hide_phone_number": true,
+       "name_label": "名字",
+       "name_format": "single",
+       "first_name_label": "First Name",
+       "last_name_label": "Last Name",
+       "email_label": "邮箱",
+       "phone_number_label": "电话",
+       "message_label": "留言",
+       "submit_label": "提交",
+       "thanksMessage": "感谢提交",
+       "recipient": "",
+       "label": ""
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_345f7e1e-6091-4d88-8fc2-980110e81dee",
+       "defaultValue": null,
+       "alignment": "center",
+       "text": "",
+       "size": "medium",
+       "mobile_size": "automatic",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "https://www.strikingly.com/",
+       "new_target": null
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_ab26f904-c036-43d5-85be-854c80c086e5",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_b0af60fe-273d-4130-bbde-07eb9904eb57",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_063c8d0a-4fd7-45bd-b6d6-4a9e047a3145",
+       "defaultValue": true,
+       "url": "",
+       "textColor": "overlay",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "userClassName": null,
+       "linkUrl": null,
+       "linkTarget": "_blank",
+       "clickable": "",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null,
+       "noCompression": null,
+       "backgroundColor": {
+        "themeColorRangeIndex": null,
+        "type": null,
+        "value": "#E8EAEC"
+       }
+      }
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_e930f64f-eaa4-489a-a0f3-05569fc9222e",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_27ddbd1e-a392-4cec-9c31-d36d83dc3dc9",
+     "defaultValue": true,
+     "value": "",
+     "backupValue": null,
+     "version": null
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_da58bcd4-108d-42dc-b334-4ab51cb85c1b",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_17eb5221-c7d6-45c6-9e7d-0871161c806b",
+   "defaultValue": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_751125fa-7386-4ec8-89c1-9387011083f5",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": false,
+     "name": "video",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "auto",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_45f5b3a6-0ae3-4e16-8689-4356622e97cf",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_7c7c9b70-6229-48fd-ab0c-dd3e6e685126",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "c3d87996-031d-4d13-a39c-7fe8c8b52e60",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "9c5dec67-28df-450c-9ade-c53ab6e3b186",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "7cc4a9d4-0114-4c30-9573-e36b97d61cea",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "d2bc5936-f414-4f73-a218-8cbcc6eee975",
+             "items": [
+              {
+               "type": "Video",
+               "id": "e87ca9a6-234b-4a4a-a316-fa9e4a31242b",
+               "defaultValue": null,
+               "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FzchNbRcZ_gI%3Fwmode%3Dtransparent%26feature%3Doembed&wmode=transparent&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzchNbRcZ_gI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzchNbRcZ_gI%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"360\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+               "url": "https://youtu.be/zchNbRcZ_gI?si=1Ek5c12YPFXnNuJ0",
+               "thumbnail_url": "https://i.ytimg.com/vi/zchNbRcZ_gI/hqdefault.jpg",
+               "maxwidth": 700,
+               "description": null
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "95f3a866-96f6-4742-b5e0-0aa620585bc1",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "4b341b5d-cad4-43ef-be25-d58d447f1b1c",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f0f2f097-e123-4001-8f02-6c4042a344bd",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "1a373975-ff3b-407b-b6f7-00b8edace133",
+             "items": [
+              {
+               "type": "Spacer",
+               "id": "de83f733-d15c-48e4-bcde-cd39e8a1fec8",
+               "defaultValue": null,
+               "value": "257"
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_7be1891d-353a-417d-a05f-e605e602b179",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_dd567c8e-fc9d-43a7-ad16-8fb27095f616",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_d4cda683-f5ca-494d-bceb-3e1df914f576",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_82ad65ec-087a-4dca-b7a3-86f0e6eceff2",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_3f08d415-5a21-4368-8ee1-01c98415c3b4",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_f6e2c1cc-79ef-4686-8e5a-b3cdf7dab1bf",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_456e7f29-b4b2-48a8-a655-cbd83ebdaa4f",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/589576_39940.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/589576_39940.jpg",
+       "description": "platines dj",
+       "storageKey": "22139555/589576_39940",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2358,
+       "w": 3543,
+       "s": 6347396,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "52f5e2ee-6836-4c43-a9fc-28f3124cef1a",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_22719507-47ae-487d-aa7f-8b47206cd452"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_f00529b6-328e-4ecd-96cc-52f3b6cf0b71",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/221830_26821.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/221830_26821.png",
+       "description": "Set DJ LETS DANCE",
+       "storageKey": "22139555/221830_26821",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 1200,
+       "w": 900,
+       "s": 2002403,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_dbcce768-d8a4-4286-8169-010e1e50d645",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/809731_1018.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/809731_1018.jpg",
+       "description": "Mains qui mixent sur une platine",
+       "storageKey": "22139555/809731_1018",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 3456,
+       "w": 5184,
+       "s": 6920981,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_73f2d4ca-c4e5-4518-91ad-d89c4580273f",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_7897937f-8cd5-41ad-b510-bd85d723d633",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Ce qui fait la différence",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_bc3bdf89-7326-4832-ba36-ba11aa1d3846",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_b9eeaf8c-0671-45b2-ad3c-4ece28b79ec9",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_233f52e9-174a-4162-b0cb-05e165918296",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_9095c6f9-4340-43fe-86a7-b46bb5e8e2db",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_45520af5-22e8-4252-aa75-c5117f942f76",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_6693685b-6940-49b6-a312-aeac4f35157f",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_6678b854-0315-4a13-8f8a-2745a073b236",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_fdc8316a-9d37-43cc-8f6c-45c106183352",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"color: #040404;\">Ce Qui Fait La Différence</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_8ac87463-a701-4fba-a80b-c5edf631a232",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_8011c50f-6706-4940-a3a8-372d4b5b4147",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_ae6188d3-711e-4b94-8b4a-ded0a7f4a06b",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_618ce0b2-1755-4872-8b18-e666a8668c19",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f1540971-017d-4d0c-85d3-482163cbf52c",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_995f7463-79f0-4c56-aa17-5de971ff11d4",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Une approche unique pour des soirées qui ne ressemblent à aucune autre.</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_bc8d3e0c-d490-4ea9-ba91-60d98a88f44c",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_5a39426d-a5c5-4792-87d2-f006e476552a",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_62545d7c-9cb3-424e-acfc-88119db741f1",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Chez nous, choisir un DJ, ce n’est pas juste choisir quelqu’un pour passer de la musique. C’est faire le choix de l’expérience, de l’écoute et de la personnalisation. Nos DJ apportent :</span><br></p><ul><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\"><strong>Maîtrise et expérience</strong></span><span style=\"color: #000000;\"> : des années de scènes et d’événements couronnés de succès.</span></li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\"><strong>Écoute exceptionnelle</strong></span><span style=\"color: #000000;\"> : comprendre vos désirs les plus précis pour les transformer en moments magiques.</span></li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\"><strong>Accompagnement sur-mesure</strong></span><span style=\"color: #000000;\"> : chaque détail est pensé, chaque instant orchestré pour sublimer votre événement.</span><br></li></ul><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: #000000;\">Avec nous, chaque événement devient une expérience sur mesure où la musique raconte votre histoire et laisse un souvenir inoubliable.</span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "left",
+                  "lastLineTextAlign": "left"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_2ca0ba45-b960-469c-b68a-ab0b38cddd13",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_46ab4358-162a-4b0e-9e8b-2bafc51eed13",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_15dc8579-9326-4307-8726-af9015cd39dc",
+   "defaultValue": true,
+   "template_name": "gallery1",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_4ec04c2f-3750-48ff-89df-4276bea09f7c",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_3f46813d-f993-4ce9-b812-5305e34a2946",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Nos plus belles réussites !</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_e022e25a-110a-48f3-9225-d9f3a95fc70a",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Le reflet de notre passion et de notre engagement à créer des moments inoubliables.</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_b56cb7c0-6034-4653-b9b6-28d04b955ef4",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_3c3194e3-9264-4bda-b579-93307737d536",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_f84b1198-be65-4a54-a9d1-c54f7675d5ef",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/437963_353358.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/437963_353358.png",
+       "storageKey": "22139555/437963_353358",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 632,
+       "w": 815,
+       "s": 76654,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_ddf4b265-4696-4bdc-969a-18cd5cbb9593",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/25863_407911.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/25863_407911.png",
+       "storageKey": "22139555/25863_407911",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 1244,
+       "w": 1604,
+       "s": 186619,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_99060223-eb67-471e-a4bb-6705593a5908",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/721012_166372.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/721012_166372.png",
+       "storageKey": "22139555/721012_166372",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 1244,
+       "w": 1604,
+       "s": 177073,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_30eba6f9-ea2d-4400-8c2e-e67984aa61a5",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/929707_178892.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/929707_178892.png",
+       "storageKey": "22139555/929707_178892",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 1244,
+       "w": 1604,
+       "s": 194400,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_f7ccf6de-7525-4f82-8be0-34242463237d",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_51a2e07f-a37f-409d-9780-abd9b7cbfe32",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_a16c0eb7-67e3-40cf-b322-1a5ca074f8b9",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\"><a href=\"http://www.spiceevents.fr/on-recrute\" data-type=\"undefined\" target=\"_self\"><em>On recrute !</em></a></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_66f442d0-4c3e-421e-87b7-5b48dd5cd35f",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_170407c1-38f9-4dcd-8adc-b7e63c2fad81",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_bd2faf24-fcc2-43ab-ba07-d041167cd2b7",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_974ad220-4d9c-4220-8d1e-9325edcc6e69",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_85130804-1b9f-4db3-84b8-e02f69a81795",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_9b37ef95-b1a7-4aec-8918-48ce479cd094",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_7790e6db-3d5c-4efc-b9c7-1cbc4fb9ce29",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_139846f4-47e1-4cf0-af4f-93ba9c801e93",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ad82e833-81c3-43d3-b812-6dbf99d13076",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_4773caab-382f-4f33-9e15-fe219922fb3c",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Un DJ expert pour une ambiance parfaite !</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_02f27b1e-d924-4e4d-8338-b66b1e378d29",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Du son, du style et une ambiance sur mesure.</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_7863f9df-d4df-412c-9f5c-e7fd7a27c06c",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/485690_19527",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 1133,
+     "w": 1170,
+     "s": 1106206,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_37c52477-d8ee-4ac6-b546-4543bb2fad22",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Booking DJ",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1761304827969#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1761304924400#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_442ce4f8-9948-4ec4-b17d-36839a779723"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_ead6f949-dab8-4030-9e2e-f32bbb156633"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_f9d75f8d-ca8b-459d-a47d-2999978bda66",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_fde0c65c-198d-439e-9853-d82692d0c5f4"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_e7950d43-f218-46c9-8a3d-538f90724922"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_6beb5ea8-e604-4df0-8117-89c528b2d2a8"
+          },
+          "$item1761304827969#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_e215ad96-3b6b-44b5-8210-ed5f13472f17"
+          },
+          "$item1761304924400#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_da3022c6-5526-426b-8245-8fc9ad0f9beb"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1761304924400#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_dd4c0fdb-0f0b-4b7e-a994-c11d16cb0df5"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_1830ca6b-1ab8-4047-9149-0ff77c2c1e35"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1761304827969#date",
+         "$item1761304924400#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1761304827969#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1761304924400#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Booking DJ",
+ "description": "Réservez facilement votre animation musicale pour une soirée réussie.",
+ "uid": "ea459cbb-c65f-4e25-a153-59694a326fe1",
+ "path": "/booking-dj",
+ "pageTitle": "Booking DJ",
+ "autoPath": true,
+ "authorized": true
+}

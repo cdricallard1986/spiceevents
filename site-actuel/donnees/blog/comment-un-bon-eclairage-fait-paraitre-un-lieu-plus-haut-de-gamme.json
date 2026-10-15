@@ -1,0 +1,446 @@
+{
+ "blogPostMeta": {
+  "id": 61370348,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-03-27T04:17:19.915-07:00",
+  "publishedAt": "2026-03-27T04:44:46.373-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/comment-un-bon-eclairage-fait-paraitre-un-lieu-plus-haut-de-gamme",
+  "customSlug": null,
+  "editCount": 103,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/comment-un-bon-eclairage-fait-paraitre-un-lieu-plus-haut-de-gamme",
+   "title": "Comment un bon éclairage fait paraître un lieu plus haut de gamme",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/396638_436380.jpeg",
+   "description": "Lorsqu’un invité découvre un lieu de réception, son premier ressenti est visuel. Avant même la musique ou l’ambiance générale, c’est la lumière qui structure l’espace et influence immédiatement la perception du lieu. Un éclairage bien pensé peut transformer une salle classique en un environnement...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Trop d'animations : le piège",
+  "nextBlogPostRelativeUrl": "/blog/trop-d-animations-le-piege",
+  "nextBlogPostId": 61585713,
+  "prevBlogPostTitle": "Pourquoi l’accompagnement en amont est aussi important que le jour J ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-l-accompagnement-en-amont-est-aussi-important-que-le-jour-j",
+  "prevBlogPostId": 60979558
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_6bed4aa0-0b68-4f02-a1b7-30b714500569",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_5cbc1941-8e8b-4995-a557-8fe0c6504597",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_09c6b8a4-c246-4ced-88f1-b4ed306bb8f2",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>Comment un bon éclairage fait paraître un lieu plus haut de gamme</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_18a0a9bf-8153-436b-bac0-4164f893b611",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>L’éclairage, premier levier de perception</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_862d8403-26cb-4c80-894c-04a8c8086770",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/396638_436380",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 800,
+    "w": 1200,
+    "s": 169688,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_9a7c760a-1a4c-4c6a-8b9c-546c51dd11f6",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_d83d1b11-bb41-4112-a0d0-0e1013175974",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_fb6d1762-7a70-4db4-9cb7-4f6500eee4c7",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "1b78df36-87cd-4c53-bf2e-ee850a817778",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "83092c06-61cd-449c-9506-a3d142b8e7d5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Lorsqu’un invité découvre un lieu de réception, son premier ressenti est visuel. Avant même la musique ou l’ambiance générale, c’est la lumière qui structure l’espace et influence immédiatement la perception du lieu. Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage bien pensé</u></a></span><span style=\"color: #000000;\"> peut transformer une salle classique en un environnement élégant et immersif. À l’inverse, une lumière mal adaptée peut rapidement donner une impression froide ou impersonnelle, même dans un lieu de qualité.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b9afdf68-0c60-4095-9e77-29e833b9b3a2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cb6c0a9b-13ec-436d-a452-0ec363f87471",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Sublimer l’architecture et les volumes</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "35903bc3-404e-4d58-bb3a-1087b9f5f6e9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6d0f211a-6066-48e4-b07d-d9fecadfcb06",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>bon éclairage</u></a></span><span style=\"color: #000000;\"> ne se contente pas d’illuminer un espace, il le met en valeur. En travaillant les hauteurs, les murs, les colonnes ou les éléments architecturaux, il est possible de donner de la profondeur et du relief à un lieu. Certaines configurations permettent même de “redessiner” visuellement l’espace, en accentuant les volumes ou en structurant les différentes zones. Cette mise en valeur donne immédiatement une impression plus haut de gamme et plus travaillée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "edc3ecdc-c9d6-420f-9cea-67e2a17e195e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1e00b1e1-15ba-429d-9288-5c0c671a3b38",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Créer une ambiance cohérente et maîtrisée</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "910b00ce-a5ea-4522-b957-3139c6cb7571",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9e63dfab-da45-43e6-8626-0fdf0ddddbe6",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">L’un des marqueurs d’un événement premium est la cohérence. L’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage</u></a></span><span style=\"color: #000000;\"> joue ici un rôle central. Température de couleur, intensité lumineuse et choix des teintes doivent être alignés avec l’univers du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou de l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">. Une lumière trop forte ou mal équilibrée peut casser l’ambiance, tandis qu’un éclairage maîtrisé crée une atmosphère élégante, chaleureuse et immersive. Cette cohérence visuelle renforce la perception de qualité globale.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b453e2f3-48b5-43df-baa8-b974ea74b656",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "bcbcf07d-7f88-40e1-9dff-803d191d66fc",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/153446_421607",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1350,
+     "w": 1800,
+     "s": 539313,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c63e1e7e-2449-4279-b989-145ea87394a5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a5a2fa5b-6504-4a97-bd66-0853967b4ffa",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Accompagner les temps forts de la soirée</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4d273ef2-1166-4c7a-abd8-0936843a53ec",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cde7b16d-3d8a-4a02-a730-736fb6cd77db",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Un lieu haut de gamme ne repose pas uniquement sur son apparence statique, mais sur sa capacité à évoluer au fil de la soirée. L’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage</u></a></span><span style=\"color: #000000;\"> permet d’accompagner cette progression. Une ambiance douce et chaleureuse pour le dîner, puis une montée en intensité pour la soirée dansante, créent une véritable dynamique. Cette évolution subtile donne du rythme à l’événement et renforce l’impact des moments clés.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c5c92b9d-5eb2-40bf-b948-aa5e39f389a7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "583ea63b-1478-4c85-8c6e-5b50ca6a5f63",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Mettre en valeur sans surcharger</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a6d89043-3d4c-4063-a4cc-2148a58b4f26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "58a64e29-39ef-404c-9dfe-02595df8cf4f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">L’élégance repose souvent sur la justesse. Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage</u></a></span><span style=\"color: #000000;\"> trop présent ou trop complexe peut rapidement nuire à la perception haut de gamme. L’objectif n’est pas de multiplier les effets, mais de créer une ambiance lisible et harmonieuse. Des choix simples, bien exécutés, auront toujours plus d’impact qu’une accumulation d’effets lumineux. La maîtrise de l’intensité et du placement est essentielle pour conserver une esthétique raffinée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c4407945-7b7c-45f9-96eb-1b406d9c6a4d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "82b04a4a-086d-486a-aa69-258d0e87c280",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Une signature professionnelle</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8e70bd46-3021-48e9-8cbf-4e7f62d687db",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "607998c8-0f72-4409-b67f-a09ad3bc6760",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Même si les invités ne l’analysent pas consciemment, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>un éclairage de qualité se ressent immédiatement</u></a></span><span style=\"color: #000000;\">. Il participe à cette impression que “tout est bien fait”. Cette perception est un marqueur fort de professionnalisme et de niveau de prestation. Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, c</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>haque installation lumière est pensée pour s’intégrer parfaitement au lieu</u></a></span><span style=\"color: #000000;\"> et renforcer son potentiel, sans jamais le dénaturer.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c0f74724-fc62-4b45-81f6-afb3b5332e67",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "811c4200-b2c8-4cdc-ab01-c6d1044ab214",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Transformer un lieu sans le changer</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "57d26101-0b7c-493e-b7e9-4087791efac4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "28f5729e-6f10-4657-8eb5-e974f34eea89",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/880090_490991",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 542,
+     "w": 813,
+     "s": 180208,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "056c76b3-3e1d-4627-b9c8-5588bf1748f9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1c94bd92-35da-4577-a726-2093117ea27d",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">L’un des avantages majeurs de l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage</u></a></span><span style=\"color: #000000;\"> est sa capacité à transformer un espace sans modification structurelle. Un lieu simple peut devenir élégant, chaleureux ou spectaculaire grâce à une mise en lumière adaptée. Cette transformation est souvent ce qui marque les invités et donne cette impression de standing supérieur.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "77c0cc67-ae58-4837-9575-316ae224fe3b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ce483458-5849-48f6-adf4-8349ce9377f6",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>L’approche Spice Events</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9bd2235e-e9b2-4167-aa74-07cfb35ddd25",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1272b6e8-d8b8-4b6b-aae4-da88b3bd36ad",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage</u></a></span><span style=\"color: #000000;\"> est envisagé comme un véritable outil de mise en scène. Chaque projet fait l’objet d’une réflexion globale afin de créer une ambiance cohérente, adaptée au lieu et aux attentes des clients. L’objectif est simple : sublimer l’existant et offrir une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>expérience visuelle</u></a></span><span style=\"color: #000000;\"> à la hauteur de l’événement.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3bf455b2-7ca4-4c13-bf99-1775555fb905",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "25abfa48-e9d8-4f5c-88e7-574ea39bf6d2",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>En conclusion</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d8124e23-f702-408c-92ee-88e27d8a2071",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7a094673-0c0d-4f73-a546-c37b540d6667",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>bon éclairage</u></a></span><span style=\"color: #000000;\"> ne se limite pas à éclairer un lieu, il en révèle tout le potentiel. Il structure l’espace, renforce l’ambiance et élève immédiatement la perception globale de l’événement. Dans un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> comme dans tout </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, c’est souvent ce niveau de détail qui fait la différence entre une belle soirée et une expérience réellement haut de gamme.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a3aa4c62-8350-41ee-8bb6-515bc1cff729",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2bf21370-0762-411f-be4e-5ebfb2778b0f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour en savoir plus sur notre approche et nos prestations, rendez-vous sur </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/\" data-type=\"\" target=\"_blank\">www.spiceevents.fr</a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f2be7e1b-66f5-4f32-a3d3-c5d439fc35b7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "37bb2b97-7681-46ea-a111-7a2de2e1853d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

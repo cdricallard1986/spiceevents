@@ -1,0 +1,385 @@
+{
+ "blogPostMeta": {
+  "id": 18847338,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-01-13T03:03:30.836-08:00",
+  "publishedAt": "2022-01-13T03:26:30.645-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/se-marier-en-hiver",
+  "customSlug": null,
+  "editCount": 303,
+  "publishedEditCount": 284,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/se-marier-en-hiver",
+   "title": "Se marier en hiver",
+   "image": "https://images.unsplash.com/photo-1638623139539-1b42a85e15eb?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "Une tendance de plus en plus adoptée par les mariés, qui préfèrent se dire oui sous la neige plutôt qu'au soleil.  De nombreux avantages Choisir d’organiser son mariage en période hivernale comporte plusieurs avantages. Tout d’abord, les prestataires sont plus disponibles puisqu’il y a moins...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Les plus beaux lieux pour un mariage hivernal",
+  "nextBlogPostRelativeUrl": "/blog/les-plus-beaux-lieux-pour-un-mariage-hivernal",
+  "nextBlogPostId": 18897596,
+  "prevBlogPostTitle": "3 bonnes raisons d'engager un magicien pour votre évènement",
+  "prevBlogPostRelativeUrl": "/blog/3-bonnes-raisons-d-engager-un-magicien-pour-votre-evenement",
+  "prevBlogPostId": 18704262
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_3118fae9-45ae-42bb-9e19-66f41d7b1dbb",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_db12fec4-6382-4db1-b21a-f5b67a1c6c89",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_001f2770-161e-4c25-a84a-33cccf7afe96",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Se marier en hiver</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_fe19e540-9426-4f59-9c05-a6ced41c6319",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Tous les avantages d'un mariage hivernal</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_6c3aa09a-1698-4202-8658-743c7bda06d1",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1638623139539-1b42a85e15eb?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_4fad2d48-24b2-485d-a333-f69870702484",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_7804ddc3-73a9-4383-b420-2cc66cd7d6ce",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_6fd2ae39-c0a9-4efb-8777-815892ba4842",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_7431964d-f3ff-4c6a-ba85-180251587158",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_7b438b0b-558a-4eae-ab38-b37bc6015e4b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_5458a78d-825d-4091-9909-55c09ec02d4b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_2f44aa05-82b2-4178-8c37-327dc4f19cb2",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "afc971ca-35ed-446e-9721-52820d738071",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "677f21d0-c675-4725-92ad-8e67ba04f1ae",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Une tendance de plus en plus adoptée par les mariés, qui préfèrent se dire oui sous la neige plutôt qu'au soleil. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0a7bc62c-500c-4d90-aa22-4163969c1d87",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1ae6f543-03d4-4a00-b841-36b03372412f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>De nombreux avantages</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1736ecea-8262-4822-bcfd-4f3cd5ea6e0f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b27482ca-31ef-4036-ae09-7326cce8b1fd",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Choisir d’organiser son mariage en période hivernale comporte plusieurs avantages.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "143a429d-633e-485c-bf2a-a9653e7645ec",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ef2ad0e6-e569-4873-b41e-fa000b5e0a6b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Tout d’abord, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/\" data-type=\"\" target=\"_blank\">prestataires</a></span><span style=\"color: #000000;\"> sont plus disponibles puisqu’il y a moins d’événements prévus sur cette période. De ce fait, ils seront également plus attentifs et réactifs à vos demandes en raison de leur agenda plus léger. Certains seront même prêts à vous offrir des remises tandis que d’autres proposent déjà des tarifs plus avantageux sur ces dates. Autre personne plus disponible à cette période : vos invités. Contrairement à l’été, ils ne seront pas en vacances et pourront répondre présent à votre invitation !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9f305eeb-71f1-44b0-982b-619630feed61",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7b8caa11-5036-4e11-a1e7-0555262aa69e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La météo est un autre avantage au mariage hivernal. Vous n’aurez pas à craindre la pluie puisque votre réception se passe déjà à l’intérieur ! Le froid est aussi plus convivial. En effet, nous apprécions davantage être entouré lorsqu'il fait froid. Personne n’aime être enfermé avec des dizaines de personnes quand il fait chaud !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a30bf5af-1775-4e84-9c65-03e3e899599e",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "49fcec6a-9afc-4cb7-872d-81ce28771df5",
+     "link_url": "https://lh3.googleusercontent.com/dNJq3jl-m2NECVMpk8TTKFxSeTM5v2YzvH940MdR0utsBl1lGKsH8DH5RNSjfeBvUf5D4rtuJomuo_DQe9GZQ04hFhaXK0w2KJw3zP2Ybi5_f_G32SusB4vFNZ3V3iYlsdaMlpLm",
+     "thumb_url": "https://lh3.googleusercontent.com/dNJq3jl-m2NECVMpk8TTKFxSeTM5v2YzvH940MdR0utsBl1lGKsH8DH5RNSjfeBvUf5D4rtuJomuo_DQe9GZQ04hFhaXK0w2KJw3zP2Ybi5_f_G32SusB4vFNZ3V3iYlsdaMlpLm",
+     "url": "https://lh3.googleusercontent.com/dNJq3jl-m2NECVMpk8TTKFxSeTM5v2YzvH940MdR0utsBl1lGKsH8DH5RNSjfeBvUf5D4rtuJomuo_DQe9GZQ04hFhaXK0w2KJw3zP2Ybi5_f_G32SusB4vFNZ3V3iYlsdaMlpLm",
+     "caption": "",
+     "description": "",
+     "h": 1066,
+     "w": 1600,
+     "new_target": true
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ffe53b65-d03a-4743-afd4-212a78f00d26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e7dbcaec-4059-4a6e-a964-97f8a8a4493b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Un mariage plus original</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "030827a2-1f2e-4bf2-9ff3-f2aecfd7fc9e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "13a0b288-8f0a-43ef-82da-13d483bacad0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Se marier l’hiver apporte aussi une touche d’originalité à votre événement. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "71ca2341-fee9-4290-a63b-ae315015e9f6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "92635f44-217d-40ad-8079-7fa9d31beea5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Les mariés pourront se différencier grâce à des matières hivernales telles que la laine ou la fourrure. La mariée, elle, osera la robe manches longues, les gants, l’écharpe en fourrure, les bottines ou encore les plumes. Et qui dit look original dit </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-photobooth\" data-type=\"\" target=\"_blank\">photo</a></span><span style=\"color: #000000;\"> de mariage originale ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "969fdeea-97e8-45c9-8236-78d16daa0e92",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4fed23c0-42f6-4e67-9b3f-4c4cec332b6c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un mariage en hiver permet aussi d’oser certains aliments ou repas. Une fondue au chocolat, aux fromages, du chocolat chaud, du vin chaud ou encore des guimauves ont tout à fait leur place à cette période de l’année !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "341c4465-ca7b-4a41-8b96-5a7505a3c4b9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3b60d574-6eb2-4100-a3ed-7f14ca89ec4e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous pouvez également ajouter des éléments comme des grosses bougies, des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\">guirlandes </a></span><span style=\"color: #000000;\">dorées, du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">bois</a></span><span style=\"color: #000000;\">, des plaids ou des décorations en forme de flocon. Le gros plus serait de disposer d’un lieu de réception avec cheminée. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6c11ddf9-c0c0-4a40-888a-b1001853de77",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bafdb10d-c1e0-4367-a33f-d2666ac7425f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Enfin, le petit plus qui fera son grand effet si vous habitez dans des régions où la neige tombe régulièrement en hiver, serait qu’elle fasse son apparition ce jour-là ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a7f0dcc3-704f-486c-83b7-7eb9aebdc3d1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4542e84c-40b8-464f-a809-777eb8aa8274",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous n’avez plus qu’à croiser les doigts ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "27f86e0f-3ab2-4eae-91eb-63e9e8f69f8e",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "677fedcc-8920-4ee5-98a8-116e2d331801",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/378982_500468",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 1478931,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "837bb0c9-243a-4684-b2f2-552ee7330d77",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c42dc3f6-4175-4425-814a-acd3e09ded94",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> Vous connaissez à présent tous les avantages d'un mariage hivernal ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "15a55ade-2db3-4254-aab0-7e4bf3eafe80",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e9ad7c73-a077-47e1-9c9b-edef33d34df0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">Toutefois si vous souhaitez d'autres renseignements, n'hésitez pas à nous contacter.</a></span><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/\" data-type=\"\" target=\"_blank\">Vous pouvez également consulter notre site web si vous êtes en quête d'inspiration, d'animations et de thématiques !</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b698f120-3411-47de-866d-30d1ea6200e4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "32cebb38-bee5-47b8-981c-52644dcaab79",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,390 @@
+{
+ "blogPostMeta": {
+  "id": 55904853,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-05T04:47:02.633-08:00",
+  "publishedAt": "2025-12-05T05:12:38.418-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/livre-d-or-audio",
+  "customSlug": null,
+  "editCount": 122,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/livre-d-or-audio",
+   "title": "Livre d’or audio",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/102518_710583.jpg",
+   "description": " Dans l’univers des mariages et événements, chaque détail compte pour créer des souvenirs mémorables. Spice Events vous propose son livre d’or audio qui transforme la traditionnelle page de signatures en une expérience sonore unique. Plus qu’un simple objet, il permet à vos invités de partager...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Guirlandes lumineuses",
+  "nextBlogPostRelativeUrl": "/blog/guirlandes-lumineuses",
+  "nextBlogPostId": 56545440,
+  "prevBlogPostTitle": "Nos idées de décoration pour vos tables de mariage",
+  "prevBlogPostRelativeUrl": "/blog/nos-idees-de-decoration-pour-vos-tables-de-mariage",
+  "prevBlogPostId": 21552160
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_df539703-d6cd-4292-93ea-790f97e912aa",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_9cad4e18-719e-4b4c-9f83-8fed269586ef",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_3ea1625d-5b95-466e-b849-f97baa735260",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #000000;\"><strong>Livre d’or audio</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_f2a89395-c577-4d47-950c-d053de7e9623",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p><span style=\"color: #000000;\"><strong>Quand les souvenirs prennent vie avec Spice Events</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_0489bb79-1d20-478a-b6c2-6f9b32ac80d7",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/102518_710583",
+    "storage": "s",
+    "format": "jpg",
+    "h": 736,
+    "w": 736,
+    "s": 74313,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_701e0f9a-591c-428d-a914-c28a2f8e1451",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_493e2de3-0c39-40ad-8d77-ac928e17887a",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_15bcc79d-3386-40f0-80eb-13a033a5b550",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "d7fde577-c7c8-4652-b6b2-87accc2d76e7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "47678ae0-6bbf-4038-a05c-e2b3107dc5ce",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "723ef9ae-ff55-4e98-b737-ba2ff037a1ca",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "57682167-03f8-477d-9bc2-aa16c7e9d4c3",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Dans l’univers des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>m</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>ariages</u></a></span><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">et </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événements</u></a></span><span style=\"color: #000000;\">, chaque détail compte pour créer des souvenirs mémorables. Spice Events vous propose son livre d’or audio qui transforme la traditionnelle page de signatures en une expérience sonore unique. Plus qu’un simple objet, il permet à vos invités de partager leurs émotions, anecdotes et messages personnels… et de les réécouter à l’infini.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1a87f313-eff2-4168-b604-180bc7eb905c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c03469df-4b5c-4f24-994d-1526f3439ec0",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fe0cda36-2ec8-4895-b1ec-174c7aeb92ad",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9467881b-2c18-498e-859a-ce67d0bddb80",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Qu’est-ce qu’un livre d’or audio ?</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8164dfdc-d22c-4777-885f-11434bac3402",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2aeb799e-079a-4dd6-b68d-b1e448a9bc87",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Le concept est simple et magique ! Un combiné téléphonique ou un micro est installé lors de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, permettant à vos convives de laisser un message vocal. Ces enregistrements capturent l’authenticité des émotions, les rires, les mots sincères et les encouragements, offrant un souvenir vivant et vibrant. Pour plus de style et d’originalité, le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/livre-d-or-audio\" data-type=\"undefined\" target=\"_self\"><u>livre d’or audio</u></a></span><span style=\"color: #000000;\"> peut être intégré dans une cabine personnalisée ou même dans une valise vintage, apportant une touche rétro et ludique à votre événement.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "919928b3-c7de-4cc9-8fe2-3d0aac5eb1cc",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "ae6103a1-644d-4d63-9ae7-d71c59a7e27b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/580569_810578",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1800,
+     "w": 1200,
+     "s": 148097,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "13cfa362-6a2c-4be4-8c77-96e3e5187249",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ec1e1d13-2ce0-4c34-9ab2-140ae9241408",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Pourquoi opter pour un livre d’or audio avec Spice Events ?</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4428393f-a30f-4bc3-be3e-1a7e9bb2d534",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "119838ea-40d4-4f84-984c-747e11e244e7",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>° </strong></span><span style=\"color: #000000;\"><u>Un souvenir vivant et émotionnel :</u></span><span style=\"color: #000000;\"> Vous entendrez les voix de vos proches et l’émotion derrière chaque mot.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bb2b35be-8386-483c-af00-e44dcafaeb8f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "91faffde-9c96-45cd-bd75-088952b1e3f9",
+     "defaultValue": false,
+     "value": "<p class=\" p1 s1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">°</span><span style=\"color: #000000;\"><u>Fun et interactif :</u></span><span style=\"color: #000000;\"> Vos invités s’amusent à laisser des messages, des anecdotes ou même des chansons.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "339e79ce-23f9-404e-97c9-ddc47ea02103",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "face134e-1117-4541-817d-10ddd83e9d55",
+     "defaultValue": false,
+     "value": "<p class=\" p1 s1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">°</span><span style=\"color: #000000;\"><u>Facile à utiliser :</u></span><span style=\"color: #000000;\"> Il suffit de décrocher le combiné ou de parler dans le micro. Les messages sont automatiquement enregistrés et peuvent être écoutés à tout moment.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "339e79ce-23f9-404e-97c9-ddc47ea02103",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f3c5e6b7-910e-479c-af8f-ccadd9276cb6",
+     "defaultValue": false,
+     "value": "<p class=\" p1 s1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">°</span><span style=\"color: #000000;\"><u>Personnalisable :</u></span><span style=\"color: #000000;\"> vous pouvez installer le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/livre-d-or-audio\" data-type=\"undefined\" target=\"_self\"><u>livre d’or audio</u></a></span><span style=\"color: #000000;\"> dans une cabine téléphonique entièrement personnalisée selon vos envies ou alors le placer dans une valise vintage pour ravir les yeux de vos invités.</span><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6f631cf2-e53e-463f-b05e-25d58e519c5a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9f8652ef-6dc2-4d0b-ad06-6ccaa21965a2",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Comment l’utiliser lors de votre mariage ou événement ?</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "975c6f7b-3b85-437d-9030-6d3771703688",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ec11c977-8913-4185-b3b4-1bdc7d51e921",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Installez-le dans un coin dédié et facilement accessible à vos invités, par exemple près du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>photobooth</u></a></span><span style=\"color: #000000;\">, dans une cabine personnalisée ou sur une valise vintage. Avec quelques instructions simples, vos convives laisseront spontanément des messages authentiques, créant une compilation unique de souvenirs à chérir pour toujours.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "92757117-b900-4e53-b699-1d2c30e817cd",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "baa5775b-b3ab-4e67-8bd5-001665742818",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/224682_398439",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 793,
+     "w": 595,
+     "s": 78522,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c3b1aad6-6f81-4ec1-a5f7-a995fb2b0403",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fba166a8-47d9-4f31-917d-c7872db61faf",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Une alternative moderne et émotionnelle</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5805ab38-53e5-4771-a4f6-9236a4468d25",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4f47bcfc-9c5a-4178-9728-0ea7d73fc9f2",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/livre-d-or-audio\" data-type=\"undefined\" target=\"_self\"><u>livre d’or audio</u></a></span><span style=\"color: #000000;\"> de Spice Events est l’alternative parfaite au livre classique. Il combine émotion, originalité et interactivité, et permet de conserver des instants précieux sous une forme vivante. Que ce soit pour un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement professionnel</u></a></span><span style=\"color: #000000;\"> marquant, il crée un souvenir inoubliable, bien au-delà de ce qu’une simple page de signatures pourrait transmettre.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bef33697-8e1a-40c0-81df-b2b018851f69",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1ba37aa2-3a9d-424a-a479-70f3dec8749f",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,498 @@
+{
+ "blogPostMeta": {
+  "id": 56545440,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-18T05:06:40.523-08:00",
+  "publishedAt": "2025-12-18T05:20:11.510-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/guirlandes-lumineuses",
+  "customSlug": null,
+  "editCount": 144,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/guirlandes-lumineuses",
+   "title": "Guirlandes lumineuses",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/744408_306415.jpg",
+   "description": "Les guirlandes lumineuses, aussi appelées guirlandes guinguettes, se sont imposées comme un élément phare de la scénographie événementielle. Intemporelles et élégantes, elles offrent une lumière chaleureuse qui transforme instantanément un lieu et crée une atmosphère conviviale, festive et...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi la technique est invisible quand elle est bien faite ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-la-technique-est-invisible-quand-elle-est-bien-faite",
+  "nextBlogPostId": 56546326,
+  "prevBlogPostTitle": "Livre d’or audio",
+  "prevBlogPostRelativeUrl": "/blog/livre-d-or-audio",
+  "prevBlogPostId": 55904853
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_da88f195-574a-4b1f-b1e7-02e63133bdbb",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_def50f9d-f927-49aa-b57e-5ec8b19be65d",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_02ccd6fd-d8f8-437f-b032-374daa88c64e",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Guirlandes lumineuses</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_80764eda-5764-466d-ab48-64b8057bb081",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>L’éclairage guinguette qui sublime vos événements</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_35ad6de3-4b6f-442d-bf1e-7d917c4133d2",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/744408_306415",
+    "storage": "s",
+    "format": "jpg",
+    "h": 1280,
+    "w": 896,
+    "s": 253008,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_c9eeba3f-025b-41b4-a321-2d3f9d4422ad",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_94dade05-8830-4b85-9227-506cdd86d2e7",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_dcf1cad7-30c7-4bc9-bb40-945c6955d2a5",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "d68864da-dc58-497b-8796-117886a53fbf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5d365931-ec1d-442f-ae0d-f42a45c1796e",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes lumineuses</u></a></span><span style=\"color: #000000;\">, aussi appelées guirlandes guinguettes, se sont imposées comme un élément phare de la scénographie événementielle. Intemporelles et élégantes, elles offrent une lumière chaleureuse qui transforme instantanément un lieu et crée une atmosphère conviviale, festive et raffinée. Chez </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, nous les considérons comme bien plus qu’un simple éclairage : ce sont de véritables outils de mise en scène au service de l’émotion.</span><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "143d9087-5e94-404f-b41a-030f33e3132b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1c9534a0-a442-4d0d-8501-e3b894f1453c",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\"><strong>Une lumière douce pour une ambiance unique</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "969aed55-5971-4d72-abef-205131700ccf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9022427a-bda8-4934-878e-0bf4f65a892e",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\">Contrairement à un éclairage classique, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes guinguettes</u></a></span><span style=\"color: #000000;\"> diffusent une lumière chaude et enveloppante. Elles invitent au partage, à la convivialité et à la détente. Que ce soit pour un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\">, une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>soirée privée ou un événement professionnel</u></a></span><span style=\"color: #000000;\">, elles apportent ce supplément d’âme qui rend un moment inoubliable. Leur esthétique simple et élégante s’adapte à tous les styles : champêtre, bohème, chic, moderne ou industriel.</span><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e06e91ef-3d00-4f59-8513-1d350f830fb5",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "e098c19d-99cf-4ee8-b44e-79ce5ee32dbf",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/335517_855913",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 667,
+     "w": 534,
+     "s": 84336,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7dc88b1f-ea4a-468f-a38c-057aa7beeba3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f5b9b460-0260-4a78-b07d-6fe9fe39042f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\"><strong>Structurer et habiller les espaces</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6d08951b-2cea-49c7-8d41-d2640ee4fbb5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "82b8e8d4-1266-44b2-a0bf-129681bdc8fc",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\">Les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes lumineuse</u></a></span><span style=\"color: #000000;\">s permettent également de structurer visuellement un lieu. Elles peuvent délimiter des zones, guider les invités ou mettre en valeur certains espaces clés de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">. Installées en ciel étoilé au-dessus d’un dîner, tendues entre des arbres, fixées sur des structures ou intégrées à une tente, elles habillent les volumes et donnent une véritable identité à votre scénographie.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c189c9f7-2e49-4359-80b8-0585c0ccab4e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "783a034d-317d-4364-8d35-4af5d6b7ec24",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span><span style=\"color: #000000;\"><strong>Un allié incontournable pour les </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u><strong>mariages</strong></u></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c189c9f7-2e49-4359-80b8-0585c0ccab4e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "338d8fff-2731-4290-916e-f82cd27c66d6",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\">Dans l’univers du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\">, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes guinguettes</u></a></span><span style=\"color: #000000;\"> sont devenues un incontournable. Elles accompagnent parfaitement les moments forts : cocktail en extérieur, dîner sous les étoiles, ouverture de bal ou soirée dansante. Elles créent une atmosphère romantique et chaleureuse sans jamais voler la vedette aux mariés. Associées à d’autres éléments comme la sonorisation, l’éclairage décoratif ou les animations proposées par </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">, elles participent à une mise en scène harmonieuse et élégante.</span><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "92b78642-cdf9-4a6e-9844-e81f6b0ae4e3",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "b4dc3e4d-cb18-4c50-945b-90293370bf3b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/24629_877383",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1350,
+     "w": 1080,
+     "s": 244972,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "51c7e015-7ef1-4d49-adac-26195e354146",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "389b988b-d118-4ba4-ae86-69f881089a94",
+     "defaultValue": false,
+     "value": "<p class=\" p4\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "afd3b63b-13f5-41b7-9231-6b6b8bcc4a63",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "490c01ad-7684-49b1-83af-46719550cdaa",
+     "defaultValue": false,
+     "value": "<p class=\" p5\"><span style=\"color: #000000;\">U</span><span style=\"color: #000000;\"><strong>ne solution élégante pour les </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u><strong>événements professio</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u><strong>nnels ou privés</strong></u></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9ed5e307-99f4-4296-88c1-1909d2febfe8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5dec4c12-9110-4d78-8a3c-260943e8b8de",
+     "defaultValue": false,
+     "value": "<p class=\" p4\"><span style=\"color: #000000;\"><strong>L</strong></span><span style=\"color: #000000;\">es </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes lumineuses</u></a></span><span style=\"color: #000000;\"> trouvent également leur place lors </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>d’événements d’entreprise</u></a></span><span style=\"color: #000000;\"><u> ou soirées privées</u></span><span style=\"color: #000000;\">: soirées corporate, inaugurations, lancements de produits ou réceptions clients... Elles permettent d’adoucir un lieu, de le rendre plus accueillant et de créer une ambiance propice aux échanges. Elles sont idéales pour transformer un espace brut ou extérieur en un lieu chaleureux et valorisant pour votre image de marque.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bdc04901-f6d3-46c4-b858-bf53f0ecef63",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "82a69e86-a629-4061-bf61-352c9b9d161b",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8a6122ab-fe9f-4799-81f9-55fada7a8c77",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e94bc4c8-03d7-46c2-8a74-ee5942e34988",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\">U</span><span style=\"color: #000000;\"><strong>ne installation pensée dans les moindres détails</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0bca9823-4348-49b4-84cf-69b272df0c30",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "39729c77-25de-44be-93a9-b48c7abf3ebc",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\"><strong>C</strong></span><span style=\"color: #000000;\">hez S</span><span style=\"color: #000000;\"><strong>pice Events,</strong></span><span style=\"color: #000000;\"> chaque installation de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes </u></a></span><span style=\"color: #000000;\"><u>lumineuses</u></span><span style=\"color: #000000;\"> est</span><span style=\"color: #000000;\"> pensée sur mesure. Nous vous conseillons sur les meilleurs emplacements, les hauteurs, les tensions et la disposition afin d’obtenir un rendu esthétique et équilibré. Nos équipes assurent une installation sécurisée, soignée et parfaitement intégrée à l’ensemble de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, en tenant compte des contraintes techniques et du lieu.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0bca9823-4348-49b4-84cf-69b272df0c30",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "efbd14ff-d643-4d52-bb2d-8ecd19239ecb",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5632e193-e3b7-4558-becb-4f54dc189900",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "3d9a6757-7f79-4a1a-ae3d-b14c50d6af66",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/72874_196856",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 1000,
+     "w": 1000,
+     "s": 1797776,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5447cd22-1c8d-4976-a429-9b711b8dd840",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1e2597dc-5e8c-4776-93c0-21a328c92f67",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1caba8d5-933d-4a08-97b2-184adf894aa8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e20b604b-1e7f-4dfb-a33f-a6ffaae426e2",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\"><strong>L’éclairage comme élément de scénographie globale</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "894b9867-356e-4a63-bed1-9bf7de28ba04",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "246eeec0-481f-4232-a791-74bd65aeb85e",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\">Les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes guinguettes</u></a></span><span style=\"color: #000000;\"> prennent toute leur dimension lorsqu’elles s’intègrent dans une scénographie globale. Associées à un éclairage architectural, à une piste de danse, à une sonorisation adaptée ou à des animations visuelles, elles renforcent l’expérience immersive vécue par vos invités. Chez S</span><span style=\"color: #000000;\"><strong>pice Events,</strong></span><span style=\"color: #000000;\"> nous concevons l’éclairage comme un fil conducteur qui accompagne chaque moment de votre événement.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a1d0dbbf-8df8-4d61-ad90-d7fe68dec8ba",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "60b6c45d-b24b-4067-8f35-cd8b8e6d227d",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1f284274-0878-4cfb-92e7-dfed2231dcb8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f69ec73c-099a-4144-ac99-5967669e659f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\">U</span><span style=\"color: #000000;\"><strong>ne ambiance qui marque les esprits</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "588ea068-a72d-4f17-b88f-9123d895eda9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e13725ff-fa05-4802-af85-bca994fdfad3",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><span style=\"color: #000000;\"><strong>S</strong></span><span style=\"color: #000000;\">imples en apparence, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><u>guirlandes lumineuses</u></a></span><span style=\"color: #000000;\"> ont un impact fort sur l’ambiance et les souvenirs laissés à vos invités. Elles créent une atmosphère chaleureuse, élégante et mémorable, idéale pour sublimer vos plus beaux instants. Faites confiance à S</span><span style=\"color: #000000;\"><strong>pice Events </strong></span><span style=\"color: #000000;\">pour illuminer vos événements et transformer chaque lieu en un décor unique et inoubliable.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "69554684-6d11-4efc-b8c6-1f9d594f730d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c4b8ad0e-d99d-4622-b095-c2bbabe7e36f",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

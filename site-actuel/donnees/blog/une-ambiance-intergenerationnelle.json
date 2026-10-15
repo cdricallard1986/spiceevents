@@ -1,0 +1,474 @@
+{
+ "blogPostMeta": {
+  "id": 59987511,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-02-25T01:57:43.024-08:00",
+  "publishedAt": "2026-02-25T02:12:28.714-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/une-ambiance-intergenerationnelle",
+  "customSlug": null,
+  "editCount": 123,
+  "publishedEditCount": 120,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/une-ambiance-intergenerationnelle",
+   "title": "Une ambiance intergénérationnelle",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/229236_359800.jpeg",
+   "description": "Créer une ambiance intergénérationnelle est aujourd’hui l’un des plus grands défis de l’événementiel. Mariages, événements privés ou corporate : le public n’a jamais été aussi varié. Adolescents, trentenaires, parents, grands-parents… Tous partagent le même espace, mais pas forcément les mêmes...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "L’après-événement : ce que vos invités retiennent de votre soirée grâce à une technique bien pensée",
+  "nextBlogPostRelativeUrl": "/blog/l-apres-evenement-ce-que-vos-invites-retiennent-de-votre-soiree-grace-a-une",
+  "nextBlogPostId": 60362587,
+  "prevBlogPostTitle": "De visiteurs à exposants : l’envers du décor d’un Salon du Mariage",
+  "prevBlogPostRelativeUrl": "/blog/de-visiteurs-a-exposants-l-envers-du-decor-d-un-salon-du-mariage",
+  "prevBlogPostId": 59331347
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_01c68fc6-514b-4e2e-9ebf-b5e68c20e4ec",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_5df7a322-ce01-4867-83c3-2da9ae77074f",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_40dbde4b-d184-428e-9ee3-fc5ccb5a1d51",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: center;\">Une ambiance intergénérationnelle </p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": "center",
+     "lastLineTextAlign": "center"
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_ff44f1bc-a412-4a11-958b-7c0596e81850",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: center;\"><em><strong>Faire danser toutes les générations, sans compromis</strong></em></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": "center",
+     "lastLineTextAlign": "center"
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_e93c65ca-2e1b-43db-b9cc-e5fb1b0665d1",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/229236_359800",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1920,
+    "w": 2560,
+    "s": 949469,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_f2f0436c-fdd9-4027-8fda-7323414098a7",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_977db940-bb6f-46b0-a539-86c420d96eac",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_b1b58d17-c325-4c99-ab9e-3e7593eb3004",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_dca1925a-16c0-48aa-8db7-3c1ae40c7fce",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_177d8e71-a907-421c-be4c-b34905cfe7a0",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_dbdabc08-ec75-4f18-bc47-ee2d0fd60032",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_7f98f067-3e85-4728-9406-69b05980730d",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "cc1d8b96-08c3-47ec-bd49-1af4b8786646",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b5e7bab1-2ace-49bd-97b9-0f2314b2acd5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Créer une ambiance intergénérationnelle est aujourd’hui l’un des plus grands défis de l’événementiel. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>Mariages</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événements privés ou corporate</u></a></span><span style=\"color: #000000;\"> : le public n’a jamais été aussi varié. Adolescents, trentenaires, parents, grands-parents… Tous partagent le même espace, mais pas forcément les mêmes références musicales. Et pourtant, une piste de danse peut – et doit – devenir un terrain d’entente.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "86820bbe-84de-4071-b435-6ee18e38adb0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e210af9e-ff82-4bc8-9bdf-c3d7813aa759",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c764cb1c-c1fd-4450-bd4f-f6d84488383d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fc01b517-b8cb-4ca0-b654-f1e53037410e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Comprendre avant de mixer</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e9e2a9bf-31c4-4cc2-b719-7da2dca1e191",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e2eb5440-f3fe-476d-8851-51cdada36319",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Faire danser toutes les générations ne consiste pas à empiler des tubes au hasard. C’est une lecture fine du public, de l’énergie de la salle et du moment (</span><span style=\"color: #666666;\"><a style=\"color: #666666;\" href=\"https://www.spiceevents.fr/blog/comment-un-dj-lit-il-une-piste-de-danse\" data-type=\"undefined\" target=\"_self\"><u><em>voir article : Comment un DJ lit-il une piste de danse ?</em></u></a></span><span style=\"color: #000000;\">). Chaque génération a ses codes, ses souvenirs, ses rythmes. Le rôle du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> n’est pas de choisir un camp, mais de construire des ponts : entre époques, styles et émotions.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8a012608-8979-4754-907d-b85613fc5f3c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0cc3fc72-6bf2-428d-90ab-2ca7f693717a",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "da9311f5-4cf1-41a4-8770-f11835bc13d6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "9ed109c9-4c04-41b5-9d36-27896147ac01",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/426610_520478",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 545,
+     "w": 365,
+     "s": 292527,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d869b583-a3e5-4329-b39f-471b099d609d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "844d4107-60f0-4956-96b3-1718d761e13d",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Le secret : la narration musicale</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7ec7e2e0-f0e0-4f81-9f35-d44fbd0029a2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f86db333-805a-49ab-bfe6-505960ab12c0",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Une ambiance intergénérationnelle réussie repose sur une narration fluide. Un classique intemporel peut ouvrir la porte à un titre plus récent. Un hit actuel peut être réarrangé ou mixé avec une référence des années 80 ou 90. Ce jeu d’équilibre évite les ruptures et maintient tout le monde sur la piste, sans frustration ni lassitude.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bff5e5d4-6033-44e8-b9a0-dcd6052f98fa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f1707e75-c45f-44d1-bee6-84ea98c4450d",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "51b51da4-bc91-4aec-8d62-7275bd63470a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c258d282-a244-476a-9fae-b834dec3a1ec",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Le respect du dancefloor</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "12a35fb1-18b1-4201-aa65-2759c253c2de",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dc692351-efc7-499b-ab7c-b385f56cf63d",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Faire plaisir à tous, ce n’est pas tout jouer. C’est savoir quand jouer quoi. Le respect du dancefloor passe par l’observation : qui danse, qui s’essouffle, qui arrive, qui repart (</span><span style=\"color: #666666;\"><a style=\"color: #666666;\" href=\"https://www.spiceevents.fr/blog/comment-un-dj-lit-il-une-piste-de-danse\" data-type=\"\" target=\"_blank\"><u><em>voir article : Comment un DJ lit-il une piste de danse ?</em></u></a></span><span style=\"color: #000000;\">). Une ambiance intergénérationnelle ne sacrifie jamais une génération pour en satisfaire une autre. Elle évolue, respire, s’adapte.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5f68d6be-3759-4d61-b9f3-1b8fcdd6ee56",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "6b7f1305-3b50-4bb9-9030-27628782d876",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/935736_452214",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 2560,
+     "w": 3840,
+     "s": 1923584,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d3a27508-88c9-4f7e-beed-313a801020e1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c4487df3-c6ec-4602-9db2-8e831fde8ec7",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "543c6aa4-eb4b-4971-b7bd-37aeb3591566",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "072d3a7d-b3b2-4785-a4ca-d9e1b028b497",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>La technique au service de l’émotion</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "92a38530-8fd5-4670-afe9-b730cffb8d3e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cfea7696-2db8-45a3-8aa4-6e580c6573de",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>Sonorisation maîtrisée, volumes équilibrés, éclairages lisibles</u></a></span><span style=\"color: #000000;\"> : la technique joue un rôle clé. Une ambiance trop agressive exclut, une ambiance trop sage endort. L’objectif est de créer un espace confortable pour tous, où chacun se sent légitime de danser, quel que soit son âge.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "09d0383a-8adb-4c1b-acfb-6305baee1c20",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "29d88a2d-a5a1-4f9f-aa83-048bf273232c",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cbfe4bb2-0d5e-48b3-9b01-173fdbcaf9bb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "63ccc4c2-d687-4b5f-81e7-09af4566dbc5",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Créer du souvenir collectif</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7db44e13-348c-409e-8bb1-ce2adcc3982c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "87f515aa-a358-490b-9fd2-22b56268fdab",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Quand plusieurs générations dansent ensemble, l’événement change de dimension. Parents et enfants partagent un moment commun, des souvenirs se créent, des barrières tombent. C’est là que l’ambiance devient mémorable : quand la musique rassemble au lieu de diviser.</span><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5fd974d5-65f3-43d4-be11-fa5c879342c0",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "fe6fc7ca-09e3-4ddb-8b7d-ec0ccf8f872c",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/68855_800430",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 3648,
+     "w": 5472,
+     "s": 8916162,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "618ed0a5-c2bb-450a-9dd2-816d2f10d95c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "caa8b86f-d0ac-4474-a917-0677c837404e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Conclusion : l’ambiance comme langage universel</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19ae04ff-aacd-4484-b3b8-5785c24a99e5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4646e49d-1055-453b-a873-7e5d1c4bedad",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Une ambiance intergénérationnelle réussie n’est pas un compromis, c’est une exigence. Elle demande de la culture musicale, de l’expérience et une vraie sensibilité humaine. Mais quand elle fonctionne, elle transforme une simple soirée en moment fédérateur. Et c’est précisément là que l’événementiel prend tout son sens.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "dc720984-4caa-4ab1-9511-a04917f5b343",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0549c6f9-4005-4ca5-b545-a042dfc815ed",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

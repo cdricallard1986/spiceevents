@@ -1,0 +1,599 @@
+{
+ "blogPostMeta": {
+  "id": 59331347,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-02-11T05:42:28.293-08:00",
+  "publishedAt": "2026-02-11T08:02:25.686-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/de-visiteurs-a-exposants-l-envers-du-decor-d-un-salon-du-mariage",
+  "customSlug": null,
+  "editCount": 387,
+  "publishedEditCount": 322,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": "Europe/Paris",
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/de-visiteurs-a-exposants-l-envers-du-decor-d-un-salon-du-mariage",
+   "title": "De visiteurs à exposants : l’envers du décor d’un Salon du Mariage",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/597822_651054.jpeg",
+   "description": " Lors du dernier Salon du Mariage, l’équipe Spice Events était derrière le comptoir… mais aussi dans une multitude de rôles à la fois. Communication, organisation, coordination, relation clients… tout s’entremêlait. Mais avant même l’ouverture des portes, il y a eu tout une logistique invisible....",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Une ambiance intergénérationnelle",
+  "nextBlogPostRelativeUrl": "/blog/une-ambiance-intergenerationnelle",
+  "nextBlogPostId": 59987511,
+  "prevBlogPostTitle": "Comment un DJ lit-il une piste de danse ?",
+  "prevBlogPostRelativeUrl": "/blog/comment-un-dj-lit-il-une-piste-de-danse",
+  "prevBlogPostId": 58239579
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_5f3ee787-ecdd-4e65-bb58-af68ff75ce93",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_7fa4d40a-3a13-4698-a0cc-806203f9415e",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_804b0575-0bde-44f9-a150-8f31fc6439f9",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: center; font-size: 48px;\"><span style=\"color: #ffffff;\">De visiteurs à exposants : l’envers du décor d’un Salon du Mariage</span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": "center",
+     "lastLineTextAlign": "center"
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_bc51a1c3-8b9b-4cdf-8955-ef2083f54c27",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s2 p1 s-rich-text-wrapper\" style=\"text-align: center; font-size: 24px;\"><em>Quand préparation, exigence et passion deviennent la signature de chaque mariage</em></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": "center",
+     "lastLineTextAlign": "center"
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_af5ad6a7-9e65-4cfb-bb90-d26973aacbf8",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/597822_651054",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1536,
+    "w": 2048,
+    "s": 654859,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_555b9180-929a-4fc8-a506-b2e605879370",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a80cb63f-9164-4996-beea-f1dfebcd53a5",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_51606f56-9092-4642-aa18-457a3a83ff5d",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_85f9bc80-7a89-424e-b151-06f0331b6988",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_96878c11-0a85-446a-8f14-28a16a974ac7",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_1757cbd2-4051-4dfc-9c10-49b79eee9695",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_19a815d5-9a08-4dad-bc95-b57060f1eaad",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "5c4b9d3b-ccc0-4590-8962-357cba2e8013",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "758a77d2-1a35-4fc7-9b49-6ae043fd68dd",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e273cb59-19e3-4855-b040-492f9c04b999",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "d1d46cbd-7ab6-4075-ba1e-16858fd154d0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/597822_651054",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1536,
+     "w": 2048,
+     "s": 654859,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d0cbe152-4169-4a17-beec-dc7f7e6d5c51",
+    "defaultValue": null,
+    "component": {
+     "type": "Blog.Quote",
+     "id": "437961f4-7415-4882-95dd-c0e170316a90",
+     "defaultValue": false,
+     "value": "<blockquote><p class=\" s1 p1 s-blog-post-section-text-8jr3e s-component-content s-blog-section-inner s-component s-text s-font-body sixteen columns container s-block-item s-repeatable-item s-block-sortable-item s-blog-post-section blog-section s-narrow-margin s-blog-post-section-8jr3e s-blog-post-section-3\" style=\"text-align: justify; font-size: 18px;\"><strong><br></strong><span style=\"color: #000000;\"><strong>Tenir un stand, ce n’est jamais “juste être là”.</strong></span></p></blockquote>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d0cbe152-4169-4a17-beec-dc7f7e6d5c51",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "da972e60-9a03-4de5-acea-91d607751f0f",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1 s-blog-post-section-text-8jr3e s-component-content s-blog-section-inner s-component s-text s-font-body sixteen columns container s-block-item s-repeatable-item s-block-sortable-item s-blog-post-section blog-section s-narrow-margin s-blog-post-section-8jr3e s-blog-post-section-3\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\">Lors du dernier Salon du Mariage, l’équipe </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> était derrière le comptoir… mais aussi dans une multitude de rôles à la fois. Communication, organisation, coordination, relation clients… tout s’entremêlait. Mais avant même l’ouverture des portes, il y a eu tout une logistique invisible.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9a520c43-827c-4436-9184-32f41afa3235",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c000563a-04fc-4077-a81c-3880bc7acb17",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1 s-blog-post-section-text-8hv6n s-component-content s-blog-section-inner s-component s-text s-font-body sixteen columns container s-block-item s-repeatable-item s-block-sortable-item s-blog-post-section blog-section s-narrow-margin s-blog-post-section-8hv6n s-blog-post-section-4\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\">L’équipe a d’abord imaginé le stand sur papier. Plans, croquis, organisation des espaces, placement du matériel, circulation des visiteurs… Tout a été dessiné, repensé, ajusté. Il a fallu mettre la main à la pâte en réalisant certains éléments soi-mêmes.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "dd45ddd1-61d5-4c87-bdbd-93dd79d566ec",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "621dd53e-5a2b-4518-8806-b4827cf2a704",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1 s-blog-post-section-text-8hv6n s-component-content s-blog-section-inner s-component s-text s-font-body sixteen columns container s-block-item s-repeatable-item s-block-sortable-item s-blog-post-section blog-section s-narrow-margin s-blog-post-section-8hv6n s-blog-post-section-4\" style=\"text-align: left; font-size: 18px;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2cdfac68-bf7d-45b9-823f-366893126e42",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "afa1c370-d26b-4461-9ba5-93c4bdaf632e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/539977_18788",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "border_radius": null,
+     "aspect_ratio": null,
+     "h": 3024,
+     "w": 4032,
+     "s": 3592271,
+     "new_target": true,
+     "noCompression": false,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "060cd478-e540-4532-97ee-935c6009730c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cc712a3c-d459-4e9d-9c73-75358b7caba4",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Puis est venu le pré-montage. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>Tester l’installation en amont, vérifier les volumes</u></a></span><span style=\"color: #000000;\">, l’équilibre visuel, la cohérence entre les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>la technique</u></a></span><span style=\"color: #000000;\"> et l’identité </span><span style=\"color: #000000;\"><strong>Spice</strong></span><span style=\"color: #000000;\">. Monter, démonter, recommencer.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "060cd478-e540-4532-97ee-935c6009730c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3973e711-41a8-4ee5-88d8-473fb8d36b3d",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Et bien sûr… les imprévus. Des éléments arrivés en retard. Certains détails à refaire. Des ajustements de dernière minute. Des décisions prises rapidement pour que tout reste fluide et professionnel. </span><span style=\"color: #000000;\">L’organisation du stand a été pensée, repensée, modifiée, optimisée. Parfois dans l’urgence mais toujours avec exigence.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b308bbb5-22a7-46b2-b905-c808f733d9dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1e600649-ed77-4969-b29a-246819974036",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Mais cette préparation ne s’est pas limitée au stand physique.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "36f9db76-ff03-4c16-8ad0-266f1a68f12d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b4ff6e31-c3ac-4209-b138-728d80a2ebdf",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">En amont, il a fallu imaginer et concevoir plusieurs designs : les brochures, les cartes de visite en forme de piment, les bâches de fond, les supports visuels… Chaque élément a été réfléchi pour créer une identité cohérente et immédiatement reconnaissable qui marque les esprits.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4553e0a4-2f48-4914-a365-06046f2bd3a5",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "b48d8e28-74a3-4893-b992-a171fa567054",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/170872_512205",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 3024,
+     "w": 4032,
+     "s": 2500796,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "594eb42d-51e6-42db-864a-6757975d30d0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5cff441a-9eeb-430f-8914-b6794c1a3b33",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "594eb42d-51e6-42db-864a-6757975d30d0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f2e72401-80d3-4e12-b6b3-ab2d03eb0e3a",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Mais pour être honnête, tout a en réalité commencé bien avant le salon. L'équipe de </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> a mis toute son énergie pour se concentrer sur la remise en ligne du site </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> dans une nouvelle version, plus affirmée et plus structurée. Sur une nouvelle ligne éditoriale pour les réseaux sociaux, avec une identité plus claire, plus forte et plus fidèle à l’univers </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\">... En bref, de nombreux projets réalisés en peu de temps.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7a73a77-658c-431b-ae51-6f04e2f90504",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "89f77cbb-77ee-4668-864d-3b2f6b7b618b",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Une préparation stratégique, pensée pour renforcer notre crédibilité et faciliter la navigation des visiteurs entre nos différentes plateformes.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7e039e45-c0a1-4c2d-be35-d70e094884ed",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fd463b32-2603-450d-b63a-08719e1c0f9f",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Le jour J, l’équipe </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> n’était plus simplement exposante. Elle incarnait l’énergie de ce merveilleux projet : expliquer les offres, orienter les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>futur(e)s marié(e)s</u></a></span><span style=\"color: #000000;\"> vers les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\">, leur présenter l’univers </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> et assurer la cohérence globale.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7e039e45-c0a1-4c2d-be35-d70e094884ed",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c67a1daa-1cdc-496e-ba56-124e90260b25",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5e6c864c-396d-4709-8015-c17dfb506f7c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "66a2873c-c540-478d-acfd-62b0939d4afa",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/142344_147526",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 3024,
+     "w": 4032,
+     "s": 2218605,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f5ceeadd-9348-4f5f-96eb-71a9197ab6f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fc650724-4a7b-4f75-a2a3-6e3bdab082e8",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Créer une ambiance, ce n’est pas seulement installer du matériel ou mixer de la musique. C’est anticiper. Ajuster. Rebondir. Maintenir un niveau d’exigence même quand les choses ne se passent pas exactement comme prévu. C’est accepter que la préparation soit parfois plus intense que l’événement lui-même.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "335f98ec-593a-44d9-b71f-2a138b19e4d4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b4e2d2f6-4416-4394-881a-b041be1026e1",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Mais c’est aussi ce qui rend l’expérience forte. Voir le stand prendre vie après tant d’allers-retours. Voir les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>futur(e)s marié(e)s</u></a></span><span style=\"color: #000000;\"> s’arrêter, poser des questions, sourire. Voir une carte de visite en forme de piment marquer les esprits et amuser. Finalement, un stand réussi ressemble beaucoup à un événement réussi : de la préparation, de l’adaptation… et une équipe soudée derrière chaque détail.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f437bff4-26ed-47f3-9c73-ccb8e87b8717",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "e8cf6c53-25f8-4be7-8600-a7657ea0c962",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/589348_401548",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 3024,
+     "w": 4032,
+     "s": 2564091,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "da1270d7-1ba5-4161-91ea-96581114730d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "90ab636f-0b12-4218-995a-8760840709eb",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p3 s3\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Toute cette préparation, cette anticipation, ces ajustements permanents, cette capacité à gérer les imprévus… c’est exactement ce que l’équipe </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> met au service des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>marié(e)</u></a></span><span style=\"color: #000000;\">s. Chaque détail pensé en amont, chaque solution trouvée en urgence, chaque choix stratégique a un seul objectif : vous garantir un mariage fluide, maîtrisé et inoubliable.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "40bb5f88-60e3-453e-8c07-87d27f6d28cd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f9c6ea0c-7083-485a-a574-6042a840e3ec",
+     "defaultValue": false,
+     "value": "<p class=\" s1 p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Parce qu’un événement réussi repose sur la rigueur et un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>accompagnement personalisé</u></a></span><span style=\"color: #000000;\">. Et cette rigueur, </span><span style=\"color: #000000;\"><strong>Spice Events</strong></span><span style=\"color: #000000;\"> la mettra au cœur de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> !</span><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "aaef4959-6bb4-49f8-8d87-52644104736a",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "34bb42d5-3a7a-447e-852d-514566c82656",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/846945_683488",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 3024,
+     "w": 4032,
+     "s": 3475350,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d664567c-b758-4980-81bf-6dc7e9feef1b",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "16b51d4b-1d84-40c0-b118-ee1b53fa280a",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/139247_820997",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 4284,
+     "w": 5712,
+     "s": 8629026,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "59d92de6-e6c8-46f5-82cd-52f5cbd50313",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "018ccc6f-ad2b-4bc3-b404-9c2fa676302f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/110817_340280",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 5418,
+     "w": 3287,
+     "s": 3592733,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "07113b9e-6abd-47cf-9fd1-6f890d4df7e8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5e97927a-75a4-4b3d-8209-e1739943c684",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": null,
+  "scheduled_time_zone": "Europe/Paris"
+ }
+}

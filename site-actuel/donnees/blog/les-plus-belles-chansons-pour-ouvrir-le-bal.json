@@ -1,0 +1,434 @@
+{
+ "blogPostMeta": {
+  "id": 19036029,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-02-22T07:06:24.748-08:00",
+  "publishedAt": "2022-02-22T07:21:41.254-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/les-plus-belles-chansons-pour-ouvrir-le-bal",
+  "customSlug": null,
+  "editCount": 228,
+  "publishedEditCount": 189,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/les-plus-belles-chansons-pour-ouvrir-le-bal",
+   "title": "Les plus belles chansons pour ouvrir le bal",
+   "image": "https://images.unsplash.com/photo-1507978861137-c8242421278e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "En manque d’inspiration pour trouver LA chanson parfaite pour votre ouverture de bal ? Spice Events a répertorié pour vous les plus belles musiques pour ce moment magique !    1. A Thousands Years de Christina Perri Pour les fans de Twilight (mais aussi pour les autres) cette chanson est un...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Osez la thématique noire pour votre mariage",
+  "nextBlogPostRelativeUrl": "/blog/osez-la-thematique-noire-pour-votre-mariage",
+  "nextBlogPostId": 19234866,
+  "prevBlogPostTitle": "Les plus beaux lieux pour un mariage hivernal",
+  "prevBlogPostRelativeUrl": "/blog/les-plus-beaux-lieux-pour-un-mariage-hivernal",
+  "prevBlogPostId": 18897596
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_13b54abe-b3a0-4f6a-9cb8-bf337f060306",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_7d185c20-6c50-4e81-9e0e-7f6ca5017d3f",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_270ff1e0-bab4-45f3-b221-9a4b87db9d79",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Les plus belles chansons pour ouvrir le bal</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_bb8163ff-45d2-4abe-a5e8-50c9b9991911",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>d'après Spice Events</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_95b0d2e8-c8ea-4adc-a568-4d55e7096d6a",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1507978861137-c8242421278e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_dce12d80-e50d-4661-a348-623eaa452413",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_0e3fcef9-e15e-4ad7-86bf-289d097c7809",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_b6e393f6-8df0-41f9-9a39-3cd4e4cb97f0",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_ba2109ad-dfda-4139-8123-10e2f255ee98",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_89d4ee3d-d8d8-4d99-8fcd-66b8fde52e6b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_f3711c4a-6c75-4c65-8e7a-40391bf510e4",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_cb57391f-cfa8-46c6-8c3c-c4c73eaabca7",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "9466bdf4-ef07-4b1b-af84-d21a793becf5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ed239e86-fb75-4324-8f84-6ffa14d702de",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">En manque d’inspiration pour trouver LA chanson parfaite pour votre ouverture de bal ? Spice Events a répertorié pour vous les plus belles musiques pour ce moment magique !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c3098f2f-2dd3-44a7-ad95-4b463393dae2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1733d0a8-30d6-43cd-9842-9224faf9e269",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   1. A Thousands Years de Christina Perri</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "72ae12b1-b461-42a7-b6ce-8ee3129432d3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "77af23c0-084f-494b-b325-11a8a6460ab3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour les fans de Twilight (mais aussi pour les autres) cette chanson est un symbole du véritable amour. Alors si comme Bella et Edward, votre amour est plus fort que tout, cette chanson est faite pour vous. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9f7822c6-f604-45bb-8eb2-d5dcdb408da7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dfede712-441b-4422-9658-0cfb7a72d1ac",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   2. Thinking Out Loud d’Ed Sheeran</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8efeacee-e43c-439f-92eb-473f5c0dfbaf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "78e3a457-c63b-43d4-bf84-d466eb9b406a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si on regarde la traduction de cette chanson d’Ed Sheeran, les paroles sont parfaites pour un mariage et notamment pour une ouverture de bal. Une très belle façon de déclarer sa flamme en laissant la parole à notre chanteur anglo saxon préféré. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8a5b6b0a-919d-4fcb-b250-49bf8e19d05e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3bdb6fde-2ccf-4104-970d-7185ee665d47",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   3. Je te promets de Johnny Hallyday</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "443ce00a-2671-470b-afe9-4119c2ea4c31",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c7fdff70-1d1f-4482-b1f7-0a625abf2579",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un peu de français avec ce grand chanteur et compositeur qui n’est d’autre que Johnny Hallyday. Avec sa chanson “Je te promets”, la douceur et le romantisme seront au rendez-vous, pour une ouverture tout en émotion.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "750c7ac9-d777-4cb0-9cd9-0db48809571a",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "489b1c0d-cf3d-4f64-893c-180aeb0644e3",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/275899_258335",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 3548490,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c7f8fc14-d6d5-46a8-bae5-5389ebd5a3ae",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "59d51a0f-5197-4b23-a3aa-a3123ca92e70",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">  </span><span style=\"color: #140e06;\"><strong> 4. Love Me Like You Do d' Ellie Goulding</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1e80c43f-6a94-41c4-8c20-b7f2f4e70c1d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8ea36c4f-d0cb-4548-9c93-fa61e984f42f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous souhaitez un peu plus de rythme pour pouvoir montrer vos grands talents de danse, opter pour cette chanson plus dynamique mais toujours très romantique d’Ellie Goulding. Encore un morceau rempli d’amour et de promesse. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "688d0bd1-4ff7-43e3-8c40-a14893c23743",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d3c400af-d166-443b-ae4f-2718b31463c6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   5. Je l’aime à mourir de Francis Cabrel</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1833fb4b-f27c-47b9-8d15-1486bbff4651",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3943796e-99bf-4d13-aeec-c19324d81596",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un peu plus ancienne que les autres musiques que nous vous avons proposées jusqu'ici, cette jolie chanson écrite par Francis Cabrel est une belle déclaration pour votre conjoint/e en ce jour si particulier. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0f9ba14d-9736-4f42-a633-e4a3b9343b8b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "024773cb-40cd-4c3a-9fb0-4be1fbe882fa",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   6. Just The Way You Are de Bruno Mars</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5cd0180e-8ecb-4bf3-9645-fcd0e6e74301",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f56a3632-dda4-4d23-899b-e87baaa695ac",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous et votre moitié vous vous aimez “just the way you are”, remerciez notre cher Bruno Mars pour ce single et empruntez lui juste le temps d’une danse. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd2bf919-20cd-4a7b-b55e-7afa7db5e4ab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "858eea86-2c01-4c79-b245-eabd5860ab7c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>   7. All of me de John Legend</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "07809c5f-f7a5-4f53-af90-514507e9df57",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4f0d1f9d-31b8-436e-a5db-d40a9313375e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Autre très belle chanson symbole d’amour et de dévotion, cette chanson du talentueux John Legend qui saura vous emporter dans un moment magique et inoubliable. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "aeeb2692-b002-45ec-8b9b-79462b474268",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "5e85641a-f95e-4e81-a45b-21ced5a6d80c",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/899742_133491",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 810,
+     "w": 1200,
+     "s": 2993948,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c3b4dba7-c4f2-4ded-bcc1-ffd71b837731",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5c8d0754-1104-4bb4-83e9-7d905d116343",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">A vous de faire votre choix !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4fbf4a12-7a79-4ba6-8ec9-c859b6467139",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "519c47a3-fa10-42b6-b65b-caa266db01b9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Sans oublier que Spice Events vous propose également un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>booking DJ</u></a></span><span style=\"color: #000000;\"> pour lancer la playlist que vous choisirez.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0c823691-73e4-4878-aca6-4f680db54a82",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e67bb4d3-648c-4e5b-b1d1-432090f52ad4",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

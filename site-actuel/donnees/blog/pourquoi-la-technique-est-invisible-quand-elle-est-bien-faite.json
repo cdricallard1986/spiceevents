@@ -1,0 +1,559 @@
+{
+ "blogPostMeta": {
+  "id": 56546326,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-18T05:27:55.482-08:00",
+  "publishedAt": "2025-12-23T00:59:15.850-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-la-technique-est-invisible-quand-elle-est-bien-faite",
+  "customSlug": null,
+  "editCount": 104,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-la-technique-est-invisible-quand-elle-est-bien-faite",
+   "title": "Pourquoi la technique est invisible quand elle est bien faite ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/712490_572548.jpg",
+   "description": "Pourquoi la technique est invisible quand elle est bien faite ? Lors d’un mariage ou d’un événement, les invités se souviennent d’une ambiance, d’une émotion, d’un moment fort. Rarement des câbles, des enceintes ou des projecteurs. Et c’est précisément là que réside la réussite d’une prestation...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi la qualité du matériel de sonorisation change toute l’expérience de votre événement ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-la-qualite-du-materiel-de-sonorisation-change-toute-l-experience-de",
+  "nextBlogPostId": 56739077,
+  "prevBlogPostTitle": "Guirlandes lumineuses",
+  "prevBlogPostRelativeUrl": "/blog/guirlandes-lumineuses",
+  "prevBlogPostId": 56545440
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_92ea68b3-dc79-4bfc-8e3e-cc9dd7852a8a",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_f47be1f7-3b96-4b62-9e34-71650afb9d06",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_4dcc6594-2dd6-4ef2-8765-fe9fc693438d",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p><span style=\"color: #ffffff;\"><strong>Pourquoi la technique est invisible quand elle est bien faite ?</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_2c93633c-fc60-4828-826e-4ea2fcdbedd3",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\">Quand la technique se fond naturellement dans l'émotion de votre événement</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_c86d00fc-72c7-4951-ae83-bfd496cd0770",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/712490_572548",
+    "storage": "s",
+    "format": "jpg",
+    "h": 769,
+    "w": 1170,
+    "s": 347882,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_0ad62dad-f569-4bf4-92ee-8b6b5b41bb3f",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_fb51bd1a-77bd-48d7-97cc-e9bf75a1d53e",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_f21b16df-842d-4e25-80e0-b32f3a57eb49",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_cb1bf0c8-8c07-4114-b334-76d5d25943cf",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_5d78dc4e-38d5-46f1-9d5b-d9078e0c6849",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_7fe2f299-a4af-454c-a63e-887f619d9696",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_0f3f9e34-0670-4d36-be6f-a4397e03f651",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "6c3557c5-3135-462a-a75b-de6d385d3120",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "09354ce2-8de3-467c-96a3-20a7926688f7",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Pourquoi la </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique</strong></u></a></span><span style=\"color: #000000;\"><strong> est invisible quand elle est bien faite ?</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6203c4e7-50b1-44f2-adda-08f5e1c7cf44",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6308e839-072c-4f53-b344-eecfb67b3cb5",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Lors d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, les invités se souviennent d’une ambiance, d’une émotion, d’un moment fort. Rarement des câbles, des enceintes ou des projecteurs. Et c’est précisément là que réside la réussite d’une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>prestation techniqu</u></a></span><span style=\"color: #000000;\">e : quand elle disparaît au profit de l’expérience.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "66c4cc3f-9082-4952-8b3b-550c027b199f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2138e2fe-afda-4268-b386-b1d0dfee0b54",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Chez Spice Events, nous sommes convaincus que la meilleure </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique</u></a></span><span style=\"color: #000000;\"> est celle que l’on ne remarque pas… mais que l’on ressent.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd519711-e0c6-4127-a187-1abc831f1f64",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3d774ffc-39b8-41ae-9fdf-d169795d4db7",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "138f304e-48c2-4d7b-a8a5-85be34580faf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "32bd7590-d293-4d6e-ad2b-310f96d6d7d2",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Une </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique</strong></u></a></span><span style=\"color: #000000;\"><strong> pensée pour l’expérience, pas pour être vue</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "85f53632-ed70-4bcc-93d2-fbf03b0f387c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3cba602c-00e4-418f-bdf6-ecea81cdda05",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Sonorisation, éclairage, vidéo, effets visuels : ces éléments sont essentiels, mais ne doivent jamais voler la vedette à votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">. Une installation réussie s’intègre naturellement au lieu, respecte son architecture et sublime l’instant sans jamais l’alourdir.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a0a4ade0-2f03-4791-a88d-9d3e77ce6f39",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "11a02a67-883d-4d92-9d03-e7ac821826fa",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Un son clair sans effet de saturation, une lumière qui met en valeur sans éblouir, des effets maîtrisés qui arrivent au bon moment : tout est une question d’équilibre et de précision.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "55f461ad-58c2-4ee3-83a2-1d140d6187e0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "35e9ea82-6906-4ba7-a4a4-5d33ce9f5602",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "08d55686-b6a7-4e8d-833d-2c9953007db4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "5b7c6fb1-f395-4128-a8b2-b3e5b7caa1ad",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/250592_302561",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1145,
+     "w": 1170,
+     "s": 388046,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "589c0940-fef3-4d5b-8650-b5fb1b5a61c4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e7abd15d-6fb9-42a0-a1ed-636d02334090",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Anticiper pour éviter l’improvisation</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b56734c0-682e-41e9-8538-1cb4174b06bb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "66ab20f4-f63b-4f51-9b77-d651484bf39b",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Si la </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique</u></a></span><span style=\"color: #000000;\"> est invisible le jour J, c’est parce que tout a été pensé en amont. Repérage des lieux, étude des volumes, choix du matériel, scénarisation des temps forts… chaque détail est anticipé pour que rien ne perturbe le déroulé de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9962f162-14c8-4e10-813c-791b1c9d995a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "10394927-9c6e-494f-b9ad-914c1465fe0a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Cette préparation permet d’éviter les ajustements visibles, les câbles mal placés ou les installations envahissantes. Résultat ? Une ambiance fluide, élégante et rassurante.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "925afd4f-d533-4a61-9197-d0bdc41dd295",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4a69b929-45dc-4838-9935-cc93106a9b8b",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "04d3dffa-4ba2-4eea-8a82-9d18b927618c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "30271d57-3398-4f26-9864-2d8790a66a55",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Le bon matériel au bon endroit</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0e1696d6-fdee-4da9-a8ff-b977e0ed21fa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6edf02bb-1e28-4057-965c-17e6d7f71b47",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">La </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>performance technique</u></a></span><span style=\"color: #000000;\"> ne dépend pas uniquement de la puissance du matériel, mais de son adéquation avec le lieu et le moment. Inutile d’en faire trop : mieux vaut un dispositif parfaitement dimensionné, réglé avec précision, qu’une démonstration technique inutile.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7f2feb2f-e870-47fc-9c48-b6d5468dd9b1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "420d5854-5da9-4465-9b9f-2e83adf0aa83",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Chez Spice Events, nous sélectionnons chaque équipement pour sa fiabilité, sa discrétion et sa capacité à servir l’émotion, qu’il s’agisse d’une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>cérémonie laïque</u></a></span><span style=\"color: #000000;\">, d’un cocktail, d’une soirée dansante ou d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement professionnel</u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "08f57919-ff0c-48a1-a854-f7722d3ee596",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "966fcc76-545b-4fc0-b482-761803fe7636",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "aea63530-a837-4369-a83e-3c5c75700356",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "8159f51e-c89f-4ded-a4d5-6ab6d10f1653",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/835865_791304",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1155,
+     "w": 1170,
+     "s": 296953,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3e799e22-0bee-482b-8ba0-f332cabb57de",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e34dd94d-30c4-46c8-bc8a-86b3206bb6e9",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Quand la </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique</strong></u></a></span><span style=\"color: #000000;\"><strong> devient un support à l’émotion</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "33549207-24ef-4648-8fe3-6488aa062e3e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "20ba595a-fcf0-48e2-9270-cdb57dd7a1c8",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u>ouverture de bal spectaculaire</u></a></span><span style=\"color: #000000;\">, une prise de parole parfaitement audible, une lumière qui accompagne un moment clé… La </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique</u></a></span><span style=\"color: #000000;\"> n’est jamais une fin en soi. Elle est là pour amplifier les émotions, renforcer l’impact d’un instant et créer des souvenirs durables.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "dfa64fa8-6e13-4121-a04a-5769cd7cdffd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d299d72b-04ee-4bd7-9642-6ad65a6b451e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Lorsqu’elle est bien réalisée, les invités ne se demandent pas comment cela fonctionne. Ils profitent simplement du moment.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "eef5b741-07f9-4892-88fe-8f1e79610051",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "81f62248-30b8-41c0-b388-126ac9752134",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2923592f-08a3-4b83-a205-302122280103",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "205bb5cd-ef9a-44c9-a16a-22c3fc9dc925",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u><strong>L’accompagnement</strong></u></a></span><span style=\"color: #000000;\"><strong>, clé d’une </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique</strong></u></a></span><span style=\"color: #000000;\"><strong> invisible</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6a6f04ae-0b9e-4902-9e4a-5ccea689d33c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "62f7c42f-bfab-4fc5-9ff3-76f386f48ece",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Enfin, une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique réussie</u></a></span><span style=\"color: #000000;\"> repose aussi sur </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>l’accompagnement</u></a></span><span style=\"color: #000000;\">. Conseiller, guider, rassurer, proposer les bonnes solutions sans surcharger : c’est ce qui permet de créer des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événements</u></a></span><span style=\"color: #000000;\"> cohérents, élégants et parfaitement maîtrisés.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4d6ab802-36b3-4928-bd57-82ed381f9d0a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "808f9662-50f0-4e89-897f-d2a134afaeff",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c59a894c-4c28-483e-8095-5eb8317a26e1",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a2c0cad1-c375-4ad0-8515-d18dd01ba4ef",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/233033_683338",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 2448,
+     "w": 3264,
+     "s": 1592698,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e99339fa-eb1b-4b8a-a8c0-b5a524557c33",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b7d0a799-3dbb-411e-8f1a-935e451f4fc2",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Chez Spice Events, notre rôle est de transformer la </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique</u></a></span><span style=\"color: #000000;\"> en une évidence, pour que vous n’ayez qu’une chose à faire : vivre pleinement votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2a5e93cf-bd5d-4823-a1ca-bedf02e821cf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "abe9e59b-8557-41c2-85b7-d54c3cee0f00",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": null
+ }
+}

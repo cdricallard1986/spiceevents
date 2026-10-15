@@ -1,0 +1,498 @@
+{
+ "blogPostMeta": {
+  "id": 62694170,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-04-27T07:16:41.428-07:00",
+  "publishedAt": "2026-04-30T05:53:58.055-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-investir-dans-du-materiel-fiable-est-plus-responsable-pour",
+  "customSlug": null,
+  "editCount": 61,
+  "publishedEditCount": 51,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-investir-dans-du-materiel-fiable-est-plus-responsable-pour",
+   "title": "Pourquoi investir dans du matériel fiable est plus responsable pour l’environnement ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/196182_422507.jpeg",
+   "description": "Dans l’événementiel, le choix du matériel est souvent guidé par des critères de performance et de rendu. Pourtant, il s’agit aussi d’un enjeu environnemental. Investir dans un équipement fiable et durable ne répond pas uniquement à une exigence de qualité, mais participe également à une démarche...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi la cohérence visuelle a son importance ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-la-coherence-visuelle-a-son-importance",
+  "nextBlogPostId": 62828676,
+  "prevBlogPostTitle": "Trop d'animations : le piège",
+  "prevBlogPostRelativeUrl": "/blog/trop-d-animations-le-piege",
+  "prevBlogPostId": 61585713
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_00f7136d-e1d0-42b4-9773-85a9d20f4fa9",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_b04ad275-27b2-4720-a5ef-f9186ec45eac",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_76245fa9-5527-4474-a9a5-dde5f0889928",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>Pourquoi investir dans du matériel fiable est plus responsable pour l’environnement ?</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_ef916d0e-2005-4bac-8396-3ae9999291ef",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>Une responsabilité qui dépasse la simple performance</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_21c03399-4dbb-42b8-a2d4-c721a985fef6",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/196182_422507",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1365,
+    "w": 2048,
+    "s": 2685258,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_d12e5b35-3a6e-40ac-9d0c-30f30b2ec424",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_695356fc-66e3-4f61-aff9-b1e31b064c42",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_94008e97-7f28-46c3-91a0-000e93c24f4b",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_3d5b638a-dad2-4394-86ae-7f862729d44b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_3b356873-84d9-474b-ae32-8e62451e2f6a",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_cc2b2157-8f90-4e77-af56-15ea0be16ce1",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_bb9cb6f6-fb3a-4757-bb23-a6e986d935fa",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "d1f9646c-25b7-41ca-9b68-8598fffd7f08",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "037fbe38-60fe-49b9-897a-d319927c5d28",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Dans l’événementiel, le choix du matériel est souvent guidé par des critères de performance et de rendu. Pourtant, il s’agit aussi d’un enjeu environnemental. Investir dans un équipement fiable et durable ne répond pas uniquement à une exigence de qualité, mais participe également à une démarche plus responsable. Chez Spice Events, cette approche s’inscrit dans une vision globale : proposer des prestations maîtrisées tout en limitant leur impact sur le long terme.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b96fcdf8-8bab-4cb6-a26d-40fc270717ee",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "d3697521-1a40-4767-8920-a72a8ee6094c",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/990123_711961",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 2048,
+     "w": 1365,
+     "s": 2165362,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "645e4aac-f442-4e5c-834f-b37c1ccda60d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4c6c303c-6ffb-42d5-b0a4-fab9fad338a5",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>La durabilité comme premier levier écologique</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5d7b5ae3-109b-4aa7-9cd3-d4180f87fafc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d1c5e61e-7d41-439b-958d-ea569b66d2c7",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Un matériel fiable est conçu pour durer. Là où des équipements d’entrée de gamme nécessitent des remplacements fréquents, du matériel professionnel de qualité peut être utilisé pendant plusieurs années sans perte de performance. Cette longévité réduit directement la production de déchets électroniques, un enjeu majeur dans le secteur. Moins de remplacements signifie aussi moins de fabrication, donc une empreinte environnementale globale réduite.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5f6d2fe8-7ac8-4e5c-a72f-271b236f79d3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "18b921ad-2ca6-4aec-85bd-433a507582a5",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Réduire la consommation liée au renouvellement</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ebb92b8d-a958-4577-a4ec-7f255a2f733e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4e334877-539c-4615-be38-58283b6645eb",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Chaque achat de matériel implique des ressources : matières premières, transport, production et distribution. En limitant la fréquence de renouvellement, on réduit mécaniquement cette chaîne de consommation. Investir dans un équipement fiable permet donc d’éviter une logique de surconsommation, souvent liée à des produits moins durables. C’est une approche plus raisonnée, qui privilégie la qualité à la quantité.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5df1432c-cdbe-4d8b-918c-0419a51503f7",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "86bd1778-d404-4c9b-b5be-345ac1c14599",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/735936_112285",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1296,
+     "w": 2048,
+     "s": 2151096,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8d7f3815-9d04-4d6e-9e7f-e4c212275de6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2180ae63-3791-4398-b43b-3451aeb2663f",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Une meilleure efficacité énergétique</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "223af974-4233-46fd-8133-a1feddfd3232",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "699b7d42-e214-4251-aed9-e191d1c9c8bc",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Les équipements professionnels récents sont généralement conçus pour être plus efficaces énergétiquement. Éclairage LED, systèmes audio optimisés, gestion intelligente de la puissance : ces technologies permettent de réduire la consommation électrique sans compromettre la qualité du rendu. À l’échelle d’un événement, ces optimisations ont un impact direct sur l’empreinte énergétique.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fe95a37e-522a-4556-a8df-52b3a8011bbb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e8654615-15e4-4222-a303-79cfa9fd4d35",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Moins de pannes, moins de gaspillage</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0de6277a-350c-41eb-96fe-ccafadf4dcc2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fac4c0d4-f4c2-46ce-9bb8-8d0054121037",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Un matériel fiable limite les risques de panne et les interventions d’urgence. Cela évite non seulement des interruptions de prestation, mais aussi des déplacements supplémentaires, du remplacement en urgence ou l’utilisation de matériel de secours non optimisé. Cette stabilité contribue à une gestion plus sobre et plus efficace des ressources.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d3a80097-7237-47dc-a98a-f984b9bbe669",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "d02ac025-aa3e-4562-bb20-9b0a3f868448",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/514454_47216",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1365,
+     "w": 2048,
+     "s": 2463763,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d0a28c46-cd59-42d6-a1a6-9e2cce9cbae8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "392d721c-e330-4c48-9a74-90c85668dacc",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Une logistique plus maîtrisée</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7fffec70-6dec-449b-81b3-75fb7b40c3a0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "00499e70-625a-4a0a-8f3f-5ac95f72b8bf",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Investir dans du matériel de qualité permet également de rationaliser la logistique. Des équipements fiables, bien entretenus et adaptés aux besoins réduisent les transports inutiles et les ajustements de dernière minute. Une organisation optimisée est souvent synonyme de réduction d’impact, notamment en limitant les allers-retours et les ajustements techniques imprévus.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b0c09b91-37e1-4618-b953-4adcd8ca093b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "61c9ded0-b567-4149-bd86-4aa91f749ef0",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Une approche cohérente avec l’exigence de qualité</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1dc11f81-77df-4c66-a937-3a444b2d5ec5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b96ea624-9f3c-4ac6-add1-01ef8c0f4d27",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Responsabilité environnementale et exigence de qualité ne sont pas opposées, bien au contraire. Un matériel performant, durable et bien utilisé permet d’offrir une expérience plus fluide tout en s’inscrivant dans une démarche plus responsable. Chez Spice Events, cette cohérence est essentielle : chaque choix technique doit répondre à la fois à un niveau d’exigence élevé et à une logique de durabilité.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bce64664-6a39-4c1b-a371-3f9e5509a08f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "ac5e6e02-db63-4491-82ec-4c47057da2fc",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/524836_133209",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 2048,
+     "w": 1365,
+     "s": 1049850,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bee40e72-c283-4ee4-a4c9-980f1879db1b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "41ba6a11-1e31-462c-8c03-ee3f3599bb2a",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>Vers une vision plus responsable de l’événementiel</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e7e515fd-9c13-4a4a-b173-480d8ceeb463",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2686675f-d381-4237-8726-6a67474a98b0",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">L’événementiel évolue vers des pratiques plus conscientes, où chaque décision compte. Le choix du matériel en fait partie. Privilégier des équipements fiables et durables est une manière concrète de réduire son impact tout en maintenant un haut niveau de prestation. C’est un engagement discret, mais essentiel, qui participe à la transformation du secteur.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6c3a64a1-bbad-4196-86d4-14fa5b7a9808",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e41f70c7-7730-45f4-9b24-431db48f5d6f",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><strong>En conclusion</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0caebb96-ed59-495a-8486-88cc1b65c49d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d36e568b-ac4d-4607-b6ff-455077f4faf2",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Investir dans du matériel fiable, c’est faire le choix de la durabilité, de la performance et de la responsabilité. En limitant les remplacements, en réduisant la consommation et en optimisant l’utilisation des ressources, cette approche contribue à un événementiel plus respectueux de son environnement. Parce qu’au-delà de l’expérience vécue, la manière dont elle est produite a aussi toute son importance.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "62c8accd-00b0-4af8-bf9d-7e0394c915f8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2b8f0fcc-4cfd-4bd2-971b-379c6f9067b0",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\">Pour en savoir plus sur notre approche et nos prestations, rendez-vous sur <a href=\"http://www.spiceevents.fr/\" data-type=\"\" target=\"_blank\"><u>www.spiceevents.fr</u></a>.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "83278e6b-fc72-4da2-9742-18cbeda32878",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "368b879f-4248-4ab9-b8f6-6300f3770f65",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

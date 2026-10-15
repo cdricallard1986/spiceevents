@@ -1,0 +1,794 @@
+{
+ "blogPostMeta": {
+  "id": 56744645,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-23T03:05:05.004-08:00",
+  "publishedAt": "2026-01-06T03:29:04.945-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-un-bon-dj-travaille-en-amont-avec-tous-les-prestataires-de-votre",
+  "customSlug": null,
+  "editCount": 141,
+  "publishedEditCount": 141,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": "Europe/Paris",
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-un-bon-dj-travaille-en-amont-avec-tous-les-prestataires-de-votre",
+   "title": "Pourquoi un bon DJ travaille en amont avec tous les prestataires de votre événement ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/171523_489384.jpg",
+   "description": "Lorsqu’on pense au rôle d’un DJ, on imagine souvent la piste de danse, la musique et l’ambiance. Pourtant, derrière une soirée fluide et mémorable se cache un travail invisible mais essentiel : la coordination en amont avec l’ensemble des prestataires de l’événement. Un bon DJ ne se contente pas...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Le rôle du DJ dans le timing de votre événement (bien au-delà de la musique)",
+  "nextBlogPostRelativeUrl": "/blog/le-role-du-dj-dans-le-timing-de-votre-evenement-bien-au-dela-de-la-musique",
+  "nextBlogPostId": 56745844,
+  "prevBlogPostTitle": "Pourquoi la qualité du matériel de sonorisation change toute l’expérience de votre événement ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-la-qualite-du-materiel-de-sonorisation-change-toute-l-experience-de",
+  "prevBlogPostId": 56739077
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_1ee4e740-0ea1-4e0a-8e53-f09f2e768a8a",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_f878c99f-8844-4a9c-a471-8b5f4299c82e",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_7d97d7e5-0a5e-46ae-82c5-28c5e82170f5",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><strong>Pourquoi un bon DJ travaille en amont avec tous les prestataires de votre événement ?</strong></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_2285f035-315f-4338-841a-14847745f6bd",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Quand la coordination en coulisses fait toute la différence le jour J.</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_547c87d9-c59d-47a0-af92-b1eac936f06d",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/171523_489384",
+    "storage": "s",
+    "format": "jpg",
+    "h": 2358,
+    "w": 3543,
+    "s": 7981806,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_710bdc52-2d8c-48a4-b771-7e06e4d5eafa",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_ab551999-3f14-4b92-ab93-caff4de96e12",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_3dcdaaf4-e987-4468-a61e-14874859a8c7",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "e4000f70-efea-4592-8bef-cca9bf0326ab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "35af405b-dd26-4bea-a18b-63fcfab14612",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Lorsqu’on pense au rôle d’un DJ, on imagine souvent la piste de danse, la musique et l’ambiance. Pourtant, derrière une soirée fluide et mémorable se cache un travail invisible mais essentiel : la coordination en amont avec l’ensemble des prestataires de l’événement. Un bon DJ ne se contente pas d’arriver le jour J avec ses platines. Il anticipe, échange et s’intègre à une équipe globale pour garantir une expérience sans fausse note.</span><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5bef3f3b-2921-484c-8e15-00a5d2f9ef0a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "65cd85f1-7da5-486c-9445-aaf67a5de3da",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Le DJ, chef d’orchestre discret de votre événement</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "12a8a81a-f192-427a-ae08-16396485399a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2c5d3e5e-4c1b-45c5-bead-3293eda882bf",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Dans un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://Quand%20la%20coordination%20en%20coulisses%20fait%20toute%20la%20diff%C3%A9rence%20le%20jour%20J.\" data-type=\"undefined\" target=\"_self\"><u>événement privé</u></a></span><span style=\"color: #000000;\">, chaque prestataire joue une partition précise : traiteur, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>wedding planner</u></a></span><span style=\"color: #000000;\">, photographe, vidéaste, équipe technique, lieu de réception… Le DJ est souvent au cœur du timing. Il rythme la soirée, annonce les temps forts et assure les transitions. Pour que tout s’enchaîne naturellement, il doit connaître le déroulé exact de l’événement et s’aligner avec tous les intervenants. Cette coordination permet :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "283bc7f1-8de0-4318-b01a-da8d1b4fae94",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3ee995c7-de43-47e0-93c5-a1d6a688af59",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">- d’éviter les temps morts,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "057aea44-41f3-48ed-81b4-affc414aed3f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e069d926-057f-4847-9f1f-89f1cd25101c",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\">- de synchroniser musique, lumière et animations,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d981358f-ede2-46ee-b6aa-d479279e1db0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2f1b1e0b-a6b8-47d1-a251-a296685ee99a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">- de respecter le rythme souhaité par les clients.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d5daa3aa-817d-40ba-b16c-e2f4c2ce51bf",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "efa6415f-9b4a-4880-bf5e-34a34a11c119",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/981411_595592",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 463,
+     "w": 736,
+     "s": 49052,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e08e910d-00ea-49d8-95c8-094904c30e18",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4b9289b9-3a37-46c1-8897-b503ba738d8d",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\"><strong>Une collaboration essentielle avec le wedding planner ou le coordinateur</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d472a9e9-c8ee-480a-8958-336102e1ca2d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c76b6b17-ee00-4bbe-bb6c-419760c754c5",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">Lorsque l’événement est encadré par un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>wedding planner</u></a></span><span style=\"color: #000000;\"> ou un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>coordinateur</u></a></span><span style=\"color: #000000;\">, le DJ travaille main dans la main avec lui. En amont, ils échangent sur :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7067ca9-be49-43d7-85ba-f02242ba4d17",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b3f47f24-0855-4c41-84b9-5d97d8199094",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\">- le planning détaillé de la journée,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "64cf1fb5-aef9-43d2-9a93-e26faad88334",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "153199e5-6f4f-4e55-ab5e-f05d24590feb",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">- les moments clés (entrée des mariés, discours, ouverture de bal, surprises),</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "dad682f5-8978-45d6-bced-b003dbe0fd9f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "90e32d59-cf3f-4405-aa18-44427fac1981",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">- les imprévus possibles et les plans B.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fa250edc-40ef-4e9b-9718-6a6f3f177f97",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "38c3b91a-c2d9-4d59-967d-6763ad80fe84",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">Cette collaboration garantit une </span><span style=\"color: #000000;\"><strong>soirée fluide</strong></span><span style=\"color: #000000;\">, sans stress, où chaque temps fort arrive au bon moment.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2b8db62b-c0a6-467c-ab9c-04de2c819e7c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "406ad82b-3b46-4da4-b85f-14dbb5f6a82b",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1103d442-fecd-4aa9-8e75-929fd9208382",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9bddcb98-9967-4623-a8d5-17cbc0fd089a",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><strong>Travailler avec le traiteur pour un timing parfait</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7efe77da-73ac-4701-a521-25d7aedf2e7c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6a54a6c8-aba0-45e8-96d6-7131a459e82f",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Un bon DJ prend également contact avec le traiteur. Pourquoi ? Parce que le rythme musical doit s’adapter au service. Discours, animations ou moments forts ne doivent jamais perturber :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "17975b8d-8e6a-4575-8276-679182907cab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dedf7c02-c27c-4cf7-947f-30fca32b2856",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">- l’envoi des plats,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e66f4eee-a657-4aa4-af89-09f3f7a214fa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4e2d2bd4-54a2-4abf-883a-7267983109ec",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">- la fluidité du service,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d51d9bfe-cfee-4b5d-87ea-4f5201104dcd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9b1e662e-3af6-4ebe-8229-c88424151dae",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\">- le confort des invités.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b6e2b251-8857-4fdc-bb0c-6ea28e75d720",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0c061fec-a53c-48d5-8041-27930d21bd7a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Cette coordination permet d’assurer une ambiance cohérente, élégante et respectueuse du déroulé du repas.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "26c04e39-f711-4dd6-b284-84ab16c6f9d9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1b31df50-7275-4896-af34-32b5a94a76c1",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1ae1976f-b605-4917-80cb-44836c29a823",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "0f63e9e8-48f3-4c0f-b98a-7afcb33d8457",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/166037_963926",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 3456,
+     "w": 5184,
+     "s": 7610521,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bcf10349-4928-455f-926a-3624b3fe3e6d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5743c157-fcb2-4f4d-9f57-9fb013203a64",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\"><strong>Une entente clé avec les photographes et vidéastes</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "75c0c27f-fcfc-4be4-8d8d-48803a31747a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ba34644f-f4bb-4a95-b538-b44a1f571658",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">Certains instants ne se reproduisent qu’une seule fois. Un DJ professionnel échange avec les photographes et vidéastes pour :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d6fab728-3e9b-44d5-bcc5-f2a587274c63",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1a81df80-2a32-4419-846d-ba936a588288",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">- annoncer les temps forts à l’avance,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "79ec8158-a578-40fd-a919-987d78b4b8f9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f9ab925c-0e43-4d8c-8389-2eeb25eeb11b",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\"><span style=\"color: #000000;\">- leur laisser le temps de se positionner,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "41e89456-589c-42e5-8832-de4b2c69c3f1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "94312a8f-c7e0-4473-9c8d-b5dc8e78bfdc",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\">- éviter qu’un moment important ne soit manqué.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a2492594-6792-40fc-895b-7efec25686c6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e2b440c2-dbbc-4d75-b689-427f73874163",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Résultat : des images réussies, capturant l’émotion au bon moment, sans improvisation.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a22e344c-4a4c-4f2c-a1e3-2e5a126c2ec8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5bf9c0be-1c54-48db-817b-6ec7deaac575",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4bb69e9d-e8e6-4571-a5a9-ffbfd31fd66b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2f63bd28-3cb4-4292-b40e-37f4672db4d2",
+     "defaultValue": false,
+     "value": "<p class=\" p2\"><span style=\"color: #000000;\"><strong>Anticiper les contraintes techniques avec le lieu et les prestataires</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "60ca9c6d-a9c5-4673-8f35-040b0489fa2e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0737ac08-aa3f-40d5-9e7f-5d3c01250f46",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Chaque lieu a ses spécificités : acoustique, contraintes sonores, horaires, alimentation électrique.</span><br><span style=\"color: #000000;\">Un DJ expérimenté anticipe ces éléments en lien avec :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c6807d4f-0c22-48de-bd9d-f33fd8f88eb7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "63ded0bf-8aab-4f1e-b7ec-903dd0a4b696",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">- le lieu de réception,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "96879164-8cf3-4154-a54e-9339f7fa9c4b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a12c296a-a674-46a1-b1c4-7cae32c7b300",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">- les équipes techniques</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ea0ca072-0439-4a59-9367-1cc72660ed61",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0dbf88b3-8fcd-435c-a90c-4abaac7ea7c9",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">- les autres prestataires audiovisuels.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0f0808d1-2390-4d0a-a2bc-28482d00d9ed",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "40077dff-6ca2-4afe-8aac-416eabd1a7f0",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Cette préparation permet :</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7d02f930-9985-4dc6-83f2-843b744d73d4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d7bc266f-0485-45d7-b0cd-49fbd1517d1a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">- d’adapter le matériel,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "00a67513-03ae-46a5-b422-9cf72dd5e60b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9fcf8960-44fd-45b6-b942-5d382546616f",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">- d’optimiser la qualité sonore,</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f40191b5-8fa9-46f9-bd01-3dca3f62151f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b35655fe-7595-4096-9e83-705f7b3562fe",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">- d’éviter les mauvaises surprises le jour J.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3d7e64eb-8dc8-4e18-8b14-d165ed99bf8b",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "0bb13896-6388-46f3-84b6-7f396bb26687",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/988802_792",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 800,
+     "w": 800,
+     "s": 1538654,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "735de9a8-1496-4053-88b7-1101f708e300",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ebdb44df-72c9-4689-8b10-4801fe42645a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Une expérience plus sereine pour les clients</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fca54b1c-0fdb-4f00-93ec-7be98e5687a8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d65fde1a-297e-4b1a-b3a3-6d3fcad86263",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Pour les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariés</u></a></span><span style=\"color: #000000;\"> ou les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>organisateurs d’événements</u></a></span><span style=\"color: #000000;\">, cette coordination en amont est souvent invisible… et c’est justement le signe qu’elle est réussie. Ils peuvent profiter pleinement de leur événement, en toute confiance, sans avoir à gérer les détails techniques ou le timing.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "832f4c40-871f-4e02-b3b3-4821bf7abf58",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "943fc30e-b29f-4584-8938-7876d62734a8",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "06c53c13-9dbc-4541-bf9b-75a15604ab67",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9726c98b-50ab-4359-be95-d601666f74b2",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Chez Spice Events, une approche collective et sur-mesure</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f8227a0a-6baa-4209-8056-e3279de9289c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b26e26dd-8244-4442-8518-d6bf72ee86dc",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Chez Spice Events, nous considérons le DJ comme un partenaire central de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, intégré à une équipe globale. Chaque projet fait l’objet d’échanges en amont avec l’ensemble des prestataires afin de créer une expérience fluide, élégante et parfaitement maîtrisée. Parce qu’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement réussi</u></a></span><span style=\"color: #000000;\"> ne repose jamais sur une seule personne, mais sur une coordination invisible et efficace, au service de l’émotion et du plaisir des invités.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f70369b7-3a70-4220-bb6c-0e3af0b5ecbe",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1eae206a-659f-4458-8685-09cec786b28f",
+     "defaultValue": false,
+     "value": "<p><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": null,
+  "scheduled_time_zone": "Europe/Paris"
+ }
+}

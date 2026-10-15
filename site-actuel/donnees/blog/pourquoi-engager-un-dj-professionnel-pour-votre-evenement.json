@@ -1,0 +1,548 @@
+{
+ "blogPostMeta": {
+  "id": 17980606,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-11-09T07:17:35.361-08:00",
+  "publishedAt": "2021-11-09T07:31:08.910-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-engager-un-dj-professionnel-pour-votre-evenement",
+  "customSlug": null,
+  "editCount": 277,
+  "publishedEditCount": 277,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Booking DJ",
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   },
+   {
+    "id": 365911,
+    "name": "Booking DJ"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-engager-un-dj-professionnel-pour-votre-evenement",
+   "title": "Pourquoi engager un DJ professionnel pour votre événement ?",
+   "image": "https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "Vous hésitez encore à engager un DJ pour votre événement? Spice Events vous donne les raisons de confier votre ambiance musicale à un professionnel.   Un gain de temps et de stress Organiser et prévoir son animation musicale prend du temps et nous savons que vous avez déjà beaucoup d’autres...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Les robes tendances pour 2026",
+  "nextBlogPostRelativeUrl": "/blog/les-robes-tendances-pour-2026",
+  "nextBlogPostId": 18159734,
+  "prevBlogPostTitle": "Organiser son mariage : mode d'emploi",
+  "prevBlogPostRelativeUrl": "/blog/organiser-son-mariage-mode-d-emploi",
+  "prevBlogPostId": 17709360
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_3fe6e0be-ffd5-4544-bb1f-4d4a10b4a91f",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_6ff6b3df-6e15-4c78-9e17-2b369cee82db",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_a0730967-bef4-48b9-b3f5-a68421dd8fed",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Pourquoi engager un DJ professionnel pour votre événement ?</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_fea7d668-c7ea-4593-97f3-322015ad0392",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\">Spice Events vous dit tout.</p></div>",
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_4cc0896c-7b96-4b12-bd76-02b98ed9d2e9",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_b533596f-c0d0-4474-9f78-a4a66b185c0a",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_25a18e74-7dfe-43f5-a449-337fb2ebcb5b",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_6acb1192-83b4-4cae-9e0f-a2a24774ca85",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_5ffa3444-b04c-4334-9ffd-8e4f1e11172d",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_1c36c7bf-2fc2-4d85-94d8-308a5d94160d",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_7029609c-b44b-402d-b267-b5ea2afa8a84",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_3a3d15b9-e008-4070-a53f-81fa8cca52b1",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f8dcff1f-e253-4e36-906b-995e0f629c36",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "76d9901c-e1cd-495d-86a2-8b263982ddcc",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Vous hésitez encore à engager un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: #000000;\">pour votre événement?</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f95d45db-3dfb-4166-81a0-970171943c26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "484c87f2-9dc0-406f-a76e-d293a0a0fd89",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Spice Events vous donne les raisons de confier votre ambiance musicale à un professionnel. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f95d45db-3dfb-4166-81a0-970171943c26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "af60ae3c-ffac-40f4-8c20-e108e77e2c5d",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d49efaa1-ef49-4b2d-8460-ee8aefdd68c5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "143e545b-98b6-4644-bc4e-753c416219f3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Un gain de temps et de stress</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "eee2286f-e2f0-45e9-8bf0-19cb5b8889a2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "95dc8832-e652-402f-9b7c-52c6c7f17d42",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Organiser et prévoir son </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">animation</a></span> <span style=\"color: #000000;\">musicale prend du temps et nous savons que vous avez déjà beaucoup d’autres choses à vous occuper. Alors ne vous tracassez pas l’esprit avec une mission en plus et confier cette tâche à un professionnel de la musique !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "731e7882-0b88-49eb-ba21-ef45574f6e5f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fe0de0ec-972a-46c1-88e7-05e86a1e74fc",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Elle sera entièrement réussie avec un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>D</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>J</u></a></span> <span style=\"color: #000000;\">professionnel. Vous avez juste à lui préciser ce que vous recherchez et le tour est joué. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ad868389-fc7c-485a-96cd-adfd5b7a57f7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2238821b-89e6-4b1f-8dde-bb0198d3020e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Plus de stress pour se décider sur la musique suivante, rejoignez vos convives sur la piste et décompressez. L’ambiance est lancée ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7ee07a7f-1639-48cb-af7c-b51299d198e2",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "b8987b65-a0e9-4cf3-8132-f3a12b6d68ce",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/621129_87663",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 2207302,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "88b38712-e3ab-4b8a-90db-42dd274ba8cb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "85872693-0c10-468e-9017-df0626771b5a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Une adaptation à toute épreuve</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "71cfb1ef-a2cc-42a2-93bd-91b388effd30",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "976b5200-78a3-4ee0-beec-16014ec24a09",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Parce que c’est son métier, un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>DJ</u></a></span> <span style=\"color: #000000;\">saura faire le mixage idéal pour faire plaisir à toutes les personnes présentes et mélanger les différents styles. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a9009cd3-3cca-44d6-903c-0f8ede9472d7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0722df22-d28e-4695-bc4a-6d4f7ab3cf72",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Qu’il y ait des fans de rock, rap, hip hop, électro ou encore de reggae, ce n’est pas un problème car votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> se débrouillera pour vous satisfaire ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "722045e5-0640-4c67-a358-0261e8867cd4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "80145fef-0e2d-47bf-acf7-735aa8cca1b5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Alors filez sur la piste et appréciez le moment !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "722045e5-0640-4c67-a358-0261e8867cd4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c85b9591-d7f4-4340-8e50-03897a7b7eee",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "29b57cb5-0db2-45b2-9555-bf3da8650041",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "470ffd8c-594a-4fa9-b701-7126e2d88286",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Un matériel de pro</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3f54a3eb-7040-425c-a367-58182a029b0c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ac93353a-0d02-49d4-9846-732fa9789102",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">En plus de disposer d’un bon matériel, un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>DJ</u></a></span> <span style=\"color: #000000;\">professionnel le connaît et saura créer l’ambiance que vous désirez. En avance, il pourra prévoir les enchaînements entre les musiques, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\">, les passages micros ou encore</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>l’éclairage</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: #000000;\">en fonction de votre lieu de réception et des musiques. Nos </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: #000000;\">utilisent du matériel haut de gamme fournit par </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_self\"><u>MX EVENEMENT</u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d25c3884-f7bf-471d-8697-fc98d458bf5f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "4e3bc2ab-abdf-4fbf-82fd-eb94a6d28e74",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/630881_405502",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 976633,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8392c868-5468-488f-b2c0-3b3b82aab90f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "27e2beff-3862-4c24-97a4-f92d3bd4dfca",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Une bonne image</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "64b7315b-fbac-40b7-8482-840c8c4273c3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e99fff27-7b75-478e-b8dc-07e02534e2cb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un problème de son, une fausse note technique, un micro qui ne fonctionne pas, etc. Ces incidents peuvent gâcher votre fête et c’est votre réputation qui est en jeu. Alors pour ne rien laisser au hasard, il est préférable de faire confiance à un professionnel. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "175d261f-6b64-4a9b-b8e6-d3ab3d918a19",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2fe143ad-1d41-48a1-95e0-1e9c9a86737b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Engager un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> professionnel apportera de la crédibilité à votre événement et plus de sérieux surtout s’il s’agit d’un événement d’entreprise. </span> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0c16a12d-67ec-481a-9fed-8b2b381a7f3b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1aaa8370-4808-4dd2-9235-9e9cb99c380b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Idem pour un événement privé, personne n’a envie d'assister à un cafouillage qui viendrait interrompre la fête. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d7a9142c-0523-4651-b3d5-3d2c61a004fd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "48f12820-d46b-4b00-bf83-47f4c0a7cedc",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Au-delà de la technique, un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> sait s’adresser à un public et raviver son intérêt si besoin. Il agira comme le véritable garant de la bonne ambiance de votre événement.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ebf168c7-a5f7-46f7-903a-df18387bbc71",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f26ece83-6346-4b5a-af87-bd54b2ac0dbb",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/691860_583186",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 769809,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "62c37a6b-daa2-4a43-9ead-2c800993cd2b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7ab25c69-a57f-431b-9715-37d1994be736",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Alors que ce soit pour votre mariage ou pour un anniversaire, vous savez maintenant pourquoi il est intéressant pour vous de faire confiance à un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-djhttps://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\">. Parce que peu importe ce qu’il y a à célébrer, un professionnel facilitera l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>organisation</u></a></span><span style=\"color: #000000;\"> de votre événement et participera à sa réussite ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f1554c4a-25e3-4500-85dd-93c59915abbd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d18a60cc-5495-4888-ba18-2bb43a5ed040",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">N’hésitez pas à nous </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u>contacter</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\"> si </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">vous </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">avez des questions ou si vous souhaitez en savoir plus sur nos </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\"><u> </u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">d’exception.</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c4c7e5a7-f563-41b0-84c8-2f0f88395440",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9f0fd10b-0d77-40e3-92c6-d91996215a5f",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "39e963db-13a2-4660-be3e-45765f5c4803",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3ab05d57-21e2-4520-9fb4-5691e25e5a45",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "be87a4ac-81da-44c3-8fb5-939a9178f363",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6924362a-1f6b-41f2-a701-03a7499ca716",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

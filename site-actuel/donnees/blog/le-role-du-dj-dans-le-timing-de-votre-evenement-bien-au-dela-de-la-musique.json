@@ -1,0 +1,574 @@
+{
+ "blogPostMeta": {
+  "id": 56745844,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-23T03:29:57.861-08:00",
+  "publishedAt": "2026-01-13T03:39:00.563-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/le-role-du-dj-dans-le-timing-de-votre-evenement-bien-au-dela-de-la-musique",
+  "customSlug": null,
+  "editCount": 81,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": "2026-01-13 12:39:00",
+  "scheduledPublishAtUtcTime": "2026-01-13T11:39:00.000Z",
+  "scheduledTimeZone": "Europe/Paris",
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/le-role-du-dj-dans-le-timing-de-votre-evenement-bien-au-dela-de-la-musique",
+   "title": "Le rôle du DJ dans le timing de votre événement (bien au-delà de la musique)",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/851500_65627.png",
+   "description": "Lorsqu’on pense au DJ, on imagine avant tout la musique, l’ambiance et la piste de danse. Pourtant, lors d’un mariage ou d’un événement haut de gamme, le DJ joue un rôle bien plus large : il est le gardien du rythme global de la soirée. Un rôle discret, souvent invisible, mais absolument...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi les moments forts ne sont pas forcément les plus bruyants ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-les-moments-forts-ne-sont-pas-forcement-les-plus-bruyants",
+  "nextBlogPostId": 57367869,
+  "prevBlogPostTitle": "Pourquoi un bon DJ travaille en amont avec tous les prestataires de votre événement ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-un-bon-dj-travaille-en-amont-avec-tous-les-prestataires-de-votre",
+  "prevBlogPostId": 56744645
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_eaa456b1-e074-4691-bb5c-7b1531117055",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_87535552-bff5-4379-a717-7267a2732253",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_b3b4b10a-fa51-4a44-acd1-d90f475db821",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><strong>Le rôle du DJ dans le timing de votre événement (bien au-delà de la musique) </strong></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_84f7286b-6307-4476-9260-da7d59c1c6dd",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>L’art de maîtriser le temps pour sublimer chaque instant</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_073b1cbc-8810-4204-86f0-3782bd3df110",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/851500_65627",
+    "storage": "s",
+    "format": "png",
+    "h": 870,
+    "w": 870,
+    "s": 1402134,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_185b4f5f-1031-477e-b1e6-baf2230f9d6c",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_9e0cef59-ce93-4275-82f8-fa08efa00e53",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_ab95e659-1956-4768-b98f-20ae8d30580c",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "291826d9-4087-40d1-a120-b245b032baa7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "441dce7e-0939-41bf-83b2-a896a2e1b818",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">Lorsqu’on pense au DJ, on imagine avant tout la musique, l’ambiance et la piste de danse. Pourtant, lors d’un mariage ou d’un événement haut de gamme, le DJ joue un rôle bien plus large : il est le gardien du rythme global de la soirée. Un rôle discret, souvent invisible, mais absolument essentiel à la fluidité et à l’émotion de l’événement.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9a6a2c26-362a-425b-871e-b4073d892b26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "32aeb118-8253-43b6-ab20-af71a4057306",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3b02c6c1-bf0d-4272-a650-01164c0b4ed8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4c40a208-7f0d-4921-8c53-189d3c5cefd1",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\"><strong>Le DJ, chef d’orchestre du déroulé</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d69d36e2-d184-4528-a08a-658d21cef42c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "14a41571-f6c5-4627-ac54-90d53d48194c",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\">Un événement réussi repose sur une succession de moments forts qui s’enchaînent naturellement. Entrée des mariés, discours, ouverture de bal, surprises, montée en puissance de la soirée… Le DJ est celui qui donne le tempo, en veillant à ce que chaque séquence arrive au bon moment, ni trop tôt, ni trop tard. Sans jamais s’imposer, il ajuste le rythme en temps réel pour éviter :</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a842a959-9067-424b-9283-a9ec5d939a69",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b5f16a94-b845-4adf-9f2c-34842b195df2",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\">- les temps morts,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "25ffab1a-67ce-4882-a829-dc631efa51d0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "35a46732-2d0f-48e3-8463-dab3b7f463f3",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\">- les ruptures d’ambiance,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fdf338f2-c8e9-4e02-81c7-0a14529e7deb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9079a445-42aa-47ca-bd34-b121abfb81d2",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\">- les transitions brutales entre les différents moments clés.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "afb24ce6-06b9-49d1-bf17-8e81204b9802",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e8c995cb-8bb0-482c-871c-e1206d4f6602",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b6ac191f-e41d-4df4-8ba1-9ea2a6bb861c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "77a028a6-35eb-46dc-af00-9763f0a651b0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/483492_858598",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 799,
+     "w": 1200,
+     "s": 1748326,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7604b78-7fd0-4251-a707-3c7d0f95df8e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3e47cc41-4ced-48b3-84bf-59dbd62353fe",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f7604b78-7fd0-4251-a707-3c7d0f95df8e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a791c376-7280-4573-a797-54e33ae4cb16",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\"><strong>Créer des transitions fluides et naturelles</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ecf7a668-9eeb-4911-86fc-038b1f47082a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c449a08a-e68e-46ae-a819-da014c4eb026",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\">Le timing ne se résume pas à une heure sur un planning. Il s’agit avant tout de ressenti. Un bon DJ sait :</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d56c72d6-91c9-4d72-bde0-c70f3545d31a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "87737de5-b3cd-4458-9a8b-19c0e0c4fa47",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\">- prolonger un moment quand l’émotion est à son apogée,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "58a4440a-2574-48e1-a155-bdd82b8f9f80",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0cc6c508-562b-4fe0-a795-abd75ee359ce",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\">- accélérer le rythme lorsque l’énergie du public le demande,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fbfabab3-35bb-4469-855f-aa6cb4e8319a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "66b6896d-07f2-425f-bdbe-271b9b38cd16",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\">- préparer les invités à un temps fort sans jamais les brusquer.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "20af069e-eaea-4004-9032-37e1ba156275",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f8064d40-be92-4243-b3c3-364151816344",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\">La musique devient alors un outil de narration, qui guide les invités tout au long de la soirée.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f1aae086-1858-4c63-9262-d9848077df23",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "37181651-f08f-4604-93c2-5d3c5f2cad60",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8d545b5f-7281-4699-9ea5-e18a618b47fb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "406757be-ae8c-40d5-b464-d340daddb36d",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\"><strong>S’adapter en permanence à l’énergie de la salle</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "333a7dd6-fc36-4bbe-bb47-e25f4a1588a1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c73d2a86-0dea-4335-9af5-902d567b25d6",
+     "defaultValue": false,
+     "value": "<p class=\" s1 li1\" style=\"text-align: justify;\">Aucun événement ne se déroule exactement comme prévu. Le DJ est là pour lire la salle, observer les réactions, ressentir l’ambiance et ajuster le déroulé en conséquence. Un discours qui se prolonge, une piste de danse qui s’enflamme plus tôt que prévu, un moment d’émotion imprévu… Le DJ adapte le timing en temps réel pour que tout reste fluide, naturel et cohérent.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7378ee42-30c0-4af2-90cb-daaace53e4f4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ce6dd71d-ea9d-4880-9573-916d7b06220b",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cca900aa-3a3e-4c58-b213-c650ddab7655",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "01667d82-3258-458f-b64b-b30e9c3e7669",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/853975_486171",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 736,
+     "w": 736,
+     "s": 1017817,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c9b04339-e94e-4b82-a5ad-85ee768d7818",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fdea7eb7-d3f8-4441-93e7-27d7605c2362",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><strong>Sublimer les moments clés</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6f6658c4-7fef-4c3b-84e2-ebdab319fe26",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "63624416-f780-435c-91bb-a39e851ef0be",
+     "defaultValue": false,
+     "value": "<p class=\" p3\" style=\"text-align: justify;\">Chaque temps fort mérite sa juste place. Le DJ intervient pour :</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b73aada1-e961-42e8-bb1f-90815ca4284e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "54308b92-6ef5-4740-87e3-0b6fe916e5fa",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\">- annoncer ou accompagner les moments importants,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b3920241-418a-4540-bcbd-135c4928f330",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b4d2c160-78f2-4e6c-92e1-05e70e053ca0",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\">- créer l’attente avant une surprise ou une entrée,</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5a258fa3-588f-4fa8-8b63-d2c54f3eabdc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ab684ac0-ebf1-42f3-a7b7-2fbfe1fd0cd8",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\">- renforcer l’impact émotionnel par un choix musical précis.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d56d3ee7-1895-48c3-ba30-a0d51e36632b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9dd62a9f-06b1-4e28-b9ff-0f687a457c52",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\">Ces détails font toute la différence entre une soirée qui s’enchaîne… et une soirée qui se vit pleinement.</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0d81ea26-f793-49e1-8f08-05f0f8a6e497",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "49842ac1-e6b8-49f2-8400-f917363d1afe",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9b198a5e-6eba-40a2-9c95-e80499eae35a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "45b12921-8eef-4ca4-adb8-fd33a70dd7e3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><strong>Un timing maîtrisé pour une expérience sans stress</strong></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d83996ef-dd2b-420f-a74c-1b58d89a9483",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4edae5dd-cae5-4c74-8e48-f857d2899066",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">Lorsque le timing est bien géré, tout paraît simple. Les invités ne voient que l’évidence, la fluidité, le plaisir du moment. C’est justement là que réside le savoir-faire du DJ : faire oublier la technique et le déroulé, pour ne laisser place qu’à l’expérience. Chez Spice Events, nous considérons le DJ comme un véritable chef d’orchestre de l’événement, garant du rythme, de l’énergie et de l’émotion, du premier instant jusqu’au dernier morceau. Parce qu’un bon événement ne se contente pas de sonner juste…il se vit au bon moment.<br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": "2026-01-13 12:39:00",
+  "scheduled_time_zone": "Europe/Paris"
+ }
+}

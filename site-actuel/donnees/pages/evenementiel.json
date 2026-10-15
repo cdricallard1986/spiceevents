@@ -1,0 +1,3477 @@
+{
+ "type": "Page",
+ "id": "f_ecdad1e4-c870-4580-8efe-3aeefab61101",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_12cb7926-94d4-4809-a0c8-8f89382a3a79",
+   "defaultValue": null,
+   "template_thumbnail_height": 99.50666666666666,
+   "template_id": null,
+   "template_name": "slider",
+   "origin_id": "f_0524e89d-3495-4a51-bf7b-900cccd84bde",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_8d6a644e-9b31-4faa-9a2b-0ee7ffa96b38",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Image accueil",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_e4549f5b-06f2-40e8-847d-eb92b78aca6b",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_40c5060c-924f-4b54-ad7b-d2e7fb0532b6",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_f939efda-e624-49f0-82ab-8159d2302416",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\"><span style=\"color: var(--s-pre-color10);\">ÉV</span><span style=\"color: #ffffff;\">É</span><span style=\"color: var(--s-pre-color10);\">NEMENTIEL</span></p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span style=\"color: var(--s-pre-color10);\"><em>L'expérience évènementielle réinventée </em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_f4c5efef-c732-44f0-847a-caf178dc2d5c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"> </p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_455f5c13-57df-42fd-ab73-cc9ea79973db",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": "",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "780786/96912_672867",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2358,
+         "w": 3543,
+         "s": 5447979,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_2de5740e-fb26-4c03-b98c-1d34dd9ad136",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_ffb972ce-4a7f-4ce4-a9f2-7eff3c35da93",
+          "defaultValue": true,
+          "html": "",
+          "url": "https://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_78976ca8-69f8-4571-95ec-94d330059af8",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_c7d0b43f-f808-41a6-bdd5-3f20668209f4",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "#f2f2f2",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": 4,
+          "type": "pre-color",
+          "id": "f_91181717-bd80-415a-8103-491ffd6e71d2"
+         },
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_42e4c96d-2c90-4d9d-8307-6ac52f07bba1",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_14a47658-a1bf-4bce-8d8d-ec19b70f3ce4",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_db4c57c5-137f-4791-b164-1735588d7fbe",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_78ee8e49-f48e-4d67-bc65-00217165d582",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_2e845d35-e9bb-4119-98b7-f8e8a4298d08",
+        "defaultValue": true,
+        "html": "",
+        "url": "https://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_654f23a6-7307-411b-ba8b-bae34bd02c9d",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_ad6ae5b7-e688-4cc1-b428-e9bfc45363ac",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_eba646f3-ed01-43e6-9294-2b942abe14df",
+   "defaultValue": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_adcdbb50-d6dc-4bee-92c7-ddcd3ba96337",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte accueil",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_4c66bec6-d7b8-4594-9456-33e96772cbc8",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_64d94fe6-9f55-466d-8af1-340f09b5c396",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_316a3264-cbed-4aaa-b950-83940b781733",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_2cbcd423-3859-4fb3-b1fb-82eefebc20a3",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_a39fd094-5f64-49d9-8a40-746e52968ea5",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_c616cbd2-e20d-404c-adee-d32be72f24c5",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_f7652012-0265-4723-8f87-620e8901b1c9",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_361c2e77-0547-4fa7-9f42-a532280478d5",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title font-size-tag-header-one s-rich-text-wrapper\" style=\"font-size: 48px;\">Spice Events, l'allié de vos moments forts !</h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "873b8991-b776-49b0-836f-d02cf73923c4",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "547c6a34-8fa3-4ee6-be41-5bf492fcf321",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "813de59d-4e6e-482a-9e99-e792fb8b4a3d",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "892d15da-7818-4f8a-a01d-326d2fa644ba",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f7f6fcaf-5c7a-4715-b603-d121aa62a694",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_13a53c14-0af4-47f3-97d3-da4c126245a0",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\"><em>Une équipe passionnée au services de vos objectifs événementiels </em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "5611bc3d-75db-43a9-8d48-c7d0be520cc0",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "7c96401b-f97b-45c4-aff9-6377a3298a25",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_73800980-2f8d-455b-b0ef-7bc706d60b69",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\">Chez </span><span style=\"color: var(--s-pre-color12);\"><em><strong>Spice Events</strong></em></span><span style=\"color: var(--s-pre-color12);\">, nous savons que chaque </span><span style=\"color: var(--s-pre-color12);\"><strong>temps fort</strong></span><span style=\"color: var(--s-pre-color12);\"> est unique et mérite d’être vécu pleinement. Notre mission : </span><span style=\"color: var(--s-pre-color12);\"><strong>transformer votre événement en un moment inoubliable et à votre image</strong></span><span style=\"color: var(--s-pre-color12);\">, grâce à un service professionnel, innovant et humain. </span></h3><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"display: inline-block\"></span></h3><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\">Nous garantissons :</span></h3><ul><li class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><strong>Une direction artistique experte</strong></a></span><span style=\"color: var(--s-pre-color12);\">, assurée par un DJ professionnel capable d’adapter l’ambiance à votre public et à vos objectifs,</span></li><li class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><strong>Une sonorisation haut de gamme</strong></a></span><span style=\"color: var(--s-pre-color12);\">, calibrée selon votre lieu et le format de votre événement (conférence, gala, lancement, soirée, etc.),</span></li><li class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><strong>Une mise en lumière sur mesure</strong></a></span><span style=\"color: var(--s-pre-color12);\">, combinant éclairages décoratifs et scénographie dynamique pour valoriser vos espaces,</span></li><li class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><strong>Des animations et expériences interactives</strong></a></span><span style=\"color: var(--s-pre-color12);\">, originales et adaptées à votre audience, pour renforcer la cohésion et l’impact émotionnel.</span></li></ul><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"display: inline-block\"></span></h3><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: left; font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\">Tout est pensé pour que vous puissiez </span><span style=\"color: var(--s-pre-color12);\"><strong>profiter pleinement de votre événement professionnel</strong></span><span style=\"color: var(--s-pre-color12);\">, qu’il s’agisse d’un séminaire, d’un lancement de produit, d’un gala d’entreprise ou d’une soirée de networking, avec organisation et maîtrise.</span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "left",
+                  "lastLineTextAlign": "left"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_fd4bba08-c833-45e4-a8eb-93692184beb9",
+   "defaultValue": null,
+   "template_name": "featureListE",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_3d78bd1f-4d58-45a5-b197-5c87d8ecfd5f",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": true,
+     "name": "Nos Services",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "padding": {
+      "top": "half",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "noTemplateDiff": true,
+      "card_radius": "large",
+      "cardBackgroundSettings": {
+       "default": "#f2f2f2",
+       "type": "default",
+       "id": "f_7c093c7f-c4fe-4d89-98a2-2e5c78c4d87a"
+      },
+      "border_thickness": "small",
+      "card_padding": "medium",
+      "spacing": "S",
+      "subtitleReplaceToText": true,
+      "mediaSize": "xs",
+      "horizontal_alignment": "auto",
+      "layout": "E",
+      "border": false,
+      "mediaPosition": "left",
+      "showButton": true,
+      "border_color": "#cccccc",
+      "card": true,
+      "structure": "grid",
+      "card_color": "#f2f2f2",
+      "vertical_alignment": "middle",
+      "borderBackgroundSettings": {
+       "type": "default",
+       "id": "f_9e86e1be-e169-424d-bc09-8d120121bb01"
+      },
+      "grid_media_position": "top",
+      "columns": "five",
+      "content_align": "center"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_35302af5-9d57-45f6-bbc9-d8030c81d17a",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_d26ef216-22bb-47f0-8627-340a5dd8092f",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_7923b087-7173-4043-832f-aac078d4937b",
+       "defaultValue": true,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_b7c1f518-f572-48dd-be76-769dfe9966d0",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_8a07702f-61c3-4937-bbb6-2cb7983204d0",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_9874b1a5-fd11-40c8-bb2a-7f8097ead848",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/booking-dj",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "platines de dj avec mains en train de mixer en arrière plan ",
+          "description": "",
+          "storageKey": "22139555/670535_153404",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 800,
+          "w": 800,
+          "s": 942438,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_1b99cc50-a250-434c-8797-01e3a9121bcb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\">Playlist sur mesure</a></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_871bdf30-1da1-44e5-9068-8d52dab99a97",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-paragraph s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 18px;\"><span>Des sélections musicales adaptées à l’ambiance et au public de votre événement, pour rythmer chaque moment, du cocktail à la soirée.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_7db52ce3-ac35-47a5-9376-ce643bafd984",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_7ab34fc9-605f-42e4-8950-e2df8a46553e",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_d52f46de-5277-4176-a373-4bd83af7e874",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_ed0b2488-7a28-45fb-8d8e-93f1e1b73119",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2a7fa997-2254-49a5-a5f0-bb9f2afc50b5",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/accompagnement",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "",
+          "description": "",
+          "storageKey": "22139555/995732_879250",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 564,
+          "w": 564,
+          "s": 395371,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_9334e8ba-1917-43de-b76c-4f1fc0d448a0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">Conseils personnalisés</a></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_1c83f98a-3143-46af-81cb-842bae93c452",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 18px;\"><span>Un accompagnement sur-mesure pour optimiser le déroulé, l’éclairage, la sonorisation et l’animation de vos temps forts.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_3019c593-f17e-4953-99be-d3766bb9b0dc",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_17b05e2d-1ae9-4bb5-ab40-d6966e285981",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_8f00a9c6-64b1-4b10-a724-beebf1e2ef38",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_610ef921-7f28-4f8b-b63e-8ea6b2202bfa",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_40a2338d-5531-4368-8d93-dd2c5564e0af",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/animations-tendances",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "feux d’artifice ",
+          "description": "",
+          "storageKey": "22139555/548676_274151",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1170,
+          "w": 1170,
+          "s": 3062044,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2f0d7e99-4c37-48f1-b5a7-960569c53f94",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\">Animations tendances</a></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_a2682205-4628-40b8-bd81-bdc1fbb800eb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 18px;\"><span><a href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\">Photobooth</a></span><span>, effets lumineux, jeux interactifs ou activités originales pour captiver vos invités et créer des souvenirs mémorables.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_4affc3dc-d1d2-4d33-96d0-79796234e34e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_310b5232-4108-457f-8947-be7d571217ea",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_3aa9282d-69bb-4d4e-9180-e144c8ae28e0",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_610ef921-7f28-4f8b-b63e-8ea6b2202bfa",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_40a2338d-5531-4368-8d93-dd2c5564e0af",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/accompagnement",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "agenda ou planning d'organisation",
+          "description": "",
+          "storageKey": "22139555/419299_637250",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1080,
+          "w": 1080,
+          "s": 1142063,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_aa812642-d8d7-4319-9f6b-c3783b6545b0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">Organisation fluide</a></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_ea069ea0-b607-44d1-8de3-3770ced07466",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 18px;\"><span>Coordination avec vos prestataires, gestion des temps forts et suivi technique pour un événement sans stress.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_4deb12fe-27f8-465c-9f99-3f4a8692f36b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_34ead2ee-39fd-43c2-9cd7-66230e830a2c",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_3180dafe-bbb0-4f3e-8b4e-8cdc090f873e",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_610ef921-7f28-4f8b-b63e-8ea6b2202bfa",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_40a2338d-5531-4368-8d93-dd2c5564e0af",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/performances-techniques-son-and-lumieres",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "voitures illuminées par des lumières bleues ",
+          "description": "",
+          "storageKey": "22139555/272460_964374",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1132,
+          "w": 1132,
+          "s": 2021859,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_056c8777-044f-4347-8a3a-4496826ef129",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\">Son &amp; lumières</a></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_7d6c149e-6dae-4d9e-be8a-790be0bcf75e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 18px;\"><span>Matériel haut de gamme de </span><span><a href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_blank\">MX ÉV</a></span><span style=\"color: var(--s-pre-color12);  \"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_blank\">É</a></span><span><a href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_blank\">NEMENT</a></span><span> pour un rendu sonore et visuel impeccable, adaptable à tous types d'espaces et formats d’événements.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_06bb54e7-20af-4bc3-b046-c1bef6518510",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_81c59f8b-7691-4496-ba90-faf5598e3716",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_4fbb76f9-f0f6-4b80-9e46-3f9ae991465a",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_e13f564d-f3cd-4212-b2c4-7e4eace439fb",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/thumb-list-D-1.png",
+        "url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/list-D-1.png",
+        "caption": "",
+        "description": "",
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_ece032f8-f066-4a5d-85eb-b9b0da1a840f",
+       "defaultValue": true,
+       "value": "What We Do",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_68e3325c-8c31-4fcd-b1c2-e75953a2abe0",
+       "defaultValue": true,
+       "value": "Show off your projects, features, or clients in this section.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_26b383fb-b091-4e83-af62-91cd8ca7d9f0",
+       "defaultValue": true,
+       "alignment": "left",
+       "text": "Read More",
+       "size": "small",
+       "mobile_size": "automatic",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_e579818c-7455-413d-ac75-93e4f93d4dfd",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default font-size-tag-header-one s-text-font-size-over-40 s-rich-text-wrapper\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Nos Services</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_9bedb09c-e397-4370-9d54-3e2d7debdea8",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Des services complets pour vos événements</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_4a9970a3-ed48-4e22-9b20-21deb581b20f",
+   "defaultValue": null,
+   "template_name": "featureListE",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_b159da0a-62de-44f4-b00e-94a17f3321fc",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": true,
+     "hidden_mobile_section": false,
+     "name": "Nos Services (m)",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "padding": {
+      "top": "half",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "noTemplateDiff": true,
+      "card_radius": "large",
+      "cardBackgroundSettings": {
+       "default": "#f2f2f2",
+       "type": "default",
+       "id": "f_01ebcbe5-d380-416f-9446-b2f47f7030f3"
+      },
+      "border_thickness": "small",
+      "card_padding": "medium",
+      "spacing": "S",
+      "subtitleReplaceToText": true,
+      "columns_mobile": "automatic",
+      "mediaSize": "xs",
+      "horizontal_alignment": "auto",
+      "layout": "E",
+      "border": false,
+      "mediaPosition": "left",
+      "showButton": true,
+      "border_color": "#cccccc",
+      "card": true,
+      "structure": "grid",
+      "card_color": "#f2f2f2",
+      "vertical_alignment": "middle",
+      "borderBackgroundSettings": {
+       "type": "default",
+       "id": "f_fa3a4007-2798-491d-b44a-1d90dfad0a6f"
+      },
+      "grid_media_position": "top",
+      "columns": "five",
+      "content_align": "center"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_d63203d7-d501-4aba-81bd-8ab8186012bb",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_ae8fd031-fb0b-48d1-a4e5-51b3acc5d3f2",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_4ac2543a-2a63-49d4-9dfe-6128e916b178",
+       "defaultValue": true,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_a946a40d-75b3-40a4-a52f-34fc4092ed91",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_646ed860-09a9-455b-8786-f80853ab19c4",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_b770fe68-368f-469d-b56c-ba397dc5b89b",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/booking-dj",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "Mains sur des platines dj",
+          "description": "",
+          "storageKey": "22139555/670535_153404",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 800,
+          "w": 800,
+          "s": 942438,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_ab78727f-5798-4a8e-bebd-0b5c61a53fd5",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><a href=\"http://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\">Playlist sur mesure</a></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d724d72e-ff44-465c-8bca-8dfa5ec0f845",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_f979a2c7-2367-46db-89bf-4701e4af8a16",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_f6f48db9-b80a-450b-ad1f-711715036f81",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_1cdc30f3-170a-4dd6-8ba3-39b8e821bdb4",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_39af2eb0-85e9-4098-b8e2-92f0f1876702",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_a48b4c4d-bc76-4af9-adda-8fb8b675f7d5",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/accompagnement",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "rdv entre plusieurs personnes",
+          "description": "",
+          "storageKey": "22139555/995732_879250",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 564,
+          "w": 564,
+          "s": 395371,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_0351de2d-6954-4790-b688-c5c86c51fb17",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">Conseils personnalisés</a> </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_eca2f24c-3196-4afb-afbc-76b81eec05ec",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_37df1af8-76be-4be4-b57d-cde5cc453cb5",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_cc1e03a5-bbb1-4f5c-954b-b554f6443b90",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_26d07789-4649-48ac-8804-71fae0b95dc8",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_b143b229-4440-434e-8203-6728ed06be54",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_dcbab6c9-f166-4195-b149-071a9ec20ba1",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/animations-tendances",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "feux d’artifice ",
+          "description": "",
+          "storageKey": "22139555/548676_274151",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1170,
+          "w": 1170,
+          "s": 3062044,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_6d9f5c1a-2f78-4a7c-a0c5-e57f7bff3ffe",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><a href=\"http://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\">Animations tendances</a></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_cf66d794-515f-411a-a7fb-9da76d9b17fc",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_8a7c0e29-a671-481c-bf6d-14777109160b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_74fe771a-c1eb-42cf-89e3-6f4d50558527",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_a230cdb7-8525-4704-9da5-b05ddfed2cdd",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_83d039ab-727d-49ee-bea0-ad03927b1bc4",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_1016349d-3877-46e5-9e10-25a89ca44990",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/accompagnement",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "agenda ou planning d'organisation",
+          "description": "",
+          "storageKey": "22139555/419299_637250",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1080,
+          "w": 1080,
+          "s": 1142063,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_83988d96-6bca-4e07-9aa7-b5e4e01ff519",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">Organisation fluide</a></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_a849992f-b87b-40f3-be3d-a95aee303de6",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_a8bd7e0c-48d2-4656-b9cd-5c04b1cae108",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_1d4bc559-df9b-4155-800a-94c11209b79d",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_33a01fbb-51ff-473d-9836-4d7a4eef9991",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_9ae7f911-a63a-447d-aa61-b8f5edd9eee4",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_8453a77e-f33d-4f13-be09-f9153f7ff30a",
+          "defaultValue": true,
+          "link_url": "http://www.spiceevents.fr/performances-techniques-son-and-lumieres",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "voitures illuminées par des lumières bleues ",
+          "description": "",
+          "storageKey": "22139555/272460_964374",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 1132,
+          "w": 1132,
+          "s": 2021859,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_98e24562-a35b-4556-9c14-85e30546745d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag- s-text-font-size-over-default\" style=\"font-size: unset;\"><a href=\"http://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\">Son &amp; lumières</a></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_2d309a07-28c0-4ce3-84d4-6f1def14b900",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_43a2a879-4f97-4cb4-8b7f-6e0763639a47",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_731a3b3c-5858-4e00-9de5-64889e55cd58",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_3eb15d5d-c734-4952-aae6-b01685d10237",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_f4a02fa2-684c-47e8-a24d-d60e67f6889c",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/thumb-list-D-1.png",
+        "url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/list-D-1.png",
+        "caption": "",
+        "description": "",
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_10797a69-db66-45fa-adec-9714f575a572",
+       "defaultValue": true,
+       "value": "What We Do",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_dce1d11d-5ec5-47e3-a99a-b76672f325ef",
+       "defaultValue": true,
+       "value": "Show off your projects, features, or clients in this section.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_40eaf869-121f-4fb5-a488-b31e3de55839",
+       "defaultValue": true,
+       "alignment": "left",
+       "text": "Read More",
+       "size": "small",
+       "mobile_size": "automatic",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_818399bb-5516-4790-bc94-13b292cb53ac",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default font-size-tag-header-one s-text-font-size-over-40 s-rich-text-wrapper\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Nos Services</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_9fd4a7f4-7e9e-46bd-b937-c4c4f028fa01",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Des services complets pour vos événements</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_2d0b558d-7c9c-41f5-bcef-3e548dd2a517",
+   "defaultValue": true,
+   "template_name": "process",
+   "template_version": "beta-s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_96b6eee4-913f-4296-ac95-789b7b92bb93",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Comment cela fonctionne",
+     "sync_key": null,
+     "layout_variation": "horizontal"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_cad3a336-30f2-4e2e-a52f-d651efeac982",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_f01c6e97-6e51-40ea-8fd8-6b262f154bb9",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default public-DraftStyleDefault-block public-DraftStyleDefault-ltr s-title s-font-title s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Comment Cela Fonctionne ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_f5d32642-6fc7-401a-8ea7-8f198b6d4cce",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_3d03de14-778b-4a8b-ac06-85849af12f7e",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_51ba9e4e-670c-4494-9b1a-eebd92fe2f3c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\">Premier échange</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_6cb35b38-4874-48a6-aeab-f33aa57dd858",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom\" style=\"text-align: left; font-size: 18px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom\">Nous prenons le temps de comprendre vos attentes, vos objectifs et l'identité de votre projet à travers un </span><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom\"><a style=\"color: var(--s-pre-color12);\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">accompagnement personnalisé</a></span><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom\">, afin de créer une expérience sur mesure.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "left",
+          "lastLineTextAlign": "left"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_40a443da-b157-4be1-8f36-2a8ce7b467e1",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_a5b87232-3e2b-4f22-abed-1985035bc590",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Devis &amp; planification</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_77c1f022-6237-4188-b274-78cdf0ebf4ce",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom\" style=\"text-align: left; font-size: 18px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom\">Nous élaborons une offre sur mesure, parfaitement alignée à vos besoins et vos objectifs, avec sérieux et exigence.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "left",
+          "lastLineTextAlign": "left"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_797656c5-a5e8-40c1-b5cb-9cfcf608f666",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_75756879-4c85-4fcf-93d8-a1a1389e58a9",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Préparation &amp; coordination</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4012b29a-4cf4-40d1-99f6-33da78f97c77",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-paragraph\" style=\"text-align: left; font-size: 18px;\"><span class=\"s-rich-text-wrapper font-size-tag-paragraph\">Nous collaborons avec l'ensemble de vos prestataires, pour garantir un déroulé fluide, une parfaite coordination et un véritable souci du détail, afin d'assurer le bon déroulement de votre événement.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "left",
+          "lastLineTextAlign": "left"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_7c474e2b-6680-4fcf-bfc5-59d9bbe1bd16",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_378896ae-87c4-4c43-acdc-288fae9a1204",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Livraison</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_1a9e6fc1-0b2b-4703-8bd5-ef7a68c78305",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-paragraph\" style=\"text-align: left; font-size: 18px;\"><span class=\"s-rich-text-wrapper font-size-tag-paragraph\">Installation anticipée, tests technninques, nous nous adaptons à toutes les éventualités pour que votre événement soit parfaitement organnisé et maîtrisé.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "left",
+          "lastLineTextAlign": "left"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_b0926b97-ce7a-49f6-af39-e671a21d6ffc",
+       "defaultValue": true,
+       "value": "Ajouter un titre",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_99c7ecd1-afea-44a8-9e3d-b019b4973751",
+       "defaultValue": true,
+       "value": "Add subtitle",
+       "backupValue": null,
+       "version": null
+      }
+     }
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_afe59483-c74b-4406-a5f6-d8ed069275ba",
+     "defaultValue": true,
+     "value": "Add subtitle",
+     "backupValue": null,
+     "version": null
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_dae4ef50-2b42-42bb-ad54-8161b8fdad07",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_a4e0803b-334f-4589-8e8c-7ea3269a0c99",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": true,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_876b50fc-7213-4eeb-a55d-dc651b29741d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Galerie</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_624ae122-32c2-43f5-b0dd-bb7a96091388",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><em>Nos évènements en actions - </em><a href=\"http://www.spiceevents.fr/galerie-photo-evenementiel\" data-type=\"undefined\" target=\"_self\"><em>En voir plus</em></a></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_963e0006-6d56-496e-bce4-49d12806a635",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_0ef01989-f771-4ce0-95ca-eb1541c0cef2",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_86d1716d-a31c-4f75-a4c6-b8d2cc899d59",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/576574_382160.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/576574_382160.jpg",
+       "storageKey": "22139555/576574_382160",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2448,
+       "w": 3264,
+       "s": 1569928,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_6f90e81d-7cc5-4b62-ab9f-a5b4e7bd1629"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_0f225fc1-9486-4d0a-9145-8bc71268e9b4",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/799607_307886.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/799607_307886.jpg",
+       "storageKey": "22139555/799607_307886",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2358,
+       "w": 3543,
+       "s": 8631388,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_adb95a70-1f79-4d60-8b98-f60efb5b86c8"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_a3f1ceae-ffbc-4414-ab83-df5669354204",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/456050_97022.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/456050_97022.jpg",
+       "storageKey": "22139555/456050_97022",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 3456,
+       "w": 5184,
+       "s": 1160460,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_f8b0996b-fd46-4dd1-9355-5510221927bb"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_6a1be3cf-aad7-4477-aa14-7d735fd2dd4e",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/90612_398878.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/90612_398878.jpg",
+       "storageKey": "22139555/90612_398878",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 3456,
+       "w": 5184,
+       "s": 7268377,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_7e0a47a7-e50e-4e2d-b6c6-3b5d7bea5d49"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_92425f05-8106-4f60-bef1-519cf8c7e3f3",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/573867_115765.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/573867_115765.jpeg",
+       "storageKey": "22139555/573867_115765",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 1200,
+       "w": 1600,
+       "s": 389121,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_ca5f1d99-c137-4ab1-9972-ae59e7d60701"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_95f6c39d-ab41-4498-b28b-b3bc6238c2a2",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/903999_813605.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/903999_813605.jpg",
+       "storageKey": "22139555/903999_813605",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1152,
+       "w": 1170,
+       "s": 1161051,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_447702c8-4570-4273-bdd5-f7dd2685789a"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_87668cd3-00df-48c3-a48e-f170819254a5",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/860150_629968.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/860150_629968.jpg",
+       "storageKey": "22139555/860150_629968",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1114,
+       "w": 1170,
+       "s": 1017457,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_48134565-1a88-4600-980a-8aa50558d060"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_f7cf1876-aed7-4536-b18f-6b1343dfa5f2",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/205094_937059.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/205094_937059.jpg",
+       "storageKey": "22139555/205094_937059",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1146,
+       "w": 1170,
+       "s": 1301147,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_13eca0e5-7fb1-4c5e-8684-e1311e561ec1"
+       }
+      },
+      {
+       "type": "Image",
+       "id": "f_49d73431-6196-4d31-83d6-cd2acd2cf20d",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/81605_52743.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/81605_52743.png",
+       "storageKey": "22139555/81605_52743",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 601,
+       "w": 601,
+       "s": 522053,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_cff87147-4c05-413a-9278-e8bbcb98bb85"
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_78224f7f-d553-4c35-a2ee-f2e9d2b8a807",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_224f918e-08cb-44e8-9506-72f882d080e0",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": true,
+     "hidden_mobile_section": false,
+     "name": "Galerie (m)",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": true,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": "1"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_0547ee14-a2e2-4c92-be06-08ff2e54c160",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Galerie</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_f472a7e4-32a0-4735-b99b-37d34f5142da",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><em>Nos évènements en actions</em></h3><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><a href=\"http://www.spiceevents.fr/galerie-photo-evenementiel\" data-type=\"undefined\" target=\"_self\"><em>En voir plus</em></a></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_35b80b40-1c5e-4612-9ea3-bab8af75a014",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_7644a753-7fee-4c12-8a67-f1f6549c3ca7",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_c10ee7ea-1368-4d4b-9d42-08bb508ff235",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/780786/147313_621671.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/147313_621671.png",
+       "storageKey": "780786/147313_621671",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 1822,
+       "w": 1818,
+       "s": 5868431,
+       "focus": null,
+       "link": {
+        "type": "section",
+        "pageId": "c46601bc-55a1-4f13-9875-8a86e005349e",
+        "sectionId": "f_7c89463e-93bf-4c48-9126-08157aeba66e",
+        "url": "",
+        "checked": true,
+        "id": "f_fab32e21-1026-4867-873d-50d7072352ee"
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_caab9eb3-7cdf-4633-8bed-304dc73c0f0c",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ac9e8238-7ea8-47c1-8aa6-9d9bec43800a",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Avis clients",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\",\"noImage\",\"noImage\",\"noImage\",\"noImage\",\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_b99076c2-7987-48e6-9b78-9a6f27fab974",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_e8295444-b95d-478f-ba15-f10c50de9cc1",
+       "defaultValue": null,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_b69e2ed7-ab20-46da-9d57-bc7158712011",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" font-size-tag-header-one s-text-font-size-over-40 s-rich-text-wrapper\" style=\"font-size: 48px;\">Marc L.</h1><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Directeur marketing</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_642bf956-1c6b-4385-943e-70ab7841fd23",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default font-size-tag-header-two s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: 28px;\"><span class=\"s-text-color-default\">\"Nous avons fait appel à Spice Events pour notre soirée annuelle. L’organisation était impeccable, le matériel de qualité et l’équipe très réactive. Nos collaborateurs en parlent encore !\"</span></h2></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_2a5e9e91-193e-4c40-b2d1-e49595e063b4",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "overlay",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/448970_902924",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2448,
+         "w": 3264,
+         "s": 591578,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "value": "#002af7",
+          "type": "custom",
+          "id": "f_ecd6949e-662b-45a2-89b3-b877f37001de"
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_5fe9e886-afe2-4e9d-bdac-9b0fe7f4cde7",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_06013389-b74a-4226-a53f-6bf87010dbfc",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_b80c57c1-ae1f-40d8-bef6-34099a6bb61d",
+          "defaultValue": false,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_673c85f5-9ee9-4826-aece-c521ec84b829",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_c2bbba6d-e575-467f-9ff7-27302dd92780"
+         },
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4dc1c2fa-8928-4c33-b579-4fb20f94b560",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_81781446-1776-4310-bcf5-b9ebb1b34253",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" font-size-tag-header-one s-text-font-size-over-40 s-rich-text-wrapper\" style=\"font-size: 48px;\">Claire D.</h1><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Cheffe de projet évènementiel</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b5ea9693-a5cf-40ac-806a-a7c6bea033d6",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default font-size-tag-header-two s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: 28px;\"><span class=\"s-text-color-default\">\"Grâce à leur accompagnement en amont, chaque moment fort de notre événement a été mis en valeur. La musique et l’éclairage ont parfaitement rythmé la journée.\"</span></h2></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_f6caeb32-c288-4f17-a9c8-e7df0eb35266",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/858568_390785",
+         "storage": "s",
+         "format": "png",
+         "h": 1333,
+         "w": 2000,
+         "s": 3854469,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "value": "#00a1ff",
+          "type": "custom",
+          "id": "f_850c0491-d23b-4304-b7d5-be747f11c414"
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_200e5523-809a-4149-a3e4-73ffacbf85f8",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_7e8de841-2742-4617-b340-9bc5ed430809",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_c9327de0-c2a4-469c-bf3f-400218719a9c",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_bba6c526-cad7-455d-93fe-2fe631f04768",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_0cd43f43-701e-4f5e-8d66-a66b30db8962"
+         },
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_2feb74ef-0c10-4d1e-8567-dccbe0712154",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_595d32d6-3d9f-453a-9055-737910d030d2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Thomas H.</h1><h4 class=\" font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Directeur communication</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_08f5de67-2fcd-4659-b4cc-3f68f9942aa5",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\">\"Une équipe à l’écoute, professionnelle et passionnée. Tout a été parfaitement orchestré, de la mise en lumière à la sélection musicale. L’ambiance était au rendez-vous du début à la fin !\"</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_281b462a-eaa3-4c3f-8df8-c1dc78354eb3",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/338230_982045",
+         "storage": "s",
+         "format": "jpg",
+         "h": 3456,
+         "w": 5184,
+         "s": 8898833,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "value": "#f7ca06",
+          "type": "custom",
+          "id": "f_c27ebdb6-754d-4611-aa9c-d33f4bbb5da1"
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_9d9b5d88-232c-4f62-bf02-219df6187a4a",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_c7611b67-79a5-487a-9e76-97b69a1cc0cb",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2e7524b9-440f-42be-9d71-734d4ea93d4d",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "",
+          "url": "/images/themes/onyx_new/stri.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5c8c0da4-5612-4003-86c4-a6198029d267",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_13bb3bd8-8245-4efa-bdbd-2e13f358b9f2"
+         },
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_72b5d712-8c54-4d4c-ba6d-d72d66605fd5",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_595d32d6-3d9f-453a-9055-737910d030d2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Julie H.</h1><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Responsable sponnsoring</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_08f5de67-2fcd-4659-b4cc-3f68f9942aa5",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: 24px;\">\"Cédric et son équipe ont transformé notre événement en un véritable succès. La musique, les lumières et l’ambiance ont été parfaitement adaptées à nos invités. Tout le monde a adoré !\"</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_281b462a-eaa3-4c3f-8df8-c1dc78354eb3",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/448616_165353",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2358,
+         "w": 3543,
+         "s": 4803430,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "value": "#74CFE2",
+          "type": null
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_9d9b5d88-232c-4f62-bf02-219df6187a4a",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_c7611b67-79a5-487a-9e76-97b69a1cc0cb",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2e7524b9-440f-42be-9d71-734d4ea93d4d",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "",
+          "url": "/images/themes/onyx_new/stri.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5c8c0da4-5612-4003-86c4-a6198029d267",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_c5b39222-1a74-46fe-aa51-3f3901c24475"
+         },
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a9b824e9-5bfd-45dd-aa73-8ddcfb0783bc",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_595d32d6-3d9f-453a-9055-737910d030d2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Frédéric A.</h1><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Chargé de production</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_08f5de67-2fcd-4659-b4cc-3f68f9942aa5",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: 24px;\">\"Nous avions besoin d’une animation professionnelle. Cédric a su créer une ambiance élégante et festive à la fois, tout en respectant notre image. Bravo !\"</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_281b462a-eaa3-4c3f-8df8-c1dc78354eb3",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/283289_784705",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2358,
+         "w": 3543,
+         "s": 5877634,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": 2,
+          "value": "#f9cc06",
+          "type": "highlight2",
+          "id": "f_2df3e8c3-45a6-4a75-96da-e84d9d3ef0df"
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_9d9b5d88-232c-4f62-bf02-219df6187a4a",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_c7611b67-79a5-487a-9e76-97b69a1cc0cb",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2e7524b9-440f-42be-9d71-734d4ea93d4d",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "",
+          "url": "/images/themes/onyx_new/stri.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5c8c0da4-5612-4003-86c4-a6198029d267",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_418e0f02-8952-4bd4-b9bf-2f0d2a0edfb9"
+         },
+         "version": "2"
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_dc5055c2-be5e-4933-9308-ddaa536772b1",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_595d32d6-3d9f-453a-9055-737910d030d2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Lucas P.</h1><h4 class=\" font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><em>Responsable RH</em></h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_08f5de67-2fcd-4659-b4cc-3f68f9942aa5",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: 24px;\">\"La soirée a été incroyable ! La playlist, les animations et la coordination avec les prestataires ont rendu l’événement fluide et mémorable pour tous nos invités.\"</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "center",
+          "lastLineTextAlign": "center"
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_281b462a-eaa3-4c3f-8df8-c1dc78354eb3",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/33860_145123",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2448,
+         "w": 3264,
+         "s": 1798025,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": {
+          "themeColorRangeIndex": null,
+          "value": "#5c7df5",
+          "type": "custom",
+          "id": "f_5daf75f1-a916-42a6-a4f7-20378c31d1c7"
+         }
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_9d9b5d88-232c-4f62-bf02-219df6187a4a",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_c7611b67-79a5-487a-9e76-97b69a1cc0cb",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2e7524b9-440f-42be-9d71-734d4ea93d4d",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "",
+          "url": "/images/themes/onyx_new/stri.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5c8c0da4-5612-4003-86c4-a6198029d267",
+         "defaultValue": false,
+         "alignment": "center",
+         "text": "Voir plus d'avis",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "solid",
+         "color": "",
+         "font": "Montserrat",
+         "url": "https://www.spiceevents.fr/temoignages",
+         "new_target": false,
+         "backgroundSettings": {
+          "default": "#ffffff",
+          "preIndex": null,
+          "type": "default",
+          "id": "f_420156fe-f652-4044-a835-814b65169b6d"
+         },
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_595d32d6-3d9f-453a-9055-737910d030d2",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_08f5de67-2fcd-4659-b4cc-3f68f9942aa5",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_281b462a-eaa3-4c3f-8df8-c1dc78354eb3",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_9d9b5d88-232c-4f62-bf02-219df6187a4a",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_c7611b67-79a5-487a-9e76-97b69a1cc0cb",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_2e7524b9-440f-42be-9d71-734d4ea93d4d",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_5c8c0da4-5612-4003-86c4-a6198029d267",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_2faf1e56-39c6-4d08-a195-e661e2ac1ba4",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_fec94d32-c55b-4e65-ae66-a2c090889b7a",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_3fa306f0-354e-4a7a-84be-1ed723674033",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_99ca0ed5-b6a1-49d0-8be3-f8aad5cfd6a0",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-one\"><a href=\"http://www.spiceevents.fr/faq\" data-type=\"undefined\" target=\"_self\">FAQ</a></span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_82ca4571-58f4-4767-befc-952ff6fb3c54",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\"><em>Tout savoir sur nos prestations évènementielles</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_556e6591-ba3b-42ff-bd76-3af65a957ee4",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_ce4b4900-172b-4bf5-bd2f-6c81fbb1e4da",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_0f9f1935-fa2f-4381-81c9-692b76dea445",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\"><strong>Quelle est votre approche pour un événement réussi ?</strong></span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_56538413-0f25-4100-9515-0c510888025c",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 19px;\"><span class=\"s-text-color-default s-rich-text-wrapper\">Nous mettons l'accent sur la fluidité, la coordination entre prestataires et une ambiance musicale adaptée au format et aux objectifs de l’évènement.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "left",
+          "lastLineTextAlign": "left"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_15dbe26e-8cfd-4a9b-9806-7590dd517d91",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_48a1d012-86f2-40d9-8f6b-60ae310ef411",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><strong>Pouvez-vous gérer plusieurs espaces (cocktail, scène, dancefloor) ?</strong></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4306f3f2-233e-4924-a1c3-edb61993e8dd",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 19px;\"><span class=\"s-text-color-default\">Oui nous pouvons </span><span class=\"s-text-color-default\"><a href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\">sonoriser et éclairer</a></span><span class=\"s-text-color-default\"> plusieurs zones avec du matériel dédié à chaque espace.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_281d525f-3ba5-4da9-b105-ea2d007435cf",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_b0dfd01f-5b2d-48b6-95d0-ffafe8c53b45",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><strong>Est-il possible de prévoir des prises de paroles ou des moments clés pendant la soirée ?</strong></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_64ab4541-ce04-4db0-b5ac-0e7bd7ceda9a",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 19px;\">Absolument. Nous intégrons vos temps forts (discours, remises, projections, etc.) dans le déroulé technique et musical.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_cb11b2a3-fe47-4366-aeaf-86249bd87a53",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_eedbd7aa-d69c-489a-ac2e-6848878248a9",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><strong>Pouvez-vous adapter votre prestation à l'image et aux valeurs de notre entreprise ?</strong></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_bbc3cf79-0d1b-4a27-83bd-358e8fcd14de",
+         "defaultValue": false,
+         "alignment": "left",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 19px;\">Absolument. Nous personnalisons chaque ambiance musicale et visuelle pour refléter l'identité et les valeurs de votre marque, tout en respectant le ton et les objectifs de votre événement.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_8c49342e-eced-451c-9a67-53f3d709c3ef",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_a268447c-7e44-4ce4-b89d-690bb322890d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\">Intervenez-vous aussi sur des événements corporate ?</h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_cf95a649-e281-4f02-b420-36fbf48e052a",
+         "defaultValue": false,
+         "alignment": "left",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 19px;\">Oui, tout à fait. Nous intervenons également sur des événements corporate tels que des séminaires, galas ou lancements de produit. Notre approche reste la même : une <a href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">organisation rigoureuse</a>, une ambiance maîtrisée et une prestation clé en main adaptée à votre image.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_e8a11c05-3e34-42b7-9c10-3da05d1fd24d",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_a2dc3573-c4f4-43c1-8f6f-7965c13418e0",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_8275982f-694d-47f5-9ccc-7cb7e282ac1d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-one\">Planifions votre événement !</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_654ab8e8-c601-4f9f-9e27-465cd6b8bde1",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>De l'idée à la scène, on s'occupe de tout !</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_01886858-2f1d-4509-9d2d-7130ed31520e",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/134986_996821",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 2560,
+     "w": 3840,
+     "s": 2312692,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_092c821b-7035-4f42-b4a8-6f52bbb61fef",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Evénementiel",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1760086490267#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1760086531550#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_73f239ee-282b-410e-a59f-4e93de65ac12"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_eb25b6bb-6f58-45b0-a2d3-f17cd8fd255c"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_953a76f6-f3c6-4cab-a588-7a9eccfec673",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_896fa538-7159-47f0-b59d-a75798b12178"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_6424e402-38a0-4c01-a4eb-d4eb48cb8f88"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_d801741c-2413-447e-87dd-f3169dcbc90e"
+          },
+          "$item1760086490267#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_2d4b4bf2-09b9-4a9b-992e-cbff30727859"
+          },
+          "$item1760086531550#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_be162a94-74e9-4c22-9ce3-1cb3b64f29fc"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1760086490267#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_56dad679-958d-4afa-93bf-93e1366f7817"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_c8353492-621c-4969-b487-deef4feaeb50"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1760086531550#date",
+         "$item1760086490267#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1760086490267#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1760086531550#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Événementiel",
+ "description": "Des prestations sur mesure pour sublimer vos événements privés ou pros.",
+ "uid": "7ac1eb71-e115-4e94-baf6-cc4064e44627",
+ "path": "/evenementiel",
+ "pageTitle": "Événementiel",
+ "autoPath": true,
+ "authorized": true
+}

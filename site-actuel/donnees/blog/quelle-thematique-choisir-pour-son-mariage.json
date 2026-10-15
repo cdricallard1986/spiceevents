@@ -1,0 +1,452 @@
+{
+ "blogPostMeta": {
+  "id": 16322475,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-08-25T04:19:16.488-07:00",
+  "publishedAt": "2021-09-03T04:29:35.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/quelle-thematique-choisir-pour-son-mariage",
+  "customSlug": null,
+  "editCount": 95,
+  "publishedEditCount": 53,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/quelle-thematique-choisir-pour-son-mariage",
+   "title": "Quelle thématique choisir pour son mariage ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/3083622/420141_46864.jpeg",
+   "description": "Le jour-J approche à grands pas, et vous n’avez toujours pas d’idée pour votre décoration. Vous jonglez d’idées en idées. Le champêtre vous séduit car vous avez vu 1000 photos sur Pinterest et votre tableau en est rempli, mais cette influenceuse a organisé un mariage sobre et blanc et “c’est pas...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Quelles sont les tendances mariage pour 2025 ?",
+  "nextBlogPostRelativeUrl": "/blog/quelles-sont-les-tendances-mariage-pour-2025",
+  "nextBlogPostId": 16886018,
+  "prevBlogPostTitle": "Mariage de S&R au château d’Hardricourt",
+  "prevBlogPostRelativeUrl": "/blog/mariage-de-s-r-au-chateau-d-hardricourt",
+  "prevBlogPostId": 16320559
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_ace8c852-8dab-495f-ace9-98d3513674c4",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_318144bc-2ee7-4f29-9839-ce2285b69f9c",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_469a8a17-85dd-4d63-b38a-c33f84cf47aa",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>Quelle thématique choisir pour son mariage ? </b></p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_93ee8490-4417-49d7-ac3c-73e6212974c3",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>Donnez le ton de votre mariage</b></p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_87d1d7e6-8b60-472f-bc2e-29ed3864e9b5",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "3083622/420141_46864",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 5760,
+    "w": 3840,
+    "s": 1572854,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_cc63e3de-6e71-48b7-bae7-ba7ff8ef88a9",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_9b2c72e8-8f0d-4f2a-bc1f-7d52b5f8968e",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_710d46cd-cca8-413e-9c67-ebb470357ace",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_d3addccc-6bbf-446a-9fb2-5c0aaed97dc0",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_c264832b-47e4-42c3-9d40-d434975ac2cd",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_0b23b26e-72b5-46cd-900c-38b615575968",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_7fcf28b1-ad21-4f9a-b9da-cb7eafaf1fd6",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "ce36f5c6-e623-4c7f-97cd-422601088db3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "39d14e32-d3e6-4c00-9c95-ffe070c0c3f2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Le jour-J approche à grands pas, et vous n’avez toujours pas d’idée pour votre décoration. Vous jonglez d’idées en idées. Le champêtre vous séduit car vous avez vu 1000 photos sur Pinterest et votre tableau en est rempli, mais cette influenceuse a organisé un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> sobre et blanc et “c’est pas mal aussi”. Vous êtes tentés par une ambiance Disco, pour que tante Suzette danse elle aussi toute la nuit, mais bon… La moyenne est tout de même de trente ans. Pas de panique ! Notre équipe se charge de la décoration de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> tout en mêlant professionnalisme et innovation. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ce36f5c6-e623-4c7f-97cd-422601088db3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5c00b883-0496-4a4a-8cfa-eb8f32d0c1cb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "090e5667-9254-48b1-aa22-50984b18eed2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a8fbe4f6-4d5e-40c5-a054-3f5fdc25346b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Thématique sur-mesure. </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19fdeac7-92da-4c95-bf08-dd29d828cf24",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "88f48765-6bda-4174-ab1b-57690e073bce",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "3083622/890129_319137",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 984727,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "59af948e-74f3-4954-a290-2295a66e6da9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "521107c2-786a-44d3-a2a4-cc77df7f3b8b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Créer la scénographie qui marquera les esprits est loin d’être chose facile. Il faut qu'elle se marie à la perfection au lieu de réception, corresponde à votre personnalité et soit spectaculaire. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">Chez Spice Events, nous avons élaboré quatres thématiques différentes à décliner à l’infini grâce à nos multiples options scénographiques.</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e01a8aef-4ad8-4d39-9940-193b0232d6c4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f246d711-05fe-4389-9927-b57b7ae22c81",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Thématique florale, blanche, noire ou encore bois, un large choix s’offre à vous </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariage-exception-paris\" data-type=\"\" target=\"_blank\">(pour les couples prenant les formules Or, Platine ou Diamant)</a></span><span style=\"color: #000000;\">. En effet, une scénographie de mariage ne tourne pas qu’autour des ronds de serviettes et des nappes, elle consiste à créer la magie de votre événement quel qu’il soit. Jeu de lumière, sonorisation, traiteur, décoration, fleurs… Un savant mélange qui offre à chaque détail une réelle valeur ajoutée. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7619004c-0f50-4237-9b5e-aeb311b67416",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2e97329f-8243-4c3c-98b1-17aa37ec6ece",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Chaque thématique sera donc unique, puisque chaque mariage l’est. Nous adapterons votre choix à la technique utilisée pour faire vivre chaque instant de votre mariage. Si des doutes persistent dans votre choix, nous mettons en place de nombreux entretiens et points téléphoniques afin de vous conseiller et vous orienter vers les meilleurs choix à adopter. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "20769c16-2f6e-4e07-a2b0-0d2f68963856",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f12f1a72-7c19-48ac-9e4e-b4753dec3497",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "20769c16-2f6e-4e07-a2b0-0d2f68963856",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1ec789a6-8658-42c4-96af-40a53970e078",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>L’éclairage scénique pour aller plus loin. </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "120e4962-79ed-4fbc-a4a5-fd03f9f19012",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "4911113c-e91e-4b30-aaf9-96258bd41f24",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "3083622/272244_688865",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1800,
+     "w": 1200,
+     "s": 8320323,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "224e4dbd-0daa-4889-8744-afe2c05d239a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "16ba175f-2592-49f5-b94f-8f93f80c50a0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous l’avons vaguement abordé tout à l’heure, l’éclairage est intimement lié à la décoration et représente un élément essentiel pour la mise en valeur de votre événement. Pour votre cérémonie (religieuse ou non), </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/blog/fumee-lourde-en-stock\" data-type=\"\" target=\"_blank\">votre première danse</a></span><span style=\"color: #000000;\"> ou la mise de scène de votre lieu, ses déclinaisons sont infinies. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5a089b7a-16e7-4791-83d6-479b531a098d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "adfb9b97-e23a-443c-a873-a7c53f869472",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Quand on parle d’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage scénique</u></a></span><span style=\"color: #000000;\">, on ne parle pas de la simple lampe de bureau qui clignote lorsqu’un mouche vient se faufiler dedans, mais réellement d’une technique qui a pour but certes d’éclairer, mais également d'embellir votre événement. Lorsque vous voyez votre artiste préféré sur scène avec les lumières “qui bougent de partout’”, c’est ça. Offrir un effet Waouw pour que vous vous en souveniez, même lorsque vous aurez 90 ans et que vous raconterez à vos petits enfants vos folles soirées de jeunesse. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c7acd378-cf09-4c0f-8795-d2ce022559aa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e37dc082-e103-4013-8694-db091532b181",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Étroitement lié à l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage scénique</u></a></span><span style=\"color: #000000;\">, nous pouvons également parler du</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/blog/mariage-de-s-r-au-chateau-d-hardricourt\" data-type=\"\" target=\"_blank\"> mapping,</a></span><span style=\"color: #000000;\"> ces éclairages sur bâtiment qui vous offrent un show lumineux spectaculaire. Couplé à une sonorisation sur-mesure comme de la musique ou une histoire contée (par vous ou un conteur professionnel), vous êtes sûr de devenir les mariés de l’année !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e78866f8-4095-450d-82d5-2231aa7c94a2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4ccfc95e-b250-4ba1-89bf-732f6a98b2a7",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Les thématiques du moment. </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "51d31978-fd50-4c62-89e3-e87c60a7701c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "41729270-26c4-4fc0-8ed2-3cbef19ed69f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Cet été, des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématiques</a></span><span style=\"color: #000000;\"> ont séduit plus que d’autres. C’est le cas des mariages champêtres, bohème et chic. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d6870658-56c2-49c3-a657-909cc8f8d89b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bd877cce-0c13-4ec2-a308-30ab6510d01d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><em>Mariage chic</em></span><span style=\"color: #000000;\"> : on favorise une thématique blanche, sobre et élégante. Et pour accompagner cette thématique et la rendre encore plus belle on optera pour un rideau étoilé lumineux, la sonorisation du dîner ainsi que de la cérémonie et un mapping vidéo. Accompagnez le tout d’un mobilier blanc et transparent avec quelques fleurs blanches pour finaliser le tout ; sans oublier le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-bar-a-vinyles\" data-type=\"\" target=\"_blank\">bar à vinyles </a></span><span style=\"color: #000000;\">pour faire danser tous vos convives. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "aa527b98-b0f3-47f3-8bde-d6fed0a6212b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b2980216-4b9d-469e-a4ce-def04396dcbd",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><em>Mariage champêtre</em></span><span style=\"color: #000000;\"> : thématique florale, ambiance cocooning et chaleureuse ; voici les ingrédients d’un mariage champêtre réussi. Agrémenter avec des guirlandes champêtres, des compositions florales, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">nos lettres géantes lumineuses</a></span><span style=\"color: #000000;\"> et le tour y est ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f2e30b9e-817f-42f1-b6e7-a71f8f1195dc",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "40754a06-f89d-4878-b0e5-90bd52e2a660",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "3083622/361504_618753",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 675,
+     "w": 1200,
+     "s": 3220925,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fc530c51-14f9-4c89-9b68-0c96b1afa0ea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cad4e305-4023-4c9e-932a-65d9eb34b539",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><em>Mariage bohème : </em></span><span style=\"color: #000000;\">On s’imagine déjà rien qu’en citant le nom ; une thématique bois, des tapis marocain au sol, des fleurs pampas partout, un chapiteau grandeur nature, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\">un rideau étoilé lumineux</a></span><span style=\"color: #000000;\">, un éclairage scénique au tonalité chaude et nous y voilà ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "30312826-9abd-4a1a-9296-a0b4a816205b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b0a22cd5-072d-4556-9ab5-e29fa5e519f9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/on-vous-rappelle\" data-type=\"\" target=\"_self\"><em><strong>Vous hésitez entre telle et telle thématique ou n’avez simplement pas d’idée ? N’hésitez pas à </strong></em></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u><em><strong>nous contacter</strong></em></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/on-vous-rappelle\" data-type=\"\" target=\"_self\"><em><strong> pour trouver ensemble la meilleure solution technique.</strong></em></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a8dec2a4-98a1-4aac-b994-30047aff5149",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "919bf982-69e2-4983-a634-23121e8fe9e4",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

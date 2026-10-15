@@ -1,0 +1,434 @@
+{
+ "blogPostMeta": {
+  "id": 56739077,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2025-12-23T00:59:21.332-08:00",
+  "publishedAt": "2025-12-29T01:36:00.445-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-la-qualite-du-materiel-de-sonorisation-change-toute-l-experience-de",
+  "customSlug": null,
+  "editCount": 104,
+  "publishedEditCount": 0,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": "2025-12-29 10:36:00",
+  "scheduledPublishAtUtcTime": "2025-12-29T09:36:00.000Z",
+  "scheduledTimeZone": "Europe/Paris",
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-la-qualite-du-materiel-de-sonorisation-change-toute-l-experience-de",
+   "title": "Pourquoi la qualité du matériel de sonorisation change toute l’expérience de votre événement ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/679163_321012.jpg",
+   "description": "Lors d’un mariage ou d’un événement, le son est un élément central… et pourtant, lorsqu’il est parfaitement maîtrisé, il se fait oublier. Une sonorisation de qualité ne se remarque pas : elle se ressent. Elle accompagne les émotions, soutient les temps forts et garantit une expérience fluide pour...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi un bon DJ travaille en amont avec tous les prestataires de votre événement ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-un-bon-dj-travaille-en-amont-avec-tous-les-prestataires-de-votre",
+  "nextBlogPostId": 56744645,
+  "prevBlogPostTitle": "Pourquoi la technique est invisible quand elle est bien faite ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-la-technique-est-invisible-quand-elle-est-bien-faite",
+  "prevBlogPostId": 56546326
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_69f51977-080f-4aec-9b9e-869f6cbe7a76",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_122581e6-1633-4bba-833d-faf6c917b49c",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_d085d7c7-efb5-42cd-934f-fb75326c4f7f",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><span style=\"color: #ffffff;\"><strong>Pourquoi la qualité du matériel de sonorisation change toute l’expérience de votre événement ?</strong></span></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_21a048f4-7470-4d38-a47b-3e97dcf34946",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p><em>Derrière une ambiance réussie se cache toujours un son parfaitement maîtrisé.</em></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_fa0a12aa-b9c4-4702-a42a-785335f1cd57",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/679163_321012",
+    "storage": "s",
+    "format": "jpg",
+    "h": 2358,
+    "w": 3543,
+    "s": 9853776,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_bac07c84-f18d-4df1-9929-852bae6577b6",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_d8110ad0-4e45-4aa2-8a16-4cbe44bf87ab",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_cf9d2afe-8f83-42b4-817a-4b41b986de04",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "a4a8919f-2ec0-4ca2-beeb-d3ed5d1843d4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b08b5dc2-53c7-4263-b60f-b917d609a1eb",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Lors d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\"> ou d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>événement</u></a></span><span style=\"color: #000000;\">, le son est un élément central… et pourtant, lorsqu’il est parfaitement maîtrisé, il se fait oublier. Une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>sonorisation de qualité</u></a></span><span style=\"color: #000000;\"> ne se remarque pas : elle se ressent. Elle accompagne les émotions, soutient les temps forts et garantit une expérience fluide pour tous les invités. À l’inverse, un matériel inadapté peut rapidement nuire à l’ambiance, même avec la meilleure programmation musicale.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ebc23aa0-24d0-40eb-8ebe-64386ef2a73a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f560b718-ad6b-4c8b-afcd-7209ce88810e",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "abf970ee-a0e8-43cc-b0c7-96fa69c635d9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "67416d96-2789-439b-827e-6d46f8d0cec0",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Un son clair, homogène et confortable pour tous</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "576ee692-2639-45f4-9c2c-f1c948b30aea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c9db72e7-00a5-4597-b6f7-f9819fe33de6",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">La qualité du matériel de sonorisation est essentielle pour assurer une écoute agréable et intelligible. Discours, cérémonie laïque, interventions parlées ou musique : chaque mot et chaque note doivent être audibles, sans saturation ni déséquilibre sonore. Chez S</span><span style=\"color: #000000;\"><strong>pice Events,</strong></span><span style=\"color: #000000;\"> nous accordons une importance particulière à l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>exigence technique</u></a></span><span style=\"color: #000000;\">, en nous appuyant notamment sur le matériel professionnel de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>M</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>X ÉVÈNEMENT</strong></u></a></span><span style=\"color: #000000;\"><strong>,</strong></span><span style=\"color: #000000;\"> reconnu pour la fiabilité et la </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>performance de ses équipements</u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8a525f7a-bdb0-4202-8a7b-798c4423af7d",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "e93f3021-81ef-4f47-a8a6-ee6a583ff7c5",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/12081_23996",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 1147,
+     "w": 1170,
+     "s": 309941,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4f117100-ee2a-4e21-9822-da25f327bb36",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9b9dd4d6-f188-49ce-82c4-e05601956f6d",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "547934fb-d4fa-40af-babc-c1ba11a3f890",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "413d7241-cc31-4190-b249-1297da1a0d69",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>La musique respectée, jamais déformée</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b40dca2f-b603-4506-8105-a4c5bd3ef60c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7ffc462a-23ba-4ddf-a415-3514ad3c8900",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Un bon système de sonorisation ne se contente pas de “faire du volume”. Il respecte la musique. Les basses sont maîtrisées, les médiums chaleureux et les aigus précis, sans agressivité. Cette fidélité sonore est indispensable pour créer une ambiance élégante, moderne et intergénérationnelle.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6bf16e0e-4d7e-467e-9b23-a30e7407c86a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "90cbf9d7-71d1-4886-9859-fc06e2c18e33",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Nous travaillons avec des équipements issus de marques de référence telles que L-Acoustics, Yamaha, Shure et bien d’autres, utilisés et maintenus dans les standards professionnels de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>MX ÉVÈNEMENT</strong></u></a></span><span style=\"color: #000000;\">.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d215b150-7708-4b67-a569-71798bfff9d2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4fc3e55e-0c47-4e32-bafc-38f000ae4b0f",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bb34afbe-cbfa-44aa-92ef-43426ec51523",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7f9f4a2d-97e1-4e00-8ce4-13568386fd70",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Une sonorisation pensée pour chaque lieu</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0ca08b45-2c8d-473b-b6b9-4533d5ea9178",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1ce1926d-f419-4121-a122-ac8e1de431bc",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Chaque espace possède ses spécificités acoustiques : volumes, matériaux, hauteur sous plafond, réverbération… Une sonorisation réussie repose autant sur le matériel que sur son implantation et ses réglages. Grâce à une approche sur mesure et à des équipements adaptés, S</span><span style=\"color: #000000;\"><strong>pice Events,</strong></span><span style=\"color: #000000;\"> en collaboration avec </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>M</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>X ÉVÈNEMENT</strong></u></a></span><span style=\"color: #000000;\"><strong>,</strong></span><span style=\"color: #000000;\"> ajuste chaque installation pour garantir un rendu équilibré et confortable, quel que soit le lieu de réception.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d61e0da2-4fe8-4fc3-b71e-401603686be5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d4f5226e-5b53-4c50-9eac-bcb3e44c3d6a",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b617f446-9a7e-47dd-83d2-d6b753500ad0",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a87c6a3c-ed5e-4829-917c-737257955fa6",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/756160_931418",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 3456,
+     "w": 5184,
+     "s": 6920981,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9178e59a-45bf-4c9a-8f36-08241866d194",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f489141d-7a50-4186-8ec4-258b5164f52a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>Fiabilité technique et sérénité le jour J</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c3e7d847-8d5e-406e-8515-1ebec8527893",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "01157689-6c0e-4f5c-b126-69737b7b5e71",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">Un équipement professionnel, entretenu et testé, est un gage de fiabilité. Moins de risques de coupures, de larsen* (*déf : oscillations parasites qui se manifestent par un sifflement, dans la diffusion du son par haut-parleurs) ou de pannes imprévues. Et lorsque chaque détail technique est anticipé, vous profitez pleinement de votre événement. Chaque prestation est préparée avec rigueur, avec des solutions de secours prévues et un matériel éprouvé, tel qu’utilisé par </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>M</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>X ÉVÈNEMENT</strong></u></a></span><span style=\"color: #000000;\"><strong> </strong></span><span style=\"color: #000000;\">sur des événements de grande envergure.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a6273f26-3bd8-4853-b5f4-c64efa07c2b7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "102413f1-a591-412b-badd-0635d0c41ea8",
+     "defaultValue": false,
+     "value": "<p class=\" p3\"><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "83e9837a-570d-4654-a340-f2c1c9931a00",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "33be6915-2482-428c-aa04-c4a7666c439e",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\"><strong>La technique au service de l’émotion</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "785c9d33-b6a2-4245-b598-0aa968fefbe3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8fc86ecb-7947-45d4-8b00-daf99fd5e5e5",
+     "defaultValue": false,
+     "value": "<p class=\" p1\"><span style=\"color: #000000;\">La sonorisation doit soutenir l’émotion, jamais la voler. Lorsqu’elle est de qualité, elle s’efface pour laisser place aux instants forts : un discours émouvant, une musique partagée, une piste de danse qui se remplit naturellement. C’est cette vision que défend S</span><span style=\"color: #000000;\"><strong>pice Events </strong></span><span style=\"color: #000000;\">: une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique exigeante</u></a></span><span style=\"color: #000000;\">, discrète et fiable, inspirée des standards professionnels de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>M</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><u><strong>X ÉVÈNEMENT,</strong></u></a></span><span style=\"color: #000000;\"> pour faire vivre une expérience sonore fluide, élégante et mémorable.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "70662f00-3bfe-427b-91ec-80f3d6c2d416",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e7945a81-caab-4fa4-ba7b-7aa33064967b",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": "2025-12-29 10:36:00",
+  "scheduled_time_zone": "Europe/Paris"
+ }
+}

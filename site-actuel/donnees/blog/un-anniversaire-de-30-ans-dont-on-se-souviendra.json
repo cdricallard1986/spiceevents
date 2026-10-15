@@ -1,0 +1,373 @@
+{
+ "blogPostMeta": {
+  "id": 2151660,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T06:31:54.022-07:00",
+  "publishedAt": "2014-02-12T06:31:54.000-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/un-anniversaire-de-30-ans-dont-on-se-souviendra",
+  "customSlug": null,
+  "editCount": 168,
+  "publishedEditCount": 166,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Evenementiel"
+  ],
+  "categories": [
+   {
+    "id": 30540,
+    "name": "Evenementiel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/un-anniversaire-de-30-ans-dont-on-se-souviendra",
+   "title": "Un anniversaire de 30 ans dont on se souviendra !",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/585882_6721.jpeg",
+   "description": "C'est avec un grand enthousiasme que nous avons aider XK à organiser son anniversaire en grande pompe ! Et oui, 30 ans ça se fête !  Une nouvelle fois Spice Events à mis tout son savoir-faire au service de la fête. Des animations sur-mesure pour un anniversaire unique. Au programme :  Gogo...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Un anniversaire de talent !",
+  "nextBlogPostRelativeUrl": "/blog/un-anniversaire-de-talent",
+  "nextBlogPostId": 2151430
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_63c112a4-16c3-4ace-9fd6-fe10bdc901b4",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_6855a9b8-5496-4a40-bcaa-3896e00c90e1",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_717810ed-2111-4855-a9a0-d89ccf49f625",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Un anniversaire de 30 ans dont on se souviendra !</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_dd8b161b-f0a8-46f9-8930-0a34628b3be2",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Certains plus que d'autres ;)</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_f560984e-6cc7-4b27-b075-99b6fc0e87e3",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/585882_6721",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3840,
+    "w": 5760,
+    "s": 583786,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_abf58451-9346-4287-8f36-35fc68a568ff",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_0281c539-ea73-4724-8b00-0b5bac41c00d",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_2f9aaa97-d40c-4bd2-acfc-354aa36917fa",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_6e19251d-24be-461e-9e38-a8c184cdca2a",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_98d7115d-5550-4946-b24b-2a79bb87b5a1",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_bf5c4841-7bf9-4dcb-91e5-ef5131f134ab",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_1393b62b-a1a5-495e-b435-46f4ea3bf197",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_91ced350-2a7a-4e3e-96ae-17d0da7fedef",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_f212aa05-0411-4b42-88c1-408e1307f2c8",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/701140_774160",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 300387,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_d3318a85-e187-47a7-a88f-f800a1cd057b",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_54566c0b-8123-43a1-b8fe-c9332a54a208",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/86998_198115",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 288255,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6786e7d2-d1ca-4071-b9b9-27541b767888",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_d83d5011-7168-4d70-a07b-14e85db84037",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/309626_425326",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 552114,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6bfef793-d5a4-49f8-8256-13d68c1d4fe9",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_de608a9d-b321-47ac-8631-a05dbfed07e0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/867172_15817",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 273560,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_89b36705-3a45-491c-9248-8da264665ec5",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_ce9a0eb8-f130-4222-b108-f2dfde3867d5",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/435928_78668",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 459684,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6f92dfe4-a6c3-4f96-94f9-80820b877e63",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ca204bbe-ea4b-42d2-9fc5-154d69dc046a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">C'est avec un grand enthousiasme que nous avons aider XK à organiser son anniversaire en grande pompe ! Et oui, 30 ans ça se fête ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_31885b55-33d7-41ee-8469-a7b825386d46",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4f8b9923-6c99-4d27-bddb-5b431c91355d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Une nouvelle fois Spice Events à mis tout son savoir-faire au service de la fête. Des animations sur-mesure pour un anniversaire unique. Au programme :  Gogo danseuse, Striptease, Canon CO2, Impression photocall, Photographe et Vidéaste sans oublier </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>sonorisation et éclairage</u></a></span><span style=\"color: #000000;\"> à la pointe !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a890e1f7-a0bf-4d8f-ac19-91b5d48fb074",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3b654229-750b-4282-b301-92d90db10b69",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Et pour cela, nous avons mis en relation notre DJ partenaire en relation avec notre client pour s'adapter au mieux à ces envies. Fumée lourdre, lumière LED, sonorisation haut de gamme étaient également présentent pour s'assurer d'offrir une immersion totale aux invités de notre client. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8c396054-74eb-4f79-a200-3e03d240e6e5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "93a07f0c-20b6-4509-a053-a1ec30996d2d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un moment unique, créer sur-mesure par l'équipe Spice Events dont on s'en souviendra !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_503f25f4-f2a7-4c94-8c13-99f4c54fff4d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e389b70f-e081-4982-96c3-0e1022107a21",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Faites appel à nous pour organiser des moments d'anthologie !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "11e8d475-2ea9-46b0-9710-3bfec6f6a078",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0b82e774-b87e-4f4c-8760-e7859007f61e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

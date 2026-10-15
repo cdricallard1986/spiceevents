@@ -1,0 +1,1359 @@
+{
+ "pages": [
+  {
+   "title": "Accueil",
+   "path": "/accueil",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "FAQ",
+   "path": "/faq",
+   "pageTitle": "FAQ",
+   "description": "Toutes les réponses à vos questions sur nos services et nos prestations."
+  },
+  {
+   "title": "Contactez-Nous",
+   "path": "/contactez-nous",
+   "pageTitle": "Contactez nous",
+   "description": "N'hésitez pas à nous contacter pour en savoir plus sur nos prestations sur-mesure "
+  },
+  {
+   "title": "Accompagnement",
+   "path": "/accompagnement",
+   "pageTitle": "Accompagnement",
+   "description": "Profitez d’un accompagnement personnalisé du début à la fin de votre projet."
+  },
+  {
+   "title": "Événementiel",
+   "path": "/evenementiel",
+   "pageTitle": "Événementiel",
+   "description": "Des prestations sur mesure pour sublimer vos événements privés ou pros."
+  },
+  {
+   "title": "Blog",
+   "path": "/blog",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "Booking DJ",
+   "path": "/booking-dj",
+   "pageTitle": "Booking DJ",
+   "description": "Réservez facilement votre animation musicale pour une soirée réussie."
+  },
+  {
+   "title": "Mariages",
+   "path": "/mariages",
+   "pageTitle": "Mariage",
+   "description": "Créez une ambiance magique pour votre mariage, entre émotion et fête."
+  },
+  {
+   "title": "Galerie photo - Mariages",
+   "path": "/galerie-photo-mariage",
+   "pageTitle": "Galerie mariage",
+   "description": "Revivez l’émotion de nos mariages en images et en souvenirs."
+  },
+  {
+   "title": "Galerie photo - Événementiel",
+   "path": "/galerie-photo-evenementiel",
+   "pageTitle": "Galerie événementiel",
+   "description": "Découvrez les plus beaux moments capturés lors de nos événements."
+  },
+  {
+   "title": "Témoignages",
+   "path": "/temoignages",
+   "pageTitle": "Témoignages",
+   "description": "Découvrez les avis et retours d’expérience de nos clients satisfaits.Découvrez les avis et retours d’expérience de nos clients satisfaits."
+  },
+  {
+   "title": "Animations tendances",
+   "path": "/animations-tendances",
+   "pageTitle": "Animations tendances",
+   "description": "Découvrez nos animations originales pour sublimer vos événements avec style et énergie."
+  },
+  {
+   "title": "Bar à vinyles",
+   "path": "/bar-a-vinyles",
+   "pageTitle": "Bar à vinyles",
+   "description": "Une animation vintage et conviviale pour faire tourner la musique autrement."
+  },
+  {
+   "title": "Photobooth",
+   "path": "/photobooth",
+   "pageTitle": "Photobooth",
+   "description": "Capturez vos plus beaux sourires avec notre Photo Booth fun et personnalisable."
+  },
+  {
+   "title": "Livre d'or audio",
+   "path": "/livre-d-or-audio",
+   "pageTitle": "Livre d'or audio",
+   "description": "Offrez une touche unique à votre événement avec un livre d’or audio plein d’émotions."
+  },
+  {
+   "title": "Ouverture de bal spectaculaire",
+   "path": "/ouverture-de-bal-spectaculaire",
+   "pageTitle": "Ouverture de bal spectaculaire ",
+   "description": "Éblouissez vos invités avec un effet scénique spectaculaire et une fumée au sol."
+  },
+  {
+   "title": "Guirlandes lumineuses",
+   "path": "/guirlandes-lumineuses",
+   "pageTitle": "Guirlandes lumineuses",
+   "description": "Créez une ambiance chaleureuse et féérique grâce à nos guirlandes lumineuses."
+  },
+  {
+   "title": "Perf tech son & lumieres",
+   "path": "/performances-techniques-son-and-lumieres",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "Cédric Allard",
+   "path": "/cedric-allard",
+   "pageTitle": "Cédric Allard",
+   "description": "Découvrez le visage de Spice Events depuis ses débuts jusqu’à l'excellence événementielle."
+  },
+  {
+   "title": "Mur d'eau & végétal",
+   "path": "/mur-d-eau-and-vegetal",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "On recrute !",
+   "path": "/on-recrute",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "Sonorisation déportée",
+   "path": "/sonorisation-deportee",
+   "pageTitle": null,
+   "description": null
+  },
+  {
+   "title": "Sonorisation cérémonie laïque",
+   "path": "/sonorisation-ceremonie-laique",
+   "pageTitle": null,
+   "description": null
+  }
+ ],
+ "navigation": [
+  {
+   "name": "/accueil",
+   "uid": "a079a682-752d-49c9-969e-2bec51390f4f",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": true
+  },
+  {
+   "name": "/faq",
+   "uid": "69a48e05-bb72-46cb-ba52-e23ebcfbb567",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/contactez-nous",
+   "uid": "e95599b3-bb75-478e-94d1-29b7de6160f4",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/accompagnement",
+   "uid": "b37a1dc5-0ad3-4584-9202-e694867d786e",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/evenementiel",
+   "uid": "7ac1eb71-e115-4e94-baf6-cc4064e44627",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/blog",
+   "uid": "874be55a-9d89-47cd-8bd7-89700196e8b0",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/booking-dj",
+   "uid": "ea459cbb-c65f-4e25-a153-59694a326fe1",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/mariages",
+   "uid": "96428372-f769-42ca-8407-773ff3f020ed",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/galerie-photo-mariage",
+   "uid": "52f5e2ee-6836-4c43-a9fc-28f3124cef1a",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/galerie-photo-evenementiel",
+   "uid": "c46601bc-55a1-4f13-9875-8a86e005349e",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/temoignages",
+   "uid": "501ed4ca-7bd7-4edb-973a-17cbeb0c7b73",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/animations-tendances",
+   "uid": "e0df2890-41a0-4737-93e4-5422291951a1",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/bar-a-vinyles",
+   "uid": "1a4406b3-01dc-4eb2-8684-b9baccb3d64f",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/photobooth",
+   "uid": "98a0082d-40f9-464f-ba88-6e8814a33821",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/livre-d-or-audio",
+   "uid": "8739f74d-2103-4afc-ac82-6d9210ab1ccf",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/ouverture-de-bal-spectaculaire",
+   "uid": "7f1fe03d-847b-4891-8e9b-13adbaa6389d",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/guirlandes-lumineuses",
+   "uid": "e1755f4d-c5d0-48e7-9c5d-02d739edb6e8",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/performances-techniques-son-and-lumieres",
+   "uid": "088362a2-cf9a-40fc-8db6-e0b5e7668e34",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/cedric-allard",
+   "uid": "0e7ef331-d0be-4672-8fb6-b482bbb7f5d6",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/mur-d-eau-and-vegetal",
+   "uid": "c20b1b19-9e10-44ef-9aaa-fb02c3d47979",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/on-recrute",
+   "uid": "09282635-f796-4256-a365-ce43134466d7",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/sonorisation-deportee",
+   "uid": "e6cb2a65-2342-4039-a99c-2e894e0dfae0",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  },
+  {
+   "name": "/sonorisation-ceremonie-laique",
+   "uid": "0e36367a-516f-437e-9393-4799536a131b",
+   "memberOnly": false,
+   "hasPassword": false,
+   "isHomePage": false
+  }
+ ],
+ "menu": {
+  "type": "Menu",
+  "id": "f_2763a58b-35f0-4fd1-ab7e-ae360ab3b357",
+  "defaultValue": null,
+  "template_name": "navbar",
+  "logo": null,
+  "components": {
+   "image1": {
+    "type": "Image",
+    "id": "f_da8c8b9d-735b-4bb5-b930-123d93272ef3",
+    "defaultValue": false,
+    "link_url": "http://www.spiceevents.fr",
+    "thumb_url": "!",
+    "url": "!",
+    "caption": "Spice Events - DJ, Sonorisation et éclairage pour votre mariage !",
+    "description": "",
+    "storageKey": "780786/458740_371959",
+    "storage": "s",
+    "storagePrefix": null,
+    "format": "png",
+    "border_radius": null,
+    "aspect_ratio": null,
+    "h": 772,
+    "w": 1232,
+    "s": 159887,
+    "new_target": false,
+    "noCompression": null,
+    "cropMode": null,
+    "focus": null
+   },
+   "image2": {
+    "type": "Image",
+    "id": "f_084c69fd-41de-4025-9409-13358093dd69",
+    "defaultValue": false,
+    "link_url": "#1",
+    "thumb_url": "!",
+    "url": "!",
+    "caption": "Spice Events",
+    "description": "",
+    "storageKey": "780786/SPICElogo_hc60ud",
+    "storage": "c",
+    "storagePrefix": null,
+    "format": "png",
+    "h": 300,
+    "w": 226,
+    "s": 19155,
+    "new_target": false,
+    "noCompression": null,
+    "cropMode": null,
+    "focus": {}
+   },
+   "text1": {
+    "type": "RichText",
+    "id": "f_65f873cd-3835-448e-894d-300d81b8bf7b",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "",
+    "backupValue": null,
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "background1": {
+    "type": "Background",
+    "id": "f_49dcdc2a-7693-4a94-9eb5-df88f2dce266",
+    "defaultValue": false,
+    "url": "//uploads.strikinglycdn.com/static/backgrounds/things/121.jpg",
+    "textColor": "overlay",
+    "backgroundVariation": "",
+    "sizing": "cover",
+    "userClassName": "",
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": null,
+    "storage": null,
+    "format": null,
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": null,
+    "noCompression": null,
+    "focus": {},
+    "backgroundColor": {}
+   },
+   "text2": {
+    "type": "RichText",
+    "id": "f_75134161-2d5e-4e97-80d4-d81930b2b9ae",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "",
+    "backupValue": null,
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "button1": {
+    "type": "Button",
+    "id": "f_5dbc6400-8925-4960-8975-158444ca0635",
+    "defaultValue": false,
+    "alignment": "auto",
+    "text": "",
+    "link_type": "Web",
+    "page_id": null,
+    "section_id": null,
+    "size": "medium",
+    "mobile_size": "automatic",
+    "style": "",
+    "color": "",
+    "font": "Montserrat",
+    "url": "",
+    "new_target": false,
+    "backgroundSettings": {
+     "default": "#ffffff",
+     "preIndex": null,
+     "type": "custom",
+     "id": "f_12227ac1-7a96-4b1c-aea0-b803f467eaef"
+    },
+    "version": "2"
+   },
+   "image3": {
+    "type": "Image",
+    "id": "82ff1fc9-958f-4e39-a3bb-8e6f9bb1102d",
+    "defaultValue": false,
+    "link_url": "http://www.spiceevents.fr",
+    "thumb_url": "!",
+    "url": "!",
+    "caption": "Spice Events - Sonorisation et éclairage pour votre mariage !",
+    "description": "",
+    "storageKey": "780786/621554_603401",
+    "storage": "s",
+    "storagePrefix": null,
+    "format": "png",
+    "h": 188,
+    "w": 300,
+    "s": 43855,
+    "new_target": false,
+    "noCompression": null,
+    "cropMode": null,
+    "focus": {}
+   }
+  }
+ },
+ "footer": {
+  "type": "Footer",
+  "id": "f_3781a45b-42ec-4d64-9504-e898ce11bb0b",
+  "defaultValue": false,
+  "socialMedia": null,
+  "copyright": null,
+  "components": {
+   "background1": {
+    "type": "Background",
+    "id": "f_529cdeff-eab4-4f82-be54-552318546faf",
+    "defaultValue": false,
+    "url": "",
+    "textColor": "",
+    "backgroundVariation": "",
+    "sizing": "",
+    "userClassName": "",
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": "",
+    "videoHtml": "",
+    "storageKey": null,
+    "storage": null,
+    "format": null,
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": false,
+    "noCompression": null,
+    "focus": null,
+    "backgroundColor": {
+     "themeColorRangeIndex": null,
+     "value": "#FFFFFF",
+     "type": null
+    },
+    "useSameBg": false,
+    "backgroundApplySettings": {
+     "52f5e2ee-6836-4c43-a9fc-28f3124cef1a": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "b09338f8-29d2-4560-99d9-fb6a8b9df88e",
+      "storage": null,
+      "sizing": ""
+     },
+     "69a48e05-bb72-46cb-ba52-e23ebcfbb567": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "f6bca944-00f0-4c3d-a2b1-8346e64c4c4a",
+      "storage": null,
+      "sizing": ""
+     },
+     "e2af99d7-8df2-4ef1-9a4b-840c22f5035f": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "6ed0ed86-5d4f-427e-a0a9-f70ee961da2b",
+      "storage": null,
+      "sizing": ""
+     },
+     "7f1fe03d-847b-4891-8e9b-13adbaa6389d": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "f9cc5b44-78bf-4553-bef1-72fa26a22f46",
+      "storage": null,
+      "sizing": ""
+     },
+     "b37a1dc5-0ad3-4584-9202-e694867d786e": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "fa66c27f-2ddd-4636-9f77-6049d2f1ae7e",
+      "storage": null,
+      "sizing": ""
+     },
+     "c20b1b19-9e10-44ef-9aaa-fb02c3d47979": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "fca9c8fd-b889-4d14-bdf0-788e625f9d4c",
+      "storage": null,
+      "sizing": ""
+     },
+     "e1755f4d-c5d0-48e7-9c5d-02d739edb6e8": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "bba585b4-7125-4881-ae92-24ae9e00a668",
+      "storage": null,
+      "sizing": ""
+     },
+     "09282635-f796-4256-a365-ce43134466d7": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "304c637d-b985-4634-b057-ea376cedff97",
+      "storage": null,
+      "sizing": ""
+     },
+     "7ac1eb71-e115-4e94-baf6-cc4064e44627": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "1991e390-9b7b-4dc1-abdb-74d7faf64826",
+      "storage": null,
+      "sizing": ""
+     },
+     "8739f74d-2103-4afc-ac82-6d9210ab1ccf": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "0168d4df-6935-4fee-b6cc-e7ba1263661d",
+      "storage": null,
+      "sizing": ""
+     },
+     "e95599b3-bb75-478e-94d1-29b7de6160f4": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "c111dac0-d889-408a-8cca-76c8c779ebe2",
+      "storage": null,
+      "sizing": ""
+     },
+     "0e36367a-516f-437e-9393-4799536a131b": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "743b8340-4206-450b-a674-87700845a6a5",
+      "storage": null,
+      "sizing": ""
+     },
+     "98a0082d-40f9-464f-ba88-6e8814a33821": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "16ec3fdc-721e-485a-bd8d-c481ab015013",
+      "storage": null,
+      "sizing": ""
+     },
+     "e0df2890-41a0-4737-93e4-5422291951a1": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "736a9b8f-5ab9-419b-ac77-9d5e3584b5dc",
+      "storage": null,
+      "sizing": ""
+     },
+     "ea459cbb-c65f-4e25-a153-59694a326fe1": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "c6073dfb-5dec-42df-92e6-adc2fb044f39",
+      "storage": null,
+      "sizing": ""
+     },
+     "1a4406b3-01dc-4eb2-8684-b9baccb3d64f": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "28fd5d55-74f5-424b-9f02-62c6b9811ad7",
+      "storage": null,
+      "sizing": ""
+     },
+     "a079a682-752d-49c9-969e-2bec51390f4f": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "ca4efc3b-3148-4bc1-8041-d199bba3285a",
+      "storage": null,
+      "sizing": ""
+     },
+     "088362a2-cf9a-40fc-8db6-e0b5e7668e34": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "9be227bc-349c-45e9-b3cf-53e06e60f711",
+      "storage": null,
+      "sizing": ""
+     },
+     "0e7ef331-d0be-4672-8fb6-b482bbb7f5d6": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "a3538fba-5983-4930-a5ad-6318b7c129e0",
+      "storage": null,
+      "sizing": ""
+     },
+     "96428372-f769-42ca-8407-773ff3f020ed": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "e6b4b8d9-05ea-4fe6-b10e-0532ba4b2b2b",
+      "storage": null,
+      "sizing": ""
+     },
+     "874be55a-9d89-47cd-8bd7-89700196e8b0": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "b3edb0e7-475a-430a-903f-5943df9f1362",
+      "storage": null,
+      "sizing": ""
+     },
+     "501ed4ca-7bd7-4edb-973a-17cbeb0c7b73": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "98eb0b81-9aa4-4139-8f9e-68cc9d2fa1d8",
+      "storage": null,
+      "sizing": ""
+     },
+     "e6cb2a65-2342-4039-a99c-2e894e0dfae0": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "54c12216-d056-4b4a-99a0-140b5fd34a23",
+      "storage": null,
+      "sizing": ""
+     },
+     "c46601bc-55a1-4f13-9875-8a86e005349e": {
+      "storageKey": null,
+      "backgroundVariation": "",
+      "noCompression": null,
+      "videoHtml": "",
+      "h": null,
+      "linkTarget": null,
+      "url": "",
+      "defaultValue": false,
+      "s": null,
+      "useImage": false,
+      "videoUrl": "",
+      "backgroundColor": {
+       "themeColorRangeIndex": null,
+       "value": "#FFFFFF",
+       "type": null
+      },
+      "linkUrl": null,
+      "textColor": "",
+      "w": null,
+      "format": null,
+      "userClassName": "",
+      "focus": null,
+      "type": "Background",
+      "id": "d179d6f8-9295-4358-b63c-a187d2ead5ae",
+      "storage": null,
+      "sizing": ""
+     }
+    }
+   },
+   "text1": {
+    "type": "RichText",
+    "id": "f_68ee7ed6-e0ff-441e-82cb-1c9cee100681",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Qui sommes nous ?</p><p> </p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#1\" data-type=\"\" target=\"_self\">Accueil</a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#2\" data-type=\"\" target=\"_blank\">Pourquoi nous</a></span><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"http://spiceevents.strikingly.com/#4\" data-type=\"\" target=\"_blank\"> choisir ?</a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#6\" data-type=\"\" target=\"_self\">Nos prestations </a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#7\" data-type=\"\" target=\"_self\">Pourquoi nous ? </a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#8\" data-type=\"\" target=\"_self\">Nos </a></span><span style=\"color: #a67330;\">services</span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.spiceevents.fr/#9\" data-type=\"\" target=\"_self\">Quelques photos </a></span></p></div>",
+    "backupValue": null,
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "text2": {
+    "type": "RichText",
+    "id": "f_ebc7679f-8ff1-4507-a287-a9dbcf750ef9",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><strong>Nos Prestations</strong></p><p>&nbsp;</p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/mariage-exception-paris\"><span class=\"#(className)\" style=\"color:#a67330;\">W</span></a><a target=\"_self\" href=\"http://www.spiceevents.fr/mariage-exception-paris\"><span class=\"#(className)\" style=\"color:#a67330;\">edding</span></a></p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/private-party-formules\"><span class=\"#(className)\" style=\"color:#a67330;\">Private Party</span></a></p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/formule-soiree-corporate\"><span class=\"#(className)\" style=\"color:#a67330;\">Corporate</span></a></p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/nos-dj-d-exception\"><span class=\"#(className)\" style=\"color:#a67330;\">N</span></a><a target=\"_self\" href=\"http://www.spiceevents.fr/nos-dj-d-exception\"><span class=\"#(className)\" style=\"color:#a67330;\">os DJ d'exception</span></a></p><p><span class=\"#(className)\" style=\"color:#555555;\"><a target=\"_self\" href=\"http://www.spiceevents.fr/des-evenements-plus-green\"><span class=\"#(className)\" style=\"color:#a67330;\">Des événements plus green</span></a></span></p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/le-bar-a-vinyles\"><span class=\"#(className)\" style=\"color:#a67330;\">Le bar à vinyles </span></a></p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/le-photobooth\"><span class=\"#(className)\" style=\"color:#a67330;\">Le PhotoBooth</span></a></p><p>&nbsp;</p><p><a target=\"_self\" href=\"http://www.spiceevents.fr/materiel\"><span class=\"#(className)\" style=\"color:#140e06;\"><strong>Matériel</strong></span></a></p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "text3": {
+    "type": "RichText",
+    "id": "f_74ec2c46-d8af-4cb0-864f-e2998f189740",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\"><p class=\" #(className) s-rich-text-wrapper\"><span style=\"color: var(--s-pre-color10);\"><a style=\"color: var(--s-pre-color10);\" href=\"http://www.spiceevents.fr/contact\" data-type=\"\" target=\"_self\"><strong>Contactez-Nous</strong></a></span></p><p class=\" #(className) font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"tel:+33676403776\" data-type=\"\" target=\"_blank\">+336 76 40 37 76</a></span></p><p class=\" #(className) font-size-tag-paragraph s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"mailto:contact@spiceevents.fr\" data-type=\"\" target=\"_blank\">contact@spiceevents.fr</a></span></p><p> </p><p class=\" #(className)\"><span style=\"color: var(--s-pre-color10);\"><a style=\"color: var(--s-pre-color10);\" href=\"http://www.spiceevents.fr/amis-partenaires\" data-type=\"\" target=\"_self\"><strong>Nos amis</strong></a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"http://www.jour-j-photographie.com/\" data-type=\"\" target=\"_blank\">Jour-J Photographie</a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"http://www.martialmagie.com/\" data-type=\"\" target=\"_blank\">Martial Magie</a></span></p><p class=\" #(className)\"><span style=\"color: #a67330;\"><a style=\"color: #a67330;\" href=\"https://www.happy-chantilly.com/\" data-type=\"\" target=\"_blank\">Happy Chantilly</a></span></p></div>",
+    "backupValue": null,
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "text4": {
+    "type": "RichText",
+    "id": "f_55c8f1d3-d141-40c4-92da-94bdb3f5bc7a",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><strong>Inscrivez-vous à notre newsletter</strong></p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "copyright": {
+    "type": "RichText",
+    "id": "f_0a774165-26d3-491d-8bd7-246964e36fff",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: center; font-size: 12px;\"><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">  •  </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>Bar à vinyles</u></a></span><span style=\"color: #000000;\">  •  </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/livre-d-or-audio\" data-type=\"undefined\" target=\"_self\"><u>Livre d'Or Audio</u></a></span></p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: center; font-size: 12px;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.spiceevents.fr/blog\" data-type=\"undefined\" target=\"_self\"><u>Le Blog</u></a></span><span style=\"color: #000000;\">  •  </span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/faq\" data-type=\"\" target=\"_self\"><u>FAQ</u></a></span><span style=\"color: var(--s-pre-color12);\">  •  </span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/temoignages\" data-type=\"undefined\" target=\"_self\"><u>Témoignages</u></a></span><span style=\"color: var(--s-pre-color12);\"><u> </u></span><span style=\"color: var(--s-pre-color12);\"> •  </span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/cedric-allard\" data-type=\"undefined\" target=\"_self\"><u>Cédric Allard</u></a></span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/cedric-allard\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: var(--s-pre-color12);\"> •  </span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"http://www.spiceevents.fr/contactez-nous\" data-type=\"undefined\" target=\"_self\"><u>Contact</u></a></span><span style=\"color: #000000;\">  •  </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.mariages.net/shared/rate/127122\" data-type=\"undefined\" target=\"_blank\"><u>La</u></a></span><span style=\"color: #000000;\"><u>issez nous votre avis</u></span></p></div>",
+    "backupValue": null,
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": "center",
+     "lastLineTextAlign": "center"
+    },
+    "defaultDataProcessed": true
+   },
+   "email1": {
+    "type": "EmailForm",
+    "id": "f_9d6af5f8-ffe2-4e7c-8c27-685738a52cd7",
+    "defaultValue": null,
+    "hideMessageBox": false,
+    "hide_name": false,
+    "hide_email": false,
+    "hide_phone_number": true,
+    "name_label": "Name",
+    "name_format": "single",
+    "first_name_label": "First Name",
+    "last_name_label": "Last Name",
+    "email_label": "Email",
+    "phone_number_label": "Téléphone",
+    "message_label": "Message",
+    "submit_label": "S'abonner",
+    "thanksMessage": "Thanks for your submission!",
+    "recipient": "",
+    "label": null
+   },
+   "image1": {
+    "type": "Image",
+    "id": "f_3747bd49-7954-4138-8dca-108213beb3b4",
+    "defaultValue": true,
+    "link_url": "",
+    "thumb_url": "!",
+    "url": "!",
+    "caption": "",
+    "description": "",
+    "storageKey": "780786/178435_966632",
+    "storage": "s",
+    "storagePrefix": null,
+    "format": "png",
+    "h": 152,
+    "w": 130,
+    "s": 21407,
+    "new_target": false,
+    "noCompression": null,
+    "cropMode": null,
+    "focus": {}
+   },
+   "socialMedia": {
+    "type": "SocialMediaList",
+    "id": "f_143733a1-d4ef-4b3e-9aa9-a37a66a9b166",
+    "defaultValue": false,
+    "link_list": [
+     {
+      "type": "Facebook",
+      "id": "f_93638adc-e9fc-4da9-9568-985d922a9567",
+      "defaultValue": false,
+      "url": "www.facebook.com/spiceevents",
+      "link_url": null,
+      "share_text": null,
+      "className": "fab fa-facebook-f",
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "YouTube",
+      "id": "f_f02b8876-2704-4032-988f-9985108053bd",
+      "defaultValue": false,
+      "url": "youtube.com/mrspiceevents",
+      "link_url": null,
+      "share_text": null,
+      "className": "fab fa-youtube",
+      "show_button": true
+     },
+     {
+      "type": "Instagram",
+      "id": "178b8f70-b3da-11f0-bb0d-85b769f9255d",
+      "url": "https://www.instagram.com/_spiceevents?igsh=NzFjbDhvczB1aDFs",
+      "className": "fab fa-instagram",
+      "show_button": true
+     }
+    ],
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_46b0245b-2c73-4653-af16-f99f047cb191",
+      "defaultValue": null,
+      "url": "www.facebook.com/spiceevents",
+      "link_url": "",
+      "share_text": "",
+      "show_button": true,
+      "app_id": 543870062356274
+     },
+     {
+      "type": "Twitter",
+      "id": "f_92cffa7f-b4e5-49e3-99e7-addeb2d64540",
+      "defaultValue": false,
+      "url": "",
+      "link_url": "",
+      "share_text": "",
+      "show_button": false
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_34f3e365-4802-47ce-8eec-4be36cbd944f",
+      "defaultValue": null,
+      "url": "",
+      "link_url": "",
+      "share_text": "",
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_0b0cb01c-6bf7-4e94-b9ba-99076b0ccac1",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ],
+    "contact_list": [
+     {
+      "type": "SocialMediaPhone",
+      "id": "5023467e-56c1-11ee-83e2-e18c39635743",
+      "defaultValue": "+33 6 76 40 37 76",
+      "className": "fas fa-phone-alt"
+     },
+     {
+      "type": "SocialMediaEmail",
+      "id": "5023467f-56c1-11ee-83e2-e18c39635743",
+      "defaultValue": "cedric@spiceevents.fr",
+      "className": "fas fa-envelope"
+     }
+    ],
+    "list_type": "link"
+   }
+  },
+  "layout_variation": "vertical",
+  "padding": {}
+ },
+ "polices": {
+  "titleFont": "cardo",
+  "bodyFont": "cardo",
+  "headingFont": "cardo",
+  "buttonFont": "cardo",
+  "navItemFont": "cardo"
+ },
+ "theme": "fresh",
+ "mentions_conditions": "MX EVENEMENT / SPICE EVENTS – CONDITIONS GENERALES DE LOCATION\n\n1) Réservations\nToute commande implique l'adhésion sans réserve à nos conditions générales de location quelles que soient les clauses figurant au sein des bons de commande des clients.\nToute réservation doit faire l'objet d'un écrit, courrier ou fax, de la part du client au moins 24h à l'avance et n'est acceptable que dans la limite des stocks disponibles.\nLe matériel faisant l’objet d’une réservation acceptée demeure disponible 12h maximum après l’heure de départ prévue.\nDans le cadre d'une annulation de réservation, tous les acomptes déjà versés restent acquis à MX EVENEMENT à titre de dédommagement forfaitaire.\nLe client devra signaler lors de sa réservation si le matériel doit sortir du territoire national.\n\n2) Propriété\nLe matériel est la propriété de MX EVENEMENT, à ce titre il est insaisissable par les tiers et le locataire n'a pas le droit de le céder ou de le sous- louer. Il ne doit apporter aucune modification superficielle ou substantielle au matériel.\n\n3) Durée de location\nLe bon de livraison obligatoirement délivré à chaque sortie de matériel indique la date du retrait ainsi que la date présumée du retour. Seul le retour physique du matériel en nos locaux détermine la durée de location, décomptée en journée de 24h, dimanche et jours fériés compris, sans tenir compte de l'utilisation ou non du matériel.\n\n4) Retrait du matériel\nLe client réceptionne le matériel loué en nos locaux du lundi au vendredi de 9h à 18h.\nLe retrait du matériel s'effectue en échange d'un dépôt de garantie du montant de la valeur du matériel accompagné de la totalité du règlement de location.\nLe client est convié à assister à l’essai du matériel mis en œuvre systématiquement avant chaque départ. Après essai concluant le matériel est considéré en parfait état de fonctionnement même si le client n’a pas assisté au test.\n\n5) Restitution du matériel\nLe client est tenu de restituer le matériel loué à la date figurant sur le contrat de location.\nToute prolongation de location devra être signalée 24h avant le retour prévu initialement. Elle ne pourra avoir lieu qu'après l'accord de MX EVENEMENT et devra dans tous les cas être confirmée par un nouveau bon de commande.\nEn cas de prolongation, les principes de facturation appliqués à la commande ne seront pas forcément maintenus.\nToute restitution non justifiée après la date prévue entraînera la responsabilité du client pour les préjudices subis par la société MX EVENEMENT et sa clientèle.\nTout matériel manquant ou détérioré sera facturé sur la base du tarif Constructeur en vigueur valeur neuve.\nLes lampes restituées hors service seront facturées à 70% de leur valeur neuve.\n\n6) Tarifs\nLes prix facturés sont ceux du tarif en vigueur au jour de la livraison, MX EVENEMENT se réservant le droit de modifier ses tarifs à tout moment sans préavis. Le taux de T.V.A. appliqué est de 20,00% sur l'ensemble des services offerts.\n\n7) Conditions de règlement\nUn acompte de 40% sera versé à la commande et le solde le jour de la livraison. En cas d'annulation de la commande, 40% du montant total de la prestation reste dû. En cas d'annulation à moins de 72h du début de l'installation, le client est redevable de la totalité du montant de la prestation.\nConformément à l'article 3 de la loi n°92-1442 du décembre 1992, les prorogations d'échéances entraîneront automatiquement la perception d'agios au taux de 1,5 fois le taux d'intérêt légal.\nLe non-respect par le locataire de l'une quelconque de ces obligations aura pour conséquence :\n- L'exigibilité immédiate de toute somme restant due, sans prendre en compte le mode et le terme de paiement initialement prévu.\n- Le paiement, à titre de clause pénale, en sus d'indemnité, pour frais de recouvrement de 15% sur le montant des sommes exigibles sous réserve de tous autres dûs.\n- L'autorisation pour MX EVENEMENT de surseoir à de nouvelles livraisons.\n\n8) Responsabilités\nLe locataire en qualité de dépositaire assume l'entière responsabilité du matériel dès sa prise en charge en nos locaux et jusqu'à sa restitution. Il est seul responsable de tout dégât causé au matériel ou du fait du matériel.\nLe locataire doit se préoccuper d'avoir les autorisations nécessaires pour l'utilisation des émetteurs H.F. audio et vidéo, talkie-walkie, radio, téléphone, etc.\nL'indemnisation du matériel sinistré s'effectue sur la valeur de remplacement à neuf au jour du sinistre, sans application de dépréciation ni remise commerciale suivant le prix de vente public ou sur la base des frais de remise en état au coût du jour.\nLe locataire doit utiliser le matériel conformément à sa destination.\nLa responsabilité de MX EVENEMENT ne saura être engagée suite au non fonctionnement ou mauvais fonctionnement des appareils loués liés à l'adjonction de matériels non compatibles, ou à une mauvaise installation.\n\n9) Assurances\nLe locataire doit assurer le matériel pour sa valeur de remplacement à neuf.\nL'assurance doit notamment couvrir les risques de vol, perte ou détérioration quelle qu'en soit la cause ou la nature.\nLe locataire fait son affaire de tous risques de mise en jeu de sa responsabilité civile, à raison de tout dommage causé par le matériel ou à raison de toute utilisation pendant qu'il est sous sa garde.\n\n10) Litige\nEn cas de litige, le tribunal de commerce de MEAUX (77) sera seul compétent.\nPièces à fournir avant toute location\nAssociations et Particuliers :\nChèque de règlement et chèque de caution - Carte d'identité du titulaire du compte chèque - Statuts de l'association - Bon de commande. Sociétés :\nChèque de règlement et chèque de caution - K bis et RIB de la société."
+}

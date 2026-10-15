@@ -1,0 +1,428 @@
+{
+ "blogPostMeta": {
+  "id": 2151080,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T02:30:16.729-07:00",
+  "publishedAt": "2019-08-13T02:30:16.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/mariage-l-m-pres-de-massiac",
+  "customSlug": null,
+  "editCount": 159,
+  "publishedEditCount": 153,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Mariages"
+  ],
+  "categories": [
+   {
+    "id": 365909,
+    "name": "Mariages"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/mariage-l-m-pres-de-massiac",
+   "title": "Mariage L&M près de Massiac",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/514538_165025.jpeg",
+   "description": "Encore un mariage qui se déroule comme sur des roulettes ! C'est près de Massiac que s'est déroulé un mariage 100% champêtre aux allures de paradis.  Après un cocktail dans la cour de leur maison de campagne familiale, les mariés ont profité d'un repas sous une tente éclairée grâce à des...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Mariage C&N au Château de Sauveboeuf",
+  "nextBlogPostRelativeUrl": "/blog/mariage-c-n-au-chateau-de-sauveboeuf",
+  "nextBlogPostId": 500217,
+  "prevBlogPostTitle": "Soirée blanche à Lagny Sur Marne",
+  "prevBlogPostRelativeUrl": "/blog/soiree-blanche-a-lagny-sur-marne",
+  "prevBlogPostId": 2151195
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_dec24624-84f3-414c-9796-41bc12a8c53b",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_142bbe48-f6ee-4f8e-8515-4501674ac025",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_f7b4a634-115e-442a-8afa-2cdec004e96e",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Mariage L&amp;M près de Massiac</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_c8d11f7c-8e8f-41a1-a531-3c7995dc98d1",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Un mariage sur le thème champêtre</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_1055800f-c1bf-427b-af61-a07b50cd5c1e",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/514538_165025",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3024,
+    "w": 4032,
+    "s": 1258887,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_9e008a6b-1e74-4691-ae6f-f5f13e756d92",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_4b6b9560-cfb2-445c-9d9a-16467938ff56",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_77d83326-c87f-473c-ac77-1c543b2b852c",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_48d07780-87d4-4094-b6f8-4e5dbebe9219",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_612061ef-dfe9-4721-935e-309de717a7f5",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_e2773f0b-bcba-4356-acd4-902987b796f6",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_a5940ae7-7ce3-47f3-b27b-e7da680a0bb7",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_6121e4ab-eb40-44dc-be6e-ba798e8c9f21",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_80d29598-5549-4dc9-9804-749a054cd145",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/108239_762431",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 1258887,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_f451d951-72f8-4fb8-ae27-0e70d5c68962",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_42f223af-8235-4aee-93db-460ea2a39772",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/587714_572345",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 831279,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_64a2001b-a13a-4931-9038-d6300314ae8a",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_960150f4-0fde-477b-a3fd-6ae40d015258",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/381817_589034",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 255977,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_0b0e24ea-45c7-437e-9312-e4327a07d5a1",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_c14568f1-7d76-4365-ba53-feb549c5e127",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/333270_19355",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1600,
+     "w": 1200,
+     "s": 340918,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_35b82dd2-0455-4599-a63a-3716225787e5",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_e9ba8ffb-f9d9-4a25-8b60-fa8b4e11938f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/909181_254711",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 777138,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_8d6c48dd-e0b7-412c-900b-e90a917ba8ec",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_4ee91d04-ddc6-4739-b501-8ea59bb49621",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/260734_274744",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 1200,
+     "w": 900,
+     "s": 1374405,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_1561603b-2f4d-4a2c-a823-29357b1f612d",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_2ecb213f-2a69-41eb-aa3a-1cf54fc7e178",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/428670_390090",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 276547,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6ce0f6d9-854f-48b8-8b22-ebb701eec352",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3f6f2ae1-b04b-4db0-9dc9-b61d80dccd26",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Encore un mariage qui se déroule comme sur des roulettes ! C'est près de Massiac que s'est déroulé un mariage 100% champêtre aux allures de paradis. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_bc789325-dba6-4e2a-b50c-7c601de7a39e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "30dba171-faa2-4a21-ac71-cddb537ff8d3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Après un cocktail dans la cour de leur maison de campagne familiale, les mariés ont profité d'un repas sous une tente éclairée grâce à des guirlandes lumineuse. Ces guirlandes décoratives confère une atmosphère chaleureuse et romantiques. Nous avons sonorisé le repas avec une paire d'enceinte LD Systems MAUI5GO et des micros sans fils Shure. Grâce à son design sorti tout droit d'un film futuriste, ces enceintes sont passées inaperçues dans le décor. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_bc789325-dba6-4e2a-b50c-7c601de7a39e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "52a4f551-58f7-431a-848e-eb4337310898",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous en avons profités pour mettre en valeur la cour de la maison avec un ensemble de 12 projecteurs LED sur batterie WellFit de la marque CHAUVET afin de créer une ambiance intimiste. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_bc789325-dba6-4e2a-b50c-7c601de7a39e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "11d2d588-ff8b-460b-af71-d63a87c36381",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La partie dansante se déroulait dans la grange aménagée pour l'occasion. Nous avons sonorisé cet espace avec un système son L-ACOUSTICS SB18 et X12. Les éclairages de la piste de danse étaient des projecteurs ROBE Pointe et des par LED Contest. De quoi mettre en lumière chaque danseur ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6d65c833-5403-4edb-8354-d4b36bb87fc1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "382caf1e-d71b-4f20-84c9-e45d8f9faebe",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Encore une soirée inoubliable pour des mariés au top !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "50d34ef6-4838-4259-9200-d4be4aed61b9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fb91e816-27f1-44cd-8442-5fd13e4c3b25",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

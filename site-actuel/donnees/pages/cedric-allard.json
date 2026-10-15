@@ -1,0 +1,1864 @@
+{
+ "type": "Page",
+ "id": "f_83036843-3164-4cec-8232-1d6189b6ebda",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_4de6da52-429b-42c9-a377-424b58c44e1b",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_55aea118-0d09-47bc-8908-19a86dade58d",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_b495bc48-7303-4a6f-a8fb-1c51d87e2662",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_995e7b6b-fab7-469c-8344-35cfe346c1c4",
+       "defaultValue": null,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_25912b45-b9fa-4d5a-a22a-ed4618daf189",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Cédric Allard </p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_6d04a194-b658-4bc2-8f7d-b9cd8b9dc1e2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-40\" style=\"font-size: 50px;\"><span class=\"s-text-color-default\"><em>Une passion devenue une marque de référence</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_d82654b1-52e6-43b7-b6c8-08e291f157e3",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/990981_578108",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2560,
+         "w": 3840,
+         "s": 2205350,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_5c7b4bd9-fecd-48fb-b91b-e41029a859eb",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_0b67ae24-7fe8-4708-9c89-f6cb62532023",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_b18798ce-f21f-4321-8bbf-e3f3dd16e5c8",
+          "defaultValue": false,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_71674271-919f-477d-b559-c4ed578ebb1c",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_af870041-3491-45a5-a186-7d442aaa80f9",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_381f81c2-cde6-4c34-a63c-0cd1341b7225",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_5ab724dd-8bc1-4590-a7d4-58d4a4ccf143",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_60500253-a70d-402f-9fab-2ccdd1e418ae",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_99938ad5-8a4e-40bb-becd-2aca724c2de2",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_a6706192-0be4-482f-bdb0-140c84a56287",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_4b9dc92d-3f4e-4633-ae02-46050a73f065",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_c7bb9a16-5d87-4f77-864a-ac24bd49a498",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_c3c45d59-6c2e-4bc3-83e4-b56c81312cd5",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte intro",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_84310f6e-6b4c-42ed-a09c-dca85b246672",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_04ce8e19-8523-4556-8634-b36d6cdd7aa4",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_10675aab-64c3-40f4-899c-45aa4327683b",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_c716c72d-bb15-4e05-a118-6c3f2f48edf6",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_b2910164-10f0-4692-8f00-5ac0deffb2fb",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_197ca31d-4238-4198-993a-eb64f7df8265",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_5fda6b81-428f-4d2c-abd2-6ac89a63bb93",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_5f56b45d-86f3-48e1-806b-c039125a6cfc",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Cédric Allard, fondateur de Spice Events et associé de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.mxevenement.com/\" data-type=\"\" target=\"_blank\">MX Événement</a></span><span style=\"color: #000000;\">, partage son parcours, ses défis et sa vision de l’entrepreneuriat événementiel. De ses débuts en étudiant en cinéma à la création d’expériences musicales uniques pour les mariages et les événements, découvrez l’histoire d’un entrepreneur passionné et authentique.</span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_152d1447-9c39-41fd-a2ba-1deb60e0441a",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_1e680e46-e350-4773-9445-7a6c95712ad6",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_91e6ae51-48f9-4c53-831c-84b8bd29fbef",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_2cf40967-d092-4693-91d8-d22787e7a750",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte 1",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto",
+      "vertical_alignment": "top"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_96436398-1820-4f8d-8e30-3ab28942ff76",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_0c43eea4-55fc-4160-ba68-4e5c222eb21b",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "08b995a7-ce7c-4d47-b47c-17b119a2dbae",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "0f5ae768-e028-4552-9540-5867dab051c8",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "1989c825-9c67-4090-b392-dd74b702feaa",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "7bb42e99-a4cf-4dff-a3f7-c7e7d8c88cc0",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "6f1afc17-5906-4774-9bb2-3b0e76492e10",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_c92f8fc5-85f3-4224-aa7b-d427cda7bc77",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\">Cédric a créé Spice Events très tôt dans son parcours, afin de disposer d’une structure officielle pour facturer ses premiers clients. À l’époque, il était encore étudiant en cinéma, option son, et possédait déjà une solide expérience dans l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"\" target=\"_blank\">animation de soirées</a></span><span style=\"color: #000000;\">. Rapidement, il a souhaité professionnaliser ses prestations et offrir un service de qualité, particulièrement adapté aux </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"\" target=\"_blank\">mariages</a></span><span style=\"color: #000000;\"> et aux </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"\" target=\"_blank\">événements</a></span><span style=\"color: #000000;\">. C’est ainsi qu’est né Spice Events, avec pour objectif de proposer une expérience unique, alliant </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"\" target=\"_blank\">technique</a></span><span style=\"color: #000000;\">, ambiance et émotion.</span><br></p><p class=\" s1 p1 p2 font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 18px; text-align: justify;\"><span style=\"color: #000000;\">Depuis le début, Cédric a souhaité être son propre patron afin de construire son propre environnement professionnel, définir ses méthodes et développer son activité selon sa vision. L’idée d’entreprendre était pour lui une évidence : il voulait être maître de ses choix, de son </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"\" target=\"_blank\">organisation</a></span><span style=\"color: #000000;\"> et de l’évolution de son entreprise.</span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_4d05093a-86e8-425b-aefd-ac0c4157cb6a",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_633c1b61-3399-4c6e-bc11-a32d26cb9a0e",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Citation 1",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8e7bda6c-bf5f-4e5e-a53f-1229e9c54084",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "noCompression": null,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#1C1C1C",
+      "type": null
+     }
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_2d0177b8-dc8d-4a2e-b92e-9bc2b1835e36",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_3f4a2ea9-1111-44b3-b346-3e2f950c145f",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_cae6d816-134e-4385-b4a3-99ed2f115a8f",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_c169252c-6c28-490f-aba0-2b7560ed97cf",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_2b6e4f0d-0534-4dc4-a3b3-78cfc9c12708",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_b2e47abf-a09c-4978-ad8f-e0e639a766e7",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_bcedabc3-5864-406f-b57b-f462e04c4e2c",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 22px;\"><em>« J’ai toujours voulu être mon propre patron, construire mon travail et décider moi-même de la manière dont je développe mon entreprise. »</em></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_b27dbfe3-a2ec-4ef2-8991-7a4c05080d4b",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_d2913de0-67a7-4033-983f-8596d4ff2411",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte  2",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_19fac7e4-0c1f-436b-9f9d-129af263beea",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_688c5bf3-9731-4585-b11c-fd4c5b3d2729",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_8b79b3c8-fb43-4288-8080-fa3b92d21eec",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_eaf42a19-8cd6-4f79-b2fb-d1f3a3b5cbbd",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_7ec7fd72-dafe-4b50-a66a-28463d1045da",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_8bd4b18b-7a7c-4c87-917d-9bc2a8b02693",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_b603ea9d-aed8-47fd-a76d-6a305a2c98b7",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_3954fca1-3fed-4928-bf2e-6af8c9a96605",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s1 p1 font-size-tag-custom s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: 18px;\">Les débuts n’ont pas été simples. La première difficulté fut de trouver un équilibre entre investissement dans le matériel et la communication, et rémunération personnelle. Il a longtemps préféré investir dans la qualité de ses prestations et dans le développement de l’entreprise, ce qui a nécessité patience et discipline. La solitude de l’entrepreneur constituait également un défi : toutes les décisions, même les plus petites, étaient à sa charge, et leurs conséquences pouvaient se faire sentir sur le long terme. Les retours et conseils d’autres professionnels, ainsi que des rencontres déterminantes, comme celle de Maxime Gaudefroy, son associé chez <a href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_self\">MX ÉVÉNEMENT</a>, ont permis à Cédric de surmonter ces difficultés et d’orienter son entreprise vers un développement plus structuré et ambitieux.</p><p class=\" s1 p1 font-size-tag-custom s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s1 p1 font-size-tag-custom s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: 18px;\"><span style=\"color: #000000;\">Le choix du nom “Spice” est le reflet de cette ambition : proposer des expériences uniques, dynamiser et pimenter les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événements</a></span><span style=\"color: #000000;\">, et garder une certaine polyvalence. À l’origine, Cédric envisageait diverses activités, allant de la création musicale aux </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événements</a></span><span style=\"color: #000000;\"> en tout genre, avec des déclinaisons comme Spice Records, Spice Weddings ou Spice the Night. Spice Events est finalement devenu la référence pour les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariages</a></span><span style=\"color: #000000;\"> et les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événements</a></span><span style=\"color: #000000;\">, symbolisant qualité, fiabilité et créativité.</span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_e7cc3cb7-fdd6-4573-a714-586576ad0791",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_4bda537b-f5f9-449b-9507-7eea5e007afb",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Citation 2",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_ac404ac4-00c8-405c-8240-08207e61141e",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "noCompression": null,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#1C1C1C",
+      "type": null
+     }
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_5d79066c-fa9a-4ac9-b229-3c966bb9edfb",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_2c2b6de9-5709-4211-acb4-c032a07a45c3",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_9085b37c-f2ae-440d-a3c6-ce81b014505b",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_05d225b2-737e-4044-9a04-9b0b62b435da",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_51da4b8d-4db1-4cea-b122-944954d2f9df",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_ebb28929-0201-48d9-8022-c669dde34c09",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_d239eeaa-a2c8-480b-8917-4e4e3a1d6972",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 22px;\"><span style=\"color: var(--s-pre-color10);\"><em>\"Toutes les décisions sont à ma charge et leurs conséquences se font sentir sur le long terme. Mais chaque obstacle est une leçon pour mieux structurer mon entreprise.\"</em></span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_2e2b44d0-9500-4c29-b098-d32f0386ae57",
+   "defaultValue": true,
+   "template_name": "media2",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_992a4d80-49b6-4e65-b773-7959deb2221d",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Grande Image/Vidéo",
+     "sync_key": null,
+     "layout_variation": "media-top-text",
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "half"
+     },
+     "layout_config": {
+      "isNewMedia": true,
+      "isNewMobileLayout": true
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_eb78db7b-88dc-40cf-8a1b-0a37cc95c005",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_88694783-1993-4f2b-8e04-552cf6d25956",
+     "defaultValue": false,
+     "value": "How to Build a Website <br> Like a Professional",
+     "backupValue": null,
+     "version": 1
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_b9fde7ae-d652-4068-a7c1-6b8ba4c4a3a5",
+     "defaultValue": false,
+     "value": "Become a member to get unlimited access and support the voices you want to hear more from.",
+     "backupValue": null,
+     "version": 1
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_797e4d1d-ed31-4aaf-b666-6bdb24042b74",
+     "defaultValue": true,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_f0915d7c-4447-4552-9c00-8d5572e22c9d",
+       "defaultValue": true,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_45c7e2f8-1c24-4e87-b608-83b07bfffd7b",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_c615d441-f9e6-44ff-abed-4a6adaacc9d3",
+          "defaultValue": true,
+          "html": "",
+          "url": "https://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_acb7fceb-b4f8-4149-92bd-9793396adf02",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "Cédric Allard en pleine session mix",
+          "description": "",
+          "storageKey": "22139555/260493_463121",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "jpg",
+          "h": 2358,
+          "w": 3543,
+          "s": 6647780,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_70f4696c-238b-45a8-b371-8b546dbcffe7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_f1538a70-9f8e-44f2-8ef8-49eb837a4a20",
+         "defaultValue": true,
+         "value": "",
+         "backupValue": null,
+         "version": null
+        },
+        "text3": {
+         "type": "RichText",
+         "id": "f_b232560f-f7be-44c3-a8aa-1475c87556c2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_a2d65b3f-f276-4223-8b8f-5cb7ed9b76c8",
+         "defaultValue": true,
+         "alignment": "center",
+         "text": "",
+         "size": "medium",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_f78235d4-d3df-417e-a531-9349a8039b4d",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_3e63e190-2aa5-4990-9c7e-6f6aa5003a68",
+        "defaultValue": true,
+        "html": "",
+        "url": "https://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_b1434c80-19e7-43f5-8aa9-60fbdfcee679",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_2bb57d0d-e0fa-4139-a4cf-470686095225",
+       "defaultValue": true,
+       "value": "Some caption here",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_d9cf2ff4-324d-4cc2-b9e6-7d57a9976c68",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "text3": {
+       "type": "RichText",
+       "id": "f_5097a1e1-906d-465b-ab09-3b0ca36404c5",
+       "defaultValue": true,
+       "value": "A sentence or two describing this item.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_8fd9956c-03fa-4ce5-8257-bbfb153e89bd",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_f36304bd-b143-4b32-ab5a-9485b3e00e5f",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_eb764af9-7b29-4f12-aa2a-66c638085ad5",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte  3",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_dc558f07-1da7-424b-8216-efcb705517cb",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_9c127b76-b5bd-4799-8c30-5053cc6130d4",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_8fa63d04-be00-48c4-bc55-041597fcb26e",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_552475ca-78da-40b1-bd06-fd0bf885f299",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_cf790f68-f4ac-4436-bcd3-c14f021d390c",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_f39b8ffe-560a-420c-a64e-1f95373aa219",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_76ebbd73-971f-4517-9052-3fe7840bd3c5",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_b4daf986-2b25-4a26-8fd5-2bd4496a4a65",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s1 p1 s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Au fil des années, sa vision de l’entrepreneuriat a évolué. Il a appris à déléguer certaines responsabilités, à s’entourer d’une équipe compétente et à structurer son activité tout en conservant la liberté de créer et d’innover. Au sein de <a href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_self\">MX Événement</a>, ses associés et lui ont défini des rôles précis : Tristan supervise l’administration et la comptabilité, Maxime est responsable de la logistique et de la production, Marc assure le suivi technique et la maintenance du matériel, et Cédric gère la communication et le commerce. Les décisions sont prises de manière collaborative, mais chaque associé a la responsabilité finale sur son domaine, garantissant efficacité et cohérence dans la gestion de l’entreprise.</p><p class=\" p2 font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" p1 font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Cédric a choisi de recentrer Spice Events sur <a href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">l’accompagnement</a> humain et personnalisé. Aujourd’hui, il gère l’activité avec une alternante et consacre son temps aux <a href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariages</a> et aux <a href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événements</a> qu’il sélectionne avec soin, afin de garantir un suivi à 100 %. Son approche repose sur l’écoute, l’adaptabilité et la fiabilité : il anticipe les besoins, <a href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">conseille</a> sur les choix musicaux, la coordination avec les prestataires et la mise en scène, pour que chaque <a href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariage</a> et <a href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événement</a> se déroule de manière fluide et mémorable. Pour lui, la réussite d’un <a href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariage</a> ou d'un <a href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événement</a> c’est de comprendre les envies de chacun et de traduire leur vision en réalité. Cette philosophie guide toutes les décisions chez Spice Events, du choix du matériel aux <a href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\">animations</a>, en passant par la <a href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\">mise en lumière</a> et l’<a href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\">organisation générale</a> de la journée ou de la soirée.</p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_f032aed3-48a9-4527-97bd-ef2d5d5bd662",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_de99135f-d87f-49a6-b1f2-4a29c6ea8f1b",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Citation 3",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_10fad740-706b-4f6a-a882-368a4c4a0698",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "noCompression": null,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#1C1C1C",
+      "type": null
+     }
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_194c8748-29d7-4d15-9e1c-f64bdeacd48c",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_3f421018-ed86-4aee-a729-0a2dbb446544",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_98aab6ce-4e19-40e3-9afb-5eb161cb2298",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_37674956-63b5-421f-8c7e-90cbef7869c3",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_d4b2169c-4b0f-41ae-8e49-fe3d7cd80f8c",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_b62836e0-43df-47eb-bc89-c9c153b92344",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_e53fa06a-68cf-4623-b058-c08d568aeefd",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 22px;\">« La réussite, ce n’est pas juste avoir du matériel ou une bonne technique, c’est savoir écouter, anticiper et accompagner chaque mariage ou événement de A à Z. »</p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_1d9a798e-20e4-4c4e-90ed-40f8fdb2a7bf",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_9c1bf53d-575c-4ade-9beb-8145f5dbe5ee",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte  4",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "wide",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_5d46e842-706e-4e7f-abfe-2856329642d4",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_44761782-1dce-4399-973e-cabda129a8b4",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_b08c4a66-1fd4-48fc-a9bc-f9365684b4d8",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_da8a2dea-19c3-495e-b28b-3ba493fa4709",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_b3e87601-e664-438f-9678-43ebfd726bd3",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_d337a9ad-68f6-45ed-b5b3-d71aae10ebe1",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_b08c785f-7262-4ff0-8699-f86b2ed6b04a",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_adcd4c98-9a9e-4227-9699-f77448040da0",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s1 p1 s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Dans les années à venir, Cédric souhaite que Spice Events continue à offrir un service haut de gamme, fiable et humain, où chaque détail est anticipé et chaque prestation personnalisée. Il envisage également de déléguer davantage la partie communication et commerciale pour se concentrer sur la prestation elle-même et sur l’expérience client, tout en maintenant le niveau de qualité et de satisfaction qui caractérise l’entreprise.</p><p class=\" s1 p1 s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s1 p1 font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Avec le recul, Cédric reconnaît certaines erreurs du passé : il aurait limité les périodes de surcharge et investi plus judicieusement dans le matériel et la logistique. Il insiste sur l’importance de savoir dire non, de rester rigoureux, curieux et prêt à apprendre en permanence. Selon lui, ces qualités — persévérance, soif d’apprendre et sens de l’engagement — sont indispensables pour réussir dans l’<a href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événementiel</a>, un secteur exigeant où chaque détail compte et où l’expérience et l’adaptabilité font la différence.</p><p class=\" s1 p2 font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" p1 font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Pour Cédric, Spice Events n’est pas seulement une entreprise : c’est la concrétisation de son expertise, de sa passion pour l’<a href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\">animation</a> et de son engagement à créer des expériences mémorables pour chaque <a href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\">mariage</a> ou <a href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\">événement</a>. <span style=\"color: var(--s-pre-color12);\">Chaque projet est une opportunité de créer une expérience mémorable, fluide et parfaitement orchestrée pour nos clients. </span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_af7c885d-726d-4b1d-9b3c-f8ec14499c3e",
+   "defaultValue": true,
+   "template_name": "media2",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_fe81d15d-f090-43c9-a017-1a611f9ea7be",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Grande Image/Vidéo",
+     "sync_key": null,
+     "layout_variation": "media-top-text",
+     "display_settings": {},
+     "layout_config": {
+      "isNewMedia": true,
+      "isNewMobileLayout": true
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_0bb49963-e1bc-4510-8010-76c71eec97cc",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_aeea2534-c50a-418d-92c6-9cf92ee6f90d",
+     "defaultValue": false,
+     "value": "How to Build a Website <br> Like a Professional",
+     "backupValue": null,
+     "version": 1
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_1dfbf177-2e48-4ec6-886c-4269320c058f",
+     "defaultValue": false,
+     "value": "Become a member to get unlimited access and support the voices you want to hear more from.",
+     "backupValue": null,
+     "version": 1
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_6fefd7ff-af45-4b85-bbb6-2d289f30731f",
+     "defaultValue": true,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_e9a6e146-7658-4c87-bff4-6bfd8761a740",
+       "defaultValue": true,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_e3f5a993-0d36-4808-82f5-67ca22c3882f",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_793bd5ce-0af1-422c-9738-71813d878414",
+          "defaultValue": true,
+          "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FzchNbRcZ_gI%3Fwmode%3Dtransparent%26feature%3Doembed&wmode=transparent&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzchNbRcZ_gI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzchNbRcZ_gI%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"360\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+          "url": "https://youtu.be/zchNbRcZ_gI?si=3Ut_fhBgi3yqgPmi",
+          "thumbnail_url": "https://i.ytimg.com/vi/zchNbRcZ_gI/hqdefault.jpg",
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_c601af72-c069-4f88-9087-44813013e873",
+          "defaultValue": true,
+          "link_url": "https://youtu.be/zchNbRcZ_gI?si=3Ut_fhBgi3yqgPmi",
+          "thumb_url": "!",
+          "url": "!",
+          "caption": "",
+          "description": "",
+          "storageKey": "1339460/764630_591531",
+          "storage": "s",
+          "storagePrefix": null,
+          "format": "png",
+          "h": 500,
+          "w": 1000,
+          "s": 303775,
+          "new_target": false,
+          "focus": null
+         },
+         "current": "video"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_8ad58d44-5357-4156-8929-9823a608a156",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Un mix pensé spécialement pour votre événement</h1></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_0dff89a3-8660-47c0-bc89-9410999ed704",
+         "defaultValue": true,
+         "value": "",
+         "backupValue": null,
+         "version": null
+        },
+        "text3": {
+         "type": "RichText",
+         "id": "f_9f2f93b4-b753-4fda-81cb-6ee1fdbd2e3d",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">Un mix intergénérationnel pensé pour faire vibrer toutes les générations.</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_22ac5e2b-9b8c-4ca8-bb7c-d1311ade3daa",
+         "defaultValue": true,
+         "alignment": "auto",
+         "text": "",
+         "size": "medium",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_a59f4db8-af64-4577-82d1-484ec357e4a9",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_4366c661-5711-43ff-9387-212e80ce15dc",
+        "defaultValue": true,
+        "html": "",
+        "url": "https://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_0aa38a68-cdc6-41a6-8e5a-dac6121e0d34",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_dc934cd9-1fb0-4e4e-8a76-78e9922f5d88",
+       "defaultValue": true,
+       "value": "Some caption here",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_2b4849d1-bad3-4e1d-bfc6-254ee7afae32",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "text3": {
+       "type": "RichText",
+       "id": "f_0b607751-068c-4a4a-98d2-0d53211ae0cd",
+       "defaultValue": true,
+       "value": "A sentence or two describing this item.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_9bfd3b57-6af1-410f-a363-7ca08df85280",
+       "defaultValue": true,
+       "alignment": "auto",
+       "text": "",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_bed19ceb-8f85-4642-a75a-f387e4b64aa4",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_4dc783de-c960-4d20-9d56-c412d5ee41e7",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_0c6f5b80-d24c-4ae2-9c2d-6df838fc7c16",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Une question sur votre événement ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_fb115fec-d26b-41cd-b27a-1e7efde8bffc",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-text-color-default\">Contactez Cédric sans plus attendre</span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_9d41698c-150b-4d1f-8d33-414bdf249c5f",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/93348_188358",
+     "storage": "s",
+     "format": "jpg",
+     "h": 2358,
+     "w": 3543,
+     "s": 7360804,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_cb0f729d-be07-44b0-b42b-ca293fe92ebf",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire personnalisé",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1763636500148#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_273d296c-51ed-4ec4-98ea-fc09f87d4f02"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_decec10f-0f2c-41af-8e62-5f475daab39f"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_6ccb59f2-73a6-478b-a665-d09733cb43b6",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_4ac1f24a-2284-4984-a0f9-81274fbae847"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_73368b3b-0578-4faf-a87b-8bf38877db62"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_90691dbb-070d-4b54-badb-879d522dade6"
+          },
+          "$item1763636500148#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_36e0ac69-afa1-4519-bc5d-a7ede8a2f3a4"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1763636500148#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_f98c5f71-1cf1-4aab-ad6d-5653dd427692"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_95e85509-2c84-43dd-89ca-202296d9784f"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1763636500148#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1763636500148#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Soumettre",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Cédric Allard",
+ "description": "Découvrez le visage de Spice Events depuis ses débuts jusqu’à l'excellence événementielle.",
+ "uid": "0e7ef331-d0be-4672-8fb6-b482bbb7f5d6",
+ "path": "/cedric-allard",
+ "pageTitle": "Cédric Allard",
+ "autoPath": true,
+ "authorized": true
+}

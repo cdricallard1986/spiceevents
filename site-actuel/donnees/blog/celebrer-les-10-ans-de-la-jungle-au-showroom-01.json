@@ -1,0 +1,388 @@
+{
+ "blogPostMeta": {
+  "id": 2151317,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T03:56:22.310-07:00",
+  "publishedAt": "2017-11-27T03:56:22.000-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/celebrer-les-10-ans-de-la-jungle-au-showroom-01",
+  "customSlug": null,
+  "editCount": 125,
+  "publishedEditCount": 120,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Evenementiel"
+  ],
+  "categories": [
+   {
+    "id": 30540,
+    "name": "Evenementiel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/celebrer-les-10-ans-de-la-jungle-au-showroom-01",
+   "title": "Célébrer les 10 ans de la Jungle au Showroom 01",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/583661_789342.jpeg",
+   "description": "En Novembre 2017, l'agence digitale \"La Jungle\" à fait appel aux services de Spice Events dans le cadre de la célébration de leurs 10 ans d'activités.  Pour cette occasion le Showroom 01 à été transformé en véritable Jungle et la soirée à vu défilé tous nos héros préférés. Spice Events à mis les...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Nouvel arrivage de matériel L-ACOUSTICS et YAMAHA",
+  "nextBlogPostRelativeUrl": "/blog/nouvel-arrivage-de-materiel-l-acoustics-et-yamaha",
+  "nextBlogPostId": 2151299,
+  "prevBlogPostTitle": "Nouvelle Régie PIONEER blanche édition limitée !",
+  "prevBlogPostRelativeUrl": "/blog/nouvelle-regie-pioneer-blanche-edition-limitee",
+  "prevBlogPostId": 2151721
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_c44341cf-d3ba-4444-b4b5-9cf96f182241",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_0998d0c6-753d-4dc4-9c3e-f94bb7e11f60",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_6147de47-0ef9-4550-adf5-4e80f13e61c5",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Célébrer les 10 ans de la Jungle au Showroom 01</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_0810a937-50d1-44d1-a414-83c1bf260194",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Avec tous vos héros préférés</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_c56b4535-7dc0-4ab2-80d6-c4134c28a6b5",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/583661_789342",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 2448,
+    "w": 3264,
+    "s": 261250,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_60ba5ee2-1747-4454-a50d-8f6887d56b3b",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_fba45c60-10ac-4df5-9862-da535f4855bc",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_15d7e033-0cdd-49e4-b241-a0f7b8f5e501",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_08c38a66-bd8a-4ad5-9291-cbe3ce1d8346",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_f566e243-4463-4293-b43b-836555d394d9",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_c454f0af-9516-4dc5-a57c-7cb4b9e32a8e",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_a38be431-3925-4ff3-9539-d04b2235ce04",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_2a504641-ba26-439d-bae7-52f9277cd1c6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_7cef2bd4-bb23-4656-bd46-3c64a4725383",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/961300_475190",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 901,
+     "w": 1200,
+     "s": 269977,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_0e82aafa-dd55-4d22-9ac6-75e247a11032",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_9059344c-2fdc-4261-9969-796724ed3222",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/202376_95759",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 253151,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_229bd868-45fd-4ab8-90d5-3b3590511f52",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_13a0c01e-e7ab-4b10-a293-2d76dfe4316f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/638036_940410",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 903,
+     "w": 1200,
+     "s": 197760,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_be23cf34-63f4-4aca-8afe-bc78e9f91be4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_8a546245-585d-4b9a-a172-6b33349e1756",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/508855_845808",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 2133,
+     "w": 1200,
+     "s": 142276,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_c9b62193-3477-466f-b525-ebb08bb84b00",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_4226d661-56d5-4059-ac9b-0734405eb961",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/54752_444803",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 302329,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_01152118-ef78-4dbe-b8ff-791f1232665b",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_2f6a25d6-7279-49d6-96e6-a5b058b7b12e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/588801_809287",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 270852,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_fd35aa3f-84e7-4ae7-abfd-baf1b491a758",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f51b0865-8176-49f4-8ad6-b77390c076e5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">En Novembre 2017, l'agence digitale \"La Jungle\" à fait appel aux services de Spice Events dans le cadre de la célébration de leurs 10 ans d'activités. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_fd35aa3f-84e7-4ae7-abfd-baf1b491a758",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0239a12e-fe24-4753-99e8-1202e1b5c68a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour cette occasion le Showroom 01 à été transformé en véritable Jungle et la soirée à vu défilé tous nos héros préférés. Spice Events à mis les bouchées-doubles pour tranformer cette salle en véritable Jungle Comics !  </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "16aa9a7e-988b-4273-8013-d5389238b3e7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c086e9c5-ff97-4df9-9394-0dd3b42f101b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous avons donc mis en place une scène pour des DJ, des jeux de lumière afin de tamiser l'espace et de lui rendre une allure futuriste ainsi qu'une machine à fumée lourde. En quelque secondes, cette dernière a permis de donner une ambiance de blockbuster et d'intrigue. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_fd35aa3f-84e7-4ae7-abfd-baf1b491a758",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b00d7c9b-ab45-4ec1-adcd-563e6faa2136",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">N'hésitez pas à faire appel à nous pour tous vos événements.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4e2ef5f8-f68f-4dfe-954c-e3b9b56ed550",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "17a6b78a-ed40-4cc6-aeb2-6deb7c233643",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

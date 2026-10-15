@@ -1,0 +1,219 @@
+{
+ "blogPostMeta": {
+  "id": 16320559,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-08-25T01:36:48.683-07:00",
+  "publishedAt": "2021-08-25T01:45:44.398-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/mariage-de-s-r-au-chateau-d-hardricourt",
+  "customSlug": null,
+  "editCount": 197,
+  "publishedEditCount": 183,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Mariages"
+  ],
+  "categories": [
+   {
+    "id": 365909,
+    "name": "Mariages"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/mariage-de-s-r-au-chateau-d-hardricourt",
+   "title": "Mariage de S&R au château d’Hardricourt",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/3083622/122671_367422.jpg",
+   "description": "C’est avec le plus grand plaisir que Spice Events est une nouvelle fois le prestataire technique de nos mariés, pour sublimer leur journée ! Cette fois ci, c’est pour le mariage de S&R que nos équipes ont pu intervenir pour la sonorisation, l’éclairage architectural du château d’Hardricourt. Un...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Quelle thématique choisir pour son mariage ?",
+  "nextBlogPostRelativeUrl": "/blog/quelle-thematique-choisir-pour-son-mariage",
+  "nextBlogPostId": 16322475,
+  "prevBlogPostTitle": "S'offrir un mariage 100% responsable et soucieux de l'environnement",
+  "prevBlogPostRelativeUrl": "/blog/s-offrir-un-mariage-100-responsable-et-soucieux-de-l-environnement",
+  "prevBlogPostId": 16310966
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_94dfc565-36ff-4846-89fe-0a8535370598",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_7a2e6551-fff6-4bd0-9568-13feb5a3ead2",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_97c5e4dd-9f08-4932-98f3-99e1c58b4434",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Mariage de S&amp;R au château d’Hardricourt</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_729bb2cf-a102-4480-b8f8-14f984273e19",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Un mariage aux allures féeriques</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_cbcf9783-8a2e-476f-8a5d-075b50245ce5",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "3083622/122671_367422",
+    "storage": "s",
+    "format": "jpg",
+    "h": 1536,
+    "w": 2048,
+    "s": 644359,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_ae3c1329-e140-47af-b02a-e2733d3d5371",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a6d445bc-6f8c-4424-9332-cf1b168b5961",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_22d7db06-f3eb-41a5-8127-83f85b129c2a",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_e673f565-d27c-45ba-845e-03b0ff8ee9ee",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_e2c7049e-c3f1-49e8-8edd-b4292e2a15d3",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_d22046bc-d658-44b9-94c9-57e09f46e282",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_ce04cf09-5c35-462f-90a0-3368764aad1f",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "af6adf19-6ee4-4f37-83ad-7b36617e1474",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2a972ca4-0033-4452-8e76-40026c3d0ca0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: start;\"><span style=\"color: #000000;\">C’est avec le plus grand plaisir que Spice Events est une nouvelle fois le prestataire technique de nos mariés, pour sublimer leur journée !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e15e8bc6-fdca-4798-9a86-9e4f8e19f0b1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b431bad2-0b67-46fa-a6cc-b54fe3960c0b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: start;\"><span style=\"color: #000000;\">Cette fois ci, c’est pour le mariage de S&amp;R que nos équipes ont pu intervenir pour l</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>a sonorisation, l’éclairage</u></a></span><span style=\"color: #000000;\"> architectural du château d’Hardricourt.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "29681008-e545-4069-9cd8-ee126fc98a77",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "481ba090-22d7-4e73-a8df-d9c3131a8ed3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: start;\"><span style=\"color: #000000;\">Un mariage aux allures féeriques et qui à su émerveiller les convives dès leurs arrivées grâce au projections lumineuses sur le Château d'Hardricourt, datant du XVIIIe siècle. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_self\">Le mapping vidéo</a></span><span style=\"color: #000000;\"> </span><span style=\"color: #202122;\">est une technologie multimédia permettant de projeter de la lumière ou des vidéos sur des volumes, de recréer des images de grande taille sur des structures en relief, tels des monuments, ou de recréer des univers à 360°.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9660aff5-1da2-4bc7-a3a0-b9cb792dfef8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "72a463b2-b184-4e98-8ecc-d04dac70d254",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "898b58cc-2e85-4e17-9b6f-5e1d3cd7b0f3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f334c1b4-9d0f-4583-9dbf-49a1323887c0",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #202122;\"><strong>Pour plus d'information concernant cette </strong></span><span style=\"color: #202122;\"><a style=\"color: #202122;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique événementielle</strong></u></a></span><span style=\"color: #202122;\"><strong>, </strong></span><span style=\"color: #202122;\"><a style=\"color: #202122;\" href=\"https://www.spiceevents.fr/on-vous-rappelle\" data-type=\"\" target=\"_self\"><strong>n'hésitez pas à </strong></a></span><span style=\"color: #202122;\"><a style=\"color: #202122;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u><strong>nous contacter</strong></u></a></span><span style=\"color: #202122;\"><strong>.</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c5dd9f0d-d92c-4538-8140-1341c6c27e15",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a166b14f-3313-4a05-b9c3-27604c1fd015",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

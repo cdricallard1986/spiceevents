@@ -1,0 +1,298 @@
+{
+ "blogPostMeta": {
+  "id": 2151195,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T03:09:56.850-07:00",
+  "publishedAt": "2019-07-11T03:09:56.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/soiree-blanche-a-lagny-sur-marne",
+  "customSlug": null,
+  "editCount": 196,
+  "publishedEditCount": 191,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Evenementiel"
+  ],
+  "categories": [
+   {
+    "id": 30540,
+    "name": "Evenementiel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/soiree-blanche-a-lagny-sur-marne",
+   "title": "Soirée blanche à Lagny Sur Marne",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/177206_997149.jpeg",
+   "description": "Encore une soirée réussie pour Spice Events ! Cette soirée blanche organisée annuellement par l'association des commerçants de LAGNY s'est déroulé dans le parc près des bords de marne. A cette occasion nous avons sortie notre régie DJ en structure avec plateau en bois. Cette structure aux allures...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Mariage L&M près de Massiac",
+  "nextBlogPostRelativeUrl": "/blog/mariage-l-m-pres-de-massiac",
+  "nextBlogPostId": 2151080,
+  "prevBlogPostTitle": "Enceinte design sur batterie c'est possible ?",
+  "prevBlogPostRelativeUrl": "/blog/location-enceinte-batterie-maui5go",
+  "prevBlogPostId": 2160385
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_2b533855-8e84-4203-9125-670a43d1d586",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_b2f109e6-332c-4cca-8883-c7d96d6da82e",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_93f7e213-946c-41ed-89f3-75e2fb825057",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Soirée blanche à Lagny Sur Marne</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_63dff82f-91ee-4a53-82bd-7e73050b9238",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Encore une soirée réussie en bord de Marne</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_b8306b05-e73e-49ea-9f4d-d57f4acfbcdd",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/177206_997149",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 440,
+    "w": 960,
+    "s": 187718,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_3249a1a3-6e62-4e2d-bd33-302c99adf8bd",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_32691d42-0353-4612-900e-1761d0c1475e",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_60aec295-8712-492f-b5ff-40fbbab5ece6",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_bf10361d-36fe-47ac-968e-41b39abfad8f",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_64e35ef1-7154-4ef0-b249-c12329bb0f21",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_ca51de45-f702-4f4a-85f8-e38a1e13b38b",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_9ad94784-cfc3-41e1-9eb1-3e94c7caf30a",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_35d7c021-f373-453f-9059-bbf24297e62e",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_4dfc8010-2f89-4088-ac79-1384800f53bb",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/4462_475882",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 440,
+     "w": 960,
+     "s": 104352,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_d01e1fe5-5a1f-4fca-b4be-6e15002deb22",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_a7e419c9-4a44-4316-ac0e-0b5944713bf5",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/678148_696646",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1500,
+     "w": 1200,
+     "s": 269776,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_66fe3245-de7a-4eda-9326-96fee4ff1796",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "afc1d575-9dd6-41de-83c1-a2eb58d56e1e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Encore une soirée réussie pour Spice Events ! Cette soirée blanche organisée annuellement par l'association des commerçants de LAGNY s'est déroulé dans le parc près des bords de marne.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6531ee2a-b93d-41c8-bca5-470a0b6459ea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8a83a91d-251c-46b6-838a-a398353a42b6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">A cette occasion nous avons sortie notre régie DJ en structure avec plateau en bois. Cette structure aux allures champêtres s'est parfaitement inscrit dans l'univers de cette soirée blanche, près des bord de la marne. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6531ee2a-b93d-41c8-bca5-470a0b6459ea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bb4e4b48-11cc-4d55-8484-8044e709ef85",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La sonorisation était réalisée grâce à un système ARCS WIDE et SB18 de la marque L-ACOUSTICS, pionnier des systèmes acoutisques. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6531ee2a-b93d-41c8-bca5-470a0b6459ea",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8d02aec6-9442-4250-9029-53f0d710d4b6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Les lumières utilisées étaient une combinaison de projecteurs Pointe de la marque ROBE et de projecteurs led Colorado 2 Quad Zoom de la marque CHAUVET. Une combinaison parfaite pour offrir une ambiance chaleureuse et intimiste aux paticipants de la soirée. Les projecteurs étaient pilotés par une console GrandMa 2 Light. Petit bijou de la technologie, cette dernière nous a permis de controler à distance les projecteurs, pour une ambiance 100% réussie !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_356d2de0-db98-489e-8a0f-bf9fe37f8a9b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "be9d3958-e2c3-4681-add6-f6f1fabe3f9f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b0529808-8fde-4c04-b9b7-0a2ae52e9757",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a3117fb1-a919-4ea9-be09-e1fdb4441a45",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

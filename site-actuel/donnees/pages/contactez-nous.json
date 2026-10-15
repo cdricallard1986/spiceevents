@@ -1,0 +1,898 @@
+{
+ "type": "Page",
+ "id": "f_62bc025e-3fe3-46ec-9c5e-bcbe0779d00b",
+ "defaultValue": null,
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_7f037bbc-7e84-4bfe-b949-6c008de473fa",
+   "defaultValue": true,
+   "template_thumbnail_height": "163.30970666666667",
+   "template_id": null,
+   "template_name": "custom_form",
+   "origin_id": "f_ff4bd78d-0e8c-483b-9656-78afe49469e3",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_6cefb1be-257c-495f-a945-deba214cfcb7",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_251c88b6-f7da-477c-abb0-edadd9153f8a",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Contactez-Nous</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_7528ad63-4a38-45e0-a5e3-42b3192cd768",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Demandez votre devis pour votre grand jour !</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_6ea36646-bb92-484a-8a34-5f5c81c79757",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/933102_326971",
+     "storage": "s",
+     "format": "jpg",
+     "h": 4672,
+     "w": 7008,
+     "s": 3574301,
+     "useImage": true,
+     "focus": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_3952c7d6-6b72-4fa6-be1b-e8926b91b198",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Contact",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1703108526575#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1759846702090#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_06777cdd-a5ab-42f8-bfa3-570ae0f02628"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_abad23f0-e2d0-4511-8bc0-21f26601d15f"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom et Prénom",
+           "type": "object",
+           "id": "f_4c557749-d974-42b8-b6b7-366712025bd0",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_0f1b9d14-5b1d-4cf2-8930-f63e89ecf74f"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_186421f6-fd08-4aad-96ee-018779bb2ed1"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_faf5024c-370c-4a6a-b941-76efeabf13c7"
+          },
+          "$item1703108526575#date": {
+           "type": "string",
+           "title": "Date de votre événement",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_520dc550-48d3-4e72-9c43-afa7f6d77e4b"
+          },
+          "$item1759846702090#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_7818cbed-dfd9-44ac-87c9-56b165343303"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1759846702090#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_4689caaf-445d-4b7c-9182-d4840a731986"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_6f1d14b7-67bf-45e3-93d4-96c50174d425"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1703108526575#date",
+         "$item1759846702090#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1703108526575#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1759846702090#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci pour votre demande, je reviendrais vers vous dans les meilleurs délais.",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": true
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_3be254f8-661e-4442-859b-4a52b0e73ca4",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_890569a7-ac47-41f6-adc4-048b8793b497",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Bouton",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_c8b698a1-139a-4244-a3cb-d0a8724821aa",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Laissez Nous Votre Avis</h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_a8045d1b-3ba4-44ab-8f9a-b9a667a42e0f",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Vos mots font vivre nos plus beaux souvenirs - partagez votre expérience avec nous.</em></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_d5b6da57-f80e-4eb4-8b92-f40bc365892e",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_18e1868d-4800-466a-803d-9bae4fb80576",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "Cliquez ici",
+     "size": "large",
+     "style": "solid",
+     "color": "#ff0000",
+     "font": "",
+     "url": "https://www.mariages.net/shared/rate/127122",
+     "new_target": true,
+     "backgroundSettings": {
+      "default": "#ffffff",
+      "preIndex": null,
+      "type": "custom",
+      "id": "f_8748105f-8165-4415-ac4a-36fcbfb50641"
+     },
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_b5febada-de53-4d9e-a402-d7804ee81b31",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_f4c9b36b-f3f8-4d3a-9ff6-96ca4f2f4679",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_7c61d76a-5cb7-4921-99ab-78e1ba904140",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_634f7814-0fc5-4529-8b7f-ea726f7dbba7",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_c802f9f1-cdf7-40fc-836f-a8051b26865f",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_28ac58f1-6790-43fe-b188-acc161456ef2",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_ab773408-de10-4a09-a660-f6eb3fde6cbf",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-text-color-default\"><a href=\"http://www.spiceevents.fr/on-recrute\" data-type=\"undefined\" target=\"_self\"><em>On recrute !</em></a></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_6827e60d-4cb4-4c99-ad64-9ce31cc50b26",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_f4de2dc6-3926-417e-9b97-56b785909189",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_219545a1-db28-4dc8-a47a-877fb3144db4",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_94a1282d-fff9-4044-8346-7e28cfa557c3",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_642f4f70-361a-42c8-bbb2-82c02b3f8ec1",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_ba57af75-572d-4fda-b39f-7c075d8ff119",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_07df0463-5b04-448c-9f20-8fd996439459",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_811dcec5-4190-41bc-bcf6-4df233d8dcd4",
+   "defaultValue": true,
+   "template_id": null,
+   "template_name": "icons",
+   "template_version": "s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_9cc15355-fd16-49b1-907c-91eb267f34de",
+     "defaultValue": true,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": false,
+     "name": "Contactez-nous",
+     "sync_key": null,
+     "layout_variation": "natural",
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto",
+      "vertical_alignment": "middle"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_f7f1a6df-cfcd-45c2-910e-f1b21f7a3399",
+     "defaultValue": false,
+     "url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-2/28.jpg",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_f8519178-ecfb-4e7a-9d8c-fa6c6f107b1e",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 130%;\"><span class=\"s-text-color-custom1\">Contactez-nous</span></p>",
+     "backupValue": null,
+     "version": 1
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_223e3242-4e77-4058-a7ce-a4cd51c2c308",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 80%;\">N'ayez pas peur de nous contacter. Vous + Nous = prodigieux.</p>",
+     "backupValue": null,
+     "version": 1
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "c59f5843-8e20-4e37-b5a3-e9a5e6478fc7",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_5c85f842-687d-4f04-9525-1a532bd765db",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "7974ebe0-6390-43a4-98d4-7febbfb2d3f6",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "844e56c5-09c7-41b5-b9d8-d89bff357c5a",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_dfaed8a2-bb02-42d6-8bde-70d52b6313cf",
+             "items": [
+              {
+               "type": "Spacer",
+               "id": "10bdd0eb-d8fc-4e97-8e7e-bc49099ecfd1",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "68cb8836-5e8b-42bc-a756-fdf1218f0e18",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "5bab7467-68be-421f-8cd9-435a6c5854e3",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: center; font-size: 48px;\">Contactez-Nous</h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "center",
+                  "lastLineTextAlign": "center"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "c21c5104-b547-4b54-b58f-534d4154c500",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_5b52a3ad-1741-49b0-97fd-0a4563d18b1e",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Organisons votre événement dès maintenat ! </em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_30f97919-b968-4667-a6c8-9427bff5984d",
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "6a0432db-1395-4575-ab1f-b94aff78ee6c",
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "3e241164-62ee-4c36-a248-15a7d13f724f",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_bd1e50c8-7441-487c-a2e7-b1fd0449ee3a",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_91633598-4469-472a-bac9-cd5ef298f58c",
+               "defaultValue": null,
+               "name": "tinyIconText",
+               "components": {
+                "image1": {
+                 "type": "Image",
+                 "id": "f_152b0f64-c3df-460b-96b1-f88a9d42f415",
+                 "defaultValue": false,
+                 "link_url": "tel:+33676403776",
+                 "thumb_url": "https://uploads.strikinglycdn.com/page/images/icons/phone-icon.png",
+                 "url": "https://uploads.strikinglycdn.com/page/images/icons/phone-icon.png",
+                 "caption": "+336 76 40 37 76",
+                 "description": "",
+                 "storageKey": null,
+                 "storage": null,
+                 "storagePrefix": null,
+                 "format": null,
+                 "h": 160,
+                 "w": 160,
+                 "s": null,
+                 "new_target": true,
+                 "noCompression": null,
+                 "cropMode": null,
+                 "focus": {}
+                },
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_a6ec4364-37c9-4bfd-9c42-b655d4eeb426",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<p><a target=\"_blank\" href=\"tel:+33676403776\"><span class=\"s-text-color-custom1\">+336 76 40 37 76</span></a></p>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 }
+                }
+               }
+              }
+             ],
+             "inlineLayout": null
+            }
+           }
+          },
+          {
+           "type": "BlockComponentItem",
+           "id": "9ec08438-c108-4974-af05-c8fd31e76a81",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "695cf753-20d5-4ef1-9490-c8a22e6c574f",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_c0162c2e-b7b5-4185-8b48-59c80efae2a5",
+               "defaultValue": null,
+               "name": "tinyIconText",
+               "components": {
+                "image1": {
+                 "type": "Image",
+                 "id": "f_b9792631-b57a-4ffb-b520-4db1d5ff6563",
+                 "defaultValue": false,
+                 "link_url": "https://www.youtube.com/user/MrSpiceEvents/",
+                 "thumb_url": "https://uploads.strikinglycdn.com/page/images/icons/youtube-icon.png",
+                 "url": "https://uploads.strikinglycdn.com/page/images/icons/youtube-icon.png",
+                 "caption": "Chaine Youtube MrSpiceEvents",
+                 "description": "",
+                 "storageKey": null,
+                 "storage": null,
+                 "storagePrefix": null,
+                 "format": null,
+                 "h": 160,
+                 "w": 160,
+                 "s": null,
+                 "new_target": true,
+                 "noCompression": null,
+                 "cropMode": null,
+                 "focus": {}
+                },
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_70fb9e91-2ffa-472f-8a11-c324712c421f",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\"s-text-color-custom1 s-text-color-custom1 s-text-color-custom1 s-rich-text-wrapper\"><span class=\"s-text-color-custom1\"><a href=\"https://www.youtube.com/user/MrSpiceEvents/\" data-type=\"\" target=\"_blank\">Youtube</a></span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          },
+          {
+           "type": "BlockComponentItem",
+           "id": "be81d38f-779f-4a09-921d-4a58869c85ff",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_a47f133d-6e6c-41fc-81ea-777e6b723cc4",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_41b9bc92-f226-4457-8721-b5f0832268b3",
+               "defaultValue": true,
+               "name": "tinyIconText",
+               "components": {
+                "image1": {
+                 "type": "Image",
+                 "id": "f_aabfea61-6ff5-46c3-890d-8f73095f485a",
+                 "defaultValue": false,
+                 "link_url": "http://www.facebook.com/spiceevents",
+                 "thumb_url": "https://uploads.strikinglycdn.com/page/images/icons/fb-icon.png",
+                 "url": "https://uploads.strikinglycdn.com/page/images/icons/fb-icon.png",
+                 "caption": "www.facebook.com/spiceevents",
+                 "description": "",
+                 "storageKey": null,
+                 "storage": null,
+                 "storagePrefix": null,
+                 "format": null,
+                 "h": 160,
+                 "w": 160,
+                 "s": null,
+                 "new_target": true,
+                 "noCompression": null,
+                 "cropMode": null,
+                 "focus": {}
+                },
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_2e04a6f4-13af-4709-a43d-f3cdccfc19e1",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-custom1 s-rich-text-wrapper\"><span class=\"s-text-color-custom1\"><a href=\"http://www.facebook.com/spiceevents\" data-type=\"\" target=\"_blank\">Facebook</a></span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "inlineLayout": null
+            }
+           }
+          },
+          {
+           "type": "BlockComponentItem",
+           "id": "5a5a5210-13d5-40ed-9923-1ea436b3fd20",
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "9dfb7c3d-2f51-46bd-8bea-0939c2759c4a",
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_01cf04e0-9d02-4b3e-90f2-9672e90f390b",
+               "defaultValue": null,
+               "name": "tinyIconText",
+               "components": {
+                "image1": {
+                 "type": "Image",
+                 "id": "f_b3b21249-d2ff-4463-9c14-ce940356e358",
+                 "defaultValue": false,
+                 "link_url": "mailto:contact@spiceevents.fr",
+                 "thumb_url": "https://uploads.strikinglycdn.com/page/images/icons/email-icon.png",
+                 "url": "https://uploads.strikinglycdn.com/page/images/icons/email-icon.png",
+                 "caption": "contact@spiceevents.fr",
+                 "description": "",
+                 "storageKey": null,
+                 "storage": null,
+                 "storagePrefix": null,
+                 "format": null,
+                 "h": 160,
+                 "w": 160,
+                 "s": null,
+                 "new_target": true,
+                 "noCompression": null,
+                 "cropMode": null,
+                 "focus": {}
+                },
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_5b99458a-fa56-466e-8a12-ddef5dbb5ec5",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-custom1\"><span class=\"s-text-color-custom1\"><a href=\"mailto:contact@spiceevents.fr\" data-type=\"\" target=\"_blank\">contact@spiceevents.fr</a></span></p></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ]
+            }
+           }
+          }
+         ],
+         "inlineLayout": "3-3-3-3"
+        }
+       }
+      }
+     ],
+     "inlineLayout": "1"
+    }
+   }
+  }
+ ],
+ "title": "Contactez-Nous",
+ "description": "N'hésitez pas à nous contacter pour en savoir plus sur nos prestations sur-mesure ",
+ "uid": "e95599b3-bb75-478e-94d1-29b7de6160f4",
+ "path": "/contactez-nous",
+ "pageTitle": "Contactez nous",
+ "pagePassword": null,
+ "memberOnly": null,
+ "paidMemberOnly": null,
+ "buySpecificProductList": {},
+ "specificTierList": {},
+ "pwdPrompt": null,
+ "autoPath": true,
+ "authorized": true
+}

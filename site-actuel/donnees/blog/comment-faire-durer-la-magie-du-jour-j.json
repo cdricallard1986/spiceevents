@@ -1,0 +1,473 @@
+{
+ "blogPostMeta": {
+  "id": 19614379,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-04-05T07:04:05.619-07:00",
+  "publishedAt": "2022-04-05T07:12:16.203-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/comment-faire-durer-la-magie-du-jour-j",
+  "customSlug": null,
+  "editCount": 141,
+  "publishedEditCount": 138,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/comment-faire-durer-la-magie-du-jour-j",
+   "title": "Comment faire durer la magie du Jour-J ?",
+   "image": "https://images.unsplash.com/photo-1507150444342-1de5051c6a3a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "Votre mariage est l’un, voir LE plus beau jour de votre vie. Mais pourquoi la magie ne devrait-elle durer qu’une journée ? Voici de petites astuces à réaliser le Jour-J pour que la magie perdure.  Souriez, c’est dans le Booth ! Si vous ne souhaitez pas faire appel à un photographe professionnel...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Nos astuces pour trouver le lieu de mariage idéal",
+  "nextBlogPostRelativeUrl": "/blog/nos-astuces-pour-trouver-le-lieu-de-mariage-ideal",
+  "nextBlogPostId": 19791299,
+  "prevBlogPostTitle": "Osez la thématique noire pour votre mariage",
+  "prevBlogPostRelativeUrl": "/blog/osez-la-thematique-noire-pour-votre-mariage",
+  "prevBlogPostId": 19234866
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_c29bcb37-3add-487a-ada2-9c515a682d66",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_fd7e9cfe-86d1-42f2-a73b-14506236da9c",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_b27cfd15-4459-41e6-abcf-9401ba99e914",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Comment faire durer la magie du Jour-J ?</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_6ea87e7b-127a-4308-9e41-00f27bdf2725",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Nos astuces spicy</p></div>",
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_b3bbb8ef-c804-4af6-be1e-a5f20a0be89f",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1507150444342-1de5051c6a3a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_799ac856-9eda-47c7-9d1b-c1547b03ad61",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_cdf708ec-464e-4989-a19a-055da372bd6a",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_c9894ec9-27a0-49ee-8cfd-0b06d6a954bd",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_a2fd71e5-d379-4413-bbc2-32a64413f1e9",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_6038646f-4bae-4128-8485-09bc94a6d41f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_484c67e9-3470-435d-a0ff-5d48fe2b6ea5",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_27333fd4-5f1b-4211-8a47-b49314aaeab3",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "c1c02543-ee7a-4912-9e81-9ce24cd6fcb3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "409a3ea5-5518-46c5-b94f-5f83f041833a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Votre mariage est l’un, voir LE plus beau jour de votre vie. Mais pourquoi la magie ne devrait-elle durer qu’une journée ? Voici de petites astuces à réaliser le Jour-J pour que la magie perdure.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1dc38c6f-9b72-470b-98ce-36a8c47170f7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "752b4793-4d1b-442c-b107-6e485fc563be",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b61bc3e3-12f8-45da-8746-64cd982be8dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1e8091a0-c08e-4dcc-8300-bcfdfa3e57ae",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Souriez, c’est dans le Booth !</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a49be98c-4c01-479f-8013-48e908c5450b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1837fcc6-a834-46c6-ab39-6ee84efb99a3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous ne souhaitez pas faire appel à un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/amis-partenaires\" data-type=\"\" target=\"_blank\">photographe professionnel</a></span><span style=\"color: #000000;\"> pour votre mariage, pas de soucis, des alternatives existent. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "007a399b-d836-4905-923c-f59ff581d93d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "524004cc-a41f-4bc0-9485-bc341181fe30",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Avec Spice Events, il est possible de louer un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-photobooth\" data-type=\"\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">. Très tendance, c’est un appareil photo géant autonome. Grâce à lui, plus besoin de photographe, votre présence suffit. Placez-vous devant l'objectif, choisissez le format de votre photo, souriez, c’est imprimé ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8d5ce61d-1fd2-4bac-a6ba-6cb57d7b08f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "442b314f-5116-47ea-9c87-62f21f9bd41d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Et comme </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/des-evenements-plus-green\" data-type=\"\" target=\"_blank\">Spice Events pense aussi à la planète</a></span><span style=\"color: #000000;\">, l’impression n’est pas automatique, ni obligatoire. Vous pouvez en un clic vous envoyer la photo par e-mail et la conserver sur votre téléphone. Le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><u>Photobooth </u></a></span><span style=\"color: #000000;\">est accessible à tous, à tout moment de la journée. Un bon moyen de divertir vos invités et de garder de jolies photos d’eux mais aussi de vous !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19672a21-43ad-4b70-91be-6a05c9b131d8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "525beae8-0053-4caa-a0c8-c55d21eeb9aa",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Une fois le mariage passé, vous pouvez décider d’en faire un bel album souvenir ou si vous souhaitez être plus original et faire un clin d'œil à vos proches, vous pouvez en faire des cartes de remerciements en choisissant soigneusement pour chacun, la photo idéale prise avec </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-photobooth\" data-type=\"\" target=\"_blank\">notre </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\"> lors de cette journée. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2e6546ea-7fa8-452c-bec5-4b447932455a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ade9c371-473b-4b74-8d93-01718b009370",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Tout comme vous, vos amis et votre famille ont partagé un moment inoubliable et riche en émotion et auraient aimé que ça ne s’arrête pas aussi vite ! Ils seront alors très heureux de pouvoir se remémorer cet instant de la soirée, grâce à votre carte de remerciement personnalisée et unique. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ed216ef8-a5e1-4d17-9b29-7c3cb0ccde0f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "74df3942-b33d-4a97-b76b-48dd69183d38",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "77ef092f-f9e7-4984-a515-884aa4ac9950",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "1ec79b76-8669-4c34-8b20-96719476aeb6",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/97331_73202",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 853078,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4667f28b-a301-4627-9cb0-581783b2079d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5a8053cd-7f9b-48d8-bceb-909e3fac45d2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Garder de la décoration</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "056a1ac1-8944-4600-9444-bd208895d0d8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "64c60dd5-36b6-4efe-a7d2-d5ce9121486c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez Spice Events, on vous propose plusieurs </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématiques</a></span><span style=\"color: #000000;\"> : blanc, noir, bois et végétal. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "64e1bffe-aebf-428d-9781-3d47ae87a1c5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8a8c5a15-6a35-47c6-85f2-60b2240cba1c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Après le Jour-J il est possible de garder des éléments de décoration et de les placer chez vous ou de les mettre dans une boîte à souvenirs, accompagné de petites photos prises avec </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-photobooth\" data-type=\"\" target=\"_blank\">notre </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\"> ! Vous pouvez également conserver précieusement votre bouquet de mariage, encore faut-il convaincre vos invités qu’il est plus symbolique de le garder plutôt que de se prêter au typique lancer de la mariée. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "85c7d827-f178-4b53-9eaf-547531d72237",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "625cf23c-74d7-4efd-8a76-b6b61c877710",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vos proches peuvent également repartir s’ils le souhaitent avec un souvenir, comme par exemple, leur nom de table de mariage. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9f346855-205a-47ba-8f49-067a021a43af",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "84e41423-b82d-49fc-94bb-e5ca34f6450b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/918639_20219",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 801,
+     "w": 1200,
+     "s": 2647713,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "363da48c-bc24-48b5-991b-4648246d3a9d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "95e86390-508f-43d6-a416-f7c806e0c19c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Vidéo souvenir</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3766fee8-2c3b-4160-9b00-e44a5850d5bf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ce4e590f-56bf-41af-a91c-280e42c4e33a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Plus original et moderne que les photos : les vidéos souvenirs. Elles sont de plus en plus utilisées pour garder le souvenir d’un événement. Un vidéaste peut assister à votre mariage et ensuite réaliser un film, vos proches peuvent monter une jolie vidéo de messages personnalisés, avant ou pendant le mariage... </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f6b9fa12-bff2-4c7d-8968-a07567c314a2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "825591f6-2d37-4450-b0ea-1180aeb620ce",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Il existe aujourd’hui mille et une façons de se créer des souvenirs vidéo, et de pouvoir les regarder à n’importe quel moment de votre vie. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1f1a125b-41d4-4e3c-908b-391107779dcd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "426dd8c5-8e5d-4379-9419-a70a6e0f18ef",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous ne savez pas vers qui vous tournez en ce qui concerne le matériel vidéo, Spice Events se fera un plaisir de vous </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"\" target=\"_self\"><u>conseiller</u></a></span><span style=\"color: #000000;\">. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d34c3b9e-2d64-431d-a8cb-b43aa42c7349",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "721f08a9-4238-447d-a010-fa90686e70e6",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/508022_151673",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 1887548,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "75e62814-9f73-493a-b679-a24f1d246205",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a7649228-a3ac-4a3c-ad60-e78cf6e5a2ed",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Maintenant que vous êtes des experts en création de souvenirs, on est impatient de voir ce que vous avez choisi ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "df88fddc-1316-45e9-a169-62a1b7adb0da",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ac056f7c-2b5a-4830-88d6-e8cf43bd1ae9",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "blogPostMeta": {
+  "id": 2151299,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T03:49:14.467-07:00",
+  "publishedAt": "2018-05-09T03:49:14.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/nouvel-arrivage-de-materiel-l-acoustics-et-yamaha",
+  "customSlug": null,
+  "editCount": 408,
+  "publishedEditCount": 396,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Le Matériel"
+  ],
+  "categories": [
+   {
+    "id": 29958,
+    "name": "Le Matériel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/nouvel-arrivage-de-materiel-l-acoustics-et-yamaha",
+   "title": "Nouvel arrivage de matériel L-ACOUSTICS et YAMAHA",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/677078_925921.jpeg",
+   "description": "Toujours à l'affût des nouvelles sorties de matériel, nous avons accueilli depuis peu du nouveau matériel de sonorisation haut de gamme pour votre plus grand plaisir ! Soucieux de répondre à toutes vos demandes, même les plus folles, chez Spice Events nous avons mis les bouchées-doubles pour vos...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Ouverture de bal spectaculaire",
+  "nextBlogPostRelativeUrl": "/blog/ouverture-de-bal-spectaculaire",
+  "nextBlogPostId": 2160371,
+  "prevBlogPostTitle": "Célébrer les 10 ans de la Jungle au Showroom 01",
+  "prevBlogPostRelativeUrl": "/blog/celebrer-les-10-ans-de-la-jungle-au-showroom-01",
+  "prevBlogPostId": 2151317
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_c272346d-a16b-4cbb-9a09-fbbcf845ba78",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_b3bcd062-c422-4bab-a341-79c0ac24c5ca",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_289eef89-2bb0-4a9d-a736-01886bebef74",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Nouvel arrivage de matériel L-ACOUSTICS et YAMAHA</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_9100b74b-a8ae-4367-a67b-1c40d8da8afa",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Kara - LARA2 - LA12X - QL5 - CL5</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_f3ced21b-ff6e-47b9-b7b3-015ac22e9d07",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/677078_925921",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1512,
+    "w": 2016,
+    "s": 484473,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_fc346ee1-4a72-4e6a-93ca-440a0869f728",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_42a5f65b-9e22-417a-83e2-7e320506b08f",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_7f6e8a0e-d80e-4995-a03a-9db05b3f2de2",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_75678b23-4556-47dc-b5cf-21a5d3349d9a",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_b9cebc3a-97f9-4bd7-b209-a5d60179ad33",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_28aeb131-5917-47d7-acf5-dfaa9a3e0539",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_4fddc82a-9e1c-4f12-8919-bba578d269f5",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_f152b06b-26ae-42fa-84e0-3fc809f43f76",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_e2df99cf-e3be-410c-938c-9c0ed0b72353",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/851959_48869",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 1600,
+     "w": 1200,
+     "s": 393276,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_bd011ded-23e0-404d-83ba-b4dfa7082fce",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_bafeee18-5987-4c5d-9169-4b409dc00abc",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/106710_819314",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 523461,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_c902e5f7-ff97-4b06-9027-09699b72c3a6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_f2a7b8af-4b19-4ab0-ab87-89ec91c6a9dd",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/903916_14071",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 435193,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_190589b0-86f1-42cb-8f88-991e687eb778",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a6a6e2d6-2644-465e-b806-4089e2b1a1d2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Toujours à l'affût des nouvelles sorties de matériel, nous avons accueilli depuis peu du nouveau matériel de sonorisation haut de gamme pour votre plus grand plaisir ! Soucieux de répondre à toutes vos demandes, même les plus folles, chez Spice Events nous avons mis les bouchées-doubles pour vos prochaines soirées ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c9efc855-40a1-4c28-8798-d210a0013904",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e0b20d8d-a6b6-410d-8782-b81f6d11afae",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><u>Soirée privée, corporate</u></a></span><span style=\"color: #000000;\"> ou </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\">, ce nouveau matériel acoustique s'adapte à toutes les situations !  Au menu :  nos enceintes Line Array KARA de la marque L-ACOUSTICS avec des amplis LA12X. Cette entreprise française et leadeuse du marché acoustique à déjà su faire ses preuves à l'international. Sa technologie et innovation sans précédent, lui confère une force essentiel. \"Petite chouchoute\" du techos, nous sommes toujours heureux de travailler avec ce matériel de pointe.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_190589b0-86f1-42cb-8f88-991e687eb778",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8a360ea6-36bb-4bd3-92b8-f66fbeb0c601",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Autres matériels au menu, et pas des moindres : notre console de concert QL5 et CL5 de la marque YAMAHA. La quintescence dans le compact et la technologie toujours au rendez-vous avec une facilité d'installation en un temps record ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d5cc9e4e-7f12-4a83-9dcc-6adc732ecef7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dd14f8a6-bf00-4e17-a9b7-c9aaaf83b9d7",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous avons hâte de les utiliser pour vos événements !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b73f7bbd-4f07-4215-aebc-a97356d3f0d6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ad8da795-bb5a-4427-852b-f38624583de9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

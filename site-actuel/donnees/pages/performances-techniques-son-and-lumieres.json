@@ -1,0 +1,1383 @@
+{
+ "type": "Page",
+ "id": "f_b514b9a2-364e-4412-89a7-14f33aa81f9b",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_d0c13512-c278-4a53-b384-8f388471cd30",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_354fd38f-8a92-46a8-9658-3cd3b02575f7",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre accueil & image",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_48f0d33e-9a77-4f14-9f96-06709daaf7d3",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_42315a3a-86c5-4656-bf5f-7fa2588c5e07",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_7abb625b-ed85-4cf3-a57b-d961d51ff772",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Performance Technique</p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Son &amp; Lumière</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4a3d84d0-9d36-4bc6-ae91-d10ca9c98ace",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default font-size-tag-header-two s-text-font-size-over-default s-rich-text-wrapper\"><em>La signature d’un savoir-faire technique irréprochable</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_780c4e8e-0f61-48ea-b0dd-92af331b5841",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/568461_541759",
+         "storage": "s",
+         "format": "jpg",
+         "h": 1140,
+         "w": 1170,
+         "s": 229639,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_95568cc0-ca43-4849-9a7f-6b5324b8bf0f",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_fc8c22eb-dc3e-43a2-bafd-0d463252247b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_395ef428-f4b8-4110-91d5-681dfa01b059",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5bf62177-1a2b-4bbd-b3a0-1a347f9d8931",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_a0fcfb9c-3bc3-4c43-a450-40b09668c778",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_738276cb-a5fb-462e-8e99-06a65fedfe61",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_a306a81a-ecab-4124-8231-e65ac376b90d",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_b7042085-9bc3-48fc-9c6d-86193c858327",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_78c8e2ee-a5af-444a-9026-4de783793e13",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_4ea1584e-a11c-4e20-9620-3770bea0c5f7",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_b7dc3d4c-9063-4471-8221-8261db642f64",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_c886505d-bce2-49d0-acfc-de3068ce3061",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_93a16595-eed5-430a-8e02-1bbec7b0d492",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte intro",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_0a3a36fa-6abd-478d-bfd5-9ceadb191daa",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_38f3cb56-49df-4095-8a66-f7e11879e72a",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_d1a2a28d-b0cb-4b6a-9a4b-e3c7fedad408",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_c864ecc5-fe5b-4e30-9048-cd984d9d3d2e",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_4c313207-5091-4de1-9f20-73f8d8132d9c",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_058bd77e-c3f2-47f1-9354-8760d5b0a39c",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_d4f25062-a132-409d-a726-cba654a46a83",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_244f326c-0742-4ab8-8c3b-8b951ac403b3",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"color: #000000;\">Une performance sans compromis</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_7e43fd11-b27c-4a53-9eb9-763647cf511d",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_a4089f95-ccb8-4eb8-9064-07d80d6c009e",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_12e19d9e-59b0-486f-bff0-1d4678fb9b8a",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_748bf4fd-414f-439c-862f-a6929d781732",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "74b42574-fbdd-4066-832a-12c69d29db6f",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_85eb0821-ed6e-4ede-a40a-e674f0fd32d2",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><span style=\"color: #000000;\"><em>Son, lumière, vidéo — un matériel professionnel testé, calibré et prêt à briller.</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": null,
+                  "lastLineTextAlign": null
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_5963d2f3-7a99-4a99-9284-fcf752a68629",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_bf454ec4-d202-426b-a77c-8effa51b3e4f",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_1fb325b9-2020-492c-9483-4d5e0fd0c34c",
+                 "defaultValue": false,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Chez Spice Events, nous savons qu’un événement réussi repose sur un équilibre parfait entre émotion et performance technique. C’est pourquoi nous  avons choisi de collaborer avec </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.mxevenement.com/\" data-type=\"\" target=\"_blank\"><strong>MX Événement</strong></a></span><span style=\"color: #000000;\">, référence en matière de sonorisation et d'éclairages  professionnels. De la cérémonie laïque aux grandes scènes corporate, chaque installation est calibrée, testée et optimisée pour offrir un rendu net, puissant et immersif — sans jamais compromettre la fiabilité.</span><br></h3><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">\"Un matériel haut de gamme, une préparation minutieuse et une exécution sans faille : voilà notre promesse.\"</span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "lineAlignment": {
+                  "firstLineTextAlign": "justify",
+                  "lastLineTextAlign": "justify"
+                 },
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_8a7c318a-6517-4e60-b6ae-e7baa6c9e1fc",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_6ed239a1-4020-4a42-bcf6-1d67ea59c83d",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_63b6d1e9-0bf5-4d64-8bd6-bbd14ac9e501",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ba4cb829-eed6-469d-a906-5b11ee3659e7",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Excellence technique",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_a5f8664d-522d-4285-9cb6-bc514841874f",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">L’Excellence Technique</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>Une infrastructure pensée pour la précision et la fiabilité</em></h3><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"display: inline-block\"></span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_c065fb3e-8126-436a-a4a1-5e783a7a844c",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Chaque prestation est conçue comme une véritable <strong>mise en scène technique</strong>, où chaque câble, chaque réglage et chaque faisceau de lumière ont leur importance. Nous travaillons exclusivement avec du <strong>matériel professionnel de marques reconnues</strong> — <strong>Pioneer DJ</strong>, <strong>Portman light</strong>, <strong>Shure</strong>, <strong>Wolfmix</strong>, <strong>Chauvet Pro, </strong>etc — pour garantir une <strong>qualité de diffusion sonore constante</strong> et une <strong>esthétique lumineuse maîtrisée</strong>. Nos   configurations sont adaptées à la typologie de chaque lieu :</p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><ul><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Systèmes de diffusion modulaires</strong> assurant une répartition sonore homogène, même sur de grandes surfaces ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Traitement audio numérique</strong> (via DSP et égalisation multi-bandes) pour un rendu clair, précis et sans saturation ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Jeux de lumière intelligents</strong> synchronisés à la musique pour renforcer l’immersion visuelle ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Réseaux électriques et câblages sécurisés</strong>, testés et doublés avant chaque événement.</li></ul><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Chaque prestation est précédée d’un <strong>contrôle complet du matériel</strong>, d’une <strong>phase de tests son et lumière</strong> et d’une <strong>vérification des redondances</strong> (systèmes de secours et back-up audio).</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_aa2f9e38-4faa-432a-b8a8-3f131e7203f6",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_b1132232-2b33-462c-8010-3e3202c3960a",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_9f51a994-2509-4bec-bfab-a86b205c8eaa",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_61825cd5-8fa0-4a75-aeb3-21368f46fd24",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_a068dcae-1f6f-4d19-9654-06f8329e428f",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_4e02c065-edf2-4bce-aa21-68ad3a6e1833",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_60eb4b8e-9955-4362-929e-3203ebbc6e98",
+   "defaultValue": true,
+   "template_name": "gallery1",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_8635eabb-c0e8-4538-8f1c-d865b907db91",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie 2",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_c81e8eca-7463-4c27-832b-eb0251a290a9",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_6fc886fe-1002-4a3f-9526-b2876120508f",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_5974d8ab-57a6-4632-92cb-a397cff86726",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_d59245c6-ff7c-4a30-9c6e-5a9984eb53ef",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_46a58fcd-5529-4bab-b314-a09f9cdf79fb",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/835865_791304.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/835865_791304.jpg",
+       "description": "Parc matériel mx événement ",
+       "storageKey": "22139555/835865_791304",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1155,
+       "w": 1170,
+       "s": 296953,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_5e1e8dda-50e8-49d8-9acb-a43ca069e589",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/12081_23996.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/12081_23996.jpg",
+       "description": "Console de régisseur",
+       "storageKey": "22139555/12081_23996",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1147,
+       "w": 1170,
+       "s": 309941,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_3b1bcec2-024d-457e-add2-f84f36c6baab",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/250592_302561.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/250592_302561.jpg",
+       "description": "ensemble de projecteurs",
+       "storageKey": "22139555/250592_302561",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1145,
+       "w": 1170,
+       "s": 388046,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_9dec3588-eb1a-4605-b133-733bea6f1bf9",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_734632be-d317-4213-9edd-cf6b7aa8b212",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Partenariat MX",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_ae7225e6-96a1-4e43-920d-1a612fc23bd2",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Un Partenariat Technique Exceptionel</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>MX Événement : la précision technique, notre garantie de sérénité</em></h3><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"display: inline-block\"></span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_dea253b9-b897-400a-a83f-7eb964b1e8d0",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Notre partenariat avec <a href=\"http://www.mxevenement.com\" data-type=\"undefined\" target=\"_self\"><strong>MX Événement</strong></a> repose sur une même philosophie : aucune place à l’improvisation. Leur équipe d’experts, forte de plus de <strong>10 ans d’expérience</strong>, nous accompagne sur la préparation, la logistique et la mise en place de solutions sur mesure. Chaque événement bénéficie :</p><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><ul><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">D’un <strong>matériel haut de gamme entretenu et testé en atelier</strong> avant chaque sortie ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">D’une <strong>logistique rigoureuse</strong> garantissant une installation fluide et sécurisée ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">D’une <strong>supervision technique continue</strong> pendant la prestation ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">D’un <strong>matériel de secours disponible immédiatement sur site</strong> pour pallier toute défaillance éventuelle.</li></ul><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Ce partenariat nous permet de <strong>repousser les limites de la performance</strong> tout en assurant un <strong>niveau de fiabilité constant</strong>, quelles que soient les conditions du lieu ou les contraintes techniques.</p><blockquote><p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p></blockquote></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_8aab68f0-8a0d-432a-9bc8-e6af1e49e40c",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_e050093b-3d1d-4836-8d72-53d70c57ff0c",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_6d13dca0-2930-48fc-93bf-237b9c529700",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_98533865-8e59-4af1-8030-890baae4d7f8",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_3cf5322a-f75c-4ca6-9969-a722e2684324",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_dc2884d1-9308-419c-98cd-808e7f27b492",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_d40b59e8-fc20-493c-8321-848214553f4b",
+   "defaultValue": true,
+   "template_name": "media2",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_7c2dbd15-dec8-4fda-aea8-fb06678fba04",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Vidéo Mx",
+     "sync_key": null,
+     "layout_variation": "media-top-text",
+     "display_settings": {},
+     "layout_config": {
+      "isNewMedia": true,
+      "isNewMobileLayout": true
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_e0d41b85-2ebd-4158-8e30-c2e7cb0980fc",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_fb5b2ccd-e79d-4925-afa7-6cb3abe9d0a4",
+     "defaultValue": false,
+     "value": "How to Build a Website <br> Like a Professional",
+     "backupValue": null,
+     "version": 1
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_99f6d78d-1b2b-434f-99d2-943072c3da72",
+     "defaultValue": false,
+     "value": "Become a member to get unlimited access and support the voices you want to hear more from.",
+     "backupValue": null,
+     "version": 1
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_8ef0b0d1-80a1-4ead-a30a-4c72ad76aafc",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_365a0e06-3aef-44c9-9a7f-6d471130666b",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_ed8f9ff8-2178-4ca0-ae62-7a55dfdc9c77",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_17fda4cc-8052-4daf-be19-49cf041ff99b",
+          "defaultValue": true,
+          "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDWSC6XgbY_M%3Fwmode%3Dtransparent%26feature%3Doembed&wmode=transparent&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDWSC6XgbY_M&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDWSC6XgbY_M%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"360\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+          "url": "https://youtu.be/DWSC6XgbY_M?si=27q0aUtEgywokl1q",
+          "thumbnail_url": "https://i.ytimg.com/vi/DWSC6XgbY_M/hqdefault.jpg",
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_d89f4760-391c-41d5-9ee0-ce5aaf0880c2",
+          "defaultValue": true,
+          "link_url": null,
+          "thumb_url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+          "url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true
+         },
+         "current": "video"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_a35de877-5abc-4d1c-a89b-a9564b8671d0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b90f5695-82ce-4320-8445-bc6ac19f1e1b",
+         "defaultValue": true,
+         "value": "",
+         "backupValue": null,
+         "version": null
+        },
+        "text3": {
+         "type": "RichText",
+         "id": "f_61edef23-3266-44c7-879d-c32ad1224888",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_0814bb70-11ca-43e2-b22b-13ceb99c4a4d",
+         "defaultValue": true,
+         "alignment": "center",
+         "text": "",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_93334fbb-ae26-43e4-a557-12d2cd7033f5",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_f66beecd-c7ee-48e9-993c-ec720943299b",
+        "defaultValue": true,
+        "html": "",
+        "url": "https://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_856875f0-5499-4658-a215-afca3542be39",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "url": "https://uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/preset-B.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_86a4eca8-6132-4d9b-9f8a-ddb786d75029",
+       "defaultValue": true,
+       "value": "Some caption here",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_41167c3d-6e79-4e4f-8741-290f6a63ac04",
+       "defaultValue": true,
+       "value": "",
+       "backupValue": null,
+       "version": null
+      },
+      "text3": {
+       "type": "RichText",
+       "id": "f_26d60828-1be1-4f2c-b984-cf392ca46bf4",
+       "defaultValue": true,
+       "value": "A sentence or two describing this item.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_e2ad26fe-346a-48a0-9da2-079e82166e53",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_74efbbac-6c5b-4aa0-b454-8ad21f065c3e",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_40ad177d-beb3-465c-b525-a522bdd31da8",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Sécurité interventions",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_899a7c66-aeb0-49ba-9e3d-b728b2f0c071",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">La sécurité au coeur de nos interventions</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><em>La sécurité n’est pas un détail, c’est notre priorité.</em></h3><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"display: inline-block\"></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_90f6ad01-09ed-47c5-b278-d989d0a98eba",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">La sécurité technique est une priorité absolue chez Spice Events. Tous nos équipements sont <strong>certifiés aux normes CE</strong>, <strong>contrôlés avant chaque utilisation</strong> et <strong>installés selon un protocole strict</strong> (isolation, câblage, protections, tests de charge). En parallèle, chaque événement bénéficie de :</p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><ul><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Solutions de secours prêtes à être activées</strong> (alimentation, lecteur, console de backup) ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Prévention des risques électriques et incendie</strong>, avec respect total des réglementations des lieux ;</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><strong>Communication fluide avec les autres prestataires techniques</strong> (photographe, vidéaste, traiteur, etc.) pour éviter toute interférence.</li></ul><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Cette approche globale garantit <strong>une expérience sans coupure, sans panne et sans stress</strong>, du montage au démontage.</p><p class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><h2 class=\" font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: center; font-size: 28px;\"><em>\"Parce qu’un moment d’émotion ne doit jamais dépendre d’un imprévu technique.\"</em></h2><h2 class=\" font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: center; font-size: 28px;\"><span style=\"display: inline-block\"></span></h2><h2 class=\" font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: center; font-size: 28px;\"><span style=\"display: inline-block\"></span></h2><h2 class=\" font-size-tag-header-two\"><span style=\"display: inline-block\"></span></h2><h1 class=\" font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: center; font-size: 48px;\">La performance sonore, sans compromis</h1><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\"><em>Une sonorisation précise pour chaque moment clé</em></h3><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\"><span style=\"display: inline-block\"></span></h3><p class=\" font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Chez Spice Events, la qualité sonore est pensée dans les moindres détails. Cérémonie laïque, discours, espaces annexes : chaque diffusion est adaptée au lieu et au timing pour garantir clarté, confort d’écoute et fluidité.</span></p><p class=\" font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Découvrez nos solutions de </span><span><a href=\"http://www.spiceevents.fr/sonorisation-deportee\" data-type=\"undefined\" target=\"_self\"><strong>sonorisation déportée</strong></a></span><span> et de </span><span><a href=\"http://www.spiceevents.fr/sonorisation-ceremonie-laique\" data-type=\"undefined\" target=\"_self\"><strong>sonorisation de cérémonie laïque</strong></a></span><span>, conçues pour accompagner vos instants les plus importants en toute sérénité.</span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_a6f2b644-0097-4fca-be7f-b8cda4f27a94",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_e4eb8e2e-a865-41cd-9047-366d1b28291b",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_e69b2008-0c4b-435e-a30e-3740104abfb7",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_963dc58a-793a-4fe0-84de-b14535dbac3b",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_ec8a56d3-71ae-4871-9dfa-448748fd249e",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_5b8e1e4d-4e28-408a-af76-dcb6b5c17472",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_87669127-d395-47bc-a8e2-b6860601e197",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_df60ed89-7ad4-4fb8-aa8f-7feb00985115",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_562ad705-948a-467e-949e-511603193de4",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Besoin de plus de précision sur notre matériel ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_b6e8c44b-e07c-428e-bab7-88be0b60fec1",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>La technique, notre signature invisible</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8e881237-aeb6-488b-8db5-b93abafe15a6",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/67693_179662",
+     "storage": "s",
+     "format": "png",
+     "h": 759,
+     "w": 759,
+     "s": 987995,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_a077dd93-3738-4e63-948c-29e32a8e8fa4",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire performance technique",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1762444848221#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1762444851068#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_a4d7eab2-505c-4e43-ab4d-a850d46c32a2"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_70115e8f-1de7-4fae-9801-6a659de0d048"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_5d97d71c-3a80-4e57-8c36-3626f858e605",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_14624e94-04f8-415b-b6a5-f40343698065"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_8896d2e1-f6db-48cf-a529-9d483675103d"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_3c6a2ca5-7bb2-4e5c-9b64-b08253543632"
+          },
+          "$item1762444848221#date": {
+           "type": "string",
+           "title": "Date de vote événement",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_db756972-08a3-4222-b5a3-005d843c3ff7"
+          },
+          "$item1762444851068#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_09d07483-f64a-43bc-825c-b7252b830f64"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1762444851068#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_65e5b106-eb1d-4ec9-b1a1-ab6afd41c57e"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_baa32b72-a155-427a-b687-a02716f10d4d"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1762444848221#date",
+         "$item1762444851068#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1762444848221#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1762444851068#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Perf tech son & lumieres",
+ "uid": "088362a2-cf9a-40fc-8db6-e0b5e7668e34",
+ "path": "/performances-techniques-son-and-lumieres",
+ "autoPath": false,
+ "authorized": true
+}

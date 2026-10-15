@@ -1,0 +1,586 @@
+{
+ "blogPostMeta": {
+  "id": 21552160,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-07-07T11:18:06.424-07:00",
+  "publishedAt": "2022-07-07T11:49:39.268-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/nos-idees-de-decoration-pour-vos-tables-de-mariage",
+  "customSlug": null,
+  "editCount": 254,
+  "publishedEditCount": 243,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/nos-idees-de-decoration-pour-vos-tables-de-mariage",
+   "title": "Nos idées de décoration pour vos tables de mariage",
+   "image": "https://images.unsplash.com/photo-1561593367-66c79c2294e6?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "Vous avez enfin trouvé votre lieu, votre traiteur et votre DJ ? C’est le moment d’imaginer votre décoration. Des murs jusqu’à l'assiette, celle-ci ne doit pas être négligée, d’autant plus que vos invités vont passer la majeure partie de leur soirée à table. Une décoration blanche tu aimeras Le...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Livre d’or audio",
+  "nextBlogPostRelativeUrl": "/blog/livre-d-or-audio",
+  "nextBlogPostId": 55904853,
+  "prevBlogPostTitle": "Enterrer sa vie de célibataire",
+  "prevBlogPostRelativeUrl": "/blog/enterrer-sa-vie-de-celibataire",
+  "prevBlogPostId": 20941909
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_0a25d5cf-ce96-4f74-b5de-baf90a83bdb6",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_a42c16a5-16e3-4cd5-b823-cd7901908021",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_227a18be-ce42-4c96-bd11-0178294bb7eb",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p>Nos idées de décoration pour vos tables de mariage</p></div>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_a4af362f-5512-475d-a893-41c16879d5d8",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p>A table !</p></div>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_1b0d720a-a59e-46c7-9785-896ba7a6eec1",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1561593367-66c79c2294e6?ixlib=rb-1.2.1&q=80&cs=tinysrgb&fm=jpg&crop=entropy",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_dcfe3ef0-5374-4bbc-95ae-d9f538c7b44a",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_58288c85-d036-4f8c-b449-4b7399c7d8f9",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_065a9fe9-1d5c-4bbb-8f52-bd60258a88ae",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_438b7e9f-8bc8-42bb-a83b-a76917b87b87",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_b193011e-2df5-47a8-b4df-b248a68eaf0a",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_83632fb5-4f33-47fa-b91c-8ba8d0b61703",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_b47df80a-b421-43b1-91e3-2bb9fc830aab",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "668d1948-7e30-4937-af5a-3a98b5237b37",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7d2cc040-1d38-49ba-b980-06f566a8bb68",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\">Vous avez enfin trouvé votre lieu, votre traiteur et votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> ? C’est le moment d’imaginer votre décoration. Des murs jusqu’à l'assiette, celle-ci ne doit pas être négligée, d’autant plus que vos invités vont passer la majeure partie de leur soirée à table.</span><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "237f1404-6167-4efb-8315-84af54e4c7b2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d956e6e9-d7d1-4827-ab28-7c8d83f43068",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Une décoration blanche tu aimeras</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "237f1404-6167-4efb-8315-84af54e4c7b2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4842b014-50b1-4c6a-9ecd-dd3dfdff1c07",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify; font-size: 100%;\"><span style=\"color: #000000;\"><br>L</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">e bla</a></span><span style=\"color: #000000;\">nc c’est LA “couleur” du mariage. Synonyme de pureté, on la retrouve très souvent dans la décoration des mariages. C’est une couleur qui plaira toujours mais si vous voulez que vos invités soient vraiment subjugués, il faut vous démarquer et l'utiliser de façon originale. En l’associant à une autre couleur ou avec du bois, vous obtiendrez un joli mélange raffiné. Vous pouvez utiliser un chemin de table en dentelle blanche, de la vaisselle ancienne, des couverts dorés, placer de</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">s lettres lumineus</a></span><span style=\"color: #000000;\">es sur la table du buffet, mettre d</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\">e</a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\"> grandes</a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"\" target=\"_self\"><u> guirlandes lumineuse</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\">s suspendu</a></span><span style=\"color: #000000;\">es au-dessus des tables ou encore ajouter de la couleur en dépareillant les fauteuils des mariés</span>. <br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e051150b-e330-464b-a747-47e4d25261dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "db67f952-9c19-441b-b1d7-7cfca65a50bb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e051150b-e330-464b-a747-47e4d25261dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5eb8f20b-c0b4-4104-9970-6e0b979ff21c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Une touche végétale tu apprécieras</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e051150b-e330-464b-a747-47e4d25261dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e305dcbc-cbf6-41b2-9db3-91d87cc2404e",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><br>En misant sur un</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">e thématiq</a></span><span style=\"color: #000000;\">ue remplie de plantes et de fleurs, vous tombez pile dans la tendance ! Utilisez des bouteilles en verre pour vos fleurs ou comme bocal à</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"\" target=\"_self\"><u> guirlandes lumineus</u></a></span><span style=\"color: #000000;\">es, prenez des rondins de bois en guise de sous-assiette ou pour placer vos décorations de centre de table. Pour le plaçage, écrivez les prénoms de vos invités sur des piquets à potager et plantez-les dans de beaux pots accompagnés d'une plante ou accrochez d'adorables étiquettes sur un petit bouquet de fleurs séchées. Pour votre centre de table, installez une petite jardinière ou un bouquet XL mais attention à la hauteur, c'est mieux si vos convives peuvent voir leurs voisins d’en face. Disposez de la pampa et des chandeliers c’est très tendanc</span>e.<span style=\"color: #000000;\"><br>Il est préférable de privilégier les plantes fraîches pour plus de classe et d'élégance mais si vous n'avez pas le budget, il existe aujourd’hui de très jolies alternatives. Vous pouvez également mélanger les deux. Si vous faites le choix de vraies plantes, évitez également les fleurs et plantes trop odorantes qui pourraient déranger vos invités.</span>  </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e051150b-e330-464b-a747-47e4d25261dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1bc4d9cc-2418-4353-933c-d7a95d8301d6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e051150b-e330-464b-a747-47e4d25261dc",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8c60d921-dfc6-4c61-b0f1-7ab6a1c22548",
+     "defaultValue": false,
+     "value": "<p><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "49feea5e-dcd5-4628-aed5-6539b6348f40",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "50d6f360-505b-4239-8cbc-49064505532e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Le noir tu considéreras</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "49feea5e-dcd5-4628-aed5-6539b6348f40",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1327e1c7-777f-4d51-adb2-268bb7b6bedb",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><br>Moins traditionnel que le blanc, l</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">e no</a></span><span style=\"color: #000000;\">ir fonctionne aussi très bien pour la décoration de mariage. Il est plus rare d’en voir et c'est pour cela qu’il est intéressant de l'utiliser. Si vous le disposez correctement, vous êtes sûrs d’épater vos invités. Pour cela, vous pouvez par exemple, mettre un long chemin de table et le laisser tomber jusqu'au sol, disperser des éléments en cuivre, ajouter de la couleur avec des fleurs et des plantes et pourquoi ne pas ajouter des objets d’animation comme un porte photo où vos invités pourront accrocher leurs jolis clichés pris dans la journée grâce à votr</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/le-photobooth\" data-type=\"\" target=\"_blank\">e</a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u> photoboo</u></a></span><span style=\"color: #000000;\"><u>t</u></span><span style=\"color: #000000;\">h </span>?</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "49feea5e-dcd5-4628-aed5-6539b6348f40",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "10ac3257-0989-4d11-917b-be301fb61741",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "49feea5e-dcd5-4628-aed5-6539b6348f40",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f15b29ad-0e16-47bb-ab96-7e4fc194a3ee",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "49feea5e-dcd5-4628-aed5-6539b6348f40",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "45d43671-203d-4422-b7be-cdef82daf9a8",
+     "defaultValue": false,
+     "value": "<p><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "54820238-a510-4ce8-ba81-5bcd734cc571",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Des éléments bois tu affectionneras</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3b5bccb5-7a1c-4bd8-a117-fa7d444770a0",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: left; font-size: 100%;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "baa251b8-6e0c-4a05-ba5d-f7529f217c09",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><br>Très tendance, l</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">e bo</a></span><span style=\"color: #000000;\">is se révèle. Son avantage est qu’il se fond avec tous types de décoration. Pour lui apporter plus de couleur et de gaieté, vous pouvez dépareiller vos verres mais attention à ne pas trop faire de mélange et de donner dans le too much, rester dans les mêmes tons et styles de couleurs. Si vous avez prévu de grandes tables en bois, n’y mettez pas de nappe et de cette façon, elle sera mise en valeur. Choisissez de jolies chaises ou un grand banc et placez-y des coussins de couleurs pour apporter chaleur et convivialité. Vous pouvez aussi mélanger plusieurs styles de chaises</span>. </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "eead60b8-b03b-4659-a608-a6aa956ab6aa",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: left; font-size: inherit;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "262d3f7d-75ee-4646-9b6b-9795d2b96ea6",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "31d69fa8-40c7-4059-a3da-7df954a3d931",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "dd0e041b-3595-4e21-bef5-01a3dd018a92",
+     "defaultValue": false,
+     "value": "<p><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "604c2c6f-8ba2-4727-82d9-81e8875089bf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5d9244ba-e903-40bf-8c06-66755e9ccbe1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Afin d'illustrer nos idées, voici quelques inspirations :</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8942c150-08aa-475a-ad90-2858c9c73d2f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "01d5ac35-f782-4f9d-83b3-ebb12edb1e8e",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/876708_191487",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 802,
+     "w": 1200,
+     "s": 1611022,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e47f3b9d-da33-4dd7-8517-6845f4c69595",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "3b281fe5-d4c9-4d2e-b7f7-1ce91376962b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/353217_474123",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 4287292,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b26398a7-0c09-4cfc-9274-89a84e8c3e81",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "51115fde-23d2-4f3d-a1a1-98c207efbafa",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/801065_440824",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 803,
+     "w": 1200,
+     "s": 1369277,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7d799197-4054-4ea3-8732-eb2c9c30f494",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "b004d975-97da-4d56-ad15-3dc787f8f912",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/665608_320052",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 739,
+     "w": 1200,
+     "s": 2180811,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2895a8ee-1590-435b-bf67-9ba85a658ee8",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "07b6891e-8ad8-44aa-a004-29fb9adb0a8a",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/847307_369306",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 2302202,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "090962b7-17dc-41db-88fa-f216e9d3a61e",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "98841b02-acb0-4df8-bf09-50e696d0aab0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/642189_926020",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 713,
+     "w": 997,
+     "s": 184359,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f3160a54-4ef2-41fa-a7e4-cd925cb1a27b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0fc61db5-7331-4159-9ca6-a5d2fd5ab4c3",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 100%;\"><span style=\"color: #000000;\">N’hésitez pas à mélanger les couleurs et les styles : </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">blanc et bois</a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\"> ou encore </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">noir et végétal</a></span><span style=\"color: #000000;\"> ! Peu importe la couleur ou le style de décoration que vous allez choisir, cela doit vous ressembler ! Pensez à vous et à ce que vous aimez et votre décoration sera forcément réussie et appréciée par vos convives. Spice Events vous </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>accompagnera</u></a></span><span style=\"color: #000000;\"> à chaque étape de votre grand jour.</span><br><br></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d8243996-b761-490d-93eb-427bb2b3a251",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9c62ba38-c056-4a95-a21c-70a227395eb1",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

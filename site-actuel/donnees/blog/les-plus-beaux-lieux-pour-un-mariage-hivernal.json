@@ -1,0 +1,487 @@
+{
+ "blogPostMeta": {
+  "id": 18897596,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-01-25T01:22:19.591-08:00",
+  "publishedAt": "2022-02-01T03:00:12.000-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/les-plus-beaux-lieux-pour-un-mariage-hivernal",
+  "customSlug": null,
+  "editCount": 162,
+  "publishedEditCount": 149,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/les-plus-beaux-lieux-pour-un-mariage-hivernal",
+   "title": "Les plus beaux lieux pour un mariage hivernal",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/591281_400302.jpeg",
+   "description": "Vous souhaitez vous marier en hiver mais vous ne savez pas où organiser votre réception ? Spice a trouvé pour vous 3 idées de lieux pour un mariage hivernal réussi.   Au bord d’un lac Si vous recherchez un cadre idyllique et magique, pourquoi ne pas louer une salle ou un hôtel situé au bord d’un...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Les plus belles chansons pour ouvrir le bal",
+  "nextBlogPostRelativeUrl": "/blog/les-plus-belles-chansons-pour-ouvrir-le-bal",
+  "nextBlogPostId": 19036029,
+  "prevBlogPostTitle": "Se marier en hiver",
+  "prevBlogPostRelativeUrl": "/blog/se-marier-en-hiver",
+  "prevBlogPostId": 18847338
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_975c30cd-05c6-4b7d-8eb1-c19df718312a",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_271f158f-9167-4f38-9dc8-6d3b3a4263f4",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_9be6e120-2320-49f2-a054-1b33a95e2056",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Les plus beaux lieux pour un mariage hivernal</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_ac2b09b3-b6d1-4a84-b836-b61cd49005cd",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Faites-vous rêver</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_ce6362d4-dbcd-4a29-8e71-069c23f3cbb5",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/591281_400302",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 1344,
+    "w": 896,
+    "s": 104524,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_df3fd7e8-b7e3-44de-9b8b-0982cf23464c",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a092f434-3abd-4246-93a3-fc6eaea298f2",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_26373c2d-7ed8-4fae-977d-6363b41aa839",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_df7f93e5-7b94-4ec3-bd17-58373897b695",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_cad37277-6eb5-4d99-8260-de0606027774",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_82b07735-9eb1-4669-8b01-4b00e348465d",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_fc794129-77b6-43cd-a749-a7f23e932a6a",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "bd7afcff-81fc-4b90-b393-95bc7d65c6e7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d7506dad-8da9-4816-92af-b95e76a5e9c4",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous souhaitez vous marier en hiver mais vous ne savez pas où organiser votre réception ? Spice a trouvé pour vous 3 idées de lieux pour un mariage hivernal réussi. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd7afcff-81fc-4b90-b393-95bc7d65c6e7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1943a962-1adb-4891-983d-8074f740ff8e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e1de9655-2199-4c01-b6a1-78c7e9ff38e5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "062cd3f6-224b-475a-8160-7f723c4fb87f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Au bord d’un lac</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c0828af9-0100-4cc2-a430-1193fce3bc49",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5f096a91-a015-486e-abc5-d4889f80fc4e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous recherchez un cadre idyllique et magique, pourquoi ne pas louer une salle ou un hôtel situé au bord d’un lac ? En hiver, les lacs nous offrent un spectacle fabuleux et d’autant plus s’ils sont gelés. Un bon moyen d’impressionner vos invités et leur proposer un mariage différent qui marquera les esprits. Avec une vue pareille, vous pourrez prendre de jolies photos originales à l’aide de notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7b9ab870-e1c3-49ac-abe1-047dafc22d1f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f6747657-0257-4f9f-ad68-bdb2a177bac9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pensez également à </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/notre-materiel\" data-type=\"\" target=\"_blank\">éclairer</a></span><span style=\"color: #000000;\"> l’extérieur de votre lieu, pour que même une fois la nuit tombée, le lac reste visible. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c5b17184-3e45-4501-a575-61eeaaf57363",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "7d5d00f0-f3a2-4b2b-808e-c29de8c5f4e3",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/59909_3182",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 278948,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e166db8a-2ddd-4288-8169-4266a6d53ba5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "039fd215-b187-48fb-8ce3-6bf5ca9dfb0e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Photo : </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.salledudomainedubaron.com/\" data-type=\"\" target=\"_blank\">Salle du Domaine du Baron de Montriond</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "45d7a91b-9e42-4e13-a3a7-b22d599bfa1a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4c0550bf-d37f-4118-a8e3-9daca3e12fb2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "45d7a91b-9e42-4e13-a3a7-b22d599bfa1a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d0695e0d-0f43-4abc-a766-3e241b6221cc",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Dans un chalet à la montagne </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a763a451-c60c-400d-a81c-13bd4847532a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6f804917-abb2-4d2a-9bcf-577516295709",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous êtes fans de ski, de randonnée ou tout simplement de la montagne en elle-même? Alors vous mariez dans un joli chalet est une évidence. Au calme, dans un endroit reculé, vous pourrez profiter pleinement de vos proches et du cadre qui s’offre à vous. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "73b33615-5103-49a6-a273-5333fdf42d36",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d8e789cf-10ac-4f2c-a348-6f826ab3be91",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un chalet est un lieu convivial et chaleureux qui apportera de l'intimité à votre mariage. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "330e6a24-4b63-4096-b60b-8a8ebb4fb26b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "358311b3-516b-4fe6-9845-a1ca70baa4d5",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Ajoutez à cela </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">un orchestre</a></span><span style=\"color: #000000;\"> et le tour est joué pour séduire vos invités, déjà charmé par ce lieu insolite. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a580fb26-6e43-4eba-b4bd-7387eeae5c82",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "ea70608b-59c6-4771-acdb-953f1778e808",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/707839_283804",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 686,
+     "w": 1200,
+     "s": 276707,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "59884c37-b5d9-443d-b6d0-822529371ce7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c0562cbc-cf0f-4f64-a23a-b74fb4832f29",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Photo : </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.monsieurchalets.com/en-ca/chalets-a-louer/laurentides/chalet-a-louer-corporatif-chateaualyma-966\" data-type=\"\" target=\"_blank\">Chalet Chateau Alyma</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "65ed353b-d02d-48da-941c-14215dd6f3f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "44d1c588-9c64-46ed-b127-533685865dc2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "65ed353b-d02d-48da-941c-14215dd6f3f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ade8d5cf-26df-41bc-acd7-31664d9ef6fb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Un lieu avec cheminée</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "35f81909-f962-4b3c-8123-4e589101a119",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cdd3f885-471f-48f5-9d04-05579b05ccd6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Qui dit hiver, dit cheminée. Et cet élément hivernal pourrait être l’objet de décoration phare de votre lieu de réception. Avec elle, le chaleureux et la convivialité seront au rendez-vous. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d65b9b44-6768-4464-8218-aa6d23385cba",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "94f53e18-3940-4b75-9f54-0b08f2042956",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Ajoutez-y des éléments de décoration en fonction de votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématique</a></span><span style=\"color: #000000;\"> et rendez ce moment cosy et rempli de charme.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b34fb356-cc37-48c7-9fa0-0efc049ccb78",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "d41490c8-bb97-4dad-bdcf-dc394c776fe0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/780284_859043",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 640,
+     "w": 960,
+     "s": 102012,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3e3dbc48-c6bb-4c89-854e-17f13fd0a8da",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3b62616c-b5d4-4c21-87b5-dbe5964dceac",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Photo : </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"http://www.leshautsdepardaillan.com/\" data-type=\"\" target=\"_blank\">Les Hauts de Pardaillan</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "95bab209-b840-4e5a-ada7-12e4041cdf78",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d31cdf67-3c12-4636-bc01-532ff864a769",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "95bab209-b840-4e5a-ada7-12e4041cdf78",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e4ea35b6-0f10-46c5-a2c7-cc2c7829035a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Maintenant que vous savez où célébrer votre mariage, rendez-vous sur notre site afin de découvrir nos </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"><u> tendances</u></span><span style=\"color: #000000;\"> et rendre ce moment encore plus inoubliable. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "61aaf011-a4a3-4950-a815-175f5fe446ca",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5a8a271d-2893-44df-9ba1-f4e848518415",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

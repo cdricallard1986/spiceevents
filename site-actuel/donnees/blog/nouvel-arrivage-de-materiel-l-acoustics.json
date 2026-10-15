@@ -1,0 +1,272 @@
+{
+ "blogPostMeta": {
+  "id": 2151273,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T03:37:47.549-07:00",
+  "publishedAt": "2017-04-27T03:37:47.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/nouvel-arrivage-de-materiel-l-acoustics",
+  "customSlug": null,
+  "editCount": 75,
+  "publishedEditCount": 70,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Le Matériel"
+  ],
+  "categories": [
+   {
+    "id": 29958,
+    "name": "Le Matériel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/nouvel-arrivage-de-materiel-l-acoustics",
+   "title": "Nouvel arrivage de matériel L-ACOUSTICS",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/261912_283389.jpeg",
+   "description": "Soucieux de vous offrir le meilleur matériel possible, nous étoffons sans cesse notre catalogue pour votre plus grand plaisir. Du matériel toujours de qualité, performant et esthétique.  Spice Events s'équipe de nouvelles enceintes X12 et Arcs Wide de la marque L-ACOUSTICS. La série X se compose...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Nouvelle Régie PIONEER blanche édition limitée !",
+  "nextBlogPostRelativeUrl": "/blog/nouvelle-regie-pioneer-blanche-edition-limitee",
+  "nextBlogPostId": 2151721,
+  "prevBlogPostTitle": "Un anniversaire de talent !",
+  "prevBlogPostRelativeUrl": "/blog/un-anniversaire-de-talent",
+  "prevBlogPostId": 2151430
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_5f8ec397-58f0-41d0-8cbf-0955bae69cf6",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_df550160-aeff-445b-9455-237aceee2f23",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_155e44a9-f1c0-4fbe-8543-f792f186470b",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Nouvel arrivage de matériel L-ACOUSTICS</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_bbac2acd-8ddb-476b-8d93-7e7153554f54",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Enceintes X12 - Arcs Wide - Amplis LA8 et LA4X</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_7788f986-e744-4c69-9288-cbe9a1c69432",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/261912_283389",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 2448,
+    "w": 3264,
+    "s": 241112,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_040bd992-49af-4ec0-a5c6-96351f5d15bc",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_8853e35f-b502-4849-96c5-048d1d220d1b",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_ebeb6738-ba04-4879-a1eb-446b78da2353",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_2366b257-4715-406e-b0c0-6fd1d824d93d",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_ebdc0e91-cbfb-4330-891e-0153a69603d0",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_cc598f9f-0f74-43a9-8bf1-3c3aa916dc2b",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_deb36e19-098b-43c4-93ca-84baf9b4939b",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_3b9afce4-07d3-47aa-9fe7-dbe62e9ad836",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_379e5675-031b-4cac-bead-cd3879ba84ce",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/261912_283389",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 900,
+     "w": 1200,
+     "s": 241112,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_9932899a-8237-4686-aa63-63e6aaa84a16",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ee9802cf-400f-4570-a819-565890f1a8c3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">Soucieux de vous offrir le meilleur matériel possible, nous étoffons sans cesse notre catalogue pour votre plus grand plaisir. Du matériel toujours de qualité, performant et esthétique. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b2f0f2e4-1dd2-48bc-99dc-0f7b4d5a6382",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e6e85c5f-64d9-48d0-a97d-a8971dcb55b6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">Spice Events s'équipe de nouvelles enceintes X12 et Arcs Wide de la marque L-ACOUSTICS. La série X se compose de quatre enceintes coaxiales de différents formats, bandes passantes, niveaux sonores et angles de couverture, adaptés aux applications de courte portée en location et en installation fixe. Leurs qualités moniteurs de studio procurent à la série X une sonorité naturelle et transparente. La technologie coaxiale autorise un design d’enceinte compact et un équilibre tonal indépendant de la distance. Cela donne à la série X une couverture régulière en dehors de l’axe, une absence de distance minimale d’écoute et une immunité au Larsen.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_9932899a-8237-4686-aa63-63e6aaa84a16",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "476db34c-2944-4bb5-a732-6b8acd2f0917",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">Pour les amplifiées, nous avons aussi fait l'investissement de nouveaux amplis LA8 et LA4X également de la marque L-ACOUSTICS.  Le contrôleur amplifié LA8 appartient à la génération des contrôleurs intégrés haut de gamme totalement dédiés au pilotage des systèmes d’enceintes L-ACOUSTICS®. Le LA8 regroupe dans un format 2U les ressources d’un DSP 2 x 4 pilotant quatre canaux d’amplification délivrant jusqu’à 1800 watts chacun, une librairie de presets usine complète, une interface utilisateur intuitive, deux ports de connexion Ethernet pour pilotage en réseau, un panneau de connexion pour les entrées audio et les sorties haut-parleurs.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fcff5d5d-4974-4746-9efe-425f999ef853",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "37c1278f-f004-4f63-b63a-40cc5fa6b223",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">Du matériel toujours gage de qualité et de performance pour vous offrir des soirées exceptionnelles.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_53ed80fb-40a2-40ac-bb1a-af9edeba53f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2ce916a8-6381-47ef-89c6-d15c9f310bb7",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #140e06;\">Nous avons hâte de vous les présenter sur nos prestations</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cebc3586-1f85-4dc0-b30e-180923ed0bbf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b26a9776-0223-4094-843c-ea2a5aca3d97",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

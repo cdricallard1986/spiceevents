@@ -1,0 +1,568 @@
+{
+ "blogPostMeta": {
+  "id": 16939329,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-09-22T06:18:17.842-07:00",
+  "publishedAt": "2021-10-05T03:00:12.632-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/comment-choisir-l-ambiance-musicale-de-votre-mariage",
+  "customSlug": null,
+  "editCount": 254,
+  "publishedEditCount": 253,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/comment-choisir-l-ambiance-musicale-de-votre-mariage",
+   "title": "Comment choisir l'ambiance musicale de votre mariage ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5439810/25488_609032.jpeg",
+   "description": "Avant toute chose votre mariage doit être à votre image alors faites vous confiance. Tous vos invités n’auront d’yeux que pour vous, soyez à l’aise et brillez ! De la musique pour chaque instant. En plus d’être un jour exceptionnel pour vous et votre conjoint(e), votre mariage est une journée de...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Organiser son mariage : mode d'emploi",
+  "nextBlogPostRelativeUrl": "/blog/organiser-son-mariage-mode-d-emploi",
+  "nextBlogPostId": 17709360,
+  "prevBlogPostTitle": "Quelles sont les tendances mariage pour 2025 ?",
+  "prevBlogPostRelativeUrl": "/blog/quelles-sont-les-tendances-mariage-pour-2025",
+  "prevBlogPostId": 16886018
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_9c6d6abd-0452-4657-ba81-e88031cab55c",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_6ae301f6-a27d-4a52-b69d-cdcd84bf5bb8",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_adbe1c17-c23e-4a94-a2c3-c42da029c290",
+    "defaultValue": false,
+    "value": "<p>Comment choisir l'ambiance musicale de votre mariage ?</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_bb9bf8d3-b8ea-4022-a23a-31a1b1bbfa6b",
+    "defaultValue": false,
+    "value": "<p>&nbsp;</p><p></p><p><b>Vous hésitez encore en ce qui concerne la musique de votre mariage? </b></p><p><b>DJ, groupe, orchestre… Spice vous aide dans vos choix.</b></p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_39202691-0bd6-4c8a-ad06-de91cc3863a6",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "5439810/25488_609032",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3648,
+    "w": 5472,
+    "s": 4066274,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_b04ab6d6-ea2a-48e3-be96-7403a449e462",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_9f4f5b21-958e-4799-8733-8cbf1c33c0e1",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_7fd6cf81-ca43-47d6-a4e6-6b0423a34725",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_b261b055-4e0a-4659-99fc-6830cc5812a7",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_299cedbc-c0d6-4663-82a1-0b18b07c095d",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_b5e77c3d-20b8-483a-93b3-98c9c0377d84",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_b226edba-7a48-42c7-8d73-632c49a88629",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "2d2cbbab-6cf2-4896-9da1-3b54f488a902",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b95526e9-ee89-4d9b-b467-b2b93fe23af9",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Avant toute chose votre mariage doit être à votre image alors faites vous confiance. Tous vos invités n’auront d’yeux que pour vous, soyez à l’aise et brillez !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "121ede5c-5947-4c49-a0a0-82c72e1ab2a8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "80202025-d6ed-48e5-976b-7eb844c3b156",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>De la musique pour chaque instant.</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3eff4f0f-ec63-473b-9af4-f90a6a7bebe6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ad782dd5-a9bc-41fb-a81e-9a1eb6bc58b1",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">En plus d’être un jour exceptionnel pour vous et votre conjoint(e), votre mariage est une journée de retrouvailles ou de rencontres pour vos proches, l’ambiance se doit d’être au rendez-vous. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9779aa67-a18e-45dd-a22c-4de20e2b7de9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bb3aa5d9-6215-4ffc-bd39-6be4ed10de80",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Il est possible de varier les animations musicales pour les adapter à chaque moment de cette journée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e4efb83f-3f39-4100-915a-66a35b67214c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "67846147-88e2-41e1-a6aa-cd9b735bb22b",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Lors de l’échange des vœux, une ambiance calme et romantique est recommandée pour une émotion garantie. Dans cette optique, choisissez un </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>pianiste</u></a></span><span style=\"color: #000000;\"> ou un orchestre. Vous verrez les yeux brillants de vos invités, à moins que les vôtres ne soient déjà trop mouillés ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ef9b5746-33e8-4322-b4a9-43988fcc83b1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "01972c37-a3a2-413b-8eeb-7c7a5e95b3cf",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Pour l’entrée des mariés, si vous souhaitez rester dans une ambiance douce et pleine d'émotions, continuez avec un pianiste. Mais si vous désirez une arrivée plus festive, choisissez une </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>fanfare</u></a></span><span style=\"color: #000000;\">. Elle apportera rythme et joie à cet accueil. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "944c9111-09dd-439c-b725-28eeba4a6764",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e6bbbf66-65a6-4d25-8fd2-55dbca16a310",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">A l’heure du cocktail, vous avez le choix. Poursuivez avec le pianiste si vous recherchez une atmosphère douce mais si vous préférez plus de pep’s pour commencer à rythmer votre soirée, alors faites appel à une </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>troupe de samba</u></a></span><span style=\"color: #000000;\">. Une animation sensationnelle qui fera voyager tous vos invités en Amérique du Sud. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e3a0bab6-901e-46a7-a0fe-e04ef0b61ae4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "46b593fe-1686-4500-8ee8-fdbd05e9f8f2",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">En ce qui concerne le repas, orientez-vous vers des musiques plus calmes mais rythmées. Ainsi vos invités pourront accompagner leur repas d’une petite musique agréable et enjouée. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a47b0be7-cee7-4e44-bad6-66a05414f3f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "61143506-0fb3-4a40-8927-584511406a2a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Quant à la soirée dansante, rien de mieux qu’un </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/nos-dj-d-exception\" data-type=\"\" target=\"_blank\"><u>DJ</u></a></span><span style=\"color: #000000;\">. Faites confiance à nos professionnels qui sauront s'adapter et captiver vos convives jusqu’au bout de la nuit. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "32b22533-5e2f-45b9-a75d-a3f5454e5eb8",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "fa25109f-6939-464d-b95a-03237f045f4b",
+     "link_url": "https://lh6.googleusercontent.com/yBmrS1Z9Mg0wmm6qmNM_AAkmfKYfiFxAJoDNjjAgy18vAIjMhfO60ix2gG4sl6stGvI-GErIt-Epi1asIOHsrUh757kIlCijOOz7m64Bhn6c_zWVPSRrfWXt9ZbvReleoSIzd73A=s0",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/889613_563921",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 533,
+     "w": 800,
+     "s": 452766,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d6e29d4f-5688-4b6b-b6c5-e397dc9bded4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b7ddf384-a653-4d82-a7bf-443e3f976aa8",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Pour toutes les générations.</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d70c4a03-3f42-48ce-8b76-72b2ad06b8dd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f901ccdf-7b99-46f9-8f59-992b60dd123e",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Le mariage c’est aussi un événement multigénérationnel alors il faut faire plaisir à tout le monde. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "980be323-16aa-47e9-b071-9b03adcb27a6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ab459788-bb0d-414b-a8b9-2a05ccdcc755",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">La musique est l'élément clé qui rendra cette journée encore plus inoubliable. Et pour qu’elle marque les esprits, il faut qu’elle plaise autant à Mamie qu’à votre petite nièce. Tout le monde doit s’amuser. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "94822aa8-6df8-4cbd-96ce-bc458000231c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a349cb02-f9b3-4301-a8c4-a709ae82d764",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Pour réussir cette mission, Spice vous propose son </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/le-bar-a-vinyles\" data-type=\"\" target=\"_blank\"><u>bar à vinyle</u></a></span><span style=\"color: #000000;\">. Choisissez ou laissez vos invités se porter sur ce large choix de disques, vous tomberez forcément sur LA musique, celle remplie de souvenirs et de nostalgie. De plus, ce bar est parfait pour une ambiance rétro ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8470da32-3aab-46af-a331-1a154c36e4e2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "abbd5829-17b1-47d8-a3a6-3a81951cceae",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Encore une fois, vous pouvez comptez sur nos </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/nos-dj-d-exception\" data-type=\"\" target=\"_blank\"><u>DJ d'exception</u></a></span><span style=\"color: #000000;\">, ils sauront s’adapter à tous les types de cérémonies. Il offriront une animation adaptée à chaque tranche d’âge !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "35b86aed-8681-47e5-b980-a90a34f62e96",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f2e02e2a-f16e-4c72-b07c-8aab228d5ba3",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Avec tout cela, vos convives seront heureux de voir que vous avez pensé à eux. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "029fb05a-dff0-44b9-9857-1fd0444adb5d",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "2d03d9a6-7df5-4bba-9e13-e4d46d22e6e7",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/227226_233837",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 533,
+     "w": 800,
+     "s": 280898,
+     "new_target": true,
+     "noCompression": false,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "83d4082e-89d8-450c-a150-5ea21c22beff",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ccab0b2b-c201-4136-a14b-90e0b6d742f9",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Et pour tous les styles.</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "05e89c6f-8b05-4a8b-967b-756d46468748",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5451bae2-1f90-49fd-8d9e-7595fd69f66c",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Outre l’âge, les styles aussi différent. Une fois de plus, il va falloir faire varier les plaisirs. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "01f625e1-8d3b-4629-9bdb-4932e805b4ab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "114860df-c28c-4a91-a1be-e226b7b6d821",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Le </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>groupe de jazz</u></a></span><span style=\"color: #000000;\"> est une bonne idée si l’ambiance recherchée se veut romantique et chaleureuse.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3f90a3d3-fafe-4e6e-b40a-a47233680a63",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "75331158-3a41-4875-b00d-2c93cedf5bee",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Vous pouvez également vous laissez tenter par la venue d’un </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>saxophoniste</u></a></span><span style=\"color: #000000;\">. Cet instrument classe pourra vous accompagner lors de l’entrée des mariés, du cocktail ou encore sur la piste de danse. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c9e00319-aa3c-4ffe-8afc-615189e266eb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6c6d4bad-f340-428a-aa6a-3beec2c1b512",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Pour les soucieux de l’environnement comme nous,  il y a la </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/des-evenements-plus-green\" data-type=\"\" target=\"_blank\"><u>Pikip Solar Speakers</u></a></span><span style=\"color: #000000;\">, notre borde DJ solaire 100% autonome en énergie. Elle offre </span><span style=\"color: #323437;\">une acoustique exceptionnelle pour 500 personnes.</span><span style=\"color: #000000;\"> Mais le plus important, c’est qu’elle est écolo !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "72fa6140-3ed2-4287-9db3-9c4edaa69b77",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a0de8ff8-4a6c-4111-85f5-7a04d35897ab",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Sinon pour les personnes fans des années 70, il existe la </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\"><u>disco party</u></a></span><span style=\"color: #000000;\">. Un retour dans le temps exceptionnel rythmé de funk et de pop.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "062c99e3-1adf-422c-9c27-cb6ad8f841f8",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "8258dccc-dfea-403b-93f6-6f897e5cbb7d",
+     "link_url": "https://lh6.googleusercontent.com/I_4xRltnPe01_n0ZOQ0rVeV2_fvbI7ad4qzhLEvJWJ-ZsIjXrHeRme48nsKNdB-uXaMl_xYoceDYwzyOqiNKKF6X_I2MImI0oc99lWeuNat-oML6xXc_mpOxvGpV9TL4mwrwcQ2p=s0",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/400881_484613",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 534,
+     "w": 800,
+     "s": 1049799,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8ba64da0-bafd-4e8d-947d-d1173e91188e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6f83055f-a816-46c2-bed9-63dd2cf25e9a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Vous l'aurez compris, que votre cérémonie se déroule en plein air, à la mairie ou à l’église, votre ambiance doit être choisie minutieusement.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0ceab82d-7c68-4dcc-8c1c-fdfb52b912fa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7f584e8e-7d10-4c08-a897-09bdb75157f8",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\">&nbsp;</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "58423ade-2593-440b-8150-4cccda5b4f10",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "50864dab-6ddc-4ea9-8e70-e54952996428",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Si avec toutes ces informations, vous avez encore des doutes ou ne savez pas comment vous y prendre, Spice est là pour vous accompagner dans vos interrogations. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f609748a-8a40-4df6-ace9-7d431af74e31",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9f65bace-0bd2-482f-a04a-82980d8c4156",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">N’hésitez pas à </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">venir </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">vers </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">nous </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">pour toutes questions, nous nous ferront un plaisir de vous répondre.</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "95b21d0d-58c9-4684-85b9-73cef5739def",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "567cee9a-9eac-44d6-857c-1af03c84d8c9",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\">&nbsp;</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

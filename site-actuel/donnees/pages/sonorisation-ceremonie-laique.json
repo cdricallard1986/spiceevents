@@ -1,0 +1,823 @@
+{
+ "type": "Page",
+ "id": "f_34239ef4-191c-4cc5-8786-cab3ddce52f4",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_94f3e8c3-ca47-4c04-bfa3-4c1f519ca0fd",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_11a3c1eb-171f-4497-ae08-85a97d8fcf4b",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_182923a2-ca01-4c3a-8177-491a406a2b9c",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_8a2a3d4c-bc4b-4308-9938-0af40593a736",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_ac2c17c8-4020-48ac-b7b3-1a8d1690add7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">SONORISATION C<span style=\"color: #ffffff;\">ÉRÉMONIE LAÏQUE</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_af45bf4d-cc1f-4138-851e-2fcbe5c79347",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-50\" style=\"font-size: 55px;\"><span class=\"s-text-color-default\"><em>Des émotions qui méritent d'être entendues</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_fde1857f-152e-4d82-ac22-e35c1291142a",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/768046_909629",
+         "storage": "s",
+         "format": "jpg",
+         "h": 1500,
+         "w": 1200,
+         "s": 283148,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_ebfb9366-50ab-43f0-9dd7-27649a109b87",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_0df1db37-af5f-4ee7-9442-47dcc64ca108",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_cfd83841-a09a-478f-a61e-8c02f09a4f1f",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_bb08448a-8134-426b-a9ac-504e24e3fe6e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_de12891c-43ea-45a4-a6a4-de81354e21f9",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_012d6112-a622-4b3c-ae58-1838c0f7e208",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_764914e9-4114-43c6-885d-ae6b5d3155c7",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_7bc7476d-3034-4e29-93d7-3172a1ed4465",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_2e78c1c6-6e1f-40b9-955b-b54b54abfb31",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_1ac3a64d-da2f-46cc-9a91-6ffb89cd36d0",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_f7644ffa-e445-4391-869e-de4c8b2db792",
+       "defaultValue": true,
+       "alignment": "auto",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_59e3c068-08ee-4136-b3bb-ef016a0f9570",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_766dac75-0d9a-4f18-b171-85f74ef9b768",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_9bbc14eb-c148-4387-a74f-779ba4cc90da",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Une technique invisible pour un moment parfaitement fluide</span></h1><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Quand la sonorisation s’efface au profit de l’émotion</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_522b36b2-9d74-470a-b110-b202b169e03c",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>La cérémonie laïque est l’un des moments les plus forts d’un mariage. Discours, vœux, musiques, silences… tout repose sur la clarté du son et la fluidité du déroulé.Chez Spice Events, notre rôle est simple : faire en sorte que tout fonctionne parfaitement, sans jamais attirer l’attention sur la technique.</span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: center; font-size: 48px;\">Une diffusion pensée pour vos invité</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\"><em>Chaque mot, chaque note, entendus avec clarté</em></h3><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Une cérémonie réussie, c’est une cérémonie où tout le monde entend, sans effort et sans gêne.</span><br><span>Nous installons une sonorisation équilibrée, douce et précise, permettant à chaque invité — du premier rang au dernier — de profiter pleinement des discours, des vœux et des moments musicaux.</span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Pas de son agressif, pas d’écho, pas de volume excessif : uniquement ce qu’il faut, là où il faut.</span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: center; font-size: 48px;\">Anticipation, réglages et tests en amont</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\"><em>Rien n’est laissé au hasard le jour J</em></h3><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>La sonorisation d’une cérémonie laïque ne se décide pas le jour J.</span><br><span>En amont, nous analysons :</span></p><ul><li style=\"text-align: justify;\">la configuration du lieu</li><li style=\"text-align: justify;\">le nombre d’intervenants</li><li style=\"text-align: justify;\">les moments clés du déroulé</li><li style=\"text-align: justify;\">les contraintes techniques éventuelles (extérieur, vent, distances, alimentation électrique)</li></ul><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Le jour de la cérémonie, tout est déjà testé, réglé et sécurisé pour éviter la moindre improvisation.</span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_22face5c-b693-4f4c-a54e-070d999fdb54",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_feb544f5-4c74-4bad-b64c-9f1e9f41a6b7",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_95c79e97-c189-4af3-a3c8-663285262f7a",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_ddaaa1fd-3dcf-47bd-81a7-5f3d4a9de523",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_69f342ad-75e7-4c0d-9382-435f78e7444e",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_81dfabf9-482e-43ea-994c-46faa6decb36",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_6e257998-ef0e-4625-95a7-d109fbdfb567",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_765b03f8-02ca-409d-8556-3b36324ec8c2",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_3b97ba8c-b31d-471c-bac5-250f270a2244",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_e06aa60e-6b07-4bf5-85c0-1a53d2e6fbfd",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_005f361d-73a6-4d05-8d4c-45bc24c62b1d",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_6aef350e-ad49-439a-9433-ce36b770eaee",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_411e9431-6e71-4411-8c79-edc6386f002b",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/891689_764333.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/891689_764333.jpeg",
+       "storageKey": "22139555/891689_764333",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 2560,
+       "w": 3840,
+       "s": 1668867,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_ac7451fc-cfd4-4c73-bf17-bb0e2da2ce5a",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/727727_834756.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/727727_834756.jpeg",
+       "storageKey": "22139555/727727_834756",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 1308,
+       "w": 736,
+       "s": 151825,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_1e94f315-e1c5-453f-b0d2-84aea54bb3e7",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/516063_89476.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/516063_89476.jpeg",
+       "storageKey": "22139555/516063_89476",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 2560,
+       "w": 3840,
+       "s": 2466743,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_d7d9d756-deb7-47d1-b462-0e964eab074c",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_50c8f6eb-b569-4ffa-af71-c7d89753ba84",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_e1051dc3-d8ad-47b8-b60f-ffc075c11327",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Une présence discrète mais essentielle</span></h1><h3 class=\" s-text-color-default font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Être là au bon moment, sans jamais s’imposer</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_adfe1a41-66cc-427e-a4c1-8d580f1b6450",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Pendant la cérémonie, nous mettons un point d'honneur à rester attentifs à chaque instant :</span></p><ul><li class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>entrée des mariés,</span></li><li class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>prise de parole imprévue, </span></li><li class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>musique à lancer au bon moment, </span></li><li class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>micro à ajuster si nécessaire.</span></li></ul><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Cette vigilance permanente permet une cérémonie fluide, naturelle et sans rupture, même en cas d’imprévu; le tout avec une sonorisation optimale.</span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: center; font-size: 48px;\">Une adaptabilité et une sérénité totale pour les mariés</h1><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: center; font-size: 24px;\"><em>Vous vivez l’instant, nous gérons le reste</em></h3><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper font-size-tag-paragraph s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\"><span>Que votre cérémonie se déroule :</span></p><ul><li style=\"text-align: justify;\">dans un jardin</li><li style=\"text-align: justify;\">dans une salle annexe</li><li style=\"text-align: justify;\">en extérieur sans équipement existant, nous apportons une solution autonome, fiable et adaptée à votre environnement, toujours dans le respect de l’esthétique du lieu. </li></ul><p style=\"text-align: justify;\">De plus, vous n’avez rien à gérer. Nous coordonnons la partie sonore avec l’officiant et les autres prestataires afin que vous puissiez vivre pleinement votre cérémonie, concentrés uniquement sur l’essentiel - votre mariage !</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_a3bd8d24-3d0f-48fa-aa9d-191179c507db",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_dcc158a1-c618-4c50-b12c-e8c546388ce9",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_a8b0956b-74fa-427d-b48f-112cf4d4eb01",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_ff6e5ceb-56a8-4413-89f4-4cc3d02f123e",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_8d31005b-cf15-4a3b-9aac-db6b9bd8540d",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_34da4dd2-0962-49f2-a428-82c695dc8d73",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_e0fc2df7-efe5-46d0-990b-c0a4ef4d30d8",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ebe976f3-95b0-4660-8561-cc6423c8c2b6",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_e52b8f99-22b7-4813-8ac3-a394ec95150a",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Votre cérémonie, votre histoire</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_7b7f97bb-d0d4-4fb8-8725-7bf2f84a3e20",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-text-color-default\"><em>Nous prenons le relais pour vous !</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_f22acf33-d9f7-4415-a75e-bc16abed828d",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/801169_565700",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 1104,
+     "w": 736,
+     "s": 91153,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_a9bb6921-9d69-438f-81ed-c9f2ce2eadd9",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire sono cérémonie laïque",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1770737670504#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1770737694121#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_c95cb95e-a0cd-43b2-ac04-531661ae89a2"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_b14df1b0-18a3-475e-8c64-ff6c6a28a843"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_73d507aa-8dd1-46db-b439-c093e00002f7",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_b074c401-b09e-413a-a25a-d36f3bc18098"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_cda1c731-0d68-499e-a524-dbd7cb155dc3"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_1b1c8c60-4004-489e-aa12-50de2a67fdd1"
+          },
+          "$item1770737670504#date": {
+           "type": "string",
+           "title": "Date de votre événement",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "MM/DD/YYYY",
+           "isRequired": false,
+           "id": "f_b8da0503-ca6e-4d1a-ac06-09a214273529"
+          },
+          "$item1770737694121#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_b98f8298-e5a2-46df-8892-5bd2f6b281c2"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1770737694121#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_6982d99b-dd91-4150-b365-e47a0313e67b"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_538ce42f-73c5-4393-a4a4-ba61ec19b034"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1770737670504#date",
+         "$item1770737694121#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1770737670504#date": {
+         "ui:widget": "DateWidget"
+        },
+        "$item1770737694121#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Sonorisation cérémonie laïque",
+ "uid": "0e36367a-516f-437e-9393-4799536a131b",
+ "path": "/sonorisation-ceremonie-laique",
+ "autoPath": true,
+ "authorized": true
+}

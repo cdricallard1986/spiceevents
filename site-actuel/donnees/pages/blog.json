@@ -1,0 +1,213 @@
+{
+ "type": "Page",
+ "id": "f_991472df-7fa5-46e4-b9c9-da57602d2949",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_31547c6b-c952-4065-83e0-7dfd4176faa0",
+   "defaultValue": null,
+   "template_thumbnail_height": 242.2681333333333,
+   "template_id": null,
+   "template_name": "blog1",
+   "origin_id": "f_44c08b99-6a87-41ae-a9ff-d9d17a6cab5f",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_6c7e6eea-75f3-4f01-89ca-eafc1dfb4563",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": true,
+     "name": "Blog",
+     "sync_key": null,
+     "layout_variation": "one-smallCircle-long-show",
+     "display_settings": {
+      "blogNumber": 20
+     },
+     "layout_config": {
+      "customized": true,
+      "snippetLength": "none",
+      "templateName": "B",
+      "imageShape": "landscape-4-3",
+      "imageAlignment": "left",
+      "structure": "grid",
+      "textAlignment": "left",
+      "imageSize": "m",
+      "columns": 4
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_8a7f4ec9-8a17-4fdc-b60b-95653ba89fdc",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Le Blog</span></h1></div>",
+     "backupValue": false,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_45d35ba2-17a2-4622-b004-af013c1a20ba",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": false,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_b89f76ee-8494-4c36-9b9e-6bbad1c41ac6",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#FFFFFF",
+      "type": null,
+      "id": "f_d49465d9-d0fd-4fc4-8d26-20f1b03c353f"
+     }
+    },
+    "blog1": {
+     "type": "BlogCollectionComponent",
+     "id": "f_c3fedb02-beb9-4b3b-978c-c9d03043b913",
+     "defaultValue": false,
+     "app_instance_id": null,
+     "app_id": null,
+     "category": {
+      "id": "all",
+      "name": "Toutes les catégories"
+     }
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_5852c287-deca-4e16-8cf6-5cea74c174ea",
+   "defaultValue": null,
+   "template_thumbnail_height": 242.2681333333333,
+   "template_id": null,
+   "template_name": "blog1",
+   "origin_id": "f_44c08b99-6a87-41ae-a9ff-d9d17a6cab5f",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_c88c1dbc-ee0e-44d5-afaf-9588c520ba7f",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": true,
+     "hidden_mobile_section": false,
+     "name": "Blog (m)",
+     "sync_key": null,
+     "layout_variation": "one-smallCircle-long-show",
+     "display_settings": {
+      "blogNumber": 10
+     },
+     "layout_config": {
+      "customized": true,
+      "snippetLength": "none",
+      "columns_mobile": "one",
+      "templateName": "B",
+      "imageShape": "landscape-4-3",
+      "imageAlignment": "left",
+      "structure": "grid",
+      "textAlignment": "left",
+      "imageSize": "m",
+      "columns": 4
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_90dc1558-cb30-4dda-bfb4-a97a165ba634",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\"s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-text-color-default s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper font-size-tag-header-one s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Le Blog</span></h1></div>",
+     "backupValue": false,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     }
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_d0f4bfe4-ff7d-4728-8512-ffcc1b39edd0",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": false,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_9ae2e5a4-54ff-4bb1-8031-aa01b6028562",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#FFFFFF",
+      "type": null
+     }
+    },
+    "blog1": {
+     "type": "BlogCollectionComponent",
+     "id": "f_e24758d3-dd79-4724-8a07-d140323ee99a",
+     "defaultValue": false,
+     "app_instance_id": null,
+     "app_id": null,
+     "category": {
+      "name": "Toutes les catégories",
+      "id": "all"
+     }
+    }
+   }
+  }
+ ],
+ "title": "Blog",
+ "uid": "874be55a-9d89-47cd-8bd7-89700196e8b0",
+ "path": "/blog",
+ "autoPath": true,
+ "authorized": true
+}

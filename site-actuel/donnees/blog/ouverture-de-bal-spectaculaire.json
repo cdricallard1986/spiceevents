@@ -1,0 +1,300 @@
+{
+ "blogPostMeta": {
+  "id": 2160371,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-29T08:30:56.908-07:00",
+  "publishedAt": "2019-03-01T08:30:56.000-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/ouverture-de-bal-spectaculaire",
+  "customSlug": null,
+  "editCount": 190,
+  "publishedEditCount": 187,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Le Matériel"
+  ],
+  "categories": [
+   {
+    "id": 29958,
+    "name": "Le Matériel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/ouverture-de-bal-spectaculaire",
+   "title": "Ouverture de bal spectaculaire",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/805940_19127.jpeg",
+   "description": "L’ouverture de bal est l’un des moments les plus attendus d’un mariage : celui où toute la salle retient son souffle avant d’être emportée par votre première danse. Pour sublimer cet instant, l’association fumée lourde et étincelles froides crée une ambiance à la fois spectaculaire, élégante et...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Amnesty International à la marche des fiertés 2019",
+  "nextBlogPostRelativeUrl": "/blog/amnesty-international-a-la-marche-des-fiertes-2019",
+  "nextBlogPostId": 2151243,
+  "prevBlogPostTitle": "Nouvel arrivage de matériel L-ACOUSTICS et YAMAHA",
+  "prevBlogPostRelativeUrl": "/blog/nouvel-arrivage-de-materiel-l-acoustics-et-yamaha",
+  "prevBlogPostId": 2151299
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_92fd9b00-364b-4541-84d6-16765d1cee99",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_521679b7-11dc-43eb-b64f-cf3e0dd0c47d",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_0140e14b-f84e-421b-aebc-8b8adf0a3387",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Ouverture de bal spectaculaire </p></div>",
+    "backupValue": null,
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_8b108d01-b080-4ff8-a005-ce3b50d18105",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p>Pour un effet waouh !</p></div>",
+    "backupValue": null,
+    "version": 1,
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_50bd3e73-3412-4181-a9f6-82d85542ffbd",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/805940_19127",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 799,
+    "w": 1200,
+    "s": 116493,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_39e9dcf6-8623-44f3-8464-54256067d428",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_888932ed-0bf2-4f41-8ab4-1cd1aeb089f8",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_67c1ca67-cb5e-436e-b4d9-5e73aae80a3b",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_7e1cd4a7-a8eb-4121-bea9-0303e9c7a82a",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_decf3760-094a-49eb-b254-480420408a63",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_b50a1e2e-a051-4bf0-840c-3b9057c4dd46",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_065ae4b5-816e-4f15-bf12-bce773beb4d1",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_e280945b-0da7-410e-9f80-488734041186",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_04c65251-ee85-4644-8ff0-22295f06f7c6",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/251129_605765",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 111083,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_07c2193a-48fa-498d-9cc8-8265f988966a",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_94e47aec-d565-406b-933c-e3429f5732f0",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/39929_587146",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 799,
+     "w": 1200,
+     "s": 116493,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_53d87974-1aca-4def-afbc-7cf7b0e1de57",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3dc34922-b0e0-4a51-977f-d9714eacd028",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u><strong>L’ouverture de bal</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"> </a></span><span style=\"color: #000000;\">est l’un des moments les plus attendus d’un mariage : celui où toute la salle retient son souffle avant d’être emportée par votre première danse. Pour sublimer cet instant, l’association </span><span style=\"color: #000000;\"><strong>fumée lourde</strong></span><span style=\"color: #000000;\"> et </span><span style=\"color: #000000;\"><strong>étincelles froides</strong></span><span style=\"color: #000000;\"> crée une ambiance à la fois spectaculaire, élégante et totalement maîtrisée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bfab188f-a29b-4254-a542-82f89379a5b4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "de1f930b-38d9-41db-af00-7cf9efbe92be",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">La </span><span style=\"color: #000000;\"><strong>fumée lourde</strong></span><span style=\"color: #000000;\"> se diffuse délicatement au sol, formant un véritable nuage autour de vous. Elle apporte une dimension poétique à votre chorégraphie, adoucit les mouvements et offre un rendu visuel exceptionnel sur les photos et vidéos. Cet effet est totalement sécurisé et n’active pas les détecteurs de fumée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd93456f-c758-4fd7-941d-86725e6f5aaf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "841e4cc6-0f6f-4bcd-a742-bb67af17db41",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Les </span><span style=\"color: #000000;\"><strong>étincelles froides</strong></span><span style=\"color: #000000;\">, quant à elles, viennent ajouter la touche de magie finale. Leur lumière scintillante crée un décor digne d’un film, sans chaleur, sans odeur et sans danger pour vous ou vos invités. Elles peuvent être déclenchées au moment le plus fort de votre danse : un refrain, un porté, ou même votre baiser final.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9609e139-3bea-4e6d-afb9-02af39f31f41",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "61dbd09c-d4cf-41b8-be75-36f338ed70ff",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Chez Spice Events, nous vous accompagnons du choix du timing jusqu'à la synchronisation des effets, afin que votre ouverture de bal soit fluide, harmonieuse et entièrement personnalisée. Vous profitez pleinement de votre moment, pendant que nous nous occupons du reste.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_53d87974-1aca-4def-afbc-7cf7b0e1de57",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1638cb9f-b521-4172-93f5-29ab37df06d6",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Un instant suspendu… que vous et vos invités n’oublierez jamais.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "98d9afc8-d8a3-44dc-aae5-76d7854907c6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "972d4093-09f0-468b-bcc4-8f89aebc91ba",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

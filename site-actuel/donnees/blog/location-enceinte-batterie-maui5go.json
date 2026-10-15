@@ -1,0 +1,285 @@
+{
+ "blogPostMeta": {
+  "id": 2160385,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-29T08:37:17.884-07:00",
+  "publishedAt": "2019-06-29T08:37:17.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/location-enceinte-batterie-maui5go",
+  "customSlug": "location-enceinte-batterie-maui5go",
+  "editCount": 262,
+  "publishedEditCount": 257,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Le Matériel"
+  ],
+  "categories": [
+   {
+    "id": 29958,
+    "name": "Le Matériel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/location-enceinte-batterie-maui5go",
+   "title": "Enceinte design sur batterie c'est possible ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/136049_547134.jpeg",
+   "description": "Chez Spice Events, nous avons la volonté de vous offrir la meilleure qualité technique possible.  Travaillant avec des références de matériel mondialement réputée, nous souhaitons nous réinventer constamment, pour votre plus grand plaisir !  A l'écoute des tendances et de l'environnement qui nous...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Soirée blanche à Lagny Sur Marne",
+  "nextBlogPostRelativeUrl": "/blog/soiree-blanche-a-lagny-sur-marne",
+  "nextBlogPostId": 2151195,
+  "prevBlogPostTitle": "Amnesty International à la marche des fiertés 2019",
+  "prevBlogPostRelativeUrl": "/blog/amnesty-international-a-la-marche-des-fiertes-2019",
+  "prevBlogPostId": 2151243
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_cfe30348-37a7-4b76-b8fd-104168e28a24",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_24af1794-6aa0-4637-8bcf-ea93cd96c07f",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_ee75b994-446f-4c2e-ae1d-fdfcba93f931",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Enceinte design sur batterie c'est possible ?</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_f61fe462-91fd-470a-84a7-8cc6093bb3e3",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Oui avec les enceintes LD Systems MAUI 5 GO</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_1a323b5d-d45a-4692-a4b7-4bb824315abd",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/136049_547134",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3024,
+    "w": 4032,
+    "s": 652650,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_98e49e1b-6cc5-433c-b207-7e27a8d21d98",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_b57484fb-6b77-4453-9b3a-649d86a70efb",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_538b21ed-9cd2-4484-972f-11ccbe0eb4af",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_922c173b-b729-4a9e-a5b8-39d8874d5835",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_a7cf6287-4ad4-480f-afc9-385f99892a0b",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_07b1d027-fe04-487f-9c11-f519b5174f6f",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_9267328b-a674-4627-ae85-2ba5af624bb2",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_00441857-15d8-4502-9c1e-ed1f1dcfa1db",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_95f118c2-4cea-49c3-a9b0-de909bb95e39",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/998774_820356",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 652650,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_289bc5d1-12ef-4abe-96a3-6fd46c49345c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_50d7a8d1-fc0d-4a6c-9725-11a132ae5d53",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/844721_542198",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 106064,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_8e55d3bd-f848-4e27-91c3-9765fd42375f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8a54491a-3284-4868-bb00-f2b4db58b242",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez Spice Events, nous avons la volonté de vous offrir la meilleure qualité technique possible.  Travaillant avec des références de matériel mondialement réputée, nous souhaitons nous réinventer constamment, pour votre plus grand plaisir !  A l'écoute des tendances et de l'environnement qui nous entoure, nous étoffons sans cesse notre offre. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f9d6393d-a833-482b-9581-ef7666eee633",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c9371468-bdeb-4bb6-8f76-45c0d5007c0a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour votre soirée privée, mariage ou soirée corporate, nous souhaitons vous offrir une expérience immersive inédite. La décoration et la scénographie représentent des éléments essentiels, et pour ne pas les dénaturer, nous avons fait le choix de vous proposer des enceintes quasi invisible ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd24af21-4727-4443-b4ea-14dafb5f7b04",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9b1e9fd5-7017-420f-a9a4-61bbbebe1171",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Nous avons donc investit dans des enceintes LD Systems MAUI 5 GO. Ces enceintes en colonne combinent design, élégance et maniabilité fonctionnant sur batterie et bluetooth. Que ce soit au fond de votre jardin, dans une église du Vars, vous aurez toujours accès au meilleur son !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_e74586e1-b120-4aeb-a6c0-59770bc1f13e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "984d281c-eaa2-4d0d-8174-963128aecbe8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Cérémonie laïque ou soirée très privée, ne vous souciez plus de l'aspect technique de votre événement. Nous nous occupons de tout ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c11a3d46-f5f1-44d8-a2cc-00334eb963a6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d463a364-43e1-486f-a5b8-c495966f91dd",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "custom_slug": "location-enceinte-batterie-maui5go"
+ }
+}

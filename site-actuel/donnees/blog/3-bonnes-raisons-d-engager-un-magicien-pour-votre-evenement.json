@@ -1,0 +1,417 @@
+{
+ "blogPostMeta": {
+  "id": 18704262,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-12-22T01:15:37.391-08:00",
+  "publishedAt": "2021-12-22T01:29:17.338-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/3-bonnes-raisons-d-engager-un-magicien-pour-votre-evenement",
+  "customSlug": null,
+  "editCount": 88,
+  "publishedEditCount": 53,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/3-bonnes-raisons-d-engager-un-magicien-pour-votre-evenement",
+   "title": "3 bonnes raisons d'engager un magicien pour votre évènement",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5439810/860628_375174.jpeg",
+   "description": "Vous hésitez à engager un magicien pour votre événement privé? Voici 3 bonnes raisons de se décider !   Parfait pour l’ambiance Faire appel à un magicien est un bon moyen de distraire vos invités mais pas que ! En choisissant d’engager un magicien, vous gagnez du temps pour vous occuper d’autres...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Se marier en hiver",
+  "nextBlogPostRelativeUrl": "/blog/se-marier-en-hiver",
+  "nextBlogPostId": 18847338,
+  "prevBlogPostTitle": "Mariage pluvieux, mariage heureux ?",
+  "prevBlogPostRelativeUrl": "/blog/mariage-pluvieux-mariage-heureux",
+  "prevBlogPostId": 18526506
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_9c73a46b-fc5a-4803-a243-2f4cc29d95be",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_77cfb819-18ab-485e-a0c0-fd118b3598a4",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_8333f1fc-8c0e-4752-ae20-cf69b17f81ed",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>3 bonnes raisons d'engager un magicien pour votre évènement</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_4ba0d2b0-e2bb-4255-b87e-b789d21b5b72",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Pour encore plus de magie</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_9df5b4b1-c209-47ed-afd6-3e0eb3387a71",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "5439810/860628_375174",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 6329,
+    "w": 9493,
+    "s": 4591907,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_61c240ea-7142-4cbb-8fd2-dd220fec89fe",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_2fa06254-87d2-494c-9d32-9418d39c770d",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_881cba68-e29b-497d-979c-ea416a5b80f2",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_90d99a74-d195-4efe-aa82-0260e8a438d6",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_1d4cdbb1-447c-45a4-a242-b839504c5a52",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_2b6bf35e-29b2-443a-b7d5-37ab18a0a957",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_591cccdf-8410-4728-a794-c3dd3ab878bb",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "74e6d8f0-55a0-4c84-bfbb-d6f5258f9e00",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "800bc381-4fbc-420d-8156-fc5aa558652c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous hésitez à engager un magicien pour votre événement privé? Voici 3 bonnes raisons de se décider !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "929933b4-dd3d-4d15-b02a-e4596c33df67",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9623cbcd-258e-4e96-8b56-71d0bea6638a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8ec1b856-6d50-47bb-a8e6-0f6ee2950f41",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b09c6e8b-4ba9-4490-a6aa-8a3321bce778",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Parfait pour l’ambiance</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b4d26b25-11bb-4869-b86b-0551f4528a4e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fa5cb7e2-6f06-44ca-b2f5-cc4119a2d3f2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Faire appel à un magicien est un bon moyen de distraire vos invités mais pas que ! En choisissant d’engager un magicien, vous gagnez du temps pour vous occuper d’autres éléments de votre événement, comme la décoration ou le repas. L’apparition d’un magicien est aussi un bon moyen de relancer votre ambiance, de favoriser les discussions entre vos convives ou encore d’augmenter leur participation.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "06bf76ff-f4aa-4dfa-9f6e-599272cd77ed",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d5438e62-4d03-4a29-bda2-14b842598255",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Qu’il s’agisse d’un spectacle traditionnel ou encore d’illusion numérique, leurs surprises et leurs interrogations mèneront à de grands débats !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f238984c-b462-495f-8009-bbc34668ff2d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f9b0f546-9fef-408b-8f23-3dc15085ee63",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\">Un bon magicien sera capable d’écouter vos demandes et envies et vous proposer un spectacle adapté au thème de votre événement. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "84147baa-bcdb-4fd7-9ae7-03b15d720012",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a5d916d1-30b9-4f83-9c37-5fb6c0241cb1",
+     "link_url": "https://lh3.googleusercontent.com/KRDDt2Te0C0oAquGELAc2_OL01TRVVUst8wGmlhCEwPoCAGbGzV9A2izDWEQ4bLza4h5oSCVX8wp7mWtnVIJGFbNwA7-LSmBzpPZnRLi7sppl21OS-nVHSuXTu-h-cnfqe5FzKPk",
+     "thumb_url": "https://lh3.googleusercontent.com/KRDDt2Te0C0oAquGELAc2_OL01TRVVUst8wGmlhCEwPoCAGbGzV9A2izDWEQ4bLza4h5oSCVX8wp7mWtnVIJGFbNwA7-LSmBzpPZnRLi7sppl21OS-nVHSuXTu-h-cnfqe5FzKPk",
+     "url": "https://lh3.googleusercontent.com/KRDDt2Te0C0oAquGELAc2_OL01TRVVUst8wGmlhCEwPoCAGbGzV9A2izDWEQ4bLza4h5oSCVX8wp7mWtnVIJGFbNwA7-LSmBzpPZnRLi7sppl21OS-nVHSuXTu-h-cnfqe5FzKPk",
+     "caption": "",
+     "description": "",
+     "h": 1109,
+     "w": 1600,
+     "new_target": true
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ec4dc2a3-641f-47c6-8243-2c73291515ec",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e668a0dc-1dd9-483a-b28e-a62d4247ebf9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Émerveille les petits comme les grands</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9ff14c24-1b05-430c-aa74-4873cd37c711",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3930abe4-6580-48ed-9474-7c22e26c5a6a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Les magiciens sont d’excellents </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">animateurs</a></span><span style=\"color: #000000;\"> pour différents types de soirées et ce, peu importe l’âge de vos invités. Ils seront forcément conquis par leurs tours de passe-passe. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "eee8932d-f6cb-48c3-9e35-03b79f95e335",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9c232d88-4516-49cd-ab51-0f22a78b8d52",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Ces artistes ne sont pas seulement forts pour animer des fêtes d’enfants. Au contraire, ils ont plus d’un tour dans leur sac et sauront s’adapter à toutes les générations. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "71219ff9-771b-4cd4-8883-fe1069d3e4a8",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "94adfe71-354c-4d94-b71d-5d039326d25e",
+     "defaultValue": null,
+     "link_url": "https://lh4.googleusercontent.com/ibaKHY81JIr0W5hfZoQgPrhpb97Faw5agsrtQlFWoibjUklhrV-GrnfwGo14OevO8c3-tMeK8tE7NuGc-GPXPC477dfpl0r4-FsxjEl5AH9zwvydrS0S9-QsprbHSiiQ7SusWMhO",
+     "thumb_url": "https://lh4.googleusercontent.com/ibaKHY81JIr0W5hfZoQgPrhpb97Faw5agsrtQlFWoibjUklhrV-GrnfwGo14OevO8c3-tMeK8tE7NuGc-GPXPC477dfpl0r4-FsxjEl5AH9zwvydrS0S9-QsprbHSiiQ7SusWMhO",
+     "url": "https://lh4.googleusercontent.com/ibaKHY81JIr0W5hfZoQgPrhpb97Faw5agsrtQlFWoibjUklhrV-GrnfwGo14OevO8c3-tMeK8tE7NuGc-GPXPC477dfpl0r4-FsxjEl5AH9zwvydrS0S9-QsprbHSiiQ7SusWMhO",
+     "caption": "",
+     "description": "",
+     "storageKey": null,
+     "storage": null,
+     "storagePrefix": null,
+     "format": null,
+     "border_radius": null,
+     "aspect_ratio": null,
+     "h": 1066,
+     "w": 1600,
+     "s": null,
+     "new_target": true,
+     "noCompression": false,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4b1ccf97-b756-427a-81ec-be757eaf4dff",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ceb31204-a170-44e4-88a5-b3bf4e625d3c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Un moment unique</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8cbac2c2-9fe0-41c1-9ef3-3e99adf26366",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "69fd8e74-b325-44cd-a670-c6d2395a65dd",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Le magicien peut proposer des spectacles de magie rapprochée ou close up.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2e9b304c-25c2-4f2e-8b00-5bc1105b54e6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "bcb10441-1116-4ec6-90d8-50d67b2928bc",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Ce type de magie permet aux spectateurs de prendre part aux tours de magie. Le magicien passe de table en table, prend un moment avec chaque personne pour l'emmener dans son monde.  </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bd5652db-028a-41ad-94bf-243a45c9e042",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6b3f02b8-e203-4228-aff9-1d71256e4fb3",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous pouvez également faire appel à un mentaliste, qui pourra prédire le comportement d'un de vos invités ainsi que des détails sur sa vie personnelle.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5e1d735f-3bf4-463e-af93-5310fc2c6ae5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "867ab6cf-8d45-4167-9829-f57a60fa6017",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Un spectacle en intimité, juste pour vous et vos invités, qui restera en mémoire et se glissera sans doute dans les conversations des jours suivants.  </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5e1d735f-3bf4-463e-af93-5310fc2c6ae5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9c2b66a6-d29d-4e12-8b61-759549f31114",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e5542229-946d-4590-bcfe-392af1e4d7f8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6457ff81-907b-4008-8c21-e0824261407f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">magicien</a></span><span style=\"color: #000000;\"> est là pour vous faire vivre un bon moment. Son objectif est de divertir vos invités, de les surprendre et de les faire rire. Vous êtes donc sûr d’avoir une bonne ambiance dès son arrivée ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c985b32d-0a27-417e-b4a0-7cfd8e7ccf90",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "500d01f8-b879-4e09-b596-8cea0a44596a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

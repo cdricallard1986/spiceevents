@@ -1,0 +1,449 @@
+{
+ "blogPostMeta": {
+  "id": 17709360,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-10-20T02:09:44.572-07:00",
+  "publishedAt": "2021-10-20T02:30:02.164-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/organiser-son-mariage-mode-d-emploi",
+  "customSlug": null,
+  "editCount": 244,
+  "publishedEditCount": 159,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/organiser-son-mariage-mode-d-emploi",
+   "title": "Organiser son mariage : mode d'emploi",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5439810/916251_986957.jpeg",
+   "description": "Avant de se lancer dans cette grande aventure qu’est le mariage, il faut avoir quelques petites bases pour comprendre ce que fera votre wedding planner et vos prestataires techniques. Fini les modes d’emploi à s’en arracher les cheveux, Spice Events vous vient en aide pour avoir toutes les cordes...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Pourquoi engager un DJ professionnel pour votre événement ?",
+  "nextBlogPostRelativeUrl": "/blog/pourquoi-engager-un-dj-professionnel-pour-votre-evenement",
+  "nextBlogPostId": 17980606,
+  "prevBlogPostTitle": "Comment choisir l'ambiance musicale de votre mariage ?",
+  "prevBlogPostRelativeUrl": "/blog/comment-choisir-l-ambiance-musicale-de-votre-mariage",
+  "prevBlogPostId": 16939329
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_7ac107ab-0727-4367-9d14-4dcd2b90b43c",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_64b18754-555a-4f53-8880-d30252ccf25f",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_379083a4-952b-4dbf-a5ee-8eb05b6ff4d5",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Organiser son mariage : mode d'emploi</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_029f01db-4879-45a9-9935-f5f6483f56bc",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Le seul mode d'emploi que vous aurez envie de lire</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_fa8a9a57-becf-4dd1-993b-8058242c1d6f",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "5439810/916251_986957",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 4016,
+    "w": 6016,
+    "s": 1972680,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_404e8a2d-68a6-4a5b-b3bd-f345ed0b27f1",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_3a2462ba-f87c-4173-b687-885c5e6814e3",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_ad5de911-be73-4e41-ae30-9779c31d500a",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_25d191fd-f370-4ab8-86cf-9cc4026eabac",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_1c86b9cd-ee01-49f4-b79b-14f66ca5423f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_ca91de1a-9462-4d6b-a224-6890d2617a0d",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_d7296f66-48d8-40a2-8f1a-0f5b72ddb84c",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "e22f65e7-3b6b-41ff-957e-6dc1e937389a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "831eaf26-32d7-4658-9948-5f63a0df0b41",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Avant de se lancer dans cette grande aventure qu’est le mariage, il faut avoir quelques petites bases pour comprendre ce que fera votre wedding planner et vos prestataires techniques. Fini les modes d’emploi à s’en arracher les cheveux, Spice Events vous vient en </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>aid</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>e</u></a></span><span style=\"color: #000000;\"> pour avoir toutes les cordes à votre arc. Un manuel qui vous permettra de réaliser votre mariage clef en main.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e22f65e7-3b6b-41ff-957e-6dc1e937389a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "74943c0d-f490-4b35-9b25-447c829eba3a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "78808633-d6c6-4097-894d-7704cf1ead16",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a39c62c7-edc7-4755-9ec4-f64e4a2e9fb8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Le lieu de réception, pour bien commencer.</strong></span> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fd572b2d-7e87-49c7-84ec-fb54a163c758",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a2a9a053-90fb-41f2-9b79-f68981ab6493",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #111111;\">Dans un château, sur la plage, dans un jardin ou même à l’hôtel, les possibilités de lieux de réception sont diverses et variées. Tous aussi charmants les uns que les autres, ces lieux d’exceptions viendront constituer le cadre idyllique de votre mariage.</span><span style=\"color: #000000;\"> Élément clef de votre mariage, le lieu de réception a pour but de mettre en avant votre personnalité, votre thématique et offrir à vos invités une expérience immersive inoubliable. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "cb5db6ab-f10b-4654-a980-217f1e6c79e2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5365b1e4-dc62-4622-8a8e-27055da2c6ae",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Fort de vingt années d’expérience dans le domaine du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u>mariage</u></a></span><span style=\"color: #000000;\">, nous pouvons vous conseiller de nombreux partenaires et lieux de réceptions qui ont su faire leur preuve au cours des années. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d3555e49-d9d8-413b-b41a-94d8aa2e2683",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "165383a7-8cb4-4414-9406-8955d65d1cf8",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/708852_985538",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 3479186,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1b4b7deb-cef5-423c-aac5-913e456bab16",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8309f4a8-bdca-4be9-be07-85421e87c066",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>La technique au coeur de votre </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"undefined\" target=\"_self\"><u><strong>mariage</strong></u></a></span><span style=\"color: #000000;\"><strong>. </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ac795057-43e5-4614-b850-c7a2857fcd01",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "47c927e3-e0f3-4c6f-8d06-b2c6d7f1f08f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Dixit le tonton qui installe lui même ces enceintes descendues tout droit du grenier (et risque de faire péter les plombs de tout le domaine), il ne faut pas laisser de côté la </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>technique événementielle</u></a></span><span style=\"color: #000000;\">. Véritable chef d’orchestre d’un événement réussi, une technique de qualité viendra embellir vos discours, vous mettra en lumière pour votre première danse et permettra de créer des éclairages scéniques à couper le souffle. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4dc5dd11-4735-40a1-a2d3-7b4a8a8f229b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "09203901-9774-460b-b5c0-aa6ebabe3d4f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Une technique faite entièrement sur-mesure par nos équipes qualifiées qui sauront vous expliquer et vous conseiller sur les meilleures techniques à adopter. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4dc5dd11-4735-40a1-a2d3-7b4a8a8f229b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1fe69274-8055-4dc7-b3fd-8abb6e91547f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "50002388-b32a-470c-8ecb-ba1a9969cc6d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b33dcafa-1270-49fc-9045-9d8304fab70b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Des scénographies d’exception</strong></span> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "45ca23b3-fb64-462c-9503-b72e2587d796",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9e0c4f1d-c0fa-43fd-bdc2-7c69c213d1a2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La scénographie c’est en quelque sorte le décor de votre événement. Elle englobe les accessoires, la décoration florale, l’éclairage scénique, le mobilier et la technique. Elle viendra donner le ton de votre mariage et mettra en valeur votre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématique choisie.</a></span><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a4afa79e-ff6c-450b-a670-c6fb594fa14b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9b2c59ce-c8ea-4309-9b1b-a7f428d52afb",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Entre les photos que vous trouvez sur les réseaux sociaux ou les recommandations de votre entourage, il n'est pas toujours évident de choisir chaque élément de sa scénographie. Nos équipes viennent à votre rencontre pour débriefer avec vous et trouver la meilleure scénographie, adaptée à vos envies et vos personnalités. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2d498f95-79e9-460f-9653-1e2838353231",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "eb2d9d8a-eb3e-497d-a455-d3ceda54fac2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Les animations pour dynamiser votre mariage</strong></span> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ee72f133-ee6e-4ed4-ad6d-993b165246f7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d02a4e97-55cb-4147-ab32-3ef1e80852d2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Les animations sont devenues des éléments incontournables. Alors qu’autrefois un seul </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> suffisait pour faire “tourner les serviettes”, aujourd’hui elles ont un rôle à part entière et les prestataires doivent sans cesse trouver de nouvelles idées. Pour accompagner l’ambiance de votre mariage, faire bouger les foules sur la piste de danse ou occuper vos invités entre le vin d’honneur et le début du repas, rien de tel qu’une animation faite entièrement sur-mesure rien que pour vous ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5a47cf8c-0150-407c-b484-00fa03f91b1c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "841491f6-7e7b-4793-9694-3262d32a5b77",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez Spice, nous étoffons chaque jour nos offres pour vous proposer des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations tendances</u></a></span><span style=\"color: #000000;\">. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>B</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>ar à vinyles</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>pho</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>toboot</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/photobooth\" data-type=\"\" target=\"_self\"><u>h</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"\" target=\"_self\"><u>DJ d’exception</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/nos-dj-d-exception\" data-type=\"\" target=\"_blank\">.</a></span><span style=\"color: #000000;\">.. Découvrez toutes nos idées insolites.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f9c103b8-5268-4bf7-bb12-234316885adb",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "2513306a-06e7-4cdc-9b43-3be3c86a2d7f",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/520864_83983",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 2002856,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8cec7509-156d-4099-a103-aa44da1eff42",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ac6fe9ff-27dc-46d8-9d67-8b63760403f8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "01cc9f7a-3972-4f73-9c31-5f6b197e88ad",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2bc1755a-6ce1-46d1-a791-f39d77ee527b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">Nous espérons que cet article vous aura aidé !</p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "27c2d469-3245-4f66-9b94-8818f4ece387",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "804da753-739a-4b0a-9007-64a8a9919e92",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\"><strong>N’hésitez pas à nous </strong></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u><strong>contacter</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\"><strong> pour en savoir plus sur l’organisation de votre </strong></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/mariages\" data-type=\"\" target=\"_self\"><u><strong>mariage</strong></u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\"><strong>.</strong></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9012854c-e9e1-4aa5-893e-3fad65dbb1d0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "193d5546-1d66-4936-b1ec-d88af11a410d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

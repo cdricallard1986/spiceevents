@@ -1,0 +1,310 @@
+{
+ "blogPostMeta": {
+  "id": 2151243,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T03:27:26.330-07:00",
+  "publishedAt": "2019-06-29T03:27:26.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/amnesty-international-a-la-marche-des-fiertes-2019",
+  "customSlug": null,
+  "editCount": 316,
+  "publishedEditCount": 306,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Evenementiel"
+  ],
+  "categories": [
+   {
+    "id": 30540,
+    "name": "Evenementiel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/amnesty-international-a-la-marche-des-fiertes-2019",
+   "title": "Amnesty International à la marche des fiertés 2019",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/363413_549695.jpeg",
+   "description": "A l'occasion de la Marche des Fiertés édition 2019, les équipes de Spice Events sont venues sonoriser un char dans la capitale. Petit retour technique sur cette journée synonyme de paix et d'amour.  C'est plus que motivé que nos équipes sont arrivés tôt le matin, pour équiper le char qui fera...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Enceinte design sur batterie c'est possible ?",
+  "nextBlogPostRelativeUrl": "/blog/location-enceinte-batterie-maui5go",
+  "nextBlogPostId": 2160385,
+  "prevBlogPostTitle": "Ouverture de bal spectaculaire",
+  "prevBlogPostRelativeUrl": "/blog/ouverture-de-bal-spectaculaire",
+  "prevBlogPostId": 2160371
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_7c7edd37-cd47-486c-b5df-228dbbfdd5dc",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_48326e67-870b-46a8-a184-f4f37227d18d",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_8ae92ed3-654d-4ced-8bdd-15977f23d78f",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Amnesty International à la marche des fiertés 2019</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_ed06d700-1645-4d9e-8b30-bf3cee05c106",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Un char haut en couleur !</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_9c9b2ca8-6663-4a67-b0c7-d0e72f3a46c0",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/363413_549695",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 2250,
+    "w": 3000,
+    "s": 668577,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_4b5a4d2d-25af-426b-96bb-5cde85a701c3",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_30646567-9193-48c1-a247-8db8d0674319",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_4ce4c0cf-9fa0-457c-863f-f95402ffcbc2",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_f2711a35-da95-43a4-82c2-c58d682378fb",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_315b7b9d-0cfc-4da7-9b70-fdba82423bc3",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_8448de79-d660-4894-923a-04da4464aaf8",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_f2d5d311-bbf2-4681-9135-b08af9086bfe",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_f9975bc3-894e-4bf4-8f40-2a8e62d2d798",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_6998b2ec-5e78-4493-8a5a-50582f606a81",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/739117_325823",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 675,
+     "w": 1200,
+     "s": 285357,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_ea057d0e-00ff-4799-8feb-fa55db577343",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_4acd1307-9543-4347-ad04-c1976fa5b663",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/917580_693647",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 900,
+     "w": 1200,
+     "s": 621807,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_ae9005a1-0d64-4adc-ae75-786e7d39f9d7",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_b47f0ee6-1f84-4961-9a6a-d378e8b3a681",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/151815_884882",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 2133,
+     "w": 1200,
+     "s": 749637,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_6382561a-9c53-4dfa-811c-df311a1005f5",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b9bb6583-e29a-4cbb-b4a3-1d309522499a",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">A l'occasion de la Marche des Fiertés édition 2019, les équipes de Spice Events sont venues sonoriser un char dans la capitale. Petit retour technique sur cette journée synonyme de paix et d'amour. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_3e5c5cf5-d377-4817-aefd-3edf21a38452",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "35112c15-fd71-41b8-9689-f06fbebacac8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">C'est plus que motivé que nos équipes sont arrivés tôt le matin, pour équiper le char qui fera danser des centaines de personnes. Pour le char de Amnesty International nous avons fournis une sonorisation complète. De la musique oui, mais une sonorisation de qualité pour faire danser tout le monde dans la rue ! Adieu les grésillements, notre choix s'est tourné vers des X12 de la marque L-ACOUSTICS atour du char ainsi que 2 enceintes 115Hiq pour l'arrière.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_3e5c5cf5-d377-4817-aefd-3edf21a38452",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "df1b4c65-042b-4273-b07b-e4dd038ed6fe",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Notre régie DJ en structure et bois était également du sortie pour que le DJ puisse installer son matériel. Travaillant main dans la main avec des professionnels qualifiés ayant chacun leur propre univers musical, nous avons pu proposer à nos clients un DJ qui correspond à leur attente. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_519ec979-fd97-4f78-ae63-09ddd02c9473",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "254e27a3-9641-4bf3-b891-fde759551ee1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Une journée colorée réussite ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5aebd839-42d4-4371-aa99-dfe024d46e12",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "df9c88fd-791e-44e0-88d9-6e8d1de79d27",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

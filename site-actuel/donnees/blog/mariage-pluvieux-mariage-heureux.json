@@ -1,0 +1,487 @@
+{
+ "blogPostMeta": {
+  "id": 18526506,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-12-07T06:09:14.835-08:00",
+  "publishedAt": "2021-12-07T06:32:36.283-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/mariage-pluvieux-mariage-heureux",
+  "customSlug": null,
+  "editCount": 223,
+  "publishedEditCount": 219,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/mariage-pluvieux-mariage-heureux",
+   "title": "Mariage pluvieux, mariage heureux ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/5439810/333807_288303.jpeg",
+   "description": "Un mariage ça se prévoit à l’avance et on ne peut pas prédire le temps qu’il fera. Alors si par malchance, le jour venu, le soleil n’est pas au rendez-vous, pas de panique ! Spice Events vous donne toutes les solutions contre une météo capricieuse.   Miser sur la décoration intérieure Vous allez...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "3 bonnes raisons d'engager un magicien pour votre évènement",
+  "nextBlogPostRelativeUrl": "/blog/3-bonnes-raisons-d-engager-un-magicien-pour-votre-evenement",
+  "nextBlogPostId": 18704262,
+  "prevBlogPostTitle": "Les robes tendances pour 2026",
+  "prevBlogPostRelativeUrl": "/blog/les-robes-tendances-pour-2026",
+  "prevBlogPostId": 18159734
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_38ad8c68-e4a7-44c5-9e14-4572e51a9c75",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_2e0a52e4-c283-4d80-a04e-ca9153b50b83",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_cdeaca9e-c878-496b-9ae0-0837b9cce3a5",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Mariage pluvieux, mariage heureux ?</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_ef5ee848-7f42-4a76-9d1d-92b3e1636e5c",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><span style=\"color: #ffffff;\">Abritez-vous sous les conseils de Spice Events</span></p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_60b629db-58fc-404f-bf8c-413523072b8f",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "5439810/333807_288303",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3840,
+    "w": 5760,
+    "s": 4441236,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_0920469e-54a9-4288-bdcb-b0ed085390e7",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_cb0bb6b8-165c-47ce-9725-b59f9df14e06",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_2e869780-5cb5-42be-ad43-857c1f25d2ca",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_94122c97-5f00-4928-bf0c-1242ecaa9fd0",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_a6576539-c2ab-4ac5-9fbf-b90e71f90bef",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_3b5a6ea4-bc97-4292-a7a1-25cdd168cc41",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_93a2a311-b38c-4709-8c0c-088368cdf05b",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "d1f37e4f-9fd0-46b6-a98f-e7ed874b4c36",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a3954a20-e8e1-4510-817e-5a0b2e27bf40",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Un mariage ça se prévoit à l’avance et on ne peut pas prédire le temps qu’il fera. Alors si par malchance, le jour venu, le soleil n’est pas au rendez-vous, pas de panique !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "68e47da4-b6a9-4dfb-9658-bb5654381411",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "232aad6d-a36c-4454-b0c3-503ccab11e48",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Spice Events vous donne toutes les solutions contre une météo capricieuse. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "68e47da4-b6a9-4dfb-9658-bb5654381411",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9fc05134-e7ae-43b0-bb52-134d7f1b02e8",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5059ce76-fd32-4477-92af-8a5c0da85813",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1c472dd2-76f2-450b-8408-f7224971d67c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Miser sur la décoration intérieure</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1110af0e-8e62-4243-9cba-f8a231ab8ec7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "644e5204-544d-415d-8f14-f4827aef85b8",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Vous allez passer la plus grande partie de votre journée à l’intérieur, alors autant qu’il soit agréable à regarder ! Cette année, de nouvelles tendances déco font leur apparition, telles que le bois, le végétal ou le noir. Il ne vous reste plus qu’à choisir celle que vous préférez. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "13504645-41b7-48e0-bc90-97fe6f37b254",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fa15dcc5-2dd9-4237-9cfe-875732c11287",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Évidement, si vous souhaitez rester sobre, élégant et traditionnel, vous pouvez également choisir une thématique pour l’indémodable blanc.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "20cfce91-cf8f-4078-bc7d-97c469349da3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c7829843-e140-4f7b-b4b8-288b1f44b60e",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour habiller votre salle, optez pour le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>mapping</u></a></span><span style=\"color: #000000;\">. Cette projection 3D, s’adapte aux dimensions de votre lieu pour lui donner vie et émerveiller vos invités. Encore une fois, le choix vous appartient en ce qui concerne le motif projeté. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "78fa4e3b-f0db-4eac-8db8-ba4ab43f06ef",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "77d3c419-81d8-4871-a847-8537cc3cf7b6",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Autre tendance de cette année, les </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">lettres lumineuses</a></span><span style=\"color: #000000;\">. Ces grandes lettres embelliront votre pièce et mettront en avant la lettre, le mot ou la phrase que vous souhaitez. C’est aussi un fond parfait pour de jolies photos souvenirs !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "92880910-9434-41a3-b450-147721b47f12",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "72421201-0fd9-48ed-b419-e3c10febbb58",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/382841_817927",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 4271139,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bc38d6b4-4d34-4c80-846b-070c3f1d0f89",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9a04b2ed-a79a-4210-a341-1e85e1a6b97d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Choisir les bonnes animations</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a32bdc64-013e-4b14-b173-8802e9e08e84",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "46402849-4474-449d-9b95-5b6e4c56c74f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Comme la soirée se passe à l’intérieur, il y a tout intérêt à avoir un bon DJ à ses côtés ! Allez jeter un coup d'œil à la liste de </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/nos-dj-d-exception\" data-type=\"\" target=\"_blank\">nos DJ d'exception</a></span><span style=\"color: #000000;\">, qui, nous le savons, seront à la hauteur de vos exigences musicales. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0a5f1f5c-82ce-48ed-99df-7c53bead0fdb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "28be6ad3-5c0a-43a8-b81a-bb952d118db2",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Si vous souhaitez faire participer vos proches dans le choix des musiques, optez pour notre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\">. Une animation intergénérationnelle et vintage qui laisse place à la convivialité.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6d15964c-dd8a-4716-a521-44b6d829c3bd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7265a887-7d15-418b-af60-7e2f9a328bfd",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour occuper vos invités, comptez sur notre animation </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\"><u>Photobooth</u></a></span><span style=\"color: #000000;\">. Accompagné d’accessoires, il fera l’unanimité. Amusant, distrayant et rempli de souvenirs, c’est l’animation à avoir absolument !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8704f3e3-385d-4cea-8cdc-b2463c53e92c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "1e3ffca9-b740-4586-9f92-9997632d1ec4",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/221174_876999",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 675,
+     "w": 1200,
+     "s": 3880353,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "62a67998-ab87-4a82-9b1b-63866f46a95d",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3da0df71-2cb5-4090-9f1b-38c0e0dec5ac",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: center; font-size: 20px;\"><span style=\"color: #000000;\"><strong>Divertir vos invités</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bbb0322e-5384-4499-a38e-f67a150c888c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9fa860ef-445f-4666-b69b-d322962c9201",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Engager un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-mariage-celebration\" data-type=\"\" target=\"_blank\">magicien</a></span><span style=\"color: #000000;\"> est un bon moyen de divertir vos invités. Grâce à ses tours, il saura  amuser et épater les petits comme les grands. Qu’il fasse son apparition lors du cocktail, du repas ou de la soirée, c’est une bonne alternative pour remédier à une mauvaise météo. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1df5c434-9f04-46fb-a653-863280cb4388",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a4b00615-c16c-47bc-b930-940ef525f7d1",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Faire appel à un groupe de danse est aussi une bonne idée. Au moment que vous avez choisi, laissez leur la piste et admirez.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9412a105-725d-43c6-a6bd-ed9151ec580b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "fd53fb73-ad68-4dc2-a030-33f0cca64b0b",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Pour un effet “waouh”, Spice Events vous propose une </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u>ouverture de bal spectaculaire</u></a></span><span style=\"color: #000000;\"> avec étincelles froides et de la fumée lourde pour apporter une touche de magie à votre soirée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e09bce06-0ae0-42a8-9f54-29ebe74c556c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "22b78b90-7442-498e-b445-632e714e1e8b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/787818_787577",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 675,
+     "w": 1200,
+     "s": 4319104,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "799865a9-0d3d-426f-916e-92dd16c2d0d6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6aa15bc0-ecaf-4b2c-a0ca-ebaed708e083",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Et voilà, vous avez maintenant toutes les cartes en main pour occuper vos invités, coincés à l’intérieur à cause de la météo !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "53d4bbc6-6a0e-497e-81a4-7adddb29948f",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3e83f379-c9a5-44ec-83f8-fd2cdd4f2d0e",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.strikingly.com/s/blog_posts/18526506/edit?new-editor=1\" data-type=\"\" target=\"_blank\">Mais s</a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">i toutefois vous avez d’autres questions, n’hésitez pas à </a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u>nous contacter</u></a></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contact\" data-type=\"\" target=\"_blank\">.</a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19820f32-9df8-4fd1-a619-2b063446c470",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0827bc61-4322-44bb-ae23-7cf178eb0968",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"> </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9b8dd874-e787-4c73-bf6d-72548efbf1c4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e2a8d91c-70b7-42a6-bd0a-136ebf78323f",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

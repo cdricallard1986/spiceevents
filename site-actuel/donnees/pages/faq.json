@@ -1,0 +1,1575 @@
+{
+ "type": "Page",
+ "id": "f_fcacd4e5-87bc-437e-81bd-7b832eef76d2",
+ "defaultValue": null,
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_04de1329-5be4-4a02-ad5d-3f9c3b9c37bb",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_eb034c5e-9b1c-4c61-9b38-5ba7cefd2c5a",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Image accueil",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_b26dc2ef-7666-4d92-ac14-cc546c8b06d6",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">FAQ</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_952902c2-48b6-495d-ae7c-d7529aee2220",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><em>Toutes les réponses à vos questions !</em></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_4218467c-65f7-42f8-9548-2f45af4bc62a",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_7f0a6f17-52a9-49ae-acca-6ba2918e1398",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_c2e975e3-9b04-4274-8e2b-8b5f61d43632",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/679163_321012",
+     "storage": "s",
+     "format": "jpg",
+     "h": 2358,
+     "w": 3543,
+     "s": 9853776,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_eda6f864-bdee-4ba0-bd03-15311fc4f3af",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_aece6a82-f4c1-49bc-85fe-3177ed4d8f66",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_e9c1b951-1ac3-4309-8c06-fd81d18416ee",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_b258c905-4726-4fa3-8a19-8b27a65d1f96",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ddf74efe-9498-4dcc-933f-8b5b87f216d8",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ Général",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8037c2e1-ad86-43e9-a02e-14ca36339f24",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_2767afd8-b7c2-4848-b7e2-74761ca12e7c",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: left; font-size: 48px;\"><strong>Questions générales</strong></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_34a13a37-fa69-4672-916f-e5551f3966a6",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h2 class=\" s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: left; font-size: 28px;\"><em>Questions fréquentes</em></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_a1198dde-ebb8-4af4-8b5f-c963683b3aa2",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_a859d3b9-db54-4a3f-9a32-83319c2c37e0",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_9a67cf03-3c76-4689-9de4-671b072d6444",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Quelle est l’expérience de Spice Events dans l’événementiel ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d618cb65-1506-453b-a4f3-33e8214cd3c1",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Spice Events intervient dans l’événementiel depuis plus de 20 ans, avec une expérience riche de centaines de projets réalisés pour des clients privés et professionnels. Chaque événement bénéficie de ce savoir-faire pour garantir une prestation fluide, harmonieuse et mémorable, adaptée aux besoins spécifiques de chaque client.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_8738d5d1-a000-43d7-ac3a-be7267d8306e",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_00f12408-f567-4eec-83eb-a47addfed1ee",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Quels services propose Spice Events pour vos événements ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_a82155b1-430a-4ca9-b223-997b515cb70a",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span class=\"s-text-color-default\">Nous organisons et animons la partie musicale et technique de tous types d’événements. Notre objectif est d’offrir une expérience fluide et mémorable, en combinant sonorisation, éclairage, animation et coordination avec les autres prestataires, afin que chaque moment se déroule sans stress et dans une ambiance unique.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4a7ef970-5f2e-42f6-86a5-1abbafac66a0",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_e0779b9b-790a-4a65-9ef7-ca9a19176383",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Pouvez-vous intervenir sur tout le territoire français ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4f867664-0dd7-41da-b08a-988826ad8db2",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Oui, nous pouvons nous déplacer sur l’ensemble du territoire français. Chaque prestation est adaptée au lieu et à la configuration spécifique, qu’il s’agisse d’une salle de réception, d’un espace extérieur ou d’un site atypique, afin de garantir une prestation professionnelle et une ambiance musicale et technique optimale.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_695b2994-75db-472a-b785-410e92ee87e7",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_cf5c045c-645c-4756-80d2-b6c83808487a",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Peut-on adapter vos prestations à nos envies et besoins ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_8e538057-5fda-4f3e-a8c2-7be4031d7a98",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Absolument. Chaque événement est unique, et nous adaptons la musique, les animations, la sonorisation et l’éclairage selon vos envies. Cette personnalisation permet de créer une expérience qui vous ressemble, en prenant en compte vos préférences, celles de vos invités et l’ambiance souhaitée pour chaque moment de la soirée.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_e8ac28ea-f0f4-4ce1-ad24-b684c592d7bc",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_82eac401-2989-45fb-9203-5daf669d20c3",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Comment valider un devis et réserver votre événement ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_036b3bfc-9aaa-49b6-92b0-26fa7074f111",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span class=\"s-text-color-default\">Pour valider votre devis, un acompte de 50 % du montant total est requis. Il suffit de nous retourner le devis signé, ce qui officialise votre engagement et sécurise la date de votre événement, garantissant ainsi que nous puissions organiser votre prestation dans les meilleures conditions et sans imprévu.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_13c1c206-8595-4144-a0fa-0c6b4e906b6e",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_02286618-f7ae-445c-93eb-53ca3fc18372",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ Mariage",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_fff98997-8d04-4ca6-a24e-768601fc42df",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_5abfd1d5-3599-41c2-a009-4bae5cc0e311",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: left; font-size: 48px;\"><span class=\"s-text-color-default\"><a href=\"http://www.spiceevents.fr/mariages\" data-type=\"\" target=\"_self\"><strong>Mariages</strong></a></span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_93dd902e-678b-445e-8c12-9e0e7b8ca751",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: left; font-size: 28px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\"><em>Nous répondons à toutes vos interrogations pour votre grand jour.</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_d2b097c5-7eef-4c34-b206-7f6f7f986061",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_0c1d3ccb-36cf-408a-ae7c-d7d603aced24",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_09695947-21f5-485e-ac5c-05f0164ebc3b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Comment choisissez-vous la musique pour notre mariage ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b636cc9d-6f8a-4876-a8a1-9b9c35895a84",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span class=\"s-text-color-default\">Nous adaptons notre programmation musicale à vos goûts et à ceux de vos invités. Grâce à un questionnaire et des rendez-vous préparatoires, nous sélectionnons vos morceaux préférés et ajustons les playlists pour créer une ambiance personnalisée et mémorable qui reflète votre style et votre vision.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_dd32dcff-72b7-431c-b142-742bcd38ec58",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_b0baa7af-2687-469e-bcfb-cc78f240eb75",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #040404;\"><strong>Si un invité vous demande une musique, que faites-vous ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_17732252-4ed1-4a6e-92ad-348e82b3d25a",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Nous essayons de satisfaire les demandes dans la mesure du possible. Si le morceau respecte vos consignes et convient à l’ambiance, nous le passons au moment opportun. Notre objectif est de maintenir une expérience musicale fluide tout en respectant vos choix et le rythme de la soirée. </span><span style=\"color: #000000;\">Parfois nous attendons aussi que ce soit le bon moment pour le passer.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_7b04cc4b-39b2-4a39-8798-1d8d55f7fff3",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_e75c94f9-a002-4b9d-80f1-1752cef65ace",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Jusqu’à quelle heure assurez-vous l’animation musicale ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3bb22e9e-a608-448d-8835-19c19963bae2",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Nous interrompons la musique habituellement à 4h du matin, sauf si le règlement de la salle impose un horaire différent ou si vous souhaitez prendre heures supplémentaires pour prolonger la prestation. Nous nous adaptons toujours aux contraintes du lieu et à vos besoins pour assurer un déroulement harmonieux.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4e32c347-b586-4024-8a00-18447a954a21",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_ebc26ae3-5102-4083-b503-065cf7b6b625",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Proposez-vous des interventions au micro pendant la soirée ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_94bc211b-9cf0-4bf1-9a92-17a228076330",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Oui, selon vos préférences. L’animation micro permet d’interagir avec le public et de dynamiser la soirée, sans excès ni effets inutiles. Si vous ne souhaitez pas d’intervention micro, nous savons également nous en passer pour garantir une prestation adaptée à votre style et à l’ambiance souhaitée.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_f1a36fc6-e68c-413b-ab9f-455e418e67c5",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_39de0b4c-4d6f-4b83-8c9e-a1ab5b12833f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Y a-t-il des restrictions pour les salles avec détecteurs de fumée ou limiteur sonore ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_1e6db9f0-b984-4340-8c16-97aa95d07c01",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px; text-align: justify;\"><span style=\"color: #000000;\">Pour garantir la qualité de nos prestations, nous ne réalisons pas d’animations dans les lieux équipés de détecteurs de fumée sensibles ou de limiteurs sonores, car cela compromet la performance sonore et les effets visuels. Nous privilégions toujours un rendu optimal et sécurisé pour chaque prestation.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_9dc5a0c1-d768-4457-bb0a-a2c793cb29f4",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_91d68d2f-ba07-4b8b-bc65-a2d172e2924f",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 25px;\"><span style=\"color: #000000;\"><strong>Pouvons-nous partager vos coordonnées avec nos témoins ou organisateurs ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_0f212a16-6928-40b5-a56e-4a9f529ad769",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: #000000;\">Oui ! Vos témoins ou organisateurs peuvent nous contacter directement pour toute question relative à la musique, aux animations ou à la coordination de l’événement. Cela facilite la communication et permet de préparer chaque moment clé pour que votre journée se déroule parfaitement.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_26e709a7-a0b8-43a2-ab3c-249acc930b46",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_21f4d080-e300-440f-a398-8564a7555391",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Comment gérez-vous les imprévus techniques le jour J ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_8418e38c-4a78-4ba2-ab6b-fdd204a17965",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Nous anticipons toujours les problèmes grâce à du matériel de remplacement et des tests complets avant chaque prestation <span style=\"color: #000000;\">en partenariat avec </span><a href=\"https://mxevenement.com/\" data-type=\"\" target=\"_blank\">MX Événement</a>. En cas d’incident, nous intervenons immédiatement pour assurer la continuité de la musique et des animations, garantissant un événement fluide et sans interruption pour vos invités.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a33a1909-3c44-4d4d-be46-fb4e5c7a764d",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_55f4c73d-10b6-44b9-9c10-053707068c4d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Travaillez-vous en coordination avec les autres prestataires du mariage ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_816f144f-1785-42cd-8399-7fd5c19fd561",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Oui, nous assurons une coordination complète avec le traiteur, le photographe, le lieu et le wedding planner. Cette approche clé en main permet de gérer tous les moments forts de votre mariage sans stress, pour offrir aux mariés une prestation fluide, harmonieuse et parfaitement synchronisée.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_c26977ff-0fd8-4538-92fa-e54d9c263b54",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_c6151081-5434-4195-a107-4aa9973c21ad",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ Événementiel",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_c41d7b24-34b4-4ecc-bb1d-c87f66514e62",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_ebed7c00-b4e2-4c96-a2e9-744d41eb0743",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: left; font-size: 48px;\"><span class=\"s-text-color-default\"><a href=\"http://www.spiceevents.fr/evenementiel\" data-type=\"undefined\" target=\"_self\"><strong>Événementiel</strong></a></span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_4faa3793-73f7-4e76-9681-875055b1c88c",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: left; font-size: 28px;\"><span class=\"s-text-color-default\"><em>Votre évènement entre de bonnes mains.</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_b1654fdf-4b3e-472c-b9c7-f29883e90e56",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_eca0b0d6-e81d-4c3d-a953-0bd5508c5cf0",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_3d469ebd-d07e-4819-be43-375654d185d3",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-custom s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Comment assurez-vous le succès de notre événement ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_da004594-b58e-49df-b05c-310f1de34588",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Nous plaçons la fluidité, la coordination et l’ambiance musicale au cœur de notre prestation. Chaque événement est planifié pour créer une expérience harmonieuse, en prenant en compte vos objectifs, le format de la soirée et les attentes des participants, garantissant ainsi un résultat professionnel et mémorable.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_bf5ed04d-77df-412f-abf9-6326ca2b83d8",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_287740c6-996d-4683-a360-da95bcaea2f2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Pouvez-vous sonoriser et animer plusieurs espaces simultanément ?</strong></span><span style=\"color: #040404;\"><strong> (cocktail, scène, dancefloor) ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_77d5b4ea-2bd5-444a-adae-7603f8cbed9b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Oui, nous pouvons sonoriser et éclairer plusieurs zones simultanément avec du matériel dédié. Chaque espace bénéficie d’une ambiance adaptée, permettant à vos invités de profiter pleinement du cocktail, de la scène ou du dancefloor, tout en conservant une cohérence musicale et technique sur l’ensemble de l’événement.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_363c0180-0282-4a03-a415-496fa679babc",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_13222773-dba0-41be-9e5f-1094b6820927",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Proposez-vous vos services pour des événements d’entreprise ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_ffc377a9-b914-4f9c-aa48-7dc7aec76506",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Oui, nous intervenons sur tous types d’événements d’entreprise tels que séminaires, galas ou lancements de produit. Nous proposons une prestation clé en main, en adaptant musique et animation à l’image de votre entreprise pour un événement professionnel, impactant et parfaitement orchestré.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_84cbe260-7fb5-47ce-9111-9f17d100beb4",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_5169af05-3314-4129-8e77-ecdc06746a1d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Pouvez-vous intégrer des discours ou moments importants dans la soirée ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_f14e921c-9fc8-4a9f-86b7-44b29d4af875",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\">Oui, nous intégrons vos interventions et temps forts dans le déroulé technique et musical. Discours, remises de prix ou projections sont parfaitement coordonnés pour que votre événement se déroule sans accroc et que chaque moment important soit mis en valeur auprès de vos invités.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_1b0787bf-d675-42ce-a268-fa75f9918780",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_cc4254e7-06dc-4202-846d-7dcdb04af184",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Comment personnalisez-vous votre prestation selon l’image de notre entreprise ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b9e66a24-ff91-473c-8e9f-505bda6dbbaa",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\">Absolument. Nous personnalisons l’ambiance musicale et visuelle pour refléter l’identité et les valeurs de votre entreprise. Chaque détail est pensé pour renforcer votre image de marque et offrir une expérience cohérente, professionnelle et mémorable à vos participants.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_27976634-f83b-45c1-987f-0450b9b905e4",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_4b5fb26e-7126-4d75-9ae7-0daee665f697",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ Accompagnement",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_fa8ffd19-76fd-4556-80dc-7ed0279dd2ed",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_883309eb-0ac0-4c54-aab4-1c1b2721ff30",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: left; font-size: 48px;\"><span class=\"s-text-color-default\"><a href=\"http://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><strong>Accompagnement</strong></a></span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_35a71e28-7bef-4618-8bc1-b98befe73ee4",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: left; font-size: 28px;\"><span class=\"s-text-color-default\"><em>Un accompagnement du début à la fin.</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_fe07080c-2f42-4a8c-b55b-857cef649c10",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_b6905cdf-9bea-44cf-8c75-ff8bd99afc9a",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_070bde00-dd4a-4483-a164-9a1995a40243",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Accompagnez-vous les clients dès la préparation de l’événement ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_000a3065-93ed-4b6b-ac5f-d68d8c203638",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Oui, nous vous accompagnons dès la conception de l’événement. Nous analysons vos besoins, vous conseillons sur l’ambiance musicale et la mise en lumière, et planifions l’ensemble du déroulé afin de garantir un événement fluide, parfaitement préparé et conforme à vos attentes.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_d273f830-ff73-4aa9-8aa5-916cd3d7b081",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_87b7acdb-249b-4f3b-bb10-13e45688dc27",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Quelle est votre méthode pour préparer un événement avec Spice Events ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b5c738b3-8aa6-4fac-a5c5-c6e93f1ea7c5",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Tout commence par un échange personnalisé pour comprendre vos besoins et objectifs. Nous planifions ensuite des rendez-vous, validons le déroulé et coordonnons les prestataires impliqués. Cette préparation assure un événement organisé, harmonieux et sans stress le jour J.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_d3e5ebef-5e95-4c1b-b7af-76de9fecd257",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_641b3a04-5c46-4ee8-988d-58c2d299755b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Quels types d’événements prenez-vous en charge ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_89a45a0a-9deb-43eb-9b0f-5104a235f0bd",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px; text-align: justify;\"><span style=\"color: var(--s-pre-color12);\">Nous intervenons sur tous types d’événements : mariages, anniversaires, soirées privées ou corporate. Chaque projet est traité avec le même soin et professionnalisme, pour garantir une prestation fluide, harmonieuse et adaptée aux attentes spécifiques de nos clients.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_af4225da-f730-4245-84df-d85e9369a09d",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_715082ab-ccdc-40ef-af7b-8893876ce79c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Fournissez-vous l’ensemble du matériel nécessaire pour l’événement ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_7051030b-9d41-4f16-b270-cc859abf6709",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\">Oui, nous fournissons tout le matériel en partenariat avec </span><span style=\"color: var(--s-pre-color12);\"><a style=\"color: var(--s-pre-color12);\" href=\"https://mxevenement.com/\" data-type=\"undefined\" target=\"_self\"><strong>MX Événement</strong></a></span><span style=\"color: var(--s-pre-color12);\"> et réalisons des </span><span style=\"color: var(--s-pre-color12);\"><strong>tests complets avant chaque prestation</strong></span><span style=\"color: var(--s-pre-color12);\"> pour garantir un rendu optimal. Nous prévoyons également du </span><span style=\"color: var(--s-pre-color12);\"><strong>matériel de remplacement</strong></span><span style=\"color: var(--s-pre-color12);\"> afin d’anticiper toute éventualité et d’assurer un déroulé sans imprévu.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_602c54b8-956c-4f63-8edd-28f41a9e5f33",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_43b80328-ddea-4661-be00-998284714959",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: #000000;\">Assurez-vous une présence continue durant toute la soirée ?</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_9319786d-325a-4313-b87a-836bab8e5dc0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\">Oui, notre équipe est présente tout au long de l’événement pour gérer la régie, la musique et l’animation. Cette présence continue garantit un déroulé fluide et sans accroc, tout en assurant que vos invités profitent pleinement de chaque moment.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_18345623-022f-4ecd-befb-f49da4144b79",
+   "defaultValue": true,
+   "template_name": "faq",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_7572beae-6599-49bb-ad3b-bb3cbf652c51",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "FAQ Animations tendances",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "layout": "B",
+      "columns": "one",
+      "color": ""
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_72936bcc-e371-47ca-99a5-6e09d3417cf8",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_80ca08e6-dfd3-4e98-9fc2-aadeb68521b3",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"text-align: left; font-size: 48px;\"><span class=\"s-text-color-default\"><a href=\"http://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><strong>Animations tendances</strong></a></span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_f33b97e1-25c9-483b-b075-125d93fae944",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"text-align: left; font-size: 28px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\"><em>Tout savoir sur nos animations</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "left"
+     },
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_44223fde-6c3e-4a68-8dc9-b301540f6c39",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_d1f43af2-cfed-4587-8274-c28704e42242",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_c75238c4-9816-434f-8d3c-f547b0ec31e2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>En quoi le </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><strong>Bar à vinyles</strong></a></span><span style=\"color: #000000;\"><strong> rend-il une soirée unique ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_bfd1a357-0341-4963-a34f-68308ee24bf0",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\" class=\"s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\">Le Bar à vinyles offre une expérience originale et interactive. Les invités deviennent DJ le temps de quelques morceaux, créant une ambiance conviviale et participative. Cette animation unique favorise les échanges et rend la soirée mémorable et dynamique, en laissant aux participants un souvenir ludique et vivant.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_ef0602fe-05e4-40a5-b545-a7859037d136",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_13dc04a4-5f66-43f9-81bf-e66846c1a244",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #000000;\"><strong>Quels avantages offre le </strong></span><span style=\"color: #040404;\"><a style=\"color: #040404;\" href=\"http://www.spiceevents.fr/livre-d-or-audio\" data-type=\"\" target=\"_blank\"><strong>Livre d’or audio</strong></a></span><span style=\"color: #000000;\"><strong> pour notre événement ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3b95a4dc-8d26-47e3-bf5f-1fde43af42e5",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span class=\"s-text-color-default\">Le Livre d’or audio transforme les messages de vos invités en souvenirs vivants. Chaque enregistrement capture émotions et témoignages, permettant de revivre l’événement à travers les voix de vos proches, et offrant un souvenir unique, authentique et chargé de souvenirs mémorables.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_6e79f383-94d4-40a6-9f6f-b71ec4ae6e36",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_d5460620-4bc8-4e2f-a5d9-15c253635e79",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><span style=\"color: #040404;\"><strong>Comment le </strong></span><span style=\"color: #040404;\"><a style=\"color: #040404;\" href=\"http://www.spiceevents.fr/photobooth\" data-type=\"undefined\" target=\"_self\"><strong>Photobooth</strong></a></span><span style=\"color: #040404;\"><strong> peut-il s’intégrer à l’ambiance de mon événement ?</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_acb9377b-4d41-41e4-b934-eeb8fe11f795",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\"><span style=\"color: var(--s-pre-color12);\">Le Photobooth devient un point central de votre soirée. Il invite les invités à se lâcher, crée des moments spontanés et fournit des souvenirs imprimés ou numériques. Il s’adapte à tous les styles et thèmes, renforçant l’interactivité et l’ambiance conviviale de votre événement.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_1e9a6437-832b-49bf-b9ef-7f7276001bad",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_b45ecd79-86f8-41bd-bfa5-54e4f619493a",
+         "defaultValue": false,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-custom s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: 25px;\"><strong>Les </strong><a href=\"http://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><strong>effets spéciaux</strong></a><strong> comme les étincelles froides et la fumée lourde sont-ils compatibles avec tous les lieux ?</strong></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": "justify",
+          "lastLineTextAlign": "justify"
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_131efc17-791a-4635-af11-79dae248eef3",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 20px;\">Ces effets créent une ambiance spectaculaire, mais ils ne sont pas compatibles avec tous les espaces. En effet, certains lieux sont équipés de détecteurs de fumée sensibles ou de limiteurs sonores, ce qui peut compromettre leur bon fonctionnement. Chez Spice Events, nous vérifions toujours les contraintes techniques du lieu avant l’installation pour garantir une prestation fluide et sans imprévu.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_fd27f8b4-a8d8-4380-af7e-aed3db5e6ab7",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_89591bc6-470f-40a2-a9c6-833ef5f35362",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 25px;\"><strong>Les </strong><a href=\"http://www.spiceevents.fr/guirlandes-lumineuses\" data-type=\"undefined\" target=\"_self\"><strong>guirlandes lumineuses</strong></a><strong> peuvent-elles être installées en intérieur et en extérieur ?</strong></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_e6cf3082-6955-4718-a0dd-d497483830ba",
+         "defaultValue": false,
+         "alignment": "justify",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 20px; text-align: justify;\">Oui, nos guirlandes lumineuses sont adaptées pour tous les espaces, qu’ils soient intérieurs ou extérieurs. Elles créent une ambiance chaleureuse et élégante, que ce soit dans une salle, un jardin, une terrasse ou une cour, et s’intègrent parfaitement à votre décoration.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_2ce3ae2b-4c55-416d-b1d1-79eb72ec0e66",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_a051b1c1-b3d7-427c-aff1-4e441ac8994e",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire contact",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_bca76611-3d33-4cea-b08a-ffbc138c406d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">D'autres questions ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_79d67813-5924-4bbb-aaae-94570ad15b02",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\"><span class=\"s-text-color-default\"><em>Contactez-nous nous répondrons à vos interrogations.</em></span></h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_a43eaa07-a652-4182-b416-f43c62108d8b",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_eb8be844-f827-43fe-8230-c5445acdd8c7",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page FAQ",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1761830962505#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_5aaed5bf-fdea-455d-8f34-9fda1586920b"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_9582ad72-746a-43a0-bcda-257e8d91821b"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_10af5944-235c-464c-aa03-2cc1babf9f12",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_445b29da-7eca-4b61-805d-3f443d5a8b82"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_742e01d8-ab44-4cda-b9e1-a845ee8e1f00"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_d56be089-5791-4353-95a5-ad079e185803"
+          },
+          "$item1761830962505#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_3a331139-22a1-4bbc-981f-24a744f125ec"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1761830962505#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_7cc338ec-1908-4ddf-9548-e14c00437466"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_101cd2a3-dee0-40ee-8ba2-164213b8cdcc"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1761830962505#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1761830962505#shortText": {
+         "ui:widget": "ShortTextWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "FAQ",
+ "description": "Toutes les réponses à vos questions sur nos services et nos prestations.",
+ "uid": "69a48e05-bb72-46cb-ba52-e23ebcfbb567",
+ "path": "/faq",
+ "pageTitle": "FAQ",
+ "pagePassword": null,
+ "memberOnly": null,
+ "paidMemberOnly": null,
+ "buySpecificProductList": {},
+ "specificTierList": {},
+ "pwdPrompt": null,
+ "autoPath": false,
+ "authorized": true
+}

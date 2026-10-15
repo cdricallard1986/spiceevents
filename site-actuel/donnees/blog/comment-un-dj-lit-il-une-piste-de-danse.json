@@ -1,0 +1,504 @@
+{
+ "blogPostMeta": {
+  "id": 58239579,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2026-01-22T04:08:17.166-08:00",
+  "publishedAt": "2026-02-03T06:35:02.446-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/comment-un-dj-lit-il-une-piste-de-danse",
+  "customSlug": null,
+  "editCount": 130,
+  "publishedEditCount": 102,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": "Europe/Paris",
+  "postedToWechat": false,
+  "tags": [],
+  "categories": [],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/comment-un-dj-lit-il-une-piste-de-danse",
+   "title": "Comment un DJ lit-il une piste de danse ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/127095_238885.png",
+   "description": "Lire une piste de danse est l’une des compétences les plus importantes – et les plus invisibles – du métier de DJ. Ce savoir-faire ne repose pas uniquement sur la musique, mais sur l’observation, l’écoute et la capacité à s’adapter en temps réel. Un bon DJ ne se contente jamais d’enchaîner des...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "De visiteurs à exposants : l’envers du décor d’un Salon du Mariage",
+  "nextBlogPostRelativeUrl": "/blog/de-visiteurs-a-exposants-l-envers-du-decor-d-un-salon-du-mariage",
+  "nextBlogPostId": 59331347,
+  "prevBlogPostTitle": "Comment bien choisir son DJ : les critères à connaître",
+  "prevBlogPostRelativeUrl": "/blog/comment-bien-choisir-son-dj-les-criteres-a-connaitre",
+  "prevBlogPostId": 57489591
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_8090dd25-784a-41a7-a9fa-527924869e9b",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_5509b88a-1f77-4a59-a743-84ddb13ee94c",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_f5875bbb-3518-4aab-add2-ca75d2bd236c",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\">Comment un DJ lit-il une piste de danse ?</p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_5dc099fa-41cc-4f46-92e4-46fa8afd0345",
+    "defaultValue": false,
+    "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\"><em>L'art de comprendre l'énergie d'un public en temps réel</em></p></div>",
+    "version": 1,
+    "lineAlignment": {
+     "firstLineTextAlign": null,
+     "lastLineTextAlign": null
+    },
+    "defaultDataProcessed": true
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_e4258c8a-6b39-41b2-bc0e-4c4a731cec8f",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "22139555/127095_238885",
+    "storage": "s",
+    "format": "png",
+    "h": 799,
+    "w": 1200,
+    "s": 1569644,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_739d6a04-f06f-4499-aa82-d2fb8c8ec8a9",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_a39e48d2-2f3b-4bda-84c4-01d6d1a3e192",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_29e11cf2-7149-4563-8ab5-825b770badba",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_ff51e747-c408-4dca-9c5e-bd44579479f9",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_c9cd23c5-6c16-4c7b-9ae8-3cf52737b056",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_1326fc05-8746-42c1-bff9-020aa11f245f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_4f3a14ac-b8dd-449b-8e16-bfaab405ae92",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "207ab777-3918-43bc-bae7-6d045fc99726",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "24bf6276-3fb3-4ab1-8bf2-e77a5c2859e9",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\">Lire une piste de danse est l’une des compétences les plus importantes – et les plus invisibles – du métier de <span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\">. Ce savoir-faire ne repose pas uniquement sur la musique, mais sur l’observation, l’écoute et la capacité à s’adapter en temps réel. Un bon </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> ne se contente jamais d’enchaîner des titres : il interprète une salle, ressent une énergie et guide les invités tout au long de la soirée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "504fe77a-b81f-4960-8d44-a27fd2c561a7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "31faf763-65a4-43f9-8a5d-d30216166a32",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "df128191-e37c-4eb4-9e35-186279895783",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5cf36004-bb59-4419-8b26-6044cf3bdc86",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Comprendre l’environnement avant même de lancer la musique</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "43160b3c-b89f-498e-a980-b9f041c7deaa",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "94bd3895-cfed-4847-8852-d99efcdba8d6",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\">La lecture de la piste commence bien avant le premier morceau. Le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> observe le lieu, la disposition de la salle, la proximité entre la piste et les tables, la lumière, l’acoustique et la circulation des invités. Tous ces éléments influencent la façon dont les personnes vont se déplacer, se rassembler et oser aller danser. Il analyse également le profil des invités : générations présentes, styles vestimentaires, dynamique de groupe, ambiance générale. Ces informations permettent d’anticiper les styles musicaux qui créeront naturellement un premier lien avec la piste de danse.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "693dd04b-c446-4ba7-abea-4ab35475c482",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "0d8d9465-c779-4e81-83bf-fc5ce01208ec",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "6a078a2b-f4e7-44c1-a571-17d4fae666e1",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "11b55a98-303e-433f-9235-87fc1938b5fc",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/297936_813240",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 2358,
+     "w": 3543,
+     "s": 6031730,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "e7284dc8-1efe-4bea-acb5-9378f2ce4362",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6baaf6e6-913a-40d1-95e6-a2962e753e62",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Lire les signaux faibles de la piste</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "d2dbfa62-c748-4d44-8574-fe3297899d57",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7e96796e-7de7-4197-8a99-0e7ad297e107",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Lire une piste de danse, ce n’est pas seulement regarder qui danse. Ce sont les micro-signaux qui comptent : un pied qui tape, des têtes qui bougent, des regards tournés vers la régie, des refrains chantés depuis les tables. Ces réactions indiquent si la musique touche les invités, même lorsqu’ils ne sont pas encore sur la piste. Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ expérimenté</u></a></span><span style=\"color: #000000;\"> sait que l’engagement commence souvent avant le premier pas de danse.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0ce89bf6-557d-42f7-a0d5-3590e1f85993",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b95d6f65-441c-450c-9819-3fa52a91d653",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7e91a4f4-9af1-4e04-ad0a-5a1ff0ef88ec",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9db4ca34-c9bc-4683-b277-ea222a3aff97",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Gérer les temps forts et les temps de respiration</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "9eef8441-a0ad-486b-830f-40208988fc61",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "404ed045-4272-423c-93ef-33804d4a8d48",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Une piste de danse fonctionne par vagues. Il y a des moments d’explosion collective et des phases plus calmes. Un bon </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> sait respecter ces cycles. Forcer une montée trop rapide ou enchaîner uniquement des titres très énergiques peut fatiguer les invités et vider la piste. Lire la piste, c’est savoir quand ralentir légèrement le tempo, quand proposer un morceau plus chantant, ou quand relancer avec un titre fédérateur capable de rassembler toutes les générations.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b594d0b0-2d9c-43f2-bd7d-41e71d4413c6",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "719bb7b2-a97d-4d33-bc28-f38ec1878ae5",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/799607_307886",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 2358,
+     "w": 3543,
+     "s": 8631388,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3a0ca026-803e-4da0-94bf-cf85dffa9b96",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "19dbb259-1205-4cf2-b6f3-ab5e633cabe2",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "32e0bd14-d098-4754-a576-23240fd53056",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7e561182-a91b-4c34-b840-fbff40db0f6a",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Adapter la musique en temps réel</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5d4abad1-846d-40da-abee-7745afb183f3",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "d6a73321-2ece-4951-8163-4815433f067c",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Contrairement à une playlist figée, la lecture de piste implique une adaptation permanente. Si un style fonctionne particulièrement bien, le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> peut prolonger cette énergie. Si l’ambiance baisse, il doit être capable de changer de direction rapidement, sans créer de rupture brutale. Cela passe par le choix des morceaux, mais aussi par les transitions, le volume, la durée des titres et le moment précis où lancer un refrain clé.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2895606e-7b57-42ff-ad04-a21b44337138",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e9b7f9fc-edb0-4410-bc38-3c6cdcd2d26b",
+     "defaultValue": false,
+     "value": "<p class=\" p2\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "13f0ddd0-9825-49d6-a611-cc90d2743291",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "29d8fee6-9ae9-4618-b773-0d2dd9b449d7",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Anticiper plutôt que corriger</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "fef3fc9d-7744-4a46-9629-722170454f24",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "9e0bb5b9-5460-4061-b1e9-1f79315ea0bd",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> qui lit correctement une piste n’attend pas que celle-ci se vide pour réagir. Il sent les signes avant-coureurs : des invités qui quittent la piste, une énergie qui retombe, une attention qui se disperse. Il anticipe alors la relance musicale idéale pour maintenir la dynamique et garder les invités engagés. Cette capacité d’anticipation est ce qui permet de conserver une piste de danse vivante et pleine sur la durée.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b8bdc18d-85df-4a90-9e6c-4bb26301505f",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "06efa010-35e3-4156-a238-761e53ae54ac",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/35312_582201",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpg",
+     "h": 945,
+     "w": 1418,
+     "s": 162238,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2c6cad2e-42f7-41cd-9cbb-7eba7d7b3b74",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "060a966d-ecaa-4398-ae2e-742c35c9eaed",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\"><strong>Une compétence humaine avant tout</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c34fbdfa-fe36-43a5-aad3-fec6355319e4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4ff62522-1b13-41d6-a05d-9e71ce945128",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Lire une piste de danse est avant tout une question de sensibilité humaine. Cela demande de l’expérience, de l’écoute et une vraie capacité à se connecter aux invités. Chaque soirée est différente, chaque public a sa propre énergie, et aucune recette ne fonctionne à l’identique deux fois.</span><span style=\"color: #000000;\"><br></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "2975ec31-abb2-46db-9961-bedf5b942093",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "be438c6e-eb83-494c-a846-be798b30d45d",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez </span><span style=\"color: #000000;\"><strong>Spice </strong></span><span style=\"color: #000000;\"><strong>Events</strong></span><span style=\"color: #000000;\">, cett</span><span style=\"color: #000000;\">e lecture fine de la piste de danse fait partie intégrante de chaque </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>prestation DJ</u></a></span><span style=\"color: #000000;\">. C’est ce qui nous permet de créer des ambiances fluides, cohérentes et mémorables, où chaque invité trouve sa place et vit pleinement l’instant.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0dfb5692-a793-4e82-9b49-d9aec5bc2e97",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "5ccb07b2-fdd2-4f57-bdcd-b3e44243646c",
+     "defaultValue": false,
+     "value": "<p class=\" p1\" style=\"text-align: justify;\"><span style=\"color: #000000;\">Parce qu’une piste de danse ne se contrôle pas. Elle se comprend, se respecte et se guide.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3f3a31fa-6270-4b69-9874-b52ae2c0432e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2458cefc-cb69-420b-aab7-9f8e447d143d",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false,
+  "scheduled_publish_at": null,
+  "scheduled_time_zone": "Europe/Paris"
+ }
+}

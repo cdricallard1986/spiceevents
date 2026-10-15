@@ -1,0 +1,1114 @@
+{
+ "type": "Page",
+ "id": "f_6317a91e-cf86-4ce0-b690-b427f13b676a",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_1f35aa05-231d-43ca-9e1d-ddf31109a3f3",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_b7294361-3975-4650-b54d-ff5dc1c60aa8",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_23b018fb-e93a-4083-a94b-06d1e0dbbec5",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_ccf1624d-6bd0-470e-a547-76dd0e397661",
+       "defaultValue": null,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_74c26898-ad83-46b9-a40e-abf7c05c662c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Bar à vinyles</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_13fa1cb1-f7b4-48ca-b884-38ffc44852e7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default\"><em>Plongez vos invités dans une expérience unique, entre nostalgie et modernité.</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_e081eb9a-2599-4c83-9314-560dbf485b89",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/454381_974429",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2560,
+         "w": 3840,
+         "s": 1923584,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_0fed6628-d86a-4a24-9944-9b53fba1583d",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_b73e4a5f-0b92-4a0a-823e-4f353f262989",
+          "defaultValue": null,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_0387ae9a-38fc-4a7f-a81c-2d001aa2e8d9",
+          "defaultValue": false,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_7bb2b161-2ebb-45e1-82fa-4de5744b1ecd",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_d87340b9-a5ea-4a85-bd51-ce99c2006caa",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_f9fee5e1-6b79-43d0-9f1a-a329c9c95ddd",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_1097d32a-235a-49ac-9324-c54307ee7304",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_9688a89e-c6ec-402f-a5a6-aa7b6a517c40",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_621a7840-9864-4a50-b0c0-5bd7d2f17187",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_b64cac65-4b98-406b-b996-23aa46e3fc68",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_836e90ef-12f3-4f1d-8645-106bd41e828f",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_1e949b7e-4e4b-4a1f-b706-75954cd5521a",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_373cd893-7df4-4763-bcac-a4c5ff7e74b6",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte accueil",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_e89bbef9-996e-42e2-9690-9e302c664366",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_fac7b607-ef5e-4640-8b42-c685a428564e",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_fd111683-b308-403f-a63b-77d717548ae4",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_dfdef9b8-bdd4-4b1e-b3e6-99d7d0807db7",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_4493634e-244e-4427-b6d9-c25fdbeb9210",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_c04c1393-dc61-4b81-bef8-9aa2c159c207",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_8fb09b6e-cd6b-4bc6-a8ef-10627fd01478",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_e541e4f9-ac23-41fd-b083-e017b7b321be",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-title s-font-title s-text-font-size-over-40\" style=\"font-size: 48px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-one\">Bar à vinyles : la musique devient expérience</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_452206e5-5cbf-4786-b320-710095f03ccf",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_df470eec-e79d-44a8-a38d-8dad93fdf4b2",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_892c658e-4ad1-400c-8171-ecbd691ae0d0",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_2e94e3dc-1247-4cbc-a56d-130753deab80",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f2ec7a30-71ee-422d-b4db-a748849dee68",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_2392dee1-f12a-4aaf-a163-f6566d91d815",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Choisissez, écoutez, partagez</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_055111ef-124b-4d91-be91-b140da869a6a",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_2c613cb9-6c51-4082-bdc7-ecb51d9143f0",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_48a3e3e1-f0ec-4c7b-aed5-2c95eba99d65",
+                 "defaultValue": false,
+                 "alignment": "justify",
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Le bar à vinyles transforme vos invités en DJ le temps d’une soirée. Ils choisissent leurs morceaux favoris, découvrent de nouvelles musiques et participent activement à l’ambiance. Le DJ supervise et assure une transition fluide entre les morceaux, créant une atmosphère unique, interactive et conviviale, parfaite pour les cocktails, soirées privées et événements d’entreprise. </span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_26e4309d-e98e-48b3-a216-92144571d895",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_3137f2b5-1ba9-483e-812a-9d88a2d74e6e",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_e14970e5-93c4-4206-80bd-1aaba08aa7c9",
+   "defaultValue": true,
+   "template_name": "process",
+   "template_version": "beta-s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_057bcd0b-8e43-4c0a-a1ab-9c32fc7091a7",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Processus",
+     "sync_key": null,
+     "layout_variation": "horizontal"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_a63c414c-a873-41a6-99ff-28486adfe62d",
+     "defaultValue": false,
+     "url": "",
+     "textColor": "",
+     "backgroundVariation": "",
+     "sizing": "",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": false,
+     "focus": null,
+     "backgroundColor": {
+      "themeColorRangeIndex": null,
+      "value": "#FFFFFF",
+      "type": null
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_a7b4c96d-56b4-469f-9cd5-fa97fca21c46",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default public-DraftStyleDefault-block public-DraftStyleDefault-ltr s-title s-font-title s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Comment cela fonctionne ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_2b338762-9800-4511-b0c3-a0f62ff7ee4e",
+     "defaultValue": true,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_8cf34ad0-2e3b-4d85-8f7a-b738caafb2ed",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_de91a31c-6adb-40cf-b054-9ba7b76cc595",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Piochez</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_734d5a82-08f3-466a-8c9a-86e30eaa969f",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"text-align: center; font-size: unset;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\">Notre large séléction de vinyles ne pourra que vous séduire: rock, jazz, électro ... Laissez vos invités choisir !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4e4e5cd2-185a-4655-ada8-93c344746cd5",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_401c3033-01c7-4204-b795-8197966d0617",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Donnez</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_928e7523-eb61-4cba-bbf1-89244fad66aa",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\" style=\"text-align: center; font-size: unset;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag- s-text-font-size-over-\">Le DJ se chargera d'intégrer le ou les vinyles choisis à la playlist en cours.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a6d56f6a-e523-49ef-917b-63a88e38a040",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_9828662e-8eeb-490f-942c-855a3c6e6878",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Écoutez </span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4f0ea16f-9df3-4b12-a4fb-546444802977",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: center;\">Laissez vous entrainer sur le dancefloor pour un moment  musical inoubliable avec vos invités !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_d4d7427c-5c89-4bd4-80ee-84de697b4de5",
+       "defaultValue": true,
+       "value": "Ajouter un titre",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_f58f6d41-eda4-4e86-a21b-a02ab2d3da87",
+       "defaultValue": true,
+       "value": "Add subtitle",
+       "backupValue": null,
+       "version": null
+      }
+     }
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_c4eca55b-b6d7-428f-9c39-e7413a425556",
+     "defaultValue": true,
+     "value": "Add subtitle",
+     "backupValue": null,
+     "version": null
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_949008e0-a93a-45cb-83f8-72f863e4ecbb",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_14701394-f4e2-4f83-9965-12da25050ab7",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "padding": {
+      "top": "none",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_b383c043-0702-4a9c-b626-1957fd883261",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_9a9c253b-38f0-4026-a6f8-75420825898c",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_d052fd43-8b07-42d6-accc-27233c86d785",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_92db093e-97f1-4af0-a78b-00adcc38a609",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_b86c09eb-c5c9-4c40-a2be-7b2e8e6c9802",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/501528_374820.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/501528_374820.jpeg",
+       "description": "Bar à vinyles ",
+       "storageKey": "22139555/501528_374820",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 3024,
+       "w": 4032,
+       "s": 7782077,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_f0018c2e-1523-4ee5-9599-5a49cb296a0b",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/863144_625474.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/863144_625474.png",
+       "description": "Bar à vinyles",
+       "storageKey": "22139555/863144_625474",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 243,
+       "w": 365,
+       "s": 179573,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_0f3ed014-cd33-4b14-840e-8cbcbfa57550",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/925548_77227.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/925548_77227.jpeg",
+       "description": "Tourne disque avec vinyle Spice Events",
+       "storageKey": "22139555/925548_77227",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 3024,
+       "w": 4032,
+       "s": 3294412,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_c1ed320f-6fcb-4f7b-ba70-9b60779bc0a6",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/362242_52298.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/362242_52298.jpeg",
+       "description": "Bar à vinyles",
+       "storageKey": "22139555/362242_52298",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 3024,
+       "w": 4032,
+       "s": 5092521,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_cb915829-2d74-4929-ae0d-53b2fb5d7ce9",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/47117_469411.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/47117_469411.png",
+       "description": "Main prenant un vinyle dans le bar à vinyle",
+       "storageKey": "22139555/47117_469411",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 545,
+       "w": 365,
+       "s": 315458,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_65f17bb0-2477-449c-8e02-cf7f094c16fb",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/426610_520478.png",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/426610_520478.png",
+       "description": "Vinyle en train de tourner",
+       "storageKey": "22139555/426610_520478",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "png",
+       "h": 545,
+       "w": 365,
+       "s": 292527,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_1f608ed4-063a-484f-8ebf-8cc675de2c77",
+   "defaultValue": true,
+   "template_name": "cta",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_0efe870a-2b6b-49d1-8057-5865576db201",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Bouton",
+     "sync_key": null,
+     "layout_variation": "center-bottom-normal"
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_d18d4390-7c37-45fb-a24e-f54d016035b7",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\">Pourquoi choisir le bar à vinyles ?</h1><h1 class=\" s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"display: inline-block\"></span></h1><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: justify; font-size: 18px;\">Le Bar à Vinyles, c’est bien plus qu’une animation musicale : c’est une expérience interactive et fédératrice. Vos invités plongent dans l’univers du vinyle, choisissent leurs morceaux et participent à la création de l’ambiance. Une idée originale qui allie nostalgie, élégance et convivialité, idéale pour tous vos événements :</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_83b944bf-44a3-409e-82b1-b191ce0b6751",
+     "defaultValue": false,
+     "alignment": "left",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><ul><li class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\">Animation originale et participative</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\">Interaction entre les invités et la musique</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\">Ambiance conviviale et chaleureuse</li><li class=\" font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: left; font-size: 18px;\">DJ professionnel pour un rendu impeccable</li></ul></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_3c0f557a-28e8-4a8e-b814-5ec459cbbe83",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_b648e44d-7999-4d7d-86e8-b3d6693718cf",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": null,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_f44bc6a4-e6c6-41fd-823e-a6b44fc6d6e9",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_d0a91dde-cdc1-45f2-897a-7adc2e5c91dd",
+     "defaultValue": true,
+     "video": {
+      "type": "Video",
+      "id": "f_f977a1b6-b6e4-4d4f-b80e-4b39edd882a0",
+      "defaultValue": true,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_c10db064-de70-4eaa-9042-c82ef7b7e1bc",
+      "defaultValue": true,
+      "link_url": "",
+      "thumb_url": "/images/icons/transparent.png",
+      "url": "/images/icons/transparent.png",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "storagePrefix": null,
+      "format": null,
+      "h": null,
+      "w": null,
+      "s": null,
+      "new_target": true,
+      "focus": null
+     },
+     "current": "image"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_80e1c3d8-e72c-4f00-a0ad-491ec35f5aac",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_bbc707c0-5cef-4deb-b8a6-3f8ddb5b8e1d",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_c516782d-ad49-4b1c-b4b5-037fbbc9f56e",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Donnez du groove à votre événement !</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_df274f30-8295-4473-af7c-1b779cc73294",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Contactez-nous pour réserver le Bar à Vinyles et faire vibrer vos invités.</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_3e2948d9-0079-4ccd-955d-55fcdc83fb06",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": "",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/804388_299835",
+     "storage": "s",
+     "format": "jpg",
+     "h": 3024,
+     "w": 4032,
+     "s": 5895690,
+     "useImage": true,
+     "focus": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_c411f4e3-5736-4a17-a9db-06fe350a0231",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Bar à Vinyles",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1761830824642#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1761830826958#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_1bc983e2-0e29-430c-9698-07bbf7c08cd8"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_cd4f150f-aee7-4d04-89b3-726dba242c16"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_66590817-b1cc-41c3-959b-8de6e7815095",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_276fd08e-c13b-4399-8fec-9fdad338728f"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_13594fe4-2469-4531-a1e1-0f5891c9a1a8"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_e183fd58-0107-4bff-aeff-882653d09b2e"
+          },
+          "$item1761830824642#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_424ad6c0-d477-4f49-b2ef-2625c4e2ec13"
+          },
+          "$item1761830826958#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_1cd54c81-312f-4042-aaa1-0811b9a0448e"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1761830824642#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_24591c09-6cc7-4e91-8e62-accd04782cff"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_eb0190ee-2394-4a9a-a881-87f89790f3ab"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1761830826958#date",
+         "$item1761830824642#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1761830824642#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1761830826958#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Bar à vinyles",
+ "description": "Une animation vintage et conviviale pour faire tourner la musique autrement.",
+ "uid": "1a4406b3-01dc-4eb2-8684-b9baccb3d64f",
+ "path": "/bar-a-vinyles",
+ "pageTitle": "Bar à vinyles",
+ "autoPath": true,
+ "authorized": true
+}

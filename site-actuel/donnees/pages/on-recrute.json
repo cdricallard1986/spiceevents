@@ -1,0 +1,760 @@
+{
+ "type": "Page",
+ "id": "f_39845ec0-2041-4b97-adac-48c3bdf08cbc",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_76a61d8e-79d0-4670-80dc-b29ca3c65a35",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_08592677-553a-427a-997c-45c4fd705846",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_8afa4ce2-9de1-4771-94b6-9a305ccd4d6a",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_d302f9b2-d05d-45c6-b281-0925bda9306c",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_c2f206e8-4195-487c-9fc2-a6ac489551dc",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\"><span style=\"color: var(--s-pre-color10);\">ON RECRUTE !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b296bae4-b6e3-4861-abd5-cbacbb47e581",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-50\" style=\"font-size: 55px;\"><span style=\"color: var(--s-pre-color10);\" class=\"s-text-color-default font-size-tag-header-two s-text-font-size-over-default s-rich-text-wrapper\"><em>Rejoignez l'aventure Spice Events</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "lineAlignment": {
+          "firstLineTextAlign": null,
+          "lastLineTextAlign": null
+         },
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_c7d276ee-0ad8-4ee0-ba33-9af04674d533",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": "",
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/459188_251264",
+         "storage": "s",
+         "format": "jpg",
+         "h": 2358,
+         "w": 3543,
+         "s": 9475675,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_d1e5038c-c783-4549-805e-7ad0d3364bde",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_a915b756-6b79-4640-9155-81d703943c93",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_dcbd16cb-ff08-4e8d-9d8e-f6da295d490b",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_fcae4f97-3525-4078-816f-b3ce12f462f6",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_089d163d-0637-42bb-b737-8a196e32d580",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_c3c9e1d7-d59a-4812-b6bd-077f6aff76f3",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_69716563-9781-445a-b0ad-dfd2a8807f54",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_14758bc2-b8e8-4815-886a-42ed05d3410c",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_e9c74d5e-3058-4d30-b6a0-d389ec6c2ce6",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_ef97d3b2-6477-4a5f-bab5-2bd03bfa6bac",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_f7ed187d-2eda-468d-a75a-9680a8c4c554",
+       "defaultValue": true,
+       "alignment": "auto",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_d6546ecc-3f52-47f5-9c3a-8ed267601994",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_fa094da9-390a-4113-bad4-ae9147b2ccbe",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_53b4501f-1c65-40e4-bc3a-669d9547f0fe",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default font-size-tag-header-three\" style=\"text-align: center; font-size: 24px;\"><span style=\"color: #000000;\">DJ généraliste - Mariages &amp; événements</span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "center",
+      "lastLineTextAlign": "center"
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_2b6158b6-4fe4-4bf9-b9da-de66c45b0c5a",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Chez Spice Events, nous ne cherchons pas simplement des DJ. Nous cherchons des personnalités, capables de créer des ambiances, de comprendre les émotions et d’accompagner des mariés tout au long de leur journée. Si vous aimez la musique, le contact humain et le travail bien fait, vous êtes  au bon endroit.</span></p><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: unset;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: unset;\"><span style=\"color: #000000;\"><strong>Le profil que nous recherchons</strong></span></p><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: center; font-size: unset;\"><span style=\"display: inline-block\"></span></p><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">En tant que DJ généraliste, vous interviendrez sur des mariages et événements aux univers variés. Votre mission : faire vivre la piste de danse, mais aussi être un véritable partenaire des mariés et des prestataires.</span></p><p class=\" font-size-tag- s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: left; font-size: unset;\"><br><span style=\"color: #000000;\"><u>Vous êtes fait(e) pour ce poste si :</u></span></p><ul><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous êtes DJ généraliste, à l’aise avec tous les styles et générations</span></li><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous savez lire une piste de danse et ajuster votre set</span></li><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous avez un bon relationnel client et une attitude rassurante</span></li><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous êtes à l’aise à l’oral et en visio</span></li><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous avez des bases techniques (son / lumière) ou l’envie d’apprendre</span></li><li class=\" font-size-tag- s-text-font-size-over-default\" style=\"text-align: justify; font-size: unset;\"><span style=\"color: #000000;\">Vous êtes fiable, ponctuel(le) et impliqué(e)</span></li></ul></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "justify",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_b189adb1-9c7d-43a0-b159-c31e6541d2ea",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_3d446329-6b26-47fd-99d0-5d62e88d6ad0",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_a3f7e818-01c9-447e-a156-e9683078ac25",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_509ea938-7708-4026-8803-f22a2235279a",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_ef78ac7f-0ab8-49b7-b57f-79d7172f2f68",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_bcef3bc7-7f31-443e-be9d-89648f8b3e37",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_fb0b2cf4-2b0b-4024-aa72-53673767000a",
+   "defaultValue": true,
+   "template_name": "gallery1",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_8312119c-e354-4bbe-b8e5-8625e1bb32f8",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "large",
+      "templateName": "E",
+      "width": "auto",
+      "imageShape": "landscape-4-1",
+      "structure": "grid",
+      "showTitle": true,
+      "columns": 1
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_c7c6f221-6f3c-4135-a80b-d9c6320515be",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_02146818-225c-48d3-9a1a-d2d9a872b53f",
+     "defaultValue": false,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_6e4527c1-2b7e-4bb1-afb3-222ef02f6738",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_3ddb7c98-df73-44c9-93d3-07e7ef0082ad",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_6d055790-3cf9-4dbc-8bb1-561be17699da",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/616581_117916.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/616581_117916.jpg",
+       "storageKey": "22139555/616581_117916",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 2358,
+       "w": 3543,
+       "s": 5912718,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_9972409d-4589-43a1-81aa-134d4b10a594",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_134779a6-62f5-4fff-98f9-be3e1a42da20",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Titre",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_a8b785a6-18e7-435f-bc40-b50253868b83",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\"><span style=\"color: #000000;\">Votre rôle chez Spice Events</span></h4></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_653bd37a-9c49-4521-b37a-558eae5bc897",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" font-size-tag-paragraph s-text-font-size-over-default s-rich-text-wrapper\" style=\"text-align: left; font-size: 18px;\"><span><u>Vos missions principales :</u></span></p><ul><li style=\"text-align: justify;\">Gérer et animer la piste de danse pendant environ 4h</li><li style=\"text-align: justify;\">Adapter la musique en temps réel selon l’ambiance et le public</li><li style=\"text-align: justify;\">Être force de proposition pour les moments clés (entrée, ouverture de bal, surprises, transitions)</li><li style=\"text-align: justify;\">Assurer une présentation professionnelle et commerciale</li><li style=\"text-align: justify;\">Participer aux rendez-vous clients en visio (ponctuellement)</li><li style=\"text-align: justify;\">Gérer le timing de la soirée en lien avec les autres prestataires (traiteur, photo, vidéo…)</li><li style=\"text-align: justify;\">Aider au montage et démontage du matériel, en collaboration avec un technicien</li></ul><p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p style=\"text-align: center;\"><span style=\"color: #000000;\"><strong>Pourquoi rejoindre Spice Events ?</strong></span></p><p style=\"text-align: center;\"><span style=\"display: inline-block\"></span></p><p style=\"text-align: justify;\"><span style=\"color: #000000;\">Chez Spice Events, nous défendons une approche humaine et qualitative du métier. Chaque événement est préparé avec soin, anticipation et rigueur, jamais laissé au hasard. Vous rejoignez une équipe passionnée et bienveillante, attachée au travail collectif et à l’exigence du détail. Nos prestations sont valorisantes, soutenues par du matériel professionnel performant, et s’inscrivent dans une vision moderne et engagée du DJ événementiel.</span></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": "left",
+      "lastLineTextAlign": "justify"
+     },
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_ed6d7795-1de5-4ecc-bbae-87ca085a948e",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_b72f3435-3227-407b-9285-1069e063d503",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_c8638590-d993-44cf-89ac-9bffa7e8d55e",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_9956bd54-0bc9-41f1-ab78-c4ea0f37459a",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_55b5b5a3-541e-4517-b087-e363977e0530",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_b70f4051-a607-430f-9ff7-460d8aa6d6c6",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_170fe78e-d058-48f5-aef7-81bb53775c45",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_fb365dc5-2b6a-445d-852a-7a6973becd01",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire de candidature",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_48bff144-cc13-4afe-a6f7-96ddd2ba9672",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\">Envie de rejoindre l'équipe ?</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_3a5714eb-5527-4c87-ac5c-cefb02ad8f9b",
+     "defaultValue": false,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h2 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\" style=\"font-size: 28px;\">Remplissez le formulaire ci-dessous, nous vous recontacterons rapidement.</h2></div>",
+     "backupValue": null,
+     "version": 1,
+     "lineAlignment": {
+      "firstLineTextAlign": null,
+      "lastLineTextAlign": null
+     },
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_31fbb55c-a9c5-4cf3-b78f-320c13982620",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/600377_87357",
+     "storage": "s",
+     "format": "jpg",
+     "h": 2448,
+     "w": 3264,
+     "s": 343243,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_0cd0089a-87ce-4cc2-a830-7f03d7617b9c",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire de cadidature",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_73e2ed11-4583-402c-9696-de512643c51e"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_f57a446f-26d3-4fe2-bf2f-f921dd606f32"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom & prénom",
+           "type": "object",
+           "id": "f_2a52a7aa-0712-4c16-bf28-1a78603f4b6b",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_89b9b005-2fa5-4b52-bebb-cf427cfd5abb"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_17780764-8b8f-47a6-9da1-ed64eafd1525"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_cf1135e8-4e4d-4403-940f-0d688153dbab"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_a32c1f17-dda6-4c79-bede-a4dc2ac7c0fd"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_c4828ff4-7a16-487b-9a6e-0cedf0b88fc7"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1606282604448#longText"
+        ]
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "On recrute !",
+ "uid": "09282635-f796-4256-a365-ce43134466d7",
+ "path": "/on-recrute",
+ "autoPath": true,
+ "authorized": true
+}

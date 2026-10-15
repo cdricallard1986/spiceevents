@@ -1,0 +1,337 @@
+{
+ "blogPostMeta": {
+  "id": 16310966,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-08-24T06:56:06.602-07:00",
+  "publishedAt": "2021-08-24T07:16:44.368-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/s-offrir-un-mariage-100-responsable-et-soucieux-de-l-environnement",
+  "customSlug": null,
+  "editCount": 135,
+  "publishedEditCount": 118,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/s-offrir-un-mariage-100-responsable-et-soucieux-de-l-environnement",
+   "title": "S'offrir un mariage 100% responsable et soucieux de l'environnement",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/3083622/482663_119147.jpeg",
+   "description": "Un mariage oui, mais responsable de l’environnement, c’est encore mieux. Soucieux de mettre l’écologie au cœur de notre profession, chez Spice Events, nous développons régulièrement nos offres pour vous offrir des événements encore plus époustouflant les uns que les autres.  A l’heure où...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Mariage de S&R au château d’Hardricourt",
+  "nextBlogPostRelativeUrl": "/blog/mariage-de-s-r-au-chateau-d-hardricourt",
+  "nextBlogPostId": 16320559,
+  "prevBlogPostTitle": "Pourquoi choisir un prestataire technique pour son mariage ?",
+  "prevBlogPostRelativeUrl": "/blog/pourquoi-choisir-un-prestataire-technique-pour-son-mariage",
+  "prevBlogPostId": 16276271
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_347ea0ab-fef7-4c90-afba-40034494ee9d",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_206e22dc-ee6a-44da-97d0-c42f275ad6e0",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_ea797376-b7f5-4a50-99f4-a462e9386ee0",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>S'offrir un mariage 100% responsable et soucieux de l'environnement</b></p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_c5c4d854-3b35-4066-836c-8d94328d36e5",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>Créer un mariage qui veut du bien à la planète </b></p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_601624bd-40c2-42c4-a17b-b92a86b44393",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "3083622/482663_119147",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 4480,
+    "w": 6720,
+    "s": 3604997,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_2be6756c-415e-4263-8681-4f992075022d",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_77913aaa-02a6-41f7-a9b5-96b0683e60ee",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_e4cdab25-8284-4bf9-bd68-e66b999f7e7a",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_63c895c6-e526-44d3-8fba-6892d45af6c1",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_38a47793-23dc-4541-8e3d-a2c2cad4a91b",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_3e9ec201-4369-48b7-8fa5-64c8c28c96ea",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_45071641-6617-4f29-a20e-5434344897e7",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "08596def-982d-4856-a906-a556e4658ffb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a4b030a9-7604-402e-bcd7-88ec417b5192",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Un mariage oui, mais responsable de l’environnement, c’est encore mieux. Soucieux de mettre l’écologie au cœur de notre profession, chez Spice Events, nous développons régulièrement nos offres pour vous offrir des événements encore plus époustouflant les uns que les autres. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "67c8d1f0-78f6-4dec-97f4-385c262f897b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "37574290-d7ef-454a-baf2-5b15cc8acfd9",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">A l’heure où l’environnement devient un sujet de plus en plus préoccupant, nous cherchons sans cesse à nous renouveler tout en gardant la qualité de notre prestation : éclairage LED, traiteur favorisant le circuit-court…</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19678364-795d-4200-8de1-f1d45d45a5d1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "4046879d-7df3-4c39-9b85-86aa34bbf25f",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><em>On vous en dit un peu plus sur ces options green qui font du bien à la planète ! </em></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "19678364-795d-4200-8de1-f1d45d45a5d1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c49f4124-a0d5-40ee-94bb-867ab8166d8c",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "61293688-34ab-4b7f-881f-58b13a11a6cb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "6c704973-67eb-4b9a-bdff-70dd7a15b128",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 20px; text-align: center;\"><span style=\"color: #000000;\"><strong>De l’animation à la technique, tout peut être responsable. </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5d567e64-7a48-4749-9dbf-85b6ea0466b8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "24878634-dda1-4225-aabd-eae5bc54226a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>Bar à vinyles</u></a></span><span style=\"color: #000000;\">, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/animations-tendances\" data-type=\"undefined\" target=\"_self\"><u>animations</u></a></span><span style=\"color: #000000;\"> recyclées, </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>éclairage LED, sonorisation</u></a></span><span style=\"color: #000000;\"> moins énergivore… Nous mettons tout en œuvre pour réduire au maximum notre empreinte carbone. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "67150411-5a84-430f-8a48-6168686c7a95",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f3b4c01c-3354-47dd-93b1-77ee50047cc5",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/bar-a-vinyles\" data-type=\"undefined\" target=\"_self\"><u>bar à vinyles</u></a></span><span style=\"color: #000000;\">, l’une de nos dernières animations mis en place durant le confinement est l’une des stratégies acoustiques pour réduire au maximum sa consommation. On recycle des vieux vinyles destinés à la poubelles pour les faire devenir l’acteur principal de votre soirée. Fouillez, piochez, donnez au </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> le vinyle que vous souhaitez écouter ; nostalgie et fun assuré ! Et parce que l’upcycling nous tient à cœur, nous créons nos lettres géantes lumineuses à base de palettes de bois. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c979a6d4-66c3-4032-88e2-b107f0046362",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "32e97a3d-6538-4cad-88ba-668e62ef65e7",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "3083622/410575_837945",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 3524508,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "afda7e60-7c76-4974-a339-55c71c1a30f1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "a380de74-b303-42d8-adf2-e7e87f93640c",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Au-delà de l’upcycling, nous cherchons à vous offrir une prestation de qualité en se dirigeant de préférence vers du matériel moins énergivore. Nous mettons à votre disposition un large éventail de possibilités pour faire de votre mariage un instant unique. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3105e96a-3479-451d-978f-5989edf5586b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8e91e6e3-1b81-42fa-99dc-e7965fa801df",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "12e7e95b-5655-49f4-9bf3-6ff0cd75322c",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "2cc67050-92f3-4484-aa31-f0a25d1cafc7",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/f_auto,w_200,c_max,q_auto/unsplashcom/photo-1551963319-13ff32a5acd1",
+     "url": "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/f_auto,q_auto,w_4096/unsplashcom/photo-1551963319-13ff32a5acd1",
+     "caption": "",
+     "description": "",
+     "storageKey": "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/f_auto,q_auto,w_4096/unsplashcom/photo-1551963319-13ff32a5acd1",
+     "storage": "un",
+     "storagePrefix": null,
+     "format": null,
+     "h": 720,
+     "w": 1080,
+     "s": null,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "02268d88-48e1-4fe0-8c1b-aa4d24d1116a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "db43bc4f-b252-4d0c-bd9d-10b7b6457ea2",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/contactez-nous\" data-type=\"\" target=\"_self\"><u><strong>N’hésitez pas à nous contacter pour en savoir plus sur l’aspect éco-responsable de nos événements. </strong></u></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "b2250453-c47a-42d2-8aff-e76a5f5aeb3a",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "76a09594-da15-4bf5-a113-512ec9f2c6a0",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,402 @@
+{
+ "blogPostMeta": {
+  "id": 19234866,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2022-03-15T07:35:26.563-07:00",
+  "publishedAt": "2022-03-15T07:46:09.392-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/osez-la-thematique-noire-pour-votre-mariage",
+  "customSlug": null,
+  "editCount": 103,
+  "publishedEditCount": 84,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/osez-la-thematique-noire-pour-votre-mariage",
+   "title": "Osez la thématique noire pour votre mariage",
+   "image": "https://images.unsplash.com/photo-1503796964332-e25e282e390f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=9000&w=1200&fit=clip&fm=jpg",
+   "description": "De nos jours, les mariages se veulent originaux et modernes. Même si une majeure partie des futurs mariés préférents rester au blanc traditionnel, beaucoup aimerait se démarquer en utilisant une autre thématique. Spice a trouvé pour vous une thématique tendance et original aussi classe et...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Comment faire durer la magie du Jour-J ?",
+  "nextBlogPostRelativeUrl": "/blog/comment-faire-durer-la-magie-du-jour-j",
+  "nextBlogPostId": 19614379,
+  "prevBlogPostTitle": "Les plus belles chansons pour ouvrir le bal",
+  "prevBlogPostRelativeUrl": "/blog/les-plus-belles-chansons-pour-ouvrir-le-bal",
+  "prevBlogPostId": 19036029
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_c594d366-fa5b-46eb-96f5-8a360c38f04e",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_099dac3e-2e81-4473-8723-71e8d8f037f5",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_e6fc6844-5e4f-48e6-a4ed-31de246bcf09",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Osez la thématique noire pour votre mariage</p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_401532f8-b4da-4a94-833e-ae82be450801",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Et pourquoi pas ?</p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_a4060811-5cc8-45b7-ba3f-079f466f8a5d",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "https://images.unsplash.com/photo-1503796964332-e25e282e390f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb",
+    "storage": "un",
+    "h": null,
+    "w": null,
+    "s": null,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_323bded2-6444-413a-b5f0-9d4dc33d77b2",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_81c28a44-75db-4e77-923f-9f5e56309caf",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_9b53e503-e63c-4e6c-b439-e21aed81c129",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_9bd97135-669e-4960-826c-cbf3bbdb8a4f",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_6bda9261-6902-4dec-a37d-a61e7dcd666a",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_55314e80-224e-4661-943c-4dd91b1e17af",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_557bb8c9-44e3-4342-a4b0-437151ac0215",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "57b6b6f7-d920-4e6c-b94c-17f55a2e9813",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8ed10d08-76b3-4bf2-a2aa-ed21a0966f35",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">De nos jours, les mariages se veulent originaux et modernes. Même si une majeure partie des futurs mariés préférents rester au blanc traditionnel, beaucoup aimerait se démarquer en utilisant une autre </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématique</a></span><span style=\"color: #000000;\">. Spice a trouvé pour vous une thématique tendance et original aussi classe et élégante que le blanc : le noir.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a2cdb13e-239b-44e4-a581-276546fca1fb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7ba9e682-9ca5-4f93-b8c6-567ca5357605",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Se différencier</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "8ee22253-d8a6-4d36-97ae-96e330a986ad",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "57dff6e6-604f-41f5-b6cc-c6f4706ab007",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Aujourd’hui, presque toutes les décorations de mariage sont blanches. Synonyme de pureté et d'élégance, c’est la référence lorsqu'on parle de mariage. Mais il est temps de casser un peu les codes !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "5c4ba44d-8f1f-431e-aa27-ede9b9d19648",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "09e840c5-298b-48e5-814d-eb322833d77b",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Si votre souhait est de vous démarquer des autres mariages, alors cette </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\">thématique</a></span><span style=\"color: #000000;\"> est faite pour vous. Oubliez toutes les idées reçues sur le noir. Cette couleur qui n’en est pas vraiment une, a aussi ses qualités en matière de mariage !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "a60bc97c-8ef5-443e-b654-5fc7545ff1a4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "31a53af6-f0cf-4f8d-9c48-f3b76f902225",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "22139555/270510_111684",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "png",
+     "h": 1000,
+     "w": 1000,
+     "s": 1690934,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "54033391-0498-4d20-95bb-4c11a7bbe4c0",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c71e0f3d-744a-4eb6-97e3-e55354d85b41",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Raffinée mais pas que !</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "80d54925-ea24-457a-a1dc-734dffc1d4d1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f6a10c41-7ae2-4281-8b69-51ceb38cc39c",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Comme le blanc, le noir est très élégant et classe mais elle a aussi un côté mystérieux et chic. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "42e1239c-2834-4503-8e37-0b1230f71999",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e6c4238e-9bb3-450b-b0f2-5d8848e32595",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Contrairement à ce que l’on pourrait penser, ce n’est pas une couleur froide. Si elle est bien utilisée, elle peut être très chaleureuse. En l’associant avec des éléments </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\"><u>bois et végétal</u></a></span><span style=\"color: #000000;\">, vous êtes sûrs d’apporter cette touche. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "338e631a-f454-4587-9401-07292f51bcc4",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "a569c10a-e6e0-4855-a38d-7291ad58aac3",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/194265_179730",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 4286374,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f55e915f-ff68-42af-b519-7901fc5580f7",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "340278f6-8f74-4a64-9d5e-2de198f59486",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><strong>Facile à associer</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3d8af3d4-b5cf-455b-a15c-e3fcd1d626c4",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "34490da5-f57e-4d02-a595-45cb267ddc89",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Le noir est également facile à associer. Comme le blanc, il a la praticularité de se marier (sans mauvais jeu de mots) avec presque toutes les couleurs ! Vous avez donc l’embarras du choix en ce qui concerne son association. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "324da5f8-588a-4427-875c-d754bf49dbdf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "923cf7de-27b6-476e-a348-0b2e19c4097a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Toutefois, si vous souhaitez un maximum sur le total look noir, vous pouvez ajouter quelques touche de doré ou d’argenté pour rajouter de la lumière à votre décoration, sans tomber dans le too-much. Vous pouvez, par exemple, suspendre de </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/options-mariage-eclairage-son\" data-type=\"\" target=\"_blank\"><u>jolies guirlandes lumineuses</u></a></span><span style=\"color: #000000;\"> pour rappeler ce deuxième choix de couleur. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "7491e11e-81bc-416e-9dc7-d5b72cae83f6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "11555003-a771-4f47-b483-f0e51e505051",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Vous êtes encore indécis et vous hésitez entre du blanc et du noir ? Et bien, sachez qu’une décoration au mélange de ces deux couleurs est également très jolie ! Alors conquis ?</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4abdede4-a0b5-40ed-a481-d92633f05a2d",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "057368b5-ddca-432b-a2eb-c0a896a004dd",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "5439810/714902_968846",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 739,
+     "w": 1200,
+     "s": 1193187,
+     "new_target": true,
+     "focus": null
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f70c6853-77d4-4013-9d45-5d8374d5b9f2",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "f9c84d8c-c540-46fe-b1c1-2e5cd539ad45",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">A vous de voir maintenant si cette </span><span style=\"color: #1155cc;\"><a style=\"color: #1155cc;\" href=\"https://www.spiceevents.fr/vos-thematiques-au-choix\" data-type=\"\" target=\"_blank\"><u>thématique</u></a></span><span style=\"color: #000000;\"> vous correspond !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "79dfc993-902f-46ca-8c87-aac2631091dd",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b1f8258b-e0a3-4b8e-8075-d32d921a7b63",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Pour toutes questions, rendez-vous sur notre site internet. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "1f40b525-9394-407d-b858-12b1cd8921c6",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ab2664e4-bca8-4308-b332-92d7aac48676",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

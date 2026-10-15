@@ -1,0 +1,284 @@
+{
+ "blogPostMeta": {
+  "id": 2151721,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T07:02:04.091-07:00",
+  "publishedAt": "2017-10-15T07:02:04.000-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/nouvelle-regie-pioneer-blanche-edition-limitee",
+  "customSlug": null,
+  "editCount": 285,
+  "publishedEditCount": 276,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Le Matériel"
+  ],
+  "categories": [
+   {
+    "id": 29958,
+    "name": "Le Matériel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/nouvelle-regie-pioneer-blanche-edition-limitee",
+   "title": "Nouvelle Régie PIONEER blanche édition limitée !",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/357751_629309.png",
+   "description": "Soucieux de vous offrir le meilleur matériel possible, nous étoffons sans cesse notre catalogue pour votre plus grand plaisir. Du matériel toujours de qualité, performant et esthétique.  Et pour étoffer notre offre, nous nous sommes tournés sur une régie Pioneer Blanche édition limitée 2 x...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Célébrer les 10 ans de la Jungle au Showroom 01",
+  "nextBlogPostRelativeUrl": "/blog/celebrer-les-10-ans-de-la-jungle-au-showroom-01",
+  "nextBlogPostId": 2151317,
+  "prevBlogPostTitle": "Nouvel arrivage de matériel L-ACOUSTICS",
+  "prevBlogPostRelativeUrl": "/blog/nouvel-arrivage-de-materiel-l-acoustics",
+  "prevBlogPostId": 2151273
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_bdf70ab4-ab66-4261-897e-d33ea8f412f0",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_1fdf59b5-f51d-4bfe-a4ad-d3fbede1c360",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_604779d8-8b67-496f-9a25-49ed27820ca8",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Nouvelle Régie PIONEER blanche édition limitée !</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_f3b51ffb-ebdc-4b90-993e-d649e496bd47",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>CDJ 2000 Nexus 2 et DJM 900 Nexus 2</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_d66370c8-897d-4f69-aab3-ab4fd774964a",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/357751_629309",
+    "storage": "s",
+    "format": "png",
+    "h": 950,
+    "w": 3078,
+    "s": 632650,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_5ba5de45-c17e-4f36-822e-682d4eb02681",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_c4679c2b-b264-4878-8a8f-578a29642fa5",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_d6314d2f-3f34-4dff-95e2-e1b4e3c90927",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_62a2b36e-9540-46c1-9b6f-62dd18068497",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_3757e843-1c6c-4d28-907e-3ded02239080",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_ad255063-7277-4bed-b3c3-9c403db5926f",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_ad6fe41f-7b8a-4cf8-b2b8-e0b641b18086",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_642356ad-cb1f-4605-a181-af898d311ea1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b0480071-4fa3-4520-8d2b-27b0078f6a5c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Soucieux de vous offrir le meilleur matériel possible, nous étoffons sans cesse notre catalogue pour votre plus grand plaisir. Du matériel toujours de qualité, performant et esthétique. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "dffdbd50-725e-40b6-b727-e30ae97421b9",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "cfd094d2-c01a-4cd3-ba8d-8bbabb6ed97f",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Et pour étoffer notre offre, nous nous sommes tournés sur une régie Pioneer Blanche édition limitée 2 x CDJ2000 Nexus 2 blanche et 1 x DJM900 Nexus 2 blanche. Il s'agit de l'une des plus performantes pour le mix en Club, Festival ou autres prestations. Sortie en série ulta limité (50 en France), cette régie en plus d'être performante est d'une beauté sans précédent. Son blanc lui confère une élégance inégalée qui s'intégrera parfaitement lors de vos mariages ou soirée privées luxeuses. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f737a1e7-030a-4a5c-a615-b97f52d79980",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "2ec2bf72-158f-40aa-a049-65b309809a3c",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Le matériel essentiel du </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> pour mixer et animer votre soirée, mais avec 1000x plus de classe ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f47cfd69-236b-410d-98a3-68c591bb525e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "1c33ad36-ebed-4385-804a-77640a64f0be",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">N'hésitez pas à nous faire part de vos événements, nous serons heureux de vous faire connaitre la Régie Pioneer Blanche ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_1a7b080b-feb8-4962-a91c-c91249845d31",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_b6aa9ccb-731a-452b-9e35-e852f740bb55",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/640055_319670",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 801,
+     "w": 1200,
+     "s": 214274,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_4003ca66-0494-4b83-9090-d0916505c962",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_455ef8d6-06c6-44c3-baa4-6272b95ba62b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/754130_57364",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 801,
+     "w": 1200,
+     "s": 199440,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bb344a51-8de8-406f-8f5f-bbbe47d45188",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "54c80481-cfc6-42ab-ad75-3f22dca5428d",
+     "defaultValue": false,
+     "value": "<p><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

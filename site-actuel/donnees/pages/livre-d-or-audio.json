@@ -1,0 +1,974 @@
+{
+ "type": "Page",
+ "id": "f_70b01a09-c54b-4567-970b-551c92f0cd2f",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_3468669f-be9c-45db-a673-0aa087c0772e",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_52f131fb-0c5f-48db-8882-0653fb4b5ff6",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {}
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_17e88ec1-dc9c-41f0-8dcf-b0069a2f2b41",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_7fc3004e-d1b4-4530-b7de-52e8f07e7094",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_89c61502-28f3-4521-a74f-cd9de6f376ba",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Livre d'or audio</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_8af63af4-806f-4697-82c2-51dba89f64d2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default\"><em>Immortalisez vos souvenirs en audio et en émotions</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_2a46d5cc-828a-4e8c-926c-3b93385b703d",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/398818_228654",
+         "storage": "s",
+         "format": "jpeg",
+         "h": 736,
+         "w": 736,
+         "s": 51975,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_7852ca0c-1da1-47f5-bc26-d61e8553df87",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_b34cb88a-69e3-45e9-a008-f18b0d791102",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_d630bd92-62a6-4638-99b3-a736f880e42f",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_b0b4c22c-b436-45ac-aacd-2a17a360cacc",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_1e642cbc-653a-4281-b430-871011fef92a",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_4cc6bdd4-eb84-484c-9c6a-dad9b2581630",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_0bf24320-994a-40a6-ba2d-b77ef62d2ba4",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_a3750565-277f-454a-a064-84413ca9b0d2",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_1d31afc8-17f1-46a2-8214-dba7f69202f3",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_f641e6e5-45c8-43a0-bb52-bae0795ff31c",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_cf141169-dca8-4fb4-815c-755fd42ebb61",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_abcfa04f-f1ee-4206-a94e-f34ee8f0e167",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_c42d60a9-f567-4930-b90e-3b659909b50c",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte accueil",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_a7e0efb7-4bae-4d04-8b43-b41065cd42d7",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_07b3f43e-047a-4e35-a541-20ebc64c76ac",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_b65fe3df-2cee-4149-b9ce-794141204237",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_d1c4d088-3030-444b-8611-97a76ab703f3",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_a962ffc3-ee10-4869-8022-b98e3e016113",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_fc67b779-4d80-4161-abc2-501d871da70a",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_7a722a4d-d814-4fa8-9b12-1b2551e9a55c",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_cc977541-5daa-4436-ae52-cb8adf95ad42",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one s-title s-font-title s-text-font-size-over-40\" style=\"font-size: 48px;\"><span style=\"color: #000000;\">Votre livre d'or audio by Spice Events</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_dc173b7d-dcc0-4cbb-ac71-e1267114bc08",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_990a7375-e972-430f-a92a-7197a75b96be",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_f0a73654-7eab-4535-8bbd-9fa94917f27d",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_f62f6bc6-a4c1-4774-a80e-c92da8da3528",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_d0c6bb14-5d9d-4083-a83b-6417158af02b",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_2a070544-348f-42a2-931c-f2082df1c2fe",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span style=\"color: var(--s-pre-color12);\"><em>Immortalisez les voix et les émotions de vos invités</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_686aab23-e2c1-4c58-9715-8cd3a4e7dc4a",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_b8b46b3b-c543-4451-9c0f-fc5bdc4faef6",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_6cb0b146-55dd-4794-998b-507c328af3e4",
+                 "defaultValue": false,
+                 "alignment": "justify",
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Le livre d’or audio, c’est bien plus qu’un simple souvenir : c’est un concentré d’émotions, de rires et de voix capturées sur le moment. Vos proches décrochent le combiné, laissent un message, une anecdote ou une déclaration spontanée… et chaque mot devient un souvenir vivant. C’est une expérience originale, pleine d’authenticité, qui remplace avantageusement les traditionnels mots écrits. Chez Spice Events, nous installons et personnalisons votre téléphone pour qu’il s’accorde parfaitement à l’ambiance de votre événement. Résultat : un souvenir sonore unique, à réécouter encore et encore.</span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_f1d58478-59cd-4e3b-8b6f-6cc61b6ed29d",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_35acbde6-a3d0-4a62-9b33-f7e46d9cc36a",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_609be150-b3c6-4e69-a429-d5529f8400f4",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_56886db4-9225-4951-8c1c-892ba37c86cc",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_45b18f2a-90ef-400b-b76a-879e9cb30c25",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_5c0f5109-09e5-45fa-a04a-e4b0396c305d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_e8ff255e-8f51-442d-8c5e-0747ed1b2ee6",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_07c3620a-0608-496f-895d-675ef0da79c5",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_a6df868b-835a-4539-8cb1-831ffd972537",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/224682_398439.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/224682_398439.jpeg",
+       "description": "Livre d'o audio",
+       "storageKey": "22139555/224682_398439",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 793,
+       "w": 595,
+       "s": 78522,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_295e0733-196f-4b23-83f8-32ae4223edf5",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/102518_710583.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/102518_710583.jpeg",
+       "description": "Livre d'or audio avec fleurs",
+       "storageKey": "22139555/102518_710583",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 736,
+       "w": 736,
+       "s": 74313,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_6e176ef6-e246-4850-abca-a994d1511b67",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/425078_345578.jpg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/425078_345578.jpg",
+       "description": "Livre d'or audio",
+       "storageKey": "22139555/425078_345578",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpg",
+       "h": 1104,
+       "w": 736,
+       "s": 90849,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_ec2e258f-03f9-4d95-b268-47a13f6727bc",
+   "defaultValue": true,
+   "template_name": "process",
+   "template_version": "beta-s6",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_bd91fc6f-8c5c-4a30-8353-ef1091b860e4",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Processus",
+     "sync_key": null,
+     "layout_variation": "horizontal",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_82746e6d-fb4b-455e-a03f-e6f43f188049",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_9f4908fb-03ef-4bbd-96d6-22fe9d5e42cf",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default public-DraftStyleDefault-block public-DraftStyleDefault-ltr s-title s-font-title s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Comment cela fonctionne</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_b142f7bd-dca5-4d81-bc1b-1c79fa685425",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_03fc11a6-1d48-4b1f-967e-f410fca1f405",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_29c3df19-f4a0-47cb-964d-065e963e76c5",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Décrochez le combiné</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_7eddffe1-4a15-4132-b3c8-1ea9ad80109f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 18px;\"><span class=\"s-text-color-default\">Invitez vos proches à saisir le téléphone et à décrocher le combiné vintage.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_acf3fcaa-250e-4fa5-ac27-7a14562fbc86",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_05c88af1-3b8e-4a38-aea8-95e71d4b0664",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Laissez parler le cœur</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_80b0f62d-ee6d-423e-8e0d-478738457abd",
+         "defaultValue": false,
+         "alignment": "center",
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"text-align: center; font-size: 18px;\"><span class=\"s-text-color-default\">Après le bip, ils peuvent enregistrer leur message, un mot doux ou même une anecdote amusante.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_07b03431-e8d9-40f2-b981-d5531e436c4b",
+       "defaultValue": true,
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_0a91f05b-7be1-4c59-92f6-222c54dbb8b3",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Raccrochez pour enregistrer</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b93df959-575a-4dc9-ab9f-0b974e6ee157",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 18px;\"><span class=\"s-text-color-default\">Une fois le message terminé, il suffit de raccrocher — et c’est enregistré !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4296e4ed-6690-4d82-afa5-fa9e96bb05e5",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_8662496f-83ef-4820-873d-f3730ab5c926",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\">Récupérez vos souvenirs audio</span></h3></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_f64a3a92-9dbb-4135-bb18-ef364809e775",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 18px;\"><span class=\"s-text-color-default\">Après l’événement, nous vous remettons tous les messages, prêts à être écoutés et conservés à vie.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_a71280f0-aab0-416d-aa1e-6bacf1cd7a3f",
+       "defaultValue": true,
+       "value": "Ajouter un titre",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_21ee75ae-d9d8-4aaf-9538-d9f07fbeb1e1",
+       "defaultValue": true,
+       "value": "Add subtitle",
+       "backupValue": null,
+       "version": null
+      }
+     }
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_cc2cdafa-0071-469b-b6dc-74dbe0be3bdf",
+     "defaultValue": true,
+     "value": "Add subtitle",
+     "backupValue": null,
+     "version": null
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_a7c19dd7-4f48-456b-b73c-0d99a9d5b255",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_861d0788-5220-4d02-aea8-ce669c1b15bc",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     },
+     "padding": {
+      "top": "normal",
+      "bottom": "none"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_9158ba65-c40b-464a-a35d-6bc241b35853",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Réservez votre Livre d’Or Audio</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_84bf252b-7482-40e1-9320-c48a84298ecd",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Laissez vos invités immortaliser leurs messages et souvenirs</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_b37b4b23-6fde-4197-875f-6921c242741c",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/580569_810578",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 1800,
+     "w": 1200,
+     "s": 148097,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_fb71e8b4-3825-49ac-9621-b9942a004387",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Livre d'Or Audio",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1761845732877#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1761845736311#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_a949677b-dcd0-4c85-8b58-0a509737f8fe"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_43b177d7-7d12-4f11-bfd1-ba538c31ce21"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_689e83ab-4190-488a-a4d5-a0ae81227a77",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_fa416e19-a22a-4f3d-8767-17ed16084d58"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_e76ec9e1-a4b1-4dff-9d72-5bd8844dbfaf"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_e0b9c3e9-a55c-4737-aa31-3d70f4f371b5"
+          },
+          "$item1761845732877#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_3946d554-28c9-4f49-899d-2cd2ea515f99"
+          },
+          "$item1761845736311#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_f945727f-6730-4a45-99d1-b8ee24e37b9b"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1761845732877#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_d1de08d5-a835-4785-9bd9-04a7c7bf7843"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_61db868d-bd42-4d56-9d8e-900cc71eb5e3"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1761845736311#date",
+         "$item1761845732877#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1761845732877#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1761845736311#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Livre d'or audio",
+ "description": "Offrez une touche unique à votre événement avec un livre d’or audio plein d’émotions.",
+ "uid": "8739f74d-2103-4afc-ac82-6d9210ab1ccf",
+ "path": "/livre-d-or-audio",
+ "pageTitle": "Livre d'or audio",
+ "autoPath": true,
+ "authorized": true
+}

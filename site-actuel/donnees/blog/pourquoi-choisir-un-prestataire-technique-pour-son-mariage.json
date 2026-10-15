@@ -1,0 +1,317 @@
+{
+ "blogPostMeta": {
+  "id": 16276271,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2021-08-23T01:56:08.001-07:00",
+  "publishedAt": "2021-08-23T04:16:35.455-07:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/pourquoi-choisir-un-prestataire-technique-pour-son-mariage",
+  "customSlug": null,
+  "editCount": 100,
+  "publishedEditCount": 100,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Accompagnement et Conseils"
+  ],
+  "categories": [
+   {
+    "id": 669864,
+    "name": "Accompagnement et Conseils"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/pourquoi-choisir-un-prestataire-technique-pour-son-mariage",
+   "title": "Pourquoi choisir un prestataire technique pour son mariage ?",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/3083622/233813_917836.png",
+   "description": "Le choix d’un prestataire technique pour vos événements est essentiel au bon déroulement de votre journée et/ou week-end. Pour l’installation de votre scénographie, de l’éclairage et de la sonorisation, les équipes qualifiées sauront ajuster le matériel nécessaire en fonction du lieu et du type...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "S'offrir un mariage 100% responsable et soucieux de l'environnement",
+  "nextBlogPostRelativeUrl": "/blog/s-offrir-un-mariage-100-responsable-et-soucieux-de-l-environnement",
+  "nextBlogPostId": 16310966,
+  "prevBlogPostTitle": "Quelles animations tendances à organiser pour son mariage ?",
+  "prevBlogPostRelativeUrl": "/blog/quelles-animations-tendances-a-organiser-pour-son-mariage",
+  "prevBlogPostId": 15447966
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_2efa196e-5cac-402f-9bed-8b37ccf85816",
+  "showComments": true,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_a3634b3a-5ef4-4d7a-93e4-42f88e019b7e",
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_0fe45ffb-a176-4dd0-a20f-7b75b1d88162",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>Pourquoi choisir un prestataire technique pour son mariage ?</b></p>",
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_4306555c-80d1-44bc-b534-06b3b536c23b",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p><b>Faites appel à des professionnels de l’événementiel </b></p>",
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_efb8de5a-5971-491d-813a-d182a7ff6406",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "light",
+    "sizing": "cover",
+    "userClassName": "",
+    "videoHtml": "",
+    "storageKey": "3083622/233813_917836",
+    "storage": "s",
+    "format": "png",
+    "h": 1080,
+    "w": 1920,
+    "s": 2595214,
+    "useImage": true,
+    "focus": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_04dd8338-f2a2-448e-8fa8-21c535d21863",
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_ba8bf559-8cec-4c25-ac2a-bfb7afac64e0",
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_d33de2b1-bffa-4a18-a35e-6a1368563220",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_fda11348-9df2-4ac4-a3ac-74533fec57c1",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_add5cf77-89ce-4cdc-9a56-c5b38db44492",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Twitter",
+      "id": "f_3dac2cc3-6d62-44c2-baca-be643474e6a1",
+      "url": "",
+      "show_button": true
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_cac740fa-03f8-4567-bf16-373023b2d35a",
+      "url": "",
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "06f26bdc-1cee-4e45-87b3-eb6eba7337c8",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "e38e9b06-41d6-4ab0-b4c4-672fdacac633",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Le choix d’un </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>prestataire technique</u></a></span><span style=\"color: #000000;\"> pour vos événements est essentiel au bon déroulement de votre journée et/ou week-end. Pour l’installation de votre scénographie, de l’éclairage et de la sonorisation, les équipes qualifiées sauront ajuster le matériel nécessaire en fonction du lieu et du type d’événement. Dixit le cousin qui tente de mettre l’éclairage et fait “cramer” les plombs du domaine ou votre meilleur ami - témoin qui dit “t’inquiète je gère”, notre équipe s’occupera de l’installation de A à Z et en toute sécurité. Un prestataire technique c’est donc important et on vous dit pourquoi. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "3027255c-cf6b-4d51-b0d9-c4dc956f3ebf",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "c3b6a6ca-30d5-4021-89f7-96757e1b67d0",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 20px; text-align: center;\"><span style=\"color: #000000;\"><strong>L’importance de la </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>technique événementielle</strong></u></a></span><span style=\"color: #000000;\"><strong> : rien de mieux que des professionnels qui vous </strong></span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u><strong>conseillent.</strong></u></a></span><span style=\"color: #000000;\"><strong> </strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c8c07c9d-a0aa-4b93-b2d1-9330120442ab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "8655fbf7-6503-4934-813e-cdd19db5d2f2",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Quel éclairage sera le plus adapté à votre lieu, quelle sonorisation utiliser pour embellir vos discours, quelle scénographie mettre en place… Tous ces petits détails sont pensés en amont pour offrir à vous et vos invités une expérience immersive. Fini les prises de tête et les stress de l’organisation, chez Spice Events nous nous occupons de tout, de A à Z ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "c23d2bc3-ff07-4199-934e-bf700861291e",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "201f59b6-e473-448b-a0f0-ec94d95bc7ff",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Nous organiserons en amont un entretien et une visite du lieu pour comprendre les différents besoins matériels, de l’enceinte à l'électricité. Eh oui, chaque élément à son importance et doit être minutieusement mis en place afin d’éviter tout problème de sécurité. (</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>Allez voir notree page dédiée à l’accompagnement ! </u></a></span><span style=\"color: #000000;\">)</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "4aab756c-0465-4d87-8d59-b2ac2d9c56bb",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "eb443681-ab03-4f6c-8d2d-a1741f6ebd7a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Nous établirons ensuite avec vous le devis ainsi qu’une feuille de route, c’est-à-dire, le déroulement de votre événement. Tout au long de notre aventure ensemble, nous resterons en contact et à votre disposition pour répondre à vos questions et vous informer sur l’avancée de l’</span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>organisation</u></a></span><span style=\"color: #000000;\">. </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "25b46d65-290b-46e6-b098-93fd5c671b22",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "3262e34b-9a6d-45e1-ba18-8f7f71e84fe0",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u><strong>Choisir un prestataire technique c’est donc la garantie d’un événement réussi, de qualité et en toute sécurité. </strong></u></a></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "96df1419-8244-4fa1-ab27-fdaee310fa5b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7e1a7588-42f6-4614-ae02-36aa3ba6c0f3",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 20px; text-align: center;\"><span style=\"display: inline-block\"></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "96df1419-8244-4fa1-ab27-fdaee310fa5b",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "85df9e3c-01aa-4164-8c97-95ccf0fe69f4",
+     "defaultValue": false,
+     "value": "<p style=\"font-size: 20px; text-align: center;\"><span style=\"color: #000000;\"><strong>Spice Events, créateur d’ambiance et d’expérience</strong></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "0b2c1d71-7356-4999-a7fc-b00b80eebe39",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "7ada898c-9558-4068-803b-9c08b01c62e0",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Fort de vingt années d’expérience dans le domaine de l’événementiel, nous avons à cœur de vous offrir un événement d’exception, entièrement sur-mesure.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "47016a5b-b088-4ec2-aef6-5d7f05ea1978",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "90b6849f-d389-4fd1-92cc-ac2975a65e5a",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Fini le DJ qui passe du Patrick Sébastien toute la soirée, chez Spice nous travaillons main dans la main avec des </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ passionnés</u></a></span><span style=\"color: #000000;\"> au style bien distinct. De la folk, au rock en passant par les variétés françaises, nous vous </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/accompagnement\" data-type=\"undefined\" target=\"_self\"><u>accompagnons</u></a></span><span style=\"color: #000000;\"> et vous mettons en relation avec le </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/booking-dj\" data-type=\"undefined\" target=\"_self\"><u>DJ</u></a></span><span style=\"color: #000000;\"> qui conviendra le mieux à vos attentes.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "79132d52-4a6a-41fc-ba05-14f9a52b6762",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "18ea7790-b323-4a65-a5ac-d8b7f9733928",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\">Vous souhaitez une scénographie digne d’un conte de fées ? Nous vous créons un éclairage scénique qui apportera une ambiance chaleureuse, romantique et magique. </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/ouverture-de-bal-spectaculaire\" data-type=\"undefined\" target=\"_self\"><u>Guirlandes lumineuses</u></a></span><span style=\"color: #000000;\">, rideaux étoilés ou même </span><span style=\"color: #000000;\"><a style=\"color: #000000;\" href=\"https://www.spiceevents.fr/performances-techniques-son-and-lumieres\" data-type=\"undefined\" target=\"_self\"><u>mapping</u></a></span><span style=\"color: #000000;\"> (projections sur bâtiment), vos convives n’en reviendront pas ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "ff1f2a93-404f-4ada-a726-bf47e3273cab",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ea75e640-a71c-46c6-a1ce-7c46cd9ccb56",
+     "defaultValue": false,
+     "value": "<p><span style=\"color: #000000;\"><u><strong>Spice Events, c’est la garantie d’un événement sur-mesure qui vous fera voyager le temps de quelques instants </strong></u></span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "bafb25e3-5f13-4bd4-bdaa-d7c9440a689c",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ee315883-afab-4506-bbf5-75f1c8c05252",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

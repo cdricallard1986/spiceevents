@@ -1,0 +1,3715 @@
+{
+ "type": "Page",
+ "id": "f_64ebf7f8-c86d-498a-8c84-928dd496e0a9",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_8a7e849c-90c0-4458-b64c-d3876a59432b",
+   "defaultValue": null,
+   "template_name": "featureListE",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_6913d1d0-44f0-4e35-8947-de751fe1a2c9",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": false,
+     "nameChanged": true,
+     "hidden_section": false,
+     "hidden_mobile_section": false,
+     "name": "Témoignages",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "layout_config": {
+      "noTemplateDiff": true,
+      "card_radius": "square",
+      "cardBackgroundSettings": {
+       "default": "#e4f7f0",
+       "type": "default",
+       "id": "f_cc28ffeb-6a3e-48a7-8cee-4a8a1c78dceb"
+      },
+      "border_thickness": "small",
+      "card_padding": "medium",
+      "spacing": "S",
+      "subtitleReplaceToText": true,
+      "mediaSize": "xs",
+      "horizontal_alignment": "auto",
+      "layout": "E",
+      "border": false,
+      "mediaPosition": "left",
+      "showButton": false,
+      "border_color": "#cccccc",
+      "card": true,
+      "structure": "grid",
+      "card_color": "#e4f7f0",
+      "vertical_alignment": "middle",
+      "borderBackgroundSettings": {
+       "type": "default",
+       "id": "f_12c1b8cb-6a1c-4c9a-9962-2521167d4689"
+      },
+      "grid_media_position": "top",
+      "columns": "three",
+      "content_align": "center"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_e93b7f15-cc18-421a-a5b8-1b92eb0a3119",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/309123_447004",
+     "storage": "s",
+     "format": "jpg",
+     "h": 2560,
+     "w": 3840,
+     "s": 2043965,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "repeatable1": {
+     "type": "Repeatable",
+     "id": "f_192c6e74-cde7-4e7c-9b0b-a8b057b7e2f1",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_029c94a3-4878-43ef-bd2f-3b3377a0a60e",
+       "defaultValue": true,
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_71340bb3-8f01-4c0e-bfbe-3084fbd3abc3",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_57926be4-d720-4ee7-9821-d6af42ec8881",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_2ce45d6c-89b7-4655-bc53-42949e539d8a",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_992d6ee6-54b6-4fd0-8b81-64c16ffcfb46",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Spice Events a été largement à la hauteur de nos attentes et plus encore. Cédric Allard a su comprendre nos contraintes liées à un emploi du temps très chargé et nous a attribué Aurélien qui a su faire preuve de professionnalisme avec le sourire. A la fois discret et s'adaptant à chaque moment de la soirée il est top ! Un grand merci pour cette soirée où notre seule envie était de faire passer un bon moment à nos invités et profiter pleinement.\" </span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b5174069-a798-4d0b-96db-663bd95d42e1",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Alexis</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_99fc432f-2fc5-4bc8-af9b-624c5f25a2a1",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_d3a4ffd5-47d2-4b1f-b0cd-6727eb873045",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_7b16d017-3b48-4d12-a4b3-867a3493889c",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_324df368-7f3d-415b-90e5-db813fcc9d5b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_f8b5510a-00af-4e73-b806-6e52a803c86b",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_063bde52-b40e-4d6b-a359-c2f9797c45e1",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Nous avons passé une soirée inoubliable avec une programmation musicale acclamée par nos invités ! Grande réactivité, professionnalisme, écoute attentive, flexibilité totale pour modeler une cérémonie sur mesure… Bref nous ne pouvons que recommander les services de Cédric.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_6c02114d-1b00-41ed-9e31-8a00e7d99dc8",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Mathilde</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_d9552275-2012-4fe3-ae23-98dc417109bb",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_13ee12b0-014e-4657-bfd9-1691fea13f26",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_f893a825-85ca-4673-b1b1-e09b66a2909c",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_71888383-596c-446c-9f3a-f26255be99c4",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Spice Events a animé notre mariage : cérémonie religieuse à l’église puis dîner et soirée. L’équipe a totalement su répondre à nos attentes avec beaucoup de professionnalisme. Notre soirée de mariage était un succès et s’est terminée à 5H du matin avec encore une vingtaine de personnes sur le dancefloor. Nous vous recommandons Cédric et son équipe les yeux fermés.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_a5a98b92-e6a0-4076-a10a-98f58267bff0",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Clémence &amp; Nicolas</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_873b75f9-7e50-40be-9700-3827c273c44e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4b36dba1-77d0-48d3-8797-d124a7822505",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_903203fb-a264-4eb4-b9e2-5ba40db1de51",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_64cb0024-2b9d-4496-aa4d-b1ae2461a4cb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Cédric a été absolument extraordinaire pour notre mariage. Dès le moment où nous l'avons contacté, il a fait tout son possible pour comprendre ce que nous voulions pour notre journée spéciale. Notre journée était absolument parfaite avec le son, l'éclairage, la musique, la projection vidéo, le streaming en direct et un DJ incroyable. Tout s'est déroulé en douceur et nous sommes très reconnaissants de tout ce qu'il a fait pour nous. La perfection absolue ! Merci beaucoup à Cédric et à l'équipe de Spice Events !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_bc8021db-93b6-4d92-9e96-ba375c5d2568",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Charlotte &amp; Thibault</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_cd45fb43-9cae-4801-96ba-f155b5d365bf",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_b2641c87-7755-4114-a780-2523740cc3bb",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_e95d25ae-19f8-4bd2-b87a-ac97b67e297d",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_82cc7d03-13f1-4c69-9e38-79df19e6426f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Nous avons fait appel à Spice Events pour notre mariage et nous ne regrettons pas notre choix. Des échanges professionnels et réactifs en amont nous ont permis de nous concentrer sur d'autres préparatifs. Le personnel à l'écoute a su adapter avec brio sa prestation pour satisfaire nos envies (choix des musiques, déroulé de la soirée, horaires, tarifs...), logistique parfaite de l'installation accompagnée d'un matériel de très haute qualité pour des tarifs vraiment concurrentiels. Le DJ à mis le feu sur la piste de danse tout en étant présent à bon escient lors des animations de la soirée. Merci à Spice Events d'avoir transformé cette belle journée en un jour magique et inoubliable !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d41b8b27-4997-4ebb-8f9e-adbd1c335fde",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Marine &amp; Gaëtan</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_741df82b-a493-47c9-a083-bc6004a6ad26",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_dcfcb4ae-19e5-4702-af35-0e23d79a02d4",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_eade0bab-17d9-44b9-a596-d8691f2f772a",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_4c3f6003-bc98-49d9-aa0e-8769bdba326c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Je recommande absolument Spice Events pour votre événement ! Cédric s'est occupé de tout pour notre mariage : DJ, musique de la cérémonie et du cocktail, photobooth, éclairage...tout était parfait ! Le photobooth a eu un immense succès auprès de nos invités, et la musique était impeccable, même avec les quelques demandes de dernnières minutes. Rien à redire, ils ont fait un travail exceptionnel !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_42f9fdbc-3a91-49ea-9804-d1cc5e94b819",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Beth &amp; Liam</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_98d29e1e-bd38-4033-aee5-424aa141edae",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_1247050e-c09d-415e-b7cf-c85f6cd606b9",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_0bfad046-6d09-4514-9f67-332e74f7a63c",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2fdca2e6-52dd-4ec6-ae6c-13822d96bd33",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Cédric s’est occupé de toute la partie musicale et festive de notre mariage — de la cérémonie jusqu’à la piste de danse — et tout a été absolument parfait ! Très professionnel, à l’écoute et toujours de bon conseil, il a su comprendre nos envies et créer une ambiance incroyable du début à la fin. Nous avons eu plusieurs échanges avec lui avant le jour J, ce qui nous a beaucoup aidés à bien préparer les moments clés de la soirée. Sa flexibilité et son sens de l’organisation ont fait toute la différence : la piste de danse n’a jamais désempli ! Les options proposées par Spice Events, comme le photobooth, les étincelles froides ou encore la mise en lumière, ont apporté cette touche magique qui a rendu notre mariage unique. Le matériel était de grande qualité, et la décoration, parfaitement adaptée à l’ambiance que nous souhaitions. Nous sommes ravis d’avoir fait appel à Spice Events et recommandons Cédric les yeux fermés à tous ceux qui veulent une soirée réussie, festive et inoubliable. </span><span style=\"color: var(--s-pre-color12);\"><strong>Merci encore pour tout !</strong></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_c1840026-9f15-432e-a374-3bfe66409c19",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Pierre &amp; Nina</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_79449451-4584-4829-b8e0-dbaa25211948",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_3685debb-7eff-427b-9faa-66f6ca6b3e13",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_da012ea6-0f8f-4398-a411-3f5f8b103d0d",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_06d0d0ad-fdd5-4e4f-a0d3-ca9dcc94324d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Quel mariage ! Ça n’aurait jamais été le même sans Cedric et son équipe. Merci beaucoup car quand l'on pense à un DJ pour son mariage on devrait tous penser à Cedric qui est d'une gentilesse rare ! Il a été à l’écoute, professionnel, il s’est adapté, à su parfaitement mettre l’ambiance et à respecter nos goûts musicaux, bref un pro comme on n’ose l’espérer.  Il connais sont métier ! Merci à lui pour avoir animer (enflammer) la piste de danse tout du long. Nos invités ont été plus que ravies. Mille mercis !!</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d88630aa-091e-4975-b5ac-445c0e750876",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Maxime &amp; Sauvanne</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_db52d605-9da5-4f11-9acc-b6f9ab54464c",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_1976e7c2-10be-41e1-9dae-2907d7a90980",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_db0aa0b6-1efa-424f-ab06-1bc8be165ffa",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_c478ffdd-7662-4de7-8d46-0b962ede65b1",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Professionnel, discret, gentil... mais surtout une cérémonie laïque parfaitement gérée et une ambiance de folie tout au long de la soirée !! C'est donc les yeux fermés que je vous recommande Spice Events ! Cédric⁩ &amp; Stéphane, milles mercis pour avoir géré toute la sonorisation de notre mariage, et pour cette soirée dont on se rappellera toute notre vie ! C’était la folie, tout le monde a dansé jusqu’à épuisement je crois, les plus vieux comme les plus jeunes, et on s’est éclatés du début à la fin sans aucune fausse note. Et pourtant je pense qu’on était des mariés difficiles puisque Monsieur est lui même ancien DJ de mariage et a été très regardant sur cet aspect ! C'est donc les yeux fermés que nous recommandons Cédric et Spice Events. </span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_07a91dbe-3646-4815-980e-65e5f3cd9383",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Charlotte &amp; David</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_3dfc9608-eee6-4cce-b3b6-129c62a41e9e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_de49be37-3f6a-4c25-a839-80d2d96ef527",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_1a0e4ca5-9b34-42e5-bfcb-c759246d4053",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_5ffc13ab-86f8-469b-a300-e6f723e7a243",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">La prestation de Cédric est largement allé au-delà de celle d'un très bon DJ. Il nous a vraiment accompagné tout au long de la préparation de notre mariage, jusqu'au jour J. Son organisation, ses questions, ses conseils ont été extrêmement précieux pour nous aider à concocter un mariage d'exception. Le jour J, tout s'est déroulé parfaitement. Tout a bien été anticipé et la logistique importante ne s'est pas faite sentir. Cédric et Stéphane ont sublimé notre espace de soirée et ont permis que les ambiances scéniques de la cérémonie jusqu'au bout de la nuit soient exceptionnelles. Au-delà de la qualité de leur travail, ils ont aussi su être présents et sont restés extrêmement sympathiques. De nombreux invités nous en ont fait la remarque et cela a vraiment contribué à l'ambiance de notre mariage.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_98996e51-5210-4cf1-859b-35108536795b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Harold &amp; David</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_5038c490-4005-4b7e-a61b-596077de927a",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_ac3fb759-6f6c-4786-a28b-52a77b54210e",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_88b49fe6-9dcb-4e80-aeea-2a9429b00ee0",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_a9c158f7-2a97-489b-918a-93681d5bf52d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Si vous souhaitez avoir une bonne ambiance lors de votre mariage choisissez Spice Events. Tant sur le plan musicale (respect des styles musicaux, bonnes transitions), que sur la bonne ambiance apportée lors des animations (bar à vinyle, jeux des mariés). En plus de leur prestation musicale, ils proposent des lumières d'ambiance ainsi qu'un photobooth. Le petit plus a été lors de la cérémonie laïque où son sens du timing a permis de susciter l'émotion à l'ensemble de nos invités en créant une atmosphère romantique. Ce joyeux mélange à contribué à créer un mariage parfait.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_981ffcac-18a7-4f83-a43b-5550ddaa3b49",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Pascal &amp; Abigaïl </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_f3c022ce-a379-4785-9155-2fbb843d899b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_60fae790-53a3-4424-af03-9b11193ed997",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_e20f448d-790e-4d01-9a7a-7f132ca597c9",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_53bf2d69-0f5c-4e51-afe8-716feab3e83c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Nous sommes ravis du service fourni par Cédric de Spice Events ! Dès les préparatifs, il s’est montré très à l’écoute, disponible et professionnel. Nous avons eu plusieurs échanges avant le mariage pour discuter de l’organisation, du déroulé de la journée et du choix des musiques, et tout s’est déroulé à la perfection le jour J. Cédric est fiable, sympathique et très accessible. Le système de sonorisation était incroyable, tout comme les jeux de lumières et les effets spéciaux qui ont sublimé l’ambiance. La sélection musicale était parfaite : il a diffusé toutes nos chansons préférées et évité celles que nous ne voulions pas entendre. Voyant à quel point nos invités s’amusaient, il a même proposé de prolonger la soirée sur le moment — ce qui nous a permis de continuer la fête encore plus longtemps ! Nous ne le remercierons jamais assez. Nous recommandons Spice Events les yeux fermés !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d17efb01-e315-4776-883b-131da5c5f2aa",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">—Aaron &amp; Niamha</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_4b89bd0a-f1d7-4c64-982f-174fc72fc051",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_79cafca4-db28-48c6-be70-7d2d3c2e915d",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_1c64c5c1-1462-43cb-b7c4-30005c07ab64",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_9022cb67-4aae-4a60-b491-001b04e4140f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Cédric est au top et très pro ! Un rendez vous physique pour un premier échange, et plusieurs rendez vous en visio par la suite pour avancer sur notre projet ensemble. Très à l’écoute, il nous a orienté au mieux afin de faire de notre journée un succès ! Avec son anticipation et sa préparation, aucun loupé ! Une de ses qualités est qu’il est très observateur et attentif à ce qui se passe sur la piste, il a su mettre les bons morceaux au bon moment afin de nous faire danser jusqu’à 5h ! On recommande vivement Cédric !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_d2463ddc-0f99-4abe-8b44-df72eec4e042",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Frédéric &amp; Selda</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_843f7b53-7720-4b8c-b85c-789062321536",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a4e03aba-6c9f-41be-89d4-eb9037522b58",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_e93b1c71-ad52-4a27-b3c6-0bb7ac3e78e8",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_b97d3049-dfec-4131-8150-ee68d67ba724",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Mémorable ! Notre mariage était magique et inoubliable. Cédric a participé à cette réussite car il a su créer l'atmosphère musicale que nous attendions. De la cérémonie laïque rétro au dance floor électro en passant par le blindt test integenerationnel, il a su emporter tous nos invités au fil de la journée. Haut les coeurs ! Foncez! Les rdv de préparation étaient pros et le rendu des photos très rapide. J'oubliais.... Notre ouverture de bal était digne d'un Danse Avec Les Stars ! Les jeux de lumières étaient parfaits ! Merci Spice Events pour tout ça !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_cfcc980e-4a36-4c2b-bbf7-eb70801d7a6f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Clémentine &amp; Kévin</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_aa6bec82-434a-4ffe-a11d-250b18ba4c36",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_84a9c9e1-4739-49e1-ae4d-9c726727e00e",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_f679cf9a-80d5-4470-a24f-eb620cfdae73",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_396e7bc8-cbd5-4c64-88f2-254006f8ed40",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Un suivi complet et humain : conseils sur les moments clés, coordination avec les prestataires, et présence rassurante le jour J. L’équipe a rendu notre événement simple à gérer et vraiment agréable.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_34f4f176-9a4c-412f-a41f-913499979c8b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Juliette</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_41043a1f-a9bf-4c9d-9eb6-156ae72fd3ca",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4c1466f3-d47e-46ca-a91d-5e4675544df6",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_11a4275c-5886-4a63-aa81-66fdc1c8ac7e",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_e9140037-a29c-426a-b48c-6db26a25ea14",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">L’accompagnement proposé par Spice Events a été un vrai atout pour notre soirée corporate. De la préparation à la coordination le jour J, tout a été clair, précis et professionnel. Nous avons pu nous concentrer sur nos invités et notre message.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_5633e452-274d-4113-b5a5-36229fd948ea",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Lucas</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_b7d44e7c-ac59-459b-8133-0480bdea40dc",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_b8ea3cd9-ad2c-4560-9d7e-fd877422fe6e",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_98b52458-92b3-4438-959f-390649b2c680",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_86aa4f75-007c-473e-a194-a7d904a48766",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Dès notre premier rendez-vous, nous avons senti que tout serait sous contrôle. L’équipe Spice Events a su comprendre nos envies et nous guider pour chaque moment fort de notre mariage. Un accompagnement rassurant et professionnel du début à la fin.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_4f0516e5-7af0-47aa-90b0-702033f518ab",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Camille &amp; Théo</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_2ba14d49-b73c-4e7e-aa2a-83cc90ba7b4d",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_61bb357a-4fb4-49b5-a419-c51100160442",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_61f43d35-cf1f-4db3-9eba-05d09048cf54",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_b76d7e3d-8ea3-4539-a43c-5a8b90b78bdf",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Le suivi en amont était impeccable. Entre le questionnaire, les échanges réguliers et les conseils pour la musique et les animations, nous avons eu l’impression d’être guidés par des experts. Tout était parfaitement orchestré le jour J.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_937fcf56-ecdb-499e-b414-7a51c29ea815",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Léa &amp; Floris</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_74bb8fcd-f347-4132-a4c0-fd48506fb6fa",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_5be30a86-24c4-4e36-9955-e2253b58819b",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_17febc93-892f-4f70-89cc-2b828c60dfe1",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_d9608ea7-630b-4496-b22f-b522db720dfb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Spice Events nous a accompagnés pas à pas pour notre séminaire annuel. Les conseils personnalisés et la coordination avec tous nos prestataires ont rendu l’organisation fluide et sans stress. Une équipe vraiment à l’écoute.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_dfe3ad5a-9fd7-40ab-a9f6-6bcdd08d23c1",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Sophie</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_60675bb9-1c25-44ce-98f1-0b3ba34ffb40",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_0824616d-b382-4785-adfc-503b3c56ffd3",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_21ea6091-abd8-43da-97e1-8235fce0ad2f",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_a9f9981e-3dc3-457b-8207-94e4c8232547",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Cédric et son équipe ont transformé notre événement en un véritable succès. La musique, les lumières et l’ambiance ont été parfaitement adaptées à nos invités. Tout le monde a adoré !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_45cc0242-c0da-498b-8793-000f0e80c526",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Julie</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_d2628269-589b-4156-b8b6-d4a5bb9cbda4",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_28989fe0-72ae-4a01-9532-840e691f85ae",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_5b6ccc78-41a2-42c8-8b3b-aede7c8bcdbb",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_adb0d99c-5564-4e68-b457-743c049a2734",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Nous avions besoin d’une animation professionnelle. Cédric a su créer une ambiance élégante et festive à la fois, tout en respectant notre image. Bravo !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3bfc0cb8-c957-4f35-835d-92bc74015a0b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Frédéric </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_f8dd52b6-aae2-48e3-bea8-7b3eb8444c99",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_764b197f-4c2d-4744-ad05-cb11936e302c",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_16dae3a6-5782-42cd-80fa-fe815e137bff",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_56ebc81d-1362-4c9a-9fff-23093d8a1ec6",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span class=\"s-text-color-default\">Grâce à leur accompagnement en amont, chaque moment fort de notre événement a été mis en valeur. La musique et l’éclairage ont parfaitement rythmé la journée.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_a824295f-4221-4591-94e0-41d330af5719",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Claire </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_79800726-5ce9-4e3e-89a0-1f1f1e94e8fa",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_6fd846bf-2157-4938-a83c-2c9775af8917",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_91eec72b-d570-4cd9-afcf-e1d0a04ab3e3",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_0f6ebb44-fbfd-4bf5-80bc-383bd42b7c3f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Une équipe à l’écoute, professionnelle et passionnée. Tout a été parfaitement orchestré, de la mise en lumière à la sélection musicale. L’ambiance était au rendez-vous du début à la fin !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_50626acd-d97f-49e0-9736-e194aaf3c892",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Thomas</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_d8c5ee6f-f1fa-4ccb-8d4a-079711f465ca",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_b50bde0d-0407-45c9-b20a-9d79abbc23a4",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_2eab854e-46fe-4165-a26f-24fa7d1ee91c",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_7210d745-4afb-4017-827a-b466e856d015",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">L’accompagnement proposé par Spice Events a été un vrai atout pour notre soirée corporate. De la préparation à la coordination le jour J, tout a été clair, précis et professionnel. Nous avons pu nous concentrer sur nos invités et notre message.</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_7b787afb-51d0-40fd-bfb6-828c05a21d2d",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Lucas R.</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_c80d99eb-3d40-445b-9c55-fe6188f4f077",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_48b3b88a-ce8c-4511-a529-a48488bbdb73",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_102d0cb3-f1e5-480f-bb84-9c733c775bef",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_81f61da6-a92e-4eed-b8fc-accb450e6859",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">Nous avons fait appel à Spice Events pour notre soirée annuelle. L’organisation était impeccable, le matériel de qualité et l’équipe très réactive. Nos collaborateurs en parlent encore !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_54ff570b-b4a7-4b8c-8caf-9db2cd55ce62",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Marc</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_72e8e9c2-ddf5-4194-8dc5-60397f68a80b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_257d1f16-b768-4fcd-b28f-74f23d9217c7",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_0aa0b43e-84aa-49f8-9e50-2f917ae83641",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_9698eb0a-4143-4a9c-a092-71a1e8388d2b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><span style=\"color: var(--s-pre-color12);\">La soirée a été incroyable ! La playlist, les animations et la coordination avec les prestataires ont rendu l’événement fluide et mémorable pour tous nos invités</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_77d6a84a-a137-44cb-8626-6073217b44ca",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Lucas P.</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_0e68fb8b-b4b2-4c62-b658-23de81f6a817",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_ef625301-552e-406a-a23e-9b851d80d62d",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_dde16f39-4f0e-44f6-af76-fbf156254261",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_f1a34dd2-641b-47a1-8fb2-4d5f5f632fae",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">DJ au top ! Nous recommandons vivement Spice Event pour animer vos événements et plus particulièrement pour votre mariage. Très bon matériel de sonorisation et de lumière, le rendu était magnifique. Spice Event a su faire danser toutes les générations jusqu'au bout de la nuit !<br>Un grand merci pour tout.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b4b8cf6a-3362-4e19-a065-b8d05254040e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Lucas &amp; Marie</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_99207eb5-991b-4a6b-a69b-79c7849618b1",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_4eec63d7-4c9c-4d41-aa11-9b803d16fe6c",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_b5d7f189-13ca-4800-a4e5-ba989d3d7785",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_f05d75e2-572a-41af-9026-6d9d60ca6796",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Super prestation. Super ambiance lumineuse et sonore grâce à Cédric ! Même un changement de musique au dernier moment a été assuré sans sourciller. Merci ! On recommande plutôt deux fois qu'une !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_52c126f0-d84b-4507-9173-819ed1a6cc0e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Claire &amp; Lucile</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_1f4b823b-e87b-4f58-aae6-8f585457ad09",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_75449470-9136-441d-a01f-a1b2dffc31b1",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_bbf336ec-5a53-4fa4-84d2-088917bbad10",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_39540350-1bf9-4b34-b708-506fd1246344",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Ambiance au top ! 7 mars 2020, Domaine du Parc à Pontcarré, avec une centaine de proches à l'occasion de notre mariage : ce fut une fabuleuse soirée orchestrée de main de maître par Cédric, aux platines et à la lumière. Il a suffit d'une discussion en amont pour qu'il comprenne nos attentes, et la fête fut donc parfaite.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3073a7b1-7d1e-49a6-bf34-ae22117771e2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Emmanuelle &amp; Georges</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_66ae9762-c218-4a2c-ad41-e8aabec7073e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_b6dd3bf2-9cbb-45e6-b4c1-71310ad4b74a",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_7f4b4fd3-d553-47e3-ae50-4b8872cce99a",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_9bd6d1a0-3b2d-4e1a-868a-46606b7cbbce",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Mille mercis !  Spice Events a été largement à la hauteur de nos attentes et plus encore. Cédric Allard a su comprendre nos contraintes liées à un emploi du temps très chargé et nous a attribué Aurélien qui a su faire preuve de professionnalisme avec le sourire. A la fois discret et s'adaptant à chaque moment de la soirée il est top ! Un grand merci pour cette soirée où notre seule envie était de faire passer un bon moment à nos invités et profiter pleinement.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_7298694e-d886-4a39-a668-a0f155f26420",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Nathalie &amp; Alexis</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_78081d4b-634c-4f7e-87a6-2ed21a8fbf5b",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_d88c4ac5-657f-41d5-9bae-49769c648ca5",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_b9382a97-f739-48be-b8ae-fce2a20026ef",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_85f97846-29fa-460e-9e99-51c0afa779a8",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Prestations parfaites par un prestataire de confiance<br>Nous avons eu la joie de faire appel à Spice Events pour notre mariage. Nous apprécions énormément la musique et il était inconcevable qu'elle soit relayée au second plan. Nos contacts ont été supers, de notre 1er échange jusqu'au jour J ! Cédric &amp; Aurélien ont parfaitement cernés nos goûts : quel plaisir de se laisser porter par la musique sans qu'il y ait le moindre impair ❤️ Au delà des choix musicaux &amp; de la soirée (son + lumières), nous avions aussi confié à Spice Events la sono de la cérémonie laïque qui avait lieu en plein air. Un sans faute là aussi 👌🏼 Une entreprise de confiance.Spice Event a été plus qu'au top pour notre mariage. Super disponible avant pour préparer avec nous l'ambiance musicale, le DJ a pris beaucoup de temps pour tout préparer et une fois le jour J tout s'est très bien passé. Nous avons été très satisfaits et nos invités aussi ! Leur matériel (sono + lumière) nous a aussi bien sauvé la vie car celui du lieu rencontrait un problème. Un grand merci à eux que je recommande absolument.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_643838e6-f5eb-4c18-98c2-f7efc46811cc",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Alice &amp; Thomas</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_c523d209-c58c-41cb-970b-a04ca0992828",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_76af47bd-d0b1-40cc-88ac-924eb69cb0b6",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_90946f37-459d-4ac4-bd55-277c76c1f7df",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_e2741a80-c879-495c-bbc9-dc66cc155a2b",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Une équipe au top ! Du matériel au top ! Quand vous avez l'équipe de sonorisation et de lumière qui fait des bons derrière les platines au son de rythmes endiablés vous savez que vous avez fait appel à la bonne équipe ! Merci ! Une ambiance de folie et une équipe très « professionnelle » ! L'équipe a su s'adapter aux invités d'âges pourtant très différents.<br>Bravo !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3e25e912-e600-4f1c-afdf-d05b7fa65829",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Sébastien &amp; Guylaine</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_8dffe340-3ce0-4b49-b6f6-20670e189379",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_bcae3273-cb3e-4e96-8cc0-8e5d08f76222",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_b927d2f9-509d-47cb-b302-66d810e4c184",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_1d5fe641-073e-49ad-bf2a-4143bf94454f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Soirée extraordinaire. Nous avons réservé avec Spice Events pour notre mariage et en sommes ravis ! Tout était parfait, les éclairages et effets, la musique, même la gestion de la sonorisation pour notre cérémonie laïque. Pour la soirée, la piste a toujours été remplie, ça montre vraiment le talent du DJ. On avait aussi loué les supers chaises Napoléon qui ont fait un très bel effet, ainsi que la borne photo qui a été un très gros succès et une réelle animation pour les invités tout au long de la soirée. Merci à toute l'équipe, c'était formidable !<br>Merci pour ce magnifique mariage, autant pour la cérémonie laïque que pour la soirée, c'était juste incroyable ! Les éclairages étaient extraordinaires et la musique a fait l'unanimité. Je recommande à 1000%</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_ac14e3a7-4250-45cd-90fa-99dd4fa7eb87",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Marie Ange &amp; Romain</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_0ff755b3-b14d-4ccf-af63-038028c439cb",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_30bd00df-4195-426e-a192-c7d3731a07ee",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_efce2c30-5a61-45c6-bbff-1ce1be43b15f",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2c7888dc-f6cb-483f-841a-082e5859e279",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Super prestation ! Cédric a su nous trouver un DJ qui correspondait parfaitement à nos attentes. Aurélien est resté discret quand il le fallait, puis a su mettre l'ambiance sur la piste de danse pendant la soirée ! Au top, je recommande vivement les services de Spice Event</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_1d4e0e02-ae0a-4703-8901-6f664505a3dd",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Camille &amp; Alexander</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_f6e169a6-1d91-4a49-a26a-edab83b0ac0e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_d001713d-35b0-460d-b7fa-6f3905700d66",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_a285bd34-20d0-4df1-906e-904295cdcf7e",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_703aefac-0f2b-4d97-a554-f25ce52073cd",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Un prestataire accessible, qui s'adapte à toutes les situations avec professionnalisme. Le bar a vinyle à été un véritable succès. De la cérémonie à la fin de soirée la sono a été gérée à merveille. Un professionnel de qualité, autant par son matériel que son travail. Il arrive à s'adapter rapidement aux demandes de chacun. Nous avions pris en sus le bar à vinyl, cela a beaucoup plu et a permis d'ambiancé dès le vin d'honneur. Nous sommes passé par lui également pour la location de tables et de chaises.<br>Et autant qu'un mauvais DJ peut gâcher un mariage. Et là c'est en partie grâce à lui que le nôtre a été extraordinaire.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_da5c162d-9e2c-4eb6-83db-29fe027cac19",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Léa &amp; Floris</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_1dc80e05-c9b1-454e-a4b3-236320a6a1d8",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a7305c7a-d1d8-4f10-b217-573575532644",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_d2df239f-36b0-404b-89d9-e2957ffb0be1",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_e229e8b6-068f-4514-8678-6a4360696e55",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Nous sommes ravis de la prestation de Spice Events pour notre mariage le 23 juillet dernier qui a largement contribué à rendre ce jour exceptionnel. La mise en place lumière a sublimé les lieux .L'équipe été au petit soin pour tout les détails animations et musique , ainsi que leur contribution dans les nombreuses surprises de nos proches et témoins . Sans parler du dj qui a réussi un mélange parfait entre musique brésilienne et française , résultat : une ambiance de folie, une piste qui n'a pas désemplie jusqu'à 7h du matin , des convives et des mariés ravis! Un grand merci à Cedric et son équipe que nous recommandons chaudement !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_ac20ce58-d1be-4d75-ad00-47c330aa0f3e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Justine &amp; Victor</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_1017497b-28ea-45fc-af54-28defe10c736",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_75fe9f15-bf2c-4a0f-9eb1-ea5617330e56",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_179caf4b-36ff-49de-939d-e0bef5dd2ad7",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_7aad06f8-3a0a-469a-bfa0-62cf358c6bbd",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Excellente prestation ! Je recommande fortement. Notre mariage n'aurait jamais été aussi réussi sans le professionnalisme apporté par Cédric et son équipe lors de cet événement ! Merci encore énormément à Benjamin pour cette folle soirée finie sous la pluie mais dans la plus folle ambiance !<br>A très bientôt.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_41b1943a-aa81-47e3-b983-f20d54f2b4a6",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Flore &amp; Jeremy</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_a8785810-ff94-4f50-ad0f-545e34525a7c",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_c1e65488-759a-4eda-a403-75ece3069f7a",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_dc35a4f6-126a-4a69-9245-2a66e815bd56",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2ac57053-9ba9-4214-bc73-1b41808ae6ca",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Merci Spice Event ! Nous avons fait confiance à Cédric et Aurélien (le DJ) pour l'animation de la soirée de notre mariage et nous ne pouvions pas rêver mieux ! L'organisation était parfaite et l'ambiance garantie, ils ont tous les deux su écouter nos besoins et envies. La soirée a été parfaite !!<br>Encore un grand merci pour le professionnalisme.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_3cee84f2-1d02-4ea4-b7eb-c6ad0203d15f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Pauline &amp; Anton</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_805917b6-fd27-40dd-9b4b-59012a437847",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_569d98ff-97c5-4c6f-a2a5-89fa176737c2",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_ec9bc669-c563-4fd1-b722-26236ab34446",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_880e76de-b75c-49f8-adfc-8e9f5233ae7f",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Inoubliable !! Nous avons fait appel à Cédric et ses équipes pour l'animation de notre mariage, quelle magnifique soirée ! Une équipe de professionnels à votre écoute et à qui vous pouvez faire confiance les yeux fermés. Les dispositifs d'éclairage proposés ont permis la mise en valeur de notre salle de réception, un travail de qualité pour une ambiance chaleureuse. Ils ont su faire danser toutes les générations jusqu'au petit matin, il y en avait pour tous les goûts, une vraie réussite !<br>N'hésitez pas à les solliciter pour vos réceptions, vous ne serez pas déçus. Un grand merci !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_e013fb9e-4d4c-4725-8637-274f63072b86",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Azline &amp; Edouard</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_2eddcef3-c052-4978-a8e1-7935c7320c0f",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_cfbbc55b-786c-4cf1-aec4-ed37a6e9dfdb",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_2c777786-71c7-4d2a-97e6-839f5cdda04f",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2cfeaed0-4968-44fb-9daf-8d48fbdafba6",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Super prestation ! Cédric a su nous trouver un DJ qui correspondait parfaitement à nos attentes. Aurélien est resté discret quand il le fallait, puis a su mettre l'ambiance sur la piste de danse pendant la soirée ! Au top, je recommande vivement les services de Spice Events.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_91d6a14b-483c-4f88-a4b6-60bf84ce1b3c",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Camille &amp; Alexander </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_9e6a0534-ff13-4712-a193-680e25a83b33",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_228c9d72-2941-46eb-8422-c9b68c18d489",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_357e0f63-3ea1-4d4e-8e84-21930499241d",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_868c1842-7825-4b70-a94e-8426293236cb",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Parfait ! Cédric a été super au niveau pro, rdv, timing, services en extra. Il a fait dans TOUT le monde, nous avons eu un super feedback de tous nos invités, plus agés comme plus jeunes.<br>Les jeux de lumières étaient tops également. Merci beaucoup Cédric pour ton professionnalisme. Nous vous le recommandons les yeux fermés.<br>Elégance et maitrise de tout de A à Z.</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b6c22256-8562-4369-9d66-03a484b4880e",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Constance &amp; Mathieu</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_c04ca579-c417-49a4-95ef-a2e55dd14ec4",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_82cc153d-0af5-4753-904b-2b57a15197de",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_692af2a4-70b7-42d3-86f4-abcb13db452a",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_c80c8ae9-273c-4563-ab6d-f6f2f412c7a1",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Nous avons confié toute la sonorisation de notre mariage à Cédric qui a impeccablement tout géré! La cérémonie laïque, le cocktail, la soirée et également tous les jeux de lumières. Il a su s’adapter aux contraintes du lieu pour rendre ce moment merveilleux. Nous avons échanger sur nos envies, tout à été respecté, les convives étaient ravis, tout le monde a dansé de 7 à 77 ans! Je recommande vivement ce prestataire, vous pouvez y aller les yeux fermés! Cédric est un « vrai » pro, il a réussit à être présent en toute discrétion, et a su répondre à nos attentes qui n’etaient des moindres pour notre mariage! Cédric à géré la sonorisation complète ainsi que tout l éclairage! Je recommande vivement ce prestataire. <span style=\"color: #040404;\">PS: et le Photo Booth aussi!! Bref il gère !</span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_259c4239-9c72-43f3-8b43-4b23f05a2111",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— David &amp; Elodie </h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_3d40ccb3-fb7a-4248-9119-b77531de36d2",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_a5b67abb-87fa-40a7-8c9c-ace2a7257995",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_65490875-fb21-4a09-9b8f-652efa640596",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_2eebee21-367d-4370-a601-843f578cdf04",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\"><strong>Marie : Parfait !! 5/5</strong><br>Merci Cedric pour ton accompagnement, tes bons conseils et ton professionnalisme le jour j ! Nous avons eu pleins de compliments sur la soirée dansante et l’ambiance de notre mariage ! <br>Cédric a été vraiment au top ! Que ce soit sur le choix de ses musiques, l’ambiance, la gestion du mix pour l’ouverture de bal tout était parfait ! Il a de très bons conseils et de bonnes idées ! Installation parfaite. Merci encore !<br></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_abbe976d-5bfa-47c5-a1a1-5fb3af36c7ee",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Marie &amp; Quentin</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_20418701-59ff-4e68-9ae2-31433dd65b4d",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_254c35eb-c673-4e7f-a1e4-2630f8d65c53",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_956607ae-ce12-479b-997e-e5c56efc67d9",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_12e0f8b8-dd3d-49be-99cd-daf985b99330",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Cédric a su être l'écoute de nos demandes, s'adapter à notre lieu (et ses différentes salles) et à l'univers de notre mariage tout en étant très disponible pendant la préparation. Du début à la fin de la partie dansante, la piste n'a pas désempli, nous étions encore une dizaine à 5h du matin !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_c5526e8a-e498-40ad-bbd2-a7178f7e42fd",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Coralie &amp; Benjamin</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_832a1150-5af5-4c2f-8e1b-97f346c288bb",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_e65bad0c-18a7-4a3e-b308-4e78179185b3",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_36bb2337-fb3c-4828-a129-c885a89bb41c",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_94cecbc3-f948-4b68-96d8-052e7f1a2676",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Cédric a été top du début à la fin ! Au-delà de mettre l’ambiance et faire danser tout le monde, c’est une personne disponible, humaine, qui fait son travail avec passion — et ça se ressent vraiment. Un vrai plaisir de l’avoir eu à nos côtés pour notre mariage. Merci encore, on recommande les yeux fermés ! Petit plus : éclairages et projecteurs au top, le rendu est génial. On recommande à 100 % !</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_c4c9b638-83dc-403b-a310-0e36d22a47f2",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Quentin &amp; Pauline</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_168fee77-3716-454d-b72e-7f44ba01909e",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      },
+      {
+       "type": "RepeatableItem",
+       "id": "f_c86a43f5-3a62-457e-b5bd-d9c5e95b6db2",
+       "components": {
+        "media1": {
+         "type": "Media",
+         "id": "f_0a5bfff8-c298-4abc-a7f7-fa88f7a2db4d",
+         "defaultValue": true,
+         "video": {
+          "type": "Video",
+          "id": "f_d87b03c4-0ad0-4cb3-ac91-3e864411313b",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_50f7b8a4-4f5c-499f-ac3e-3095326d6b3e",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "storagePrefix": null,
+          "format": null,
+          "border_radius": null,
+          "aspect_ratio": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": true,
+          "focus": null
+         },
+         "current": "image"
+        },
+        "text1": {
+         "type": "RichText",
+         "id": "f_ac257cc4-d500-4543-9477-64221b0e3012",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-default\" style=\"font-size: 15px;\">Nous avons eu une super expérience avec Cédric. Son &amp; DJ était parfait pour notre mariage, très professionnel et a maintenu la foule sutr la piste jusqu'à 4 heures du matin. <br>Nous sommes extrêmement satisfaits du service fourni. </p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_b905af8d-cbf6-47f9-89ea-16044a1bc7b7",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h4 class=\" s-rich-text-wrapper font-size-tag-header-four s-text-font-size-over-default\" style=\"font-size: 20px;\">— Géraldine &amp; William</h4></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_a0abb0ff-4691-4fcf-a8ad-a7711d22cd12",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "Lire la suite",
+         "size": "small",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "",
+         "url": "",
+         "new_target": null
+        }
+       }
+      }
+     ],
+     "components": {
+      "media1": {
+       "type": "Media",
+       "id": "f_cc4dbf57-ee6c-4346-bee4-3ffb5247a2c8",
+       "defaultValue": true,
+       "video": {
+        "type": "Video",
+        "id": "f_a5f4595b-e178-4dbb-a66a-4036b0cf992d",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_4af803b2-4887-4c33-ae05-13bdb3287194",
+        "defaultValue": true,
+        "link_url": null,
+        "thumb_url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/thumb-list-D-1.png",
+        "url": "//static-assets.strikinglycdn.com/images/editor2/feature_list/list-D-1.png",
+        "caption": "",
+        "description": "",
+        "new_target": true
+       },
+       "current": "image"
+      },
+      "text1": {
+       "type": "RichText",
+       "id": "f_75a0e862-4d7f-453d-a08f-f36f740e8da4",
+       "defaultValue": true,
+       "value": "What We Do",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_80bd2d47-62d5-4cf0-9240-ac417c140a4e",
+       "defaultValue": true,
+       "value": "Show off your projects, features, or clients in this section.",
+       "backupValue": null,
+       "version": null
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_5df8b18e-ec40-4b8b-8a45-61be60c6b27b",
+       "defaultValue": true,
+       "alignment": "left",
+       "text": "Read More",
+       "size": "small",
+       "mobile_size": "automatic",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "",
+       "new_target": null
+      }
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_a615c6a0-2601-495a-af2c-9ca80e203fb9",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Témoignages</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_c5942103-ed29-44fd-88f6-03454d8135dc",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><em>Ils nous ont confié leurs moments les plus précieux — découvrez leurs ressentis.</em></p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    }
+   }
+  }
+ ],
+ "title": "Témoignages",
+ "description": "Découvrez les avis et retours d’expérience de nos clients satisfaits.Découvrez les avis et retours d’expérience de nos clients satisfaits.",
+ "uid": "501ed4ca-7bd7-4edb-973a-17cbeb0c7b73",
+ "path": "/temoignages",
+ "pageTitle": "Témoignages",
+ "autoPath": true,
+ "authorized": true
+}

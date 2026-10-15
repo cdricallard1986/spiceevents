@@ -1,0 +1,350 @@
+{
+ "blogPostMeta": {
+  "id": 2151430,
+  "state": "published",
+  "pinned": false,
+  "notified": false,
+  "createdAt": "2019-08-27T04:56:06.040-07:00",
+  "publishedAt": "2016-11-27T04:56:06.000-08:00",
+  "publicUrl": "https://www.spiceevents.fr/blog/un-anniversaire-de-talent",
+  "customSlug": null,
+  "editCount": 108,
+  "publishedEditCount": 99,
+  "mode": "show",
+  "role": null,
+  "reviewState": null,
+  "needReview": false,
+  "censorshipResult": null,
+  "reviewUpdatedAt": null,
+  "scheduledPublishAt": null,
+  "scheduledPublishAtUtcTime": null,
+  "scheduledTimeZone": null,
+  "postedToWechat": false,
+  "tags": [
+   "Evenementiel"
+  ],
+  "categories": [
+   {
+    "id": 30540,
+    "name": "Evenementiel"
+   }
+  ],
+  "socialMediaConfig": {
+   "url": "https://www.spiceevents.fr/blog/un-anniversaire-de-talent",
+   "title": "Un anniversaire de talent !",
+   "image": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/780786/882854_244425.jpeg",
+   "description": "On ne fête pas tous les jours ses 60 ans, c'est pour cette raison que Spice Events a mis les moyens pour que la fête soit réussie. Diffusion du son avec un système ARCS WIDE et SB18 de la marque L-ACOUSTICS, console QL1 de chez YAMAHA et micros sans fils SHURE étaient de sortis pour sonoriser...",
+   "fbAppId": "138736959550286"
+  },
+  "nextBlogPostTitle": "Nouvel arrivage de matériel L-ACOUSTICS",
+  "nextBlogPostRelativeUrl": "/blog/nouvel-arrivage-de-materiel-l-acoustics",
+  "nextBlogPostId": 2151273,
+  "prevBlogPostTitle": "Un anniversaire de 30 ans dont on se souviendra !",
+  "prevBlogPostRelativeUrl": "/blog/un-anniversaire-de-30-ans-dont-on-se-souviendra",
+  "prevBlogPostId": 2151660
+ },
+ "content": {
+  "type": "Blog.BlogData",
+  "id": "f_1efacb86-21bf-4381-8d6b-7738cc576687",
+  "defaultValue": null,
+  "showComments": true,
+  "showShareButtons": null,
+  "header": {
+   "type": "Blog.Header",
+   "id": "f_d6153752-34e6-466c-bd62-e618e6e8b7c6",
+   "defaultValue": null,
+   "title": {
+    "type": "Blog.Text",
+    "id": "f_392f33e3-07b6-407a-86e8-4003dd3b60e7",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Un anniversaire de talent !</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "subTitle": {
+    "type": "Blog.Text",
+    "id": "f_fd88a095-11d9-4fa7-9634-b59656973289",
+    "defaultValue": false,
+    "alignment": null,
+    "value": "<p>Avec Stéphane Huchart</p>",
+    "backupValue": null,
+    "version": 1
+   },
+   "backgroundImage": {
+    "type": "Blog.BackgroundImage",
+    "id": "f_9f947eb8-b027-4959-b62d-8d115ee60dd9",
+    "defaultValue": false,
+    "url": "!",
+    "textColor": "overlay",
+    "backgroundVariation": null,
+    "sizing": "cover",
+    "userClassName": null,
+    "linkUrl": null,
+    "linkTarget": null,
+    "videoUrl": null,
+    "videoHtml": "",
+    "storageKey": "780786/882854_244425",
+    "storage": "s",
+    "format": "jpeg",
+    "h": 3456,
+    "w": 5184,
+    "s": 5820307,
+    "useImage": true,
+    "noCompression": null,
+    "focus": {},
+    "linkInputEnabled": null,
+    "descriptionInputEnabled": null
+   }
+  },
+  "footer": {
+   "type": "Blog.Footer",
+   "id": "f_6719e7af-8331-4a83-9bff-85d0ae5c2ef4",
+   "defaultValue": null,
+   "comment": {
+    "type": "Blog.Comment",
+    "id": "f_1de7fbd6-2c61-411d-9704-d415d2b8887f",
+    "defaultValue": null,
+    "shortName": ""
+   },
+   "shareButtons": {
+    "type": "Blog.ShareButtons",
+    "id": "f_a803d7fb-e4b7-4969-b990-1718bfdc89ce",
+    "defaultValue": false,
+    "list_type": "link",
+    "button_list": [
+     {
+      "type": "Facebook",
+      "id": "f_cdc5ea5f-1848-4ae5-a180-4dceea651726",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true,
+      "app_id": null
+     },
+     {
+      "type": "Twitter",
+      "id": "f_fd90785c-177a-49d4-a557-cd1292e38114",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": true
+     },
+     {
+      "type": "LinkedIn",
+      "id": "f_06855f98-5387-4400-87e5-598c58a51819",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     },
+     {
+      "type": "Pinterest",
+      "id": "f_48da8da6-8dad-4c52-bd48-e1ce1973a525",
+      "defaultValue": null,
+      "url": "",
+      "link_url": null,
+      "share_text": null,
+      "show_button": false
+     }
+    ]
+   }
+  },
+  "sections": [
+   {
+    "type": "Blog.Section",
+    "id": "f_536b53b3-476d-4592-9e72-7655001b2d36",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_7d396f4f-7e77-4a4c-b122-eebbff96f2c9",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/659582_760099",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 315985,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_ddfb519f-cd71-41de-8989-1a49b78a56ad",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_9d9a73e5-a719-47df-a60f-3a0fe5be63da",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/663012_168078",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 427299,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_3b0ad2dc-a6ec-423e-a448-4fd059da85a9",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_b7eb6815-6832-45bb-acf0-94602fd7ac5b",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/734063_71794",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 485475,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_fed43194-e4d2-4210-8021-8d7b90247571",
+    "defaultValue": null,
+    "component": {
+     "type": "Image",
+     "id": "f_712a599e-9901-4d25-adb5-5553a1e22da7",
+     "defaultValue": null,
+     "link_url": "",
+     "thumb_url": "!",
+     "url": "!",
+     "caption": "",
+     "description": "",
+     "storageKey": "780786/68234_194202",
+     "storage": "s",
+     "storagePrefix": null,
+     "format": "jpeg",
+     "h": 800,
+     "w": 1200,
+     "s": 339852,
+     "new_target": true,
+     "noCompression": null,
+     "cropMode": null,
+     "focus": {}
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_14b172a1-6899-462d-8b94-c27e859223c1",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b9ed9b9d-7984-4f80-83eb-5761491ae1cf",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">On ne fête pas tous les jours ses 60 ans, c'est pour cette raison que Spice Events a mis les moyens pour que la fête soit réussie.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_2f38551c-0c6d-47c9-9a06-961d6af80f94",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "61176e19-f2ac-432c-84ab-f1243b722565",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Diffusion du son avec un système ARCS WIDE et SB18 de la marque L-ACOUSTICS, console QL1 de chez YAMAHA et micros sans fils SHURE étaient de sortis pour sonoriser Stéphane Huchard le fameaux batteur de renom. De quoi mettre ce concert très privé à l'honneur et permettre aux invités une soirée d'exception ! </span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_1b4ef364-2284-405e-b8d9-54d43af56909",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "75582a02-220f-407b-870b-4c2cb5130380",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">La lumière était réalisée grâce à un mélange de projecteurs Pointe de la marque ROBE, des projecteurs wash LED MAC AURA de la marque MARTIN ainsi que des Sunstrip de la marque OXO. Tout ce qui était piloté par une console Titan Mobile de la marque AVOLITES.</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_af5decc8-9473-4188-a98f-0e01c99b3f20",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "b6714244-3b53-4b93-b0a8-f9516284a535",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Spice Events s'était notamment chargé de chauffer la tente pour que l'atmosphère soit la plus festive possible !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "f_cd3a7184-e9e1-46ec-9037-244ffa435109",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "ebf7795d-caa8-4721-a215-a59f62287d1d",
+     "defaultValue": false,
+     "value": "<p style=\"text-align: justify;\"><span style=\"color: #000000;\">Encore une soirée au service de la réussite !</span></p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   },
+   {
+    "type": "Blog.Section",
+    "id": "17d5b7f2-5b87-4b99-a9fb-00796fdb3746",
+    "defaultValue": null,
+    "component": {
+     "type": "RichText",
+     "id": "688dd15d-64c6-46d4-aa91-62e3a80a8925",
+     "defaultValue": false,
+     "value": "<p> </p>",
+     "backupValue": null,
+     "version": 1,
+     "wrapperClass": "s-narrow-margin"
+    }
+   }
+  ]
+ },
+ "settings": {
+  "hideBlogDate": false
+ }
+}

@@ -1,0 +1,1006 @@
+{
+ "type": "Page",
+ "id": "f_7bd467e3-56a8-40d5-93be-7e7e4ea156a6",
+ "sections": [
+  {
+   "type": "Slide",
+   "id": "f_a5edfc19-c054-4a6c-9061-dc79b89550be",
+   "defaultValue": null,
+   "template_name": "slider",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_91411b7b-f0f4-492e-9013-4855da1385f7",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Diaporama Texte + Bouton",
+     "sync_key": null,
+     "layout_variation": "[\"noImage\"]",
+     "display_settings": {},
+     "layout_config": {
+      "vertical_alignment": "middle"
+     }
+    },
+    "slider1": {
+     "type": "Slider",
+     "id": "f_40049724-ecc7-40d5-aef5-8b0b127ba9db",
+     "defaultValue": false,
+     "list": [
+      {
+       "type": "RepeatableItem",
+       "id": "f_a36704fe-3f52-44e2-9273-9c5ec2fa7ba0",
+       "components": {
+        "text1": {
+         "type": "RichText",
+         "id": "f_8326789a-c75b-466a-87c6-d84baf84ffe8",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-60\" style=\"font-size: 70px;\">Ouverture de bal spectaculaire</p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "text2": {
+         "type": "RichText",
+         "id": "f_332b4ad1-1e02-48bd-8b80-7c5a0cc85efe",
+         "defaultValue": false,
+         "alignment": null,
+         "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><p class=\" s-text-color-default s-rich-text-wrapper font-size-tag-custom s-text-font-size-over-30\" style=\"font-size: 35px;\"><span class=\"s-text-color-default font-size-tag-header-two s-text-font-size-over-default s-rich-text-wrapper\"><em>Faites de votre première danse un moment magique et inoubliable</em></span></p></div>",
+         "backupValue": null,
+         "version": 1,
+         "defaultDataProcessed": true
+        },
+        "background1": {
+         "type": "Background",
+         "id": "f_7f352d6b-d5a5-48b6-9d76-e12b655c43e2",
+         "defaultValue": false,
+         "url": "!",
+         "textColor": "light",
+         "backgroundVariation": "",
+         "sizing": "cover",
+         "userClassName": null,
+         "videoUrl": "",
+         "videoHtml": "",
+         "storageKey": "22139555/404419_863991",
+         "storage": "s",
+         "format": "jpeg",
+         "h": 981,
+         "w": 736,
+         "s": 70053,
+         "useImage": true,
+         "focus": null,
+         "backgroundColor": null
+        },
+        "media1": {
+         "type": "Media",
+         "id": "f_b0eeaf93-f5e7-4bb8-b858-79f590512fda",
+         "defaultValue": null,
+         "video": {
+          "type": "Video",
+          "id": "f_a9910390-ad92-47ee-932c-5c5d5ae80cab",
+          "defaultValue": true,
+          "html": "",
+          "url": "http://vimeo.com/18150336",
+          "thumbnail_url": null,
+          "maxwidth": 700,
+          "description": null
+         },
+         "image": {
+          "type": "Image",
+          "id": "f_1cba51a8-c1f6-45b3-968d-2299ca119cd2",
+          "defaultValue": true,
+          "link_url": "",
+          "thumb_url": "/images/icons/transparent.png",
+          "url": "/images/icons/transparent.png",
+          "caption": "",
+          "description": "",
+          "storageKey": null,
+          "storage": null,
+          "format": null,
+          "h": null,
+          "w": null,
+          "s": null,
+          "new_target": null
+         },
+         "current": "image"
+        },
+        "button1": {
+         "type": "Button",
+         "id": "f_058c0659-a3a5-4bee-9cc3-e00bad7c0839",
+         "defaultValue": false,
+         "alignment": "auto",
+         "text": "",
+         "link_type": "Web",
+         "size": "medium",
+         "mobile_size": "automatic",
+         "style": "",
+         "color": "",
+         "font": "Montserrat",
+         "url": "",
+         "new_target": null,
+         "version": "2"
+        }
+       }
+      }
+     ],
+     "components": {
+      "text1": {
+       "type": "RichText",
+       "id": "f_0aef976b-b4a6-415b-b762-2c0db621848f",
+       "defaultValue": true,
+       "value": "Titre du texte",
+       "backupValue": null,
+       "version": null
+      },
+      "text2": {
+       "type": "RichText",
+       "id": "f_88a571a2-66d6-4a7f-bba7-89c45e419073",
+       "defaultValue": true,
+       "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+       "backupValue": null,
+       "version": null
+      },
+      "background1": {
+       "type": "Background",
+       "id": "f_99d858a3-6803-400f-8c9b-842b01e77950",
+       "defaultValue": true,
+       "url": null,
+       "textColor": "",
+       "backgroundVariation": "",
+       "sizing": "cover",
+       "videoUrl": "",
+       "videoHtml": "",
+       "storageKey": null,
+       "storage": null,
+       "format": null,
+       "h": null,
+       "w": null,
+       "s": null
+      },
+      "media1": {
+       "type": "Media",
+       "id": "f_9f729cd5-273b-4de2-b6c8-e89539ba93e6",
+       "defaultValue": null,
+       "video": {
+        "type": "Video",
+        "id": "f_12149a64-8c46-4267-b615-955eaf802564",
+        "defaultValue": true,
+        "html": "",
+        "url": "http://vimeo.com/18150336",
+        "thumbnail_url": null,
+        "maxwidth": 700,
+        "description": null
+       },
+       "image": {
+        "type": "Image",
+        "id": "f_2aef8675-9d58-424a-947b-ee0b71cc8456",
+        "defaultValue": true,
+        "link_url": "",
+        "thumb_url": "",
+        "url": "/images/themes/onyx_new/stri.png",
+        "caption": "",
+        "description": "",
+        "storageKey": null,
+        "storage": null,
+        "format": null,
+        "h": null,
+        "w": null,
+        "s": null,
+        "new_target": null
+       },
+       "current": "image"
+      },
+      "button1": {
+       "type": "Button",
+       "id": "f_9dcb89db-7a84-4d57-a80e-5a05d932b3a0",
+       "defaultValue": true,
+       "alignment": "center",
+       "text": "Acheter Maintenant",
+       "size": "medium",
+       "style": "",
+       "color": "",
+       "font": "",
+       "url": "http://strikingly.com",
+       "new_target": null
+      }
+     },
+     "infinite_slider": false,
+     "auto_slide": false,
+     "transition": "horizontal",
+     "auto_play": 4200
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_9594372a-874e-4399-98ec-2d3ebbc46f81",
+   "defaultValue": null,
+   "template_thumbnail_height": 151,
+   "template_id": null,
+   "template_name": "s6_common_section",
+   "template_version": "s6",
+   "origin_id": "f_8f80b9fa-9563-4ea3-bcdf-51077880fa96",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_ebc262d9-3dad-4718-8ced-990c4cb2440f",
+     "defaultValue": null,
+     "show_nav": true,
+     "show_nav_multi_mode": null,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Texte intro",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {},
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     },
+     "layout_config": {
+      "width": "normal",
+      "height": "auto"
+     }
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_8f8af818-87ad-4361-8f81-696273deee62",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "linkUrl": null,
+     "linkTarget": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null,
+     "useImage": null,
+     "noCompression": null,
+     "focus": {},
+     "backgroundColor": {}
+    },
+    "block1": {
+     "type": "BlockComponent",
+     "id": "f_d6482fc4-1949-4c53-b395-8e700879f41c",
+     "defaultValue": null,
+     "items": [
+      {
+       "type": "BlockComponentItem",
+       "id": "f_c479c0d1-a88f-4f36-b352-270bd9172041",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_7033055b-875d-42e9-9660-a4ffafee9782",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_fd00c019-f820-4496-ab1d-ba19a647bb2f",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_a98499f6-4638-4229-8dcb-1631e3784fa5",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "f_3c97a7e6-2f19-48d8-8891-ccd10d975b0c",
+               "defaultValue": null,
+               "name": "title",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_432b4865-8bd8-43e0-80b3-7df077e13c4e",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h1 class=\" s-title s-font-title s-rich-text-wrapper font-size-tag-header-one s-text-font-size-over-40\" style=\"font-size: 48px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-one\">Spice Events - un instant à votre image</span></h1></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [],
+         "inlineLayout": "12"
+        }
+       }
+      },
+      {
+       "type": "BlockComponentItem",
+       "id": "f_14e82cb5-365c-40d1-81cb-a1c3b5e5d46e",
+       "defaultValue": null,
+       "name": "rowBlock",
+       "components": {
+        "block1": {
+         "type": "BlockComponent",
+         "id": "f_dda85baa-abd9-4838-aa41-aa7226f042ad",
+         "defaultValue": null,
+         "items": [
+          {
+           "type": "BlockComponentItem",
+           "id": "f_3a097671-7e20-4fb8-a8a3-e51a6bc6415c",
+           "defaultValue": null,
+           "name": "columnBlock",
+           "components": {
+            "block1": {
+             "type": "BlockComponent",
+             "id": "f_f87a2869-09ce-403f-a760-0c8866a64172",
+             "defaultValue": null,
+             "items": [
+              {
+               "type": "BlockComponentItem",
+               "id": "e3b8604d-876e-4acb-9a7f-0f10fb3b4946",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_9895e5b6-78b0-4280-9287-dd1ef12a821d",
+                 "defaultValue": false,
+                 "alignment": null,
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" font-size-tag-header-three s-text-font-size-over-default s-rich-text-wrapper\" style=\"font-size: 24px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\"><em>L’émotion d’un moment unique, sublimée par nos effets spéciaux</em></span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              },
+              {
+               "type": "Spacer",
+               "id": "f_594fb38f-82c3-4a72-9cdc-4630de9b3437",
+               "defaultValue": null,
+               "value": "40"
+              },
+              {
+               "type": "BlockComponentItem",
+               "id": "f_42c24989-04f6-4548-a3bf-ade9c2d988b3",
+               "defaultValue": null,
+               "name": "context",
+               "components": {
+                "text1": {
+                 "type": "RichText",
+                 "id": "f_224a9e3e-92d2-4241-a908-1e5ec2c74c36",
+                 "defaultValue": false,
+                 "alignment": "justify",
+                 "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><h3 class=\" s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"text-align: justify; font-size: 24px;\"><span style=\"color: #000000;\">Parce que votre ouverture de bal marque le début de la fête, Spice Events vous aide à en faire un moment unique, poétique et grandiose. Grâce à nos effets spéciaux scéniques, nous créons une atmosphère digne d’un film — un décor féérique où chaque regard est captivé, chaque émotion amplifiée. Laissez la magie opérer et vivez une entrée de bal qui restera gravée dans les mémoires.</span></h3></div>",
+                 "backupValue": null,
+                 "version": 1,
+                 "defaultDataProcessed": true
+                }
+               }
+              }
+             ],
+             "layout": [],
+             "inlineLayout": null
+            }
+           }
+          }
+         ],
+         "layout": [
+          {
+           "type": "LayoutVariants",
+           "id": "f_a6f33323-fc88-4022-af7f-18fefff9401b",
+           "defaultValue": null,
+           "value": "two-thirds"
+          },
+          {
+           "type": "LayoutVariants",
+           "id": "f_01647145-c8df-4fb8-a6f4-c81e51e4a769",
+           "defaultValue": null,
+           "value": "third"
+          }
+         ],
+         "inlineLayout": "12"
+        }
+       }
+      }
+     ],
+     "layout": [],
+     "inlineLayout": "1"
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_87eac081-d43b-48b1-94b0-53da10959b7d",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_3471dd23-0e3a-4a75-9930-a85b8ad0fa1c",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Etincelles",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_9916dff0-e4b6-4593-bd0b-e08f4194883d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Un effet “Waouh” garanti</span></h1><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default\"><em>Faites briller votre moment sous mille éclats.</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_5cf5bc43-4224-4408-a389-cd89a46df4b6",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Transformez votre première danse en un moment mémorable et magique grâce à notre package Ouverture de bal spectaculaire. Nous combinons étincelles froides et fumée lourde pour créer une ambiance unique et immersive qui captivera vos invités dès les premières notes. Les étincelles froides apportent un éclat visuel impressionnant, tandis que la fumée lourde sublime vos mouvements et enveloppe la piste de danse pour un effet cinéma saisissant. Nous veillons à ce que chaque détail soit parfaitement maîtrisé : tests techniques préalables, matériel de remplacement pour parer à tout imprévu, et sécurité maximale. <span style=\"color: #000000;\">Avec ce package, votre ouverture de bal devient un véritable spectacle, à la hauteur de vos émotions et de votre soirée.</span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><span style=\"display: inline-block\"></span></p><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\"><strong>Notez que : </strong>nous ne réalisons pas cette prestation dans les lieux équipés de détecteurs de fumée, afin de garantir un déroulement sans incident et une expérience optimale. </p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_061332e6-f6bf-420d-ae5a-0f21c961db5b",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_795c5cd4-448b-468b-a603-ecc761398d77",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_2d825091-2071-4d2b-a120-0e9be700e622",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_6cead2f4-4545-4344-92b5-8e3a83440356",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_eacd5cd6-71f7-4468-9914-25f52836b5e2",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_282426f4-2cf0-49b9-b88e-3092676ca359",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_d6725d3a-f0da-409c-972b-0ed2ceec3914",
+   "defaultValue": true,
+   "template_name": "gallery4",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_eda3371a-b489-4579-b06a-aff17d132d77",
+     "defaultValue": "",
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Galerie (e)",
+     "sync_key": null,
+     "layout_variation": "normal",
+     "display_settings": {},
+     "layout_config": {
+      "customized": false,
+      "isNewMobileLayout": true,
+      "spacing": "small",
+      "templateName": "B",
+      "width": "auto",
+      "imageShape": "square",
+      "structure": "grid",
+      "showTitle": false,
+      "columns": 3
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_e38b4296-9c9f-4f40-84e8-535f3df68c73",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_086878f7-6fc2-4562-94f2-cceee0671110",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_9a1b2452-d40b-42a1-952b-afa361414255",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": null,
+     "storage": null,
+     "format": null,
+     "h": null,
+     "w": null,
+     "s": null
+    },
+    "gallery1": {
+     "type": "Gallery",
+     "id": "f_a160cbea-764e-452f-9b4c-c3a3acb27b44",
+     "defaultValue": true,
+     "image_type": null,
+     "sources": [
+      {
+       "type": "Image",
+       "id": "f_ad5c16fb-534a-41ff-8971-4ca75bcaca58",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/981411_595592.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/981411_595592.jpeg",
+       "description": "couple dansant au milieu de la fumée avec des étincelles en arrière plan",
+       "storageKey": "22139555/981411_595592",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 463,
+       "w": 736,
+       "s": 49052,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_1063db8d-34f4-42f9-838e-afc80a0a0c2f",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/801359_284115.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/801359_284115.jpeg",
+       "description": "Couple s'embrassant entouré d'étincelles froides",
+       "storageKey": "22139555/801359_284115",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 466,
+       "w": 700,
+       "s": 104030,
+       "focus": null
+      },
+      {
+       "type": "Image",
+       "id": "f_d6ea7831-23eb-4f13-a7f2-18c4d2473460",
+       "thumb_url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/22139555/789455_613661.jpeg",
+       "url": "//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/22139555/789455_613661.jpeg",
+       "description": "couple découpant leur gateau au milieu de la fumée et et étincelles",
+       "storageKey": "22139555/789455_613661",
+       "storage": "s",
+       "storagePrefix": null,
+       "format": "jpeg",
+       "h": 717,
+       "w": 735,
+       "s": 99039,
+       "focus": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_8a181270-57df-4948-a02a-d7eab4838c66",
+   "defaultValue": null,
+   "template_name": "title",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_20f1690b-82af-485b-b042-53364ec3abde",
+     "defaultValue": null,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Pourquoi spice",
+     "sync_key": null,
+     "layout_variation": "center-bottom-full",
+     "padding": {
+      "top": "normal",
+      "bottom": "normal"
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_73ae1218-7ea8-4e7e-99c3-93509c31a785",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Pourquoi choisir ce package ?</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_c510cf0d-f482-4217-b39c-741b4af6d2e7",
+     "defaultValue": false,
+     "alignment": "justify",
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block; \"><p class=\" s-rich-text-wrapper\" style=\"text-align: justify;\">Créez une première danse inoubliable grâce à l’alliance de la fumée lourde et des étincelles froides, parfaitement synchronisées avec votre musique. Chaque détail est préparé à l’avance avec matériel professionnel et solutions de remplacement, pour éviter tout imprévu. Ce package garantit un effet impressionnant, <strong>en toute sécurité</strong>, dans les lieux adaptés.</p></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text3": {
+     "type": "RichText",
+     "id": "f_8fb3fce0-49d6-43d7-ae76-a9be7033953e",
+     "defaultValue": null,
+     "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+     "backupValue": null,
+     "version": null
+    },
+    "media1": {
+     "type": "Media",
+     "id": "f_bd07ef49-76b1-4693-be20-2767e63ac1b2",
+     "defaultValue": null,
+     "video": {
+      "type": "Video",
+      "id": "f_3844e17d-3549-40fb-a298-32ce878175ac",
+      "defaultValue": null,
+      "html": "",
+      "url": "http://vimeo.com/18150336",
+      "thumbnail_url": null,
+      "maxwidth": 700,
+      "description": null
+     },
+     "image": {
+      "type": "Image",
+      "id": "f_2b603f2e-bd7e-4aa9-a96e-205c63925eaf",
+      "defaultValue": true,
+      "link_url": null,
+      "thumb_url": "",
+      "url": "",
+      "caption": "",
+      "description": "",
+      "storageKey": null,
+      "storage": null,
+      "format": null,
+      "s": null,
+      "new_target": true
+     },
+     "current": "image"
+    },
+    "button1": {
+     "type": "Button",
+     "id": "f_453b5de5-9bd9-4e7b-9626-8447aa9d9e1a",
+     "defaultValue": false,
+     "alignment": "auto",
+     "text": "",
+     "link_type": "Web",
+     "size": "medium",
+     "mobile_size": "automatic",
+     "style": "",
+     "color": "",
+     "font": "Montserrat",
+     "url": "",
+     "new_target": false,
+     "version": "2"
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_3cd02f02-168f-4b82-962b-f537110eff79",
+     "defaultValue": true,
+     "url": "",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "videoUrl": "",
+     "videoHtml": ""
+    }
+   }
+  },
+  {
+   "type": "Slide",
+   "id": "f_166978f2-92e2-4569-82f0-7aa51460a40c",
+   "defaultValue": true,
+   "template_name": "custom_form",
+   "components": {
+    "slideSettings": {
+     "type": "SlideSettings",
+     "id": "f_05830d4f-a256-42d9-ae4c-259549269842",
+     "defaultValue": true,
+     "show_nav": true,
+     "nameChanged": true,
+     "hidden_section": false,
+     "name": "Formulaire personnalisé",
+     "sync_key": null,
+     "layout_variation": null,
+     "display_settings": {
+      "hide_form": false,
+      "show_map": false,
+      "show_info": false
+     }
+    },
+    "text1": {
+     "type": "RichText",
+     "id": "f_858b3b0c-5216-498d-bc8d-b322cd86b72d",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h1 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-one\" style=\"font-size: 48px;\"><span class=\"s-text-color-default\">Vivez votre ouverture de bal autrement</span></h1></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "text2": {
+     "type": "RichText",
+     "id": "f_4991172c-edaa-41da-8d4d-97bf75692b46",
+     "defaultValue": false,
+     "alignment": null,
+     "value": "<div class=\"s-rich-text-wrapper\" style=\"display: block;\"><h3 class=\" s-text-color-default s-rich-text-wrapper font-size-tag-header-three s-text-font-size-over-default\" style=\"font-size: 24px;\"><span class=\"s-text-color-default s-rich-text-wrapper font-size-tag-header-two s-text-font-size-over-default\"><em>Planifions ensemble vos effets et en toute sécurité</em></span></h3></div>",
+     "backupValue": null,
+     "version": 1,
+     "defaultDataProcessed": true
+    },
+    "background1": {
+     "type": "Background",
+     "id": "f_14bdb3d2-7128-4be7-8ce0-b778bee9ea14",
+     "defaultValue": false,
+     "url": "!",
+     "textColor": "light",
+     "backgroundVariation": "",
+     "sizing": "cover",
+     "userClassName": null,
+     "videoUrl": "",
+     "videoHtml": "",
+     "storageKey": "22139555/406105_588446",
+     "storage": "s",
+     "format": "jpeg",
+     "h": 920,
+     "w": 736,
+     "s": 134794,
+     "useImage": true,
+     "focus": null,
+     "backgroundColor": null
+    },
+    "email1": {
+     "type": "CustomForm",
+     "id": "f_09a86047-d74e-46a0-86f6-6cee8f994e98",
+     "defaultValue": true,
+     "openInNewTab": false,
+     "form_name_label": "Formulaire page Ouverture de Bal Spectaculaire",
+     "customForm": {
+      "editUi": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:params": {
+         "sortable": true
+        },
+        "$item1762260833632#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1762260838449#date": {
+         "ui:widget": "DateWidget"
+        }
+       }
+      },
+      "schema": {
+       "properties": {
+        "customized": {
+         "properties": {
+          "$item1606282593441#name": {
+           "nameType": "single",
+           "isRequired": true,
+           "properties": {
+            "firstName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_0a388767-0b25-498a-ac02-b4cb180aa5d4"
+            },
+            "lastName": {
+             "type": "string",
+             "title": "",
+             "maxLength": 100,
+             "id": "f_306a8046-2740-48a1-ad5e-3da00a31d96c"
+            }
+           },
+           "fieldType": "name",
+           "format": "active",
+           "title": "Nom",
+           "type": "object",
+           "id": "f_2f23da18-040c-4592-b119-0e7a9e6d52a7",
+           "description": ""
+          },
+          "$item1606282596776#email": {
+           "description": "",
+           "fieldType": "email",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 100,
+           "title": "Email",
+           "type": "string",
+           "id": "f_9be2b1d3-cde7-4e5d-979c-004888a69b24"
+          },
+          "$item1606282598273#phone": {
+           "description": "",
+           "fieldType": "phone",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 30,
+           "title": "Téléphone",
+           "type": "string",
+           "id": "f_8cfd544b-f263-41b2-b6d0-c624e3bdfc5f"
+          },
+          "$item1606282604448#longText": {
+           "description": "",
+           "fieldType": "longText",
+           "format": "active",
+           "isRequired": true,
+           "maxLength": 1000,
+           "title": "Message",
+           "type": "string",
+           "id": "f_3d8f4310-7af4-4497-91ab-06690a94d80a"
+          },
+          "$item1762260833632#shortText": {
+           "type": "string",
+           "title": "Objet",
+           "format": "active",
+           "maxLength": 500,
+           "fieldType": "shortText",
+           "description": "",
+           "isRequired": true,
+           "id": "f_1ee40990-e5c3-495e-93c7-063a1e21b025"
+          },
+          "$item1762260838449#date": {
+           "type": "string",
+           "title": "Date de votre événement ",
+           "format": "active",
+           "fieldType": "date",
+           "description": "",
+           "dateFormat": "DD/MM/YYYY",
+           "isRequired": false,
+           "id": "f_b734619f-51ea-44a3-918f-3726ad846baf"
+          }
+         },
+         "required": [
+          "$item1606282593441#name",
+          "$item1606282596776#email",
+          "$item1606282598273#phone",
+          "$item1606282604448#longText",
+          "$item1762260833632#shortText"
+         ],
+         "title": "",
+         "type": "object",
+         "id": "f_00a0da97-865a-4376-95cd-e1443758fc22"
+        }
+       },
+       "required": [
+        "customized"
+       ],
+       "title": "",
+       "type": "object",
+       "id": "f_71761822-9351-45d3-94ff-c7c3330ce5b9"
+      },
+      "uiSchema": {
+       "customized": {
+        "$item1606282593441#name": {
+         "ui:widget": "NameWidget"
+        },
+        "$item1606282596776#email": {
+         "ui:widget": "EmailWidget"
+        },
+        "$item1606282598273#phone": {
+         "ui:widget": "PhoneWidget"
+        },
+        "$item1606282604448#longText": {
+         "ui:widget": "LongTextWidget"
+        },
+        "ui:order": [
+         "$item1606282593441#name",
+         "$item1606282596776#email",
+         "$item1606282598273#phone",
+         "$item1762260838449#date",
+         "$item1762260833632#shortText",
+         "$item1606282604448#longText"
+        ],
+        "$item1762260833632#shortText": {
+         "ui:widget": "ShortTextWidget"
+        },
+        "$item1762260838449#date": {
+         "ui:widget": "DateWidget"
+        }
+       },
+       "ui:order": [
+        "customized"
+       ]
+      }
+     },
+     "submit_label": "Envoyer",
+     "thanksMessage": "Merci d'avoir rempli notre formulaire !",
+     "recipient": "",
+     "label": "custom",
+     "redirectLink": "",
+     "enableSpamVerification": false
+    }
+   }
+  }
+ ],
+ "title": "Ouverture de bal spectaculaire",
+ "description": "Éblouissez vos invités avec un effet scénique spectaculaire et une fumée au sol.",
+ "uid": "7f1fe03d-847b-4891-8e9b-13adbaa6389d",
+ "path": "/ouverture-de-bal-spectaculaire",
+ "pageTitle": "Ouverture de bal spectaculaire ",
+ "autoPath": false,
+ "authorized": true
+}
