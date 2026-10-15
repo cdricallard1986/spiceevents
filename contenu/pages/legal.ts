@@ -164,6 +164,12 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         ],
       },
       {
+        titre: "Transferts hors de l'Union européenne",
+        paragraphes: [
+          "Les demandes de contact sont stockées chez Supabase dans un centre de données situé dans l'Union européenne. Vercel et Resend sont des sociétés américaines : les transferts éventuels de données vers les États-Unis sont encadrés par les clauses contractuelles types de la Commission européenne et, le cas échéant, par le cadre de protection des données UE–États-Unis (Data Privacy Framework).",
+        ],
+      },
+      {
         titre: "Vos droits",
         paragraphes: [
           `Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation du traitement et de portabilité de vos données. Pour les exercer, écrivez-nous à ${MAIL}.`,
@@ -229,6 +235,12 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
           "**Vercel** — website hosting;",
           "**Supabase** — storage of contact requests;",
           "**Resend** — sending emails.",
+        ],
+      },
+      {
+        titre: "Transfers outside the European Union",
+        paragraphes: [
+          "Contact requests are stored by Supabase in a data centre located in the European Union. Vercel and Resend are US companies: any transfer of data to the United States is covered by the European Commission's standard contractual clauses and, where applicable, by the EU–US Data Privacy Framework.",
         ],
       },
       {
