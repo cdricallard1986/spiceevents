@@ -6,7 +6,8 @@ Les sections masquées sur le site sont signalées par ⚠️.
 
 - `pages/` : une fiche par page (+ `_commun.md` pour le menu et le pied de page)
 - `blog/` : un fichier par article (date, catégorie, image de couverture en en-tête)
-- `images/manifeste.csv` : toutes les images, avec l'URL de l'original pleine résolution
+- `images/fichiers/` : les images en version web (côté long ≤ 2400 px)
+- `images/manifeste.csv` : correspondance fichier web ↔ URL de l'original pleine résolution ↔ pages
 - `donnees/` : données brutes Strikingly (JSON), pour référence
 
 ## Pages (23)

@@ -31,6 +31,8 @@ from markdownify import markdownify
 
 SITE = "https://www.spiceevents.fr"
 CDN_ORIGINAL = "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/{key}.{fmt}"
+# Certains originaux sont refusés par le CDN : on passe alors par une transformation (≤ 2048 px en pratique).
+CDN_FALLBACK = "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,h_4000,w_4000,q_90/{key}.{fmt}"
 # Vidéo d'exemple que Strikingly place par défaut dans les blocs « Media ».
 PLACEHOLDER_VIDEOS = {"https://vimeo.com/18150336", "http://vimeo.com/18150336"}
 
@@ -100,8 +102,10 @@ class Images:
         url = comp.get("url") or ""
         if not key and (url in ("", "!") or url.startswith(("/images/", "/assets/"))):
             return None  # vide, ou image décorative fournie par le thème Strikingly
+        fallback = None
         if key and fmt:
             original = CDN_ORIGINAL.format(key=key, fmt=fmt)
+            fallback = CDN_FALLBACK.format(key=key, fmt=fmt)
             ident = key
         else:
             original = normalize_url(url)
@@ -109,6 +113,7 @@ class Images:
         item = self.items.setdefault(ident, {
             "original": original,
             "affichee": normalize_url(url) if url not in ("", "!") else original,
+            "secours": fallback,
             "largeur": comp.get("w") or "",
             "hauteur": comp.get("h") or "",
             "poids_octets": comp.get("s") or "",
@@ -430,7 +435,7 @@ def main():
     print(f"{len(pages_index)} pages, {len(posts_index)} articles, {len(images.items)} images")
 
     if args.images:
-        download_images(images)
+        download_images(images, cache.parent)
 
 
 def render_site_chrome(page_data, images):
@@ -458,10 +463,11 @@ def write_manifest(images):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["fichier", "url_original", "largeur", "hauteur", "poids_octets", "utilisee_dans"])
+        w.writerow(["fichier_web", "url_original", "largeur", "hauteur", "poids_original", "poids_web",
+                    "utilisee_dans"])
         for it in sorted(images.items.values(), key=lambda x: x["fichier"]):
-            w.writerow([it["fichier"], it["original"], it["largeur"], it["hauteur"], it["poids_octets"],
-                        " | ".join(it["utilisee_dans"])])
+            w.writerow([it.get("fichier_web", ""), it["original"], it["largeur"], it["hauteur"], it["poids_octets"],
+                        it.get("poids_web", ""), " | ".join(it["utilisee_dans"])])
 
 
 def write_index(pages, posts, images):
@@ -474,7 +480,8 @@ def write_index(pages, posts, images):
         "",
         "- `pages/` : une fiche par page (+ `_commun.md` pour le menu et le pied de page)",
         "- `blog/` : un fichier par article (date, catégorie, image de couverture en en-tête)",
-        "- `images/manifeste.csv` : toutes les images, avec l'URL de l'original pleine résolution",
+        "- `images/fichiers/` : les images en version web (côté long ≤ 2400 px)",
+        "- `images/manifeste.csv` : correspondance fichier web ↔ URL de l'original pleine résolution ↔ pages",
         "- `donnees/` : données brutes Strikingly (JSON), pour référence",
         "",
         f"## Pages ({len(pages)})",
@@ -493,26 +500,77 @@ def write_index(pages, posts, images):
     (OUT / "README.md").write_text("\n".join(lines) + "\n")
 
 
-def download_images(images):
-    folder = OUT / "images" / "fichiers"
-    folder.mkdir(parents=True, exist_ok=True)
-    ok = fail = 0
-    for it in images.items.values():
-        dest = folder / it["fichier"]
-        if dest.exists() and dest.stat().st_size > 0:
-            ok += 1
-            continue
-        for url in dict.fromkeys([it["original"], it["affichee"]]):
-            try:
-                fetch(url, dest, tries=4)
-                ok += 1
-                break
-            except Exception as e:
-                last = e
+def download_images(images, cache):
+    """Télécharge les originaux (cache local) puis écrit des versions web dans le dépôt.
+
+    Les originaux pèsent ~650 Mo : ils restent dans le cache (non versionné) et
+    restent accessibles via leur URL dans le manifeste. Le dépôt reçoit des
+    copies redimensionnées (côté long ≤ WEB_MAX px) et recompressées.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
+    originals = cache / "images-originales"
+    web = OUT / "images" / "fichiers"
+    originals.mkdir(parents=True, exist_ok=True)
+    web.mkdir(parents=True, exist_ok=True)
+
+    def one(it):
+        src = originals / it["fichier"]
+        if not (src.exists() and src.stat().st_size > 0):
+            last = None
+            for url in dict.fromkeys(u for u in (it["original"], it.get("secours"), it["affichee"]) if u):
+                try:
+                    fetch(url, src, tries=4)
+                    break
+                except Exception as e:
+                    last = e
+            else:
+                return it, f"téléchargement : {last}"
+        try:
+            optimize(src, web, it)
+        except Exception as e:
+            return it, f"optimisation : {e}"
+        return it, None
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        results = list(pool.map(one, images.items.values()))
+    fails = [(it, err) for it, err in results if err]
+    for it, err in fails:
+        print(f"  ✗ image {it['fichier']} : {err}", file=sys.stderr)
+    print(f"images : {len(results) - len(fails)} ok, {len(fails)} en échec")
+    write_manifest(images)
+
+
+WEB_MAX = 2400
+
+
+def optimize(src, folder, it):
+    from PIL import Image, ImageOps
+
+    with Image.open(src) as im:
+        fmt = (im.format or "").upper()
+        it["largeur"], it["hauteur"] = im.size
+        it["poids_octets"] = src.stat().st_size
+        stem = Path(it["fichier"]).stem if Path(it["fichier"]).suffix.lower() in IMG_EXT else it["fichier"]
+        if fmt in ("GIF", "ICO"):
+            dest = folder / f"{stem}.{fmt.lower()}"
+            dest.write_bytes(src.read_bytes())
         else:
-            fail += 1
-            print(f"  ✗ image {it['fichier']} : {last}", file=sys.stderr)
-    print(f"images : {ok} ok, {fail} en échec")
+            im = ImageOps.exif_transpose(im)
+            has_alpha = im.mode in ("RGBA", "LA", "P") and im.convert("RGBA").getextrema()[3][0] < 255
+            if max(im.size) > WEB_MAX:
+                im.thumbnail((WEB_MAX, WEB_MAX), Image.LANCZOS)
+            if has_alpha:
+                dest = folder / f"{stem}.png"
+                im.convert("RGBA").save(dest, "PNG", optimize=True)
+            else:
+                dest = folder / f"{stem}.jpg"
+                im.convert("RGB").save(dest, "JPEG", quality=82, optimize=True, progressive=True)
+        it["fichier_web"] = dest.name
+        it["poids_web"] = dest.stat().st_size
+
+
+IMG_EXT = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".ico", ".svg"}
 
 
 if __name__ == "__main__":

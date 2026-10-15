@@ -6,7 +6,7 @@ Dépôt de travail pour la refonte de [www.spiceevents.fr](https://www.spiceeven
 - `outils/export_strikingly.py` : script d'export, à relancer pour rafraîchir `site-actuel/`.
 
 ```bash
-pip install markdownify
+pip install markdownify pillow
 python3 outils/export_strikingly.py            # textes, structure, inventaire des images
-python3 outils/export_strikingly.py --images   # + téléchargement des images originales
+python3 outils/export_strikingly.py --images   # + images en version web (originaux gardés dans .cache/)
 ```
