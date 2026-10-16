@@ -65,7 +65,7 @@ export default async function PageAnimations({ params }: Props) {
       <section className="py-20 md:py-28">
         <div className="conteneur grid gap-14 lg:grid-cols-[1fr_1.15fr]">
           <div className="relative min-h-[22rem] lg:min-h-0">
-            <Photo cle="presta-mapping-facade" remplir sizes="(min-width: 1024px) 45vw, 100vw" />
+            <Photo cle="presta-diner-chateau" remplir sizes="(min-width: 1024px) 45vw, 100vw" />
           </div>
           <div>
             <p className="surtitre mb-4">{c.idees.surtitre}</p>

@@ -97,6 +97,7 @@ Pas d'authentification sur un site vitrine, donc **sans objet** : rôles/RLS mul
 - Demandes de contact : **email à Cédric + accusé de réception + enregistrement en base Supabase**.
 - Journal en français seulement ; page recrutement conservée (lien dans le pied de page, FR).
 - Formulaire (16 octobre) : adresse affichée `cedric@spiceevents.fr`, expéditeur des emails `contact@spiceevents.fr`, aucun délai chiffré (« dans les meilleurs délais »), téléphone obligatoire.
+- Contenu (16 octobre) : la formulation « Cédric mixe lui-même ou vous présente un DJ de l'équipe » est validée. Les limiteurs sonores n'empêchent pas d'intervenir, mais Cédric déconseille ces lieux. Le mapping vidéo, les lettres géantes, le feu d'artifice de jour, le magicien et la fanfare ne sont plus proposés : on renvoie vers des partenaires de confiance. Les formules Or, Platine et Diamant sont remplacées par une formule unique avec une option premium. Le recrutement de DJ généralistes est toujours ouvert.
 
 ## Questions encore ouvertes
 

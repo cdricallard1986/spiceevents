@@ -196,7 +196,22 @@ MISE_EN_FORME = [
     (r'voir article "(Comment un DJ lit une piste de danse \?)"',
      r'voir article : [Comment un DJ lit-il une piste de danse ?](/journal/comment-un-dj-lit-il-une-piste-de-danse)'),
     (r"\[Guirlandes lumineuses\]\(/animations/ouverture-de-bal\)", "[Guirlandes lumineuses](/animations/guirlandes-lumineuses)"),
-    (r"(\]\(/mariages\)) \)", r"\1)"),
+    # Prestations que Spice Events ne propose plus (Cédric, 16/10/2026) : plus de lien
+    # vers /animations, et plus de promesse de mapping ni des anciennes formules.
+    (r"\[(pianiste|fanfare|troupe de samba|saxophoniste|disco party|magicien|des lettres lumineuses|Le mapping vidéo)\]\(/animations\)",
+     r"\1"),
+    (r" \[\(pour les couples prenant les formules Or, Platine ou Diamant\)\]\(/mariages\)", ""),
+    (r"\[lettres lumineuses\]\(/animations\)", "lettres lumineuses"),
+    (r"la sonorisation du dîner ainsi que de la cérémonie et un mapping vidéo\.",
+     "la sonorisation du dîner ainsi que de la cérémonie et une mise en lumière du lieu."),
+    (r"optez pour le \[mapping\]\(/a-propos\)\. Cette projection 3D, s’adapte aux dimensions de votre lieu pour lui donner vie et émerveiller vos invités\.",
+     "optez pour la [mise en lumière](/a-propos) : jeux de couleurs et projections de motifs donnent vie à votre lieu et émerveillent vos invités."),
+    (r"\[nos lettres géantes lumineuses\]\(/animations\)", "des lettres géantes lumineuses"),
+    (r"nous pouvons également parler du \[mapping\]\(/journal/mariage-de-s-r-au-chateau-d-hardricourt\), ces éclairages sur bâtiment qui vous offrent un show lumineux spectaculaire\.",
+     "pensez aussi à la mise en lumière de votre lieu : une façade ou un jardin révélés à la nuit tombée offrent un show lumineux spectaculaire."),
+    (r"rideaux étoilés, mapping sur bâtiment…", "rideaux étoilés…"),
+    (r"rideaux étoilés ou même \[mapping\]\(/a-propos\) \(projections sur bâtiment\)",
+     "rideaux étoilés ou mise en lumière de la façade"),
 ]
 
 # --------------------------------------------------------------------------- #

@@ -119,6 +119,16 @@ export const FAQ: Bilingue<PageFaq> = {
               "Après ce premier échange, nous vous adressons une proposition sur mesure, claire et adaptée à votre budget.",
           },
           {
+            question: "Proposez-vous plusieurs formules ?",
+            reponse:
+              "Nous proposons une formule unique, complète, que vous pouvez enrichir d'une option premium. Nous vous en présentons le détail lors du premier échange.",
+          },
+          {
+            question: "Pouvez-vous nous recommander d'autres prestataires ?",
+            reponse:
+              "Oui. Pour ce que nous ne proposons pas nous-mêmes (musiciens, magicien, artificier…), nous vous orientons vers des partenaires de confiance avec qui nous aimons travailler.",
+          },
+          {
             question: "Comment réserver notre date ?",
             reponse:
               "Il suffit de nous retourner le devis signé, accompagné d'un acompte de 50 % du montant total. Votre date est alors bloquée et nous passons à la préparation.",
@@ -158,7 +168,7 @@ export const FAQ: Bilingue<PageFaq> = {
           {
             question: "Y a-t-il des restrictions pour les salles avec détecteurs de fumée ou limiteur sonore ?",
             reponse:
-              "Oui. Nous ne réalisons pas de prestation dans les lieux équipés de limiteurs sonores ou de détecteurs de fumée sensibles : ils compromettent la qualité du son et les effets visuels. Nous vérifions toujours les contraintes du lieu en amont.",
+              "Pour les détecteurs de fumée, oui : nous ne réalisons pas de prestation dans les lieux équipés de détecteurs sensibles, qui compromettent les effets visuels. Les limiteurs sonores ne nous empêchent pas d'intervenir, mais nous vous conseillons d'éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu'un seuil est dépassé, et c'est toute l'ambiance de la soirée qui en pâtit. Nous vérifions toujours les contraintes du lieu en amont.",
           },
         ],
       },
@@ -185,7 +195,7 @@ export const FAQ: Bilingue<PageFaq> = {
           {
             question: "Les étincelles froides et la fumée lourde sont-elles compatibles avec tous les lieux ?",
             reponse:
-              "Pas toujours : certains lieux sont équipés de détecteurs de fumée sensibles ou de limiteurs sonores. Nous vérifions les contraintes techniques du lieu avant toute installation.",
+              "Pas toujours : certains lieux sont équipés de détecteurs de fumée sensibles, incompatibles avec ces effets. Nous vérifions les contraintes techniques du lieu avant toute installation.",
           },
           {
             question: "Les guirlandes lumineuses s'installent-elles en intérieur et en extérieur ?",
@@ -327,6 +337,16 @@ export const FAQ: Bilingue<PageFaq> = {
             reponse: "After that first conversation, we send you a clear, tailored proposal that fits your budget.",
           },
           {
+            question: "Do you offer several packages?",
+            reponse:
+              "We offer a single, complete package, which you can enhance with a premium option. We'll walk you through the details in our first conversation.",
+          },
+          {
+            question: "Can you recommend other suppliers?",
+            reponse:
+              "Yes. For anything we don't provide ourselves (musicians, a magician, fireworks…), we'll point you to trusted partners we love working with.",
+          },
+          {
             question: "How do we book our date?",
             reponse:
               "Simply return the signed quote along with a deposit of 50% of the total. Your date is then secured and we move on to the planning.",
@@ -366,7 +386,7 @@ export const FAQ: Bilingue<PageFaq> = {
           {
             question: "Are there restrictions for venues with smoke detectors or sound limiters?",
             reponse:
-              "Yes. We don't perform in venues fitted with sound limiters or sensitive smoke detectors, as they compromise the sound quality and visual effects. We always check the venue's constraints beforehand.",
+              "For smoke detectors, yes: we don't perform in venues fitted with sensitive detectors, as they compromise the visual effects. Sound limiters don't stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. We always check the venue's constraints beforehand.",
           },
         ],
       },
@@ -393,7 +413,7 @@ export const FAQ: Bilingue<PageFaq> = {
           {
             question: "Are cold sparks and low fog suitable for every venue?",
             reponse:
-              "Not always: some venues have sensitive smoke detectors or sound limiters. We check the venue's technical constraints before setting anything up.",
+              "Not always: some venues have sensitive smoke detectors, which aren't compatible with these effects. We check the venue's technical constraints before setting anything up.",
           },
           {
             question: "Can fairy lights be installed indoors and outdoors?",

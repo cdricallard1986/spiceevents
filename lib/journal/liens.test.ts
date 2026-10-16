@@ -13,8 +13,10 @@ describe("hrefInterne", () => {
     expect(hrefInterne("/animations/photobooth")).toEqual({ pathname: "/animations/[option]", params: { option: "photobooth" } });
   });
 
-  it("laisse les ancres, les adresses inconnues et externes à un simple <a>", () => {
-    expect(hrefInterne("/mariages#methode")).toBeNull();
+  it("garde l'ancre d'une page connue, et laisse le reste à un simple <a>", () => {
+    expect(hrefInterne("/mariages#methode")).toEqual({ pathname: "/mariages", hash: "methode" });
+    expect(hrefInterne("/journal/un-article#partie")).toBeNull();
+    expect(hrefInterne("/mariages#")).toBeNull();
     expect(hrefInterne("/booking-dj")).toBeNull();
     expect(hrefInterne("https://mxevenement.com/")).toBeNull();
     expect(hrefInterne("//exemple.com")).toBeNull();

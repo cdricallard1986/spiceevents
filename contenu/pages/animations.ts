@@ -41,30 +41,26 @@ export const ANIMATIONS: Bilingue<Animations> = {
       surtitre: "Et aussi",
       titre: "D'autres idées pour *surprendre vos invités*.",
       intro:
-        "Pour une expérience visuelle et sonore complète, nous proposons aussi ces animations. Parlez-nous de votre projet : nous vous conseillons celles qui s'accordent à votre lieu et à votre déroulé.",
+        "Pour une expérience visuelle et sonore complète, nous proposons aussi ces prestations. Parlez-nous de votre projet : nous vous conseillons celles qui s'accordent à votre lieu et à votre déroulé.",
       liste: [
         {
           titre: "Vidéoprojecteur et écran",
           texte: "Projetez vos souvenirs, un diaporama ou des messages pendant le dîner, pour des instants partagés.",
         },
         {
-          titre: "Mapping vidéo",
-          texte: "Transformez une façade ou un mur en véritable œuvre numérique, pour un effet visuel spectaculaire.",
-        },
-        {
           titre: "Éclairage du dîner",
           texte: "Une lumière chaude et raffinée, qui sublime votre salle, vos tables et vos invités.",
         },
         {
-          titre: "Lettres géantes en bois",
-          texte: "Vos initiales ou un message en grand, une touche personnelle et conviviale sur le lieu de votre choix.",
+          titre: "Mise en lumière du lieu",
+          texte: "Façades, jardins, charpentes : nous révélons l'architecture de votre lieu à la nuit tombée.",
         },
         {
-          titre: "Feu d'artifice de jour",
-          texte: "Un final étonnant et mémorable, qui émerveille tous les invités, même avant la nuit.",
+          titre: "Nos partenaires de confiance",
+          texte: "Une envie qui ne figure pas ici ? Nous vous recommandons des prestataires avec qui nous aimons travailler.",
         },
       ],
-      note: "Toutes ces animations sont proposées sur devis.",
+      note: "Prestations sur devis.",
     },
     faq: {
       surtitre: "Questions fréquentes",
@@ -73,7 +69,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
         {
           question: "Les étincelles froides et la fumée lourde sont-elles possibles dans tous les lieux ?",
           reponse:
-            "Non. Certains lieux sont équipés de détecteurs de fumée sensibles ou de limiteurs sonores, incompatibles avec ces effets. Nous vérifions toujours les contraintes techniques de votre lieu avant de vous les proposer.",
+            "Non. Certains lieux sont équipés de détecteurs de fumée sensibles, incompatibles avec ces effets. Nous vérifions toujours les contraintes techniques de votre lieu avant de vous les proposer.",
         },
         {
           question: "Les guirlandes lumineuses peuvent-elles être installées en extérieur ?",
@@ -129,23 +125,19 @@ export const ANIMATIONS: Bilingue<Animations> = {
           texte: "Show your memories, a slideshow or messages during dinner, for moments everyone shares.",
         },
         {
-          titre: "Video mapping",
-          texte: "Turn a façade or a wall into a digital work of art, for a truly spectacular visual effect.",
-        },
-        {
           titre: "Dinner lighting",
           texte: "Warm, refined light that flatters your room, your tables and your guests.",
         },
         {
-          titre: "Giant wooden letters",
-          texte: "Your initials or a message, writ large: a personal, welcoming touch wherever you choose.",
+          titre: "Venue lighting",
+          texte: "Façades, gardens, timber beams: we bring out your venue's architecture as night falls.",
         },
         {
-          titre: "Daytime fireworks",
-          texte: "A surprising, memorable finale that wows every guest, even before nightfall.",
+          titre: "Our trusted partners",
+          texte: "Looking for something that isn't listed here? We'll recommend suppliers we love working with.",
         },
       ],
-      note: "All of these are quoted on request.",
+      note: "Quoted on request.",
     },
     faq: {
       surtitre: "Frequently asked questions",
@@ -154,7 +146,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
         {
           question: "Can cold sparks and low fog be used in any venue?",
           reponse:
-            "No. Some venues have sensitive smoke detectors or sound limiters, which aren't compatible with these effects. We always check your venue's technical constraints before suggesting them.",
+            "No. Some venues have sensitive smoke detectors, which aren't compatible with these effects. We always check your venue's technical constraints before suggesting them.",
         },
         {
           question: "Can the string lights go outdoors?",

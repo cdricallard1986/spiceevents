@@ -197,7 +197,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           question: "Intervenez-vous dans les salles avec détecteurs de fumée ou limiteur sonore ?",
           reponse:
-            "Pour garantir la qualité du son et des effets, nous ne réalisons pas nos animations dans les lieux équipés de détecteurs de fumée sensibles ou de limiteurs sonores. Signalez-nous ces équipements dès le premier échange : nous vérifions ensemble ce qui est possible.",
+            "Pour garantir la qualité des effets, nous ne réalisons pas nos animations dans les lieux équipés de détecteurs de fumée sensibles. Les limiteurs sonores ne nous empêchent pas d'intervenir, mais nous vous conseillons d'éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu'un seuil est dépassé, et c'est toute l'ambiance de la soirée qui en pâtit. Signalez-nous ces équipements dès le premier échange : nous vérifions ensemble ce qui est possible.",
         },
         {
           question: "Nos témoins peuvent-ils vous contacter directement ?",
@@ -213,6 +213,11 @@ export const MARIAGES: Bilingue<Mariages> = {
           question: "Travaillez-vous avec nos autres prestataires ?",
           reponse:
             "Oui : lieu, traiteur, photographe, officiant, wedding planner… Nous nous coordonnons avec chacun pour que les temps forts s'enchaînent sans stress.",
+        },
+        {
+          question: "Proposez-vous plusieurs formules ?",
+          reponse:
+            "Nous proposons une formule unique, complète, que vous pouvez enrichir d'une option premium. Nous vous en présentons le détail lors du premier échange.",
         },
         {
           question: "Comment réserver notre date ?",
@@ -404,7 +409,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           question: "Do you work in venues with smoke detectors or sound limiters?",
           reponse:
-            "To guarantee the quality of the sound and effects, we don't provide our entertainment in venues fitted with sensitive smoke detectors or sound limiters. Let us know about them in our first conversation and we'll look at what's possible together.",
+            "To guarantee the quality of the effects, we don't provide our entertainment in venues fitted with sensitive smoke detectors. Sound limiters don't stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. Let us know about them in our first conversation and we'll look at what's possible together.",
         },
         {
           question: "Can our best man or bridesmaids contact you directly?",
@@ -420,6 +425,11 @@ export const MARIAGES: Bilingue<Mariages> = {
           question: "Do you work with our other suppliers?",
           reponse:
             "Yes: venue, caterer, photographer, celebrant, wedding planner… We coordinate with each of them so the key moments flow without stress.",
+        },
+        {
+          question: "Do you offer several packages?",
+          reponse:
+            "We offer a single, complete package, which you can enhance with a premium option. We'll walk you through the details in our first conversation.",
         },
         {
           question: "How do we book our date?",

@@ -3,243 +3,416 @@
  "images": {
   "presta-mariage-hero": {
    "fichier": "780786_597985_139774.jpg",
-   "alt": { "fr": "Première danse des mariés sous des projections lumineuses roses, entourés de leurs invités", "en": "The couple's first dance under pink light projections, surrounded by their guests" }
+   "alt": {
+    "fr": "Première danse des mariés sous des projections lumineuses roses, entourés de leurs invités",
+    "en": "The couple's first dance under pink light projections, surrounded by their guests"
+   }
   },
   "presta-ceremonie-cour": {
    "fichier": "780786_5969_583205.jpg",
-   "alt": { "fr": "Cérémonie laïque dans une cour ensoleillée, invités assis face aux musiciens", "en": "Celebrant-led ceremony in a sunny courtyard, guests seated facing the musicians" }
+   "alt": {
+    "fr": "Cérémonie laïque dans une cour ensoleillée, invités assis face aux musiciens",
+    "en": "Celebrant-led ceremony in a sunny courtyard, guests seated facing the musicians"
+   }
   },
   "presta-vinyles-installation": {
    "fichier": "22139555_501528_374820.jpg",
-   "alt": { "fr": "Bar à vinyles installé dans une salle de réception, caisses de disques et platines", "en": "Vinyl bar set up in a reception room, record crates and turntables" }
+   "alt": {
+    "fr": "Bar à vinyles installé dans une salle de réception, caisses de disques et platines",
+    "en": "Vinyl bar set up in a reception room, record crates and turntables"
+   }
   },
   "presta-diner-chateau": {
    "fichier": "22139555_745016_322698.jpg",
-   "alt": { "fr": "Salle de château dressée pour le dîner, étoiles lumineuses projetées au sol", "en": "Château hall laid for dinner, with stars of light projected on the floor" }
+   "alt": {
+    "fr": "Salle de château dressée pour le dîner, étoiles lumineuses projetées au sol",
+    "en": "Château hall laid for dinner, with stars of light projected on the floor"
+   }
   },
   "presta-bal-fumee-bleue": {
    "fichier": "780786_899629_126833.jpg",
-   "alt": { "fr": "Mariés qui ouvrent le bal dans la fumée, sous une lumière bleue", "en": "Newlyweds opening the dance in haze under blue light" }
+   "alt": {
+    "fr": "Mariés qui ouvrent le bal dans la fumée, sous une lumière bleue",
+    "en": "Newlyweds opening the dance in haze under blue light"
+   }
   },
   "presta-piste-mains-levees": {
    "fichier": "780786_142893_293697.jpg",
-   "alt": { "fr": "Invités les bras levés sur la piste de danse, éclairée en bleu", "en": "Guests with their arms in the air on a blue-lit dance floor" }
+   "alt": {
+    "fr": "Invités les bras levés sur la piste de danse, éclairée en bleu",
+    "en": "Guests with their arms in the air on a blue-lit dance floor"
+   }
   },
   "presta-cedric-portrait": {
    "fichier": "22139555_361913_789864.jpg",
-   "alt": { "fr": "Cédric Allard aux platines pendant un mariage", "en": "Cédric Allard at the decks during a wedding" }
+   "alt": {
+    "fr": "Cédric Allard aux platines pendant un mariage",
+    "en": "Cédric Allard at the decks during a wedding"
+   }
   },
   "presta-maries-enlaces": {
    "fichier": "22139555_86890_816484.jpg",
-   "alt": { "fr": "Mariés qui s'enlacent en riant", "en": "Newlyweds hugging and laughing" }
+   "alt": {
+    "fr": "Mariés qui s'enlacent en riant",
+    "en": "Newlyweds hugging and laughing"
+   }
   },
   "presta-mariee-piste": {
    "fichier": "22139555_135111_862108.jpg",
-   "alt": { "fr": "La mariée danse les bras levés au milieu des invités", "en": "The bride dancing with her arms raised among the guests" }
+   "alt": {
+    "fr": "La mariée danse les bras levés au milieu des invités",
+    "en": "The bride dancing with her arms raised among the guests"
+   }
   },
   "presta-boules-disco": {
    "fichier": "22139555_853975_486171.jpg",
-   "alt": { "fr": "Invités qui dansent sous des boules à facettes", "en": "Guests dancing under mirror balls" }
+   "alt": {
+    "fr": "Invités qui dansent sous des boules à facettes",
+    "en": "Guests dancing under mirror balls"
+   }
   },
   "presta-salle-rouge": {
    "fichier": "22139555_834355_789404.jpg",
-   "alt": { "fr": "Salle de réception mise en lumière rouge et orangée pour le dîner", "en": "Reception room lit in red and amber for dinner" }
+   "alt": {
+    "fr": "Salle de réception mise en lumière rouge et orangée pour le dîner",
+    "en": "Reception room lit in red and amber for dinner"
+   }
   },
   "presta-piste-laser": {
    "fichier": "22139555_768566_213903.jpg",
-   "alt": { "fr": "Piste de danse traversée de faisceaux lumineux", "en": "Dance floor criss-crossed by light beams" }
+   "alt": {
+    "fr": "Piste de danse traversée de faisceaux lumineux",
+    "en": "Dance floor criss-crossed by light beams"
+   }
   },
   "presta-bal-etincelles-salle": {
    "fichier": "22139555_404419_863991.jpg",
-   "alt": { "fr": "Ouverture de bal dans la fumée lourde, entre deux fontaines d'étincelles froides", "en": "First dance in low fog between two cold-spark fountains" }
+   "alt": {
+    "fr": "Ouverture de bal dans la fumée lourde, entre deux fontaines d'étincelles froides",
+    "en": "First dance in low fog between two cold-spark fountains"
+   }
   },
   "presta-bal-etincelles-pluie": {
    "fichier": "22139555_406105_588446.jpg",
-   "alt": { "fr": "Mariés qui dansent sous une pluie d'étincelles", "en": "Newlyweds dancing beneath a shower of sparks" }
+   "alt": {
+    "fr": "Mariés qui dansent sous une pluie d'étincelles",
+    "en": "Newlyweds dancing beneath a shower of sparks"
+   }
   },
   "presta-bal-etincelles-allee": {
    "fichier": "22139555_801359_284115.jpg",
-   "alt": { "fr": "Mariés enlacés entre deux rangées d'étincelles froides", "en": "Newlyweds embracing between two rows of cold sparks" }
+   "alt": {
+    "fr": "Mariés enlacés entre deux rangées d'étincelles froides",
+    "en": "Newlyweds embracing between two rows of cold sparks"
+   }
   },
   "presta-bal-etincelles-fumee": {
    "fichier": "22139555_981411_595592.jpg",
-   "alt": { "fr": "Première danse sur un nuage de fumée lourde, étincelles en arrière-plan", "en": "First dance on a cloud of low fog, with sparks behind" }
+   "alt": {
+    "fr": "Première danse sur un nuage de fumée lourde, étincelles en arrière-plan",
+    "en": "First dance on a cloud of low fog, with sparks behind"
+   }
   },
   "presta-bal-fumee-nb": {
    "fichier": "780786_912489_244674.jpg",
-   "alt": { "fr": "Ouverture de bal en noir et blanc, fumée au sol", "en": "First dance in black and white, with fog on the floor" }
+   "alt": {
+    "fr": "Ouverture de bal en noir et blanc, fumée au sol",
+    "en": "First dance in black and white, with fog on the floor"
+   }
   },
   "presta-vinyles-salon": {
    "fichier": "22139555_804388_299835.jpg",
-   "alt": { "fr": "Bar à vinyles dans un salon de château, caisses en bois et platines", "en": "Vinyl bar in a château drawing room, wooden crates and turntables" }
+   "alt": {
+    "fr": "Bar à vinyles dans un salon de château, caisses en bois et platines",
+    "en": "Vinyl bar in a château drawing room, wooden crates and turntables"
+   }
   },
   "presta-vinyles-veranda": {
    "fichier": "22139555_362242_52298.jpg",
-   "alt": { "fr": "Bar à vinyles installé sous une verrière", "en": "Vinyl bar set up under a glass roof" }
+   "alt": {
+    "fr": "Bar à vinyles installé sous une verrière",
+    "en": "Vinyl bar set up under a glass roof"
+   }
   },
   "presta-vinyles-platine": {
    "fichier": "22139555_925548_77227.jpg",
-   "alt": { "fr": "Vinyle posé sur la platine, prêt à être mixé", "en": "A record on the turntable, ready to be mixed" }
+   "alt": {
+    "fr": "Vinyle posé sur la platine, prêt à être mixé",
+    "en": "A record on the turntable, ready to be mixed"
+   }
   },
   "presta-livre-or-guestbook": {
    "fichier": "22139555_102518_710583.jpg",
-   "alt": { "fr": "Téléphone blanc du livre d'or audio et son panneau d'explication", "en": "White audio guestbook telephone with its instruction sign" }
+   "alt": {
+    "fr": "Téléphone blanc du livre d'or audio et son panneau d'explication",
+    "en": "White audio guestbook telephone with its instruction sign"
+   }
   },
   "presta-livre-or-mer": {
    "fichier": "22139555_224682_398439.jpg",
-   "alt": { "fr": "Téléphone vintage du livre d'or audio posé face à la mer", "en": "Vintage audio guestbook phone set up facing the sea" }
+   "alt": {
+    "fr": "Téléphone vintage du livre d'or audio posé face à la mer",
+    "en": "Vintage audio guestbook phone set up facing the sea"
+   }
   },
   "presta-livre-or-table": {
    "fichier": "22139555_425078_345578.jpg",
-   "alt": { "fr": "Téléphone à cadran du livre d'or audio sur une table décorée", "en": "Rotary audio guestbook phone on a decorated table" }
+   "alt": {
+    "fr": "Téléphone à cadran du livre d'or audio sur une table décorée",
+    "en": "Rotary audio guestbook phone on a decorated table"
+   }
   },
   "presta-livre-or-cadre": {
    "fichier": "22139555_580569_810578.jpg",
-   "alt": { "fr": "Livre d'or audio : téléphone rétro et cadre d'instructions", "en": "Audio guestbook: retro phone and framed instructions" }
+   "alt": {
+    "fr": "Livre d'or audio : téléphone rétro et cadre d'instructions",
+    "en": "Audio guestbook: retro phone and framed instructions"
+   }
   },
   "presta-invites-chapiteau": {
    "fichier": "780786_916066_605700.jpg",
-   "alt": { "fr": "Invités en fête sous un chapiteau transparent garni de guirlandes", "en": "Guests celebrating under a clear marquee hung with festoon lights" }
+   "alt": {
+    "fr": "Invités en fête sous un chapiteau transparent garni de guirlandes",
+    "en": "Guests celebrating under a clear marquee hung with festoon lights"
+   }
   },
   "presta-photobooth-temoins": {
    "fichier": "22139555_483493_211472.jpg",
-   "alt": { "fr": "La mariée et ses témoins posent avec des accessoires devant le photobooth", "en": "The bride and her bridesmaids posing with props at the photobooth" }
+   "alt": {
+    "fr": "La mariée et ses témoins posent avec des accessoires devant le photobooth",
+    "en": "The bride and her bridesmaids posing with props at the photobooth"
+   }
   },
   "presta-photobooth-mariee": {
    "fichier": "22139555_97764_439855.jpg",
-   "alt": { "fr": "La mariée et ses amies devant la borne photo", "en": "The bride and her friends in front of the photo booth" }
+   "alt": {
+    "fr": "La mariée et ses amies devant la borne photo",
+    "en": "The bride and her friends in front of the photo booth"
+   }
   },
   "presta-photobooth-borne": {
    "fichier": "22139555_573542_871649.jpg",
-   "alt": { "fr": "Borne photobooth installée en extérieur au coucher du soleil", "en": "Photobooth set up outdoors at sunset" }
+   "alt": {
+    "fr": "Borne photobooth installée en extérieur au coucher du soleil",
+    "en": "Photobooth set up outdoors at sunset"
+   }
   },
   "presta-photobooth-jardin": {
    "fichier": "22139555_468500_536706.jpg",
-   "alt": { "fr": "Borne photobooth dans un jardin, au bord de la piscine", "en": "Photobooth in a garden by the pool" }
+   "alt": {
+    "fr": "Borne photobooth dans un jardin, au bord de la piscine",
+    "en": "Photobooth in a garden by the pool"
+   }
   },
   "presta-guirlandes-salle": {
    "fichier": "22139555_578672_700822.jpg",
-   "alt": { "fr": "Salle en pierre illuminée par des guirlandes lumineuses au-dessus des tables", "en": "Stone hall lit by string lights above the tables" }
+   "alt": {
+    "fr": "Salle en pierre illuminée par des guirlandes lumineuses au-dessus des tables",
+    "en": "Stone hall lit by string lights above the tables"
+   }
   },
   "presta-guirlandes-grange": {
    "fichier": "22139555_24629_877383.jpg",
-   "alt": { "fr": "Mariés qui dansent sous un ciel de guirlandes dans une grange", "en": "Newlyweds dancing under a canopy of string lights in a barn" }
+   "alt": {
+    "fr": "Mariés qui dansent sous un ciel de guirlandes dans une grange",
+    "en": "Newlyweds dancing under a canopy of string lights in a barn"
+   }
   },
   "presta-guirlandes-diner": {
    "fichier": "22139555_744408_306415.jpg",
-   "alt": { "fr": "Longues tablées sous des guirlandes lumineuses", "en": "Long banquet tables beneath string lights" }
+   "alt": {
+    "fr": "Longues tablées sous des guirlandes lumineuses",
+    "en": "Long banquet tables beneath string lights"
+   }
   },
   "presta-guirlandes-voilages": {
    "fichier": "22139555_72874_196856.jpg",
-   "alt": { "fr": "Guirlandes guinguette et voilages au-dessus d'un dîner aux chandelles", "en": "Festoon lights and drapes above a candlelit dinner" }
+   "alt": {
+    "fr": "Guirlandes guinguette et voilages au-dessus d'un dîner aux chandelles",
+    "en": "Festoon lights and drapes above a candlelit dinner"
+   }
   },
   "presta-guirlandes-tables": {
    "fichier": "22139555_335517_855913.jpg",
-   "alt": { "fr": "Tables rondes dressées sous des guirlandes lumineuses", "en": "Round tables laid beneath string lights" }
+   "alt": {
+    "fr": "Tables rondes dressées sous des guirlandes lumineuses",
+    "en": "Round tables laid beneath string lights"
+   }
   },
   "presta-mur-eau": {
    "fichier": "22139555_904509_224581.jpg",
-   "alt": { "fr": "Grand mur d'eau à l'entrée d'un espace de réception", "en": "Large water wall at the entrance to a reception space" }
+   "alt": {
+    "fr": "Grand mur d'eau à l'entrée d'un espace de réception",
+    "en": "Large water wall at the entrance to a reception space"
+   }
   },
   "presta-mur-eau-colonnes": {
    "fichier": "22139555_105949_24666.jpg",
-   "alt": { "fr": "Mur d'eau encadré de végétation entre deux colonnes", "en": "Water wall framed by greenery between two columns" }
+   "alt": {
+    "fr": "Mur d'eau encadré de végétation entre deux colonnes",
+    "en": "Water wall framed by greenery between two columns"
+   }
   },
   "presta-mur-eau-vegetal": {
    "fichier": "22139555_175629_172491.jpg",
-   "alt": { "fr": "Mur d'eau personnalisé d'un logo, entouré d'un mur végétal", "en": "Water wall personalised with a logo, set in a green wall" }
+   "alt": {
+    "fr": "Mur d'eau personnalisé d'un logo, entouré d'un mur végétal",
+    "en": "Water wall personalised with a logo, set in a green wall"
+   }
   },
   "presta-mur-eau-nom": {
    "fichier": "22139555_516200_605140.jpg",
-   "alt": { "fr": "Mur d'eau personnalisé d'un nom lumineux", "en": "Water wall personalised with an illuminated name" }
+   "alt": {
+    "fr": "Mur d'eau personnalisé d'un nom lumineux",
+    "en": "Water wall personalised with an illuminated name"
+   }
   },
   "presta-mur-vegetal-neon": {
    "fichier": "22139555_455402_254231.jpg",
-   "alt": { "fr": "Mur végétal agrémenté d'un néon personnalisé", "en": "Green wall with a personalised neon sign" }
+   "alt": {
+    "fr": "Mur végétal agrémenté d'un néon personnalisé",
+    "en": "Green wall with a personalised neon sign"
+   }
   },
   "presta-mur-vegetal-escalier": {
    "fichier": "22139555_35861_625191.jpg",
-   "alt": { "fr": "Mur végétal mis en lumière dans un hall", "en": "Illuminated green wall in an entrance hall" }
+   "alt": {
+    "fr": "Mur végétal mis en lumière dans un hall",
+    "en": "Illuminated green wall in an entrance hall"
+   }
   },
   "presta-mur-vegetal-salle": {
    "fichier": "22139555_375476_203102.jpg",
-   "alt": { "fr": "Mur végétal fleuri dans un espace de réception lumineux", "en": "Flowering green wall in a bright reception space" }
+   "alt": {
+    "fr": "Mur végétal fleuri dans un espace de réception lumineux",
+    "en": "Flowering green wall in a bright reception space"
+   }
   },
   "presta-ceremonie-arbre": {
    "fichier": "22139555_516063_89476.jpg",
-   "alt": { "fr": "Cérémonie laïque au pied d'un arbre, voilages et enceinte discrète", "en": "Celebrant-led ceremony beneath a tree, with drapes and a discreet speaker" }
+   "alt": {
+    "fr": "Cérémonie laïque au pied d'un arbre, voilages et enceinte discrète",
+    "en": "Celebrant-led ceremony beneath a tree, with drapes and a discreet speaker"
+   }
   },
   "presta-ceremonie-officiant": {
    "fichier": "22139555_891689_764333.jpg",
-   "alt": { "fr": "Officiant au micro pendant une cérémonie laïque en plein air", "en": "Celebrant speaking into a microphone at an outdoor ceremony" }
+   "alt": {
+    "fr": "Officiant au micro pendant une cérémonie laïque en plein air",
+    "en": "Celebrant speaking into a microphone at an outdoor ceremony"
+   }
   },
   "presta-ceremonie-champ": {
    "fichier": "780786_121006_681359.jpg",
-   "alt": { "fr": "Cérémonie laïque dans un pré, au micro devant les invités", "en": "Celebrant-led ceremony in a meadow, with a microphone, in front of the guests" }
+   "alt": {
+    "fr": "Cérémonie laïque dans un pré, au micro devant les invités",
+    "en": "Celebrant-led ceremony in a meadow, with a microphone, in front of the guests"
+   }
   },
   "presta-ceremonie-enceinte": {
    "fichier": "22139555_727727_834756.jpg",
-   "alt": { "fr": "Enceinte et console installées pour une cérémonie en extérieur", "en": "Speaker and mixing desk set up for an outdoor ceremony" }
+   "alt": {
+    "fr": "Enceinte et console installées pour une cérémonie en extérieur",
+    "en": "Speaker and mixing desk set up for an outdoor ceremony"
+   }
   },
   "presta-enceinte": {
    "fichier": "22139555_204235_925305.jpg",
-   "alt": { "fr": "Gros plan sur le haut-parleur d'une enceinte professionnelle", "en": "Close-up of a professional loudspeaker" }
+   "alt": {
+    "fr": "Gros plan sur le haut-parleur d'une enceinte professionnelle",
+    "en": "Close-up of a professional loudspeaker"
+   }
   },
   "presta-sono-salle": {
    "fichier": "22139555_782625_105154.jpg",
-   "alt": { "fr": "Enceinte et contrôleur DJ installés dans une salle annexe", "en": "Speaker and DJ controller set up in a side room" }
+   "alt": {
+    "fr": "Enceinte et contrôleur DJ installés dans une salle annexe",
+    "en": "Speaker and DJ controller set up in a side room"
+   }
   },
   "presta-sono-jardin": {
    "fichier": "22139555_930219_247939.jpg",
-   "alt": { "fr": "Sonorisation installée dans un jardin pour le cocktail", "en": "Sound system set up in a garden for drinks" }
+   "alt": {
+    "fr": "Sonorisation installée dans un jardin pour le cocktail",
+    "en": "Sound system set up in a garden for drinks"
+   }
   },
   "presta-sono-diner": {
    "fichier": "22139555_71321_549170.jpg",
-   "alt": { "fr": "Enceinte sur pied au bord d'une salle de dîner", "en": "Speaker on a stand at the edge of a dining room" }
+   "alt": {
+    "fr": "Enceinte sur pied au bord d'une salle de dîner",
+    "en": "Speaker on a stand at the edge of a dining room"
+   }
   },
   "presta-chapiteau-nuit": {
    "fichier": "780786_86838_843122.jpg",
-   "alt": { "fr": "Chapiteau éclairé de nuit, invités attablés pour le dîner", "en": "Marquee lit up at night, guests seated for dinner" }
+   "alt": {
+    "fr": "Chapiteau éclairé de nuit, invités attablés pour le dîner",
+    "en": "Marquee lit up at night, guests seated for dinner"
+   }
   },
   "presta-chateau-mapping": {
    "fichier": "780786_155140_255447.jpg",
-   "alt": { "fr": "Façade de château illuminée de motifs lumineux bleus", "en": "Château façade lit with blue light patterns" }
-  },
-  "presta-mapping-facade": {
-   "fichier": "780786_852635_925766.jpg",
-   "alt": { "fr": "Façade de château mise en lumière de motifs rouges et blancs", "en": "Château façade lit with red and white patterns" }
+   "alt": {
+    "fr": "Façade de château illuminée de motifs lumineux bleus",
+    "en": "Château façade lit with blue light patterns"
+   }
   },
   "presta-gala-salle": {
    "fichier": "22139555_338230_982045.jpg",
-   "alt": { "fr": "Dîner de gala dans une salle historique éclairée en rose et violet", "en": "Gala dinner in a historic hall lit in pink and purple" }
+   "alt": {
+    "fr": "Dîner de gala dans une salle historique éclairée en rose et violet",
+    "en": "Gala dinner in a historic hall lit in pink and purple"
+   }
   },
   "presta-dj-scene": {
    "fichier": "780786_96912_672867.jpg",
-   "alt": { "fr": "DJ aux platines sous les projecteurs d'une scène", "en": "DJ at the decks under stage lights" }
+   "alt": {
+    "fr": "DJ aux platines sous les projecteurs d'une scène",
+    "en": "DJ at the decks under stage lights"
+   }
   },
   "presta-seminaire": {
    "fichier": "22139555_205094_937059.jpg",
-   "alt": { "fr": "Salle préparée pour un séminaire, scène et écran", "en": "Room set up for a seminar, with stage and screen" }
+   "alt": {
+    "fr": "Salle préparée pour un séminaire, scène et écran",
+    "en": "Room set up for a seminar, with stage and screen"
+   }
   },
   "presta-gala-bleu": {
    "fichier": "22139555_456050_97022.jpg",
-   "alt": { "fr": "Salle de gala illuminée en bleu et or, écran géant", "en": "Gala hall lit in blue and gold, with a giant screen" }
+   "alt": {
+    "fr": "Salle de gala illuminée en bleu et or, écran géant",
+    "en": "Gala hall lit in blue and gold, with a giant screen"
+   }
   },
   "presta-lancement": {
    "fichier": "22139555_272460_964374.jpg",
-   "alt": { "fr": "Lancement de produit : voitures exposées sous un éclairage bleu", "en": "Product launch: cars on display under blue lighting" }
+   "alt": {
+    "fr": "Lancement de produit : voitures exposées sous un éclairage bleu",
+    "en": "Product launch: cars on display under blue lighting"
+   }
   },
   "presta-concert-foule": {
    "fichier": "22139555_799607_307886.jpg",
-   "alt": { "fr": "Foule en soirée devant une scène équipée de lumières", "en": "Party crowd in front of a lit stage" }
+   "alt": {
+    "fr": "Foule en soirée devant une scène équipée de lumières",
+    "en": "Party crowd in front of a lit stage"
+   }
   },
   "presta-soiree-privee": {
    "fichier": "22139555_573867_115765.jpg",
-   "alt": { "fr": "Soirée privée : invités qui dansent autour du DJ", "en": "Private party: guests dancing around the DJ" }
+   "alt": {
+    "fr": "Soirée privée : invités qui dansent autour du DJ",
+    "en": "Private party: guests dancing around the DJ"
+   }
   },
   "presta-mange-debout": {
    "fichier": "22139555_81605_52743.jpg",
-   "alt": { "fr": "Mange-debout lumineux dans un espace de réception", "en": "Illuminated high tables in a reception space" }
+   "alt": {
+    "fr": "Mange-debout lumineux dans un espace de réception",
+    "en": "Illuminated high tables in a reception space"
+   }
   }
  }
 }
