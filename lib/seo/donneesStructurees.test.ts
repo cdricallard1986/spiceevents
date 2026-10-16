@@ -8,6 +8,9 @@ describe("données structurées", () => {
     expect(JSON.stringify(e.areaServed)).toContain("Île-de-France");
     expect(e.award).toHaveLength(3);
     expect(e).not.toHaveProperty("aggregateRating");
+    expect(e.legalName).toBe("MX ÉVÉNEMENT");
+    expect(e.address).toMatchObject({ postalCode: "77144", addressLocality: "Chalifert", addressCountry: "FR" });
+    expect(e.taxID).toBe("530672666");
   });
 
   it("produisent une FAQ et un fil d'Ariane conformes", () => {

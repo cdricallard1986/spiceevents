@@ -16,6 +16,10 @@ export type PageLegale = {
 const MAIL = `[${SITE.email}](mailto:${SITE.email})`;
 const TEL = `[${SITE.telephoneAffiche}](tel:${SITE.telephone})`;
 const VERCEL = "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723";
+const S = SITE.societe;
+const ADRESSE = `${S.adresse.ligne1}, ${S.adresse.rue}, ${S.adresse.codePostal} ${S.adresse.ville}`;
+const CAPITAL_FR = S.capital ? `au capital de ${S.capital}` : "[À COMPLÉTER : capital social]";
+const CAPITAL_EN = S.capital ? `with a share capital of ${S.capital}` : "[À COMPLÉTER : capital social]";
 
 export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
   fr: {
@@ -24,15 +28,19 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
       description: "Mentions légales du site spiceevents.fr : éditeur, directeur de la publication, hébergeur et propriété intellectuelle.",
     },
     hero: { surtitre: "Informations légales", titre: "Mentions *légales*" },
-    miseAJour: "Dernière mise à jour : 15 octobre 2026",
+    miseAJour: "Dernière mise à jour : 16 octobre 2026",
     blocs: [
       {
         titre: "Éditeur du site",
-        paragraphes: [`Le site [spiceevents.fr](${SITE.url}) est édité par **${SITE.nom}**.`],
+        paragraphes: [
+          `Le site [spiceevents.fr](${SITE.url}) est édité par **${S.raisonSociale}**, qui exerce sous le nom commercial **${SITE.nom}**.`,
+        ],
         liste: [
-          "Forme juridique : [À COMPLÉTER : forme juridique et capital social]",
-          "Siège social : [À COMPLÉTER : adresse du siège]",
-          "SIRET : [À COMPLÉTER : numéro SIRET]",
+          `Forme juridique : société par actions simplifiée (${S.forme}) ${CAPITAL_FR}`,
+          `Siège social : ${ADRESSE}`,
+          `SIREN : ${S.siren} — SIRET : ${S.siret}`,
+          `TVA intracommunautaire : ${S.tva}`,
+          `Code APE / NAF : ${S.ape}`,
           `Email : ${MAIL}`,
           `Téléphone : ${TEL}`,
         ],
@@ -48,7 +56,7 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
       {
         titre: "Propriété intellectuelle",
         paragraphes: [
-          `Les textes, photographies, vidéos, logos et éléments graphiques de ce site sont la propriété de ${SITE.nom} ou de leurs auteurs respectifs. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.`,
+          `Les textes, photographies, vidéos, logos et éléments graphiques de ce site sont la propriété de ${S.raisonSociale} (${SITE.nom}) ou de leurs auteurs respectifs. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.`,
         ],
       },
       {
@@ -71,15 +79,19 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
       description: "Legal notice for spiceevents.fr: publisher, publication director, hosting provider and intellectual property.",
     },
     hero: { surtitre: "Legal information", titre: "Legal *notice*" },
-    miseAJour: "Last updated: 15 October 2026",
+    miseAJour: "Last updated: 16 October 2026",
     blocs: [
       {
         titre: "Publisher",
-        paragraphes: [`The website [spiceevents.fr](${SITE.url}) is published by **${SITE.nom}**.`],
+        paragraphes: [
+          `The website [spiceevents.fr](${SITE.url}) is published by **${S.raisonSociale}**, trading as **${SITE.nom}**.`,
+        ],
         liste: [
-          "Legal form: [À COMPLÉTER : forme juridique et capital social]",
-          "Registered office: [À COMPLÉTER : adresse du siège]",
-          "SIRET number: [À COMPLÉTER : numéro SIRET]",
+          `Legal form: French simplified joint-stock company (${S.forme}) ${CAPITAL_EN}`,
+          `Registered office: ${ADRESSE}, ${S.adresse.pays}`,
+          `SIREN: ${S.siren} — SIRET: ${S.siret}`,
+          `EU VAT number: ${S.tva}`,
+          `APE / NAF code: ${S.ape}`,
           `Email: ${MAIL}`,
           `Phone: ${TEL}`,
         ],
@@ -95,7 +107,7 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
       {
         titre: "Intellectual property",
         paragraphes: [
-          `The texts, photographs, videos, logos and graphic elements on this website are the property of ${SITE.nom} or of their respective authors. Any full or partial reproduction or reuse without prior written permission is prohibited.`,
+          `The texts, photographs, videos, logos and graphic elements on this website are the property of ${S.raisonSociale} (${SITE.nom}) or of their respective authors. Any full or partial reproduction or reuse without prior written permission is prohibited.`,
         ],
       },
       {
@@ -122,11 +134,11 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         "Comment Spice Events traite les données du formulaire de contact : finalité, base légale, durée de conservation, sous-traitants, vos droits RGPD et mesure d'audience sans cookie.",
     },
     hero: { surtitre: "Vos données", titre: "Politique de *confidentialité*" },
-    miseAJour: "Dernière mise à jour : 15 octobre 2026",
+    miseAJour: "Dernière mise à jour : 16 octobre 2026",
     blocs: [
       {
         titre: "Responsable du traitement",
-        paragraphes: [`${SITE.nom}, représenté par ${SITE.fondateur} — ${MAIL}.`],
+        paragraphes: [`${S.raisonSociale} (nom commercial ${SITE.nom}), ${ADRESSE}, représentée par ${SITE.fondateur} — ${MAIL}.`],
       },
       {
         titre: "Données collectées",
@@ -198,11 +210,11 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         "How Spice Events handles contact form data: purpose, legal basis, retention period, processors, your GDPR rights and cookie-free analytics.",
     },
     hero: { surtitre: "Your data", titre: "Privacy *policy*" },
-    miseAJour: "Last updated: 15 October 2026",
+    miseAJour: "Last updated: 16 October 2026",
     blocs: [
       {
         titre: "Data controller",
-        paragraphes: [`${SITE.nom}, represented by ${SITE.fondateur} — ${MAIL}.`],
+        paragraphes: [`${S.raisonSociale} (trading as ${SITE.nom}), ${ADRESSE}, ${S.adresse.pays}, represented by ${SITE.fondateur} — ${MAIL}.`],
       },
       {
         titre: "Data we collect",

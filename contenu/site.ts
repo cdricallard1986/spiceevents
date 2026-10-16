@@ -14,6 +14,24 @@ export const SITE = {
     mariagesNet: "https://www.mariages.net/shared/rate/127122",
   },
   partenaireTechnique: { nom: "MX Événement", url: "https://mxevenement.com" },
+  /** Spice Events est un nom commercial de la société MX ÉVÉNEMENT (informations fournies par Cédric). */
+  societe: {
+    raisonSociale: "MX ÉVÉNEMENT",
+    forme: "SAS",
+    /** Inconnu à ce jour : à reprendre sur le Kbis avant la mise en ligne. */
+    capital: null as string | null,
+    adresse: {
+      ligne1: "ZAC du Clos Saint-Éloi, bâtiment C1",
+      rue: "1 rue de la Persévérance",
+      codePostal: "77144",
+      ville: "Chalifert",
+      pays: "France",
+    },
+    siren: "530 672 666",
+    siret: "530 672 666 00043",
+    tva: "FR78530672666",
+    ape: "9002Z",
+  },
   /** Distinctions réelles (badges Mariages.net présents sur l'ancien site). */
   weddingAwards: [2022, 2024, 2025],
   /** Chiffres tirés des textes de l'ancien site (biographie de Cédric). */
