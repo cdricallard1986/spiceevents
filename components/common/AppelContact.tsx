@@ -16,8 +16,8 @@ export function AppelContact({ titre, texte }: { titre?: string; texte?: string 
           <p className="mt-6 text-lg text-sable">
             {texte ??
               (fr
-                ? "Dites-nous l'essentiel en deux minutes : Cédric vous répond personnellement."
-                : "Tell us the essentials in two minutes: Cédric will get back to you personally.")}
+                ? "Dites-nous l'essentiel en deux minutes : Cédric vous répond personnellement, dans les meilleurs délais."
+                : "Tell us the essentials in two minutes: Cédric will get back to you personally, as soon as possible.")}
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-6">

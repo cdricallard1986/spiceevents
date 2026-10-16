@@ -42,12 +42,12 @@ export const CONTACT: Bilingue<Contact> = {
     seo: {
       titre: "Contact & devis — DJ mariage à Paris et en Île-de-France | Spice Events",
       description:
-        "Demandez un devis pour votre DJ de mariage ou d'événement à Paris et en Île-de-France. Cédric vous répond personnellement. Formulaire ou 06 76 40 37 76.",
+        "Demandez un devis pour votre DJ de mariage ou d'événement à Paris et en Île-de-France. Cédric vous répond personnellement, dans les meilleurs délais. Formulaire ou 06 76 40 37 76.",
     },
     hero: {
       surtitre: "Contact · Devis",
       titre: "Parlons de *votre date*.",
-      intro: "Quelques informations suffisent : Cédric lit chaque demande et vous répond personnellement.",
+      intro: "Quelques informations suffisent : Cédric lit chaque demande et vous répond personnellement, dans les meilleurs délais.",
     },
     formulaire: {
       surtitre: "Demande de devis",
@@ -73,7 +73,7 @@ export const CONTACT: Bilingue<Contact> = {
         fermer: "Fermer",
         succesTitre: "Merci, votre demande est *bien arrivée*.",
         succesTexte:
-          "Cédric vous répond personnellement pour organiser un premier échange, de vive voix ou en visio. Un email de confirmation est en route vers votre boîte.",
+          "Cédric vous répond personnellement dans les meilleurs délais pour organiser un premier échange, de vive voix ou en visio. Un email de confirmation est en route vers votre boîte.",
         succesSpam: "Rien reçu ? Pensez à regarder dans vos courriers indésirables.",
         piege: "Ne pas remplir ce champ",
       },
@@ -92,7 +92,7 @@ export const CONTACT: Bilingue<Contact> = {
     ensuite: {
       titre: "Ce qui se passe *ensuite*",
       etapes: [
-        { titre: "Cédric vous répond", texte: "Il lit votre demande et revient vers vous personnellement." },
+        { titre: "Cédric vous répond", texte: "Il lit votre demande et revient vers vous personnellement, dans les meilleurs délais." },
         {
           titre: "Premier échange",
           texte: "Un rendez-vous ou une visio pour cerner vos envies, votre lieu et vos besoins techniques.",
@@ -144,7 +144,7 @@ export const CONTACT: Bilingue<Contact> = {
         fermer: "Close",
         succesTitre: "Thank you, your request has *arrived safely*.",
         succesTexte:
-          "Cédric will get back to you personally to arrange a first conversation, in person or by video call. A confirmation email is on its way to your inbox.",
+          "Cédric will get back to you personally as soon as possible to arrange a first conversation, in person or by video call. A confirmation email is on its way to your inbox.",
         succesSpam: "Nothing there? Please check your spam folder.",
         piege: "Leave this field empty",
       },
@@ -163,7 +163,7 @@ export const CONTACT: Bilingue<Contact> = {
     ensuite: {
       titre: "What happens *next*",
       etapes: [
-        { titre: "Cédric replies", texte: "He reads your request and gets back to you himself." },
+        { titre: "Cédric replies", texte: "He reads your request and gets back to you himself, as soon as possible." },
         {
           titre: "A first conversation",
           texte: "A meeting or a video call to understand your wishes, your venue and your technical needs.",

@@ -96,6 +96,7 @@ Pas d'authentification sur un site vitrine, donc **sans objet** : rôles/RLS mul
 - Les avis des pages Événementiel et Accompagnement sont **réels** : tous conservés (44 avis).
 - Demandes de contact : **email à Cédric + accusé de réception + enregistrement en base Supabase**.
 - Journal en français seulement ; page recrutement conservée (lien dans le pied de page, FR).
+- Formulaire (16 octobre) : adresse affichée `cedric@spiceevents.fr`, expéditeur des emails `contact@spiceevents.fr`, aucun délai chiffré (« dans les meilleurs délais »), téléphone obligatoire.
 
 ## Questions encore ouvertes
 
