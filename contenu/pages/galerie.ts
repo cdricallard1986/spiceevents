@@ -43,7 +43,6 @@ export const GALERIE: Bilingue<Galerie> = {
 export const PHOTOS_MARIAGES: CleImage[] = [
   "hero-premiere-danse",
   "maison-mariage-ceremonie-arbres",
-  "maison-mariage-mariee-piste",
   "grange-guirlandes",
   "maison-mariage-danse-genou",
   "maison-mariage-chateau-rose",
@@ -76,7 +75,6 @@ export const PHOTOS_EVENEMENTS: CleImage[] = [
   "maison-evenement-cabine-dj",
   "maison-evenement-soiree-lumiere",
   "maison-evenement-seminaire",
-  "maison-evenement-feu-artifice",
   "maison-evenement-concert",
   "maison-evenement-dj-vue-haut",
   "maison-evenement-structure",

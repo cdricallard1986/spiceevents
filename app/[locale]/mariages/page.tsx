@@ -40,9 +40,9 @@ const AVIS_GRILLE = [
 
 const PHOTOS = [
   "presta-maries-enlaces",
-  "presta-mariee-piste",
+  "presta-piste-mains-levees",
   "presta-salle-rouge",
-  "presta-boules-disco",
+  "presta-invites-chapiteau",
   "presta-piste-laser",
 ] as const;
 

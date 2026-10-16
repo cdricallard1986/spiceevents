@@ -2,8 +2,9 @@ import type { ContenuOption } from "./types";
 
 export const PHOTOBOOTH: ContenuOption = {
   image: "presta-invites-chapiteau",
-  galerie: ["presta-photobooth-temoins", "presta-photobooth-mariee", "presta-photobooth-borne", "presta-photobooth-jardin"],
-  avis: { auteurs: "Beth & Liam", depuis: { fr: "Le photobooth", en: "The photo booth was" }, image: "presta-photobooth-mariee" },
+  // Pas encore de photo de la borne Spice Events : la galerie est masquée en attendant.
+  galerie: [],
+  avis: { auteurs: "Beth & Liam", depuis: { fr: "Le photobooth", en: "The photo booth was" }, image: "presta-invites-chapiteau" },
   textes: {
     fr: {
       seo: {

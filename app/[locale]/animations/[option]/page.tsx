@@ -133,13 +133,16 @@ export default async function PageOption({ params }: Props) {
         </Section>
       )}
 
-      <Section
-        surtitre={fr ? "En images" : "In pictures"}
-        titre={fr ? `${option.titre.fr}, *en situation*.` : `${option.titre.en}, *in action*.`}
-        alterne={!t.etapes}
-      >
-        <GrillePhotos cles={c.galerie} />
-      </Section>
+      {/* Galerie seulement avec assez de vraies photos de nos prestations. */}
+      {c.galerie.length >= 2 && (
+        <Section
+          surtitre={fr ? "En images" : "In pictures"}
+          titre={fr ? `${option.titre.fr}, *en situation*.` : `${option.titre.en}, *in action*.`}
+          alterne={!t.etapes}
+        >
+          <GrillePhotos cles={c.galerie} />
+        </Section>
+      )}
 
       {avisOption && c.avis && <GrandAvis citation={avisOption.texte} auteurs={avisOption.auteurs} image={c.avis.image} />}
 

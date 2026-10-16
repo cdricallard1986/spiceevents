@@ -11,9 +11,9 @@ describe("pages d'option", () => {
     expect(Object.keys(CONTENUS_OPTIONS).sort()).toEqual(OPTIONS.map((o) => o.slug.fr).sort());
   });
 
-  it("chaque galerie compte 3 à 6 photos distinctes", () => {
+  it("chaque galerie est vide (masquée) ou compte 2 à 6 photos distinctes", () => {
     for (const [slug, c] of Object.entries(CONTENUS_OPTIONS)) {
-      expect(c.galerie.length, slug).toBeGreaterThanOrEqual(3);
+      expect(c.galerie.length === 0 || c.galerie.length >= 2, slug).toBe(true);
       expect(c.galerie.length, slug).toBeLessThanOrEqual(6);
       expect(new Set(c.galerie).size, slug).toBe(c.galerie.length);
     }

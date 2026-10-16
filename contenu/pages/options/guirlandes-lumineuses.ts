@@ -7,7 +7,6 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
     "presta-guirlandes-grange",
     "presta-guirlandes-diner",
     "presta-guirlandes-voilages",
-    "presta-guirlandes-tables",
   ],
   textes: {
     fr: {

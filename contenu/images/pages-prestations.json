@@ -57,20 +57,6 @@
     "en": "Newlyweds hugging and laughing"
    }
   },
-  "presta-mariee-piste": {
-   "fichier": "22139555_135111_862108.jpg",
-   "alt": {
-    "fr": "La mariée danse les bras levés au milieu des invités",
-    "en": "The bride dancing with her arms raised among the guests"
-   }
-  },
-  "presta-boules-disco": {
-   "fichier": "22139555_853975_486171.jpg",
-   "alt": {
-    "fr": "Invités qui dansent sous des boules à facettes",
-    "en": "Guests dancing under mirror balls"
-   }
-  },
   "presta-salle-rouge": {
    "fichier": "22139555_834355_789404.jpg",
    "alt": {
@@ -83,34 +69,6 @@
    "alt": {
     "fr": "Piste de danse traversée de faisceaux lumineux",
     "en": "Dance floor criss-crossed by light beams"
-   }
-  },
-  "presta-bal-etincelles-salle": {
-   "fichier": "22139555_404419_863991.jpg",
-   "alt": {
-    "fr": "Ouverture de bal dans la fumée lourde, entre deux fontaines d'étincelles froides",
-    "en": "First dance in low fog between two cold-spark fountains"
-   }
-  },
-  "presta-bal-etincelles-pluie": {
-   "fichier": "22139555_406105_588446.jpg",
-   "alt": {
-    "fr": "Mariés qui dansent sous une pluie d'étincelles",
-    "en": "Newlyweds dancing beneath a shower of sparks"
-   }
-  },
-  "presta-bal-etincelles-allee": {
-   "fichier": "22139555_801359_284115.jpg",
-   "alt": {
-    "fr": "Mariés enlacés entre deux rangées d'étincelles froides",
-    "en": "Newlyweds embracing between two rows of cold sparks"
-   }
-  },
-  "presta-bal-etincelles-fumee": {
-   "fichier": "22139555_981411_595592.jpg",
-   "alt": {
-    "fr": "Première danse sur un nuage de fumée lourde, étincelles en arrière-plan",
-    "en": "First dance on a cloud of low fog, with sparks behind"
    }
   },
   "presta-bal-fumee-nb": {
@@ -141,27 +99,6 @@
     "en": "A record on the turntable, ready to be mixed"
    }
   },
-  "presta-livre-or-guestbook": {
-   "fichier": "22139555_102518_710583.jpg",
-   "alt": {
-    "fr": "Téléphone blanc du livre d'or audio et son panneau d'explication",
-    "en": "White audio guestbook telephone with its instruction sign"
-   }
-  },
-  "presta-livre-or-mer": {
-   "fichier": "22139555_224682_398439.jpg",
-   "alt": {
-    "fr": "Téléphone vintage du livre d'or audio posé face à la mer",
-    "en": "Vintage audio guestbook phone set up facing the sea"
-   }
-  },
-  "presta-livre-or-table": {
-   "fichier": "22139555_425078_345578.jpg",
-   "alt": {
-    "fr": "Téléphone à cadran du livre d'or audio sur une table décorée",
-    "en": "Rotary audio guestbook phone on a decorated table"
-   }
-  },
   "presta-livre-or-cadre": {
    "fichier": "22139555_580569_810578.jpg",
    "alt": {
@@ -174,34 +111,6 @@
    "alt": {
     "fr": "Invités en fête sous un chapiteau transparent garni de guirlandes",
     "en": "Guests celebrating under a clear marquee hung with festoon lights"
-   }
-  },
-  "presta-photobooth-temoins": {
-   "fichier": "22139555_483493_211472.jpg",
-   "alt": {
-    "fr": "La mariée et ses témoins posent avec des accessoires devant le photobooth",
-    "en": "The bride and her bridesmaids posing with props at the photobooth"
-   }
-  },
-  "presta-photobooth-mariee": {
-   "fichier": "22139555_97764_439855.jpg",
-   "alt": {
-    "fr": "La mariée et ses amies devant la borne photo",
-    "en": "The bride and her friends in front of the photo booth"
-   }
-  },
-  "presta-photobooth-borne": {
-   "fichier": "22139555_573542_871649.jpg",
-   "alt": {
-    "fr": "Borne photobooth installée en extérieur au coucher du soleil",
-    "en": "Photobooth set up outdoors at sunset"
-   }
-  },
-  "presta-photobooth-jardin": {
-   "fichier": "22139555_468500_536706.jpg",
-   "alt": {
-    "fr": "Borne photobooth dans un jardin, au bord de la piscine",
-    "en": "Photobooth in a garden by the pool"
    }
   },
   "presta-guirlandes-salle": {
@@ -230,13 +139,6 @@
    "alt": {
     "fr": "Guirlandes guinguette et voilages au-dessus d'un dîner aux chandelles",
     "en": "Festoon lights and drapes above a candlelit dinner"
-   }
-  },
-  "presta-guirlandes-tables": {
-   "fichier": "22139555_335517_855913.jpg",
-   "alt": {
-    "fr": "Tables rondes dressées sous des guirlandes lumineuses",
-    "en": "Round tables laid beneath string lights"
    }
   },
   "presta-mur-eau": {
@@ -309,13 +211,6 @@
     "en": "Celebrant-led ceremony in a meadow, with a microphone, in front of the guests"
    }
   },
-  "presta-ceremonie-enceinte": {
-   "fichier": "22139555_727727_834756.jpg",
-   "alt": {
-    "fr": "Enceinte et console installées pour une cérémonie en extérieur",
-    "en": "Speaker and mixing desk set up for an outdoor ceremony"
-   }
-  },
   "presta-enceinte": {
    "fichier": "22139555_204235_925305.jpg",
    "alt": {
@@ -328,13 +223,6 @@
    "alt": {
     "fr": "Enceinte et contrôleur DJ installés dans une salle annexe",
     "en": "Speaker and DJ controller set up in a side room"
-   }
-  },
-  "presta-sono-jardin": {
-   "fichier": "22139555_930219_247939.jpg",
-   "alt": {
-    "fr": "Sonorisation installée dans un jardin pour le cocktail",
-    "en": "Sound system set up in a garden for drinks"
    }
   },
   "presta-sono-diner": {

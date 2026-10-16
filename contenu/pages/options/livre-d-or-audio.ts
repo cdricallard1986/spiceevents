@@ -2,13 +2,7 @@ import type { ContenuOption } from "./types";
 
 export const LIVRE_D_OR_AUDIO: ContenuOption = {
   image: "chateau-cour",
-  galerie: [
-    "telephone-livre-or",
-    "presta-livre-or-guestbook",
-    "presta-livre-or-mer",
-    "presta-livre-or-table",
-    "presta-livre-or-cadre",
-  ],
+  galerie: ["telephone-livre-or", "presta-livre-or-cadre"],
   textes: {
     fr: {
       seo: {

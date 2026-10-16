@@ -2,7 +2,7 @@ import type { ContenuOption } from "./types";
 
 export const SONORISATION_DEPORTEE: ContenuOption = {
   image: "presta-enceinte",
-  galerie: ["presta-sono-jardin", "presta-sono-salle", "presta-sono-diner", "presta-chapiteau-nuit"],
+  galerie: ["presta-sono-salle", "presta-sono-diner", "presta-chapiteau-nuit"],
   avis: { auteurs: "Coralie & Benjamin", image: "chapiteau-diner" },
   textes: {
     fr: {

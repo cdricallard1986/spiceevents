@@ -188,6 +188,18 @@ CORRECTIONS = [
 
 # Mise en forme ponctuelle (expression régulière → remplacement) : intertitre resté
 # dans un paragraphe, renvois « voir l'article » transformés en liens, lien erroné.
+# Photos dont Spice Events n'a pas les droits (Cédric, 16/10/2026) : jamais copiées.
+IMAGES_EXCLUES = {
+    "5439810_59909_3182.jpg",  # salle au bord d'un lac (site tiers)
+    "5439810_707839_283804.jpg",  # chalet, filigrane MonsieurChalets.com
+    "5439810_780284_859043.jpg",  # salle de réception (site tiers)
+    "22139555_396638_436380.jpg",  # concert, © Val d'Europe agglomération / Hélène Petel
+}
+# Couverture de remplacement quand celle d'origine est exclue.
+COUVERTURES_REMPLACEES = {
+    "comment-un-bon-eclairage-fait-paraitre-un-lieu-plus-haut-de-gamme": "22139555_153446_421607.jpg",
+}
+
 MISE_EN_FORME = [
     (r"dispositif technique\. L’approche Spice Events Chez Spice Events,",
      "dispositif technique.\n\n## L’approche Spice Events\n\nChez Spice Events,"),
@@ -699,8 +711,10 @@ def convertir(chemin, slugs, manifeste, alts):
     fichier = trouver_image(manifeste, url=image_partage) or trouver_image(
         manifeste, cle=(entete.get("backgroundImage") or {}).get("storageKey")
     )
+    if fichier in IMAGES_EXCLUES:
+        fichier = COUVERTURES_REMPLACEES.get(slug)
     if not fichier:
-        raise SystemExit(f"{slug} : couverture introuvable ({image_partage})")
+        raise SystemExit(f"{slug} : couverture introuvable ou exclue ({image_partage})")
     couverture, _, _ = copier_image(fichier, slug, "couverture")
     couverture_alt = alt_de(fichier, alts, slug)
 
@@ -718,6 +732,8 @@ def convertir(chemin, slugs, manifeste, alts):
             fichier = trouver_image(manifeste, cle=comp.get("storageKey"), url=comp.get("url"))
             if not fichier:
                 RAPPORT["images_manquantes"].append((slug, comp.get("storageKey") or comp.get("url")))
+                continue
+            if fichier in IMAGES_EXCLUES:
                 continue
             n += 1
             src, largeur, hauteur = copier_image(fichier, slug, str(n))

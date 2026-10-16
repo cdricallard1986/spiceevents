@@ -49,7 +49,7 @@ export const OPTIONS: Option[] = [
       fr: "400 tirages, cadre personnalisé, photos envoyées dès le lundi.",
       en: "400 prints, a custom frame, all your photos sent the Monday after.",
     },
-    image: "presta-photobooth-temoins",
+    image: "presta-invites-chapiteau",
   },
   {
     slug: { fr: "guirlandes-lumineuses", en: "string-lights" },
