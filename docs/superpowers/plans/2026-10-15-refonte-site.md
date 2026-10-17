@@ -100,9 +100,10 @@ Pas d'authentification sur un site vitrine, donc **sans objet** : rôles/RLS mul
 - Contenu (16 octobre) : la formulation « Cédric mixe lui-même ou vous présente un DJ de l'équipe » est validée. Les limiteurs sonores n'empêchent pas d'intervenir, mais Cédric déconseille ces lieux. Le mapping vidéo, les lettres géantes, le feu d'artifice de jour, le magicien et la fanfare ne sont plus proposés : on renvoie vers des partenaires de confiance. Les formules Or, Platine et Diamant sont remplacées par une formule unique avec une option premium. Le recrutement de DJ généralistes est toujours ouvert.
 - Photos (16 octobre) : retrait de 22 photos dont Spice Events n'a pas les droits ou qui ne montrent pas ses prestations — 4 photos de tiers dans le journal (Val d'Europe / Hélène Petel, MonsieurChalets.com, deux lieux), la photo de Daniel Poisat (en attente de son accord, avec crédit), le feu d'artifice, et 15 images de type Pinterest dans les pages d'animations. La galerie Photobooth est masquée en attendant de vraies photos de la borne.
 - Mentions (17 octobre) : capital de MX ÉVÉNEMENT 21 600 €, Cédric Allard directeur de la publication, « partenaire » conservé pour MX Événement. Borne Pikip Solar retirée du parc : paragraphe supprimé du journal.
+- Mise en place (17 octobre) : alertes et correctifs Dependabot activés dans GitHub. Branches `dev` (aperçu Vercel) et `main` (production) créées. Projet Supabase `spiceevents` créé par Cédric (Francfort, `eu-central-1`) ; migration `0001_demandes_contact` appliquée : RLS activée sans policy, droits réservés à `service_role`. Le seul avis de sécurité Supabase (« RLS Enabled No Policy », niveau INFO) est voulu.
 
 ## Questions encore ouvertes
 
-- Mentions légales : forme juridique, adresse du siège, SIRET.
 - Note et nombre d'avis sur Mariages.net et Google (affichage éventuel).
-- Création du projet Supabase et du compte Resend (domaine d'envoi `spiceevents.fr`).
+- Compte Resend et vérification du domaine d'envoi `spiceevents.fr` (Cédric).
+- Projet Vercel : import du dépôt, variables d'environnement, Web Analytics (Cédric).
