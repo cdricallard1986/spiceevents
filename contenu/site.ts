@@ -18,8 +18,7 @@ export const SITE = {
   societe: {
     raisonSociale: "MX ÉVÉNEMENT",
     forme: "SAS",
-    /** Inconnu à ce jour : à reprendre sur le Kbis avant la mise en ligne. */
-    capital: null as string | null,
+    capital: "21 600 €" as string | null,
     adresse: {
       ligne1: "ZAC du Clos Saint-Éloi, bâtiment C1",
       rue: "1 rue de la Persévérance",

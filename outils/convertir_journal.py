@@ -214,6 +214,8 @@ MISE_EN_FORME = [
      r"\1"),
     (r" \[\(pour les couples prenant les formules Or, Platine ou Diamant\)\]\(/mariages\)", ""),
     (r"\[lettres lumineuses\]\(/animations\)", "lettres lumineuses"),
+    # La borne solaire Pikip ne fait plus partie du parc depuis 2025 : paragraphe retiré.
+    (r"Pour les soucieux de l’environnement comme nous, il y a la Pikip Solar Speakers[^\n]*\n\n", ""),
     (r"la sonorisation du dîner ainsi que de la cérémonie et un mapping vidéo\.",
      "la sonorisation du dîner ainsi que de la cérémonie et une mise en lumière du lieu."),
     (r"optez pour le \[mapping\]\(/a-propos\)\. Cette projection 3D, s’adapte aux dimensions de votre lieu pour lui donner vie et émerveiller vos invités\.",
