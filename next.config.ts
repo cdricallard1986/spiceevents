@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
-import { entetesSecurite } from "./lib/securite/entetes";
+import { reglesEntetes } from "./lib/securite/entetes";
 import { redirections } from "./lib/seo/redirections";
 import paquet from "./package.json";
 
@@ -22,7 +22,8 @@ const nextConfig: NextConfig = {
     qualities: [70, 80],
   },
   async headers() {
-    return [{ source: "/:path*", headers: entetesSecurite(production) }];
+    // Règle générale, puis les deux exceptions du rapport des tests (voir lib/securite/entetes.ts).
+    return reglesEntetes(production);
   },
   async redirects() {
     return redirections();

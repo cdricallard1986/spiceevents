@@ -56,14 +56,14 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Tests",
     description: "Tests automatiques et audit des droits en base.",
     icone: "tests",
-    disponible: false,
+    disponible: true,
   },
   {
     href: "/admin/emails",
     libelle: "Emails",
     description: "Envoi réel des emails du formulaire à une adresse de test.",
     icone: "emails",
-    disponible: false,
+    disponible: true,
   },
 ];
 

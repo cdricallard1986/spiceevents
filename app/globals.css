@@ -11,6 +11,8 @@
   --color-or: #e2bd72;
   --color-or-clair: #f3d9a4;
   --color-erreur: #f08a7e;
+  /* Vert doux des vérifications réussies (back office : tests, audit des droits). */
+  --color-succes: #9cd3a8;
 
   --font-display: var(--police-display), "Bodoni Moda", Georgia, serif;
   --font-sans: var(--police-texte), "Manrope", system-ui, sans-serif;

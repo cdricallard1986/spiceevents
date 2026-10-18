@@ -1,11 +1,11 @@
 "use server";
 
 import { headers } from "next/headers";
-import { Resend } from "resend";
 import { clientAdmin } from "@/lib/supabase/admin";
 import { ipDepuisEntetes } from "@/lib/contact/limite";
+import { envoi } from "@/lib/contact/resend";
 import { lireFormulaire } from "@/lib/contact/schema";
-import { traiterDemande, type Base, type EtatFormulaire, type Envoi, type Journal } from "@/lib/contact/traitement";
+import { traiterDemande, type Base, type EtatFormulaire, type Journal } from "@/lib/contact/traitement";
 
 // ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public.
 // Il n'exporte donc QUE l'action du formulaire ; toute la logique (validation,
@@ -35,23 +35,6 @@ function base(): Base | null {
     async marquer(id, etat) {
       const { error } = await supabase.from(TABLE).update(etat).eq("id", id);
       if (error) throw error;
-    },
-  };
-}
-
-/** Envoi par Resend (null si la clé d'API manque). */
-function envoi(): Envoi | null {
-  const cle = process.env.resend_api_key;
-  if (!cle) return null;
-  const resend = new Resend(cle);
-  return {
-    config: {
-      destinataire: process.env.contact_destinataire || "cedric@spiceevents.fr",
-      expediteur: process.env.contact_expediteur || "Spice Events <contact@spiceevents.fr>",
-    },
-    async envoyer(email) {
-      const { error } = await resend.emails.send(email);
-      if (error) throw new Error(`${error.name} : ${error.message}`);
     },
   };
 }
