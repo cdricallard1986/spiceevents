@@ -35,9 +35,10 @@ function client(
       inserts.push(table);
       return reponses[`insert:${table}`] ?? parDefaut;
     },
+    // `update:table(colonnes)` pour une réponse propre à certaines colonnes, sinon `update:table`.
     update: async (table, valeurs, id) => {
       ecritures.push({ operation: "update", table, id, valeurs });
-      return reponses[`update:${table}`] ?? parDefaut;
+      return reponses[`update:${table}(${Object.keys(valeurs).sort().join(",")})`] ?? reponses[`update:${table}`] ?? parDefaut;
     },
     delete: async (table, id) => {
       ecritures.push({ operation: "delete", table, id });
@@ -47,7 +48,7 @@ function client(
   };
 }
 
-/** Une base saine, telle que les migrations 0001 à 0004 la décrivent. */
+/** Une base saine, telle que les migrations 0001 à 0005 la décrivent. */
 function baseSaine() {
   return {
     visiteur: client({
@@ -59,8 +60,10 @@ function baseSaine() {
     admin: client({
       "rpc:est_admin": { erreur: null, valeur: true },
       "select:audit_log": { erreur: null, lignes: 3 },
-      "select:demandes_contact": VIDE,
+      "select:demandes_contact": { erreur: null, lignes: 12 },
       "select:avis": { erreur: null, lignes: 45 },
+      // Droit `update` sur statut et note_interne seulement (la ligne visée n'existe pas : 0 ligne modifiée).
+      "update:demandes_contact(note_interne,statut)": { erreur: null },
     }),
   };
 }
@@ -127,7 +130,7 @@ describe("lancerAudit", () => {
     await lancerAudit({ clients, nettoyer: null });
     expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "demandes_contact"]);
     expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis"]);
-    expect(clients.admin.inserts).toEqual([]);
+    expect(clients.admin.inserts).toEqual(["demandes_contact"]);
   });
 
   it("un insert qui réussit (faille) est signalé en rouge et sa ligne effacée aussitôt", async () => {
@@ -193,10 +196,16 @@ describe("lancerAudit — avis", () => {
     const clients = baseSaine();
     await lancerAudit({ clients, nettoyer: null });
     expect(clients.visiteur.ecritures).toEqual([
+      { operation: "update", table: "demandes_contact", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.demandes_contact },
+      { operation: "delete", table: "demandes_contact", id: ID_INEXISTANT },
       { operation: "update", table: "avis", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.avis },
       { operation: "delete", table: "avis", id: ID_INEXISTANT },
     ]);
-    expect(clients.admin.ecritures).toEqual([]);
+    expect(clients.admin.ecritures).toEqual([
+      { operation: "update", table: "demandes_contact", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.demandes_contact },
+      { operation: "update", table: "demandes_contact", id: ID_INEXISTANT, valeurs: { email: "audit-rls@example.invalid" } },
+      { operation: "delete", table: "demandes_contact", id: ID_INEXISTANT },
+    ]);
   });
 
   it("une modification ou une suppression permise au visiteur est une faille", async () => {
@@ -229,6 +238,47 @@ describe("lancerAudit — avis", () => {
   });
 });
 
+describe("lancerAudit — demandes de contact", () => {
+  const trouver = (audit: Awaited<ReturnType<typeof lancerAudit>>, role: string, operation: string, refuse?: boolean) =>
+    audit.resultats.find(
+      (x) => x.verification.role === role && x.verification.cible === "demandes_contact" && x.verification.operation === operation && (refuse === undefined || (x.verification.attendu === "refusé") === refuse),
+    )!;
+
+  it("l'admin lit les demandes ; s'il ne les voit plus, c'est un échec (la page Demandes serait vide), pas une faille", async () => {
+    const clients = baseSaine();
+    clients.admin = client({ ...{ "rpc:est_admin": { erreur: null, valeur: true } }, "select:demandes_contact": REFUS });
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(audit, "admin", "select")).toMatchObject({ ok: false, faille: false, constat: "Refusé alors qu'il devrait être permis : droits refusés (42501)" });
+  });
+
+  it("l'admin modifie statut et note, mais pas l'email : un droit par colonne trop large est une faille", async () => {
+    const saine = await lancerAudit({ clients: baseSaine(), nettoyer: null });
+    expect(trouver(saine, "admin", "update", false)).toMatchObject({ ok: true, constat: "Autorisé : modification permise" });
+    expect(trouver(saine, "admin", "update", true)).toMatchObject({ ok: true, constat: "Bloqué : droits refusés (42501)" });
+
+    const clients = baseSaine();
+    clients.admin = { ...clients.admin, update: async () => ({ erreur: null }) };
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(audit, "admin", "update", true)).toMatchObject({ ok: false, faille: true, constat: "FAILLE — accès permis : modification permise" });
+  });
+
+  it("une demande créée par la session admin (faille) est effacée aussitôt ; une suppression permise est une faille", async () => {
+    const clients = baseSaine();
+    clients.admin = { ...clients.admin, insert: async () => ({ erreur: null, id: "dc1" }), delete: async () => ({ erreur: null }) };
+    const nettoyer = vi.fn(async () => undefined);
+    const audit = await lancerAudit({ clients, nettoyer });
+    expect(trouver(audit, "admin", "insert")).toMatchObject({ ok: false, faille: true });
+    expect(trouver(audit, "admin", "insert").constat).toContain("ligne supprimée aussitôt");
+    expect(nettoyer).toHaveBeenCalledWith("demandes_contact", "dc1");
+    expect(trouver(audit, "admin", "delete")).toMatchObject({ ok: false, faille: true, constat: "FAILLE — accès permis : suppression permise" });
+  });
+
+  it("le visiteur reste refusé partout sur les demandes", () => {
+    const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur" && x.cible === "demandes_contact");
+    expect(visiteur.map((x) => `${x.operation}:${x.attendu}`)).toEqual(["select:vide", "insert:refusé", "update:refusé", "delete:refusé"]);
+  });
+});
+
 describe("liste des vérifications", () => {
   it("couvre les tables privées et les fonctions exposées, pour le visiteur", () => {
     const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur").map((x) => `${x.operation}:${x.cible}:${x.attendu}`);
@@ -239,6 +289,8 @@ describe("liste des vérifications", () => {
         "select:tentatives_connexion:vide",
         "select:audit_log:vide",
         "insert:demandes_contact:refusé",
+        "update:demandes_contact:refusé",
+        "delete:demandes_contact:refusé",
         "rpc:est_admin:refusé",
         "rpc:audit_trigger:refusé",
         "insert:avis:refusé",
@@ -258,7 +310,16 @@ describe("liste des vérifications", () => {
 
   it("vérifie les droits de la session admin", () => {
     const admin = VERIFICATIONS.filter((x) => x.role === "admin").map((x) => `${x.operation}:${x.cible}:${x.attendu}`);
-    expect(admin).toEqual(["rpc:est_admin:autorisé", "select:audit_log:autorisé", "select:avis:autorisé", "select:demandes_contact:vide"]);
+    expect(admin).toEqual([
+      "rpc:est_admin:autorisé",
+      "select:audit_log:autorisé",
+      "select:avis:autorisé",
+      "select:demandes_contact:autorisé",
+      "update:demandes_contact:autorisé",
+      "update:demandes_contact:refusé",
+      "insert:demandes_contact:refusé",
+      "delete:demandes_contact:refusé",
+    ]);
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "avis")!.filtre).toBeUndefined();
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "est_admin")!.valeur).toBe(true);
   });
@@ -273,7 +334,7 @@ describe("liste des vérifications", () => {
   });
 
   it("aucune vérification en double", () => {
-    const cles = VERIFICATIONS.map((x) => `${x.role}:${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}`);
+    const cles = VERIFICATIONS.map((x) => `${x.role}:${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}:${JSON.stringify(x.valeurs ?? {})}`);
     expect(new Set(cles).size).toBe(cles.length);
   });
 });

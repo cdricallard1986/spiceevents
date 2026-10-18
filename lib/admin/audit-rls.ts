@@ -9,7 +9,8 @@
  *
  * Pour compléter (articles, photos…) : ajouter une ligne à `VERIFICATIONS`,
  * pour un `insert`, une ligne fictive dans `LIGNES_FICTIVES`, et pour un
- * `update`, des valeurs dans `MODIFICATIONS_FICTIVES`. `update` et `delete`
+ * `update`, des valeurs dans `MODIFICATIONS_FICTIVES` (ou `valeurs` sur la
+ * vérification, pour tester une colonne précise). `update` et `delete`
  * visent une ligne qui n'existe pas (`ID_INEXISTANT`) : même en cas de faille,
  * aucune vraie donnée n'est touchée — seul le droit est mis à l'épreuve.
  */
@@ -36,6 +37,8 @@ export type Verification = {
   attendu: Attendu;
   /** Pour `autorisé` : valeur que doit renvoyer la fonction (rpc). */
   valeur?: unknown;
+  /** update : colonnes à modifier, à la place de `MODIFICATIONS_FICTIVES[cible]` (droit par colonne). */
+  valeurs?: Record<string, unknown>;
   /** Explication affichée sous la ligne. */
   note?: string;
 };
@@ -54,6 +57,8 @@ export const VERIFICATIONS: readonly Verification[] = [
     attendu: "refusé",
     note: "Seul le serveur du site (clé service_role) écrit les demandes.",
   },
+  { libelle: "Modifier une demande de contact par l'API", role: "visiteur", cible: "demandes_contact", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une demande de contact par l'API", role: "visiteur", cible: "demandes_contact", operation: "delete", attendu: "refusé" },
   {
     libelle: "Lire les avis publiés",
     role: "visiteur",
@@ -95,8 +100,41 @@ export const VERIFICATIONS: readonly Verification[] = [
     role: "admin",
     cible: "demandes_contact",
     operation: "select",
-    attendu: "vide",
-    note: "Réservé à la clé service_role pour l'instant ; l'étape 3 (Demandes) ouvrira la lecture admin et changera ce test.",
+    attendu: "autorisé",
+    note: "Le back office (page Demandes) lit toutes les demandes reçues.",
+  },
+  {
+    libelle: "Modifier le statut et la note d'une demande",
+    role: "admin",
+    cible: "demandes_contact",
+    operation: "update",
+    attendu: "autorisé",
+    note: "Seules ces deux colonnes sont ouvertes à la session admin (suivi commercial).",
+  },
+  {
+    libelle: "Modifier l'email d'une demande",
+    role: "admin",
+    cible: "demandes_contact",
+    operation: "update",
+    valeurs: { email: "audit-rls@example.invalid" },
+    attendu: "refusé",
+    note: "Ce que le client a saisi ne se modifie pas : le droit `update` ne porte que sur statut et note_interne.",
+  },
+  {
+    libelle: "Créer une demande de contact par l'API",
+    role: "admin",
+    cible: "demandes_contact",
+    operation: "insert",
+    attendu: "refusé",
+    note: "Même connecté, seul le formulaire du site (clé service_role) crée des demandes.",
+  },
+  {
+    libelle: "Supprimer une demande de contact",
+    role: "admin",
+    cible: "demandes_contact",
+    operation: "delete",
+    attendu: "refusé",
+    note: "Pas de suppression depuis le back office : la purge RGPD sera une tâche planifiée.",
   },
 ];
 
@@ -122,6 +160,7 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
 /** Valeurs des tests d'`update` (valides, pour qu'une faille se voie). */
 export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
   avis: { auteurs: "AUDIT RLS — MODIFICATION FICTIVE" },
+  demandes_contact: { statut: "perdue", note_interne: "AUDIT RLS — MODIFICATION FICTIVE" },
 };
 
 /** Identifiant visé par les tests d'`update` et de `delete` : aucune ligne ne le porte. */
@@ -246,7 +285,7 @@ async function executer(client: ClientAudit, v: Verification): Promise<ReponseAp
     if (v.operation === "rpc") return await client.rpc(v.cible);
     if (v.operation === "delete") return await client.delete(v.cible, ID_INEXISTANT);
     if (v.operation === "update") {
-      const valeurs = MODIFICATIONS_FICTIVES[v.cible];
+      const valeurs = v.valeurs ?? MODIFICATIONS_FICTIVES[v.cible];
       if (!valeurs) return { erreur: { message: `Aucune modification fictive définie pour « ${v.cible} » (MODIFICATIONS_FICTIVES).` } };
       return await client.update(v.cible, valeurs, ID_INEXISTANT);
     }

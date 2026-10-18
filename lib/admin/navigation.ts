@@ -49,7 +49,7 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Demandes",
     description: "Demandes reçues par le formulaire de contact, statut et notes.",
     icone: "demandes",
-    disponible: false,
+    disponible: true,
   },
   {
     href: "/admin/tests",
