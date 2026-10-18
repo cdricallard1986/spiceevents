@@ -20,6 +20,8 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [70, 80],
+    // Photos des galeries envoyées depuis le back office : bucket public `medias` du projet Supabase, et lui seul.
+    remotePatterns: [{ protocol: "https", hostname: "tyghpfqyppiughrknuit.supabase.co", pathname: "/storage/v1/object/public/medias/**" }],
   },
   async headers() {
     // Règle générale, puis les deux exceptions du rapport des tests (voir lib/securite/entetes.ts).

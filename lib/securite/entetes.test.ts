@@ -48,6 +48,12 @@ describe("entetesSecurite", () => {
     expect(politiqueContenu(true)).toContain(`connect-src 'self' ${originesSupabase().join(" ")}`);
   });
 
+  it("autorise les images du projet Supabase (photos du bucket medias), en https seulement", () => {
+    const img = politiqueContenu(true, "https://abcdef.supabase.co").split("; ").find((d) => d.startsWith("img-src"));
+    expect(img).toBe("img-src 'self' data: blob: https://abcdef.supabase.co");
+    expect(politiqueContenu(true)).toContain(`img-src 'self' data: blob: ${originesSupabase()[0]}`);
+  });
+
   it("réduit l'adresse du projet à son origine", () => {
     expect(originesSupabase("https://abcdef.supabase.co/")).toEqual(["https://abcdef.supabase.co", "wss://abcdef.supabase.co"]);
   });

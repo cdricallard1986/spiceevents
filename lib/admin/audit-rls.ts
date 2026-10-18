@@ -13,10 +13,13 @@
  * vérification, pour tester une colonne précise). `update` et `delete`
  * visent une ligne qui n'existe pas (`ID_INEXISTANT`) : même en cas de faille,
  * aucune vraie donnée n'est touchée — seul le droit est mis à l'épreuve.
+ *
+ * Storage : `upload` tente d'envoyer `FICHIER_FICTIF` dans un bucket (un succès
+ * est une faille : le fichier est effacé aussitôt), `list` compte ce qu'on y voit.
  */
 
 export type Role = "visiteur" | "admin";
-export type Operation = "select" | "insert" | "update" | "delete" | "rpc";
+export type Operation = "select" | "insert" | "update" | "delete" | "rpc" | "upload" | "list";
 
 /**
  * - `refusé` : l'API doit répondre par un refus de droits ;
@@ -29,7 +32,7 @@ export type Attendu = "refusé" | "vide" | "autorisé";
 export type Verification = {
   libelle: string;
   role: Role;
-  /** Table (select, insert, update, delete) ou fonction (rpc). */
+  /** Table (select, insert, update, delete), fonction (rpc) ou bucket Storage (upload, list). */
   cible: string;
   operation: Operation;
   /** select : ne compter que les lignes où chaque colonne vaut la valeur donnée (ex. `{ publie: false }`). */
@@ -80,6 +83,37 @@ export const VERIFICATIONS: readonly Verification[] = [
   { libelle: "Créer un avis par l'API", role: "visiteur", cible: "avis", operation: "insert", attendu: "refusé" },
   { libelle: "Modifier un avis par l'API", role: "visiteur", cible: "avis", operation: "update", attendu: "refusé" },
   { libelle: "Supprimer un avis par l'API", role: "visiteur", cible: "avis", operation: "delete", attendu: "refusé" },
+  {
+    libelle: "Lire les photos des galeries",
+    role: "visiteur",
+    cible: "photos",
+    operation: "select",
+    attendu: "autorisé",
+    note: "Les photos sont publiques : ce sont celles de la page Galerie et des pages d'animations.",
+  },
+  { libelle: "Lire les galeries (photos et ordre)", role: "visiteur", cible: "galeries_photos", operation: "select", attendu: "autorisé" },
+  { libelle: "Créer une photo par l'API", role: "visiteur", cible: "photos", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier une photo par l'API", role: "visiteur", cible: "photos", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une photo par l'API", role: "visiteur", cible: "photos", operation: "delete", attendu: "refusé" },
+  { libelle: "Ajouter une photo à une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "insert", attendu: "refusé" },
+  { libelle: "Changer l'ordre d'une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "update", attendu: "refusé" },
+  { libelle: "Retirer une photo d'une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "delete", attendu: "refusé" },
+  {
+    libelle: "Envoyer un fichier dans le stockage des photos",
+    role: "visiteur",
+    cible: "medias",
+    operation: "upload",
+    attendu: "refusé",
+    note: "Seul le back office envoie des photos (URL signée créée par une action réservée à l'administrateur).",
+  },
+  {
+    libelle: "Lister le stockage des photos",
+    role: "visiteur",
+    cible: "medias",
+    operation: "list",
+    attendu: "vide",
+    note: "Bucket public : une photo se lit par son adresse, mais personne ne doit pouvoir parcourir son contenu.",
+  },
   { libelle: "Appeler est_admin()", role: "visiteur", cible: "est_admin", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler audit_trigger()", role: "visiteur", cible: "audit_trigger", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler touch_updated_at()", role: "visiteur", cible: "touch_updated_at", operation: "rpc", attendu: "refusé" },
@@ -94,6 +128,16 @@ export const VERIFICATIONS: readonly Verification[] = [
     operation: "select",
     attendu: "autorisé",
     note: "Le back office voit aussi les avis non publiés.",
+  },
+  { libelle: "Lire les photos", role: "admin", cible: "photos", operation: "select", attendu: "autorisé" },
+  { libelle: "Lire les galeries", role: "admin", cible: "galeries_photos", operation: "select", attendu: "autorisé" },
+  {
+    libelle: "Lister le stockage des photos",
+    role: "admin",
+    cible: "medias",
+    operation: "list",
+    attendu: "autorisé",
+    note: "Le back office lit ses fichiers (suppression d'une photo envoyée).",
   },
   {
     libelle: "Lire les demandes de contact",
@@ -155,12 +199,39 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
     texte_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
     publie: false,
   },
+  photos: {
+    origine: "stockage",
+    chemin: "galeries/audit-rls/ligne-fictive-a-supprimer.jpg",
+    largeur: 1,
+    hauteur: 1,
+    alt_fr: "AUDIT RLS — LIGNE FICTIVE, à supprimer",
+  },
+  // Photo inexistante : même en cas de faille, la ligne serait refusée par la clé étrangère (réponse inattendue, jamais verte).
+  galeries_photos: { galerie: "option:audit-rls-ligne-fictive", photo_id: "00000000-0000-0000-0000-000000000000", ordre: 999999 },
 };
+
+/**
+ * Fichier des tests d'`upload` : une image PNG d'un pixel (un vrai type
+ * accepté par le bucket, pour que seul le droit puisse la refuser), au nom
+ * manifestement fictif.
+ */
+export const FICHIER_FICTIF = {
+  chemin: "galeries/audit-rls/fichier-fictif-a-supprimer.png",
+  type: "image/png",
+  base64: "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+} as const;
+
+/** Octets du fichier fictif. */
+export function octetsFichierFictif(): Uint8Array {
+  return Uint8Array.from(atob(FICHIER_FICTIF.base64), (c) => c.charCodeAt(0));
+}
 
 /** Valeurs des tests d'`update` (valides, pour qu'une faille se voie). */
 export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
   avis: { auteurs: "AUDIT RLS — MODIFICATION FICTIVE" },
   demandes_contact: { statut: "perdue", note_interne: "AUDIT RLS — MODIFICATION FICTIVE" },
+  photos: { alt_fr: "AUDIT RLS — MODIFICATION FICTIVE" },
+  galeries_photos: { ordre: 999999 },
 };
 
 /** Identifiant visé par les tests d'`update` et de `delete` : aucune ligne ne le porte. */
@@ -175,7 +246,7 @@ export type ReponseApi = {
   lignes?: number | null;
   /** rpc : valeur renvoyée. */
   valeur?: unknown;
-  /** insert réussi : identifiant de la ligne créée (pour l'effacer). */
+  /** insert réussi : identifiant de la ligne créée ; upload réussi : chemin du fichier (pour l'effacer). */
   id?: string | null;
 };
 
@@ -188,6 +259,10 @@ export type ClientAudit = {
   /** Supprime la ligne `id` (inexistante : seul le droit est testé). */
   delete(table: string, id: string): Promise<ReponseApi>;
   rpc(fonction: string): Promise<ReponseApi>;
+  /** Envoie un fichier dans un bucket (refusé attendu : un succès est une faille). */
+  upload(bucket: string, chemin: string, contenu: Uint8Array, type: string): Promise<ReponseApi>;
+  /** Liste la racine d'un bucket : `lignes` = nombre d'éléments visibles. */
+  list(bucket: string): Promise<ReponseApi>;
 };
 
 export type DependancesAudit = {
@@ -197,6 +272,8 @@ export type DependancesAudit = {
    * null si la clé est absente : la ligne est alors signalée pour suppression à la main.
    */
   nettoyer: ((table: string, id: string) => Promise<void>) | null;
+  /** Efface un fichier envoyé par erreur (faille), avec la clé service_role ; absent ou null : à supprimer à la main. */
+  nettoyerFichier?: ((bucket: string, chemin: string) => Promise<void>) | null;
 };
 
 export type ResultatVerification = {
@@ -218,13 +295,16 @@ export type ResultatAudit = {
 /**
  * Codes qui veulent dire « l'API a refusé » :
  * - 42501 : droits insuffisants (GRANT retiré, ou policy RLS qui rejette une écriture) ;
- * - PGRST202 : fonction introuvable pour ce rôle (non exposée).
+ * - PGRST202 : fonction introuvable pour ce rôle (non exposée) ;
+ * - STORAGE-403 : Storage a refusé l'opération (policy RLS sur storage.objects),
+ *   code posé par l'adaptateur du serveur.
  * Tout autre code (réseau, 5xx, erreur SQL…) est « inattendu » : l'audit ne
  * conclut pas au vert sur une panne.
  */
 const CODES_REFUS: Record<string, string> = {
   "42501": "droits refusés",
   PGRST202: "fonction non exposée",
+  "STORAGE-403": "refusé par le stockage",
 };
 
 type Constat =
@@ -248,6 +328,8 @@ function pluriel(n: number, mot: string): string {
 
 function decrireAccord(c: Extract<Constat, { type: "accorde" }>, operation: Operation): string {
   if (operation === "select") return typeof c.lignes === "number" ? `${pluriel(c.lignes, "ligne")} visible${c.lignes > 1 ? "s" : ""}` : "lecture permise";
+  if (operation === "list") return typeof c.lignes === "number" ? `${pluriel(c.lignes, "élément")} visible${c.lignes > 1 ? "s" : ""}` : "liste permise";
+  if (operation === "upload") return "fichier envoyé";
   if (operation === "insert") return "ligne créée";
   if (operation === "update") return "modification permise";
   if (operation === "delete") return "suppression permise";
@@ -267,6 +349,7 @@ export function juger(verification: Verification, reponse: ReponseApi): Omit<Res
     case "vide":
       if (c.type === "refuse") return { ok: true, faille: false, constat: `Bloqué : ${c.detail}` };
       if (verification.operation === "select" && c.lignes === 0) return { ok: true, faille: false, constat: "Bloqué : aucune ligne visible (RLS)" };
+      if (verification.operation === "list" && c.lignes === 0) return { ok: true, faille: false, constat: "Bloqué : aucun fichier visible (RLS)" };
       return { ok: false, faille: true, constat: `FAILLE — ${decrireAccord(c, verification.operation)}` };
 
     case "autorisé": {
@@ -283,6 +366,8 @@ async function executer(client: ClientAudit, v: Verification): Promise<ReponseAp
   try {
     if (v.operation === "select") return await client.select(v.cible, v.filtre);
     if (v.operation === "rpc") return await client.rpc(v.cible);
+    if (v.operation === "list") return await client.list(v.cible);
+    if (v.operation === "upload") return await client.upload(v.cible, FICHIER_FICTIF.chemin, octetsFichierFictif(), FICHIER_FICTIF.type);
     if (v.operation === "delete") return await client.delete(v.cible, ID_INEXISTANT);
     if (v.operation === "update") {
       const valeurs = v.valeurs ?? MODIFICATIONS_FICTIVES[v.cible];
@@ -319,6 +404,19 @@ export async function lancerAudit(
           constat += " — ligne supprimée aussitôt.";
         } catch (e) {
           constat += ` — suppression impossible (${e instanceof Error ? e.message : String(e)}) : supprimez à la main la ligne ${reponse.id}.`;
+        }
+      }
+    }
+    // Un fichier qui n'aurait pas dû être accepté : on l'efface aussitôt.
+    if (verification.operation === "upload" && !reponse.erreur && jugement.faille) {
+      const chemin = reponse.id ?? FICHIER_FICTIF.chemin;
+      if (!d.nettoyerFichier) constat += ` — clé service_role absente : supprimez à la main le fichier ${verification.cible}/${chemin}.`;
+      else {
+        try {
+          await d.nettoyerFichier(verification.cible, chemin);
+          constat += " — fichier supprimé aussitôt.";
+        } catch (e) {
+          constat += ` — suppression impossible (${e instanceof Error ? e.message : String(e)}) : supprimez à la main le fichier ${verification.cible}/${chemin}.`;
         }
       }
     }

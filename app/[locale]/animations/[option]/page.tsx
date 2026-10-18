@@ -7,6 +7,8 @@ import { contenuOption } from "@/contenu/pages/options";
 import { emplacementOption } from "@/lib/avis/constantes";
 import { avisPublies } from "@/lib/avis/lecture";
 import { grandAvis } from "@/lib/avis/selection";
+import { MINIMUM_PHOTOS_OPTION, galerieOption } from "@/lib/photos/constantes";
+import { photosDeGalerie } from "@/lib/photos/lecture";
 import { adresse, metadonnees } from "@/lib/seo/metadonnees";
 import { filAriane } from "@/lib/seo/donneesStructurees";
 import { Accent } from "@/components/common/Accent";
@@ -63,6 +65,8 @@ export default async function PageOption({ params }: Props) {
   const fr = locale === "fr";
   // Avis choisi dans le back office (emplacement « Page <option> ») ; sa citation commence d'ordinaire à la phrase sur l'option.
   const avisOption = grandAvis(await avisPublies(), emplacementOption(option.slug.fr), locale, 260);
+  // Photos choisies dans le back office (galerie « option:<slug> ») ; listes du code en secours, sans Supabase.
+  const galerie = await photosDeGalerie(galerieOption(option.slug.fr), locale);
 
   const ariane = filAriane([
     { nom: fr ? "Accueil" : "Home", url: adresse("/", locale) },
@@ -125,13 +129,13 @@ export default async function PageOption({ params }: Props) {
       )}
 
       {/* Galerie seulement avec assez de vraies photos de nos prestations. */}
-      {c.galerie.length >= 2 && (
+      {galerie.length >= MINIMUM_PHOTOS_OPTION && (
         <Section
           surtitre={fr ? "En images" : "In pictures"}
           titre={fr ? `${option.titre.fr}, *en situation*.` : `${option.titre.en}, *in action*.`}
           alterne={!t.etapes}
         >
-          <GrillePhotos cles={c.galerie} />
+          <GrillePhotos photos={galerie} />
         </Section>
       )}
 

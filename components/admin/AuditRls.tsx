@@ -10,7 +10,7 @@ const ROLES: Record<Role, { titre: string; description: string }> = {
   admin: { titre: "Cédric", description: "Votre session : les droits du back office." },
 };
 
-const OPERATIONS = { select: "lecture", insert: "écriture", update: "modification", delete: "suppression", rpc: "appel" } as const;
+const OPERATIONS = { select: "lecture", insert: "écriture", update: "modification", delete: "suppression", rpc: "appel", upload: "envoi dans", list: "liste de" } as const;
 
 type Props = {
   /** Server Action `lancerAuditRls` (injectée pour pouvoir tester le composant). */

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { GALERIE, PHOTOS_EVENEMENTS, PHOTOS_MARIAGES } from "@/contenu/pages/galerie";
+import { GALERIE } from "@/contenu/pages/galerie";
+import { photosDeGalerie } from "@/lib/photos/lecture";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { AppelContact } from "@/components/common/AppelContact";
 import { EnTetePage } from "@/components/common/EnTetePage";
@@ -19,17 +20,19 @@ export default async function PageGalerie({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = GALERIE[locale];
+  // Photos gérées dans le back office (/admin/photos) ; listes du code en secours, sans Supabase.
+  const [mariages, evenements] = await Promise.all([photosDeGalerie("galerie_mariages", locale), photosDeGalerie("galerie_evenements", locale)]);
 
   return (
     <>
       <EnTetePage image="maison-mariage-charpente" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
 
       <Section surtitre={c.mariages.surtitre} titre={c.mariages.titre}>
-        <Mosaique photos={PHOTOS_MARIAGES} />
+        <Mosaique photos={mariages} />
       </Section>
 
       <Section surtitre={c.evenements.surtitre} titre={c.evenements.titre} alterne>
-        <Mosaique photos={PHOTOS_EVENEMENTS} />
+        <Mosaique photos={evenements} />
       </Section>
 
       <AppelContact />

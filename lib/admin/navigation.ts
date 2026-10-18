@@ -42,7 +42,7 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Photos",
     description: "Photos des galeries : ajout, ordre, texte alternatif.",
     icone: "photos",
-    disponible: false,
+    disponible: true,
   },
   {
     href: "/admin/demandes",

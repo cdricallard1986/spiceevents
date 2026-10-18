@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, type KeyboardEvent, type MouseEvent } from "react";
 import { useLocale } from "next-intl";
-import type { Locale } from "@/i18n/routing";
-import { image, type CleImage } from "@/lib/images";
+import type { PhotoAffichee } from "@/lib/photos/types";
 import { Photo } from "@/components/ui/Photo";
 
-type Props = { photos: CleImage[] };
+/** Photos d'une galerie gérée dans le back office (fichiers du site ou du bucket), déjà dans la langue de la page. */
+type Props = { photos: readonly PhotoAffichee[] };
 
 /** Largeur d'une colonne : 3 colonnes dans le conteneur (82rem moins les marges) sur grand écran. */
 const TAILLES = "(min-width: 1312px) 400px, (min-width: 1024px) 31vw, (min-width: 640px) 47vw, 100vw";
@@ -19,8 +19,7 @@ const TAILLES = "(min-width: 1312px) 400px, (min-width: 1024px) 31vw, (min-width
  * la mosaïque reste lisible.
  */
 export function Mosaique({ photos }: Props) {
-  const locale = useLocale() as Locale;
-  const fr = locale === "fr";
+  const fr = useLocale() === "fr";
   const fenetre = useRef<HTMLDialogElement>(null);
   const [courante, setCourante] = useState<number | null>(null);
 
@@ -47,23 +46,23 @@ export function Mosaique({ photos }: Props) {
     if (e.target === e.currentTarget) fermer();
   }
 
-  const grande = courante === null ? null : image(photos[courante], locale);
+  const grande = courante === null ? null : photos[courante];
   const bouton =
     "border border-ivoire/40 bg-nuit/70 px-4 py-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-ivoire transition-colors hover:border-or hover:text-or";
 
   return (
     <>
       <ul className="columns-1 gap-4 sm:columns-2 lg:columns-3">
-        {photos.map((cle, i) => (
-          <li key={cle} className="mb-4 break-inside-avoid">
+        {photos.map((photo, i) => (
+          <li key={photo.src} className="mb-4 break-inside-avoid">
             <button
               type="button"
               onClick={() => ouvrir(i)}
               className="group block w-full overflow-hidden"
-              aria-label={`${fr ? "Agrandir" : "Enlarge"} : ${image(cle, locale).alt}`}
+              aria-label={`${fr ? "Agrandir" : "Enlarge"} : ${photo.alt}`}
             >
               <Photo
-                cle={cle}
+                photo={photo}
                 sizes={TAILLES}
                 className="h-auto w-full transition-transform duration-700 group-hover:scale-105"
               />

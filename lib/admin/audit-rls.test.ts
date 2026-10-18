@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import {
+  FICHIER_FICTIF,
   ID_INEXISTANT,
   LIGNES_FICTIVES,
   MODIFICATIONS_FICTIVES,
@@ -24,12 +25,18 @@ function cleSelect(table: string, filtre?: Record<string, string | boolean>) {
 function client(
   reponses: Record<string, ReponseApi>,
   parDefaut: ReponseApi = REFUS,
-): ClientAudit & { inserts: string[]; ecritures: { operation: string; table: string; id: string; valeurs?: unknown }[] } {
+): ClientAudit & {
+  inserts: string[];
+  ecritures: { operation: string; table: string; id: string; valeurs?: unknown }[];
+  envois: { bucket: string; chemin: string; type: string; taille: number }[];
+} {
   const inserts: string[] = [];
   const ecritures: { operation: string; table: string; id: string; valeurs?: unknown }[] = [];
+  const envois: { bucket: string; chemin: string; type: string; taille: number }[] = [];
   return {
     inserts,
     ecritures,
+    envois,
     select: async (table, filtre) => reponses[cleSelect(table, filtre)] ?? parDefaut,
     insert: async (table) => {
       inserts.push(table);
@@ -45,10 +52,17 @@ function client(
       return reponses[`delete:${table}`] ?? parDefaut;
     },
     rpc: async (fonction) => reponses[`rpc:${fonction}`] ?? parDefaut,
+    upload: async (bucket, chemin, contenu, type) => {
+      envois.push({ bucket, chemin, type, taille: contenu.byteLength });
+      return reponses[`upload:${bucket}`] ?? parDefaut;
+    },
+    list: async (bucket) => reponses[`list:${bucket}`] ?? parDefaut,
   };
 }
 
-/** Une base saine, telle que les migrations 0001 à 0005 la décrivent. */
+const REFUS_STOCKAGE: ReponseApi = { erreur: { code: "STORAGE-403", message: "new row violates row-level security policy" } };
+
+/** Une base saine, telle que les migrations 0001 à 0007 la décrivent. */
 function baseSaine() {
   return {
     visiteur: client({
@@ -56,12 +70,20 @@ function baseSaine() {
       // RLS : l'anonyme voit les 43 avis publiés, aucun avis non publié.
       "select:avis?publie=true": { erreur: null, lignes: 43 },
       "select:avis?publie=false": VIDE,
+      // Photos et galeries : publiques. Storage : envoi refusé, rien de listable.
+      "select:photos": { erreur: null, lignes: 57 },
+      "select:galeries_photos": { erreur: null, lignes: 60 },
+      "upload:medias": REFUS_STOCKAGE,
+      "list:medias": VIDE,
     }),
     admin: client({
       "rpc:est_admin": { erreur: null, valeur: true },
       "select:audit_log": { erreur: null, lignes: 3 },
       "select:demandes_contact": { erreur: null, lignes: 12 },
       "select:avis": { erreur: null, lignes: 45 },
+      "select:photos": { erreur: null, lignes: 57 },
+      "select:galeries_photos": { erreur: null, lignes: 60 },
+      "list:medias": { erreur: null, lignes: 1 },
       // Droit `update` sur statut et note_interne seulement (la ligne visée n'existe pas : 0 ligne modifiée).
       "update:demandes_contact(note_interne,statut)": { erreur: null },
     }),
@@ -128,8 +150,8 @@ describe("lancerAudit", () => {
     const clients = baseSaine();
     const select = vi.spyOn(clients.admin, "select");
     await lancerAudit({ clients, nettoyer: null });
-    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "demandes_contact"]);
-    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis"]);
+    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "photos", "galeries_photos", "demandes_contact"]);
+    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis", "photos", "galeries_photos"]);
     expect(clients.admin.inserts).toEqual(["demandes_contact"]);
   });
 
@@ -200,6 +222,10 @@ describe("lancerAudit — avis", () => {
       { operation: "delete", table: "demandes_contact", id: ID_INEXISTANT },
       { operation: "update", table: "avis", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.avis },
       { operation: "delete", table: "avis", id: ID_INEXISTANT },
+      { operation: "update", table: "photos", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.photos },
+      { operation: "delete", table: "photos", id: ID_INEXISTANT },
+      { operation: "update", table: "galeries_photos", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.galeries_photos },
+      { operation: "delete", table: "galeries_photos", id: ID_INEXISTANT },
     ]);
     expect(clients.admin.ecritures).toEqual([
       { operation: "update", table: "demandes_contact", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.demandes_contact },
@@ -235,6 +261,79 @@ describe("lancerAudit — avis", () => {
     ]);
     expect(audit.resultats[0]).toMatchObject({ ok: false, faille: false });
     expect(audit.resultats[0].constat).toContain("MODIFICATIONS_FICTIVES");
+  });
+});
+
+describe("lancerAudit — photos et stockage", () => {
+  const trouver = (audit: Awaited<ReturnType<typeof lancerAudit>>, role: string, cible: string, operation: string) =>
+    audit.resultats.find((x) => x.verification.role === role && x.verification.cible === cible && x.verification.operation === operation)!;
+
+  it("base saine : photos lisibles par tous, envoi au stockage refusé, bucket non listable", async () => {
+    const audit = await lancerAudit({ clients: baseSaine(), nettoyer: null, nettoyerFichier: null });
+    expect(trouver(audit, "visiteur", "photos", "select")).toMatchObject({ ok: true, constat: "Autorisé : 57 lignes visibles" });
+    expect(trouver(audit, "visiteur", "medias", "upload")).toMatchObject({ ok: true, constat: "Bloqué : refusé par le stockage (STORAGE-403)" });
+    expect(trouver(audit, "visiteur", "medias", "list")).toMatchObject({ ok: true, constat: "Bloqué : aucun fichier visible (RLS)" });
+    expect(trouver(audit, "admin", "medias", "list")).toMatchObject({ ok: true, constat: "Autorisé : 1 élément visible" });
+  });
+
+  it("l'envoi visé est une vraie image PNG, au nom manifestement fictif, dans le bucket medias", async () => {
+    const clients = baseSaine();
+    await lancerAudit({ clients, nettoyer: null });
+    expect(clients.visiteur.envois).toEqual([{ bucket: "medias", chemin: FICHIER_FICTIF.chemin, type: "image/png", taille: 68 }]);
+    expect(FICHIER_FICTIF.chemin).toMatch(/^galeries\/audit-rls\/.*fictif.*a-supprimer\.png$/);
+    expect(clients.admin.envois).toEqual([]);
+  });
+
+  it("un envoi accepté pour le visiteur est une FAILLE, et le fichier est effacé aussitôt", async () => {
+    const clients = baseSaine();
+    clients.visiteur = { ...clients.visiteur, upload: async (_b, chemin) => ({ erreur: null, id: chemin }) };
+    const nettoyerFichier = vi.fn(async () => undefined);
+    const audit = await lancerAudit({ clients, nettoyer: null, nettoyerFichier });
+    const r = trouver(audit, "visiteur", "medias", "upload");
+    expect(r).toMatchObject({ ok: false, faille: true });
+    expect(r.constat).toBe("FAILLE — accès permis : fichier envoyé — fichier supprimé aussitôt.");
+    expect(nettoyerFichier).toHaveBeenCalledWith("medias", FICHIER_FICTIF.chemin);
+  });
+
+  it("sans clé service_role ou si l'effacement échoue : demande de supprimer le fichier à la main", async () => {
+    const clients = baseSaine();
+    clients.visiteur = { ...clients.visiteur, upload: async (_b, chemin) => ({ erreur: null, id: chemin }) };
+    const sansCle = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(sansCle, "visiteur", "medias", "upload").constat).toContain(`supprimez à la main le fichier medias/${FICHIER_FICTIF.chemin}`);
+    const echec = await lancerAudit({ clients, nettoyer: null, nettoyerFichier: async () => Promise.reject(new Error("réseau")) });
+    expect(trouver(echec, "visiteur", "medias", "upload").constat).toContain("suppression impossible (réseau)");
+  });
+
+  it("des fichiers listables par le visiteur sont une faille ; un fichier déjà présent (409) n'est jamais vert", async () => {
+    const clients = baseSaine();
+    clients.visiteur = { ...clients.visiteur, list: async () => ({ erreur: null, lignes: 3 }), upload: async () => ({ erreur: { code: "409", message: "The resource already exists" } }) };
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(audit, "visiteur", "medias", "list")).toMatchObject({ ok: false, faille: true, constat: "FAILLE — 3 éléments visibles" });
+    expect(trouver(audit, "visiteur", "medias", "upload")).toMatchObject({ ok: false, faille: false, constat: "Réponse inattendue — 409 : The resource already exists" });
+  });
+
+  it("le visiteur ne lit plus les photos : échec (les galeries seraient vides), pas une faille ; une écriture permise est une faille", async () => {
+    const clients = baseSaine();
+    clients.visiteur = { ...clients.visiteur, select: async () => REFUS, update: async () => ({ erreur: null }) };
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(audit, "visiteur", "photos", "select")).toMatchObject({ ok: false, faille: false });
+    expect(trouver(audit, "visiteur", "galeries_photos", "update")).toMatchObject({ ok: false, faille: true });
+  });
+
+  it("le visiteur est refusé partout en écriture sur les photos et les galeries", () => {
+    const ecritures = VERIFICATIONS.filter((x) => x.role === "visiteur" && ["photos", "galeries_photos", "medias"].includes(x.cible));
+    expect(ecritures.map((x) => `${x.operation}:${x.cible}:${x.attendu}`)).toEqual([
+      "select:photos:autorisé",
+      "select:galeries_photos:autorisé",
+      "insert:photos:refusé",
+      "update:photos:refusé",
+      "delete:photos:refusé",
+      "insert:galeries_photos:refusé",
+      "update:galeries_photos:refusé",
+      "delete:galeries_photos:refusé",
+      "upload:medias:refusé",
+      "list:medias:vide",
+    ]);
   });
 });
 
@@ -314,6 +413,9 @@ describe("liste des vérifications", () => {
       "rpc:est_admin:autorisé",
       "select:audit_log:autorisé",
       "select:avis:autorisé",
+      "select:photos:autorisé",
+      "select:galeries_photos:autorisé",
+      "list:medias:autorisé",
       "select:demandes_contact:autorisé",
       "update:demandes_contact:autorisé",
       "update:demandes_contact:refusé",

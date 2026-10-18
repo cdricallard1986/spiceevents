@@ -32,7 +32,10 @@ export type OptionsPolitique = {
 
 /**
  * Politique de sécurité du contenu. Le navigateur parle directement à Supabase
- * (back office : session, envoi des photos) : son origine est dans `connect-src`.
+ * (back office : session, envoi direct des photos par URL signée) : son origine
+ * est dans `connect-src`. Elle est aussi dans `img-src` : aperçus du back office
+ * et photos du bucket `medias` (les pages publiques passent d'ordinaire par
+ * `next/image`, servi par le site).
  * ⚠️ next.config.ts importe ce fichier : imports relatifs seulement (pas d'alias `@/`).
  */
 export function politiqueContenu(production: boolean, supabaseUrl: string = SUPABASE_URL, options: OptionsPolitique = {}): string {
@@ -41,7 +44,7 @@ export function politiqueContenu(production: boolean, supabaseUrl: string = SUPA
     // Pas de nonce : Next injecte des scripts en ligne, un nonce rendrait toutes les pages dynamiques.
     "script-src": ["'self'", "'unsafe-inline'", ...TIERS.scripts, ...(production ? [] : ["'unsafe-eval'"])],
     "style-src": ["'self'", "'unsafe-inline'"],
-    "img-src": ["'self'", "data:", "blob:"],
+    "img-src": ["'self'", "data:", "blob:", originesSupabase(supabaseUrl)[0]],
     "font-src": ["'self'"],
     "connect-src": ["'self'", ...originesSupabase(supabaseUrl), ...TIERS.scripts],
     "frame-src": [...(options.cadresDuSite ? ["'self'"] : []), ...TIERS.cadres],

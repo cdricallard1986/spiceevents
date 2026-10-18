@@ -43,13 +43,20 @@ describe("Server Actions du back office", () => {
 
   it("chaque export de app/admin/(espace)/**/actions.ts commence par exigerAdmin()", () => {
     const fichiers = fichiersActions(ESPACE);
-    expect(fichiers.map((f) => relative(RACINE, f))).toEqual(expect.arrayContaining([join("app", "admin", "(espace)", "avis", "actions.ts"), join("app", "admin", "(espace)", "demandes", "actions.ts")]));
+    expect(fichiers.map((f) => relative(RACINE, f))).toEqual(expect.arrayContaining([join("app", "admin", "(espace)", "avis", "actions.ts"), join("app", "admin", "(espace)", "demandes", "actions.ts"), join("app", "admin", "(espace)", "photos", "actions.ts")]));
     const fautifs = fichiers.flatMap((f) => {
       const source = readFileSync(f, "utf8");
       expect(source.trimStart().startsWith('"use server"'), relative(RACINE, f)).toBe(true);
       return exportsSansGarde(source).map((nom) => `${relative(RACINE, f)} : ${nom}`);
     });
     expect(fautifs).toEqual([]);
+  });
+
+  it("aucun fichier ne transite par une Server Action (envoi direct navigateur → Storage par URL signée)", () => {
+    for (const f of fichiersActions(ESPACE)) {
+      const source = readFileSync(f, "utf8");
+      expect(source, relative(RACINE, f)).not.toMatch(/\.upload\(|\.uploadToSignedUrl\(|FormData|\bFile\b|\bBlob\b|arrayBuffer\(/);
+    }
   });
 
   it("aucune action du back office n'utilise la clé service_role", () => {

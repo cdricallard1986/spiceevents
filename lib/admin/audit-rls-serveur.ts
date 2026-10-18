@@ -16,6 +16,19 @@ function erreur(e: ErreurSupabase): ReponseApi["erreur"] {
   return e ? { code: e.code || undefined, message: e.message } : null;
 }
 
+type ErreurStockage = { message: string; status?: number; statusCode?: string } | null;
+
+/**
+ * Erreur de Storage : un refus de droits (policy RLS de storage.objects, HTTP
+ * 401/403 ou « row-level security ») devient `STORAGE-403` ; tout le reste
+ * (réseau, bucket introuvable, fichier déjà présent…) reste inattendu.
+ */
+export function erreurStockage(e: ErreurStockage): ReponseApi["erreur"] {
+  if (!e) return null;
+  const refus = e.status === 401 || e.status === 403 || e.statusCode === "401" || e.statusCode === "403" || /row-level security/i.test(e.message);
+  return { code: refus ? "STORAGE-403" : e.statusCode || undefined, message: e.message };
+}
+
 /** Adaptateur d'un client Supabase (visiteur ou session admin) aux opérations de l'audit. */
 export function clientAudit(supabase: SupabaseClient): ClientAudit {
   return {
@@ -50,6 +63,18 @@ export function clientAudit(supabase: SupabaseClient): ClientAudit {
       if (error) return { erreur: erreur(error) };
       return { erreur: null, valeur: data };
     },
+    async upload(bucket, chemin, contenu, type) {
+      // Jamais d'écrasement : un fichier déjà présent répond par une erreur (inattendue), pas par un succès.
+      const { data, error } = await supabase.storage.from(bucket).upload(chemin, contenu, { contentType: type, upsert: false });
+      if (error) return { erreur: erreurStockage(error) };
+      return { erreur: null, id: data?.path ?? chemin };
+    },
+    async list(bucket) {
+      // Seul le nombre d'éléments remonte, jamais leurs noms.
+      const { data, error } = await supabase.storage.from(bucket).list("", { limit: 100 });
+      if (error) return { erreur: erreurStockage(error) };
+      return { erreur: null, lignes: Array.isArray(data) ? data.length : 0 };
+    },
   };
 }
 
@@ -61,6 +86,12 @@ export function dependancesAudit(sessionAdmin: SupabaseClient): DependancesAudit
     nettoyer: service
       ? async (table, id) => {
           const { error } = await service.from(table).delete().eq("id", id);
+          if (error) throw new Error(error.message);
+        }
+      : null,
+    nettoyerFichier: service
+      ? async (bucket, chemin) => {
+          const { error } = await service.storage.from(bucket).remove([chemin]);
           if (error) throw new Error(error.message);
         }
       : null,
