@@ -9,6 +9,10 @@ import { usePathname } from "@/i18n/navigation";
  * les balises <link rel="alternate" hreflang> que chaque page déclare dans ses
  * métadonnées : une seule source de vérité. Sans équivalent (journal), on
  * renvoie vers l'accueil de l'autre langue.
+ *
+ * Le middleware renvoie toute adresse sans préfixe (`/`, `/mariages`) vers la
+ * langue mémorisée dans le cookie NEXT_LOCALE : on y écrit la langue choisie
+ * avant de partir, sinon le retour au français ramènerait sur `/en`.
  */
 export function SelecteurLangue({ className = "" }: { className?: string }) {
   const locale = useLocale();
@@ -27,8 +31,12 @@ export function SelecteurLangue({ className = "" }: { className?: string }) {
     }
   }, [chemin, cible]);
 
+  function memoriserLangue() {
+    document.cookie = `NEXT_LOCALE=${cible}; path=/; SameSite=Lax`;
+  }
+
   return (
-    <a href={href} hrefLang={cible} lang={cible} aria-label={t("langue")} className={className}>
+    <a href={href} hrefLang={cible} lang={cible} aria-label={t("langue")} className={className} onClick={memoriserLangue}>
       {cible.toUpperCase()}
     </a>
   );
