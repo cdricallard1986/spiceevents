@@ -3,8 +3,9 @@ import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { ACCUEIL } from "@/contenu/pages/accueil";
 import { OPTIONS } from "@/contenu/options";
-import { avis, avisDe, extrait } from "@/contenu/avis";
 import { SITE } from "@/contenu/site";
+import { avisPublies } from "@/lib/avis/lecture";
+import { avisDeLEmplacement, grandAvis, grilleCitations } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -24,14 +25,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/", seo: ACCUEIL[locale].seo });
 }
 
-const AVIS_ACCUEIL = ["Frédéric & Selda", "Clémentine & Kévin", "Charlotte & David"];
-
 export default async function Accueil({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = ACCUEIL[locale];
-  const grand = avisDe("Pierre & Nina", locale);
-  const choisis = avis(locale).filter((a) => AVIS_ACCUEIL.includes(a.auteurs)).map((a) => ({ ...a, citation: extrait(a.texte, 260) }));
+  // Avis choisis dans le back office (emplacements « Accueil — grand avis » et « Accueil — grille »).
+  const tous = await avisPublies();
+  const grand = grandAvis(tous, "accueil_grand", locale, 300);
+  const choisis = grilleCitations(avisDeLEmplacement(tous, "accueil"), locale);
 
   return (
     <>
@@ -75,7 +76,7 @@ export default async function Accueil({ params }: Props) {
         <Bouton href="/mariages" variante="lien" className="mt-12">{c.journee.lien} →</Bouton>
       </Section>
 
-      <GrandAvis citation={extrait(grand.texte, 300)} auteurs={grand.auteurs} image="chapiteau-diner" />
+      {grand && <GrandAvis citation={grand.texte} auteurs={grand.auteurs} langue={grand.langue} image="chapiteau-diner" />}
 
       <Section surtitre={c.animations.surtitre} titre={c.animations.titre}>
         <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">

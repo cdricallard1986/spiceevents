@@ -28,7 +28,7 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Avis",
     description: "Avis des mariés : texte, traduction, pages où ils apparaissent, ordre.",
     icone: "avis",
-    disponible: false,
+    disponible: true,
   },
   {
     href: "/admin/journal",

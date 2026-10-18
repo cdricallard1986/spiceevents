@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import type { EntreeEnvoiTest, EtatEnvoiTest, Modele } from "@/lib/admin/emails-test";
 import type { Langue } from "@/lib/contact/constantes";
 import { classesBouton } from "@/components/ui/Bouton";
+import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
 import { useToasts } from "./Toasts";
 
 export type Apercu = { subject: string; from: string; to: string; replyTo: string; html: string };
@@ -25,9 +26,6 @@ const LANGUES: { valeur: Langue; libelle: string }[] = [
   { valeur: "en", libelle: "Anglais" },
 ];
 
-// Mêmes champs que les formulaires du site et de la connexion.
-const CLASSES_CHAMP = "w-full border border-ligne bg-nuit px-3.5 py-3.5 text-base text-ivoire transition-colors focus:border-or";
-const CLASSES_LIBELLE = "text-[0.8125rem] tracking-[0.08em] text-sable";
 
 /**
  * Choix du modèle et de la langue, aperçu du rendu (sans envoyer), puis envoi

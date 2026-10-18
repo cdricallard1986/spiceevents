@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { EVENEMENTIEL } from "@/contenu/pages/evenementiel";
-import { avis, extrait } from "@/contenu/avis";
+import { avisPublies } from "@/lib/avis/lecture";
+import { avisDeCategorie, grilleCitations } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -35,7 +36,7 @@ export default async function PageEvenementiel({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = EVENEMENTIEL[locale];
-  const avisClients = avis(locale, "evenement").map((a) => ({ ...a, citation: extrait(a.texte, 260) }));
+  const avisClients = grilleCitations(avisDeCategorie(await avisPublies(), "evenement"), locale);
 
   return (
     <>

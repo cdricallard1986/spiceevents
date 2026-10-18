@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { PAGE_AVIS } from "@/contenu/pages/avis";
-import { avis } from "@/contenu/avis";
 import { SITE } from "@/contenu/site";
+import { avisPublies } from "@/lib/avis/lecture";
+import { avisDeCategorie, grilleTextes } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -23,9 +24,10 @@ export default async function PageAvis({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = PAGE_AVIS[locale];
-  const liste = avis(locale);
-  const mariages = liste.filter((a) => a.categorie === "mariage");
-  const evenements = liste.filter((a) => a.categorie === "evenement");
+  // Tous les avis publiés, en entier, dans l'ordre réglé dans le back office.
+  const tous = await avisPublies();
+  const mariages = grilleTextes(avisDeCategorie(tous, "mariage"), locale);
+  const evenements = grilleTextes(avisDeCategorie(tous, "evenement"), locale);
   const annees = new Intl.ListFormat(locale, { type: "conjunction" }).format(SITE.weddingAwards.map(String));
 
   return (

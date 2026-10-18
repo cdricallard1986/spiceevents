@@ -4,7 +4,8 @@ export const PHOTOBOOTH: ContenuOption = {
   image: "presta-invites-chapiteau",
   // Pas encore de photo de la borne Spice Events : la galerie est masquée en attendant.
   galerie: [],
-  avis: { auteurs: "Beth & Liam", depuis: { fr: "Le photobooth", en: "The photo booth was" }, image: "presta-invites-chapiteau" },
+  // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
+  imageAvis: "presta-invites-chapiteau",
   textes: {
     fr: {
       seo: {

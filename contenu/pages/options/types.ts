@@ -23,10 +23,9 @@ export type ContenuOption = {
   /** 3 à 6 photos réelles de l'option. */
   galerie: CleImage[];
   /**
-   * Avis de mariés qui parle de l'option. `depuis` : début de la phrase à citer, par langue
-   * (sert aussi à distinguer deux avis des mêmes auteurs). Si la phrase est introuvable
-   * dans une langue (traduction absente), l'avis n'est pas affiché dans cette langue.
+   * Photo derrière le grand avis de la page (à défaut : la photo d'en-tête). L'avis
+   * affiché se choisit dans le back office (emplacement « Page <option> »).
    */
-  avis?: { auteurs: string; depuis?: Partial<Bilingue<string>>; image: CleImage };
+  imageAvis?: CleImage;
   textes: Bilingue<TextesOption>;
 };

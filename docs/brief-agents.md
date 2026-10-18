@@ -6,7 +6,7 @@ Dépôt : `/home/user/spiceevents`. Site vitrine Next.js 15 (App Router) + next-
 - `docs/superpowers/plans/2026-10-15-refonte-site.md` (architecture, pages, décisions)
 - **Page de référence** : `app/[locale]/page.tsx` + son contenu `contenu/pages/accueil.ts` (modèle : un fichier de contenu par page, typé, `Bilingue<T>` FR + EN côte à côte)
 - Composants à réutiliser : `components/common/*` (Section, EnTetePage, Etapes, Faq, Avis, AppelContact, BandeauPreuves, CarteOption, Accent), `components/ui/*` (Photo, Bouton)
-- Données : `contenu/site.ts`, `contenu/avis.ts` (44 vrais avis), `contenu/options.ts`, `contenu/types.ts`
+- Données : `contenu/site.ts`, `lib/avis/` (avis lus en base, repli sur `contenu/avis.generated.json`), `contenu/options.ts`, `contenu/types.ts`
 - Routage : `i18n/routing.ts` (chemins internes FR → adresses EN), `i18n/navigation.ts` (`Link`), `lib/seo/metadonnees.ts`
 - Contenu de l'ancien site : `site-actuel/pages/*.md` (fiches lisibles), `site-actuel/blog/*.md`, données brutes `site-actuel/donnees/`
 

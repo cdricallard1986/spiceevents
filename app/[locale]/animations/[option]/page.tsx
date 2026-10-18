@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { OPTIONS, optionParSlug, type Option } from "@/contenu/options";
-import { contenuOption, type ContenuOption } from "@/contenu/pages/options";
-import { avis, extrait } from "@/contenu/avis";
+import { contenuOption } from "@/contenu/pages/options";
+import { emplacementOption } from "@/lib/avis/constantes";
+import { avisPublies } from "@/lib/avis/lecture";
+import { grandAvis } from "@/lib/avis/selection";
 import { adresse, metadonnees } from "@/lib/seo/metadonnees";
 import { filAriane } from "@/lib/seo/donneesStructurees";
 import { Accent } from "@/components/common/Accent";
@@ -45,18 +47,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-/** Citation d'un avis, à partir de la phrase qui parle de l'option ; rien si elle est introuvable. */
-function citation(c: ContenuOption, locale: Locale) {
-  if (!c.avis) return undefined;
-  const { auteurs, depuis } = c.avis;
-  const fragment = depuis?.[locale];
-  if (depuis && !fragment) return undefined;
-  const choisi = avis(locale, "mariage").find((a) => a.auteurs === auteurs && (!fragment || a.texte.includes(fragment)));
-  if (!choisi) return undefined;
-  const texte = fragment ? choisi.texte.slice(choisi.texte.indexOf(fragment)) : choisi.texte;
-  return { texte: extrait(texte, 260), auteurs };
-}
-
 /** Quatre autres options, à la suite de celle-ci dans la liste. */
 function autresOptions(option: Option) {
   const i = OPTIONS.indexOf(option);
@@ -71,7 +61,8 @@ export default async function PageOption({ params }: Props) {
   const c = contenuOption(option);
   const t = c.textes[locale];
   const fr = locale === "fr";
-  const avisOption = citation(c, locale);
+  // Avis choisi dans le back office (emplacement « Page <option> ») ; sa citation commence d'ordinaire à la phrase sur l'option.
+  const avisOption = grandAvis(await avisPublies(), emplacementOption(option.slug.fr), locale, 260);
 
   const ariane = filAriane([
     { nom: fr ? "Accueil" : "Home", url: adresse("/", locale) },
@@ -144,7 +135,7 @@ export default async function PageOption({ params }: Props) {
         </Section>
       )}
 
-      {avisOption && c.avis && <GrandAvis citation={avisOption.texte} auteurs={avisOption.auteurs} image={c.avis.image} />}
+      {avisOption && <GrandAvis citation={avisOption.texte} auteurs={avisOption.auteurs} langue={avisOption.langue} image={c.imageAvis ?? c.image} />}
 
       <Section surtitre={fr ? "À combiner" : "Mix and match"} titre={fr ? "D'autres idées pour *votre fête*." : "More ideas for *your celebration*."}>
         <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">

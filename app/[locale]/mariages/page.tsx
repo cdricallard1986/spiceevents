@@ -3,8 +3,9 @@ import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { MARIAGES } from "@/contenu/pages/mariages";
 import { OPTIONS } from "@/contenu/options";
-import { avis, avisDe, extrait } from "@/contenu/avis";
 import { SITE } from "@/contenu/site";
+import { avisPublies } from "@/lib/avis/lecture";
+import { avisDeLEmplacement, grandAvis, grilleCitations } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -27,17 +28,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const ROMAINS = ["I", "II", "III", "IV", "V"];
 
-/** Avis mis en avant (vrais avis de mariés, choisis pour couvrir toute la journée). */
-const AVIS_GRAND = "Harold & David";
-const AVIS_GRILLE = [
-  "Aaron & Niamha",
-  "Pascal & Abigaïl",
-  "Marine & Gaëtan",
-  "David & Elodie",
-  "Azline & Edouard",
-  "Quentin & Pauline",
-];
-
 const PHOTOS = [
   "presta-maries-enlaces",
   "presta-piste-mains-levees",
@@ -50,12 +40,10 @@ export default async function PageMariages({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = MARIAGES[locale];
-  const tous = avis(locale, "mariage");
-  const grand = avisDe(AVIS_GRAND, locale);
-  const choisis = AVIS_GRILLE.flatMap((nom) => tous.filter((a) => a.auteurs === nom).slice(0, 1)).map((a) => ({
-    ...a,
-    citation: extrait(a.texte, 260),
-  }));
+  // Avis choisis dans le back office (emplacements « Page Mariages — grand avis » et « — grille »).
+  const tous = await avisPublies();
+  const grand = grandAvis(tous, "mariages_grand", locale, 320);
+  const choisis = grilleCitations(avisDeLEmplacement(tous, "mariages"), locale);
 
   return (
     <>
@@ -173,7 +161,7 @@ export default async function PageMariages({ params }: Props) {
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.photos.lien} →</Bouton>
       </Section>
 
-      <GrandAvis citation={extrait(grand.texte, 320)} auteurs={grand.auteurs} image="presta-chapiteau-nuit" />
+      {grand && <GrandAvis citation={grand.texte} auteurs={grand.auteurs} langue={grand.langue} image="presta-chapiteau-nuit" />}
 
       <Section surtitre={c.avis.surtitre} titre={c.avis.titre}>
         <GrilleAvis liste={choisis} />

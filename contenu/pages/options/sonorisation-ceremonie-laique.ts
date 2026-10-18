@@ -3,7 +3,8 @@ import type { ContenuOption } from "./types";
 export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = {
   image: "presta-ceremonie-arbre",
   galerie: ["presta-ceremonie-officiant", "presta-ceremonie-champ", "presta-ceremonie-cour"],
-  avis: { auteurs: "Pascal & Abigaïl", depuis: { fr: "Le petit plus", en: "The real bonus" }, image: "ceremonie-laique" },
+  // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
+  imageAvis: "ceremonie-laique",
   textes: {
     fr: {
       seo: {

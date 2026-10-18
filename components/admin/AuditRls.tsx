@@ -10,7 +10,7 @@ const ROLES: Record<Role, { titre: string; description: string }> = {
   admin: { titre: "Cédric", description: "Votre session : les droits du back office." },
 };
 
-const OPERATIONS = { select: "lecture", insert: "écriture", rpc: "appel" } as const;
+const OPERATIONS = { select: "lecture", insert: "écriture", update: "modification", delete: "suppression", rpc: "appel" } as const;
 
 type Props = {
   /** Server Action `lancerAuditRls` (injectée pour pouvoir tester le composant). */
@@ -94,7 +94,12 @@ function LigneAudit({ resultat }: { resultat: ResultatVerification }) {
           <span className="sr-only">{ok ? "Conforme : " : "En échec : "}</span>
           {v.libelle}
           <span className="ml-2 font-mono text-xs text-sable/80">
-            {OPERATIONS[v.operation]} {v.cible} · attendu : {v.attendu}
+            {OPERATIONS[v.operation]} {v.cible}
+            {v.filtre &&
+              ` (${Object.entries(v.filtre)
+                .map(([colonne, valeur]) => `${colonne} = ${String(valeur)}`)
+                .join(", ")})`}{" "}
+            · attendu : {v.attendu}
           </span>
         </p>
         <p className={`text-sm ${ok ? "text-sable" : "text-erreur"}`}>{constat}</p>

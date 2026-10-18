@@ -1,31 +1,66 @@
 import { describe, expect, it, vi } from "vitest";
-import { LIGNES_FICTIVES, VERIFICATIONS, juger, lancerAudit, type ClientAudit, type ReponseApi, type Verification } from "./audit-rls";
+import {
+  ID_INEXISTANT,
+  LIGNES_FICTIVES,
+  MODIFICATIONS_FICTIVES,
+  VERIFICATIONS,
+  juger,
+  lancerAudit,
+  type ClientAudit,
+  type ReponseApi,
+  type Verification,
+} from "./audit-rls";
 
 const REFUS: ReponseApi = { erreur: { code: "42501", message: "permission denied for table x" } };
 const VIDE: ReponseApi = { erreur: null, lignes: 0 };
 
+/** Clé d'un select : la table, puis le filtre éventuel (`select:avis?publie=false`). */
+function cleSelect(table: string, filtre?: Record<string, string | boolean>) {
+  const f = Object.entries(filtre ?? {}).map(([c, v]) => `${c}=${String(v)}`);
+  return `select:${table}${f.length ? `?${f.join("&")}` : ""}`;
+}
+
 /** Client simulé : la réponse dépend de l'opération et de la cible. */
-function client(reponses: Record<string, ReponseApi>, parDefaut: ReponseApi = REFUS): ClientAudit & { inserts: string[] } {
+function client(
+  reponses: Record<string, ReponseApi>,
+  parDefaut: ReponseApi = REFUS,
+): ClientAudit & { inserts: string[]; ecritures: { operation: string; table: string; id: string; valeurs?: unknown }[] } {
   const inserts: string[] = [];
+  const ecritures: { operation: string; table: string; id: string; valeurs?: unknown }[] = [];
   return {
     inserts,
-    select: async (table) => reponses[`select:${table}`] ?? parDefaut,
+    ecritures,
+    select: async (table, filtre) => reponses[cleSelect(table, filtre)] ?? parDefaut,
     insert: async (table) => {
       inserts.push(table);
       return reponses[`insert:${table}`] ?? parDefaut;
+    },
+    update: async (table, valeurs, id) => {
+      ecritures.push({ operation: "update", table, id, valeurs });
+      return reponses[`update:${table}`] ?? parDefaut;
+    },
+    delete: async (table, id) => {
+      ecritures.push({ operation: "delete", table, id });
+      return reponses[`delete:${table}`] ?? parDefaut;
     },
     rpc: async (fonction) => reponses[`rpc:${fonction}`] ?? parDefaut,
   };
 }
 
-/** Une base saine, telle que les migrations 0001 et 0002 la décrivent. */
+/** Une base saine, telle que les migrations 0001 à 0004 la décrivent. */
 function baseSaine() {
   return {
-    visiteur: client({ "rpc:audit_trigger": { erreur: { code: "PGRST202", message: "Could not find the function" } } }),
+    visiteur: client({
+      "rpc:audit_trigger": { erreur: { code: "PGRST202", message: "Could not find the function" } },
+      // RLS : l'anonyme voit les 43 avis publiés, aucun avis non publié.
+      "select:avis?publie=true": { erreur: null, lignes: 43 },
+      "select:avis?publie=false": VIDE,
+    }),
     admin: client({
       "rpc:est_admin": { erreur: null, valeur: true },
       "select:audit_log": { erreur: null, lignes: 3 },
       "select:demandes_contact": VIDE,
+      "select:avis": { erreur: null, lignes: 45 },
     }),
   };
 }
@@ -90,8 +125,8 @@ describe("lancerAudit", () => {
     const clients = baseSaine();
     const select = vi.spyOn(clients.admin, "select");
     await lancerAudit({ clients, nettoyer: null });
-    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "demandes_contact"]);
-    expect(clients.visiteur.inserts).toEqual(["demandes_contact"]);
+    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "demandes_contact"]);
+    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis"]);
     expect(clients.admin.inserts).toEqual([]);
   });
 
@@ -135,6 +170,65 @@ describe("lancerAudit", () => {
   });
 });
 
+describe("lancerAudit — avis", () => {
+  it("un avis non publié visible par le visiteur est une faille", async () => {
+    const clients = baseSaine();
+    clients.visiteur = client({ ...{ "select:avis?publie=true": { erreur: null, lignes: 43 } }, "select:avis?publie=false": { erreur: null, lignes: 2 } });
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    const r = audit.resultats.find((x) => x.verification.cible === "avis" && x.verification.filtre?.publie === false)!;
+    expect(r).toMatchObject({ ok: false, faille: true });
+    expect(r.constat).toContain("2 lignes visibles");
+  });
+
+  it("le visiteur qui ne lit aucun avis publié est en échec (le site n'aurait plus d'avis), sans être une faille", async () => {
+    const clients = baseSaine();
+    clients.visiteur = client({ "select:avis?publie=false": VIDE });
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    const r = audit.resultats.find((x) => x.verification.cible === "avis" && x.verification.filtre?.publie === true)!;
+    expect(r).toMatchObject({ ok: false, faille: false });
+    expect(r.constat).toContain("Refusé alors qu'il devrait être permis");
+  });
+
+  it("modifier et supprimer visent une ligne inexistante : un droit accordé par erreur ne touche aucune vraie donnée", async () => {
+    const clients = baseSaine();
+    await lancerAudit({ clients, nettoyer: null });
+    expect(clients.visiteur.ecritures).toEqual([
+      { operation: "update", table: "avis", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.avis },
+      { operation: "delete", table: "avis", id: ID_INEXISTANT },
+    ]);
+    expect(clients.admin.ecritures).toEqual([]);
+  });
+
+  it("une modification ou une suppression permise au visiteur est une faille", async () => {
+    const clients = baseSaine();
+    const sain = baseSaine().visiteur;
+    clients.visiteur = { ...sain, update: async () => ({ erreur: null }), delete: async () => ({ erreur: null }) };
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    const update = audit.resultats.find((x) => x.verification.operation === "update")!;
+    const suppression = audit.resultats.find((x) => x.verification.operation === "delete")!;
+    expect(update).toMatchObject({ ok: false, faille: true, constat: "FAILLE — accès permis : modification permise" });
+    expect(suppression).toMatchObject({ ok: false, faille: true, constat: "FAILLE — accès permis : suppression permise" });
+  });
+
+  it("un insert d'avis réussi par le visiteur est effacé aussitôt", async () => {
+    const clients = baseSaine();
+    const sain = baseSaine().visiteur;
+    clients.visiteur = { ...sain, insert: async (table) => (table === "avis" ? { erreur: null, id: "av1" } : REFUS) };
+    const nettoyer = vi.fn(async () => undefined);
+    const audit = await lancerAudit({ clients, nettoyer });
+    expect(nettoyer).toHaveBeenCalledWith("avis", "av1");
+    expect(audit.resultats.find((x) => x.faille)!.constat).toContain("ligne supprimée aussitôt");
+  });
+
+  it("une modification sans valeurs fictives définies échoue clairement", async () => {
+    const audit = await lancerAudit({ clients: baseSaine(), nettoyer: null }, [
+      { libelle: "x", role: "visiteur", cible: "inconnue", operation: "update", attendu: "refusé" },
+    ]);
+    expect(audit.resultats[0]).toMatchObject({ ok: false, faille: false });
+    expect(audit.resultats[0].constat).toContain("MODIFICATIONS_FICTIVES");
+  });
+});
+
 describe("liste des vérifications", () => {
   it("couvre les tables privées et les fonctions exposées, pour le visiteur", () => {
     const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur").map((x) => `${x.operation}:${x.cible}:${x.attendu}`);
@@ -147,13 +241,25 @@ describe("liste des vérifications", () => {
         "insert:demandes_contact:refusé",
         "rpc:est_admin:refusé",
         "rpc:audit_trigger:refusé",
+        "insert:avis:refusé",
+        "update:avis:refusé",
+        "delete:avis:refusé",
       ]),
     );
   });
 
+  it("avis : le visiteur lit les avis publiés, et aucun avis non publié", () => {
+    const lectures = VERIFICATIONS.filter((x) => x.role === "visiteur" && x.cible === "avis" && x.operation === "select");
+    expect(lectures.map((x) => [x.filtre, x.attendu])).toEqual([
+      [{ publie: true }, "autorisé"],
+      [{ publie: false }, "vide"],
+    ]);
+  });
+
   it("vérifie les droits de la session admin", () => {
     const admin = VERIFICATIONS.filter((x) => x.role === "admin").map((x) => `${x.operation}:${x.cible}:${x.attendu}`);
-    expect(admin).toEqual(["rpc:est_admin:autorisé", "select:audit_log:autorisé", "select:demandes_contact:vide"]);
+    expect(admin).toEqual(["rpc:est_admin:autorisé", "select:audit_log:autorisé", "select:avis:autorisé", "select:demandes_contact:vide"]);
+    expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "avis")!.filtre).toBeUndefined();
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "est_admin")!.valeur).toBe(true);
   });
 
@@ -167,7 +273,7 @@ describe("liste des vérifications", () => {
   });
 
   it("aucune vérification en double", () => {
-    const cles = VERIFICATIONS.map((x) => `${x.role}:${x.operation}:${x.cible}`);
+    const cles = VERIFICATIONS.map((x) => `${x.role}:${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}`);
     expect(new Set(cles).size).toBe(cles.length);
   });
 });

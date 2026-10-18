@@ -7,12 +7,15 @@
  * Les unitaires ne voient pas un GRANT oublié ou une policy trop large : cet
  * audit, si.
  *
- * Pour compléter (avis, articles, photos…) : ajouter une ligne à
- * `VERIFICATIONS`, et pour un `insert`, une ligne fictive dans `LIGNES_FICTIVES`.
+ * Pour compléter (articles, photos…) : ajouter une ligne à `VERIFICATIONS`,
+ * pour un `insert`, une ligne fictive dans `LIGNES_FICTIVES`, et pour un
+ * `update`, des valeurs dans `MODIFICATIONS_FICTIVES`. `update` et `delete`
+ * visent une ligne qui n'existe pas (`ID_INEXISTANT`) : même en cas de faille,
+ * aucune vraie donnée n'est touchée — seul le droit est mis à l'épreuve.
  */
 
 export type Role = "visiteur" | "admin";
-export type Operation = "select" | "insert" | "rpc";
+export type Operation = "select" | "insert" | "update" | "delete" | "rpc";
 
 /**
  * - `refusé` : l'API doit répondre par un refus de droits ;
@@ -25,9 +28,11 @@ export type Attendu = "refusé" | "vide" | "autorisé";
 export type Verification = {
   libelle: string;
   role: Role;
-  /** Table (select, insert) ou fonction (rpc). */
+  /** Table (select, insert, update, delete) ou fonction (rpc). */
   cible: string;
   operation: Operation;
+  /** select : ne compter que les lignes où chaque colonne vaut la valeur donnée (ex. `{ publie: false }`). */
+  filtre?: Record<string, string | boolean>;
   attendu: Attendu;
   /** Pour `autorisé` : valeur que doit renvoyer la fonction (rpc). */
   valeur?: unknown;
@@ -49,6 +54,27 @@ export const VERIFICATIONS: readonly Verification[] = [
     attendu: "refusé",
     note: "Seul le serveur du site (clé service_role) écrit les demandes.",
   },
+  {
+    libelle: "Lire les avis publiés",
+    role: "visiteur",
+    cible: "avis",
+    operation: "select",
+    filtre: { publie: true },
+    attendu: "autorisé",
+    note: "Les avis publiés sont publics : ce sont ceux des pages du site.",
+  },
+  {
+    libelle: "Lire les avis non publiés",
+    role: "visiteur",
+    cible: "avis",
+    operation: "select",
+    filtre: { publie: false },
+    attendu: "vide",
+    note: "Un avis non publié (brouillon, retiré du site) ne doit être visible que dans le back office.",
+  },
+  { libelle: "Créer un avis par l'API", role: "visiteur", cible: "avis", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier un avis par l'API", role: "visiteur", cible: "avis", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer un avis par l'API", role: "visiteur", cible: "avis", operation: "delete", attendu: "refusé" },
   { libelle: "Appeler est_admin()", role: "visiteur", cible: "est_admin", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler audit_trigger()", role: "visiteur", cible: "audit_trigger", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler touch_updated_at()", role: "visiteur", cible: "touch_updated_at", operation: "rpc", attendu: "refusé" },
@@ -56,6 +82,14 @@ export const VERIFICATIONS: readonly Verification[] = [
   // --- Administrateur (session de Cédric) ---
   { libelle: "Appeler est_admin()", role: "admin", cible: "est_admin", operation: "rpc", attendu: "autorisé", valeur: true },
   { libelle: "Lire le journal d'audit", role: "admin", cible: "audit_log", operation: "select", attendu: "autorisé" },
+  {
+    libelle: "Lire tous les avis, publiés ou non",
+    role: "admin",
+    cible: "avis",
+    operation: "select",
+    attendu: "autorisé",
+    note: "Le back office voit aussi les avis non publiés.",
+  },
   {
     libelle: "Lire les demandes de contact",
     role: "admin",
@@ -77,7 +111,21 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
     type_evenement: "autre",
     message: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
   },
+  avis: {
+    auteurs: "AUDIT RLS — LIGNE FICTIVE",
+    categorie: "mariage",
+    texte_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
+    publie: false,
+  },
 };
+
+/** Valeurs des tests d'`update` (valides, pour qu'une faille se voie). */
+export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
+  avis: { auteurs: "AUDIT RLS — MODIFICATION FICTIVE" },
+};
+
+/** Identifiant visé par les tests d'`update` et de `delete` : aucune ligne ne le porte. */
+export const ID_INEXISTANT = "00000000-0000-0000-0000-000000000000";
 
 // --- Exécution ---------------------------------------------------------------
 
@@ -94,8 +142,12 @@ export type ReponseApi = {
 
 /** Accès à la base sous un rôle donné (le serveur fournit les vrais clients Supabase, les tests des faux). */
 export type ClientAudit = {
-  select(table: string): Promise<ReponseApi>;
+  select(table: string, filtre?: Record<string, string | boolean>): Promise<ReponseApi>;
   insert(table: string, ligne: Record<string, unknown>): Promise<ReponseApi>;
+  /** Modifie la ligne `id` (inexistante : seul le droit est testé). */
+  update(table: string, valeurs: Record<string, unknown>, id: string): Promise<ReponseApi>;
+  /** Supprime la ligne `id` (inexistante : seul le droit est testé). */
+  delete(table: string, id: string): Promise<ReponseApi>;
   rpc(fonction: string): Promise<ReponseApi>;
 };
 
@@ -158,6 +210,8 @@ function pluriel(n: number, mot: string): string {
 function decrireAccord(c: Extract<Constat, { type: "accorde" }>, operation: Operation): string {
   if (operation === "select") return typeof c.lignes === "number" ? `${pluriel(c.lignes, "ligne")} visible${c.lignes > 1 ? "s" : ""}` : "lecture permise";
   if (operation === "insert") return "ligne créée";
+  if (operation === "update") return "modification permise";
+  if (operation === "delete") return "suppression permise";
   return `renvoie ${JSON.stringify(c.valeur ?? null)}`;
 }
 
@@ -188,8 +242,14 @@ export function juger(verification: Verification, reponse: ReponseApi): Omit<Res
 
 async function executer(client: ClientAudit, v: Verification): Promise<ReponseApi> {
   try {
-    if (v.operation === "select") return await client.select(v.cible);
+    if (v.operation === "select") return await client.select(v.cible, v.filtre);
     if (v.operation === "rpc") return await client.rpc(v.cible);
+    if (v.operation === "delete") return await client.delete(v.cible, ID_INEXISTANT);
+    if (v.operation === "update") {
+      const valeurs = MODIFICATIONS_FICTIVES[v.cible];
+      if (!valeurs) return { erreur: { message: `Aucune modification fictive définie pour « ${v.cible} » (MODIFICATIONS_FICTIVES).` } };
+      return await client.update(v.cible, valeurs, ID_INEXISTANT);
+    }
     const ligne = LIGNES_FICTIVES[v.cible];
     if (!ligne) return { erreur: { message: `Aucune ligne fictive définie pour « ${v.cible} » (LIGNES_FICTIVES).` } };
     return await client.insert(v.cible, ligne);
@@ -198,7 +258,7 @@ async function executer(client: ClientAudit, v: Verification): Promise<ReponseAp
   }
 }
 
-/** Lance toutes les vérifications, l'une après l'autre (une dizaine de requêtes). */
+/** Lance toutes les vérifications, l'une après l'autre (une vingtaine de requêtes). */
 export async function lancerAudit(
   d: DependancesAudit,
   verifications: readonly Verification[] = VERIFICATIONS,

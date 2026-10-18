@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { OPTIONS } from "@/contenu/options";
-import { avis } from "@/contenu/avis";
 import { ANIMATIONS } from "@/contenu/pages/animations";
 import { EVENEMENTIEL } from "@/contenu/pages/evenementiel";
 import { MARIAGES } from "@/contenu/pages/mariages";
@@ -16,19 +15,6 @@ describe("pages d'option", () => {
       expect(c.galerie.length === 0 || c.galerie.length >= 2, slug).toBe(true);
       expect(c.galerie.length, slug).toBeLessThanOrEqual(6);
       expect(new Set(c.galerie).size, slug).toBe(c.galerie.length);
-    }
-  });
-
-  it("les avis cités existent, et la phrase de départ s'y trouve dans chaque langue renseignée", () => {
-    for (const [slug, c] of Object.entries(CONTENUS_OPTIONS)) {
-      if (!c.avis) continue;
-      const { auteurs, depuis } = c.avis;
-      if (depuis) expect(depuis.fr, slug).toBeTruthy();
-      for (const l of ["fr", "en"] as const) {
-        if (depuis && !depuis[l]) continue;
-        const trouves = avis(l, "mariage").filter((a) => a.auteurs === auteurs && (!depuis || a.texte.includes(depuis[l]!)));
-        expect(trouves.length, `${slug} (${l})`).toBeGreaterThan(0);
-      }
     }
   });
 

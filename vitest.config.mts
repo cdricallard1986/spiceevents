@@ -4,6 +4,8 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
+  // « server-only » est fourni par Next (sans paquet) : sa version vide permet de tester les modules serveur.
+  resolve: { alias: { "server-only": "next/dist/compiled/server-only/empty.js" } },
   test: {
     environment: "jsdom",
     include: ["**/*.test.{ts,tsx}"],

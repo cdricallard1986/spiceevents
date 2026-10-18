@@ -3,7 +3,8 @@ import type { ContenuOption } from "./types";
 export const OUVERTURE_DE_BAL: ContenuOption = {
   image: "presta-bal-fumee-bleue",
   galerie: ["presta-bal-fumee-nb", "hero-premiere-danse", "maison-mariage-danse-gobos", "couple-faisceaux"],
-  avis: { auteurs: "Clémentine & Kévin", depuis: { fr: "Notre ouverture de bal", en: "Our first dance" }, image: "premiere-danse-rose" },
+  // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
+  imageAvis: "premiere-danse-rose",
   textes: {
     fr: {
       seo: {
