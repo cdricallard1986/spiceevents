@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { OPTIONS } from "@/contenu/options";
 import { routing } from "@/i18n/routing";
-import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, redirections } from "./redirections";
+import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, redirections } from "./redirections";
 
 /** Chemins internes FR valides, dynamiques résolus avec les vrais slugs d'options. */
 const cheminsValides = new Set<string>([
@@ -59,6 +59,16 @@ describe("redirections 301", () => {
       expect(i).toBeGreaterThanOrEqual(0);
       expect(i).toBeLessThan(generique);
     }
+  });
+
+  it("envoient tout spiceevents.uk vers la version anglaise, avant toute autre règle", () => {
+    const [premiere] = liste;
+    expect(premiere.has).toEqual([{ type: "host", value: DOMAINE_ANGLAIS.hote }]);
+    expect(premiere.destination).toBe("https://www.spiceevents.fr/en/:chemin*");
+    const hote = new RegExp(`^${DOMAINE_ANGLAIS.hote}$`);
+    for (const h of ["spiceevents.uk", "www.spiceevents.uk"]) expect(hote.test(h)).toBe(true);
+    for (const h of ["spiceevents.fr", "www.spiceevents.fr", "spiceevents.vercel.app", "spiceeventsXuk"]) expect(hote.test(h)).toBe(false);
+    expect(liste.slice(1).every((r) => !r.has)).toBe(true);
   });
 
   it("ne redirigent pas une page vers elle-même", () => {

@@ -4,7 +4,19 @@
  * Ne jamais retirer une ligne : des liens externes et Google pointent encore dessus.
  */
 
-export type Redirection = { source: string; destination: string; permanent: true };
+export type Redirection = {
+  source: string;
+  destination: string;
+  permanent: true;
+  has?: { type: "host"; value: string }[];
+};
+
+/**
+ * spiceevents.uk (et www) n'est pas un second site : toute adresse renvoie vers
+ * la version anglaise de spiceevents.fr, qui garde seule l'autorité du domaine.
+ * La règle ne s'applique que lorsque ce domaine est branché sur Vercel.
+ */
+export const DOMAINE_ANGLAIS = { hote: "(www\\.)?spiceevents\\.uk", destination: "https://www.spiceevents.fr/en" };
 
 /** Ancienne page d'option → slug français de la nouvelle page `/animations/<slug>`. */
 export const ANCIENNES_OPTIONS: Record<string, string> = {
@@ -55,7 +67,14 @@ export const ARTICLES_RETIRES: Record<string, string> = {
 };
 
 export function redirections(): Redirection[] {
-  const liste: Redirection[] = [];
+  const liste: Redirection[] = [
+    {
+      source: "/:chemin*",
+      has: [{ type: "host", value: DOMAINE_ANGLAIS.hote }],
+      destination: `${DOMAINE_ANGLAIS.destination}/:chemin*`,
+      permanent: true,
+    },
+  ];
   for (const [source, destination] of Object.entries(ANCIENNES_PAGES)) {
     liste.push({ source, destination, permanent: true });
   }
