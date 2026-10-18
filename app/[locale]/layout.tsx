@@ -9,6 +9,7 @@ import { SITE } from "@/contenu/site";
 import { EnTete } from "@/components/layout/EnTete";
 import { PiedDePage } from "@/components/layout/PiedDePage";
 import { PillNouvelleVersion } from "@/components/common/PillNouvelleVersion";
+import { BarreDev } from "@/components/admin/BarreDev";
 import { JsonLd } from "@/components/common/JsonLd";
 import { entreprise } from "@/lib/seo/donneesStructurees";
 import "../globals.css";
@@ -57,6 +58,7 @@ export default async function LayoutLangue({
           <main id="contenu">{children}</main>
           <PiedDePage />
           <PillNouvelleVersion />
+          <BarreDev />
           <JsonLd donnees={entreprise(locale)} />
         </NextIntlClientProvider>
         <Analytics />

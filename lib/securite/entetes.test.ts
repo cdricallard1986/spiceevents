@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { entetesSecurite, politiqueContenu } from "./entetes";
+import { entetesSecurite, originesSupabase, politiqueContenu } from "./entetes";
 
 const valeur = (prod: boolean, cle: string) => entetesSecurite(prod).find((e) => e.key === cle)?.value;
 
@@ -30,5 +30,15 @@ describe("entetesSecurite", () => {
     expect(valeur(true, "Referrer-Policy")).toBe("strict-origin-when-cross-origin");
     expect(valeur(true, "Permissions-Policy")).toContain("camera=()");
     expect(valeur(true, "X-Content-Type-Options")).toBe("nosniff");
+  });
+
+  it("autorise le navigateur à joindre le projet Supabase, et lui seul", () => {
+    const connect = politiqueContenu(true, "https://abcdef.supabase.co").split("; ").find((d) => d.startsWith("connect-src"));
+    expect(connect).toBe("connect-src 'self' https://abcdef.supabase.co wss://abcdef.supabase.co https://va.vercel-scripts.com");
+    expect(politiqueContenu(true)).toContain(`connect-src 'self' ${originesSupabase().join(" ")}`);
+  });
+
+  it("réduit l'adresse du projet à son origine", () => {
+    expect(originesSupabase("https://abcdef.supabase.co/")).toEqual(["https://abcdef.supabase.co", "wss://abcdef.supabase.co"]);
   });
 });

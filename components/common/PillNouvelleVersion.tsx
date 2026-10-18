@@ -5,12 +5,21 @@ import { useTranslations } from "next-intl";
 
 const INTERVALLE_MS = 5 * 60 * 1000;
 
+/** Classes communes à la pill et aux toasts du back office (`fixed top-center`). */
+export const CLASSES_PILL = "border bg-nuit-2 px-5 py-2.5 text-sm text-ivoire shadow-lg";
+
+/** Pill du site public : textes traduits par next-intl. */
+export function PillNouvelleVersion() {
+  const t = useTranslations("version");
+  return <PillVersion disponible={t("disponible")} recharger={t("recharger")} />;
+}
+
 /**
  * Affiche « Nouvelle version disponible — Recharger » quand le site a été
  * redéployé pendant que l'onglet était ouvert. Ne recharge jamais tout seul.
+ * Textes en paramètres : le back office (hors next-intl) la monte aussi.
  */
-export function PillNouvelleVersion() {
-  const t = useTranslations("version");
+export function PillVersion({ disponible: texteDisponible, recharger }: { disponible: string; recharger: string }) {
   const [disponible, setDisponible] = useState(false);
 
   useEffect(() => {
@@ -44,9 +53,9 @@ export function PillNouvelleVersion() {
       <button
         type="button"
         onClick={() => window.location.reload()}
-        className="rounded-full border border-or bg-nuit-2 px-5 py-2.5 text-sm text-ivoire shadow-lg"
+        className={`${CLASSES_PILL} rounded-full border-or`}
       >
-        {t("disponible")} — <span className="font-semibold text-or">{t("recharger")}</span>
+        {texteDisponible} — <span className="font-semibold text-or">{recharger}</span>
       </button>
     </div>
   );

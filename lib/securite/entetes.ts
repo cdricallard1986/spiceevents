@@ -7,7 +7,15 @@
  * dans la console.
  */
 
+import { SUPABASE_URL } from "../supabase/config";
+
 export type Entete = { key: string; value: string };
+
+/** Origine du projet Supabase (https), et son équivalent wss pour le temps réel. */
+export function originesSupabase(url: string = SUPABASE_URL): string[] {
+  const origine = new URL(url).origin;
+  return [origine, origine.replace(/^https:/, "wss:")];
+}
 
 /** Tiers autorisés, nommés un par un. */
 export const TIERS = {
@@ -17,7 +25,12 @@ export const TIERS = {
   scripts: ["https://va.vercel-scripts.com"],
 } as const;
 
-export function politiqueContenu(production: boolean): string {
+/**
+ * Politique de sécurité du contenu. Le navigateur parle directement à Supabase
+ * (back office : session, envoi des photos) : son origine est dans `connect-src`.
+ * ⚠️ next.config.ts importe ce fichier : imports relatifs seulement (pas d'alias `@/`).
+ */
+export function politiqueContenu(production: boolean, supabaseUrl: string = SUPABASE_URL): string {
   const directives: Record<string, string[]> = {
     "default-src": ["'self'"],
     // Pas de nonce : Next injecte des scripts en ligne, un nonce rendrait toutes les pages dynamiques.
@@ -25,7 +38,7 @@ export function politiqueContenu(production: boolean): string {
     "style-src": ["'self'", "'unsafe-inline'"],
     "img-src": ["'self'", "data:", "blob:"],
     "font-src": ["'self'"],
-    "connect-src": ["'self'", ...TIERS.scripts],
+    "connect-src": ["'self'", ...originesSupabase(supabaseUrl), ...TIERS.scripts],
     "frame-src": [...TIERS.cadres],
     "media-src": ["'self'"],
     "object-src": ["'none'"],
