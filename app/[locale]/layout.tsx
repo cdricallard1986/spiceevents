@@ -28,6 +28,10 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Seules « fr » et « en » sont des langues : `/favicon.ico`, `/x.png`… répondent
+// 404 au lieu de rendre une page avec une langue inconnue (erreur 500).
+export const dynamicParams = false;
+
 export default async function LayoutLangue({
   children,
   params,
