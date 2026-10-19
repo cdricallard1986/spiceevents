@@ -35,7 +35,7 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Journal",
     description: "Articles du journal : rédaction, photos, publication.",
     icone: "journal",
-    disponible: false,
+    disponible: true,
   },
   {
     href: "/admin/photos",

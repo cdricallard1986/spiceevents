@@ -43,7 +43,7 @@ describe("Server Actions du back office", () => {
 
   it("chaque export de app/admin/(espace)/**/actions.ts commence par exigerAdmin()", () => {
     const fichiers = fichiersActions(ESPACE);
-    expect(fichiers.map((f) => relative(RACINE, f))).toEqual(expect.arrayContaining([join("app", "admin", "(espace)", "avis", "actions.ts"), join("app", "admin", "(espace)", "demandes", "actions.ts"), join("app", "admin", "(espace)", "photos", "actions.ts")]));
+    expect(fichiers.map((f) => relative(RACINE, f))).toEqual(expect.arrayContaining([join("app", "admin", "(espace)", "avis", "actions.ts"), join("app", "admin", "(espace)", "demandes", "actions.ts"), join("app", "admin", "(espace)", "photos", "actions.ts"), join("app", "admin", "(espace)", "journal", "actions.ts")]));
     const fautifs = fichiers.flatMap((f) => {
       const source = readFileSync(f, "utf8");
       expect(source.trimStart().startsWith('"use server"'), relative(RACINE, f)).toBe(true);
