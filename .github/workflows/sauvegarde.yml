@@ -1,0 +1,93 @@
+name: Sauvegarde
+
+# Copie de la base Supabase (schéma public + données, comptes) et des fichiers du
+# bucket `medias`, poussée dans le dépôt privé cdricallard1986/spiceevents-backups.
+# Indépendante de Supabase : c'est la copie qui reste si le projet est perdu.
+#
+# Secrets du dépôt (Settings → Secrets and variables → Actions) :
+# - supabase_db_url : URL du « Session pooler » (port 5432) avec le mot de passe ;
+# - supabase_service_role_key : clé secrète Supabase (lecture du bucket) ;
+# - backups_token : jeton GitHub limité au dépôt spiceevents-backups (Contents : écriture).
+#
+# ⚠️ GitHub met en pause les workflows planifiés après 60 jours sans commit sur la
+# branche par défaut : le fichier DERNIERE_SAUVEGARDE du dépôt de sauvegarde date la
+# dernière copie réussie. Un workflow planifié ne tourne que depuis la branche par
+# défaut (main) : il démarre au premier passage de ce fichier en production.
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # chaque nuit, 4 h 17 à Paris (heure d'été)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sauvegarde
+  cancel-in-progress: false
+
+jobs:
+  sauvegarde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SUPABASE_DB_URL: ${{ secrets.supabase_db_url }}
+      BACKUPS_TOKEN: ${{ secrets.backups_token }}
+      supabase_service_role_key: ${{ secrets.supabase_service_role_key }}
+      NEXT_PUBLIC_SUPABASE_URL: https://tyghpfqyppiughrknuit.supabase.co
+    steps:
+      - name: Secrets présents ?
+        run: |
+          manquants=""
+          [ -n "$SUPABASE_DB_URL" ] || manquants="$manquants supabase_db_url"
+          [ -n "$BACKUPS_TOKEN" ] || manquants="$manquants backups_token"
+          [ -n "$supabase_service_role_key" ] || manquants="$manquants supabase_service_role_key"
+          if [ -n "$manquants" ]; then
+            echo "::error::Secrets manquants :$manquants — aucune sauvegarde n'a été faite."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Client PostgreSQL 17 (même version majeure que la base)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-common
+          sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
+          sudo apt-get install -y -qq postgresql-client-17
+
+      - name: Dépôt des sauvegardes
+        run: git clone --depth 1 "https://x-access-token:${BACKUPS_TOKEN}@github.com/cdricallard1986/spiceevents-backups.git" sauvegardes
+
+      - name: Dump de la base
+        run: |
+          # Un « \r\n » collé avec l'URL dans le secret ferait échouer pg_dump.
+          URL_BASE="$(printf '%s' "$SUPABASE_DB_URL" | tr -d '\r\n')"
+          PG_DUMP=/usr/lib/postgresql/17/bin/pg_dump
+          mkdir -p sauvegardes/base
+          {
+            echo "-- Sauvegarde spiceevents du $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "-- Restauration : psql \"<url d'une base vide>\" -f base/spiceevents.sql"
+            # Schéma public complet (tables, fonctions, triggers, policies) + données.
+            "$PG_DUMP" "$URL_BASE" --schema=public --no-owner --no-privileges --quote-all-identifiers
+            # Comptes : sans eux, administrateurs.user_id pointerait vers des comptes disparus.
+            "$PG_DUMP" "$URL_BASE" --data-only --table=auth.users --table=auth.identities --no-owner --no-privileges --quote-all-identifiers
+          } > sauvegardes/base/spiceevents.sql
+          echo "Taille : $(du -h sauvegardes/base/spiceevents.sql | cut -f1)"
+
+      - name: Fichiers du bucket medias
+        run: node outils/sauvegarder_medias.mjs sauvegardes/medias
+
+      - name: Envoi
+        working-directory: sauvegardes
+        run: |
+          date -u +%Y-%m-%dT%H:%M:%SZ > DERNIERE_SAUVEGARDE
+          git config user.name "Sauvegarde spiceevents"
+          git config user.email "sauvegarde@spiceevents.fr"
+          git add -A
+          git commit -q -m "Sauvegarde du $(cat DERNIERE_SAUVEGARDE)"
+          git push -q origin HEAD
