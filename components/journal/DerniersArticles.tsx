@@ -27,7 +27,9 @@ export async function DerniersArticles({ locale, surtitre, titre, categories, al
 
   return (
     <Section surtitre={surtitre} titre={titre} alterne={alterne}>
-      <ul className="-mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0 lg:pb-0">
+      {/* Sur téléphone et tablette, la rangée déborde jusqu'aux bords de l'écran pour défiler,
+          tout en commençant alignée sur le texte (mêmes marges que `.conteneur`). */}
+      <ul className="-mx-5 flex snap-x snap-mandatory scroll-px-5 gap-6 overflow-x-auto px-5 pb-4 md:-mx-10 md:scroll-px-10 md:px-10 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0 lg:pb-0">
         {liste.map((a) => (
           <li key={a.slug} className="w-[70vw] max-w-72 shrink-0 snap-start lg:w-auto lg:max-w-none">
             <CarteArticle article={a} compact />
