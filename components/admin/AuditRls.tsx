@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useTransition } from "react";
 import type { ResultatAudit, ResultatVerification, Role } from "@/lib/admin/audit-rls";
-import { classesBouton } from "@/components/ui/Bouton";
-import { useToasts } from "./Toasts";
+import type { Suite } from "@/hooks/useSuite";
+import { CommandesSuite } from "./CommandesSuite";
 
 const ROLES: Record<Role, { titre: string; description: string }> = {
   visiteur: { titre: "Visiteur", description: "Clé publique, sans session : ce que n'importe qui peut tenter depuis Internet." },
@@ -12,55 +11,17 @@ const ROLES: Record<Role, { titre: string; description: string }> = {
 
 const OPERATIONS = { select: "lecture", insert: "écriture", update: "modification", delete: "suppression", rpc: "appel", upload: "envoi dans", list: "liste de" } as const;
 
-type Props = {
-  /** Server Action `lancerAuditRls` (injectée pour pouvoir tester le composant). */
-  action: () => Promise<ResultatAudit>;
-};
-
 /**
- * Audit des droits en base : un bouton lance les vérifications sur la vraie
- * base, le résultat s'affiche ligne par ligne (vert : conforme, rouge : à
- * corriger).
+ * Audit des droits en base : le résultat ligne par ligne (vert : conforme,
+ * rouge : à corriger), par rôle. L'audit est lancé automatiquement à
+ * l'ouverture de la page (`useSuite`, dans `OngletsTests`, qui appelle la
+ * Server Action `lancerAuditRls`) ; « Relancer » le rejoue.
  */
-export function AuditRls({ action }: Props) {
-  const [audit, setAudit] = useState<ResultatAudit | null>(null);
-  const [erreur, setErreur] = useState<string | null>(null);
-  const [enCours, demarrer] = useTransition();
-  const { afficher } = useToasts();
-
-  function lancer() {
-    setErreur(null);
-    demarrer(async () => {
-      try {
-        const resultat = await action();
-        setAudit(resultat);
-        if (resultat.echoues === 0) afficher("Audit terminé : tous les droits sont conformes.");
-        else afficher(`Audit terminé : ${resultat.echoues} vérification${resultat.echoues > 1 ? "s" : ""} en échec.`, "erreur");
-      } catch {
-        setErreur("L'audit n'a pas pu être lancé. Rechargez la page (la session a peut-être expiré) puis réessayez.");
-      }
-    });
-  }
-
+export function AuditRls({ suite }: { suite: Suite<ResultatAudit> }) {
+  const audit = suite.resultat;
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-4">
-        <button type="button" onClick={lancer} disabled={enCours} className={`${classesBouton("primaire")} disabled:cursor-wait disabled:opacity-70`}>
-          {enCours ? "Audit en cours…" : audit ? "Relancer l'audit" : "Lancer l'audit"}
-        </button>
-        {audit && (
-          <p role="status" className={`text-sm ${audit.echoues ? "text-erreur" : "text-succes"}`}>
-            {audit.echoues ? `${audit.echoues} en échec` : "Tout est conforme"} · {audit.reussis}/{audit.resultats.length} vérifications ·{" "}
-            {new Date(audit.date).toLocaleTimeString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit", second: "2-digit" })}
-          </p>
-        )}
-      </div>
-
-      {erreur && (
-        <p role="alert" className="mt-6 border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-          {erreur}
-        </p>
-      )}
+      <CommandesSuite suite={suite} bilan={audit ? { reussis: audit.reussis, total: audit.resultats.length } : null} unite="vérifications" />
 
       {audit &&
         (Object.keys(ROLES) as Role[]).map((role) => {

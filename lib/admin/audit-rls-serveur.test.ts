@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { clientAudit, erreurStockage } from "./audit-rls-serveur";
+import { CLIENT_SANS_SESSION, clientAudit, dependancesAuditVisiteur, erreurStockage } from "./audit-rls-serveur";
+import { juger } from "./audit-rls";
 
 describe("erreurStockage", () => {
   it("un refus de la policy Storage devient STORAGE-403 (refus reconnu par l'audit)", () => {
@@ -51,5 +52,34 @@ describe("clientAudit — stockage", () => {
   it("traduit un refus de Storage", async () => {
     const { client } = faux({ upload: { data: null, error: { message: "new row violates row-level security policy", status: 400, statusCode: "403" } } });
     expect((await client.upload("medias", "a.png", new Uint8Array(), "image/png")).erreur?.code).toBe("STORAGE-403");
+  });
+});
+
+describe("dependancesAuditVisiteur (CI)", () => {
+  it("sans clé service_role : pas de nettoyage possible (l'audit signale la ligne à effacer à la main)", () => {
+    const d = dependancesAuditVisiteur(null);
+    expect(d.nettoyer).toBeNull();
+    expect(d.nettoyerFichier).toBeNull();
+  });
+
+  it("avec la clé service_role : une ligne ou un fichier créés par une faille sont effacés", async () => {
+    const eq = vi.fn(async () => ({ error: null }));
+    const remove = vi.fn(async () => ({ error: null }));
+    const service = {
+      from: vi.fn(() => ({ delete: () => ({ eq }) })),
+      storage: { from: vi.fn(() => ({ remove })) },
+    } as unknown as SupabaseClient;
+    const d = dependancesAuditVisiteur(service);
+    await d.nettoyer!("avis", "id-1");
+    await d.nettoyerFichier!("medias", "galeries/x.png");
+    expect(service.from).toHaveBeenCalledWith("avis");
+    expect(eq).toHaveBeenCalledWith("id", "id-1");
+    expect(remove).toHaveBeenCalledWith(["galeries/x.png"]);
+  });
+
+  it("le client « admin » sans session ne conclut jamais au vert", async () => {
+    const reponse = await CLIENT_SANS_SESSION.rpc("est_admin");
+    expect(juger({ libelle: "x", role: "admin", cible: "est_admin", operation: "rpc", attendu: "autorisé", valeur: true }, reponse).ok).toBe(false);
+    expect(juger({ libelle: "x", role: "admin", cible: "avis", operation: "insert", attendu: "refusé" }, await CLIENT_SANS_SESSION.insert("avis", {})).ok).toBe(false);
   });
 });

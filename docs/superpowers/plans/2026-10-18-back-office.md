@@ -6,7 +6,7 @@ _18 octobre 2026_
 
 Cédric gère lui-même, sans passer par Claude : les **avis des mariés**, les **articles du journal**,
 les **photos des galeries** et les **demandes de contact**. Le back office regroupe aussi la page
-**`/admin/tests`** (tests unitaires + audit des droits en base) et la page **`/admin/emails`**
+**`/admin/tests`** (comportements SQL, audit des droits en base, tests unitaires, configuration) et la page **`/admin/emails`**
 (envoi réel des emails du formulaire à une adresse de test).
 
 ## Décisions de Cédric (18 octobre)
@@ -85,6 +85,29 @@ Vercel, puis `main` sur accord de Cédric.
    fichiers du bucket `medias` compris ; une restauration d'essai.
 7. **Bascule** — sur accord : `main`, puis retrait des anciennes sources (fichiers JSON des avis, MDX).
    Routine de veille de sécurité hebdomadaire.
+
+## Page Tests (`/admin/tests`)
+
+_19 octobre — même mécanique que la page Tests du CRM, au style du back office._
+
+- **Quatre onglets**, chacun avec une **pastille de verdict** visible sans l'ouvrir (`✓`, `✗ n`,
+  `…` en cours, `!` n'a pas pu s'exécuter) ; onglet ouvert gardé dans l'adresse (`?onglet=droits`),
+  flèches du clavier :
+  1. **Comportements SQL** — `tests_sql()` (migration `0010`) : contraintes des articles, avis,
+     photos et demandes, triggers `articles_slug_fige` / `touch_updated_at` / `audit_trigger`,
+     cascade des galeries, `est_admin()`. Chaque cas écrit dans les vraies tables puis lève `ZZ001`
+     pour tout annuler ; chaque refus a son contrôle négatif. Route gardée `/admin/tests/sql`.
+  2. **Audit des droits** — l'audit RLS (visiteur + session), Server Action `lancerAuditRls`.
+  3. **Tests unitaires** — rapport Vitest régénéré au `prebuild`, version et date du build.
+  4. **Configuration** — présence des secrets, valeurs non secrètes.
+- Les deux suites « live » partent **automatiquement à l'ouverture**, en parallèle, même onglet
+  fermé (c'est ce qui renseigne les pastilles) ; un bouton **Relancer** reste.
+- **À chaque commit**, job **« Audits base »** de la CI (`npm run audits:base`,
+  `tests/audits-base.integration.ts`, hors `npx vitest run` et hors prebuild) : audit côté visiteur
+  (clé publishable, toujours) et `tests_sql()` avec la clé service_role si le secret GitHub
+  `supabase_service_role_key` existe (sinon avertissement, sans bloquer). Rien n'est écrit
+  durablement. ⚠️ Appliquer une migration de test **avant** de pousser le code qui l'appelle, sinon
+  le job est rouge (« la suite n'a pas pu s'exécuter »).
 
 ## À faire par Cédric
 

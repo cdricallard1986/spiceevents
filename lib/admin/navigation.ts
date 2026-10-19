@@ -54,7 +54,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/tests",
     libelle: "Tests",
-    description: "Tests automatiques et audit des droits en base.",
+    description: "Comportements SQL, audit des droits, tests automatiques, configuration.",
     icone: "tests",
     disponible: true,
   },

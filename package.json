@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "audits:base": "vitest run --config vitest.audits.config.mts",
     "tests:rapport": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=ExperimentalWarning outils/rapport-tests.mjs"
   },
   "dependencies": {

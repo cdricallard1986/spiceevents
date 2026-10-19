@@ -23,3 +23,30 @@ jobs:
       - run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: "1"
+
+  # Audits contre la VRAIE base, à chaque commit (dépôt public : minutes gratuites).
+  # Ne bloque pas le déploiement Vercel, mais met le commit en rouge si la base
+  # accepte ce qu'elle doit refuser. Rien n'est écrit durablement : l'audit
+  # visiteur ne fait que des tentatives refusées (une faille est effacée aussitôt
+  # avec service_role), et chaque cas SQL annule ses écritures.
+  audits-base:
+    name: Audits base
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # Absent (fork, Dependabot, secret non créé) : suite SQL sautée, avertissement ci-dessous.
+      supabase_service_role_key: ${{ secrets.supabase_service_role_key }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Secret de la suite SQL
+        run: |
+          if [ -z "$supabase_service_role_key" ]; then
+            echo "::warning title=Audits base::Secret supabase_service_role_key absent : comportements SQL (tests_sql) non vérifiés, seul l'audit des droits côté visiteur tourne."
+          fi
+      - name: Audit des droits (visiteur) et comportements SQL
+        run: npm run audits:base

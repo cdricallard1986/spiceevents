@@ -78,11 +78,13 @@ export function clientAudit(supabase: SupabaseClient): ClientAudit {
   };
 }
 
-/** Dépendances réelles de l'audit ; `sessionAdmin` = client de `exigerAdmin()`. */
-export function dependancesAudit(sessionAdmin: SupabaseClient): DependancesAudit {
-  const service = clientAdmin();
+/**
+ * Effacement d'une écriture qui n'aurait pas dû réussir (faille), avec la clé
+ * service_role ; sans elle, l'audit signale la ligne ou le fichier à supprimer
+ * à la main.
+ */
+function nettoyage(service: SupabaseClient | null): Pick<DependancesAudit, "nettoyer" | "nettoyerFichier"> {
   return {
-    clients: { visiteur: clientAudit(clientPublic()), admin: clientAudit(sessionAdmin) },
     nettoyer: service
       ? async (table, id) => {
           const { error } = await service.from(table).delete().eq("id", id);
@@ -96,4 +98,35 @@ export function dependancesAudit(sessionAdmin: SupabaseClient): DependancesAudit
         }
       : null,
   };
+}
+
+/** Dépendances réelles de l'audit ; `sessionAdmin` = client de `exigerAdmin()`. */
+export function dependancesAudit(sessionAdmin: SupabaseClient): DependancesAudit {
+  return {
+    clients: { visiteur: clientAudit(clientPublic()), admin: clientAudit(sessionAdmin) },
+    ...nettoyage(clientAdmin()),
+  };
+}
+
+/** Réponse de toute opération « admin » quand il n'y a pas de session : inattendue, donc jamais verte. */
+const SANS_SESSION: ReponseApi = { erreur: { message: "Aucune session administrateur : audit côté visiteur seulement." } };
+
+/** Client « admin » de l'audit côté visiteur seul : aucune requête, chaque opération échoue. */
+export const CLIENT_SANS_SESSION: ClientAudit = {
+  select: async () => SANS_SESSION,
+  insert: async () => SANS_SESSION,
+  update: async () => SANS_SESSION,
+  delete: async () => SANS_SESSION,
+  rpc: async () => SANS_SESSION,
+  upload: async () => SANS_SESSION,
+  list: async () => SANS_SESSION,
+};
+
+/**
+ * Dépendances de l'audit côté visiteur seul (CI, `npm run audits:base`) : clé
+ * publishable sans session, et nettoyage par `service` (client service_role)
+ * s'il est fourni. À lancer avec les seules vérifications `visiteur`.
+ */
+export function dependancesAuditVisiteur(service: SupabaseClient | null): DependancesAudit {
+  return { clients: { visiteur: clientAudit(clientPublic()), admin: CLIENT_SANS_SESSION }, ...nettoyage(service) };
 }
