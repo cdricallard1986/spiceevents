@@ -49,7 +49,10 @@ console.log("[rapport-tests] Lancement des tests…");
 const execution = spawnSync(
   process.execPath,
   [join(RACINE, "node_modules", "vitest", "vitest.mjs"), "run", "--reporter=default", "--reporter=json", `--outputFile.json=${fichierJson}`],
-  { cwd: RACINE, stdio: "inherit" },
+  // Le build tourne avec NODE_ENV=production (c'est le cas sur Vercel) : les
+  // tests chargeraient alors la version de production de React (sans act()) et
+  // une centaine échouerait. Ils s'exécutent toujours en environnement de test.
+  { cwd: RACINE, stdio: "inherit", env: { ...process.env, NODE_ENV: "test" } },
 );
 
 let sortie = null;
