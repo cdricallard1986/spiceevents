@@ -15,8 +15,10 @@
  * défaut : le build a déjà embarqué le rapport, et le dépôt reste propre.
  *
  * Usage : npm run tests:rapport, ou node outils/rapport-tests.mjs [--reinitialiser]
- * (les scripts npm ajoutent `--disable-warning=MODULE_TYPELESS_PACKAGE_JSON` :
- * Node signale sinon que le .ts importé n'a pas de type de module déclaré).
+ * Les scripts npm passent `--experimental-strip-types` : sans cette option, un
+ * Node 22 antérieur à 22.18 (celui de Vercel, par exemple) refuse d'importer le
+ * fichier .ts ci-dessous, et le build échoue avant même de lancer les tests.
+ * (`--disable-warning=…` coupe les avertissements que Node affiche alors.)
  */
 
 import { spawnSync } from "node:child_process";
@@ -28,6 +30,7 @@ import { fileURLToPath } from "node:url";
 import { construireRapport, moduleGenere, rapportAbsentHtml, rapportHtml, resumer } from "../lib/admin/rapport-tests.ts";
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), "..");
+console.log(`[rapport-tests] Node ${process.version}`);
 const SORTIE = join(RACINE, "lib", "admin", "rapport-tests.generated.ts");
 const version = JSON.parse(readFileSync(join(RACINE, "package.json"), "utf8")).version;
 
