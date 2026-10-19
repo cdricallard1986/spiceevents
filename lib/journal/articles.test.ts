@@ -2,8 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { ARTICLES_RETIRES } from "@/lib/seo/redirections";
-import { ancreCategorie, articleDepuisLigne, articlesLies, formaterDate, trierParDate } from "./articles";
-import { CATEGORIES } from "./constantes";
+import { ancreCategorie, articleDepuisLigne, articlesLies, derniersArticles, formaterDate, trierParDate } from "./articles";
+import { CATEGORIES, CATEGORIES_EVENEMENT, CATEGORIES_MARIAGE } from "./constantes";
 import { imagesDuDocument, liensDuDocument, type DocumentArticle } from "./document";
 import { hrefInterne } from "./liens";
 import { lignesDeRepli } from "./repli";
@@ -125,6 +125,32 @@ describe("articles du dépôt (données de secours)", () => {
         const cible = /^\/journal\/([^/#?]+)$/.exec(href)?.[1];
         if (cible) expect(slugs.has(cible), cible).toBe(true);
       }
+    }
+  });
+});
+
+describe("derniersArticles (rangées de l'accueil, de Mariages et d'Événementiel)", () => {
+  const liste = [
+    { titre: "A", categorie: "Technique", date: "2026-01-01" },
+    { titre: "B", categorie: "Conseils mariage", date: "2026-03-01" },
+    { titre: "C", categorie: "Mariages réalisés", date: "2025-06-01" },
+    { titre: "D", categorie: "Animations", date: "2026-02-01" },
+    { titre: "E", categorie: "Conseils mariage", date: "2026-04-01" },
+    { titre: "F", categorie: "Musique & ambiance", date: "2025-01-01" },
+  ];
+
+  it("garde les 5 plus récents, toutes catégories confondues", () => {
+    expect(derniersArticles(liste).map((a) => a.titre)).toEqual(["E", "B", "D", "A", "C"]);
+  });
+
+  it("filtre sur les catégories mariage, puis événement", () => {
+    expect(derniersArticles(liste, CATEGORIES_MARIAGE).map((a) => a.titre)).toEqual(["E", "B", "C"]);
+    expect(derniersArticles(liste, CATEGORIES_EVENEMENT).map((a) => a.titre)).toEqual(["D", "A", "F"]);
+  });
+
+  it("répartit chaque catégorie dans exactement un des deux filtres", () => {
+    for (const c of CATEGORIES) {
+      expect(Number(CATEGORIES_MARIAGE.includes(c)) + Number(CATEGORIES_EVENEMENT.includes(c)), c).toBe(1);
     }
   });
 });

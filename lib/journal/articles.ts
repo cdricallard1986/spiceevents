@@ -60,6 +60,15 @@ export function formaterDate(date: string): string {
   );
 }
 
+/** Les `nombre` articles les plus récents, éventuellement limités à certaines catégories. */
+export function derniersArticles<T extends { categorie: string; date: string; titre: string }>(
+  tous: readonly T[],
+  categories?: readonly string[],
+  nombre = 5,
+): T[] {
+  return trierParDate(tous.filter((a) => !categories || categories.includes(a.categorie))).slice(0, nombre);
+}
+
 /** Articles liés : même catégorie d'abord (les plus récents), complétés par les plus récents. */
 export function articlesLies<T extends { slug: string; categorie: string; date: string; titre: string }>(
   tous: T[],

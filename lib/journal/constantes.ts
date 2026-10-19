@@ -13,6 +13,14 @@ export const CATEGORIES = [
 
 export type Categorie = (typeof CATEGORIES)[number];
 
+/**
+ * Filtres invisibles des rangées « derniers articles » des pages Mariages et
+ * Événementiel. Il n'existe pas de catégorie « événement » : la page
+ * Événementiel montre les articles techniques, musicaux et d'animation.
+ */
+export const CATEGORIES_MARIAGE: readonly Categorie[] = ["Conseils mariage", "Mariages réalisés"];
+export const CATEGORIES_EVENEMENT: readonly Categorie[] = ["Technique", "Musique & ambiance", "Animations"];
+
 export function estCategorie(valeur: unknown): valeur is Categorie {
   return (CATEGORIES as readonly unknown[]).includes(valeur);
 }

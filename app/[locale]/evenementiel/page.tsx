@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { DerniersArticles } from "@/components/journal/DerniersArticles";
+import { CATEGORIES_EVENEMENT } from "@/lib/journal/constantes";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { EVENEMENTIEL } from "@/contenu/pages/evenementiel";
@@ -117,6 +119,8 @@ export default async function PageEvenementiel({ params }: Props) {
           {locale === "fr" ? "Toutes les questions" : "All questions"} →
         </Bouton>
       </Section>
+
+      <DerniersArticles locale={locale} surtitre="Journal" titre="Son, lumière *et ambiance*" categories={CATEGORIES_EVENEMENT} alterne />
 
       <AppelContact titre={c.appel.titre} texte={c.appel.texte} />
     </>

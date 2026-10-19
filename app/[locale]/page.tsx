@@ -17,6 +17,7 @@ import { Section } from "@/components/common/Section";
 import { CarteOption } from "@/components/common/CarteOption";
 import { Bouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
+import { DerniersArticles } from "@/components/journal/DerniersArticles";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -60,16 +61,22 @@ export default async function Accueil({ params }: Props) {
             ))}
             <Bouton href="/a-propos" variante="lien" className="mt-8">{c.dj.lien} →</Bouton>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="relative row-span-2 min-h-[24rem] md:min-h-[32rem]">
-              <Photo cle="cedric-platines" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
+          <div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative row-span-2 min-h-[24rem] md:min-h-[32rem]">
+                <Photo cle="cedric-platines" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
+              </div>
+              <div className="relative aspect-[4/3]">
+                <Photo cle="piste-invites" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
+              </div>
+              <div className="relative aspect-[4/3]">
+                <Photo cle="chateau-cour" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
+              </div>
             </div>
-            <div className="relative aspect-[4/3]">
-              <Photo cle="piste-invites" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
-            </div>
-            <div className="relative aspect-[4/3]">
-              <Photo cle="chateau-cour" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
-            </div>
+            {/* La galerie n'est plus dans le menu : on la rejoint depuis les photos. */}
+            <Bouton href="/galerie" variante="lien" className="mt-6">
+              {locale === "fr" ? "Voir la galerie" : "See the gallery"} →
+            </Bouton>
           </div>
         </div>
       </section>
@@ -107,6 +114,8 @@ export default async function Accueil({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <DerniersArticles locale={locale} surtitre="Journal" titre="Conseils et *coulisses*" alterne />
 
       <Section surtitre={c.avis.surtitre} titre={c.avis.titre}>
         <GrilleAvis liste={choisis} />

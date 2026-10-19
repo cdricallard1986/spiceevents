@@ -9,10 +9,12 @@ type Props = {
   article: Pick<Article, "slug" | "titre" | "description" | "date" | "categorie" | "couverture" | "couvertureAlt" | "lecture">;
   /** Article mis en avant en tête du journal : grande photo, titre en h2. */
   enAvant?: boolean;
+  /** Vignette resserrée (rangée des derniers articles) : sans description. */
+  compact?: boolean;
 };
 
 /** Vignette d'un article du journal, vers sa page (même présentation que `CarteOption`). */
-export function CarteArticle({ article: a, enAvant = false }: Props) {
+export function CarteArticle({ article: a, enAvant = false, compact = false }: Props) {
   const href = { pathname: "/journal/[slug]", params: { slug: a.slug } } as const;
   const meta = (
     <p className="surtitre">
@@ -51,14 +53,14 @@ export function CarteArticle({ article: a, enAvant = false }: Props) {
           src={srcImage(a.couverture)}
           alt={a.couvertureAlt}
           fill
-          sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+          sizes={compact ? "(min-width: 1024px) 18vw, 70vw" : "(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"}
           quality={70}
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
       {meta}
-      <h3 className="font-display text-2xl leading-tight group-hover:text-or">{a.titre}</h3>
-      <p className="text-[0.9375rem] text-sable">{a.description}</p>
+      <h3 className={`font-display leading-tight group-hover:text-or ${compact ? "text-xl" : "text-2xl"}`}>{a.titre}</h3>
+      {!compact && <p className="text-[0.9375rem] text-sable">{a.description}</p>}
     </Link>
   );
 }

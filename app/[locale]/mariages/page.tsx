@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { DerniersArticles } from "@/components/journal/DerniersArticles";
+import { CATEGORIES_MARIAGE } from "@/lib/journal/constantes";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { MARIAGES } from "@/contenu/pages/mariages";
@@ -175,6 +177,8 @@ export default async function PageMariages({ params }: Props) {
         <Faq questions={c.faq.questions} />
         <Bouton href="/faq" variante="lien" className="mt-10">{c.faq.lien} →</Bouton>
       </Section>
+
+      <DerniersArticles locale={locale} surtitre="Journal" titre="Conseils pour *votre mariage*" categories={CATEGORIES_MARIAGE} />
 
       <AppelContact titre={c.appel.titre} texte={c.appel.texte} />
     </>

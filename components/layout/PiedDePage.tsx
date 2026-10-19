@@ -2,7 +2,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SITE } from "@/contenu/site";
 import { Logo } from "./Logo";
-import { menuPour } from "./navigation";
+import { liensPiedPour } from "./navigation";
 
 export async function PiedDePage() {
   const locale = await getLocale();
@@ -29,7 +29,7 @@ export async function PiedDePage() {
         <div>
           <p className={titre}>{t("explorer")}</p>
           <ul className="flex flex-col gap-2.5">
-            {menuPour(locale).map((e) => (
+            {liensPiedPour(locale).map((e) => (
               <li key={e.href}>
                 <Link href={e.href} className={lien}>
                   {tn(e.cle)}
