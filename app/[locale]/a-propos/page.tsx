@@ -17,7 +17,7 @@ type Props = { params: Promise<{ locale: Locale }> };
 
 const VIDEO = "https://www.youtube-nocookie.com/embed/zchNbRcZ_gI";
 
-// Langue ou adresse non générée (« /favicon.ico »…) → 404 sans rendu (voir app/[locale]/layout.tsx).
+// Langue ou adresse non générée (« /x.png », « /wp-login.php »…) → 404 sans rendu (voir app/[locale]/layout.tsx).
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
