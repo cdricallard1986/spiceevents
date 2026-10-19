@@ -1,86 +1,41 @@
-import fs from "node:fs";
-import path from "node:path";
-import { z } from "zod";
+import { estCategorie, type Categorie } from "./constantes";
+import { tempsDeLecture, validerDocument } from "./document";
+import type { Article, LigneArticle } from "./types";
 
 /**
- * Articles du journal (français seulement) : fichiers MDX de `contenu/journal/`,
- * produits par `outils/convertir_journal.py`. Lus au build (pages statiques).
+ * Articles du journal (français seulement) pour les pages publiques : mise en
+ * forme d'une ligne de la table `articles` et outils de présentation. Les
+ * lignes viennent de Supabase ou, sans Supabase, des fichiers MDX convertis
+ * (voir `lecture.ts`).
  */
-
-export const CATEGORIES = [
-  "Conseils mariage",
-  "Musique & ambiance",
-  "Technique",
-  "Animations",
-  "Mariages réalisés",
-] as const;
-
-export type Categorie = (typeof CATEGORIES)[number];
-
-/** En-tête YAML d'un article, validé à la lecture. */
-export const schemaEnTete = z.object({
-  titre: z.string().min(1),
-  sousTitre: z.string().min(1).optional(),
-  description: z.string().min(1).max(160),
-  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "date attendue au format AAAA-MM-JJ"),
-  categorie: z.enum(CATEGORIES),
-  couverture: z.string().startsWith("/journal/"),
-  couvertureAlt: z.string().min(1),
-});
-
-export type EnTeteArticle = z.infer<typeof schemaEnTete>;
-
-export type Article = EnTeteArticle & {
-  slug: string;
-  /** Source MDX complète (en-tête compris), compilée par la page de l'article. */
-  source: string;
-  /** Minutes de lecture estimées. */
-  lecture: number;
-};
-
-const DOSSIER = path.join(process.cwd(), "contenu", "journal");
-const MOTS_PAR_MINUTE = 200;
 
 /**
- * Lit l'en-tête d'un fichier MDX. Le script de conversion écrit une valeur JSON par
- * ligne (`cle: "valeur"`), ce qui est aussi du YAML valide pour `compileMDX`.
+ * Ligne publiée → article des pages. Un article publié est complet (contrainte
+ * de la table) et son contenu doit passer le validateur du document : sinon
+ * l'erreur nomme l'article et la génération de la page échoue — on ne publie
+ * jamais un contenu que le rendu ne connaît pas.
  */
-export function lireEnTete(source: string): { donnees: Record<string, unknown>; corps: string } {
-  const m = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
-  if (!m) throw new Error("En-tête manquant (bloc --- … --- en début de fichier)");
-  const donnees: Record<string, unknown> = {};
-  for (const ligne of m[1].split(/\r?\n/)) {
-    if (!ligne.trim()) continue;
-    const i = ligne.indexOf(":");
-    if (i < 1) throw new Error(`Ligne d'en-tête illisible : ${ligne}`);
-    const valeur = ligne.slice(i + 1).trim();
-    try {
-      donnees[ligne.slice(0, i).trim()] = JSON.parse(valeur);
-    } catch {
-      donnees[ligne.slice(0, i).trim()] = valeur;
-    }
-  }
-  return { donnees, corps: source.slice(m[0].length) };
-}
-
-/** Valide un en-tête ; l'erreur nomme le fichier et le champ fautif. */
-export function validerEnTete(donnees: unknown, fichier = "article"): EnTeteArticle {
-  const resultat = schemaEnTete.safeParse(donnees);
-  if (!resultat.success) {
-    const detail = resultat.error.issues.map((e) => `${e.path.join(".") || "(racine)"} : ${e.message}`).join(" ; ");
-    throw new Error(`En-tête invalide dans ${fichier} — ${detail}`);
-  }
-  return resultat.data;
-}
-
-/** Temps de lecture en minutes (au moins 1), composants et syntaxe Markdown exclus. */
-export function tempsDeLecture(corps: string): number {
-  const texte = corps
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\]\([^)]*\)/g, "]")
-    .replace(/[#>*_[\]`-]/g, " ");
-  const mots = texte.split(/\s+/).filter((m) => /[\p{L}\p{N}]/u.test(m)).length;
-  return Math.max(1, Math.ceil(mots / MOTS_PAR_MINUTE));
+export function articleDepuisLigne(l: LigneArticle): Article {
+  const manque = (champ: string) => new Error(`[articles] Article « ${l.slug} » publié sans ${champ}.`);
+  if (!l.description) throw manque("description");
+  if (!l.categorie || !estCategorie(l.categorie)) throw manque("catégorie connue");
+  if (!l.date_publication) throw manque("date de publication");
+  if (!l.couverture || !l.couverture_alt) throw manque("couverture");
+  const v = validerDocument(l.contenu);
+  if (!v.ok) throw new Error(`[articles] Article « ${l.slug} » : ${v.message}`);
+  return {
+    id: l.id,
+    slug: l.slug,
+    titre: l.titre,
+    ...(l.sous_titre ? { sousTitre: l.sous_titre } : {}),
+    description: l.description,
+    categorie: l.categorie,
+    date: l.date_publication,
+    couverture: l.couverture,
+    couvertureAlt: l.couverture_alt,
+    contenu: v.document,
+    lecture: tempsDeLecture(v.document),
+  };
 }
 
 /** Du plus récent au plus ancien ; à date égale, ordre alphabétique du titre. */
@@ -115,28 +70,4 @@ export function articlesLies<T extends { slug: string; categorie: string; date: 
   const memeCategorie = autres.filter((a) => a.categorie === courant.categorie);
   const reste = autres.filter((a) => a.categorie !== courant.categorie);
   return [...memeCategorie, ...reste].slice(0, nombre);
-}
-
-function lireArticle(fichier: string): Article {
-  const source = fs.readFileSync(path.join(DOSSIER, fichier), "utf8");
-  const { donnees, corps } = lireEnTete(source);
-  const enTete = validerEnTete(donnees, `contenu/journal/${fichier}`);
-  return { ...enTete, slug: fichier.replace(/\.mdx$/, ""), source, lecture: tempsDeLecture(corps) };
-}
-
-let cache: Article[] | undefined;
-
-/** Tous les articles, du plus récent au plus ancien. */
-export function articles(): Article[] {
-  cache ??= trierParDate(
-    fs
-      .readdirSync(DOSSIER)
-      .filter((f) => f.endsWith(".mdx"))
-      .map(lireArticle),
-  );
-  return cache;
-}
-
-export function articleParSlug(slug: string): Article | undefined {
-  return articles().find((a) => a.slug === slug);
 }

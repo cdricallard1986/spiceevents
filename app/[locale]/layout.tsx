@@ -29,9 +29,13 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// Seules « fr » et « en » sont des langues : `/favicon.ico`, `/x.png`… répondent
-// 404 au lieu de rendre une page avec une langue inconnue (erreur 500).
-export const dynamicParams = false;
+// Seules « fr » et « en » sont des langues : `/favicon.ico`, `/x.png`… doivent
+// répondre 404 au lieu de rendre une page avec une langue inconnue (erreur 500).
+// Ce n'est PAS déclaré ici par `dynamicParams = false` : Next l'appliquerait à
+// toutes les pages sous [locale], y compris les articles du journal, qui
+// doivent être rendus à la demande (article publié après le déploiement).
+// Chaque page le déclare donc elle-même, sauf `journal/[slug]` et la page
+// 404 `[...reste]` ; ici, `hasLocale` reste le garde-fou.
 
 export default async function LayoutLangue({
   children,

@@ -21,6 +21,9 @@ import { Photo } from "@/components/ui/Photo";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
+// Langue ou adresse non générée (« /favicon.ico »…) → 404 sans rendu (voir app/[locale]/layout.tsx).
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   return metadonnees({ locale, href: "/mariages", seo: MARIAGES[locale].seo, image: "presta-mariage-hero" });

@@ -62,7 +62,7 @@ function client(
 
 const REFUS_STOCKAGE: ReponseApi = { erreur: { code: "STORAGE-403", message: "new row violates row-level security policy" } };
 
-/** Une base saine, telle que les migrations 0001 à 0007 la décrivent. */
+/** Une base saine, telle que les migrations 0001 à 0009 la décrivent. */
 function baseSaine() {
   return {
     visiteur: client({
@@ -73,6 +73,9 @@ function baseSaine() {
       // Photos et galeries : publiques. Storage : envoi refusé, rien de listable.
       "select:photos": { erreur: null, lignes: 57 },
       "select:galeries_photos": { erreur: null, lignes: 60 },
+      // Journal : les 37 articles publiés, aucun brouillon.
+      "select:articles?statut=publie": { erreur: null, lignes: 37 },
+      "select:articles?statut=brouillon": VIDE,
       "upload:medias": REFUS_STOCKAGE,
       "list:medias": VIDE,
     }),
@@ -81,6 +84,7 @@ function baseSaine() {
       "select:audit_log": { erreur: null, lignes: 3 },
       "select:demandes_contact": { erreur: null, lignes: 12 },
       "select:avis": { erreur: null, lignes: 45 },
+      "select:articles": { erreur: null, lignes: 38 },
       "select:photos": { erreur: null, lignes: 57 },
       "select:galeries_photos": { erreur: null, lignes: 60 },
       "list:medias": { erreur: null, lignes: 1 },
@@ -150,8 +154,8 @@ describe("lancerAudit", () => {
     const clients = baseSaine();
     const select = vi.spyOn(clients.admin, "select");
     await lancerAudit({ clients, nettoyer: null });
-    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "photos", "galeries_photos", "demandes_contact"]);
-    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis", "photos", "galeries_photos"]);
+    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "articles", "photos", "galeries_photos", "demandes_contact"]);
+    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis", "photos", "galeries_photos", "articles"]);
     expect(clients.admin.inserts).toEqual(["demandes_contact"]);
   });
 
@@ -226,6 +230,8 @@ describe("lancerAudit — avis", () => {
       { operation: "delete", table: "photos", id: ID_INEXISTANT },
       { operation: "update", table: "galeries_photos", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.galeries_photos },
       { operation: "delete", table: "galeries_photos", id: ID_INEXISTANT },
+      { operation: "update", table: "articles", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.articles },
+      { operation: "delete", table: "articles", id: ID_INEXISTANT },
     ]);
     expect(clients.admin.ecritures).toEqual([
       { operation: "update", table: "demandes_contact", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.demandes_contact },
@@ -413,6 +419,7 @@ describe("liste des vérifications", () => {
       "rpc:est_admin:autorisé",
       "select:audit_log:autorisé",
       "select:avis:autorisé",
+      "select:articles:autorisé",
       "select:photos:autorisé",
       "select:galeries_photos:autorisé",
       "list:medias:autorisé",
@@ -424,6 +431,23 @@ describe("liste des vérifications", () => {
     ]);
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "avis")!.filtre).toBeUndefined();
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "est_admin")!.valeur).toBe(true);
+  });
+
+  it("articles : le visiteur lit les publiés, aucun brouillon, et n'écrit rien ; l'admin lit tout", () => {
+    const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur" && (x.cible === "articles" || x.cible === "articles_slug_fige"));
+    expect(visiteur.map((x) => `${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}:${x.attendu}`)).toEqual([
+      'select:articles:{"statut":"publie"}:autorisé',
+      'select:articles:{"statut":"brouillon"}:vide',
+      "insert:articles:{}:refusé",
+      "update:articles:{}:refusé",
+      "delete:articles:{}:refusé",
+      "rpc:articles_slug_fige:{}:refusé",
+    ]);
+    expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "articles")).toMatchObject({ operation: "select", attendu: "autorisé" });
+    expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "articles")!.filtre).toBeUndefined();
+    // Ligne fictive : un brouillon, valide pour la table (slug au bon format), pour qu'une faille se voie.
+    expect(LIGNES_FICTIVES.articles).toMatchObject({ statut: "brouillon" });
+    expect(String(LIGNES_FICTIVES.articles.slug)).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
   it("chaque insert a une ligne fictive, manifestement fausse", () => {
@@ -438,5 +462,43 @@ describe("liste des vérifications", () => {
   it("aucune vérification en double", () => {
     const cles = VERIFICATIONS.map((x) => `${x.role}:${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}:${JSON.stringify(x.valeurs ?? {})}`);
     expect(new Set(cles).size).toBe(cles.length);
+  });
+});
+
+describe("lancerAudit — articles du journal", () => {
+  const trouver = (audit: Awaited<ReturnType<typeof lancerAudit>>, role: string, operation: string, filtre?: Record<string, string>) =>
+    audit.resultats.find(
+      (x) => x.verification.role === role && x.verification.cible === "articles" && x.verification.operation === operation && JSON.stringify(x.verification.filtre) === JSON.stringify(filtre),
+    )!;
+
+  it("base saine : publiés visibles, brouillons invisibles, écritures refusées, l'admin voit tout", async () => {
+    const audit = await lancerAudit({ clients: baseSaine(), nettoyer: null });
+    expect(trouver(audit, "visiteur", "select", { statut: "publie" })).toMatchObject({ ok: true, constat: "Autorisé : 37 lignes visibles" });
+    expect(trouver(audit, "visiteur", "select", { statut: "brouillon" })).toMatchObject({ ok: true, constat: "Bloqué : aucune ligne visible (RLS)" });
+    for (const op of ["insert", "update", "delete"]) expect(trouver(audit, "visiteur", op), op).toMatchObject({ ok: true, faille: false });
+    expect(trouver(audit, "admin", "select")).toMatchObject({ ok: true, constat: "Autorisé : 38 lignes visibles" });
+  });
+
+  it("un brouillon visible par le visiteur est une faille ; un article créé par erreur est effacé aussitôt", async () => {
+    const clients = baseSaine();
+    const sain = clients.visiteur;
+    clients.visiteur = {
+      ...sain,
+      select: async (table, filtre) => (table === "articles" && filtre?.statut === "brouillon" ? { erreur: null, lignes: 1 } : sain.select(table, filtre)),
+      insert: async (table) => (table === "articles" ? { erreur: null, id: "ar1" } : REFUS),
+    };
+    const nettoyer = vi.fn(async () => undefined);
+    const audit = await lancerAudit({ clients, nettoyer });
+    expect(trouver(audit, "visiteur", "select", { statut: "brouillon" })).toMatchObject({ ok: false, faille: true, constat: "FAILLE — 1 ligne visible" });
+    expect(trouver(audit, "visiteur", "insert")).toMatchObject({ ok: false, faille: true });
+    expect(nettoyer).toHaveBeenCalledWith("articles", "ar1");
+  });
+
+  it("le visiteur qui ne lit plus les articles publiés est en échec (le journal serait vide), sans être une faille", async () => {
+    const clients = baseSaine();
+    const sain = clients.visiteur;
+    clients.visiteur = { ...sain, select: async (table, filtre) => (table === "articles" ? REFUS : sain.select(table, filtre)) };
+    const audit = await lancerAudit({ clients, nettoyer: null });
+    expect(trouver(audit, "visiteur", "select", { statut: "publie" })).toMatchObject({ ok: false, faille: false });
   });
 });

@@ -11,6 +11,9 @@ import { Mosaique } from "@/components/galerie/Mosaique";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
+// Langue ou adresse non générée (« /favicon.ico »…) → 404 sans rendu (voir app/[locale]/layout.tsx).
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   return metadonnees({ locale, href: "/galerie", seo: GALERIE[locale].seo, image: "maison-mariage-charpente" });

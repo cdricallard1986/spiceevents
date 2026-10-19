@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { formaterDate, type Article } from "@/lib/journal/articles";
+import { formaterDate } from "@/lib/journal/articles";
+import { srcImage } from "@/lib/journal/constantes";
+import type { Article } from "@/lib/journal/types";
 import { classesBouton } from "@/components/ui/Bouton";
 
 type Props = {
@@ -23,7 +25,7 @@ export function CarteArticle({ article: a, enAvant = false }: Props) {
       <Link href={href} className="group grid items-center gap-8 lg:grid-cols-[1.25fr_1fr] lg:gap-14">
         <div className="relative aspect-[3/2] overflow-hidden">
           <Image
-            src={a.couverture}
+            src={srcImage(a.couverture)}
             alt={a.couvertureAlt}
             fill
             priority
@@ -46,7 +48,7 @@ export function CarteArticle({ article: a, enAvant = false }: Props) {
     <Link href={href} className="group flex flex-col gap-4">
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
-          src={a.couverture}
+          src={srcImage(a.couverture)}
           alt={a.couvertureAlt}
           fill
           sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"

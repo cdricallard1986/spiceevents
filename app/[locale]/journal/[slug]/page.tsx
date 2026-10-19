@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import { compileMDX } from "next-mdx-remote/rsc";
 import type { Locale } from "@/i18n/routing";
 import { JOURNAL } from "@/contenu/pages/journal";
-import { articleParSlug, articles, articlesLies } from "@/lib/journal/articles";
+import { articlesLies } from "@/lib/journal/articles";
+import { srcImage } from "@/lib/journal/constantes";
+import { articleParSlug, articlesPublies } from "@/lib/journal/lecture";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { article as donneesArticle, filAriane } from "@/lib/seo/donneesStructurees";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -12,27 +13,25 @@ import { JsonLd } from "@/components/common/JsonLd";
 import { Section } from "@/components/common/Section";
 import { CarteArticle } from "@/components/journal/CarteArticle";
 import { EnTeteArticle } from "@/components/journal/EnTeteArticle";
-import { LienArticle } from "@/components/journal/LienArticle";
-import { PhotoArticle } from "@/components/journal/PhotoArticle";
+import { ContenuArticle } from "@/components/journal/ContenuArticle";
 import { Bouton } from "@/components/ui/Bouton";
 
 type Props = { params: Promise<{ locale: Locale; slug: string }> };
 
-// Articles en français seulement : aucune page anglaise générée, les autres adresses renvoient une 404.
-export const dynamicParams = false;
+// Un article publié dans le back office après le déploiement est rendu à sa
+// première visite (puis gardé en cache, étiquette « articles ») : pas de
+// reconstruction du site. Adresse inconnue ou page anglaise → 404 traduite.
+export const dynamicParams = true;
 
-export function generateStaticParams() {
-  // Donne aussi la langue : seules les adresses françaises sont générées.
-  return articles().map((a) => ({ locale: "fr", slug: a.slug }));
+export async function generateStaticParams() {
+  // Donne aussi la langue : seules les adresses françaises sont générées au build.
+  return (await articlesPublies()).map((a) => ({ locale: "fr", slug: a.slug }));
 }
-
-/** Composants disponibles dans les fichiers MDX du journal. */
-const COMPOSANTS = { PhotoArticle, a: LienArticle };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  const a = articleParSlug(slug);
-  if (locale !== "fr" || !a) notFound();
+  const a = locale === "fr" ? await articleParSlug(slug) : undefined;
+  if (!a) notFound();
   const base = metadonnees({
     locale,
     href: { pathname: "/journal/[slug]", params: { slug } },
@@ -42,30 +41,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // `metadonnees` n'accepte que les photos du registre : on remplace l'image de partage par la couverture.
   return {
     ...base,
-    openGraph: { ...base.openGraph, images: [{ url: a.couverture, alt: a.couvertureAlt }] },
+    openGraph: { ...base.openGraph, images: [{ url: srcImage(a.couverture), alt: a.couvertureAlt }] },
   };
 }
 
 export default async function PageArticle({ params }: Props) {
   const { locale, slug } = await params;
-  const a = articleParSlug(slug);
-  if (locale !== "fr" || !a) notFound();
+  if (locale !== "fr") notFound();
+  const tous = await articlesPublies();
+  const a = tous.find((x) => x.slug === slug);
+  if (!a) notFound();
   setRequestLocale(locale);
 
-  // Contenu du dépôt (pas de saisie extérieure) : les expressions JSX sont autorisées
-  // pour les dimensions des photos (`width={1200}`) ; le reste du JavaScript reste bloqué.
-  const { content } = await compileMDX({
-    source: a.source,
-    components: COMPOSANTS,
-    options: { parseFrontmatter: true, blockJS: false, blockDangerousJS: true },
-  });
-  const lies = articlesLies(articles(), a, 3);
+  const lies = articlesLies(tous, a, 3);
   const url = `/journal/${a.slug}`;
 
   return (
     <>
       <JsonLd
-        donnees={donneesArticle({ titre: a.titre, description: a.description, date: a.date, url, image: a.couverture })}
+        donnees={donneesArticle({ titre: a.titre, description: a.description, date: a.date, url, image: srcImage(a.couverture) })}
       />
       <JsonLd
         donnees={filAriane([
@@ -78,7 +72,9 @@ export default async function PageArticle({ params }: Props) {
       <EnTeteArticle article={a} />
 
       <article className="conteneur py-16 md:py-24">
-        <div className="prose-nuit mx-auto max-w-[44rem]">{content}</div>
+        <div className="prose-nuit mx-auto max-w-[44rem]">
+          <ContenuArticle document={a.contenu} />
+        </div>
         <div className="mx-auto mt-14 max-w-[44rem] border-t border-ligne pt-8">
           <Bouton href="/journal" variante="lien">
             ← {JOURNAL.article.retour}

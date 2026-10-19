@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
-import { articles } from "@/lib/journal/articles";
+import { articlesPublies } from "@/lib/journal/lecture";
 import { planDuSite } from "@/lib/seo/plan";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return planDuSite(articles().map(({ slug, date }) => ({ slug, date })));
+// Articles lus à la même source que les pages du journal (base, ou fichiers de secours) :
+// un article publié dans le back office entre dans le plan du site à la revalidation « articles ».
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return planDuSite((await articlesPublies()).map(({ slug, date }) => ({ slug, date })));
 }

@@ -1,4 +1,4 @@
-import type { Categorie } from "@/lib/journal/articles";
+import type { Categorie } from "@/lib/journal/constantes";
 import type { Seo } from "../types";
 
 type Journal = {

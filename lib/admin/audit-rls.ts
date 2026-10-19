@@ -7,7 +7,7 @@
  * Les unitaires ne voient pas un GRANT oublié ou une policy trop large : cet
  * audit, si.
  *
- * Pour compléter (articles, photos…) : ajouter une ligne à `VERIFICATIONS`,
+ * Pour compléter : ajouter une ligne à `VERIFICATIONS`,
  * pour un `insert`, une ligne fictive dans `LIGNES_FICTIVES`, et pour un
  * `update`, des valeurs dans `MODIFICATIONS_FICTIVES` (ou `valeurs` sur la
  * vérification, pour tester une colonne précise). `update` et `delete`
@@ -114,9 +114,38 @@ export const VERIFICATIONS: readonly Verification[] = [
     attendu: "vide",
     note: "Bucket public : une photo se lit par son adresse, mais personne ne doit pouvoir parcourir son contenu.",
   },
+  {
+    libelle: "Lire les articles publiés du journal",
+    role: "visiteur",
+    cible: "articles",
+    operation: "select",
+    filtre: { statut: "publie" },
+    attendu: "autorisé",
+    note: "Les articles publiés sont publics : ce sont ceux du journal.",
+  },
+  {
+    libelle: "Lire les brouillons d'articles",
+    role: "visiteur",
+    cible: "articles",
+    operation: "select",
+    filtre: { statut: "brouillon" },
+    attendu: "vide",
+    note: "Un brouillon (créé dès l'ouverture de l'éditeur) ne doit être visible que dans le back office.",
+  },
+  { libelle: "Créer un article par l'API", role: "visiteur", cible: "articles", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier un article par l'API", role: "visiteur", cible: "articles", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer un article par l'API", role: "visiteur", cible: "articles", operation: "delete", attendu: "refusé" },
   { libelle: "Appeler est_admin()", role: "visiteur", cible: "est_admin", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler audit_trigger()", role: "visiteur", cible: "audit_trigger", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler touch_updated_at()", role: "visiteur", cible: "touch_updated_at", operation: "rpc", attendu: "refusé" },
+  {
+    libelle: "Appeler articles_slug_fige()",
+    role: "visiteur",
+    cible: "articles_slug_fige",
+    operation: "rpc",
+    attendu: "refusé",
+    note: "Fonction du trigger qui fige l'adresse d'un article publié : jamais appelable par l'API.",
+  },
 
   // --- Administrateur (session de Cédric) ---
   { libelle: "Appeler est_admin()", role: "admin", cible: "est_admin", operation: "rpc", attendu: "autorisé", valeur: true },
@@ -128,6 +157,14 @@ export const VERIFICATIONS: readonly Verification[] = [
     operation: "select",
     attendu: "autorisé",
     note: "Le back office voit aussi les avis non publiés.",
+  },
+  {
+    libelle: "Lire tous les articles, publiés ou brouillons",
+    role: "admin",
+    cible: "articles",
+    operation: "select",
+    attendu: "autorisé",
+    note: "L'éditeur du journal voit aussi les brouillons.",
   },
   { libelle: "Lire les photos", role: "admin", cible: "photos", operation: "select", attendu: "autorisé" },
   { libelle: "Lire les galeries", role: "admin", cible: "galeries_photos", operation: "select", attendu: "autorisé" },
@@ -206,6 +243,12 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
     hauteur: 1,
     alt_fr: "AUDIT RLS — LIGNE FICTIVE, à supprimer",
   },
+  // Brouillon : même créé par une faille, il ne serait jamais visible sur le site.
+  articles: {
+    slug: "audit-rls-ligne-fictive-a-supprimer",
+    titre: "AUDIT RLS — LIGNE FICTIVE, à supprimer",
+    statut: "brouillon",
+  },
   // Photo inexistante : même en cas de faille, la ligne serait refusée par la clé étrangère (réponse inattendue, jamais verte).
   galeries_photos: { galerie: "option:audit-rls-ligne-fictive", photo_id: "00000000-0000-0000-0000-000000000000", ordre: 999999 },
 };
@@ -232,6 +275,7 @@ export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
   demandes_contact: { statut: "perdue", note_interne: "AUDIT RLS — MODIFICATION FICTIVE" },
   photos: { alt_fr: "AUDIT RLS — MODIFICATION FICTIVE" },
   galeries_photos: { ordre: 999999 },
+  articles: { titre: "AUDIT RLS — MODIFICATION FICTIVE" },
 };
 
 /** Identifiant visé par les tests d'`update` et de `delete` : aucune ligne ne le porte. */

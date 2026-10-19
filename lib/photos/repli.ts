@@ -1,8 +1,8 @@
-import { createHash } from "node:crypto";
 import { OPTIONS } from "@/contenu/options";
 import { PHOTOS_EVENEMENTS, PHOTOS_MARIAGES } from "@/contenu/pages/galerie";
 import { contenuOption } from "@/contenu/pages/options";
 import { IMAGES, type CleImage } from "@/lib/images";
+import { uuidV5 as uuidV5Brut } from "@/lib/uuid";
 import { galerieOption } from "./constantes";
 import type { Liaison, LigneGalerie, Photo } from "./types";
 
@@ -24,18 +24,9 @@ export const GALERIES_REPLI: Readonly<Record<string, readonly CleImage[]>> = {
 /** Espace de noms des identifiants de photos du site (UUID v5, RFC 9562). */
 const ESPACE_PHOTOS_SITE = "5b0e6a4c-3f2d-4b8e-9c1a-7d6e5f4a3b2c";
 
-function octetsUuid(uuid: string): Buffer {
-  return Buffer.from(uuid.replace(/-/g, ""), "hex");
-}
-
-/** UUID v5 (SHA-1) d'un nom dans un espace : toujours le même pour le même nom. */
+/** UUID v5 d'un nom, par défaut dans l'espace des photos du site (voir lib/uuid.ts). */
 export function uuidV5(nom: string, espace: string = ESPACE_PHOTOS_SITE): string {
-  const empreinte = createHash("sha1").update(octetsUuid(espace)).update(nom, "utf8").digest();
-  const o = empreinte.subarray(0, 16);
-  o[6] = (o[6] & 0x0f) | 0x50; // version 5
-  o[8] = (o[8] & 0x3f) | 0x80; // variante RFC
-  const h = o.toString("hex");
-  return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20)}`;
+  return uuidV5Brut(nom, espace);
 }
 
 /**

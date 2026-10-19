@@ -70,6 +70,7 @@ export function filAriane(etapes: { nom: string; url: string }[]): Objet {
   };
 }
 
+/** `image` : chemin du site (`/journal/…`) ou adresse complète (photo du stockage Supabase). */
 export function article(a: { titre: string; description: string; date: string; url: string; image?: string }): Objet {
   return {
     "@context": "https://schema.org",
@@ -79,7 +80,7 @@ export function article(a: { titre: string; description: string; date: string; u
     datePublished: a.date,
     inLanguage: "fr",
     url: `${SITE.url}${a.url}`,
-    ...(a.image ? { image: `${SITE.url}${a.image}` } : {}),
+    ...(a.image ? { image: /^https?:\/\//.test(a.image) ? a.image : `${SITE.url}${a.image}` } : {}),
     author: { "@type": "Person", name: SITE.fondateur },
     publisher: { "@id": `${SITE.url}/#entreprise` },
   };

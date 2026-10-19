@@ -2,62 +2,57 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { ARTICLES_RETIRES } from "@/lib/seo/redirections";
-import {
-  ancreCategorie,
-  articles,
-  articlesLies,
-  CATEGORIES,
-  formaterDate,
-  lireEnTete,
-  tempsDeLecture,
-  trierParDate,
-  validerEnTete,
-} from "./articles";
+import { ancreCategorie, articleDepuisLigne, articlesLies, formaterDate, trierParDate } from "./articles";
+import { CATEGORIES } from "./constantes";
+import { imagesDuDocument, liensDuDocument, type DocumentArticle } from "./document";
 import { hrefInterne } from "./liens";
+import { lignesDeRepli } from "./repli";
+import type { LigneArticle } from "./types";
 
-const enTeteValide = {
+const ligne = (champs: Partial<LigneArticle> = {}): LigneArticle => ({
+  id: "4a1b8c2e-0000-5000-8000-000000000001",
+  statut: "publie",
+  publie_le: "2026-02-03T12:00:00+01:00",
+  slug: "comment-un-dj-lit-il-une-piste-de-danse",
   titre: "Comment un DJ lit-il une piste de danse ?",
+  sous_titre: null,
   description: "Lire une piste de danse est l’une des compétences les plus importantes du métier de DJ.",
-  date: "2026-02-03",
   categorie: "Musique & ambiance",
+  date_publication: "2026-02-03",
   couverture: "/journal/comment-un-dj-lit-il-une-piste-de-danse/couverture.jpg",
-  couvertureAlt: "Piste de danse pleine devant la régie DJ",
-};
-
-describe("lireEnTete", () => {
-  it("lit les valeurs JSON de l'en-tête et rend le corps", () => {
-    const { donnees, corps } = lireEnTete('---\ntitre: "Un : titre"\ndate: "2026-01-01"\n---\nBonjour **vous**.\n');
-    expect(donnees).toEqual({ titre: "Un : titre", date: "2026-01-01" });
-    expect(corps).toBe("Bonjour **vous**.\n");
-  });
-
-  it("refuse un fichier sans en-tête", () => {
-    expect(() => lireEnTete("# Titre\n")).toThrow(/En-tête manquant/);
-  });
+  couverture_alt: "Piste de danse pleine devant la régie DJ",
+  contenu: { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Trois petits mots" }] }] },
+  ...champs,
 });
 
-describe("validerEnTete", () => {
-  it("accepte un en-tête complet", () => {
-    expect(validerEnTete(enTeteValide).categorie).toBe("Musique & ambiance");
+describe("articleDepuisLigne", () => {
+  it("met en forme une ligne publiée : champs des pages, document validé, temps de lecture", () => {
+    expect(articleDepuisLigne(ligne({ sous_titre: "Le métier" }))).toEqual({
+      id: "4a1b8c2e-0000-5000-8000-000000000001",
+      slug: "comment-un-dj-lit-il-une-piste-de-danse",
+      titre: "Comment un DJ lit-il une piste de danse ?",
+      sousTitre: "Le métier",
+      description: "Lire une piste de danse est l’une des compétences les plus importantes du métier de DJ.",
+      categorie: "Musique & ambiance",
+      date: "2026-02-03",
+      couverture: "/journal/comment-un-dj-lit-il-une-piste-de-danse/couverture.jpg",
+      couvertureAlt: "Piste de danse pleine devant la régie DJ",
+      contenu: { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Trois petits mots" }] }] },
+      lecture: 1,
+    });
+    expect(articleDepuisLigne(ligne())).not.toHaveProperty("sousTitre");
   });
 
-  it("refuse une catégorie inconnue, une date mal écrite ou une description trop longue", () => {
-    expect(() => validerEnTete({ ...enTeteValide, categorie: "Divers" }, "x.mdx")).toThrow(/x\.mdx.*categorie/);
-    expect(() => validerEnTete({ ...enTeteValide, date: "03/02/2026" })).toThrow(/date/);
-    expect(() => validerEnTete({ ...enTeteValide, description: "a".repeat(161) })).toThrow(/description/);
-    expect(() => validerEnTete({ ...enTeteValide, couverture: undefined })).toThrow(/couverture/);
-  });
-});
-
-describe("tempsDeLecture", () => {
-  it("compte 200 mots par minute, au moins une minute", () => {
-    expect(tempsDeLecture("Trois petits mots")).toBe(1);
-    expect(tempsDeLecture(Array(401).fill("mot").join(" "))).toBe(3);
+  it("refuse un contenu que le rendu ne connaît pas, en nommant l'article", () => {
+    const script = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "x", marks: [{ type: "link", attrs: { href: "javascript:alert(1)" } }] }] }] };
+    expect(() => articleDepuisLigne(ligne({ contenu: script }))).toThrow(/comment-un-dj-lit-il-une-piste-de-danse.*Lien refusé/);
+    expect(() => articleDepuisLigne(ligne({ contenu: { type: "doc", content: [{ type: "codeBlock" }] } }))).toThrow(/Contenu invalide/);
   });
 
-  it("ignore les composants, les adresses des liens et la syntaxe Markdown", () => {
-    const corps = '## Titre\n\n<PhotoArticle src="/a.jpg" width={10} height={10} alt="une longue description" />\n\n- [lien](/mariages) **gras**';
-    expect(tempsDeLecture(corps)).toBe(1);
+  it("refuse un article publié incomplet (la contrainte de la table l'interdit déjà)", () => {
+    expect(() => articleDepuisLigne(ligne({ description: null }))).toThrow(/sans description/);
+    expect(() => articleDepuisLigne(ligne({ categorie: null }))).toThrow(/catégorie/);
+    expect(() => articleDepuisLigne(ligne({ couverture: null }))).toThrow(/couverture/);
   });
 });
 
@@ -95,36 +90,41 @@ describe("outils de présentation", () => {
   });
 });
 
-describe("articles du dépôt", () => {
-  const liste = articles();
+describe("articles du dépôt (données de secours)", () => {
+  const lignes = lignesDeRepli();
+  const doc = (l: LigneArticle) => l.contenu as DocumentArticle;
 
-  it("contient les 37 articles conservés, aucun article retiré", () => {
-    expect(liste).toHaveLength(37);
-    for (const a of liste) expect(Object.keys(ARTICLES_RETIRES)).not.toContain(a.slug);
+  it("contient les 37 articles conservés, aucun article retiré, tous valides", () => {
+    expect(lignes).toHaveLength(37);
+    for (const l of lignes) {
+      expect(Object.keys(ARTICLES_RETIRES)).not.toContain(l.slug);
+      expect(() => articleDepuisLigne(l)).not.toThrow();
+    }
   });
 
   it("a des couvertures et des photos présentes dans public/", () => {
-    for (const a of liste) {
-      expect(fs.existsSync(path.join("public", a.couverture)), a.couverture).toBe(true);
-      for (const [, src] of a.source.matchAll(/<PhotoArticle src="([^"]+)"/g)) {
-        expect(fs.existsSync(path.join("public", src)), src).toBe(true);
-      }
+    for (const l of lignes) {
+      expect(fs.existsSync(path.join("public", l.couverture!)), l.couverture!).toBe(true);
+      for (const { src } of imagesDuDocument(doc(l))) expect(fs.existsSync(path.join("public", src)), src).toBe(true);
     }
   });
 
   it("ne pointe plus vers l'ancien site et n'a que des liens internes connus", () => {
-    for (const a of liste) {
-      expect(a.source, a.slug).not.toMatch(/spiceevents\.fr\/|strikingly/);
-      for (const [, href] of a.source.matchAll(/\]\((\/[^)\s]*)\)/g)) {
-        expect(hrefInterne(href), `${a.slug} → ${href}`).not.toBeNull();
+    for (const l of lignes) {
+      for (const { href } of liensDuDocument(doc(l))) {
+        expect(href, l.slug).not.toMatch(/spiceevents\.fr\/|strikingly/);
+        if (href.startsWith("/")) expect(hrefInterne(href), `${l.slug} → ${href}`).not.toBeNull();
       }
     }
   });
 
   it("ne renvoie qu'à des articles existants", () => {
-    const slugs = new Set(liste.map((a) => a.slug));
-    for (const a of liste) {
-      for (const [, cible] of a.source.matchAll(/\]\(\/journal\/([^)\s]+)\)/g)) expect(slugs.has(cible), cible).toBe(true);
+    const slugs = new Set(lignes.map((l) => l.slug));
+    for (const l of lignes) {
+      for (const { href } of liensDuDocument(doc(l))) {
+        const cible = /^\/journal\/([^/#?]+)$/.exec(href)?.[1];
+        if (cible) expect(slugs.has(cible), cible).toBe(true);
+      }
     }
   });
 });
