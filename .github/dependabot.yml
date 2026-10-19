@@ -17,6 +17,10 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: eslint-config-next
         update-types: ["version-update:semver-major"]
+      # eslint-config-next 15 n'accepte qu'ESLint 9 au plus (peerDependencies) :
+      # ESLint 10 attend, lui aussi, la migration de Next.
+      - dependency-name: eslint
+        update-types: ["version-update:semver-major"]
       # Doit décrire le Node d'exécution (22 sur Vercel).
       - dependency-name: "@types/node"
         update-types: ["version-update:semver-major"]
