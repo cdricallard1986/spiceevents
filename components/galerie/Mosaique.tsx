@@ -87,7 +87,10 @@ export function Mosaique({ photos }: Props) {
               width={grande.width}
               height={grande.height}
               sizes="100vw"
-              quality={75}
+              // Qualité parmi `images.qualities` (next.config.ts) : une autre valeur est refusée (400).
+              quality={80}
+              // Ouverte à la demande : chargement immédiat (Safari ne charge pas une image différée de taille nulle).
+              loading="eager"
               className="h-auto max-h-[80svh] w-auto max-w-[92vw] object-contain"
             />
             <figcaption className="max-w-2xl text-center text-sm text-sable">{grande.alt}</figcaption>

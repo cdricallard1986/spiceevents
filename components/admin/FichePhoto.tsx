@@ -211,7 +211,10 @@ export function FichePhoto({
                 height={photo.hauteur}
                 sizes="(min-width: 768px) 360px, 100vw"
                 quality={70}
-                className="h-auto max-h-[45vh] w-auto max-w-full object-contain"
+                // Taille connue avant le chargement (largeur du cadre, hauteur par le ratio) et
+                // chargement immédiat : Safari ne charge jamais une image différée de taille nulle.
+                loading="eager"
+                className="h-auto max-h-[45vh] w-full object-contain"
               />
             </div>
             <figcaption className="text-xs text-sable/80">
