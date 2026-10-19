@@ -46,7 +46,8 @@ describe("AuditRls", () => {
     expect(screen.getByText("En échec :")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Visiteur" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Cédric" })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Relancer l'audit" })).toBeInTheDocument();
+    // Les résultats peuvent s'afficher avant la fin de la transition (« Audit en cours… ») : on attend le bouton.
+    expect(await screen.findByRole("button", { name: "Relancer l'audit" })).toBeInTheDocument();
   });
 
   it("dit clairement que l'audit n'a pas pu partir", async () => {
