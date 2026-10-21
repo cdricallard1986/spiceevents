@@ -15,8 +15,10 @@ name: Sauvegarde
 # défaut (main) : il démarre au premier passage de ce fichier en production.
 
 on:
-  schedule:
-    - cron: "17 2 * * *" # chaque nuit, 4 h 17 à Paris (heure d'été)
+  # Désactivée le 21 octobre 2026 à la demande de Cédric (secrets pas encore créés :
+  # chaque nuit finissait en échec). Pour la réactiver, décommenter les deux lignes.
+  # schedule:
+  #   - cron: "17 2 * * *" # chaque nuit, 4 h 17 à Paris (heure d'été)
   workflow_dispatch:
 
 permissions:
