@@ -63,13 +63,14 @@ export default async function Accueil({ params }: Props) {
           </div>
           <div>
             {/* Hauteur fixe sur deux rangées : la grande photo et les deux petites finissent à la même ligne. */}
+            {/* Jamais deux photos d'un même événement côte à côte (règle de Cédric). */}
             <div className="grid h-[24rem] grid-cols-2 grid-rows-2 gap-4 md:h-[32rem]">
               <div className="relative row-span-2">
                 {/* Photo paysage recadrée en portrait : affichée ~1,5× plus large que sa case. */}
                 <Photo cle="cedric-platines" remplir sizes="(min-width: 1024px) 40vw, 75vw" />
               </div>
               <div className="relative">
-                <Photo cle="maison-cedric-dessus" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
+                <Photo cle="cedric-platines-cravate" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
               </div>
               <div className="relative">
                 <Photo cle="platines-pioneer" remplir sizes="(min-width: 1024px) 25vw, 50vw" />

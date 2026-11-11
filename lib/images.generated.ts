@@ -2,6 +2,7 @@
 export const IMAGES = {
   "cedric-platines": { src: "/images/cedric-platines.jpg", width: 2048, height: 1363, alt: { fr: "Cédric Allard aux platines pendant une soirée", en: "Cédric Allard at the decks during a party" } },
   "cedric-platines-2": { src: "/images/cedric-platines-2.jpg", width: 2048, height: 1363, alt: { fr: "Cédric Allard en train de mixer", en: "Cédric Allard mixing" } },
+  "cedric-platines-cravate": { src: "/images/cedric-platines-cravate.jpg", width: 2400, height: 1600, alt: { fr: "Cédric Allard en chemise et cravate, en train de mixer", en: "Cédric Allard in a shirt and tie, mixing" } },
   "ceremonie-laique": { src: "/images/ceremonie-laique.jpg", width: 2400, height: 1600, alt: { fr: "Cérémonie laïque en plein air avec micro", en: "Outdoor celebrant-led ceremony with a microphone" } },
   "chapiteau-diner": { src: "/images/chapiteau-diner.jpg", width: 2400, height: 1800, alt: { fr: "Dîner de mariage sous un chapiteau éclairé", en: "Wedding dinner in an illuminated marquee" } },
   "chateau-cour": { src: "/images/chateau-cour.jpg", width: 2400, height: 1600, alt: { fr: "Cour de château mise en lumière pour une soirée de mariage", en: "Château courtyard lit up for a wedding party" } },
