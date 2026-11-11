@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SITE } from "@/contenu/site";
+import { LienBackOffice } from "./LienBackOffice";
 import { Logo } from "./Logo";
 import { liensPiedPour } from "./navigation";
 
@@ -79,6 +80,7 @@ export async function PiedDePage() {
             {locale === "fr" && (
               <li><Link href="/recrutement" className="hover:text-ivoire">{t("recrutement")}</Link></li>
             )}
+            <li><LienBackOffice /></li>
             <li><Link href="/mentions-legales" className="hover:text-ivoire">{t("mentions")}</Link></li>
             <li><Link href="/confidentialite" className="hover:text-ivoire">{t("confidentialite")}</Link></li>
           </ul>
