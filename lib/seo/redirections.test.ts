@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { OPTIONS } from "@/contenu/options";
 import { routing } from "@/i18n/routing";
-import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, redirections } from "./redirections";
+import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, OPTIONS_RETIREES, redirections } from "./redirections";
 
 /** Chemins internes FR valides, dynamiques résolus avec les vrais slugs d'options. */
 const cheminsValides = new Set<string>([
@@ -39,6 +39,7 @@ describe("redirections 301", () => {
   it("mènent vers des pages qui existent", () => {
     for (const r of liste) {
       if (r.destination.includes(":")) continue; // motifs (/journal/:slug)
+      if (r.source in OPTIONS_RETIREES) continue; // vérifiées à part (adresses anglaises)
       const page = r.destination.split("#")[0];
       expect(cheminsValides.has(page), `${r.source} → ${r.destination}`).toBe(true);
     }
@@ -47,7 +48,16 @@ describe("redirections 301", () => {
   it("envoient chaque ancienne option vers une option existante", () => {
     const slugs = OPTIONS.map((o) => o.slug.fr);
     for (const slug of Object.values(ANCIENNES_OPTIONS)) expect(slugs).toContain(slug);
-    expect(Object.keys(ANCIENNES_OPTIONS)).toHaveLength(OPTIONS.length);
+  });
+
+  it("envoient chaque option retirée vers la page Animations de sa langue, sans masquer une option existante", () => {
+    const animations = routing.pathnames["/animations"];
+    expect(OPTIONS_RETIREES).toEqual({
+      "/animations/murs-d-eau-et-vegetaux": animations.fr,
+      "/en/entertainment/water-and-green-walls": `/en${animations.en}`,
+    });
+    const existantes = OPTIONS.flatMap((o) => [`/animations/${o.slug.fr}`, `/en/entertainment/${o.slug.en}`]);
+    for (const source of Object.keys(OPTIONS_RETIREES)) expect(existantes).not.toContain(source);
   });
 
   it("traitent les articles retirés avant la règle générique du blog", () => {

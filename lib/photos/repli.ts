@@ -14,11 +14,39 @@ import type { Liaison, LigneGalerie, Photo } from "./types";
  * `source.ts`. Retirées à l'étape 7 du plan.
  */
 
+/**
+ * Galeries d'options retirées du site (novembre 2026 : murs d'eau & végétaux). Elles
+ * restent en base (import 0007), sans page pour les afficher : les données de
+ * secours les gardent, à leur place d'alors (après l'option `apres`).
+ */
+export const GALERIES_RETIREES: readonly { apres: string; galerie: string; photos: readonly CleImage[] }[] = [
+  {
+    apres: "guirlandes-lumineuses",
+    galerie: "option:murs-d-eau-et-vegetaux",
+    photos: [
+      "presta-mur-eau-colonnes",
+      "presta-mur-vegetal-neon",
+      "presta-mur-eau-nom",
+      "presta-mur-vegetal-escalier",
+      "presta-mur-eau-vegetal",
+      "presta-mur-vegetal-salle",
+    ],
+  },
+];
+
+/** Les galeries des options, dans l'ordre des options, avec les galeries retirées à leur place. */
+function galeriesOptions(): [string, readonly CleImage[]][] {
+  return OPTIONS.flatMap((o): [string, readonly CleImage[]][] => [
+    [galerieOption(o.slug.fr), contenuOption(o).galerie],
+    ...GALERIES_RETIREES.filter((r) => r.apres === o.slug.fr).map((r): [string, readonly CleImage[]] => [r.galerie, r.photos]),
+  ]);
+}
+
 /** Les galeries du code, dans l'ordre d'affichage actuel. */
 export const GALERIES_REPLI: Readonly<Record<string, readonly CleImage[]>> = {
   galerie_mariages: PHOTOS_MARIAGES,
   galerie_evenements: PHOTOS_EVENEMENTS,
-  ...Object.fromEntries(OPTIONS.map((o) => [galerieOption(o.slug.fr), contenuOption(o).galerie])),
+  ...Object.fromEntries(galeriesOptions()),
 };
 
 /** Espace de noms des identifiants de photos du site (UUID v5, RFC 9562). */

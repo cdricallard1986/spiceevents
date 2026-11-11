@@ -22,7 +22,7 @@ export const OPTIONS: Option[] = [
       fr: "Fumée lourde et étincelles froides, synchronisées avec votre première danse.",
       en: "Low fog and cold sparks, synchronised with your first dance.",
     },
-    image: "premiere-danse-rose",
+    image: "presta-bal-etincelles-fumee",
   },
   {
     slug: { fr: "bar-a-vinyles", en: "vinyl-bar" },
@@ -31,7 +31,7 @@ export const OPTIONS: Option[] = [
       fr: "Vos invités choisissent un disque, le DJ l'intègre à la soirée.",
       en: "Guests pick a record, the DJ blends it into the night.",
     },
-    image: "vinyles",
+    image: "presta-vinyles-platine",
   },
   {
     slug: { fr: "livre-d-or-audio", en: "audio-guestbook" },
@@ -49,7 +49,7 @@ export const OPTIONS: Option[] = [
       fr: "400 tirages, cadre personnalisé, photos envoyées dès le lundi.",
       en: "400 prints, a custom frame, all your photos sent the Monday after.",
     },
-    image: "presta-invites-chapiteau",
+    image: "presta-photobooth-invitees",
   },
   {
     slug: { fr: "guirlandes-lumineuses", en: "string-lights" },
@@ -61,13 +61,13 @@ export const OPTIONS: Option[] = [
     image: "grange-guirlandes",
   },
   {
-    slug: { fr: "murs-d-eau-et-vegetaux", en: "water-and-green-walls" },
-    titre: { fr: "Murs d'eau & végétaux", en: "Water & green walls" },
+    slug: { fr: "feux-d-artifice-de-jour", en: "daytime-fireworks" },
+    titre: { fr: "Feux d'artifice de jour", en: "Daytime fireworks" },
     resume: {
-      fr: "Un décor signature, personnalisable à vos initiales.",
-      en: "A signature backdrop, personalised with your initials.",
+      fr: "Des gerbes de poudre multicolore en plein jour, pour un moment qui éclate de couleurs.",
+      en: "Bursts of multicoloured powder in broad daylight, for a moment full of colour.",
     },
-    image: "presta-mur-eau-colonnes",
+    image: "presta-feux-artifice-jour",
   },
   {
     slug: { fr: "sonorisation-ceremonie-laique", en: "ceremony-sound" },
@@ -85,7 +85,7 @@ export const OPTIONS: Option[] = [
       fr: "Cocktail, dîner, salle annexe : le bon son dans chaque espace.",
       en: "Drinks, dinner, side room: the right sound in every space.",
     },
-    image: "chapiteau-diner",
+    image: "presta-sono-grand-salon",
   },
 ];
 

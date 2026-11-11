@@ -111,7 +111,7 @@ describe("données de secours (fichiers JSON au format de la base)", () => {
       "livre-d-or-audio": undefined,
       photobooth: "Beth & Liam",
       "guirlandes-lumineuses": undefined,
-      "murs-d-eau-et-vegetaux": undefined,
+      "feux-d-artifice-de-jour": undefined,
       "sonorisation-ceremonie-laique": "Pascal & Abigaïl",
       "sonorisation-deportee": "Coralie & Benjamin",
     });

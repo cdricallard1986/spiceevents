@@ -1,5 +1,5 @@
 {
- "_comment": "Photos des pages Mariages, Animations (+ 8 options) et Événementiel. Clé → fichier de site-actuel/images/fichiers + alt FR/EN.",
+ "_comment": "Photos des pages Mariages, Animations (+ 8 options) et Événementiel. Clé → fichier de site-actuel/images/fichiers + alt FR/EN. Les fichiers compose_* sont des montages paysage (photo nette + fond flouté) faits à partir d’une photo carrée du site.",
  "images": {
   "presta-mariage-hero": {
    "fichier": "780786_597985_139774.jpg",
@@ -300,6 +300,69 @@
    "alt": {
     "fr": "Mange-debout lumineux dans un espace de réception",
     "en": "Illuminated high tables in a reception space"
+   }
+  },
+  "presta-bal-etincelles-fumee": {
+   "fichier": "22139555_71041_777279.jpg",
+   "alt": {
+    "fr": "Mariés qui ouvrent le bal dans la fumée lourde, entre des fontaines d'étincelles froides",
+    "en": "The couple's first dance in low fog, between fountains of cold sparks"
+   }
+  },
+  "presta-bal-etincelles-salle": {
+   "fichier": "3083622_430056_380401.jpg",
+   "alt": {
+    "fr": "Marié qui fait tournoyer la mariée dans la fumée lourde, entourés d'étincelles froides",
+    "en": "The groom twirling the bride in low fog, surrounded by cold sparks"
+   }
+  },
+  "presta-photobooth-invitees": {
+   "fichier": "22139555_97764_439855.jpg",
+   "alt": {
+    "fr": "Mariée et ses amies qui posent en riant devant la borne photo",
+    "en": "The bride and her friends laughing as they pose at the photo booth"
+   }
+  },
+  "presta-photobooth-borne": {
+   "fichier": "5439810_221174_876999.jpg",
+   "alt": {
+    "fr": "Invités déguisés qui posent devant une borne photo, devant un mur de ballons colorés",
+    "en": "Guests in props posing at a photo booth, in front of a wall of colourful balloons"
+   }
+  },
+  "presta-vinyles-tourne-disque": {
+   "fichier": "22139555_589348_401548.jpg",
+   "alt": {
+    "fr": "Tourne-disque et ardoise « Choisissez un vinyle, je le mixe pour vous »",
+    "en": "A record player and a sign: “Pick a record, I'll mix it for you”"
+   }
+  },
+  "presta-sono-grand-salon": {
+   "fichier": "22139555_448970_902924.jpg",
+   "alt": {
+    "fr": "Grand salon de réception doré dressé pour le dîner, enceintes discrètes entre les fenêtres",
+    "en": "A grand gilded reception room laid for dinner, with discreet speakers between the windows"
+   }
+  },
+  "presta-feux-artifice-jour": {
+   "fichier": "22139555_711612_943111.jpg",
+   "alt": {
+    "fr": "Feu d'artifice de jour : un éventail de fumées multicolores au-dessus d'une arche de cérémonie",
+    "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
+   }
+  },
+  "presta-feux-artifice-jour-entete": {
+   "fichier": "compose_feux-artifice-jour-entete.jpg",
+   "alt": {
+    "fr": "Feu d'artifice de jour : un éventail de fumées multicolores au-dessus d'une arche de cérémonie",
+    "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
+   }
+  },
+  "presta-livre-or-entete": {
+   "fichier": "compose_livre-or-audio-entete.jpg",
+   "alt": {
+    "fr": "Téléphone vintage du livre d'or audio sur une table fleurie, avec son panneau",
+    "en": "The vintage audio guestbook phone on a flower-decked table, with its sign"
    }
   }
  }

@@ -4,10 +4,37 @@ import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
 /** Un moment de la journée, avec les options qui s'y rattachent (slugs français de `contenu/options.ts`). */
 export type Moment = { titre: string; texte: string; image: CleImage; options: string[] };
 
+/** Photos d'en-tête de la page, une tirée au hasard à chaque visite (grandes et paysage). */
+export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
+  "presta-mariage-hero",
+  "hero-premiere-danse",
+  "contact-maries-lumiere",
+  "couple-champ",
+  "presta-bal-etincelles-salle",
+  "mariage-accueil-tourbillon",
+  "mariage-accueil-jardin",
+  "mariage-accueil-buffet",
+  "mariage-accueil-guirlandes",
+  "mariage-accueil-rires",
+  "mariage-accueil-voiture",
+  "mariage-accueil-chaises",
+  "mariage-accueil-baiser",
+  "mariage-accueil-suspensions",
+  "mariage-accueil-voile",
+  "mariage-accueil-cierges",
+  "mariage-accueil-piste",
+  "mariage-accueil-noir-blanc",
+  "mariage-accueil-lumieres",
+  "mariage-accueil-fumee",
+];
+
+/** Engagement de la promesse, avec un lien éventuel vers la page qui le détaille. */
+export type Garantie = Carte & { lien?: { href: "/animations"; texte: string } };
+
 type Mariages = {
   seo: Seo;
   hero: { surtitre: string; titre: string; intro: string; ctaPrincipal: string; ctaSecondaire: string };
-  promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Carte[] };
+  promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Garantie[] };
   journee: { surtitre: string; titre: string; intro: string; moments: Moment[] };
   methode: { surtitre: string; titre: string; intro: string; etapes: Etape[]; citation: string };
   dj: {
@@ -62,6 +89,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           titre: "Des animations soignées",
           texte: "Créatives et originales, choisies pour servir votre journée, sans jamais l'encombrer.",
+          lien: { href: "/animations", texte: "Voir les animations" },
         },
       ],
     },
@@ -75,14 +103,14 @@ export const MARIAGES: Bilingue<Mariages> = {
           texte:
             "Micros pour l'officiant et vos proches, entrée des mariés, musiques lancées à la seconde près : une sonorisation douce et claire, entendue du premier au dernier rang, même en plein air.",
           image: "presta-ceremonie-cour",
-          options: ["sonorisation-ceremonie-laique"],
+          options: ["sonorisation-ceremonie-laique", "feux-d-artifice-de-jour"],
         },
         {
           titre: "Le cocktail",
           texte:
             "Une ambiance musicale qui accompagne les retrouvailles sans couvrir les conversations, même loin de la salle de soirée. Vos invités choisissent un disque, laissent un message vocal ou posent devant la borne photo.",
           image: "presta-vinyles-installation",
-          options: ["sonorisation-deportee", "bar-a-vinyles", "livre-d-or-audio", "photobooth", "murs-d-eau-et-vegetaux"],
+          options: ["sonorisation-deportee", "bar-a-vinyles", "livre-d-or-audio", "photobooth"],
         },
         {
           titre: "Le dîner",
@@ -95,7 +123,7 @@ export const MARIAGES: Bilingue<Mariages> = {
           titre: "L'ouverture de bal",
           texte:
             "Votre chanson, mise en scène : lumière dédiée, et si votre lieu le permet, fumée lourde et étincelles froides synchronisées avec la musique.",
-          image: "presta-bal-fumee-bleue",
+          image: "presta-bal-etincelles-fumee",
           options: ["ouverture-de-bal"],
         },
         {
@@ -145,7 +173,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       titre: "Un DJ qui vit la soirée *avec vous*.",
       citation: "Un bon DJ ne se cache pas derrière son ordinateur : il vit la soirée avec vous.",
       paragraphes: [
-        "DJ depuis plus de 20 ans, Cédric Allard a fait de sa passion un métier : plus de 350 mariages, soirées et événements professionnels à travers la France. Ce qu'il recherche avant tout, c'est le plaisir du partage — cette énergie unique qui naît quand la musique rassemble les gens.",
+        "DJ depuis plus de 20 ans, Cédric Allard a fait de sa passion un métier : plus de 600 mariages, soirées et événements professionnels à travers la France. Ce qu'il recherche avant tout, c'est le plaisir du partage — cette énergie unique qui naît quand la musique rassemble les gens.",
         "Selon votre date, Cédric mixe lui-même ou vous présente un DJ de l'équipe, préparé avec la même méthode et la même exigence.",
       ],
       differences: [
@@ -274,6 +302,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           titre: "Thoughtful entertainment",
           texte: "Creative, original ideas chosen to serve your day, never to clutter it.",
+          lien: { href: "/animations", texte: "See the entertainment" },
         },
       ],
     },
@@ -287,14 +316,14 @@ export const MARIAGES: Bilingue<Mariages> = {
           texte:
             "Microphones for your celebrant and loved ones, your entrance, music cued to the second: gentle, clear sound heard from the front row to the back, even outdoors.",
           image: "presta-ceremonie-cour",
-          options: ["sonorisation-ceremonie-laique"],
+          options: ["sonorisation-ceremonie-laique", "feux-d-artifice-de-jour"],
         },
         {
           titre: "The drinks reception",
           texte:
             "Music that sets the mood without drowning out the conversation, even far from the party room. Guests pick a record, leave a voice message or strike a pose at the photo booth.",
           image: "presta-vinyles-installation",
-          options: ["sonorisation-deportee", "bar-a-vinyles", "livre-d-or-audio", "photobooth", "murs-d-eau-et-vegetaux"],
+          options: ["sonorisation-deportee", "bar-a-vinyles", "livre-d-or-audio", "photobooth"],
         },
         {
           titre: "Dinner",
@@ -307,7 +336,7 @@ export const MARIAGES: Bilingue<Mariages> = {
           titre: "The first dance",
           texte:
             "Your song, staged: dedicated lighting and, where the venue allows, low fog and cold sparks timed to the music.",
-          image: "presta-bal-fumee-bleue",
+          image: "presta-bal-etincelles-fumee",
           options: ["ouverture-de-bal"],
         },
         {
@@ -357,7 +386,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       titre: "A DJ who lives the night *with you*.",
       citation: "A good DJ doesn't hide behind a laptop: he lives the night with you.",
       paragraphes: [
-        "A DJ for more than 20 years, Cédric Allard turned his passion into his profession: over 350 weddings, parties and corporate events across France. What drives him above all is sharing — that unique energy when music brings people together.",
+        "A DJ for more than 20 years, Cédric Allard turned his passion into his profession: over 600 weddings, parties and corporate events across France. What drives him above all is sharing — that unique energy when music brings people together.",
         "Depending on your date, Cédric either plays himself or introduces you to a DJ from the team, prepared with the same method and the same high standards.",
       ],
       differences: [

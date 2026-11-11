@@ -34,5 +34,5 @@ export const SITE = {
   /** Distinctions réelles (badges Mariages.net présents sur l'ancien site). */
   weddingAwards: [2022, 2024, 2025],
   /** Chiffres tirés des textes de l'ancien site (biographie de Cédric). */
-  chiffres: { anneesExperience: 20, evenements: 350 },
+  chiffres: { anneesExperience: 20, evenements: 600 },
 } as const;

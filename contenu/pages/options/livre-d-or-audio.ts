@@ -1,7 +1,7 @@
 import type { ContenuOption } from "./types";
 
 export const LIVRE_D_OR_AUDIO: ContenuOption = {
-  image: "chateau-cour",
+  image: "presta-livre-or-entete",
   galerie: ["telephone-livre-or", "presta-livre-or-cadre"],
   textes: {
     fr: {

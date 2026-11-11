@@ -2,9 +2,11 @@ import type { ReactNode } from "react";
 import type { CleImage } from "@/lib/images";
 import { Photo } from "@/components/ui/Photo";
 import { Accent } from "./Accent";
+import { FondAleatoire } from "./FondAleatoire";
 
 type Props = {
-  image: CleImage;
+  /** Une photo, ou une liste dont une est tirée au hasard à chaque visite. */
+  image: CleImage | CleImage[];
   surtitre: string;
   titre: string;
   intro?: string;
@@ -17,7 +19,7 @@ type Props = {
 export function EnTetePage({ image, surtitre, titre, intro, pleinEcran = false, children }: Props) {
   return (
     <section className={`relative flex items-end overflow-hidden ${pleinEcran ? "min-h-[100svh]" : "min-h-[78svh]"}`}>
-      <Photo cle={image} remplir priority sizes="100vw" />
+      {Array.isArray(image) ? <FondAleatoire images={image} /> : <Photo cle={image} remplir priority sizes="100vw" />}
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,rgba(14,13,18,0.7)_0%,rgba(14,13,18,0.2)_35%,rgba(14,13,18,0.94)_100%)]"

@@ -15,7 +15,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
     seo: {
       titre: "Animations de mariage et de soirée en Île-de-France | Spice Events",
       description:
-        "Photobooth, bar à vinyles, livre d'or audio, ouverture de bal, guirlandes, murs d'eau, sonorisation de cérémonie : des animations sur mesure pour votre mariage à Paris et en Île-de-France.",
+        "Photobooth, bar à vinyles, livre d'or audio, ouverture de bal, guirlandes, feux d'artifice de jour, sonorisation de cérémonie : des animations sur mesure pour votre mariage en Île-de-France.",
     },
     hero: {
       surtitre: "Animations · Mariages & événements",
@@ -92,7 +92,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
     seo: {
       titre: "Wedding entertainment in Paris: photobooth, vinyl bar & more | Spice Events",
       description:
-        "Photobooth, vinyl bar, audio guestbook, first-dance effects, string lights, water walls, ceremony sound: tailored entertainment for your wedding in Paris and Île-de-France.",
+        "Photobooth, vinyl bar, audio guestbook, first-dance effects, string lights, daytime fireworks, ceremony sound: tailored entertainment for your wedding in Paris and Île-de-France.",
     },
     hero: {
       surtitre: "Entertainment · Weddings & events",

@@ -25,7 +25,6 @@ export const ANCIENNES_OPTIONS: Record<string, string> = {
   "/livre-d-or-audio": "livre-d-or-audio",
   "/ouverture-de-bal-spectaculaire": "ouverture-de-bal",
   "/guirlandes-lumineuses": "guirlandes-lumineuses",
-  "/mur-d-eau-and-vegetal": "murs-d-eau-et-vegetaux",
   "/sonorisation-ceremonie-laique": "sonorisation-ceremonie-laique",
   "/sonorisation-deportee": "sonorisation-deportee",
 };
@@ -46,6 +45,14 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/animations-tendances": "/animations",
   "/on-recrute": "/recrutement",
   "/blog": "/journal",
+  // Murs d'eau & végétaux : prestation retirée (novembre 2026).
+  "/mur-d-eau-and-vegetal": "/animations",
+};
+
+/** Pages d'option retirées du nouveau site (adresse FR et EN) → page Animations de la même langue. */
+export const OPTIONS_RETIREES: Record<string, string> = {
+  "/animations/murs-d-eau-et-vegetaux": "/animations",
+  "/en/entertainment/water-and-green-walls": "/en/entertainment",
 };
 
 /** Articles retirés du journal (datés ou hors sujet) → page la plus proche. */
@@ -76,6 +83,9 @@ export function redirections(): Redirection[] {
     },
   ];
   for (const [source, destination] of Object.entries(ANCIENNES_PAGES)) {
+    liste.push({ source, destination, permanent: true });
+  }
+  for (const [source, destination] of Object.entries(OPTIONS_RETIREES)) {
     liste.push({ source, destination, permanent: true });
   }
   for (const [source, slug] of Object.entries(ANCIENNES_OPTIONS)) {

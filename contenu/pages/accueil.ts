@@ -28,7 +28,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
     dj: {
       titre: "Un DJ qui lit la piste, *pas une playlist*.",
       paragraphes: [
-        "Depuis plus de 20 ans, Cédric fait danser les mariés et leurs invités : plus de 350 mariages et événements. Questionnaire musical, rendez-vous de préparation, coordination avec vos prestataires — le jour J, tout est déjà pensé.",
+        "Depuis plus de 20 ans, Cédric fait danser les mariés et leurs invités : plus de 600 mariages et événements. Questionnaire musical, rendez-vous de préparation, coordination avec vos prestataires — le jour J, tout est déjà pensé.",
         "Le son et la lumière sont fournis par notre partenaire MX Événement : un matériel haut de gamme, testé en atelier avant chaque date, avec du matériel de secours sur place.",
       ],
       lien: "Rencontrer Cédric",
@@ -77,7 +77,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
     dj: {
       titre: "A DJ who reads the dance floor, *not a playlist*.",
       paragraphes: [
-        "For over 20 years, Cédric has been getting couples and their guests on the dance floor: more than 350 weddings and events. Music questionnaire, planning meetings, coordination with your other suppliers — by the big day, everything has been thought through.",
+        "For over 20 years, Cédric has been getting couples and their guests on the dance floor: more than 600 weddings and events. Music questionnaire, planning meetings, coordination with your other suppliers — by the big day, everything has been thought through.",
         "Sound and lighting come from our partner MX Événement: premium equipment, tested in the workshop before every date, with backup gear on site.",
       ],
       lien: "Meet Cédric",

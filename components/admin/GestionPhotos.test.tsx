@@ -90,7 +90,7 @@ describe("GestionPhotos — galeries", () => {
       "Livre d'or audio",
       "Photobooth",
       "Guirlandes lumineuses",
-      "Murs d'eau & végétaux",
+      "Feux d'artifice de jour",
       "Sonorisation de cérémonie laïque",
       "Sonorisation déportée",
     ]);

@@ -6,7 +6,7 @@ import { PHOTOS_EVENEMENTS, PHOTOS_MARIAGES } from "@/contenu/pages/galerie";
 import { CONTENUS_OPTIONS } from "@/contenu/pages/options";
 import { IMAGES, type CleImage } from "@/lib/images";
 import { sqlImportGaleries } from "./import-sql";
-import { idPhotoSite, liaisonsDeRepli, photosDeRepli } from "./repli";
+import { GALERIES_RETIREES, idPhotoSite, liaisonsDeRepli, photosDeRepli } from "./repli";
 
 /**
  * La migration 0007 doit correspondre EXACTEMENT aux galeries du code : mêmes
@@ -70,7 +70,11 @@ const LIAISONS = lignesInsert(SQL, "insert into public.galeries_photos (galerie,
 const GALERIES_DU_CODE: [string, readonly CleImage[]][] = [
   ["galerie_mariages", PHOTOS_MARIAGES],
   ["galerie_evenements", PHOTOS_EVENEMENTS],
-  ...OPTIONS.map((o): [string, readonly CleImage[]] => [`option:${o.slug.fr}`, CONTENUS_OPTIONS[o.slug.fr].galerie]),
+  ...OPTIONS.flatMap((o): [string, readonly CleImage[]][] => [
+    [`option:${o.slug.fr}`, CONTENUS_OPTIONS[o.slug.fr].galerie],
+    // Galerie d'une option retirée depuis : toujours en base, à sa place d'alors.
+    ...GALERIES_RETIREES.filter((r) => r.apres === o.slug.fr).map((r): [string, readonly CleImage[]] => [r.galerie, r.photos]),
+  ]),
 ];
 
 describe("migration 0007 : import des galeries", () => {

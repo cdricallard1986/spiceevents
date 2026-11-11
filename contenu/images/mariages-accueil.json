@@ -1,0 +1,110 @@
+{
+ "_comment": "Photos d'en-tête de la page Mariages, tirées au hasard à chaque visite (avec 5 photos déjà au registre, voir contenu/pages/mariages.ts). Clé → fichier de site-actuel/images/fichiers + alt FR/EN.",
+ "images": {
+  "mariage-accueil-tourbillon": {
+   "fichier": "22139555_509506_279639.jpg",
+   "alt": {
+    "fr": "Mariés qui s'enlacent et tournoient sur la piste, sous une charpente",
+    "en": "The couple embracing and spinning on the dance floor, beneath a timber roof"
+   }
+  },
+  "mariage-accueil-jardin": {
+   "fichier": "3083622_482663_119147.jpg",
+   "alt": {
+    "fr": "Mariés enlacés au milieu d'un jardin fleuri",
+    "en": "The newlyweds embracing in a garden in bloom"
+   }
+  },
+  "mariage-accueil-buffet": {
+   "fichier": "5439810_194265_179730.jpg",
+   "alt": {
+    "fr": "Mariée devant une table fleurie éclairée d'ampoules suspendues",
+    "en": "A bride in front of a flower-decked table lit by hanging bulbs"
+   }
+  },
+  "mariage-accueil-guirlandes": {
+   "fichier": "5439810_275899_258335.jpg",
+   "alt": {
+    "fr": "Mariés front contre front sous des guirlandes d'ampoules",
+    "en": "The couple forehead to forehead beneath strings of lights"
+   }
+  },
+  "mariage-accueil-rires": {
+   "fichier": "5439810_378982_500468.jpg",
+   "alt": {
+    "fr": "Mariés qui se tiennent les mains en riant",
+    "en": "The newlyweds holding hands and laughing"
+   }
+  },
+  "mariage-accueil-voiture": {
+   "fichier": "5439810_520864_83983.jpg",
+   "alt": {
+    "fr": "Mariée assise sur une voiture ancienne décorée, dans la brume",
+    "en": "A bride sitting on a decorated vintage car in the mist"
+   }
+  },
+  "mariage-accueil-chaises": {
+   "fichier": "5439810_708852_985538.jpg",
+   "alt": {
+    "fr": "Mariés assis de dos sur leurs chaises de cérémonie, face aux montagnes",
+    "en": "The couple seated from behind on their ceremony chairs, facing the mountains"
+   }
+  },
+  "mariage-accueil-baiser": {
+   "fichier": "5439810_714902_968846.jpg",
+   "alt": {
+    "fr": "Baiser des mariés devant un rideau de lumières",
+    "en": "The newlyweds kissing in front of a curtain of lights"
+   }
+  },
+  "mariage-accueil-suspensions": {
+   "fichier": "5439810_899742_133491.jpg",
+   "alt": {
+    "fr": "Mariés enlacés dans la nuit, entre des suspensions en osier lumineuses",
+    "en": "The couple embracing at night among glowing wicker pendant lights"
+   }
+  },
+  "mariage-accueil-voile": {
+   "fichier": "5439810_916251_986957.jpg",
+   "alt": {
+    "fr": "Baiser des mariés sous le voile, bouquet à la main",
+    "en": "The newlyweds kissing under the veil, bouquet in hand"
+   }
+  },
+  "mariage-accueil-cierges": {
+   "fichier": "3083622_316566_896269.jpg",
+   "alt": {
+    "fr": "Mariés de dos face à leurs invités qui brandissent des cierges magiques",
+    "en": "The couple from behind, facing guests waving sparklers"
+   }
+  },
+  "mariage-accueil-piste": {
+   "fichier": "5439810_785500_816320.jpg",
+   "alt": {
+    "fr": "Invités qui dansent sous un plafond de guirlandes lumineuses",
+    "en": "Guests dancing under a ceiling of string lights"
+   }
+  },
+  "mariage-accueil-noir-blanc": {
+   "fichier": "5439810_9833_764558.jpg",
+   "alt": {
+    "fr": "Mariés enlacés sous les guirlandes, en noir et blanc",
+    "en": "The couple embracing beneath string lights, in black and white"
+   }
+  },
+  "mariage-accueil-lumieres": {
+   "fichier": "3083622_618838_776266.jpg",
+   "alt": {
+    "fr": "Mariés front contre front dans une salle scintillante de lumières",
+    "en": "The newlyweds forehead to forehead in a room sparkling with lights"
+   }
+  },
+  "mariage-accueil-fumee": {
+   "fichier": "22139555_986728_695756.jpg",
+   "alt": {
+    "fr": "Ouverture de bal dans la fumée lourde, sous une lumière rose",
+    "en": "A first dance in low fog under pink light"
+   }
+  }
+ }
+}

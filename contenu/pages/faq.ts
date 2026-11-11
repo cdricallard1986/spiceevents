@@ -9,10 +9,14 @@ export type ThemeFaq = {
   lien?: { href: CheminStatique; texte: string };
 };
 
+/** Textes du champ de recherche ; « {n} » est remplacé par le nombre de questions trouvées. */
+export type TextesRechercheFaq = { label: string; exemple: string; une: string; plusieurs: string; aucune: string; contact: string; effacer: string };
+
 type PageFaq = {
   seo: Seo;
   hero: { surtitre: string; titre: string; intro: string };
   sommaire: string;
+  recherche: TextesRechercheFaq;
   themes: ThemeFaq[];
   contact: { titre: string; texte: string };
 };
@@ -30,6 +34,15 @@ export const FAQ: Bilingue<PageFaq> = {
       intro: "Musique, technique, animations, réservation : l'essentiel pour préparer sereinement votre mariage ou votre événement.",
     },
     sommaire: "Thèmes",
+    recherche: {
+      label: "Rechercher dans les questions",
+      exemple: "Acompte, micro, horaires…",
+      une: "1 question trouvée",
+      plusieurs: "{n} questions trouvées",
+      aucune: "Aucune question ne correspond. Posez-nous la vôtre : nous vous répondons rapidement.",
+      contact: "Nous écrire",
+      effacer: "Effacer la recherche",
+    },
     themes: [
       {
         id: "general",
@@ -249,6 +262,15 @@ export const FAQ: Bilingue<PageFaq> = {
       intro: "Music, equipment, entertainment, booking: everything you need to plan your wedding or event with peace of mind.",
     },
     sommaire: "Topics",
+    recherche: {
+      label: "Search the questions",
+      exemple: "Deposit, microphone, timings…",
+      une: "1 question found",
+      plusieurs: "{n} questions found",
+      aucune: "No question matches. Ask us yours: we reply quickly.",
+      contact: "Write to us",
+      effacer: "Clear the search",
+    },
     themes: [
       {
         id: "general",

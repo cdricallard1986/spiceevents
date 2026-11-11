@@ -1,8 +1,8 @@
 import type { Option } from "../../options";
 import { BAR_A_VINYLES } from "./bar-a-vinyles";
+import { FEUX_D_ARTIFICE_DE_JOUR } from "./feux-d-artifice-de-jour";
 import { GUIRLANDES_LUMINEUSES } from "./guirlandes-lumineuses";
 import { LIVRE_D_OR_AUDIO } from "./livre-d-or-audio";
-import { MURS_D_EAU_ET_VEGETAUX } from "./murs-d-eau-et-vegetaux";
 import { OUVERTURE_DE_BAL } from "./ouverture-de-bal";
 import { PHOTOBOOTH } from "./photobooth";
 import { SONORISATION_CEREMONIE_LAIQUE } from "./sonorisation-ceremonie-laique";
@@ -18,7 +18,7 @@ export const CONTENUS_OPTIONS: Record<string, ContenuOption> = {
   "livre-d-or-audio": LIVRE_D_OR_AUDIO,
   photobooth: PHOTOBOOTH,
   "guirlandes-lumineuses": GUIRLANDES_LUMINEUSES,
-  "murs-d-eau-et-vegetaux": MURS_D_EAU_ET_VEGETAUX,
+  "feux-d-artifice-de-jour": FEUX_D_ARTIFICE_DE_JOUR,
   "sonorisation-ceremonie-laique": SONORISATION_CEREMONIE_LAIQUE,
   "sonorisation-deportee": SONORISATION_DEPORTEE,
 };

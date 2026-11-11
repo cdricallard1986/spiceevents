@@ -1,11 +1,11 @@
 import type { ContenuOption } from "./types";
 
 export const PHOTOBOOTH: ContenuOption = {
-  image: "presta-invites-chapiteau",
-  // Pas encore de photo de la borne Spice Events : la galerie est masquée en attendant.
+  image: "presta-photobooth-borne",
+  // Galerie de secours (sans Supabase) ; en ligne, les photos se choisissent dans le back office.
   galerie: [],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
-  imageAvis: "presta-invites-chapiteau",
+  imageAvis: "presta-photobooth-invitees",
   textes: {
     fr: {
       seo: {

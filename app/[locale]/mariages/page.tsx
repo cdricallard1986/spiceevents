@@ -3,7 +3,7 @@ import { DerniersArticles } from "@/components/journal/DerniersArticles";
 import { CATEGORIES_MARIAGE } from "@/lib/journal/constantes";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { MARIAGES } from "@/contenu/pages/mariages";
+import { IMAGES_ACCUEIL_MARIAGES, MARIAGES } from "@/contenu/pages/mariages";
 import { OPTIONS } from "@/contenu/options";
 import { SITE } from "@/contenu/site";
 import { avisPublies } from "@/lib/avis/lecture";
@@ -52,7 +52,7 @@ export default async function PageMariages({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image="presta-mariage-hero" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
+      <EnTetePage image={IMAGES_ACCUEIL_MARIAGES} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{c.hero.ctaPrincipal}</Bouton>
         <Bouton href={{ pathname: "/mariages", hash: "methode" }} variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">
@@ -79,6 +79,11 @@ export default async function PageMariages({ params }: Props) {
               <li key={g.titre} className="border-t border-ligne pt-6">
                 <h3 className="mb-2 text-lg font-semibold tracking-wide">{g.titre}</h3>
                 <p className="text-[0.9375rem] text-sable">{g.texte}</p>
+                {g.lien && (
+                  <Bouton href={g.lien.href} variante="lien" className="mt-4">
+                    {g.lien.texte} →
+                  </Bouton>
+                )}
               </li>
             ))}
           </ul>
