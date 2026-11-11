@@ -4,28 +4,28 @@ import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
 /** Un moment de la journée, avec les options qui s'y rattachent (slugs français de `contenu/options.ts`). */
 export type Moment = { titre: string; texte: string; image: CleImage; options: string[] };
 
-/** Photos d'en-tête de la page, une tirée au hasard à chaque visite (grandes et paysage). */
+/** Photos d'en-tête de la page, une tirée au hasard à chaque visite : l'ambiance de la soirée (piste, lumières, son), grandes et paysage. */
 export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
   "presta-mariage-hero",
-  "hero-premiere-danse",
+  "maison-mariage-danse-genou",
   "contact-maries-lumiere",
-  "couple-champ",
-  "presta-bal-etincelles-salle",
-  "mariage-accueil-tourbillon",
-  "mariage-accueil-jardin",
-  "mariage-accueil-buffet",
-  "mariage-accueil-guirlandes",
-  "mariage-accueil-rires",
-  "mariage-accueil-voiture",
-  "mariage-accueil-chaises",
-  "mariage-accueil-baiser",
-  "mariage-accueil-suspensions",
-  "mariage-accueil-voile",
-  "mariage-accueil-cierges",
-  "mariage-accueil-piste",
-  "mariage-accueil-noir-blanc",
-  "mariage-accueil-lumieres",
+  "hero-premiere-danse",
+  "presta-bal-fumee-bleue",
   "mariage-accueil-fumee",
+  "presta-bal-etincelles-salle",
+  "piste-invites",
+  "maison-evenement-scene-dj",
+  "presta-soiree-privee",
+  "presta-piste-laser",
+  "maison-mariage-diner-violet",
+  "maison-mariage-lasers",
+  "mariage-soiree-fumee-rouge",
+  "mariage-soiree-scene-dj",
+  "mariage-soiree-regie",
+  "mariage-soiree-piste-rose",
+  "mariage-soiree-cabine",
+  "mariage-soiree-chapiteau-bleu",
+  "mariage-soiree-faisceaux",
 ];
 
 /** Engagement de la promesse, avec un lien éventuel vers la page qui le détaille. */
