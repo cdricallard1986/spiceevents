@@ -18,7 +18,7 @@ import { Etapes } from "@/components/common/Etapes";
 import { Faq } from "@/components/common/Faq";
 import { GrillePhotos } from "@/components/common/GrillePhotos";
 import { Section } from "@/components/common/Section";
-import { Bouton } from "@/components/ui/Bouton";
+import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 
 type Props = { params: Promise<{ locale: Locale }> };
@@ -128,6 +128,29 @@ export default async function PageMariages({ params }: Props) {
       {/* Méthode : cible de l'ancienne page /accompagnement */}
       <Section id="methode" surtitre={c.methode.surtitre} titre={c.methode.titre} intro={c.methode.intro}>
         <Etapes etapes={c.methode.etapes} />
+
+        {/* Nuvio : la plateforme de préparation conçue par Spice Events */}
+        <div className="mt-20 grid gap-10 border border-ligne bg-nuit-2 p-8 md:p-12 lg:grid-cols-[1fr_1.1fr] lg:gap-14">
+          <div>
+            <p className="surtitre mb-4">{c.nuvio.surtitre}</p>
+            <h3 className="font-display text-3xl leading-[1.1] md:text-[2.5rem]">
+              <Accent texte={c.nuvio.titre} />
+            </h3>
+            <p className="mt-6 text-lg text-sable">{c.nuvio.texte}</p>
+            <a href={SITE.nuvio} target="_blank" rel="noopener" className={`${classesBouton("lien")} mt-8`}>
+              {c.nuvio.lien} ↗
+            </a>
+          </div>
+          <ul className="grid content-center gap-4">
+            {c.nuvio.points.map((point) => (
+              <li key={point} className="flex gap-4 border-t border-ligne pt-4 text-[0.9375rem] text-sable">
+                <span aria-hidden="true" className="text-or">✓</span>
+                {point}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl italic leading-snug md:text-[2.5rem]">
           « {c.methode.citation} »
         </p>

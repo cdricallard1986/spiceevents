@@ -33,6 +33,8 @@ export const SITE = {
   },
   /** Distinctions réelles (badges Mariages.net présents sur l'ancien site). */
   weddingAwards: [2022, 2024, 2025],
+  /** Plateforme de préparation des mariages conçue par Spice Events (espace mariés, agence, DJ, technicien). */
+  nuvio: "https://nuvio.disco-very.com/",
   /** Chiffres tirés des textes de l'ancien site (biographie de Cédric). */
   chiffres: { anneesExperience: 20, evenements: 600 },
 } as const;

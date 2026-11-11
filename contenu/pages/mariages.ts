@@ -37,6 +37,7 @@ type Mariages = {
   promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Garantie[] };
   journee: { surtitre: string; titre: string; intro: string; moments: Moment[] };
   methode: { surtitre: string; titre: string; intro: string; etapes: Etape[]; citation: string };
+  nuvio: { surtitre: string; titre: string; texte: string; points: string[]; lien: string };
   dj: {
     surtitre: string;
     titre: string;
@@ -167,6 +168,21 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
       ],
       citation: "Organiser avec méthode et accompagner avec attention, c'est garantir la fluidité et l'émotion.",
+    },
+    nuvio: {
+      surtitre: "Nuvio, votre espace de préparation",
+      titre: "Tout votre mariage, *au même endroit*.",
+      texte:
+        "Après la signature, vous recevez votre accès à Nuvio, la plateforme que nous avons conçue pour préparer les mariages. Vous, notre équipe, votre DJ et votre technicien y voyez la même version, à jour à la seconde, depuis votre téléphone ou votre ordinateur. Fini les informations éparpillées dans vingt emails.",
+      points: [
+        "Le déroulé de la journée heure par heure, à valider d'un clic",
+        "Vos musiques moment par moment : entrée, ouverture du bal, incontournables et black list",
+        "Le lieu, le plan de salle et les contacts de vos prestataires",
+        "Votre devis signé en ligne et le suivi de vos règlements",
+        "Une messagerie avec toute l'équipe",
+        "Le lendemain, selon vos options : les photos du photobooth et les enregistrements de la soirée",
+      ],
+      lien: "Découvrir Nuvio",
     },
     dj: {
       surtitre: "Votre DJ",
@@ -380,6 +396,21 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
       ],
       citation: "Planning with method and supporting with care: that's how you guarantee both flow and emotion.",
+    },
+    nuvio: {
+      surtitre: "Nuvio, your planning space",
+      titre: "Your whole wedding, *in one place*.",
+      texte:
+        "Once the quote is signed, you get access to Nuvio, the platform we designed to prepare weddings. You, our team, your DJ and your technician all see the same version, updated to the second, on your phone or your computer. No more details scattered across twenty emails.",
+      points: [
+        "The day's schedule hour by hour, approved in one click",
+        "Your music moment by moment: entrance, first dance, must-plays and a do-not-play list",
+        "The venue, the floor plan and your suppliers' contacts",
+        "Your quote signed online and your payments tracked",
+        "One message thread with the whole team",
+        "The day after, depending on your options: the photobooth pictures and the recordings of the evening",
+      ],
+      lien: "Discover Nuvio (in French)",
     },
     dj: {
       surtitre: "Your DJ",
