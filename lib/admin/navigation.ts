@@ -4,7 +4,7 @@
  * affiche « bientôt disponible »).
  */
 
-export type IconeSection = "accueil" | "avis" | "journal" | "photos" | "demandes" | "tests" | "emails";
+export type IconeSection = "accueil" | "avis" | "journal" | "photos" | "demandes" | "tests" | "emails" | "compte";
 
 export type Section = {
   href: string;
@@ -63,6 +63,12 @@ export const SECTIONS: readonly Section[] = [
     libelle: "Emails",
     description: "Envoi réel des emails du formulaire à une adresse de test.",
     icone: "emails",
+    disponible: true,
+  },  {
+    href: "/admin/compte",
+    libelle: "Mon compte",
+    description: "Votre adresse de connexion et le changement de mot de passe.",
+    icone: "compte",
     disponible: true,
   },
 ];

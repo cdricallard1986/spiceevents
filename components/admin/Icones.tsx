@@ -9,6 +9,7 @@ const TRACES: Record<IconeSection | "burger" | "fermer" | "replier" | "deplier" 
   demandes: "M3 6h18v12H3zM3 7l9 6 9-6",
   tests: "M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3M7.5 14h9",
   emails: "M4 12l16-8-6 16-3-7-7-1zM11 13l9-9",
+  compte: "M12 12a4 4 0 100-8 4 4 0 000 8zM4 21a8 8 0 0116 0",
   burger: "M3 7h18M3 12h18M3 17h18",
   fermer: "M6 6l12 12M18 6L6 18",
   replier: "M15 6l-6 6 6 6",
