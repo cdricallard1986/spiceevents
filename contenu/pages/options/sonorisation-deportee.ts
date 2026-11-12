@@ -43,7 +43,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = {
       ],
       appel: {
         titre: "Parlons *sonorisation*.",
-        texte: "Décrivez-nous votre lieu et ses espaces : nous vous proposons une installation discrète et adaptée.",
+        texte: "Décrivez-nous votre événement et ses espaces : nous vous proposons une installation discrète et adaptée.",
       },
     },
     en: {
@@ -83,7 +83,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = {
       ],
       appel: {
         titre: "Let's talk *sound*.",
-        texte: "Describe your venue and its spaces: we'll suggest a discreet set-up that fits.",
+        texte: "Describe your event and its spaces: we'll suggest a discreet set-up that fits.",
       },
     },
   },

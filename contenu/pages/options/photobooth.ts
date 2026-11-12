@@ -51,7 +51,7 @@ export const PHOTOBOOTH: ContenuOption = {
       ],
       appel: {
         titre: "Un photobooth pour *votre soirée* ?",
-        texte: "Donnez-nous votre date, votre lieu et le nombre d'invités : Cédric vous prépare un devis sur mesure.",
+        texte: "Donnez-nous votre date et le nombre d'invités : Cédric vous prépare un devis sur mesure.",
       },
     },
     en: {
@@ -98,7 +98,7 @@ export const PHOTOBOOTH: ContenuOption = {
       ],
       appel: {
         titre: "A photobooth for *your party*?",
-        texte: "Tell us your date, venue and number of guests: Cédric will put together a tailored quote.",
+        texte: "Tell us your date and number of guests: Cédric will put together a tailored quote.",
       },
     },
   },

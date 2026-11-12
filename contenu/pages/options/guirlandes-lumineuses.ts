@@ -51,8 +51,8 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
         ],
       },
       appel: {
-        titre: "Faisons briller *votre lieu*.",
-        texte: "Parlez-nous de votre lieu et de vos envies : nous imaginons ensemble sa mise en lumière.",
+        titre: "Faisons briller *votre nuit*.",
+        texte: "Parlez-nous de votre événement et de vos envies : nous imaginons ensemble sa mise en lumière.",
       },
     },
     en: {
@@ -96,8 +96,8 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
         ],
       },
       appel: {
-        titre: "Let's make *your venue* shine.",
-        texte: "Tell us about your venue and your ideas: we'll design its lighting together.",
+        titre: "Let's make *your night* shine.",
+        texte: "Tell us about your event and your ideas: we'll design its lighting together.",
       },
     },
   },

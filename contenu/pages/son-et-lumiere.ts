@@ -147,8 +147,8 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     faq: { surtitre: "Questions fréquentes", titre: "La technique, *en pratique*.", lien: "Toutes les questions" },
     appel: {
-      titre: "Parlons de *votre lieu*.",
-      texte: "Décrivez-nous la salle, le nombre d'invités et le déroulé : nous vous proposons une installation adaptée, testée et sécurisée.",
+      titre: "Parlons de *votre événement*.",
+      texte: "Votre date, le nombre d'invités et le déroulé : nous vous proposons une installation adaptée, testée et sécurisée.",
     },
   },
   en: {
@@ -260,8 +260,8 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     faq: { surtitre: "Frequently asked questions", titre: "Technology, *in practice*.", lien: "All questions" },
     appel: {
-      titre: "Tell us about *your venue*.",
-      texte: "Describe the room, the guest count and the schedule: we'll suggest a setup that is tailored, tested and safe.",
+      titre: "Tell us about *your event*.",
+      texte: "Your date, the guest count and the schedule: we'll suggest a setup that is tailored, tested and safe.",
     },
   },
 };

@@ -1,14 +1,35 @@
-import type { Bilingue, Etape, Seo } from "../types";
+import type { CleImage } from "@/lib/images";
+import type { Bilingue, Seo } from "../types";
+
+/** Une des deux grandes portes d'entrée de l'accueil : Mariages ou Événements. */
+type Porte = { href: "/mariages" | "/evenementiel"; image: CleImage; surtitre: string; titre: string; texte: string; lien: string };
 
 type Accueil = {
   seo: Seo;
   hero: { surtitre: string; titre: string; intro: string; ctaPrincipal: string; ctaSecondaire: string };
+  portes: { surtitre: string; titre: string; liste: Porte[] };
   dj: { titre: string; paragraphes: string[]; lien: string };
-  journee: { surtitre: string; titre: string; intro: string; etapes: Etape[]; lien: string };
   animations: { surtitre: string; titre: string; lien: string };
-  evenements: { surtitre: string; titre: string; texte: string; lien: string };
-  avis: { surtitre: string; titre: string };
+  avis: { surtitre: string; lien: string };
+  appel: { titre: string; texte: string; bouton: string };
 };
+
+/**
+ * Photos d'en-tête de l'accueil, une tirée au hasard à chaque visite : des nuits de
+ * mariage et des soirées d'événements (grandes et paysage).
+ */
+export const IMAGES_ACCUEIL: CleImage[] = [
+  "hero-premiere-danse",
+  "presta-mariage-hero",
+  "mariage-soiree-faisceaux",
+  "mariage-soiree-piste-rose",
+  "maison-mariage-lasers",
+  "mariage-soiree-scene-dj",
+  "maison-evenement-scene-dj",
+  "presta-soiree-privee",
+  "presta-gala-salle",
+  "presta-piste-laser",
+];
 
 export const ACCUEIL: Bilingue<Accueil> = {
   fr: {
@@ -18,47 +39,54 @@ export const ACCUEIL: Bilingue<Accueil> = {
         "DJ de mariage primé aux Wedding Awards Mariages.net : préparation sur mesure, sonorisation et éclairage haut de gamme, animations. Paris et Île-de-France.",
     },
     hero: {
-      surtitre: "DJ mariage · Son · Lumière · Île-de-France",
-      titre: "Une nuit pimentée dont vos invités *parleront encore*.",
+      surtitre: "DJ · Son · Lumière · Mariages & événements",
+      titre: "Votre nuit. *Notre piment.*",
       intro:
-        "De la cérémonie au dernier morceau, Cédric et l'équipe Spice Events préparent avec vous la musique, la lumière et le rythme de votre mariage.",
+        "Mariages, soirées privées, événements d'entreprise : Cédric et l'équipe Spice Events mettent en musique et en lumière vos plus belles nuits, de la première note au dernier morceau.",
       ctaPrincipal: "Vérifier ma date",
-      ctaSecondaire: "Découvrir nos mariages",
+      ctaSecondaire: "Nos animations",
+    },
+    portes: {
+      surtitre: "Deux univers, un même piment",
+      titre: "Quelle nuit *préparez-vous* ?",
+      liste: [
+        {
+          href: "/mariages",
+          image: "presta-bal-etincelles-fumee",
+          surtitre: "Mariages",
+          titre: "Un grand oui. *Une nuit pimentée.*",
+          texte: "De la cérémonie au dernier morceau, une journée qui vous ressemble et une fête qui vous rassemble.",
+          lien: "Votre mariage",
+        },
+        {
+          href: "/evenementiel",
+          image: "presta-gala-bleu",
+          surtitre: "Soirées privées & entreprises",
+          titre: "Rassemblez. *Nous pimentons.*",
+          texte: "Anniversaire, gala, séminaire ou lancement : une ambiance à votre image, relevée d'une touche de Spice.",
+          lien: "Votre événement",
+        },
+      ],
     },
     dj: {
       titre: "Un DJ qui lit la piste, *pas une playlist*.",
       paragraphes: [
-        "Depuis plus de 20 ans, Cédric fait danser les mariés et leurs invités : plus de 600 mariages et événements. Questionnaire musical, rendez-vous de préparation, coordination avec vos prestataires — le jour J, tout est déjà pensé.",
+        "Depuis plus de 20 ans, Cédric fait danser les mariés, leurs invités et les équipes : plus de 600 mariages et événements. Questionnaire musical, rendez-vous de préparation, coordination avec vos prestataires — le jour J, tout est déjà pensé.",
         "Le son et la lumière sont fournis par notre partenaire MX Événement : un matériel haut de gamme, testé en atelier avant chaque date, avec du matériel de secours sur place.",
       ],
       lien: "Rencontrer Cédric",
-    },
-    journee: {
-      surtitre: "Du premier oui au dernier morceau",
-      titre: "Chaque moment a sa musique, *son piment*, son tempo.",
-      intro: "Nous relevons toute la journée, pas seulement la soirée.",
-      etapes: [
-        { titre: "Cérémonie", texte: "Micros, entrée des mariés, musique lancée à la seconde près." },
-        { titre: "Cocktail", texte: "Sonorisation déportée, bar à vinyles, livre d'or audio." },
-        { titre: "Dîner", texte: "Lumière chaude, discours et projections intégrés au déroulé." },
-        { titre: "Ouverture de bal", texte: "Fumée lourde et étincelles froides, synchronisées à votre chanson." },
-        { titre: "Soirée", texte: "Une piste pleine, toutes générations confondues, jusqu'à 4 h." },
-      ],
-      lien: "Tout savoir sur nos mariages",
     },
     animations: {
       surtitre: "Le grain de piment",
       titre: "Des animations qui *relèvent la fête*.",
       lien: "Toutes les animations",
     },
-    evenements: {
-      surtitre: "Soirées privées & entreprises",
-      titre: "Le même piment pour *toutes vos soirées*.",
-      texte:
-        "Anniversaires, galas, séminaires, lancements de produit : direction musicale, son, lumière et coordination, avec la même exigence que pour un mariage.",
-      lien: "Événements privés et professionnels",
+    avis: { surtitre: "Ils ont dansé jusqu'au bout de la nuit", lien: "Voir tous les avis" },
+    appel: {
+      titre: "Votre nuit manque *de piment* ?",
+      texte: "Une date, quelques envies : Cédric vous répond personnellement. Ensemble, trouvons les ingrédients de votre fête.",
+      bouton: "Pimentons votre nuit",
     },
-    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ils ont dansé jusqu'au bout de la nuit. *Ils racontent.*" },
   },
   en: {
     seo: {
@@ -67,46 +95,53 @@ export const ACCUEIL: Bilingue<Accueil> = {
         "Award-winning wedding DJ (Mariages.net Wedding Awards): tailored preparation, premium sound and lighting, entertainment. Paris and the Île-de-France region.",
     },
     hero: {
-      surtitre: "Wedding DJ · Sound · Lighting · Paris area",
-      titre: "A spicy night your guests *will still talk about*.",
+      surtitre: "DJ · Sound · Lighting · Weddings & events",
+      titre: "Your night. *Our spice.*",
       intro:
-        "From the ceremony to the very last song, Cédric and the Spice Events team plan the music, the lighting and the pace of your wedding with you.",
+        "Weddings, private parties, corporate events: Cédric and the Spice Events team bring your best nights to life with music and light, from the first note to the very last song.",
       ctaPrincipal: "Check my date",
-      ctaSecondaire: "Our weddings",
+      ctaSecondaire: "Our entertainment",
+    },
+    portes: {
+      surtitre: "Two worlds, the same spice",
+      titre: "Which night *are you planning*?",
+      liste: [
+        {
+          href: "/mariages",
+          image: "presta-bal-etincelles-fumee",
+          surtitre: "Weddings",
+          titre: "A big “I do”. *A spicy night.*",
+          texte: "From the ceremony to the last song, a day that feels like you and a party that brings everyone together.",
+          lien: "Your wedding",
+        },
+        {
+          href: "/evenementiel",
+          image: "presta-gala-bleu",
+          surtitre: "Private & corporate events",
+          titre: "Bring them together. *We add the spice.*",
+          texte: "Birthday, gala, seminar or launch: an atmosphere that reflects you, with a touch of Spice.",
+          lien: "Your event",
+        },
+      ],
     },
     dj: {
       titre: "A DJ who reads the dance floor, *not a playlist*.",
       paragraphes: [
-        "For over 20 years, Cédric has been getting couples and their guests on the dance floor: more than 600 weddings and events. Music questionnaire, planning meetings, coordination with your other suppliers — by the big day, everything has been thought through.",
+        "For over 20 years, Cédric has been getting couples, their guests and teams on the dance floor: more than 600 weddings and events. Music questionnaire, planning meetings, coordination with your other suppliers — by the big day, everything has been thought through.",
         "Sound and lighting come from our partner MX Événement: premium equipment, tested in the workshop before every date, with backup gear on site.",
       ],
       lien: "Meet Cédric",
-    },
-    journee: {
-      surtitre: "From the first “I do” to the last song",
-      titre: "Every moment has its music, *its spice*, its tempo.",
-      intro: "We spice up the whole day, not just the party.",
-      etapes: [
-        { titre: "Ceremony", texte: "Microphones, your entrance, music cued to the second." },
-        { titre: "Drinks reception", texte: "Remote sound, vinyl bar, audio guestbook." },
-        { titre: "Dinner", texte: "Warm lighting, speeches and slideshows built into the running order." },
-        { titre: "First dance", texte: "Low fog and cold sparks, synchronised with your song." },
-        { titre: "Party", texte: "A packed dance floor, every generation together, until 4 am." },
-      ],
-      lien: "All about our weddings",
     },
     animations: {
       surtitre: "The pinch of spice",
       titre: "Entertainment that *spices up the party*.",
       lien: "All entertainment",
     },
-    evenements: {
-      surtitre: "Private & corporate events",
-      titre: "The same spice for *every party*.",
-      texte:
-        "Birthdays, galas, seminars, product launches: music direction, sound, lighting and coordination, with the same high standards as a wedding.",
-      lien: "Private and corporate events",
+    avis: { surtitre: "They danced till the end of the night", lien: "See all reviews" },
+    appel: {
+      titre: "Is your night missing *some spice*?",
+      texte: "A date, a few ideas: Cédric will reply to you personally. Let's find the ingredients for your party together.",
+      bouton: "Let's spice up your night",
     },
-    avis: { surtitre: "They trusted us", titre: "They danced till the end of the night. *They tell it best.*" },
   },
 };

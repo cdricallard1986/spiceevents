@@ -49,7 +49,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = {
       ],
       appel: {
         titre: "Votre cérémonie, *votre histoire*.",
-        texte: "Nous prenons le relais pour le son : parlez-nous de votre lieu et du déroulé que vous imaginez.",
+        texte: "Nous prenons le relais pour le son : parlez-nous de votre cérémonie et du déroulé que vous imaginez.",
       },
     },
     en: {
@@ -95,7 +95,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = {
       ],
       appel: {
         titre: "Your ceremony, *your story*.",
-        texte: "Leave the sound to us: tell us about your venue and the running order you have in mind.",
+        texte: "Leave the sound to us: tell us about your ceremony and the running order you have in mind.",
       },
     },
   },

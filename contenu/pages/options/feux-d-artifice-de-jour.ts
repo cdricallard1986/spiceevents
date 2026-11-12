@@ -44,7 +44,7 @@ export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = {
       ],
       appel: {
         titre: "Un final *haut en couleurs* ?",
-        texte: "Parlez-nous de votre lieu et de votre déroulé : nous vous disons ce qui est possible, et quand.",
+        texte: "Parlez-nous de votre événement et de votre déroulé : nous vous disons ce qui est possible, et quand.",
       },
     },
     en: {
@@ -85,7 +85,7 @@ export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = {
       ],
       appel: {
         titre: "A *colourful* finale?",
-        texte: "Tell us about your venue and your schedule: we'll tell you what is possible, and when.",
+        texte: "Tell us about your event and your schedule: we'll tell you what is possible, and when.",
       },
     },
   },

@@ -138,7 +138,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     appel: {
       titre: "Votre prochaine soirée manque *de piment* ?",
-      texte: "Date, lieu, nombre d'invités, objectifs : dites-nous l'essentiel, Cédric vous répond personnellement.",
+      texte: "Date, nombre d'invités, objectifs : dites-nous l'essentiel, Cédric vous répond personnellement.",
     },
   },
   en: {
@@ -255,7 +255,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     appel: {
       titre: "Is your next party missing *some spice*?",
-      texte: "Date, venue, number of guests, goals: tell us the essentials and Cédric will get back to you personally.",
+      texte: "Date, number of guests, goals: tell us the essentials and Cédric will get back to you personally.",
     },
   },
 };

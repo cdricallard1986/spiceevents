@@ -41,7 +41,7 @@ export const OUVERTURE_DE_BAL: ContenuOption = {
         "Ces effets ne sont pas compatibles avec les détecteurs de fumée : nous ne réalisons pas cette prestation dans les lieux qui en sont équipés. Nous vérifions toujours les contraintes de votre lieu avant de vous la proposer.",
       appel: {
         titre: "Une première danse *à couper le souffle* ?",
-        texte: "Donnez-nous votre date et votre lieu : nous vérifions que tout est compatible et préparons l'effet avec vous.",
+        texte: "Donnez-nous votre date : nous vérifions que tout est compatible et préparons l'effet avec vous.",
       },
     },
     en: {
@@ -79,7 +79,7 @@ export const OUVERTURE_DE_BAL: ContenuOption = {
         "These effects can't be used alongside smoke detectors, so we don't offer them in venues fitted with them. We always check your venue's constraints before suggesting this option.",
       appel: {
         titre: "A first dance *to take their breath away*?",
-        texte: "Tell us your date and venue: we'll check everything is compatible and plan the effect with you.",
+        texte: "Tell us your date: we'll check everything is compatible and plan the effect with you.",
       },
     },
   },
