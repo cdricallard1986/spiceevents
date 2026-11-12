@@ -2,7 +2,7 @@ import type { CleImage } from "@/lib/images";
 import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
 
 /** Un moment de la journée, avec les options qui s'y rattachent (slugs français de `contenu/options.ts`). */
-export type Moment = { titre: string; texte: string; image: CleImage; options: string[] };
+export type Moment = { titre: string; texte: string; accroche: string; image: CleImage; options: string[] };
 
 /** Photos d'en-tête de la page, une tirée au hasard à chaque visite : l'ambiance de la soirée (piste, lumières, son), grandes et paysage. */
 export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
@@ -36,7 +36,7 @@ type Mariages = {
   hero: { surtitre: string; titre: string; intro: string; ctaPrincipal: string; ctaSecondaire: string };
   promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Garantie[] };
   journee: { surtitre: string; titre: string; intro: string; moments: Moment[] };
-  methode: { surtitre: string; titre: string; intro: string; etapes: Etape[]; citation: string };
+  methode: { surtitre: string; titre: string; intro: string; etapes: Etape[] };
   nuvio: { surtitre: string; titre: string; texte: string; points: string[]; lien: string };
   dj: {
     surtitre: string;
@@ -47,9 +47,9 @@ type Mariages = {
     lien: string;
   };
   photos: { surtitre: string; titre: string; lien: string };
-  avis: { surtitre: string; titre: string; lien: string };
+  avis: { lien: string };
   faq: { surtitre: string; titre: string; questions: QuestionReponse[]; lien: string };
-  appel: { titre: string; texte: string };
+  appel: { titre: string; texte: string; bouton: string };
 };
 
 export const MARIAGES: Bilingue<Mariages> = {
@@ -96,12 +96,13 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
     },
     journee: {
-      surtitre: "Votre journée",
-      titre: "Chaque moment a *sa musique*.",
-      intro: "Nous accompagnons toute la journée, pas seulement la soirée. Voici comment nous la rythmons, et les options qui s'y prêtent.",
+      surtitre: "Du premier oui au dernier rappel",
+      titre: "Chaque instant. *Sa touche de Spice.*",
+      intro: "Une cérémonie tout en douceur, un cocktail qui pétille, une piste qui s'anime : nous dosons la musique et la lumière au fil de votre journée.",
       moments: [
         {
           titre: "La cérémonie",
+          accroche: "Les mots. Les frissons.",
           texte:
             "Micros pour l'officiant et vos proches, entrée des mariés, musiques lancées à la seconde près : une sonorisation douce et claire, entendue du premier au dernier rang, même en plein air.",
           image: "presta-ceremonie-cour",
@@ -109,6 +110,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "Le cocktail",
+          accroche: "Les retrouvailles en musique.",
           texte:
             "Une ambiance musicale qui accompagne les retrouvailles sans couvrir les conversations, même loin de la salle de soirée. Vos invités choisissent un disque, laissent un message vocal ou posent devant la borne photo.",
           image: "presta-vinyles-installation",
@@ -116,6 +118,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "Le dîner",
+          accroche: "Une lumière qui rassemble.",
           texte:
             "Une lumière chaude qui sublime la salle, une musique d'ambiance choisie avec vous, et vos temps forts intégrés au déroulé : discours, projections, surprises des témoins.",
           image: "presta-diner-chateau",
@@ -123,13 +126,15 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "L'ouverture de bal",
+          accroche: "Votre bulle, au milieu de tous.",
           texte:
             "Votre chanson, mise en scène : lumière dédiée, et si votre lieu le permet, fumée lourde et étincelles froides synchronisées avec la musique.",
           image: "presta-bal-etincelles-fumee",
           options: ["ouverture-de-bal"],
         },
         {
-          titre: "La soirée",
+          titre: "La nuit",
+          accroche: "Encore un dernier morceau.",
           texte:
             "Un mix qui fait danser toutes les générations et une piste qui ne désemplit pas, jusqu'à 4 h du matin — et plus tard avec des heures supplémentaires, si votre lieu le permet.",
           image: "presta-piste-mains-levees",
@@ -168,21 +173,13 @@ export const MARIAGES: Bilingue<Mariages> = {
           texte: "Nous sommes là du début à la fin : musique, transitions et lumière orchestrées avec discrétion.",
         },
       ],
-      citation: "Organiser avec méthode et accompagner avec attention, c'est garantir la fluidité et l'émotion.",
     },
     nuvio: {
       surtitre: "Nuvio, votre espace de préparation",
       titre: "Tout votre mariage, *au même endroit*.",
       texte:
-        "Après la signature, vous recevez votre accès à Nuvio, la plateforme que nous avons conçue pour préparer les mariages. Vous, notre équipe, votre DJ et votre technicien y voyez la même version, à jour à la seconde, depuis votre téléphone ou votre ordinateur. Fini les informations éparpillées dans vingt emails.",
-      points: [
-        "Le déroulé de la journée heure par heure, à valider d'un clic",
-        "Vos musiques moment par moment : entrée, ouverture du bal, incontournables et black list",
-        "Le lieu, le plan de salle et les contacts de vos prestataires",
-        "Votre devis signé en ligne et le suivi de vos règlements",
-        "Une messagerie avec toute l'équipe",
-        "Le lendemain, selon vos options : les photos du photobooth et les enregistrements de la soirée",
-      ],
+        "Après la signature, vous préparez votre mariage sur Nuvio, la plateforme que nous avons conçue : vous, notre équipe et votre DJ voyez la même version, à jour à la seconde. Fini les informations éparpillées dans vingt emails.",
+      points: ["Déroulé heure par heure", "Vos musiques, moment par moment", "Devis signé en ligne", "Messagerie avec l'équipe"],
       lien: "Découvrir Nuvio",
     },
     dj: {
@@ -211,9 +208,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     photos: { surtitre: "En images", titre: "Des fêtes *à votre image*.", lien: "Voir la galerie" },
     avis: {
-      surtitre: "Ils se sont dit oui",
-      titre: "Leur mariage, *raconté par eux*.",
-      lien: "Lire tous les avis",
+      lien: "Voir tous les avis",
     },
     faq: {
       surtitre: "Questions fréquentes",
@@ -278,8 +273,9 @@ export const MARIAGES: Bilingue<Mariages> = {
       lien: "Toutes les questions",
     },
     appel: {
-      titre: "Parlons de *votre mariage*.",
-      texte: "Votre date, votre lieu, vos envies : dites-nous l'essentiel, Cédric vous répond personnellement.",
+      titre: "Prêts à pimenter votre grand jour ?",
+      texte: "Racontez-nous vos envies. Ensemble, trouvons les ingrédients de votre nuit.",
+      bouton: "Pimentons votre nuit",
     },
   },
   en: {
@@ -325,12 +321,13 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
     },
     journee: {
-      surtitre: "Your day",
-      titre: "Every moment has *its music*.",
-      intro: "We look after the whole day, not just the party. Here's how we pace it, and the options that suit each moment.",
+      surtitre: "From the first “I do” to the last encore",
+      titre: "Every moment. *Its touch of spice.*",
+      intro: "A gentle ceremony, a sparkling drinks reception, a dance floor coming alive: we pace the music and the light throughout your day.",
       moments: [
         {
           titre: "The ceremony",
+          accroche: "The words. The shivers.",
           texte:
             "Microphones for your celebrant and loved ones, your entrance, music cued to the second: gentle, clear sound heard from the front row to the back, even outdoors.",
           image: "presta-ceremonie-cour",
@@ -338,6 +335,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "The drinks reception",
+          accroche: "Reunions set to music.",
           texte:
             "Music that sets the mood without drowning out the conversation, even far from the party room. Guests pick a record, leave a voice message or strike a pose at the photo booth.",
           image: "presta-vinyles-installation",
@@ -345,6 +343,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "Dinner",
+          accroche: "A light that brings everyone together.",
           texte:
             "Warm light that flatters the room, background music chosen with you, and your key moments built into the running order: speeches, slideshows, surprises from your wedding party.",
           image: "presta-diner-chateau",
@@ -352,13 +351,15 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
         {
           titre: "The first dance",
+          accroche: "Your bubble, in the middle of everyone.",
           texte:
             "Your song, staged: dedicated lighting and, where the venue allows, low fog and cold sparks timed to the music.",
           image: "presta-bal-etincelles-fumee",
           options: ["ouverture-de-bal"],
         },
         {
-          titre: "The party",
+          titre: "The night",
+          accroche: "One last song.",
           texte:
             "A mix that gets every generation dancing and a dance floor that never empties, until 4 am — or later with extra hours, if your venue allows.",
           image: "presta-piste-mains-levees",
@@ -397,21 +398,13 @@ export const MARIAGES: Bilingue<Mariages> = {
           texte: "We're there from start to finish: music, transitions and lighting handled discreetly.",
         },
       ],
-      citation: "Planning with method and supporting with care: that's how you guarantee both flow and emotion.",
     },
     nuvio: {
       surtitre: "Nuvio, your planning space",
       titre: "Your whole wedding, *in one place*.",
       texte:
-        "Once the quote is signed, you get access to Nuvio, the platform we designed to prepare weddings. You, our team, your DJ and your technician all see the same version, updated to the second, on your phone or your computer. No more details scattered across twenty emails.",
-      points: [
-        "The day's schedule hour by hour, approved in one click",
-        "Your music moment by moment: entrance, first dance, must-plays and a do-not-play list",
-        "The venue, the floor plan and your suppliers' contacts",
-        "Your quote signed online and your payments tracked",
-        "One message thread with the whole team",
-        "The day after, depending on your options: the photobooth pictures and the recordings of the evening",
-      ],
+        "Once the quote is signed, you plan your wedding on Nuvio, the platform we designed: you, our team and your DJ all see the same version, updated to the second. No more details scattered across twenty emails.",
+      points: ["Hour-by-hour schedule", "Your music, moment by moment", "Quote signed online", "Messages with the whole team"],
       lien: "Discover Nuvio (in French)",
     },
     dj: {
@@ -440,9 +433,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     photos: { surtitre: "In pictures", titre: "Celebrations *as unique as you*.", lien: "View the gallery" },
     avis: {
-      surtitre: "They said yes",
-      titre: "Their wedding, *in their words*.",
-      lien: "Read all reviews",
+      lien: "See all reviews",
     },
     faq: {
       surtitre: "Frequently asked questions",
@@ -506,8 +497,9 @@ export const MARIAGES: Bilingue<Mariages> = {
       lien: "All questions",
     },
     appel: {
-      titre: "Let's talk about *your wedding*.",
-      texte: "Your date, your venue, your ideas: tell us the essentials and Cédric will get back to you personally.",
+      titre: "Ready to spice up your big day?",
+      texte: "Tell us what you'd love. Together, let's find the ingredients for your night.",
+      bouton: "Let's spice up your night",
     },
   },
 };

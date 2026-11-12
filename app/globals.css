@@ -52,6 +52,20 @@
     outline: 2px solid var(--color-or);
     outline-offset: 3px;
   }
+  /* Photo qui se pose doucement quand sa carte apparaît (charte Nocturne). */
+  .vue .photo-arrivee {
+    animation: photo-arrivee 0.9s cubic-bezier(0.2, 0.65, 0.25, 1) both;
+  }
+  @keyframes photo-arrivee {
+    from {
+      opacity: 0;
+      transform: scale(1.035);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   /* Apparitions au défilement (components/layout/Apparitions.tsx). */
   .apparition {
     opacity: 0;

@@ -11,13 +11,15 @@ import { avisDeLEmplacement, grandAvis, grilleCitations } from "@/lib/avis/selec
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
-import { GrandAvis, GrilleAvis } from "@/components/common/Avis";
+import { AvisDefilants } from "@/components/common/AvisDefilants";
 import { BandeauPreuves } from "@/components/common/BandeauPreuves";
 import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { EnTetePage } from "@/components/common/EnTetePage";
 import { Etapes } from "@/components/common/Etapes";
 import { Faq } from "@/components/common/Faq";
 import { GrillePhotos } from "@/components/common/GrillePhotos";
+import { JourneeMariage } from "@/components/common/JourneeMariage";
+import { LogoNuvio } from "@/components/common/LogoNuvio";
 import { Section } from "@/components/common/Section";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
@@ -32,7 +34,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/mariages", seo: MARIAGES[locale].seo, image: "presta-mariage-hero" });
 }
 
-const ROMAINS = ["I", "II", "III", "IV", "V"];
 
 const PHOTOS = [
   "presta-maries-enlaces",
@@ -50,6 +51,8 @@ export default async function PageMariages({ params }: Props) {
   const tous = await avisPublies();
   const grand = grandAvis(tous, "mariages_grand", locale, 320);
   const choisis = grilleCitations(avisDeLEmplacement(tous, "mariages"), locale);
+  // Le grand avis d'abord, puis ceux de la grille, sans doublon.
+  const avisDefilants = [...(grand ? [grand] : []), ...choisis.filter((a) => a.cle !== grand?.cle)];
 
   return (
     <>
@@ -93,70 +96,37 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
-      {/* La journée, moment par moment, avec les options correspondantes */}
-      <Section surtitre={c.journee.surtitre} titre={c.journee.titre} intro={c.journee.intro} alterne>
-        <ol className="flex flex-col gap-16 md:gap-20">
-          {c.journee.moments.map((m, i) => {
-            const options = m.options.flatMap((slug) => OPTIONS.filter((o) => o.slug.fr === slug));
-            return (
-              <li key={m.titre} className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
-                <div className={`relative aspect-[3/2] ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                  <Photo cle={m.image} remplir sizes="(min-width: 768px) 45vw, 100vw" />
-                </div>
-                <div>
-                  <p aria-hidden="true" className="mb-3 font-display text-2xl text-or">{ROMAINS[i]}.</p>
-                  <h3 className="font-display text-3xl leading-[1.1] md:text-4xl">{m.titre}</h3>
-                  <p className="mt-5 text-lg text-sable">{m.texte}</p>
-                  {options.length > 0 && (
-                    <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
-                      {options.map((o) => (
-                        <li key={o.slug.fr}>
-                          <Bouton
-                            href={{ pathname: "/animations/[option]", params: { option: o.slug[locale] } }}
-                            variante="lien"
-                          >
-                            {o.titre[locale]} →
-                          </Bouton>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-      </Section>
+      {/* « Chaque instant » (maquette Nocturne) : un moment par carte, détail en fenêtre. */}
+      <section className="py-20 md:py-28">
+        <div className="conteneur">
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-8 md:mb-16">
+            <div>
+              <p className="surtitre mb-4">{c.journee.surtitre}</p>
+              <h2 className="max-w-[14em] font-display text-4xl leading-[1] md:text-[3.5rem]">
+                <Accent texte={c.journee.titre} />
+              </h2>
+            </div>
+            <p className="max-w-sm text-sable">{c.journee.intro}</p>
+          </div>
+          <JourneeMariage
+            locale={locale}
+            etiquette={locale === "fr" ? "Votre journée" : "Your day"}
+            moments={c.journee.moments.map((m) => ({
+              titre: m.titre,
+              texte: m.texte,
+              accroche: m.accroche,
+              image: m.image,
+              options: m.options.flatMap((slug) =>
+                OPTIONS.filter((o) => o.slug.fr === slug).map((o) => ({ slug: o.slug[locale], titre: o.titre[locale] })),
+              ),
+            }))}
+          />
+        </div>
+      </section>
 
       {/* Méthode : cible de l'ancienne page /accompagnement */}
       <Section id="methode" surtitre={c.methode.surtitre} titre={c.methode.titre} intro={c.methode.intro}>
         <Etapes etapes={c.methode.etapes} />
-
-        {/* Nuvio : la plateforme de préparation conçue par Spice Events */}
-        <div className="mt-20 grid gap-10 border border-ligne bg-nuit-2 p-8 md:p-12 lg:grid-cols-[1fr_1.1fr] lg:gap-14">
-          <div>
-            <p className="surtitre mb-4">{c.nuvio.surtitre}</p>
-            <h3 className="font-display text-3xl leading-[1.1] md:text-[2.5rem]">
-              <Accent texte={c.nuvio.titre} />
-            </h3>
-            <p className="mt-6 text-lg text-sable">{c.nuvio.texte}</p>
-            <a href={SITE.nuvio} target="_blank" rel="noopener" className={`${classesBouton("lien")} mt-8`}>
-              {c.nuvio.lien} ↗
-            </a>
-          </div>
-          <ul className="grid content-center gap-4">
-            {c.nuvio.points.map((point) => (
-              <li key={point} className="flex gap-4 border-t border-ligne pt-4 text-[0.9375rem] text-sable">
-                <span aria-hidden="true" className="text-or">✓</span>
-                {point}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl font-semibold leading-snug md:text-[2.5rem]">
-          « {c.methode.citation} »
-        </p>
       </Section>
 
       {/* Le DJ */}
@@ -192,17 +162,50 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
+      {/* Nuvio : la plateforme de préparation conçue par Spice Events */}
+      <section className="py-16 md:py-20">
+        <div className="conteneur">
+          <div className="grid items-center gap-8 border border-ligne bg-nuit-2 p-8 md:p-10 lg:grid-cols-[auto_1fr_auto] lg:gap-12">
+            <LogoNuvio className="text-4xl" />
+            <div>
+              <p className="surtitre mb-3">{c.nuvio.surtitre}</p>
+              <h2 className="font-display text-3xl leading-[1.05] md:text-4xl">
+                <Accent texte={c.nuvio.titre} />
+              </h2>
+              <p className="mt-4 max-w-2xl text-sable">{c.nuvio.texte}</p>
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {c.nuvio.points.map((point) => (
+                  <li key={point} className="border border-ligne px-3 py-1.5 text-sm text-ivoire">
+                    <span aria-hidden="true" className="mr-1.5 text-or">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <a href={SITE.nuvio} target="_blank" rel="noopener" className={`${classesBouton("contour")} whitespace-nowrap`}>
+              {c.nuvio.lien} ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Section surtitre={c.photos.surtitre} titre={c.photos.titre}>
         <GrillePhotos cles={PHOTOS} />
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.photos.lien} →</Bouton>
       </Section>
 
-      {grand && <GrandAvis citation={grand.texte} auteurs={grand.auteurs} langue={grand.langue} image="presta-chapiteau-nuit" />}
-
-      <Section surtitre={c.avis.surtitre} titre={c.avis.titre}>
-        <GrilleAvis liste={choisis} />
-        <Bouton href="/avis" variante="lien" className="mt-6">{c.avis.lien} →</Bouton>
-      </Section>
+      {/* Grands avis qui se succèdent (le « grand avis » d'abord, puis ceux de la grille), photo de fond. */}
+      <AvisDefilants
+        liste={avisDefilants}
+        image="couple-faisceaux"
+        libelles={
+          locale === "fr"
+            ? { precedent: "Avis précédent", suivant: "Avis suivant", avis: "Avis" }
+            : { precedent: "Previous review", suivant: "Next review", avis: "Review" }
+        }
+      >
+        <Bouton href="/avis" variante="lien" className="mt-10">{c.avis.lien} →</Bouton>
+      </AvisDefilants>
 
       <Section surtitre={c.faq.surtitre} titre={c.faq.titre} alterne>
         <Faq questions={c.faq.questions} />
@@ -211,7 +214,7 @@ export default async function PageMariages({ params }: Props) {
 
       <DerniersArticles locale={locale} surtitre="Journal" titre="Conseils pour *votre mariage*" categories={CATEGORIES_MARIAGE} />
 
-      <AppelContact titre={c.appel.titre} texte={c.appel.texte} />
+      <AppelContact titre={c.appel.titre} texte={c.appel.texte} bouton={c.appel.bouton} />
     </>
   );
 }
