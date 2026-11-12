@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { policeDisplay, policeTexte } from "@/lib/polices";
 import { SITE } from "@/contenu/site";
 import { EnTete } from "@/components/layout/EnTete";
+import { Apparitions } from "@/components/layout/Apparitions";
 import { PiedDePage } from "@/components/layout/PiedDePage";
 import { PillNouvelleVersion } from "@/components/common/PillNouvelleVersion";
 import { BarreDev } from "@/components/admin/BarreDev";
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0e0d12",
+  themeColor: "#141414",
   colorScheme: "dark",
 };
 
@@ -61,6 +62,7 @@ export default async function LayoutLangue({
           <EnTete />
           <main id="contenu">{children}</main>
           <PiedDePage />
+          <Apparitions />
           <PillNouvelleVersion />
           <BarreDev />
           <JsonLd donnees={entreprise(locale)} />

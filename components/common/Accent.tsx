@@ -2,7 +2,8 @@ import { Fragment } from "react";
 
 /**
  * Met en valeur les passages entre astérisques : « La nuit dont vos invités
- * *parleront encore* » → la fin en italique doré. Le reste est du texte brut.
+ * *parleront encore* » → la fin en orange (charte Nocturne : sans italique).
+ * Le reste est du texte brut.
  */
 export function Accent({ texte, couleur = "text-or" }: { texte: string; couleur?: string }) {
   const morceaux = texte.split(/\*([^*]+)\*/g);
@@ -10,7 +11,7 @@ export function Accent({ texte, couleur = "text-or" }: { texte: string; couleur?
     <>
       {morceaux.map((m, i) =>
         i % 2 === 1 ? (
-          <em key={i} className={`italic ${couleur}`}>
+          <em key={i} className={`not-italic ${couleur}`}>
             {m}
           </em>
         ) : (

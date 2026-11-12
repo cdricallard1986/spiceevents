@@ -67,8 +67,8 @@ export function CoqueAdmin({ children, version, email }: Props) {
     <div className="min-h-dvh">
       {/* Téléphone et tablette : barre du haut + tiroir. */}
       <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-ligne bg-nuit/90 px-4 backdrop-blur-md lg:hidden">
-        <Link href="/admin" className="text-lg text-ivoire">
-          <Logo />
+        <Link href="/admin" className="shrink-0">
+          <Logo className="h-9" />
         </Link>
         <button
           type="button"
@@ -103,8 +103,8 @@ export function CoqueAdmin({ children, version, email }: Props) {
       >
         <div className={`flex h-20 items-center border-b border-ligne ${replie ? "justify-center" : "justify-between pl-6 pr-3"}`}>
           {!replie && (
-            <Link href="/admin" className="text-lg text-ivoire">
-              <Logo />
+            <Link href="/admin" className="shrink-0">
+              <Logo className="h-11" />
             </Link>
           )}
           <button

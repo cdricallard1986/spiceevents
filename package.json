@@ -1,6 +1,6 @@
 {
   "name": "spiceevents",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,8 +16,8 @@
     "tests:rapport": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=ExperimentalWarning outils/rapport-tests.mjs"
   },
   "dependencies": {
-    "@fontsource-variable/manrope": "^5.3.0",
-    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource/barlow-condensed": "^5.3.0",
     "@supabase/ssr": "0.12.7",
     "@supabase/supabase-js": "^2.119.0",
     "@tiptap/core": "3.33.0",

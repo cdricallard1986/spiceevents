@@ -18,8 +18,8 @@ export async function PiedDePage() {
     <footer className="border-t border-ligne bg-nuit-2">
       <div className="conteneur grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="flex flex-col gap-5">
-          <Link href="/" aria-label={tn("accueil")} className="text-2xl">
-            <Logo />
+          <Link href="/" aria-label={tn("accueil")} className="self-start">
+            <Logo className="h-16" />
           </Link>
           <p className="max-w-sm text-sable">{t("accroche")}</p>
           <p className="text-sm text-ivoire">

@@ -1,21 +1,25 @@
 @import "tailwindcss";
 
-/* Charte « Nuit de fête » : nuit profonde, ivoire, accent doré. */
+/*
+ * Charte « Nocturne » (maquette validée par Cédric, novembre 2026) : anthracite
+ * neutre, textes clairs, accent orange du piment. Les noms des couleurs viennent
+ * de la charte précédente (« or » = l'accent) pour ne pas toucher aux composants.
+ */
 @theme {
-  --color-nuit: #0e0d12;
-  --color-nuit-2: #17151d;
-  --color-nuit-3: #211e28;
-  --color-ligne: #2b2733;
-  --color-ivoire: #efe8dd;
-  --color-sable: #bdb4a8;
-  --color-or: #e2bd72;
-  --color-or-clair: #f3d9a4;
-  --color-erreur: #f08a7e;
+  --color-nuit: #141414;
+  --color-nuit-2: #202020;
+  --color-nuit-3: #282828;
+  --color-ligne: #363636;
+  --color-ivoire: #f3f3f3;
+  --color-sable: #b3b3b3;
+  --color-or: #ff6838;
+  --color-or-clair: #ff8a63;
+  --color-erreur: #ff5c5c;
   /* Vert doux des vérifications réussies (back office : tests, audit des droits). */
   --color-succes: #9cd3a8;
 
-  --font-display: var(--police-display), "Bodoni Moda", Georgia, serif;
-  --font-sans: var(--police-texte), "Manrope", system-ui, sans-serif;
+  --font-display: var(--police-display), "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: var(--police-texte), "DM Sans", system-ui, sans-serif;
 
   --container-page: 82rem;
 }
@@ -30,7 +34,7 @@
     background: var(--color-nuit);
     color: var(--color-ivoire);
     font-family: var(--font-sans);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
@@ -38,13 +42,35 @@
     background: var(--color-or);
     color: var(--color-nuit);
   }
+  /* Titres de la charte Nocturne : capitales condensées, serrées. */
+  .font-display {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+  }
   :focus-visible {
     outline: 2px solid var(--color-or);
     outline-offset: 3px;
   }
+  /* Apparitions au défilement (components/layout/Apparitions.tsx). */
+  .apparition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.65s ease var(--delai, 0ms),
+      transform 0.65s cubic-bezier(0.2, 0.65, 0.25, 1) var(--delai, 0ms);
+  }
+  .apparition.vue {
+    opacity: 1;
+    transform: none;
+  }
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+    .apparition {
+      opacity: 1;
+      transform: none;
     }
     *,
     *::before,
@@ -85,8 +111,10 @@
   .prose-nuit h2 {
     margin-top: 2.2em;
     font-family: var(--font-display);
-    font-size: 2rem;
-    line-height: 1.15;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 1;
   }
   .prose-nuit h3 {
     margin-top: 1.8em;
@@ -116,8 +144,10 @@
     border-left: 2px solid var(--color-or);
     padding-left: 1.25em;
     font-family: var(--font-display);
-    font-style: italic;
-    font-size: 1.35rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1.2;
   }
   .prose-nuit img {
     width: 100%;

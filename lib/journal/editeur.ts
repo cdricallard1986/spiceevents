@@ -121,7 +121,7 @@ export function extensionsArticle({ placeholder = "Écrivez l'article ici…" }:
       underline: false,
       link: false,
       heading: { levels: [2, 3] },
-      dropcursor: { color: "#e2bd72", width: 2 },
+      dropcursor: { color: "#ff6838", width: 2 },
     }),
     MarqueLien,
     NoeudPhoto,

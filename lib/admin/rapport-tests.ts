@@ -179,29 +179,29 @@ export function formaterDateRapport(iso: string): string {
   return `${jour} à ${heure}`;
 }
 
-// Charte « Nuit de fête » (mêmes valeurs que app/globals.css).
+// Charte « Nocturne » (mêmes valeurs que app/globals.css).
 const C = {
-  nuit: "#0e0d12",
-  nuit2: "#17151d",
-  nuit3: "#211e28",
-  ligne: "#2b2733",
-  ivoire: "#efe8dd",
-  sable: "#bdb4a8",
-  or: "#e2bd72",
-  erreur: "#f08a7e",
+  nuit: "#141414",
+  nuit2: "#202020",
+  nuit3: "#282828",
+  ligne: "#363636",
+  ivoire: "#f3f3f3",
+  sable: "#b3b3b3",
+  or: "#ff6838",
+  erreur: "#ff5c5c",
   succes: "#9cd3a8",
 };
 
 const STYLES = `
 *{box-sizing:border-box}
 html{color-scheme:dark}
-body{margin:0;padding:24px;background:${C.nuit};color:${C.ivoire};font:300 14px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}
-h1{margin:0;font:400 28px/1.2 "Bodoni Moda",Georgia,serif}
+body{margin:0;padding:24px;background:${C.nuit};color:${C.ivoire};font:400 14px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1{margin:0;font:700 30px/1 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase}
 .surtitre{margin:0 0 8px;font-size:12px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:${C.or}}
 .meta{margin:8px 0 0;color:${C.sable}}
 .totaux{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
 .total{min-width:120px;padding:12px 16px;border:1px solid ${C.ligne};background:${C.nuit2}}
-.total b{display:block;font:400 26px/1.1 "Bodoni Moda",Georgia,serif}
+.total b{display:block;font:700 28px/1 "Barlow Condensed","Arial Narrow",sans-serif}
 .total span{color:${C.sable};font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .bandeau{margin:0 0 24px;padding:12px 16px;border-left:2px solid;background:${C.nuit3}}
 .ok{color:${C.succes};border-color:${C.succes}}

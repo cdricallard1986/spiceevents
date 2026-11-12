@@ -10,6 +10,7 @@ import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
 import { GrandAvis, GrilleAvis } from "@/components/common/Avis";
+import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { BandeauPreuves } from "@/components/common/BandeauPreuves";
 import { EnTetePage } from "@/components/common/EnTetePage";
 import { Etapes } from "@/components/common/Etapes";
@@ -48,6 +49,7 @@ export default async function Accueil({ params }: Props) {
         </span>
       </EnTetePage>
 
+      <BandeauPiment />
       <BandeauPreuves />
 
       <section className="py-20 md:py-28">

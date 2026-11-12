@@ -49,7 +49,7 @@ export default async function PageAnimations({ params }: Props) {
             ))}
           </div>
           <figure className="border-l-2 border-or pl-6">
-            <blockquote className="font-display text-3xl italic leading-snug md:text-4xl">« {c.intro.citation} »</blockquote>
+            <blockquote className="font-display text-3xl font-semibold leading-snug md:text-4xl">« {c.intro.citation} »</blockquote>
           </figure>
         </div>
       </section>

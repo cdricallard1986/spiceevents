@@ -8,7 +8,7 @@ export function CarteOption({ option, locale }: { option: Option; locale: Locale
   return (
     <Link
       href={{ pathname: "/animations/[option]", params: { option: option.slug[locale] } }}
-      className="group flex flex-col gap-4"
+      className="group flex h-full flex-col gap-4 border border-ligne p-3 pb-5 transition-colors hover:border-or"
     >
       <div className="relative aspect-[4/5] overflow-hidden">
         <Photo
@@ -18,8 +18,10 @@ export function CarteOption({ option, locale }: { option: Option; locale: Locale
           className="transition-transform duration-700 group-hover:scale-105"
         />
       </div>
-      <h3 className="font-display text-2xl group-hover:text-or">{option.titre[locale]}</h3>
-      <p className="text-[0.9375rem] text-sable">{option.resume[locale]}</p>
+      <h3 className="px-2 font-display text-2xl group-hover:text-or">
+        {option.titre[locale]} <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
+      </h3>
+      <p className="px-2 text-[0.9375rem] text-sable">{option.resume[locale]}</p>
     </Link>
   );
 }

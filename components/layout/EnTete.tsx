@@ -31,8 +31,8 @@ export function EnTete() {
   return (
     <header className={`fixed inset-x-0 top-0 z-40 border-b transition-colors duration-300 ${fond}`}>
       <div className="conteneur flex h-18 items-center justify-between gap-6 md:h-20">
-        <Link href="/" aria-label={t("accueil")} className="text-xl text-ivoire md:text-2xl">
-          <Logo />
+        <Link href="/" aria-label={t("accueil")} className="shrink-0">
+          <Logo className="h-11 md:h-14" />
         </Link>
 
         <nav aria-label={t("principale")} className="hidden lg:block">

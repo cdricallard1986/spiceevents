@@ -65,7 +65,7 @@ export default async function PageAPropos({ params }: Props) {
           <div className="flex flex-col gap-10">
             {c.aujourdhui.citations.map((q) => (
               <figure key={q.texte} className="border-l-2 border-or pl-6">
-                <blockquote className="font-display text-2xl italic leading-snug">« {q.texte} »</blockquote>
+                <blockquote className="font-display text-2xl font-semibold leading-snug">« {q.texte} »</blockquote>
                 <figcaption className="mt-4 text-[0.8125rem] font-semibold uppercase tracking-[0.24em] text-or">
                   {SITE.fondateur}
                 </figcaption>
@@ -132,7 +132,7 @@ export default async function PageAPropos({ params }: Props) {
           {locale === "fr" ? "Tout sur notre matériel son & lumière" : "All about our sound & lighting equipment"} →
         </Bouton>
 
-        <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl italic leading-snug md:text-[2.5rem]">
+        <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl font-semibold leading-snug md:text-[2.5rem]">
           « {c.technique.citation} »
         </p>
       </Section>

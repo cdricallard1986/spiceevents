@@ -13,7 +13,7 @@ export function GrandAvis({ citation, auteurs, image, langue }: { citation: stri
         <Photo cle={image} remplir sizes="100vw" />
       </div>
       <figure className="conteneur relative max-w-5xl py-28 text-center md:py-40">
-        <blockquote lang={langue} className="font-display text-3xl italic leading-[1.3] md:text-[2.5rem]">« {citation} »</blockquote>
+        <blockquote lang={langue} className="font-display text-3xl font-semibold leading-[1.3] md:text-[2.5rem]">« {citation} »</blockquote>
         <figcaption className="mt-9 text-[0.8125rem] font-semibold uppercase tracking-[0.24em] text-or">{auteurs}</figcaption>
       </figure>
     </section>

@@ -30,7 +30,7 @@ export default async function PageConnexion({ searchParams }: Props) {
     <main id="contenu" className="flex min-h-dvh items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
         <p className="text-center text-2xl text-ivoire">
-          <Logo />
+          <Logo className="mx-auto h-20" />
         </p>
         <div className="mt-10 border border-ligne bg-nuit-2 p-6 sm:p-10">
           <p className="surtitre mb-3">Back office</p>

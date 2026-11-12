@@ -13,7 +13,8 @@ import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
 import { GrandAvis, GrilleAvis } from "@/components/common/Avis";
 import { BandeauPreuves } from "@/components/common/BandeauPreuves";
-import { EnTetePage } from "@/components/common/EnTetePage";
+import { BandeauPiment } from "@/components/common/BandeauPiment";
+import { EnTeteCollage } from "@/components/common/EnTeteCollage";
 import { Etapes } from "@/components/common/Etapes";
 import { Faq } from "@/components/common/Faq";
 import { GrillePhotos } from "@/components/common/GrillePhotos";
@@ -52,14 +53,24 @@ export default async function PageMariages({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image={IMAGES_ACCUEIL_MARIAGES} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
-        <Bouton href="/contact">{c.hero.ctaPrincipal}</Bouton>
+      {/* En-tête « collage » (charte Nocturne) : grande photo de soirée tirée au hasard parmi 20. */}
+      <EnTeteCollage
+        images={IMAGES_ACCUEIL_MARIAGES}
+        medaillon="presta-bal-etincelles-fumee"
+        legende={c.hero.legende}
+        pastille={c.hero.pastille}
+        surtitre={c.hero.surtitre}
+        titre={c.hero.titre}
+        intro={c.hero.intro}
+      >
+        <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href={{ pathname: "/mariages", hash: "methode" }} variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">
           Wedding Awards Mariages.net — <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
         </span>
-      </EnTetePage>
+      </EnTeteCollage>
 
+      <BandeauPiment />
       <BandeauPreuves />
 
       {/* Promesse et garanties */}
@@ -151,7 +162,7 @@ export default async function PageMariages({ params }: Props) {
           </ul>
         </div>
 
-        <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl italic leading-snug md:text-[2.5rem]">
+        <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl font-semibold leading-snug md:text-[2.5rem]">
           « {c.methode.citation} »
         </p>
       </Section>
@@ -168,7 +179,7 @@ export default async function PageMariages({ params }: Props) {
               <Accent texte={c.dj.titre} />
             </h2>
             <figure className="mt-8 border-l-2 border-or pl-6">
-              <blockquote className="font-display text-2xl italic leading-snug">« {c.dj.citation} »</blockquote>
+              <blockquote className="font-display text-2xl font-semibold leading-snug">« {c.dj.citation} »</blockquote>
               <figcaption className="mt-4 text-[0.8125rem] font-semibold uppercase tracking-[0.24em] text-or">
                 {SITE.fondateur}
               </figcaption>
