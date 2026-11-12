@@ -204,7 +204,7 @@ export default async function PageMariages({ params }: Props) {
             : { precedent: "Previous review", suivant: "Next review", avis: "Review" }
         }
       >
-        <Bouton href="/avis" variante="lien" className="mt-10">{c.avis.lien} →</Bouton>
+        <Bouton href="/avis" variante="lien" className="mt-5 text-[0.75rem] opacity-90">{c.avis.lien} →</Bouton>
       </AvisDefilants>
 
       <Section surtitre={c.faq.surtitre} titre={c.faq.titre} alterne>

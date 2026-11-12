@@ -49,7 +49,7 @@ export function AvisDefilants({ liste, image, libelles, children }: Props) {
         <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.82),rgba(20,20,20,0.6)_45%,rgba(20,20,20,0.9))]" />
       </div>
 
-      <div className="conteneur relative max-w-5xl py-24 text-center md:py-36">
+      <div className="conteneur relative max-w-5xl py-20 text-center md:py-28">
         <div className="grid">
           {liste.map((a, i) => (
             <figure
@@ -68,11 +68,11 @@ export function AvisDefilants({ liste, image, libelles, children }: Props) {
         </div>
 
         {n > 1 && (
-          <div className="mt-10 flex items-center justify-center gap-5">
-            <button type="button" onClick={() => aller(actif - 1)} aria-label={libelles.precedent} className="flex size-11 items-center justify-center border border-ivoire/40 text-lg hover:border-or hover:text-or">
-              ←
+          <div className="mt-8 flex items-center justify-center gap-4 text-ivoire/55">
+            <button type="button" onClick={() => aller(actif - 1)} aria-label={libelles.precedent} className="px-1 text-base leading-none transition-colors hover:text-or">
+              ‹
             </button>
-            <ul className="flex gap-2">
+            <ul className="flex items-center gap-1.5">
               {liste.map((a, i) => (
                 <li key={a.cle}>
                   <button
@@ -80,13 +80,13 @@ export function AvisDefilants({ liste, image, libelles, children }: Props) {
                     onClick={() => aller(i)}
                     aria-label={`${libelles.avis} ${i + 1} : ${a.auteurs}`}
                     aria-current={i === actif}
-                    className={`block h-1.5 transition-all duration-300 ${i === actif ? "w-8 bg-or" : "w-3 bg-ivoire/40 hover:bg-ivoire"}`}
+                    className={`block h-[3px] rounded-full transition-all duration-300 ${i === actif ? "w-5 bg-or" : "w-1.5 bg-ivoire/35 hover:bg-ivoire/70"}`}
                   />
                 </li>
               ))}
             </ul>
-            <button type="button" onClick={() => aller(actif + 1)} aria-label={libelles.suivant} className="flex size-11 items-center justify-center border border-ivoire/40 text-lg hover:border-or hover:text-or">
-              →
+            <button type="button" onClick={() => aller(actif + 1)} aria-label={libelles.suivant} className="px-1 text-base leading-none transition-colors hover:text-or">
+              ›
             </button>
           </div>
         )}
