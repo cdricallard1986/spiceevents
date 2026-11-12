@@ -4,7 +4,10 @@ import type { Bilingue, QuestionReponse, Seo } from "../types";
 /** Famille d'une animation, pour les filtres de la page (clé stable, libellé traduit). */
 export type CategorieAnimation = "musique" | "souvenirs" | "effets";
 
-/** Animation mise en avant en grand, en haut de la page (slug français de `contenu/options.ts`). */
+/**
+ * Animation du carrousel en haut de la page (slug français de `contenu/options.ts`). La
+ * première est à moitié visible, floutée, à gauche : les deux suivantes sont au centre.
+ */
 type Vedette = { option: string; image: CleImage; surtitre: string; titre: string; texte?: string };
 
 /** Page Animations, sur le modèle de la maquette « Nocturne » validée par Cédric (novembre 2026). */
@@ -46,6 +49,12 @@ export const ANIMATIONS: Bilingue<Animations> = {
     },
     vedettes: [
       {
+        option: "guirlandes-lumineuses",
+        image: "presta-guirlandes-salle",
+        surtitre: "Quand le soleil se couche",
+        titre: "Allumez la nuit.",
+      },
+      {
         option: "bar-a-vinyles",
         image: "presta-vinyles-installation",
         surtitre: "Le cocktail a trouvé son rythme",
@@ -57,6 +66,36 @@ export const ANIMATIONS: Bilingue<Animations> = {
         image: "presta-photobooth-invitees",
         surtitre: "Souriez, c'est à vous",
         titre: "Les souvenirs se partagent.",
+      },
+      {
+        option: "ouverture-de-bal",
+        image: "presta-bal-etincelles-salle",
+        surtitre: "Le moment où tout s'arrête",
+        titre: "Une première danse qui pétille.",
+      },
+      {
+        option: "livre-d-or-audio",
+        image: "presta-livre-or-entete",
+        surtitre: "Un téléphone, mille messages",
+        titre: "Leurs voix, gardées au chaud.",
+      },
+      {
+        option: "feux-d-artifice-de-jour",
+        image: "presta-feux-artifice-jour-entete",
+        surtitre: "En plein jour, ça crépite",
+        titre: "Un final haut en couleur.",
+      },
+      {
+        option: "sonorisation-ceremonie-laique",
+        image: "presta-ceremonie-cour",
+        surtitre: "Avant la fête, l'émotion",
+        titre: "Chaque mot porté jusqu'au dernier rang.",
+      },
+      {
+        option: "sonorisation-deportee",
+        image: "presta-sono-grand-salon",
+        surtitre: "Partout où vous êtes",
+        titre: "La bonne ambiance, dans chaque pièce.",
       },
     ],
     catalogue: {
@@ -118,6 +157,12 @@ export const ANIMATIONS: Bilingue<Animations> = {
     },
     vedettes: [
       {
+        option: "guirlandes-lumineuses",
+        image: "presta-guirlandes-salle",
+        surtitre: "When the sun goes down",
+        titre: "Light up the night.",
+      },
+      {
         option: "bar-a-vinyles",
         image: "presta-vinyles-installation",
         surtitre: "The drinks reception finds its rhythm",
@@ -129,6 +174,36 @@ export const ANIMATIONS: Bilingue<Animations> = {
         image: "presta-photobooth-invitees",
         surtitre: "Smile, it's your turn",
         titre: "Memories are for sharing.",
+      },
+      {
+        option: "ouverture-de-bal",
+        image: "presta-bal-etincelles-salle",
+        surtitre: "The moment everything stops",
+        titre: "A first dance that sparkles.",
+      },
+      {
+        option: "livre-d-or-audio",
+        image: "presta-livre-or-entete",
+        surtitre: "One phone, a thousand messages",
+        titre: "Their voices, kept safe.",
+      },
+      {
+        option: "feux-d-artifice-de-jour",
+        image: "presta-feux-artifice-jour-entete",
+        surtitre: "Crackling in broad daylight",
+        titre: "A finale full of colour.",
+      },
+      {
+        option: "sonorisation-ceremonie-laique",
+        image: "presta-ceremonie-cour",
+        surtitre: "Before the party, the emotion",
+        titre: "Every word carried to the back row.",
+      },
+      {
+        option: "sonorisation-deportee",
+        image: "presta-sono-grand-salon",
+        surtitre: "Wherever you are",
+        titre: "The right atmosphere, in every room.",
       },
     ],
     catalogue: {

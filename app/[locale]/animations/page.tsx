@@ -7,6 +7,7 @@ import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
 import { CarteOption } from "@/components/common/CarteOption";
+import { CarrouselVedettes } from "@/components/common/CarrouselVedettes";
 import { CatalogueFiltrable } from "@/components/common/CatalogueFiltrable";
 import { Faq } from "@/components/common/Faq";
 import { Section } from "@/components/common/Section";
@@ -47,35 +48,47 @@ export default async function PageAnimations({ params }: Props) {
         </div>
       </section>
 
-      {/* Deux animations en grand (photos d'événements différents) */}
-      <section className="conteneur grid gap-4 pb-20 md:grid-cols-2 md:pb-28">
-        {c.vedettes.map((v) => {
-          const option = optionParSlug(v.option, "fr");
-          if (!option) return null;
-          return (
-            <Link
-              key={v.option}
-              href={{ pathname: "/animations/[option]", params: { option: option.slug[locale] } }}
-              className="group relative isolate flex min-h-[26rem] items-end overflow-hidden md:min-h-[34rem]"
-            >
-              <Photo cle={v.image} remplir sizes="(min-width: 768px) 50vw, 100vw" className="-z-10 transition-transform duration-700 group-hover:scale-[1.025]" />
-              <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(transparent_35%,rgba(0,0,0,0.78))]" />
-              <div className="flex w-full items-end justify-between gap-6 p-6 md:p-8">
-                <div>
-                  <p className="surtitre mb-3">{v.surtitre}</p>
-                  <h2 className="font-display text-4xl leading-[0.95] md:text-5xl">{v.titre}</h2>
-                  {v.texte && <p className="mt-3 text-ivoire/85">{v.texte}</p>}
-                </div>
-                <span
-                  aria-hidden="true"
-                  className="flex size-12 shrink-0 items-center justify-center bg-or text-xl text-nuit transition-transform group-hover:translate-x-1"
-                >
-                  →
-                </span>
-              </div>
-            </Link>
-          );
-        })}
+      {/* Carrousel : deux grandes cartes au centre, les autres animations floutées de chaque côté */}
+      <section className="pb-20 md:pb-28">
+        <CarrouselVedettes
+          depart={1}
+          libelles={
+            fr
+              ? { precedent: "Animations précédentes", suivant: "Animations suivantes", zone: "Nos animations en images" }
+              : { precedent: "Previous", suivant: "Next", zone: "Our entertainment in pictures" }
+          }
+          diapositives={c.vedettes.flatMap((v) => {
+            const option = optionParSlug(v.option, "fr");
+            if (!option) return [];
+            return [
+              {
+                cle: v.option,
+                contenu: (
+                  <Link
+                    href={{ pathname: "/animations/[option]", params: { option: option.slug[locale] } }}
+                    className="group relative isolate flex h-[26rem] items-end overflow-hidden md:h-[34rem]"
+                  >
+                    <Photo cle={v.image} remplir sizes="(min-width: 768px) 50vw, 82vw" className="-z-10 transition-transform duration-700 group-hover:scale-[1.025]" />
+                    <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(transparent_35%,rgba(0,0,0,0.78))]" />
+                    <div className="flex w-full items-end justify-between gap-6 p-6 md:p-8">
+                      <div>
+                        <p className="surtitre mb-3">{v.surtitre}</p>
+                        <h2 className="font-display text-4xl leading-[0.95] md:text-5xl">{v.titre}</h2>
+                        {v.texte && <p className="mt-3 text-ivoire/85">{v.texte}</p>}
+                      </div>
+                      <span
+                        aria-hidden="true"
+                        className="flex size-12 shrink-0 items-center justify-center bg-or text-xl text-nuit transition-transform group-hover:translate-x-1"
+                      >
+                        →
+                      </span>
+                    </div>
+                  </Link>
+                ),
+              },
+            ];
+          })}
+        />
       </section>
 
       {/* Catalogue filtrable : toutes les animations, chacune vers sa page */}

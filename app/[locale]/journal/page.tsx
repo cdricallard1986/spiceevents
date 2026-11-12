@@ -11,7 +11,6 @@ import { AppelContact } from "@/components/common/AppelContact";
 import { EnTetePage } from "@/components/common/EnTetePage";
 import { Section } from "@/components/common/Section";
 import { CarteArticle } from "@/components/journal/CarteArticle";
-import { classesBouton } from "@/components/ui/Bouton";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -55,12 +54,13 @@ export default async function PageJournal({ params }: Props) {
         </section>
       )}
 
-      <nav aria-label={c.filtres} className="border-y border-ligne">
-        <ul className="conteneur flex flex-wrap gap-x-8 gap-y-4 py-6">
+      {/* Rubriques : bande orange, texte noir (comme le bandeau sous l'en-tête de la page Mariages) */}
+      <nav aria-label={c.filtres} className="bg-or text-nuit">
+        <ul className="conteneur flex flex-wrap items-center gap-x-8 gap-y-3 py-5 md:py-6">
           {rubriques.map((r) => (
             <li key={r.ancre}>
-              <a href={`#${r.ancre}`} className={classesBouton("lien")}>
-                {r.categorie} <span className="text-sable">({r.liste.length})</span>
+              <a href={`#${r.ancre}`} className="font-display text-xl underline-offset-4 hover:underline md:text-2xl">
+                {r.categorie} <span className="font-sans text-sm font-medium opacity-70">({r.liste.length})</span>
               </a>
             </li>
           ))}

@@ -52,3 +52,15 @@ describe("AvisDefilants", () => {
     expect(visible()).toBe("Harold & David");
   });
 });
+
+describe("tirerAuHasard", () => {
+  it("rend n éléments distincts de la liste, sans la modifier", async () => {
+    const { tirerAuHasard } = await import("./AvisDefilants");
+    const liste = [1, 2, 3, 4, 5, 6, 7, 8];
+    const tirage = tirerAuHasard(liste, 5);
+    expect(tirage).toHaveLength(5);
+    expect(new Set(tirage).size).toBe(5);
+    for (const x of tirage) expect(liste).toContain(x);
+    expect(liste).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+  });
+});

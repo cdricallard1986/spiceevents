@@ -9,7 +9,7 @@ import { avisDeCategorie, grilleCitations } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
-import { GrilleAvis } from "@/components/common/Avis";
+import { AvisDefilants } from "@/components/common/AvisDefilants";
 import { EnTetePage } from "@/components/common/EnTetePage";
 import { Faq } from "@/components/common/Faq";
 import { GrillePhotos } from "@/components/common/GrillePhotos";
@@ -139,12 +139,22 @@ export default async function PageEvenementiel({ params }: Props) {
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.galerie.lien} →</Bouton>
       </Section>
 
-      <Section surtitre={c.avis.surtitre} titre={c.avis.titre} alterne>
-        <GrilleAvis liste={avisClients} />
-        <Bouton href="/avis" variante="lien" className="mt-6">
-          {locale === "fr" ? "Lire tous les avis" : "Read all reviews"} →
+      {/* Cinq avis clients tirés au hasard à chaque visite, qui se succèdent sur photo de fond */}
+      <AvisDefilants
+        liste={avisClients}
+        tirage={5}
+        image="presta-gala-bleu"
+        libelles={
+          locale === "fr"
+            ? { precedent: "Avis précédent", suivant: "Avis suivant", avis: "Avis" }
+            : { precedent: "Previous review", suivant: "Next review", avis: "Review" }
+        }
+      >
+        <p className="mt-10 text-[0.75rem] font-semibold uppercase tracking-[0.22em] text-sable">{c.avis.surtitre}</p>
+        <Bouton href="/avis" variante="lien" className="mt-3 text-[0.75rem]">
+          {locale === "fr" ? "Voir tous les avis" : "See all reviews"} →
         </Bouton>
-      </Section>
+      </AvisDefilants>
 
       <Section surtitre={c.faq.surtitre} titre={c.faq.titre}>
         <Faq questions={c.faq.questions} />

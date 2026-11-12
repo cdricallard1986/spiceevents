@@ -12,17 +12,34 @@ type Props = {
   image: CleImage;
   /** Libellés des boutons « précédent / suivant » et du choix d'un avis. */
   libelles: { precedent: string; suivant: string; avis: string };
+  /** Nombre d'avis tirés au hasard dans la liste à chaque visite (par défaut : tous, dans l'ordre). */
+  tirage?: number;
   children?: React.ReactNode;
 };
+
+/** Mélange de Fisher-Yates, puis les `n` premiers. */
+export function tirerAuHasard<T>(liste: readonly T[], n: number, hasard: () => number = Math.random): T[] {
+  const copie = [...liste];
+  for (let i = copie.length - 1; i > 0; i--) {
+    const j = Math.floor(hasard() * (i + 1));
+    [copie[i], copie[j]] = [copie[j], copie[i]];
+  }
+  return copie.slice(0, n);
+}
 
 /**
  * Grands avis qui se succèdent sur une photo de fond, en fondu. Le défilement
  * s'arrête au survol, au clavier et quand l'appareil demande moins d'animations ;
  * les flèches et les points restent utilisables. Sans JavaScript : le premier avis.
  */
-export function AvisDefilants({ liste, image, libelles, children }: Props) {
+export function AvisDefilants({ liste: tous, image, libelles, tirage, children }: Props) {
   const [actif, setActif] = useState(0);
   const [pause, setPause] = useState(false);
+  // Rendu serveur : les premiers avis ; dans le navigateur, un tirage au hasard (page statique).
+  const [liste, setListe] = useState(() => (tirage ? tous.slice(0, tirage) : tous));
+  useEffect(() => {
+    if (tirage && tous.length > tirage) setListe(tirerAuHasard(tous, tirage));
+  }, [tous, tirage]);
   const n = liste.length;
 
   useEffect(() => {

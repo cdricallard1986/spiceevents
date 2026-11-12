@@ -78,10 +78,6 @@ export default async function Accueil({ params }: Props) {
                 <Photo cle="platines-pioneer" remplir sizes="(min-width: 1024px) 25vw, 50vw" />
               </div>
             </div>
-            {/* La galerie n'est plus dans le menu : on la rejoint depuis les photos. */}
-            <Bouton href="/galerie" variante="lien" className="mt-6">
-              {locale === "fr" ? "Voir la galerie" : "See the gallery"} →
-            </Bouton>
           </div>
         </div>
       </section>
