@@ -95,6 +95,9 @@ export default async function PageEvenementiel({ params }: Props) {
             </li>
           ))}
         </ul>
+        <Bouton href="/son-et-lumiere" variante="lien" className="mt-10">
+          {locale === "fr" ? "Notre matériel son & lumière" : "Our sound & lighting equipment"} →
+        </Bouton>
       </Section>
 
       <Section surtitre={c.methode.surtitre} titre={c.methode.titre} alterne>

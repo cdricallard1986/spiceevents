@@ -29,7 +29,7 @@ export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
 ];
 
 /** Engagement de la promesse, avec un lien éventuel vers la page qui le détaille. */
-export type Garantie = Carte & { lien?: { href: "/animations"; texte: string } };
+export type Garantie = Carte & { lien?: { href: "/animations" | "/son-et-lumiere"; texte: string } };
 
 type Mariages = {
   seo: Seo;
@@ -82,6 +82,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           titre: "Une sonorisation haut de gamme",
           texte: "Adaptée à votre lieu, fournie par notre partenaire MX Événement et testée avant chaque date.",
+          lien: { href: "/son-et-lumiere", texte: "Notre matériel" },
         },
         {
           titre: "Une mise en lumière sur mesure",
@@ -310,6 +311,7 @@ export const MARIAGES: Bilingue<Mariages> = {
         {
           titre: "Premium sound",
           texte: "Suited to your venue, supplied by our partner MX Événement and tested before every date.",
+          lien: { href: "/son-et-lumiere", texte: "Our equipment" },
         },
         {
           titre: "Tailored lighting",

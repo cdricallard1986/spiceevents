@@ -1,0 +1,54 @@
+{
+ "_comment": "Photos de la page Son & lumière (matériel réel, atelier MX Événement). Clé → fichier de site-actuel/images/fichiers + alt FR/EN.",
+ "images": {
+  "son-lumiere-installation": {
+   "fichier": "22139555_233033_683338.jpg",
+   "alt": {
+    "fr": "Piste de danse et structures éclairées en violet, installation prête avant l'arrivée des invités",
+    "en": "Dance floor and trusses lit in purple, set up and ready before the guests arrive"
+   }
+  },
+  "materiel-l-acoustics": {
+   "fichier": "780786_903916_14071.jpg",
+   "alt": {
+    "fr": "Enceintes line array L-Acoustics et rack d'amplificateurs LA12X, prêts à partir de l'atelier",
+    "en": "L-Acoustics line array speakers and an LA12X amplifier rack, ready to leave the workshop"
+   }
+  },
+  "materiel-pioneer-blanc": {
+   "fichier": "780786_640055_319670.jpg",
+   "alt": {
+    "fr": "Platine Pioneer DJ blanche en édition limitée, sous une lumière violette",
+    "en": "A limited-edition white Pioneer DJ deck under purple light"
+   }
+  },
+  "materiel-yamaha-ql5": {
+   "fichier": "780786_106710_819314.jpg",
+   "alt": {
+    "fr": "Console numérique Yamaha QL5 dans son flight case",
+    "en": "A Yamaha QL5 digital mixing console in its flight case"
+   }
+  },
+  "materiel-projecteurs-rack": {
+   "fichier": "22139555_735936_112285.jpg",
+   "alt": {
+    "fr": "Projecteurs rangés et étiquetés en rack à l'atelier",
+    "en": "Lighting fixtures stored and labelled in racks at the workshop"
+   }
+  },
+  "materiel-connectique": {
+   "fichier": "22139555_712490_572548.jpg",
+   "alt": {
+    "fr": "Connecteurs XLR branchés à l'arrière d'un rack",
+    "en": "XLR connectors plugged into the back of a rack"
+   }
+  },
+  "materiel-atelier": {
+   "fichier": "22139555_780951_62320.jpg",
+   "alt": {
+    "fr": "Allée de l'atelier MX Événement : flight cases, structures et matériel rangés",
+    "en": "An aisle in the MX Événement workshop: flight cases, trusses and stored equipment"
+   }
+  }
+ }
+}

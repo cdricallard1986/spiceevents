@@ -11,7 +11,7 @@ import { EnTetePage } from "@/components/common/EnTetePage";
 import { Etapes } from "@/components/common/Etapes";
 import { Section } from "@/components/common/Section";
 import { Photo } from "@/components/ui/Photo";
-import { classesBouton } from "@/components/ui/Bouton";
+import { Bouton, classesBouton } from "@/components/ui/Bouton";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -127,6 +127,10 @@ export default async function PageAPropos({ params }: Props) {
             </a>
           </div>
         </div>
+
+        <Bouton href="/son-et-lumiere" variante="lien" className="mt-12">
+          {locale === "fr" ? "Tout sur notre matériel son & lumière" : "All about our sound & lighting equipment"} →
+        </Bouton>
 
         <p className="mx-auto mt-20 max-w-3xl text-center font-display text-3xl italic leading-snug md:text-[2.5rem]">
           « {c.technique.citation} »

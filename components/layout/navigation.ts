@@ -17,6 +17,7 @@ export const MENU: EntreeNav[] = [
 /** Pied de page : le menu, plus les pages qui n'y sont pas (utile aussi à Google). */
 export const LIENS_PIED: EntreeNav[] = [
   ...MENU,
+  { href: "/son-et-lumiere", cle: "sonLumiere" },
   { href: "/avis", cle: "avis" },
   { href: "/galerie", cle: "galerie" },
   { href: "/journal", cle: "journal", frSeulement: true },

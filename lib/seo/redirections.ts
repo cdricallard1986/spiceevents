@@ -36,7 +36,7 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/test": "/",
   "/booking-dj": "/mariages",
   "/accompagnement": "/mariages#methode",
-  "/performances-techniques-son-and-lumieres": "/a-propos",
+  "/performances-techniques-son-and-lumieres": "/son-et-lumiere",
   "/cedric-allard": "/a-propos",
   "/temoignages": "/avis",
   "/galerie-photo-mariage": "/galerie",
@@ -57,9 +57,9 @@ export const OPTIONS_RETIREES: Record<string, string> = {
 
 /** Articles retirés du journal (datés ou hors sujet) → page la plus proche. */
 export const ARTICLES_RETIRES: Record<string, string> = {
-  "nouvel-arrivage-de-materiel-l-acoustics": "/a-propos",
-  "nouvel-arrivage-de-materiel-l-acoustics-et-yamaha": "/a-propos",
-  "nouvelle-regie-pioneer-blanche-edition-limitee": "/a-propos",
+  "nouvel-arrivage-de-materiel-l-acoustics": "/son-et-lumiere",
+  "nouvel-arrivage-de-materiel-l-acoustics-et-yamaha": "/son-et-lumiere",
+  "nouvelle-regie-pioneer-blanche-edition-limitee": "/son-et-lumiere",
   "location-enceinte-batterie-maui5go": "/animations/sonorisation-deportee",
   "celebrer-les-10-ans-de-la-jungle-au-showroom-01": "/evenementiel",
   "amnesty-international-a-la-marche-des-fiertes-2019": "/evenementiel",

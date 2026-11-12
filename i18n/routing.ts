@@ -17,6 +17,7 @@ export const routing = defineRouting({
     "/animations": { fr: "/animations", en: "/entertainment" },
     "/animations/[option]": { fr: "/animations/[option]", en: "/entertainment/[option]" },
     "/evenementiel": { fr: "/evenementiel", en: "/events" },
+    "/son-et-lumiere": { fr: "/son-et-lumiere", en: "/sound-and-lighting" },
     "/a-propos": { fr: "/a-propos", en: "/about" },
     "/avis": { fr: "/avis", en: "/reviews" },
     "/galerie": { fr: "/galerie", en: "/gallery" },
