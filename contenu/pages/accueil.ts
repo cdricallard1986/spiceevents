@@ -19,7 +19,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
     },
     hero: {
       surtitre: "DJ mariage · Son · Lumière · Île-de-France",
-      titre: "La nuit dont vos invités *parleront encore*.",
+      titre: "Une nuit pimentée dont vos invités *parleront encore*.",
       intro:
         "De la cérémonie au dernier morceau, Cédric et l'équipe Spice Events préparent avec vous la musique, la lumière et le rythme de votre mariage.",
       ctaPrincipal: "Vérifier ma date",
@@ -34,9 +34,9 @@ export const ACCUEIL: Bilingue<Accueil> = {
       lien: "Rencontrer Cédric",
     },
     journee: {
-      surtitre: "Votre journée",
-      titre: "Chaque moment a sa musique, *sa lumière*, son tempo.",
-      intro: "Nous accompagnons toute la journée, pas seulement la soirée.",
+      surtitre: "Du premier oui au dernier morceau",
+      titre: "Chaque moment a sa musique, *son piment*, son tempo.",
+      intro: "Nous relevons toute la journée, pas seulement la soirée.",
       etapes: [
         { titre: "Cérémonie", texte: "Micros, entrée des mariés, musique lancée à la seconde près." },
         { titre: "Cocktail", texte: "Sonorisation déportée, bar à vinyles, livre d'or audio." },
@@ -47,18 +47,18 @@ export const ACCUEIL: Bilingue<Accueil> = {
       lien: "Tout savoir sur nos mariages",
     },
     animations: {
-      surtitre: "Les petits plus",
-      titre: "Des animations dont on *se souvient*.",
+      surtitre: "Le grain de piment",
+      titre: "Des animations qui *relèvent la fête*.",
       lien: "Toutes les animations",
     },
     evenements: {
       surtitre: "Soirées privées & entreprises",
-      titre: "Le même soin pour *tous vos événements*.",
+      titre: "Le même piment pour *toutes vos soirées*.",
       texte:
         "Anniversaires, galas, séminaires, lancements de produit : direction musicale, son, lumière et coordination, avec la même exigence que pour un mariage.",
       lien: "Événements privés et professionnels",
     },
-    avis: { surtitre: "Ils nous ont fait confiance", titre: "Les mariés *en parlent* mieux que nous." },
+    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ils ont dansé jusqu'au bout de la nuit. *Ils racontent.*" },
   },
   en: {
     seo: {
@@ -68,7 +68,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
     },
     hero: {
       surtitre: "Wedding DJ · Sound · Lighting · Paris area",
-      titre: "The night your guests *will still talk about*.",
+      titre: "A spicy night your guests *will still talk about*.",
       intro:
         "From the ceremony to the very last song, Cédric and the Spice Events team plan the music, the lighting and the pace of your wedding with you.",
       ctaPrincipal: "Check my date",
@@ -83,9 +83,9 @@ export const ACCUEIL: Bilingue<Accueil> = {
       lien: "Meet Cédric",
     },
     journee: {
-      surtitre: "Your day",
-      titre: "Every moment has its music, *its light*, its tempo.",
-      intro: "We look after the whole day, not just the party.",
+      surtitre: "From the first “I do” to the last song",
+      titre: "Every moment has its music, *its spice*, its tempo.",
+      intro: "We spice up the whole day, not just the party.",
       etapes: [
         { titre: "Ceremony", texte: "Microphones, your entrance, music cued to the second." },
         { titre: "Drinks reception", texte: "Remote sound, vinyl bar, audio guestbook." },
@@ -96,17 +96,17 @@ export const ACCUEIL: Bilingue<Accueil> = {
       lien: "All about our weddings",
     },
     animations: {
-      surtitre: "The little extras",
-      titre: "Entertainment *people remember*.",
+      surtitre: "The pinch of spice",
+      titre: "Entertainment that *spices up the party*.",
       lien: "All entertainment",
     },
     evenements: {
       surtitre: "Private & corporate events",
-      titre: "The same care for *every event*.",
+      titre: "The same spice for *every party*.",
       texte:
         "Birthdays, galas, seminars, product launches: music direction, sound, lighting and coordination, with the same high standards as a wedding.",
       lien: "Private and corporate events",
     },
-    avis: { surtitre: "They trusted us", titre: "Our couples *say it* better than we do." },
+    avis: { surtitre: "They trusted us", titre: "They danced till the end of the night. *They tell it best.*" },
   },
 };

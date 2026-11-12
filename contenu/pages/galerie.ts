@@ -17,7 +17,7 @@ export const GALERIE: Bilingue<Galerie> = {
     },
     hero: {
       surtitre: "Galerie",
-      titre: "La lumière, *la piste*, l'émotion.",
+      titre: "La lumière, *la piste*, le piment.",
       intro: "Une sélection de mariages et d'événements que nous avons mis en musique et en lumière.",
     },
     mariages: { surtitre: "Mariages", titre: "De la cérémonie *au bout de la nuit*." },
@@ -31,7 +31,7 @@ export const GALERIE: Bilingue<Galerie> = {
     },
     hero: {
       surtitre: "Gallery",
-      titre: "The light, *the dance floor*, the emotion.",
+      titre: "The light, *the dance floor*, the spice.",
       intro: "A selection of weddings and events we have brought to life with music and lighting.",
     },
     mariages: { surtitre: "Weddings", titre: "From the ceremony *to the end of the night*." },

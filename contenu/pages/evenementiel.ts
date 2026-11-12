@@ -32,12 +32,12 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     hero: {
       surtitre: "Événementiel · Soirées privées & entreprises",
-      titre: "Vos temps forts, *mis en scène*.",
+      titre: "Rassemblez. *Nous pimentons.*",
       intro:
         "Anniversaire, soirée privée, séminaire, gala ou lancement : la même exigence que pour un mariage, au service de vos invités et de vos objectifs.",
     },
     promesse: {
-      surtitre: "L'allié de vos moments forts",
+      surtitre: "Le piment de vos temps forts",
       titre: "Un événement *à votre image*, maîtrisé de bout en bout.",
       paragraphes: [
         "Chaque temps fort est unique et mérite d'être vécu pleinement. Notre mission : faire de votre événement un moment inoubliable et à votre image, avec un service professionnel, innovant et humain.",
@@ -98,7 +98,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
         { image: "presta-dj-scene", surtitre: "La soirée continue", titre: "Et libérer l'énergie." },
       ],
     },
-    galerie: { surtitre: "En images", titre: "Nos événements *en action*.", lien: "Voir la galerie" },
+    galerie: { surtitre: "En images", titre: "Nos nuits *en action*.", lien: "Voir la galerie" },
     avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu'en disent *nos clients*." },
     faq: {
       surtitre: "Questions fréquentes",
@@ -137,7 +137,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       ],
     },
     appel: {
-      titre: "Planifions *votre événement*.",
+      titre: "Votre prochaine soirée manque *de piment* ?",
       texte: "Date, lieu, nombre d'invités, objectifs : dites-nous l'essentiel, Cédric vous répond personnellement.",
     },
   },
@@ -149,12 +149,12 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     hero: {
       surtitre: "Events · Private & corporate",
-      titre: "Your big moments, *staged*.",
+      titre: "Bring them together. *We add the spice.*",
       intro:
         "Birthday, private party, seminar, gala or launch: the same high standards as a wedding, working for your guests and your goals.",
     },
     promesse: {
-      surtitre: "Your partner for the moments that matter",
+      surtitre: "The spice in your big moments",
       titre: "An event *that reflects you*, handled from start to finish.",
       paragraphes: [
         "Every big moment is unique and deserves to be lived to the full. Our mission: to make your event unforgettable and true to you, with a professional, innovative and personal service.",
@@ -215,7 +215,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
         { image: "presta-dj-scene", surtitre: "The party goes on", titre: "And setting the energy free." },
       ],
     },
-    galerie: { surtitre: "In pictures", titre: "Our events *in action*.", lien: "View the gallery" },
+    galerie: { surtitre: "In pictures", titre: "Our nights *in action*.", lien: "View the gallery" },
     avis: { surtitre: "They trusted us", titre: "What *our clients* say." },
     faq: {
       surtitre: "Frequently asked questions",
@@ -254,7 +254,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       ],
     },
     appel: {
-      titre: "Let's plan *your event*.",
+      titre: "Is your next party missing *some spice*?",
       texte: "Date, venue, number of guests, goals: tell us the essentials and Cédric will get back to you personally.",
     },
   },

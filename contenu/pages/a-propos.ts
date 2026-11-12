@@ -31,13 +31,13 @@ export const A_PROPOS: Bilingue<APropos> = {
     },
     hero: {
       surtitre: "À propos · Cédric Allard",
-      titre: "Une passion devenue *une signature*.",
+      titre: "Une passion, *une pincée de piment*.",
       intro:
         "Fondateur de Spice Events et associé de MX Événement, Cédric accompagne les mariés et leurs invités depuis plus de 20 ans, de la première idée au dernier morceau.",
     },
     parcours: {
       surtitre: "Le parcours",
-      titre: "De l'école de cinéma *aux pistes de danse*.",
+      titre: "De l'école de cinéma *aux nuits blanches*.",
       paragraphes: [
         "Cédric crée Spice Events très tôt, pour facturer ses premiers clients. Il est alors étudiant en cinéma, option son, et possède déjà une solide expérience de l'animation de soirées. Très vite, il veut professionnaliser ses prestations et les adapter aux mariages et aux événements : une expérience qui allie technique, ambiance et émotion.",
         "Les débuts demandent patience et discipline : il réinvestit longtemps dans le matériel et la qualité plutôt que dans sa propre rémunération, et assume seul chaque décision. Les conseils d'autres professionnels et des rencontres décisives, comme celle de Maxime Gaudefroy, aujourd'hui son associé chez MX Événement, l'aident à structurer l'entreprise.",
@@ -159,13 +159,13 @@ export const A_PROPOS: Bilingue<APropos> = {
     },
     hero: {
       surtitre: "About · Cédric Allard",
-      titre: "A passion that became *a signature*.",
+      titre: "A passion, *a pinch of spice*.",
       intro:
         "Founder of Spice Events and partner at MX Événement, Cédric has been looking after couples and their guests for over 20 years, from the first idea to the very last song.",
     },
     parcours: {
       surtitre: "The story",
-      titre: "From film school *to the dance floor*.",
+      titre: "From film school *to sleepless nights*.",
       paragraphes: [
         "Cédric set up Spice Events early on, so that he could invoice his first clients. He was studying film at the time, specialising in sound, and already had solid experience of DJing parties. He soon wanted to take things further and tailor his work to weddings and events: an experience that brings together technique, atmosphere and emotion.",
         "The early days took patience and discipline. For a long time he put money back into equipment and quality rather than paying himself, and every decision rested on his shoulders alone. Advice from other professionals and a few key encounters — notably Maxime Gaudefroy, now his business partner at MX Événement — helped him build a more structured company.",

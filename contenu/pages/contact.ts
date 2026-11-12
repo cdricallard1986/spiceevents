@@ -46,12 +46,12 @@ export const CONTACT: Bilingue<Contact> = {
     },
     hero: {
       surtitre: "Contact · Devis",
-      titre: "Parlons de *votre date*.",
+      titre: "Et si on pimentait *votre nuit* ?",
       intro: "Quelques informations suffisent : Cédric lit chaque demande et vous répond personnellement, dans les meilleurs délais.",
     },
     formulaire: {
       surtitre: "Demande de devis",
-      titre: "Dites-nous *l'essentiel*.",
+      titre: "Les premiers *ingrédients*.",
       intro: "Deux minutes suffisent. Les champs « facultatif » pourront attendre le premier échange.",
       textes: {
         prenoms: "Vos prénoms",
@@ -118,12 +118,12 @@ export const CONTACT: Bilingue<Contact> = {
     },
     hero: {
       surtitre: "Contact · Quote",
-      titre: "Let's talk about *your date*.",
+      titre: "Shall we spice up *your night*?",
       intro: "A few details are all we need: Cédric reads every request and replies to you personally.",
     },
     formulaire: {
       surtitre: "Request a quote",
-      titre: "Tell us *the essentials*.",
+      titre: "The first *ingredients*.",
       intro: "It only takes two minutes. Anything marked “optional” can wait until our first chat.",
       textes: {
         prenoms: "Your first names",

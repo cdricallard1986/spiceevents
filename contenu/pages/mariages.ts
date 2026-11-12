@@ -61,7 +61,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     hero: {
       surtitre: "Mariages · Paris & Île-de-France",
-      titre: "Votre mariage, *de la cérémonie au dernier morceau*.",
+      titre: "Un grand oui. *Une nuit pimentée.*",
       intro:
         "Un mariage ne se vit qu'une fois. Nous préparons avec vous la musique, la lumière et le rythme de chaque moment, pour que vous n'ayez qu'une chose à faire : en profiter.",
       ctaPrincipal: "Vérifier ma date",
@@ -69,7 +69,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     promesse: {
       surtitre: "Notre promesse",
-      titre: "Vous profitez, *nous orchestrons*.",
+      titre: "Vous profitez, *nous pimentons*.",
       paragraphes: [
         "Notre mission : faire de votre grand jour un moment inoubliable et à votre image, avec un service professionnel, moderne et authentique.",
         "Tout est pensé pour que vous viviez votre soirée en toute sérénité : chaque détail est préparé en amont, et maîtrisé le jour J.",
@@ -144,7 +144,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     methode: {
       surtitre: "Notre méthode",
-      titre: "Six étapes, *zéro improvisation*.",
+      titre: "Six étapes, *zéro fausse note*.",
       intro:
         "Du premier échange au dernier morceau, un accompagnement personnalisé : nous prenons le temps de comprendre votre vision, vos goûts et les émotions que vous voulez transmettre.",
       etapes: [
@@ -184,7 +184,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     dj: {
       surtitre: "Votre DJ",
-      titre: "Un DJ qui vit la soirée *avec vous*.",
+      titre: "Un DJ qui vit la nuit *avec vous*.",
       citation: "Un bon DJ ne se cache pas derrière son ordinateur : il vit la soirée avec vous.",
       paragraphes: [
         "DJ depuis plus de 20 ans, Cédric Allard a fait de sa passion un métier : plus de 600 mariages, soirées et événements professionnels à travers la France. Ce qu'il recherche avant tout, c'est le plaisir du partage — cette énergie unique qui naît quand la musique rassemble les gens.",
@@ -206,7 +206,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
       lien: "En savoir plus sur Cédric",
     },
-    photos: { surtitre: "En images", titre: "Des fêtes *à votre image*.", lien: "Voir la galerie" },
+    photos: { surtitre: "En images", titre: "Des nuits *qui ont du goût*.", lien: "Voir la galerie" },
     avis: {
       lien: "Voir tous les avis",
     },
@@ -286,7 +286,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     hero: {
       surtitre: "Weddings · Paris & Île-de-France",
-      titre: "Your wedding, *from the ceremony to the last song*.",
+      titre: "A big “I do”. *A spicy night.*",
       intro:
         "You only get married once. We plan the music, the lighting and the pace of every moment with you, so all you have to do is enjoy it.",
       ctaPrincipal: "Check my date",
@@ -294,7 +294,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     promesse: {
       surtitre: "Our promise",
-      titre: "You enjoy it, *we orchestrate it*.",
+      titre: "You enjoy it, *we spice it up*.",
       paragraphes: [
         "Our mission: to make your big day unforgettable and true to you, with a professional, modern and genuine service.",
         "Everything is designed so you can relax and live your evening to the full: every detail is prepared in advance and handled on the day.",
@@ -369,7 +369,7 @@ export const MARIAGES: Bilingue<Mariages> = {
     },
     methode: {
       surtitre: "Our approach",
-      titre: "Six steps, *nothing left to chance*.",
+      titre: "Six steps, *not a single wrong note*.",
       intro:
         "From the first conversation to the last song, personal support: we take the time to understand your vision, your tastes and the emotions you want to share.",
       etapes: [
@@ -431,7 +431,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
       lien: "More about Cédric",
     },
-    photos: { surtitre: "In pictures", titre: "Celebrations *as unique as you*.", lien: "View the gallery" },
+    photos: { surtitre: "In pictures", titre: "Nights *full of flavour*.", lien: "View the gallery" },
     avis: {
       lien: "See all reviews",
     },

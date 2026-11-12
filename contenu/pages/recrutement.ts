@@ -19,7 +19,7 @@ export const RECRUTEMENT: Recrutement = {
   },
   hero: {
     surtitre: "On recrute",
-    titre: "Rejoignez *l'aventure* Spice Events.",
+    titre: "Envie de pimenter *les nuits des autres* ?",
     intro: "Nous cherchons un ou une DJ généraliste pour animer nos mariages et nos événements.",
   },
   poste: {

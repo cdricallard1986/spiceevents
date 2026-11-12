@@ -27,13 +27,13 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     hero: {
       surtitre: "Son & lumière",
-      titre: "Un matériel *sur lequel on peut compter*.",
+      titre: "Le piment, *sans les imprévus*.",
       intro:
         "Sonorisation, éclairage, régie DJ : un parc professionnel, testé en atelier avant chaque date, installé selon un protocole strict et doublé par du matériel de secours sur place.",
     },
     promesse: {
       surtitre: "Notre promesse",
-      titre: "L'émotion, *sans l'imprévu*.",
+      titre: "Une nuit qui brille, *une technique qui tient*.",
       paragraphes: [
         "Un mariage ou un événement réussi repose sur un équilibre : de l'émotion, et une technique qui ne se remarque jamais. Une coupure de son pendant les discours, une lumière qui s'éteint pendant l'ouverture du bal : ce sont des instants qui ne se rattrapent pas.",
         "C'est pourquoi chaque prestation est pensée comme une mise en scène technique, où chaque câble, chaque réglage et chaque faisceau a son importance — avec notre partenaire MX Événement, prestataire son et lumière.",
@@ -79,7 +79,7 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     preparation: {
       surtitre: "Avant chaque date",
-      titre: "Rien n'est *laissé au hasard*.",
+      titre: "Avant la nuit, *tout est calé*.",
       intro: "Le jour J ne commence pas à l'arrivée des invités : il se prépare à l'atelier, puis sur place, bien avant le premier morceau.",
       etapes: [
         {
@@ -159,13 +159,13 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     hero: {
       surtitre: "Sound & lighting",
-      titre: "Equipment *you can rely on*.",
+      titre: "All the spice, *none of the glitches*.",
       intro:
         "Sound, lighting, DJ booth: professional equipment, tested in the workshop before every date, installed to a strict protocol and backed up by spare equipment on site.",
     },
     promesse: {
       surtitre: "Our promise",
-      titre: "All the emotion, *none of the glitches*.",
+      titre: "A night that shines, *technology that holds*.",
       paragraphes: [
         "A successful wedding or event rests on a balance: emotion, and technology nobody ever notices. Sound cutting out during the speeches, lights failing during the first dance: those are moments you never get back.",
         "That's why every booking is designed as a technical production, where every cable, every setting and every beam of light matters — with our partner MX Événement, a sound and lighting company.",
@@ -210,7 +210,7 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
     },
     preparation: {
       surtitre: "Before every date",
-      titre: "Nothing is *left to chance*.",
+      titre: "Before the night, *everything is set*.",
       intro: "The big day doesn't start when the guests arrive: it is prepared in the workshop, then on site, long before the first song.",
       etapes: [
         { titre: "Workshop check", texte: "Every item is checked and tested before it leaves: speakers, consoles, microphones, cables, lights." },

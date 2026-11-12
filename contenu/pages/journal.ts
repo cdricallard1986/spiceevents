@@ -20,7 +20,7 @@ export const JOURNAL: Journal = {
   },
   hero: {
     surtitre: "Le journal",
-    titre: "Conseils et coulisses *pour un mariage qui danse*.",
+    titre: "Conseils et coulisses *pour une nuit pimentée*.",
     intro: "Musique, lumière, déroulé, animations : ce que nous avons appris en préparant les mariages et les soirées de nos clients.",
   },
   aLaUne: "À la une",
