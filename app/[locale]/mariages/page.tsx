@@ -12,6 +12,7 @@ import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
 import { AvisDefilants } from "@/components/common/AvisDefilants";
+import { NoteMariagesNet } from "@/components/common/NoteMariagesNet";
 import { BandeauPreuves } from "@/components/common/BandeauPreuves";
 import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { EnTetePage } from "@/components/common/EnTetePage";
@@ -219,6 +220,7 @@ export default async function PageMariages({ params }: Props) {
             : { precedent: "Previous review", suivant: "Next review", avis: "Review" }
         }
       >
+        <NoteMariagesNet />
         <Bouton href="/avis" variante="lien" className="mt-5 text-[0.75rem] opacity-90">{c.avis.lien} →</Bouton>
       </AvisDefilants>
 

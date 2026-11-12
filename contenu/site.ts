@@ -33,6 +33,8 @@ export const SITE = {
   },
   /** Distinctions réelles (badges Mariages.net présents sur l'ancien site). */
   weddingAwards: [2022, 2024, 2025, 2026],
+  /** Note et nombre d'avis sur Mariages.net (donnés par Cédric le 12/11/2026, à mettre à jour à la main). */
+  avisMariagesNet: { note: 4.9, nombre: 72, url: "https://www.mariages.net/musique-mariage/spice-events--e127122/avis" },
   /** Plateforme de préparation des mariages conçue par Spice Events (espace mariés, agence, DJ, technicien). */
   nuvio: "https://nuvio.disco-very.com/",
   /** Chiffres tirés des textes de l'ancien site (biographie de Cédric). */

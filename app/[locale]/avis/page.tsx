@@ -10,6 +10,7 @@ import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
 import { GrilleAvis } from "@/components/common/Avis";
 import { EnTetePage } from "@/components/common/EnTetePage";
+import { Etoiles, NOTE_MARIAGES_NET } from "@/components/common/NoteMariagesNet";
 import { Section } from "@/components/common/Section";
 import { classesBouton } from "@/components/ui/Bouton";
 
@@ -33,6 +34,8 @@ export default async function PageAvis({ params }: Props) {
   const evenements = grilleTextes(avisDeCategorie(tous, "evenement"), locale);
   const annees = new Intl.ListFormat(locale, { type: "conjunction" }).format(SITE.weddingAwards.map(String));
 
+  const fr = locale === "fr";
+
   return (
     <>
       <EnTetePage image="maison-mariage-chapiteau-ovation" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
@@ -54,6 +57,32 @@ export default async function PageAvis({ params }: Props) {
               </li>
             ))}
           </ul>
+        </div>
+        {/* Note Mariages.net : un simple lien, sans widget ni script extérieur */}
+        <div className="conteneur pb-14">
+          <a
+            href={NOTE_MARIAGES_NET.url}
+            target="_blank"
+            rel="noopener"
+            className="group flex flex-wrap items-center justify-between gap-6 border border-ligne bg-nuit-2 p-6 transition-colors hover:border-or md:p-8"
+          >
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <p className="font-display text-6xl leading-none text-or">
+                {NOTE_MARIAGES_NET.noteAffichee(fr)}
+                <span className="text-3xl text-ivoire/60">/5</span>
+              </p>
+              <div>
+                <Etoiles className="text-2xl" />
+                <p className="mt-2 text-sable">
+                  {NOTE_MARIAGES_NET.nombre} {fr ? "avis de mariés sur" : "reviews from couples on"}{" "}
+                  <span className="font-semibold text-ivoire">Mariages.net</span>
+                </p>
+              </div>
+            </div>
+            <span className={`${classesBouton("contour")} group-hover:border-or group-hover:text-or`}>
+              {fr ? "Lire nos avis sur Mariages.net" : "Read our reviews on Mariages.net"} ↗
+            </span>
+          </a>
         </div>
       </section>
 
