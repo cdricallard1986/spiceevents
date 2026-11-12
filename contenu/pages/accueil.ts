@@ -29,6 +29,8 @@ export const IMAGES_ACCUEIL: CleImage[] = [
   "presta-soiree-privee",
   "presta-gala-salle",
   "presta-piste-laser",
+  "soiree-piste-fumee",
+  "soiree-piste-costumes",
 ];
 
 export const ACCUEIL: Bilingue<Accueil> = {

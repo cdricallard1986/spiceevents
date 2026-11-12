@@ -49,6 +49,20 @@
     "fr": "Allée de l'atelier MX Événement : flight cases, structures et matériel rangés",
     "en": "An aisle in the MX Événement workshop: flight cases, trusses and stored equipment"
    }
+  },
+  "son-lumiere-regie-bleue": {
+   "fichier": "drive_2025-meyer_regie-bleue.jpg",
+   "alt": {
+    "fr": "Régie DJ « Let's Dance », enceintes et projecteurs, salle en lumière bleue avant la soirée",
+    "en": "“Let's Dance” DJ booth, speakers and lights, room lit in blue before the party"
+   }
+  },
+  "son-lumiere-regie-lets-dance": {
+   "fichier": "drive_2025-meyer_regie-lets-dance.jpg",
+   "alt": {
+    "fr": "Régie DJ, enceintes sur pied et jeux de lumière installés dans une salle bleutée",
+    "en": "DJ booth, speakers on stands and lighting rigs set up in a blue-lit room"
+   }
   }
  }
 }

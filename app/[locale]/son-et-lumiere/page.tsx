@@ -42,7 +42,7 @@ export default async function PageSonEtLumiere({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image="son-lumiere-installation" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
+      <EnTetePage image={["son-lumiere-installation", "son-lumiere-regie-lets-dance"]} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{fr ? "Demander un devis" : "Request a quote"}</Bouton>
         <Bouton href={{ pathname: "/son-et-lumiere", hash: "materiel" }} variante="contour">
           {fr ? "Voir le matériel" : "See the equipment"}

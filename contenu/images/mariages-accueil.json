@@ -56,6 +56,27 @@
     "fr": "Faisceaux de lumière blanche au-dessus des invités qui dansent",
     "en": "Beams of white light above dancing guests"
    }
+  },
+  "mariage-soiree-bras-ouverts": {
+   "fichier": "drive_2025-meyer_piste-bras.jpg",
+   "alt": {
+    "fr": "Le marié, bras ouverts, mène la danse sous les faisceaux bleus",
+    "en": "The groom leads the dance, arms wide, under blue light beams"
+   }
+  },
+  "mariage-soiree-bras-leves": {
+   "fichier": "drive_2025-meyer_piste-bras-leves.jpg",
+   "alt": {
+    "fr": "Invités bras levés sur la piste, dans la brume et la lumière bleue",
+    "en": "Guests with their arms up on the dance floor, in haze and blue light"
+   }
+  },
+  "mariage-premiere-danse-bleue": {
+   "fichier": "drive_2025-meyer_premiere-danse.jpg",
+   "alt": {
+    "fr": "Baiser des mariés pendant la première danse, sous les projecteurs bleus",
+    "en": "The couple kiss during their first dance, under blue spotlights"
+   }
   }
  }
 }

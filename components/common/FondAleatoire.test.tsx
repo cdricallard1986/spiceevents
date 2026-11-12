@@ -39,9 +39,9 @@ describe("FondAleatoire", () => {
 });
 
 describe("photos d'en-tête de la page Mariages", () => {
-  it("20 photos distinctes, au registre, paysage et assez grandes pour le plein écran", () => {
-    expect(IMAGES_ACCUEIL_MARIAGES).toHaveLength(20);
-    expect(new Set(IMAGES_ACCUEIL_MARIAGES).size).toBe(20);
+  it("au moins 20 photos distinctes, au registre, paysage et assez grandes pour le plein écran", () => {
+    expect(IMAGES_ACCUEIL_MARIAGES.length).toBeGreaterThanOrEqual(20);
+    expect(new Set(IMAGES_ACCUEIL_MARIAGES).size).toBe(IMAGES_ACCUEIL_MARIAGES.length);
     for (const cle of IMAGES_ACCUEIL_MARIAGES) {
       const { width, height } = IMAGES[cle];
       expect(width / height, cle).toBeGreaterThan(1.3);

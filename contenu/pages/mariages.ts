@@ -26,6 +26,9 @@ export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
   "mariage-soiree-cabine",
   "mariage-soiree-chapiteau-bleu",
   "mariage-soiree-faisceaux",
+  "mariage-soiree-bras-ouverts",
+  "mariage-soiree-bras-leves",
+  "mariage-premiere-danse-bleue",
 ];
 
 /** Engagement de la promesse, avec un lien éventuel vers la page qui le détaille. */
