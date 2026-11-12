@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Logo } from "./Logo";
 import { SelecteurLangue } from "./SelecteurLangue";
+import { SelecteurPiment, appliquerCouleur, couleurMemorisee } from "./SelecteurPiment";
 import { menuPour } from "./navigation";
 
 export function EnTete() {
@@ -13,9 +14,12 @@ export function EnTete() {
   const chemin = usePathname();
   const [ouvert, setOuvert] = useState(false);
   const [defile, setDefile] = useState(false);
+  // Petit secret : clic droit sur le logo → sélecteur de couleur en forme de piment.
+  const [piment, setPiment] = useState<{ x: number; y: number } | null>(null);
   const menu = menuPour(locale);
 
   useEffect(() => setOuvert(false), [chemin]);
+  useEffect(() => appliquerCouleur(couleurMemorisee()), []);
   useEffect(() => {
     const surDefilement = () => setDefile(window.scrollY > 24);
     surDefilement();
@@ -34,7 +38,15 @@ export function EnTete() {
       <div
         className={`conteneur flex items-center justify-between gap-6 transition-[height] duration-300 ${defile ? "h-16 md:h-[4.5rem]" : "h-20 md:h-28"}`}
       >
-        <Link href="/" aria-label={t("accueil")} className="shrink-0">
+        <Link
+          href="/"
+          aria-label={t("accueil")}
+          className="shrink-0"
+          onContextMenu={(e) => {
+            e.preventDefault();
+            setPiment({ x: e.clientX, y: e.clientY });
+          }}
+        >
           <Logo className={`transition-[height] duration-300 ${defile ? "h-10 md:h-12" : "h-12 md:h-[4.5rem]"}`} />
         </Link>
 
@@ -104,6 +116,7 @@ export function EnTete() {
           </ul>
         </nav>
       )}
+      {piment && <SelecteurPiment position={piment} onFermer={() => setPiment(null)} />}
     </header>
   );
 }

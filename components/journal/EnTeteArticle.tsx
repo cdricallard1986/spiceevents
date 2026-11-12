@@ -11,7 +11,9 @@ import type { Article } from "@/lib/journal/types";
 export function EnTeteArticle({ article: a }: { article: Article }) {
   return (
     <section className="relative flex min-h-[78svh] items-end overflow-hidden">
-      <Image src={srcImage(a.couverture)} alt={a.couvertureAlt} fill priority sizes="100vw" quality={70} className="object-cover" />
+      <div data-parallaxe className="absolute inset-x-0">
+        <Image src={srcImage(a.couverture)} alt={a.couvertureAlt} fill priority sizes="100vw" quality={70} className="object-cover" />
+      </div>
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.7)_0%,rgba(20,20,20,0.2)_35%,rgba(20,20,20,0.94)_100%)]"

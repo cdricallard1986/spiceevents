@@ -66,6 +66,13 @@
       transform: scale(1);
     }
   }
+  /* Parallaxe des photos de fond (components/layout/Parallaxe.tsx) : le calque dépasse de
+     12 % en haut et en bas, et glisse plus lentement que la page. */
+  [data-parallaxe] {
+    top: -12%;
+    bottom: -12%;
+    will-change: transform;
+  }
   /* Apparitions au défilement (components/layout/Apparitions.tsx). */
   .apparition {
     opacity: 0;

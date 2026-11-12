@@ -61,8 +61,10 @@ export function AvisDefilants({ liste: tous, image, libelles, tirage, children }
       onBlur={() => setPause(false)}
       data-sans-apparition
     >
-      <div className="absolute inset-0 -z-10">
-        <Photo cle={image} remplir sizes="100vw" />
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div data-parallaxe className="absolute inset-x-0">
+          <Photo cle={image} remplir sizes="100vw" />
+        </div>
         <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.82),rgba(20,20,20,0.6)_45%,rgba(20,20,20,0.9))]" />
       </div>
 

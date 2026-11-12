@@ -8,6 +8,7 @@ import { policeDisplay, policeTexte } from "@/lib/polices";
 import { SITE } from "@/contenu/site";
 import { EnTete } from "@/components/layout/EnTete";
 import { Apparitions } from "@/components/layout/Apparitions";
+import { Parallaxe } from "@/components/layout/Parallaxe";
 import { PiedDePage } from "@/components/layout/PiedDePage";
 import { PillNouvelleVersion } from "@/components/common/PillNouvelleVersion";
 import { BarreDev } from "@/components/admin/BarreDev";
@@ -63,6 +64,7 @@ export default async function LayoutLangue({
           <main id="contenu">{children}</main>
           <PiedDePage />
           <Apparitions />
+          <Parallaxe />
           <PillNouvelleVersion />
           <BarreDev />
           <JsonLd donnees={entreprise(locale)} />

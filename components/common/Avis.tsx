@@ -10,7 +10,9 @@ export function GrandAvis({ citation, auteurs, image, langue }: { citation: stri
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 opacity-35">
-        <Photo cle={image} remplir sizes="100vw" />
+        <div data-parallaxe className="absolute inset-x-0">
+          <Photo cle={image} remplir sizes="100vw" />
+        </div>
       </div>
       <figure className="conteneur relative max-w-5xl py-28 text-center md:py-40">
         <blockquote lang={langue} className="font-display text-3xl font-semibold leading-[1.3] md:text-[2.5rem]">« {citation} »</blockquote>

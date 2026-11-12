@@ -19,7 +19,9 @@ type Props = {
 export function EnTetePage({ image, surtitre, titre, intro, pleinEcran = false, children }: Props) {
   return (
     <section className={`relative flex items-end overflow-hidden ${pleinEcran ? "min-h-[100svh]" : "min-h-[78svh]"}`}>
-      {Array.isArray(image) ? <FondAleatoire images={image} /> : <Photo cle={image} remplir priority sizes="100vw" />}
+      <div data-parallaxe className="absolute inset-x-0">
+        {Array.isArray(image) ? <FondAleatoire images={image} /> : <Photo cle={image} remplir priority sizes="100vw" />}
+      </div>
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.7)_0%,rgba(20,20,20,0.2)_35%,rgba(20,20,20,0.94)_100%)]"
