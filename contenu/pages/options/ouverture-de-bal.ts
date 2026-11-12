@@ -1,7 +1,7 @@
 import type { ContenuOption } from "./types";
 
 export const OUVERTURE_DE_BAL: ContenuOption = {
-  image: "presta-bal-fumee-bleue",
+  image: "presta-bal-etincelles-salle",
   galerie: ["presta-bal-fumee-nb", "hero-premiere-danse", "maison-mariage-danse-gobos", "couple-faisceaux"],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
   imageAvis: "premiere-danse-rose",
