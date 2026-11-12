@@ -75,7 +75,13 @@ export async function PiedDePage() {
 
       <div className="border-t border-ligne">
         <div className="conteneur flex flex-wrap items-center justify-between gap-4 py-6 text-sm text-sable">
-          <p>© {annee} {SITE.nom}. {t("droits")}</p>
+          <p>
+            © {annee} {SITE.nom}. {t("droits")}{" · "}{t("realisation")}{" "}
+            {/* Le studio qui a fait le site : lien suivi, il compte pour le référencement de disco-very.com. */}
+            <a href="https://disco-very.com" className="underline-offset-4 hover:text-ivoire hover:underline">
+              Disco Very
+            </a>
+          </p>
           <ul className="flex flex-wrap gap-6">
             {locale === "fr" && (
               <li><Link href="/recrutement" className="hover:text-ivoire">{t("recrutement")}</Link></li>
