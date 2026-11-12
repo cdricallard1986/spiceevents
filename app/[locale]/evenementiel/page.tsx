@@ -85,25 +85,25 @@ export default async function PageEvenementiel({ params }: Props) {
         </ul>
       </Section>
 
-      {/* Ce que nous prenons en charge : bloc clair de la maquette Nocturne */}
-      <section className="bg-[#e2e2e2] py-20 text-[#181818] md:py-28">
+      {/* Ce que nous prenons en charge : fond noir, icônes à l'accent (couleur du piment) */}
+      <section className="border-y border-ligne bg-nuit py-20 md:py-28">
         <div className="conteneur">
-          <p className="mb-4 text-[0.75rem] font-semibold uppercase tracking-[0.22em]">{c.services.surtitre}</p>
+          <p className="surtitre mb-4">{c.services.surtitre}</p>
           <h2 className="font-display text-4xl leading-[0.95] md:text-[3.5rem]">
-            <Accent texte={c.services.titre} couleur="text-[#464646]" />
+            <Accent texte={c.services.titre} />
           </h2>
           <ul className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 md:mt-16">
             {c.services.liste.map((s) => (
               <li key={s.titre}>
-                <span aria-hidden="true" className="block text-[1.75rem] leading-none text-[#b89a5e]">
+                <span aria-hidden="true" className="block text-[1.75rem] leading-none text-or">
                   {s.icone}
                 </span>
                 <h3 className="mb-3 mt-5 text-xl font-semibold tracking-tight">{s.titre}</h3>
-                <p className="text-[0.9375rem] text-[#626262]">{s.texte}</p>
+                <p className="text-[0.9375rem] text-sable">{s.texte}</p>
               </li>
             ))}
           </ul>
-          <Bouton href="/son-et-lumiere" variante="lien" className="mt-12 !text-[#181818] hover:!text-[#464646]">
+          <Bouton href="/son-et-lumiere" variante="lien" className="mt-12">
             {locale === "fr" ? "Notre matériel son & lumière" : "Our sound & lighting equipment"} →
           </Bouton>
         </div>
