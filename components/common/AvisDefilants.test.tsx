@@ -45,6 +45,17 @@ describe("AvisDefilants", () => {
     expect(visible()).toBe("Léa & Floris");
   });
 
+  it("un clic sur la moitié gauche recule, sur la moitié droite avance", () => {
+    render(<AvisDefilants liste={liste} image="couple-faisceaux" libelles={libelles} />);
+    const section = document.querySelector("section")!;
+    section.getBoundingClientRect = () => ({ left: 0, width: 1000, top: 0, height: 500, right: 1000, bottom: 500, x: 0, y: 0, toJSON: () => ({}) });
+    fireEvent.click(section, { clientX: 800 });
+    expect(visible()).toBe("Léa & Floris");
+    fireEvent.click(section, { clientX: 200 });
+    fireEvent.click(section, { clientX: 200 });
+    expect(visible()).toBe("Pierre & Nina");
+  });
+
   it("ne défile pas quand l'appareil demande moins d'animations", () => {
     window.matchMedia = vi.fn().mockReturnValue({ matches: true }) as unknown as typeof window.matchMedia;
     render(<AvisDefilants liste={liste} image="couple-faisceaux" libelles={libelles} />);

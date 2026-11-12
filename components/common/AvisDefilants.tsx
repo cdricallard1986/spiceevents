@@ -53,12 +53,18 @@ export function AvisDefilants({ liste: tous, image, libelles, tirage, children }
 
   return (
     <section
-      className="relative isolate overflow-hidden"
+      className={`relative isolate overflow-hidden ${n > 1 ? "cursor-pointer select-none" : ""}`}
       aria-roledescription="carrousel"
       onMouseEnter={() => setPause(true)}
       onMouseLeave={() => setPause(false)}
       onFocus={() => setPause(true)}
       onBlur={() => setPause(false)}
+      // Un clic sur la moitié gauche vaut la flèche de gauche, sur la moitié droite celle de droite.
+      onClick={(e) => {
+        if (n < 2 || (e.target as HTMLElement).closest("a, button")) return;
+        const r = e.currentTarget.getBoundingClientRect();
+        aller(e.clientX < r.left + r.width / 2 ? actif - 1 : actif + 1);
+      }}
       data-sans-apparition
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
