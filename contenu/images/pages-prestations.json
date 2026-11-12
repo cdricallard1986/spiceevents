@@ -351,18 +351,18 @@
     "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
    }
   },
-  "presta-feux-artifice-jour-entete": {
-   "fichier": "compose_feux-artifice-jour-entete.jpg",
-   "alt": {
-    "fr": "Feu d'artifice de jour : un éventail de fumées multicolores au-dessus d'une arche de cérémonie",
-    "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
-   }
-  },
   "presta-livre-or-entete": {
    "fichier": "compose_livre-or-audio-entete.jpg",
    "alt": {
     "fr": "Téléphone vintage du livre d'or audio sur une table fleurie, avec son panneau",
     "en": "The vintage audio guestbook phone on a flower-decked table, with its sign"
+   }
+  },
+  "presta-feux-artifice-jour-nuit": {
+   "fichier": "compose_feux-artifice-jour-entete-sombre.jpg",
+   "alt": {
+    "fr": "Feu d'artifice de jour : un éventail de fumées multicolores au-dessus d'une arche de cérémonie",
+    "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
    }
   }
  }

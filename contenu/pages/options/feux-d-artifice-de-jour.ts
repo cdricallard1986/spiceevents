@@ -1,7 +1,7 @@
 import type { ContenuOption } from "./types";
 
 export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = {
-  image: "presta-feux-artifice-jour-entete",
+  image: "presta-feux-artifice-jour-nuit",
   // Une seule photo pour l'instant : la galerie est masquée en attendant.
   galerie: [],
   textes: {

@@ -81,7 +81,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
       },
       {
         option: "feux-d-artifice-de-jour",
-        image: "presta-feux-artifice-jour-entete",
+        image: "presta-feux-artifice-jour-nuit",
         surtitre: "En plein jour, ça crépite",
         titre: "Un final haut en couleur.",
       },
@@ -189,7 +189,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
       },
       {
         option: "feux-d-artifice-de-jour",
-        image: "presta-feux-artifice-jour-entete",
+        image: "presta-feux-artifice-jour-nuit",
         surtitre: "Crackling in broad daylight",
         titre: "A finale full of colour.",
       },
