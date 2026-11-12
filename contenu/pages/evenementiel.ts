@@ -8,8 +8,15 @@ type Evenementiel = {
   hero: { surtitre: string; titre: string; intro: string };
   promesse: { surtitre: string; titre: string; paragraphes: string[] };
   formats: { surtitre: string; titre: string; liste: Format[] };
-  services: { surtitre: string; titre: string; intro: string; liste: Carte[] };
-  methode: { surtitre: string; titre: string; etapes: Etape[] };
+  /** Icône : ♪ ◌ ✳ → (maquette Nocturne). */
+  services: { surtitre: string; titre: string; liste: (Carte & { icone: string })[] };
+  /** Méthode en trois temps, puis deux photos en grand (maquette Nocturne). */
+  methode: {
+    surtitre: string;
+    titre: string;
+    etapes: (Etape & { numero: string })[];
+    vedettes: { image: CleImage; surtitre: string; titre: string }[];
+  };
   galerie: { surtitre: string; titre: string; lien: string };
   avis: { surtitre: string; titre: string };
   faq: { surtitre: string; titre: string; questions: QuestionReponse[] };
@@ -57,52 +64,38 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       ],
     },
     services: {
-      surtitre: "Ce que nous prenons en charge",
-      titre: "Tout ce qui fait *l'ambiance*.",
-      intro: "Une seule équipe pour la musique, la technique et le rythme de votre événement.",
+      surtitre: "Une équipe, toute l'ambiance",
+      titre: "Vous avez l'occasion. *Nous avons le piment.*",
       liste: [
-        {
-          titre: "Direction musicale",
-          texte: "Un DJ professionnel qui adapte la sélection à votre public et à vos objectifs, du cocktail à la soirée.",
-        },
-        {
-          titre: "Sonorisation haut de gamme",
-          texte: "Calibrée selon votre lieu et votre format — conférence, gala, lancement, soirée —, même sur plusieurs espaces.",
-        },
-        {
-          titre: "Mise en lumière sur mesure",
-          texte: "Éclairages décoratifs et scénographie dynamique pour valoriser vos espaces et votre identité visuelle.",
-        },
-        {
-          titre: "Animations",
-          texte: "Photobooth, effets lumineux, expériences interactives : de quoi captiver vos invités et renforcer la cohésion.",
-        },
-        {
-          titre: "Coordination",
-          texte: "Échanges avec vos prestataires, gestion des temps forts et suivi technique, pour un événement sans stress.",
-        },
+        { icone: "♪", titre: "La musique", texte: "Un DJ qui s'adapte à votre public, du cocktail au dernier rappel." },
+        { icone: "◌", titre: "Le son", texte: "Une diffusion claire, adaptée aux prises de parole et à chaque espace." },
+        { icone: "✳", titre: "La lumière", texte: "Une mise en scène qui révèle le lieu et donne le ton." },
+        { icone: "→", titre: "La coordination", texte: "Un déroulé préparé avec vos prestataires, pour profiter du moment." },
       ],
     },
     methode: {
-      surtitre: "Notre méthode",
-      titre: "De l'idée à la scène, *on s'occupe de tout*.",
+      surtitre: "Simple pour vous, précis pour nous",
+      titre: "Bien préparé. *Pleinement vécu.*",
       etapes: [
         {
-          titre: "Premier échange",
-          texte: "Nous prenons le temps de comprendre vos attentes, vos objectifs et l'identité de votre projet.",
+          numero: "01 / On échange",
+          titre: "Votre idée devient un projet.",
+          texte: "Vos objectifs, votre public, votre lieu : nous définissons ensemble ce qui compte.",
         },
         {
-          titre: "Devis & planification",
-          texte: "Une offre sur mesure, alignée sur vos besoins et vos objectifs, préparée avec sérieux.",
+          numero: "02 / On prépare",
+          titre: "Chaque détail a sa place.",
+          texte: "Devis sur mesure, sélection musicale et coordination technique avec vos prestataires.",
         },
         {
-          titre: "Préparation & coordination",
-          texte: "Nous travaillons avec l'ensemble de vos prestataires pour un déroulé fluide et sans oubli.",
+          numero: "03 / On fait vivre",
+          titre: "Place à votre événement.",
+          texte: "Installation, tests et présence sur place. Notre équipe accompagne vos temps forts.",
         },
-        {
-          titre: "Le jour J",
-          texte: "Installation anticipée, tests techniques, matériel de secours : nous parons à toutes les éventualités.",
-        },
+      ],
+      vedettes: [
+        { image: "presta-lancement", surtitre: "Lancements & rencontres", titre: "Mettre vos idées en lumière." },
+        { image: "presta-dj-scene", surtitre: "La soirée continue", titre: "Et libérer l'énergie." },
       ],
     },
     galerie: { surtitre: "En images", titre: "Nos événements *en action*.", lien: "Voir la galerie" },
@@ -188,52 +181,38 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       ],
     },
     services: {
-      surtitre: "What we take care of",
-      titre: "Everything that makes *the atmosphere*.",
-      intro: "One team for the music, the technical side and the pace of your event.",
+      surtitre: "One team, the whole atmosphere",
+      titre: "You have the occasion. *We have the spice.*",
       liste: [
-        {
-          titre: "Music direction",
-          texte: "A professional DJ who tailors the selection to your audience and goals, from drinks to the dance floor.",
-        },
-        {
-          titre: "Premium sound",
-          texte: "Calibrated to your venue and format — conference, gala, launch, party — even across several spaces.",
-        },
-        {
-          titre: "Tailored lighting",
-          texte: "Decorative lighting and dynamic staging to show off your spaces and your visual identity.",
-        },
-        {
-          titre: "Entertainment",
-          texte: "Photobooth, lighting effects, interactive experiences: everything to captivate guests and bring people together.",
-        },
-        {
-          titre: "Coordination",
-          texte: "Liaising with your suppliers, managing key moments and technical follow-up, for a stress-free event.",
-        },
+        { icone: "♪", titre: "The music", texte: "A DJ who reads your crowd, from drinks to the last encore." },
+        { icone: "◌", titre: "The sound", texte: "Clear sound, suited to speeches and to every space." },
+        { icone: "✳", titre: "The light", texte: "Staging that reveals the venue and sets the tone." },
+        { icone: "→", titre: "The coordination", texte: "A schedule prepared with your suppliers, so you can enjoy the moment." },
       ],
     },
     methode: {
-      surtitre: "Our approach",
-      titre: "From idea to stage, *we handle everything*.",
+      surtitre: "Simple for you, precise for us",
+      titre: "Well prepared. *Fully lived.*",
       etapes: [
         {
-          titre: "First conversation",
-          texte: "We take the time to understand your expectations, your goals and the identity of your project.",
+          numero: "01 / We talk",
+          titre: "Your idea becomes a project.",
+          texte: "Your goals, your audience, your venue: together we define what matters.",
         },
         {
-          titre: "Quote & planning",
-          texte: "A tailored proposal, aligned with your needs and objectives, put together with care.",
+          numero: "02 / We prepare",
+          titre: "Every detail in its place.",
+          texte: "A tailored quote, the music selection and technical coordination with your suppliers.",
         },
         {
-          titre: "Preparation & coordination",
-          texte: "We work with all your suppliers for a smooth running order with nothing forgotten.",
+          numero: "03 / We bring it to life",
+          titre: "Over to your event.",
+          texte: "Setup, tests and presence on site. Our team supports your key moments.",
         },
-        {
-          titre: "On the day",
-          texte: "Early set-up, technical checks, backup equipment: we're ready for anything.",
-        },
+      ],
+      vedettes: [
+        { image: "presta-lancement", surtitre: "Launches & gatherings", titre: "Putting your ideas in the spotlight." },
+        { image: "presta-dj-scene", surtitre: "The party goes on", titre: "And setting the energy free." },
       ],
     },
     galerie: { surtitre: "In pictures", titre: "Our events *in action*.", lien: "View the gallery" },
