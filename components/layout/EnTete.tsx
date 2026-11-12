@@ -30,9 +30,12 @@ export function EnTete() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-40 border-b transition-colors duration-300 ${fond}`}>
-      <div className="conteneur flex h-18 items-center justify-between gap-6 md:h-20">
+      {/* Plus haut en haut de page, un peu plus fin dès qu'on fait défiler. */}
+      <div
+        className={`conteneur flex items-center justify-between gap-6 transition-[height] duration-300 ${defile ? "h-16 md:h-[4.5rem]" : "h-20 md:h-28"}`}
+      >
         <Link href="/" aria-label={t("accueil")} className="shrink-0">
-          <Logo className="h-11 md:h-14" />
+          <Logo className={`transition-[height] duration-300 ${defile ? "h-10 md:h-12" : "h-12 md:h-[4.5rem]"}`} />
         </Link>
 
         <nav aria-label={t("principale")} className="hidden lg:block">
@@ -78,7 +81,7 @@ export function EnTete() {
       </div>
 
       {ouvert && (
-        <nav id="menu-mobile" aria-label={t("principale")} className="h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-ligne bg-nuit lg:hidden">
+        <nav id="menu-mobile" aria-label={t("principale")} className="h-[calc(100dvh-5rem)] overflow-y-auto border-t border-ligne bg-nuit lg:hidden">
           <ul className="conteneur flex flex-col py-6">
             {menu.map((e) => (
               <li key={e.href} className="border-b border-ligne">

@@ -30,7 +30,7 @@ type Contact = {
   seo: Seo;
   hero: { surtitre: string; titre: string; intro: string };
   formulaire: { surtitre: string; titre: string; intro: string; textes: TextesFormulaire };
-  joindre: { titre: string; telephone: string; email: string; zone: string; zoneTexte: string };
+  joindre: { titre: string; telephone: string; email: string; zone: string; zoneTexte: string; pastille: string };
   /** Suivi des années (SITE.weddingAwards). */
   awards: { titre: string; texte: string };
   ensuite: { titre: string; etapes: Etape[] };
@@ -84,6 +84,7 @@ export const CONTACT: Bilingue<Contact> = {
       email: "Email",
       zone: "Zone d'intervention",
       zoneTexte: "Paris et toute l'Île-de-France",
+      pastille: "Réponse personnelle de Cédric",
     },
     awards: {
       titre: "Wedding Awards Mariages.net",
@@ -155,6 +156,7 @@ export const CONTACT: Bilingue<Contact> = {
       email: "Email",
       zone: "Where we work",
       zoneTexte: "Paris and the whole Île-de-France region",
+      pastille: "A personal reply from Cédric",
     },
     awards: {
       titre: "Mariages.net Wedding Awards",

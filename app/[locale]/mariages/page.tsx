@@ -14,7 +14,7 @@ import { AppelContact } from "@/components/common/AppelContact";
 import { GrandAvis, GrilleAvis } from "@/components/common/Avis";
 import { BandeauPreuves } from "@/components/common/BandeauPreuves";
 import { BandeauPiment } from "@/components/common/BandeauPiment";
-import { EnTeteCollage } from "@/components/common/EnTeteCollage";
+import { EnTetePage } from "@/components/common/EnTetePage";
 import { Etapes } from "@/components/common/Etapes";
 import { Faq } from "@/components/common/Faq";
 import { GrillePhotos } from "@/components/common/GrillePhotos";
@@ -53,22 +53,14 @@ export default async function PageMariages({ params }: Props) {
 
   return (
     <>
-      {/* En-tête « collage » (charte Nocturne) : grande photo de soirée tirée au hasard parmi 20. */}
-      <EnTeteCollage
-        images={IMAGES_ACCUEIL_MARIAGES}
-        medaillon="presta-bal-etincelles-fumee"
-        legende={c.hero.legende}
-        pastille={c.hero.pastille}
-        surtitre={c.hero.surtitre}
-        titre={c.hero.titre}
-        intro={c.hero.intro}
-      >
+      {/* Pleine largeur : une photo de soirée tirée au hasard parmi 20 à chaque visite. */}
+      <EnTetePage image={IMAGES_ACCUEIL_MARIAGES} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href={{ pathname: "/mariages", hash: "methode" }} variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">
           Wedding Awards Mariages.net — <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
         </span>
-      </EnTeteCollage>
+      </EnTetePage>
 
       <BandeauPiment />
       <BandeauPreuves />

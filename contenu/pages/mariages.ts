@@ -33,7 +33,7 @@ export type Garantie = Carte & { lien?: { href: "/animations" | "/son-et-lumiere
 
 type Mariages = {
   seo: Seo;
-  hero: { surtitre: string; titre: string; intro: string; ctaPrincipal: string; ctaSecondaire: string; pastille: string; legende: string };
+  hero: { surtitre: string; titre: string; intro: string; ctaPrincipal: string; ctaSecondaire: string };
   promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Garantie[] };
   journee: { surtitre: string; titre: string; intro: string; moments: Moment[] };
   methode: { surtitre: string; titre: string; intro: string; etapes: Etape[]; citation: string };
@@ -66,8 +66,6 @@ export const MARIAGES: Bilingue<Mariages> = {
         "Un mariage ne se vit qu'une fois. Nous préparons avec vous la musique, la lumière et le rythme de chaque moment, pour que vous n'ayez qu'une chose à faire : en profiter.",
       ctaPrincipal: "Vérifier ma date",
       ctaSecondaire: "Notre méthode",
-      pastille: "La juste dose de Spice",
-      legende: "Les frissons avant le piment.",
     },
     promesse: {
       surtitre: "Notre promesse",
@@ -297,8 +295,6 @@ export const MARIAGES: Bilingue<Mariages> = {
         "You only get married once. We plan the music, the lighting and the pace of every moment with you, so all you have to do is enjoy it.",
       ctaPrincipal: "Check my date",
       ctaSecondaire: "Our approach",
-      pastille: "Just the right dose of spice",
-      legende: "The chills before the spice.",
     },
     promesse: {
       surtitre: "Our promise",

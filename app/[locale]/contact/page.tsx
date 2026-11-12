@@ -6,7 +6,7 @@ import { CONTACT } from "@/contenu/pages/contact";
 import { SITE } from "@/contenu/site";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
-import { EnTetePage } from "@/components/common/EnTetePage";
+import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { FormulaireContact } from "@/components/contact/FormulaireContact";
 import { envoyerDemande } from "./actions";
 
@@ -30,7 +30,36 @@ export default async function PageContact({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image="contact-maries-lumiere" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
+      {/* Ouverture sans photo : le titre, et la ligne directe en carte orange avec sa pastille. */}
+      <section className="overflow-hidden pb-16 pt-36 md:pb-24 md:pt-44">
+        <div className="conteneur grid items-end gap-14 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
+          <div>
+            <p className="surtitre mb-5">{c.hero.surtitre}</p>
+            <h1 className="font-display text-6xl leading-[0.9] md:text-[6.5rem]">
+              <Accent texte={c.hero.titre} />
+            </h1>
+            <p className="mt-8 max-w-xl text-lg text-sable">{c.hero.intro}</p>
+          </div>
+
+          <div className="relative pr-6 pt-10 sm:pr-10" data-sans-apparition>
+            <div className="rotate-[-2deg] bg-or p-8 text-nuit md:p-10">
+              <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.22em]">{c.joindre.titre}</p>
+              <a href={`tel:${SITE.telephone}`} className="mt-4 block font-display text-5xl leading-none hover:underline md:text-6xl">
+                {telephone}
+              </a>
+              <a href={`mailto:${SITE.email}`} className="mt-4 block text-lg font-medium underline-offset-4 hover:underline">
+                {SITE.email}
+              </a>
+              <p className="mt-6 border-t border-nuit/25 pt-4 text-sm">{c.joindre.zoneTexte}</p>
+            </div>
+            <p className="absolute right-0 top-0 flex size-28 rotate-12 items-center justify-center rounded-full border-4 border-nuit bg-ivoire p-3 text-center text-[0.8125rem] font-bold uppercase leading-snug text-nuit sm:size-32">
+              {c.joindre.pastille}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <BandeauPiment />
 
       <section className="py-20 md:py-28">
         <div className="conteneur grid gap-16 lg:grid-cols-[1.6fr_1fr] lg:gap-20">
@@ -46,32 +75,6 @@ export default async function PageContact({ params }: Props) {
           </div>
 
           <aside className="flex flex-col gap-12">
-            <div>
-              <h2 className="surtitre mb-6">{c.joindre.titre}</h2>
-              <dl className="flex flex-col gap-5">
-                <div>
-                  <dt className="text-sm text-sable">{c.joindre.telephone}</dt>
-                  <dd>
-                    <a href={`tel:${SITE.telephone}`} className="font-display text-2xl transition-colors hover:text-or">
-                      {telephone}
-                    </a>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-sm text-sable">{c.joindre.email}</dt>
-                  <dd>
-                    <a href={`mailto:${SITE.email}`} className="text-lg transition-colors hover:text-or">
-                      {SITE.email}
-                    </a>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-sm text-sable">{c.joindre.zone}</dt>
-                  <dd className="text-lg">{c.joindre.zoneTexte}</dd>
-                </div>
-              </dl>
-            </div>
-
             <div className="border border-ligne bg-nuit-2 p-8">
               <p className="font-display text-xl">{c.awards.titre}</p>
               <p className="mt-2 text-sm text-sable">
