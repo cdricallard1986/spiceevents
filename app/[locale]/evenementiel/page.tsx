@@ -103,7 +103,7 @@ export default async function PageEvenementiel({ params }: Props) {
               </li>
             ))}
           </ul>
-          <Bouton href="/son-et-lumiere" variante="lien" className="mt-12 text-[#181818] hover:text-[#464646]">
+          <Bouton href="/son-et-lumiere" variante="lien" className="mt-12 !text-[#181818] hover:!text-[#464646]">
             {locale === "fr" ? "Notre matériel son & lumière" : "Our sound & lighting equipment"} →
           </Bouton>
         </div>

@@ -37,7 +37,15 @@ type Mariages = {
   promesse: { surtitre: string; titre: string; paragraphes: string[]; garanties: Garantie[] };
   journee: { surtitre: string; titre: string; intro: string; moments: Moment[] };
   methode: { surtitre: string; titre: string; intro: string; etapes: Etape[] };
-  nuvio: { surtitre: string; titre: string; texte: string; points: string[]; lien: string };
+  nuvio: {
+    surtitre: string;
+    titre: string;
+    texte: string;
+    points: string[];
+    lien: string;
+    /** Aperçu illustratif de l'espace Nuvio (maquette Nocturne). */
+    apercu: { surtitre: string; titre: string; texte: string; avancement: string; note: string };
+  };
   dj: {
     surtitre: string;
     titre: string;
@@ -175,12 +183,19 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
     },
     nuvio: {
-      surtitre: "Nuvio, votre espace de préparation",
-      titre: "Tout votre mariage, *au même endroit*.",
+      surtitre: "L'esprit léger, avant aussi",
+      titre: "Une belle fête *se prépare ensemble*.",
       texte:
         "Après la signature, vous préparez votre mariage sur Nuvio, la plateforme que nous avons conçue : vous, notre équipe et votre DJ voyez la même version, à jour à la seconde. Fini les informations éparpillées dans vingt emails.",
       points: ["Déroulé heure par heure", "Vos musiques, moment par moment", "Devis signé en ligne", "Messagerie avec l'équipe"],
       lien: "Découvrir Nuvio",
+      apercu: {
+        surtitre: "Votre espace mariage",
+        titre: "Le grand jour se dessine.",
+        texte: "Toutes les petites choses qui font votre journée.",
+        avancement: "Avancement",
+        note: "Aperçu illustratif de votre espace de préparation",
+      },
     },
     dj: {
       surtitre: "Votre DJ",
@@ -400,12 +415,19 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
     },
     nuvio: {
-      surtitre: "Nuvio, your planning space",
-      titre: "Your whole wedding, *in one place*.",
+      surtitre: "Light-hearted, even beforehand",
+      titre: "A great party *is planned together*.",
       texte:
         "Once the quote is signed, you plan your wedding on Nuvio, the platform we designed: you, our team and your DJ all see the same version, updated to the second. No more details scattered across twenty emails.",
       points: ["Hour-by-hour schedule", "Your music, moment by moment", "Quote signed online", "Messages with the whole team"],
       lien: "Discover Nuvio (in French)",
+      apercu: {
+        surtitre: "Your wedding space",
+        titre: "The big day takes shape.",
+        texte: "All the little things that make your day.",
+        avancement: "Progress",
+        note: "Illustrative preview of your planning space",
+      },
     },
     dj: {
       surtitre: "Your DJ",

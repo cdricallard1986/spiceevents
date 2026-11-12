@@ -1,3 +1,4 @@
+import { SITE } from "@/contenu/site";
 import { describe, expect, it } from "vitest";
 import { article, entreprise, filAriane, pageFaq, serialiser } from "./donneesStructurees";
 
@@ -6,7 +7,7 @@ describe("données structurées", () => {
     const e = entreprise("fr");
     expect(e["@type"]).toBe("EntertainmentBusiness");
     expect(JSON.stringify(e.areaServed)).toContain("Île-de-France");
-    expect(e.award).toHaveLength(3);
+    expect(e.award).toHaveLength(SITE.weddingAwards.length);
     expect(e).not.toHaveProperty("aggregateRating");
     expect(e.legalName).toBe("MX ÉVÉNEMENT");
     expect(e.address).toMatchObject({ postalCode: "77144", addressLocality: "Chalifert", addressCountry: "FR" });

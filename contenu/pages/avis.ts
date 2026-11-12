@@ -14,7 +14,7 @@ export const PAGE_AVIS: Bilingue<PageAvis> = {
     seo: {
       titre: "Avis clients — DJ mariage Spice Events en Île-de-France",
       description:
-        "Les avis des mariés et des clients de Spice Events, DJ de mariage primé aux Wedding Awards Mariages.net 2022, 2024 et 2025. Paris et Île-de-France.",
+        "Les avis des mariés et des clients de Spice Events, DJ de mariage primé aux Wedding Awards Mariages.net 2022, 2024, 2025 et 2026. Paris et Île-de-France.",
     },
     hero: {
       surtitre: "Avis",
@@ -39,7 +39,7 @@ export const PAGE_AVIS: Bilingue<PageAvis> = {
     seo: {
       titre: "Reviews — Spice Events wedding DJ in Paris & Île-de-France",
       description:
-        "Reviews from couples and clients of Spice Events, the wedding DJ awarded Mariages.net Wedding Awards in 2022, 2024 and 2025. Paris and Île-de-France.",
+        "Reviews from couples and clients of Spice Events, the wedding DJ awarded Mariages.net Wedding Awards in 2022, 2024, 2025 and 2026. Paris and Île-de-France.",
     },
     hero: {
       surtitre: "Reviews",
