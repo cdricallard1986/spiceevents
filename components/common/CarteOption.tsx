@@ -3,8 +3,17 @@ import type { Option } from "@/contenu/options";
 import { Link } from "@/i18n/navigation";
 import { Photo } from "@/components/ui/Photo";
 
+type Props = {
+  option: Option;
+  locale: Locale;
+  /** Petit libellé au-dessus du titre (catégorie, page Animations). */
+  etiquette?: string;
+  /** Texte de la carte à la place du résumé de l'option. */
+  texte?: string;
+};
+
 /** Vignette d'une animation, vers sa page. */
-export function CarteOption({ option, locale }: { option: Option; locale: Locale }) {
+export function CarteOption({ option, locale, etiquette, texte }: Props) {
   return (
     <Link
       href={{ pathname: "/animations/[option]", params: { option: option.slug[locale] } }}
@@ -18,10 +27,11 @@ export function CarteOption({ option, locale }: { option: Option; locale: Locale
           className="transition-transform duration-700 group-hover:scale-105"
         />
       </div>
+      {etiquette && <p className="surtitre px-2 text-[0.6875rem]">{etiquette}</p>}
       <h3 className="px-2 font-display text-2xl group-hover:text-or">
         {option.titre[locale]} <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
       </h3>
-      <p className="px-2 text-[0.9375rem] text-sable">{option.resume[locale]}</p>
+      <p className="px-2 text-[0.9375rem] text-sable">{texte ?? option.resume[locale]}</p>
     </Link>
   );
 }

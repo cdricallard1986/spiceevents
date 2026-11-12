@@ -49,3 +49,16 @@ describe("référencement des pages prestations", () => {
     }
   });
 });
+
+describe("page Animations", () => {
+  it("chaque animation a une catégorie et une accroche dans les deux langues", async () => {
+    const { CATEGORIES_ANIMATIONS } = await import("@/contenu/pages/animations");
+    for (const o of OPTIONS) {
+      expect(CATEGORIES_ANIMATIONS[o.slug.fr], o.slug.fr).toBeDefined();
+      for (const l of ["fr", "en"] as const) expect(ANIMATIONS[l].accroches[o.slug.fr], `${l} ${o.slug.fr}`).toBeTruthy();
+    }
+    for (const l of ["fr", "en"] as const) {
+      for (const v of ANIMATIONS[l].vedettes) expect(OPTIONS.some((o) => o.slug.fr === v.option), v.option).toBe(true);
+    }
+  });
+});

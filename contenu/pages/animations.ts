@@ -1,13 +1,34 @@
-import type { Bilingue, Carte, QuestionReponse, Seo } from "../types";
+import type { CleImage } from "@/lib/images";
+import type { Bilingue, QuestionReponse, Seo } from "../types";
 
+/** Famille d'une animation, pour les filtres de la page (clé stable, libellé traduit). */
+export type CategorieAnimation = "musique" | "souvenirs" | "effets";
+
+/** Animation mise en avant en grand, en haut de la page (slug français de `contenu/options.ts`). */
+type Vedette = { option: string; image: CleImage; surtitre: string; titre: string; texte?: string };
+
+/** Page Animations, sur le modèle de la maquette « Nocturne » validée par Cédric (novembre 2026). */
 type Animations = {
   seo: Seo;
-  hero: { surtitre: string; titre: string; intro: string };
-  intro: { surtitre: string; titre: string; paragraphes: string[]; citation: string };
-  options: { surtitre: string; titre: string; intro: string };
-  idees: { surtitre: string; titre: string; intro: string; liste: Carte[]; note: string };
-  faq: { surtitre: string; titre: string; questions: QuestionReponse[] };
+  intro: { surtitre: string; titre: string; texte: string };
+  vedettes: Vedette[];
+  catalogue: { surtitre: string; titre: string; intro: string; tout: string; filtres: string; categories: Record<CategorieAnimation, string> };
+  /** Accroche de chaque carte du catalogue, par slug français d'option. */
+  accroches: Record<string, string>;
+  faq: { surtitre: string; titre: string; questions: QuestionReponse[]; lien: string };
   appel: { titre: string; texte: string };
+};
+
+/** Famille de chaque animation (slug français → catégorie). */
+export const CATEGORIES_ANIMATIONS: Record<string, CategorieAnimation> = {
+  "ouverture-de-bal": "effets",
+  "bar-a-vinyles": "musique",
+  "livre-d-or-audio": "souvenirs",
+  photobooth: "souvenirs",
+  "guirlandes-lumineuses": "effets",
+  "feux-d-artifice-de-jour": "effets",
+  "sonorisation-ceremonie-laique": "musique",
+  "sonorisation-deportee": "musique",
 };
 
 export const ANIMATIONS: Bilingue<Animations> = {
@@ -17,75 +38,70 @@ export const ANIMATIONS: Bilingue<Animations> = {
       description:
         "Photobooth, bar à vinyles, livre d'or audio, ouverture de bal, guirlandes, feux d'artifice de jour, sonorisation de cérémonie : des animations sur mesure pour votre mariage en Île-de-France.",
     },
-    hero: {
-      surtitre: "Animations · Mariages & événements",
-      titre: "Des animations qui *rassemblent* vos invités.",
-      intro:
-        "Musique, lumière, souvenirs à emporter : chaque animation est pensée pour rythmer un moment fort, de la cérémonie à la dernière danse.",
-    },
     intro: {
-      surtitre: "Notre approche",
-      titre: "Le bon détail, *au bon moment*.",
-      paragraphes: [
-        "Un bel événement se joue aussi dans les détails. Nous concevons des animations sur mesure — musique, lumière, photobooth, effets spéciaux — pour captiver, surprendre et rassembler vos invités.",
-        "Cérémonie, cocktail, dîner, soirée dansante ou temps fort d'un événement professionnel : nous vous aidons à choisir les animations qui servent vraiment votre journée, et nous les intégrons à son déroulé.",
-      ],
-      citation: "Transformer un instant en émotion, c'est l'art de l'animation.",
+      surtitre: "Les petits plus, les grands souvenirs",
+      titre: "Le petit plus. *Le grain de piment.*",
+      texte:
+        "Un vinyle qui rassemble, un souvenir à emporter, des étincelles au bon moment. Choisissez les ingrédients qui donnent du goût à votre fête.",
     },
-    options: {
-      surtitre: "Nos animations",
-      titre: "Huit idées pour *marquer les esprits*.",
-      intro: "Chacune a sa page : ce qui est inclus, comment ça se passe, et des photos en situation.",
+    vedettes: [
+      {
+        option: "bar-a-vinyles",
+        image: "presta-vinyles-installation",
+        surtitre: "Le cocktail a trouvé son rythme",
+        titre: "À vous de choisir le disque.",
+        texte: "Le bar à vinyles, une rencontre autour de la musique.",
+      },
+      {
+        option: "photobooth",
+        image: "presta-photobooth-invitees",
+        surtitre: "Souriez, c'est à vous",
+        titre: "Les souvenirs se partagent.",
+      },
+    ],
+    catalogue: {
+      surtitre: "À composer selon vos envies",
+      titre: "Votre fête. *Votre dose de piment.*",
+      intro: "Un peu, beaucoup, à votre goût. Nous vous aidons à composer une fête qui vous ressemble.",
+      tout: "Tout découvrir",
+      filtres: "Filtrer les animations",
+      categories: { musique: "Musique", souvenirs: "Souvenirs", effets: "Lumière & effets" },
     },
-    idees: {
-      surtitre: "Et aussi",
-      titre: "D'autres idées pour *surprendre vos invités*.",
-      intro:
-        "Pour une expérience visuelle et sonore complète, nous proposons aussi ces prestations. Parlez-nous de votre projet : nous vous conseillons celles qui s'accordent à votre lieu et à votre déroulé.",
-      liste: [
-        {
-          titre: "Vidéoprojecteur et écran",
-          texte: "Projetez vos souvenirs, un diaporama ou des messages pendant le dîner, pour des instants partagés.",
-        },
-        {
-          titre: "Éclairage du dîner",
-          texte: "Une lumière chaude et raffinée, qui sublime votre salle, vos tables et vos invités.",
-        },
-        {
-          titre: "Mise en lumière du lieu",
-          texte: "Façades, jardins, charpentes : nous révélons l'architecture de votre lieu à la nuit tombée.",
-        },
-        {
-          titre: "Nos partenaires de confiance",
-          texte: "Une envie qui ne figure pas ici ? Nous vous recommandons des prestataires avec qui nous aimons travailler.",
-        },
-      ],
-      note: "Prestations sur devis.",
+    accroches: {
+      "ouverture-de-bal": "Votre chanson, quelques étincelles et le temps qui s'arrête.",
+      "bar-a-vinyles": "Un disque choisi, une conversation qui commence. Le cocktail prend un autre tempo.",
+      "livre-d-or-audio": "Leurs rires, leurs mots, leurs voix. À réécouter longtemps.",
+      photobooth: "Des sourires spontanés. Et un souvenir à glisser dans sa poche.",
+      "guirlandes-lumineuses": "Une lumière douce pour prolonger les soirées d'été.",
+      "feux-d-artifice-de-jour": "Un instant haut en couleur pour une sortie inoubliable.",
+      "sonorisation-ceremonie-laique": "Chaque mot entendu. Chaque émotion partagée.",
+      "sonorisation-deportee": "La bonne ambiance, dans chacun de vos espaces.",
     },
     faq: {
-      surtitre: "Questions fréquentes",
-      titre: "Bon à *savoir*.",
+      surtitre: "Les réponses avant les questions",
+      titre: "Quelques détails *utiles*.",
       questions: [
         {
-          question: "Les étincelles froides et la fumée lourde sont-elles possibles dans tous les lieux ?",
+          question: "Comment choisir les animations ?",
           reponse:
-            "Non. Certains lieux sont équipés de détecteurs de fumée sensibles, incompatibles avec ces effets. Nous vérifions toujours les contraintes techniques de votre lieu avant de vous les proposer.",
+            "Nous partons de votre lieu, de votre déroulé et de vos envies. L'idée est de choisir quelques animations qui trouvent naturellement leur place dans la journée, sans l'encombrer.",
         },
         {
-          question: "Les guirlandes lumineuses peuvent-elles être installées en extérieur ?",
+          question: "Les effets sont-ils possibles dans tous les lieux ?",
           reponse:
-            "Oui : nos guirlandes s'installent en intérieur comme en extérieur — salle, jardin, terrasse ou cour — et s'intègrent à votre décoration.",
+            "La fumée lourde et les étincelles froides nécessitent de vérifier les règles du lieu et ses équipements : certains lieux ont des détecteurs de fumée sensibles. Nous étudions les possibilités avant de confirmer ces options.",
         },
         {
-          question: "Le photobooth peut-il suivre vos invités au fil de la journée ?",
+          question: "Peut-on personnaliser le photobooth ?",
           reponse:
-            "Oui : le déplacement de la borne entre le cocktail et le repas est inclus. Vos invités repartent avec leurs photos imprimées, et vous recevez toutes les photos en version numérique dès le lundi.",
+            "Oui, le cadre des photos est personnalisé pour votre événement. La prestation comprend 400 tirages, et toutes les photos vous sont envoyées en version numérique dès le lundi.",
         },
       ],
+      lien: "Toutes les questions",
     },
     appel: {
-      titre: "Composons *votre programme*.",
-      texte: "Dites-nous votre date, votre lieu et les animations qui vous tentent : Cédric vous conseille et vous prépare un devis.",
+      titre: "Un peu de Spice *change la soirée*.",
+      texte: "Choisissons ensemble les petites touches qui feront les grands souvenirs.",
     },
   },
   en: {
@@ -94,75 +110,70 @@ export const ANIMATIONS: Bilingue<Animations> = {
       description:
         "Photobooth, vinyl bar, audio guestbook, first-dance effects, string lights, daytime fireworks, ceremony sound: tailored entertainment for your wedding in Paris and Île-de-France.",
     },
-    hero: {
-      surtitre: "Entertainment · Weddings & events",
-      titre: "Entertainment that *brings your guests together*.",
-      intro:
-        "Music, light, keepsakes to take home: each idea is designed to lift a key moment, from the ceremony to the very last dance.",
-    },
     intro: {
-      surtitre: "Our approach",
-      titre: "The right detail, *at the right moment*.",
-      paragraphes: [
-        "A great event lives in the details. We design tailored entertainment — music, lighting, photobooth, special effects — to captivate, surprise and bring your guests together.",
-        "Ceremony, drinks, dinner, the dance floor or the highlight of a corporate event: we help you choose the ideas that truly serve your day, and build them into the running order.",
-      ],
-      citation: "Turning a moment into an emotion: that's the art of entertainment.",
+      surtitre: "Little extras, lasting memories",
+      titre: "The little extra. *The pinch of spice.*",
+      texte:
+        "A record that brings people together, a keepsake to take home, sparks at just the right moment. Pick the ingredients that give your party its flavour.",
     },
-    options: {
-      surtitre: "Our entertainment",
-      titre: "Eight ideas *people remember*.",
-      intro: "Each one has its own page: what's included, how it works, and photos of it in action.",
+    vedettes: [
+      {
+        option: "bar-a-vinyles",
+        image: "presta-vinyles-installation",
+        surtitre: "The drinks reception finds its rhythm",
+        titre: "You pick the record.",
+        texte: "The vinyl bar: people meeting over music.",
+      },
+      {
+        option: "photobooth",
+        image: "presta-photobooth-invitees",
+        surtitre: "Smile, it's your turn",
+        titre: "Memories are for sharing.",
+      },
+    ],
+    catalogue: {
+      surtitre: "Build it your way",
+      titre: "Your party. *Your dose of spice.*",
+      intro: "A little, a lot, just to your taste. We help you put together a party that feels like you.",
+      tout: "See everything",
+      filtres: "Filter the entertainment",
+      categories: { musique: "Music", souvenirs: "Keepsakes", effets: "Light & effects" },
     },
-    idees: {
-      surtitre: "And also",
-      titre: "More ways to *surprise your guests*.",
-      intro:
-        "For a complete sound-and-vision experience, we also offer the following. Tell us about your plans and we'll recommend what suits your venue and running order.",
-      liste: [
-        {
-          titre: "Projector and screen",
-          texte: "Show your memories, a slideshow or messages during dinner, for moments everyone shares.",
-        },
-        {
-          titre: "Dinner lighting",
-          texte: "Warm, refined light that flatters your room, your tables and your guests.",
-        },
-        {
-          titre: "Venue lighting",
-          texte: "Façades, gardens, timber beams: we bring out your venue's architecture as night falls.",
-        },
-        {
-          titre: "Our trusted partners",
-          texte: "Looking for something that isn't listed here? We'll recommend suppliers we love working with.",
-        },
-      ],
-      note: "Quoted on request.",
+    accroches: {
+      "ouverture-de-bal": "Your song, a few sparks, and time standing still.",
+      "bar-a-vinyles": "A record picked, a conversation started. The drinks reception takes on a new tempo.",
+      "livre-d-or-audio": "Their laughter, their words, their voices. To play back for years.",
+      photobooth: "Spontaneous smiles. And a keepsake to slip into a pocket.",
+      "guirlandes-lumineuses": "Soft light to make summer evenings last.",
+      "feux-d-artifice-de-jour": "A burst of colour for an unforgettable exit.",
+      "sonorisation-ceremonie-laique": "Every word heard. Every emotion shared.",
+      "sonorisation-deportee": "The right atmosphere, in every one of your spaces.",
     },
     faq: {
-      surtitre: "Frequently asked questions",
-      titre: "Good to *know*.",
+      surtitre: "Answers before you ask",
+      titre: "A few *useful details*.",
       questions: [
         {
-          question: "Can cold sparks and low fog be used in any venue?",
+          question: "How do we choose the entertainment?",
           reponse:
-            "No. Some venues have sensitive smoke detectors, which aren't compatible with these effects. We always check your venue's technical constraints before suggesting them.",
+            "We start from your venue, your schedule and what you'd love. The idea is to pick a few things that fit naturally into the day, without cluttering it.",
         },
         {
-          question: "Can the string lights go outdoors?",
+          question: "Are the effects possible in every venue?",
           reponse:
-            "Yes: our string lights work indoors and out — function room, garden, terrace or courtyard — and blend in with your décor.",
+            "Low fog and cold sparks mean checking the venue's rules and equipment: some venues have sensitive smoke detectors. We look into what's possible before confirming these options.",
         },
         {
-          question: "Can the photobooth follow your guests through the day?",
+          question: "Can the photobooth be personalised?",
           reponse:
-            "Yes: moving the booth between the drinks reception and dinner is included. Guests leave with their printed photos, and you receive every photo digitally the Monday after.",
+            "Yes, the photo frame is designed for your event. The package includes 400 prints, and all the photos are sent to you digitally the Monday after.",
         },
       ],
+      lien: "All questions",
     },
     appel: {
-      titre: "Let's build *your line-up*.",
-      texte: "Tell us your date, venue and the ideas you like: Cédric will advise you and prepare a quote.",
+      titre: "A little spice *changes the night*.",
+      texte: "Let's choose together the small touches that make the big memories.",
     },
   },
 };
