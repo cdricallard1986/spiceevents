@@ -9,7 +9,7 @@ import { imagesDuDocument, liensDuDocument, texteBrut, type DocumentArticle } fr
 import { lignesDeRepli } from "@/lib/journal/repli";
 import { ContenuArticle } from "./ContenuArticle";
 
-// `Link` de next-intl : une simple balise <a> avec l'adresse française (sans contexte de langue en test).
+// `Link` de next-intl : une simple balise <a> avec l’adresse française (sans contexte de langue en test).
 vi.mock("@/i18n/navigation", () => ({
   Link: ({ href, children }: { href: string | { pathname: string; params?: Record<string, string>; hash?: string }; children: ReactNode }) => {
     const adresse =
@@ -20,7 +20,7 @@ vi.mock("@/i18n/navigation", () => ({
   },
 }));
 
-// Réglages d'images du site (next.config.ts : qualités 70 et 80), comme au build.
+// Réglages d’images du site (next.config.ts : qualités 70 et 80), comme au build.
 const IMAGES = { ...imageConfigDefault, qualities: [70, 80] };
 const html = (document: unknown) =>
   renderToStaticMarkup(
@@ -34,7 +34,7 @@ const p = (...content: unknown[]) => ({ type: "paragraph", content });
 const doc = (...content: unknown[]) => ({ type: "doc", content });
 
 describe("ContenuArticle", () => {
-  it("rend les blocs avec les balises de l'ancien rendu MDX, un retour à la ligne entre deux blocs", () => {
+  it("rend les blocs avec les balises de l’ancien rendu MDX, un retour à la ligne entre deux blocs", () => {
     expect(
       html(
         doc(
@@ -64,7 +64,7 @@ describe("ContenuArticle", () => {
     );
   });
 
-  it("imbrique les marques : la plus étendue d'abord, à égalité le lien à l'extérieur", () => {
+  it("imbrique les marques : la plus étendue d’abord, à égalité le lien à l’extérieur", () => {
     const gras = { type: "bold" };
     const italique = { type: "italic" };
     // Un passage en gras qui contient deux liens.
@@ -100,7 +100,7 @@ describe("ContenuArticle", () => {
     ).toBe('<ol start="3">\n<li>\n<p>trois</p>\n<ul>\n<li>a</li>\n</ul>\n</li>\n</ol>\n<ol>\n<li>un</li>\n</ol>');
   });
 
-  it("n'injecte jamais de HTML : le texte est échappé", () => {
+  it("n’injecte jamais de HTML : le texte est échappé", () => {
     expect(html(doc(p(t('<script>alert("x")</script><img src=x onerror=alert(1)>'))))).toBe(
       "<p>&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt;&lt;img src=x onerror=alert(1)&gt;</p>",
     );

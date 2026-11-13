@@ -48,7 +48,7 @@ describe("emplacements", () => {
     expect(libelleEmplacement("option:disparue")).toBe("option:disparue (emplacement inconnu)");
   });
 
-  it("grands avis et pages d'option : un seul avis à la fois ; grilles : autant qu'on veut", () => {
+  it("grands avis et pages d’option : un seul avis à la fois ; grilles : autant qu’on veut", () => {
     expect(estEmplacementUnique("accueil_grand")).toBe(true);
     expect(estEmplacementUnique("mariages_grand")).toBe(true);
     expect(estEmplacementUnique("option:bar-a-vinyles")).toBe(true);
@@ -74,7 +74,7 @@ describe("filtres de la liste", () => {
     avis("Pierre & Nina", { ordre: 20, publie: false, source: "mariages_net" }),
   ];
 
-  it("par défaut : tout, dans l'ordre du site", () => {
+  it("par défaut : tout, dans l’ordre du site", () => {
     expect(filtrerAvis(liste, FILTRES_PAR_DEFAUT).map((a) => a.auteurs)).toEqual(["Juliette", "Pierre & Nina", "Clémentine & Kévin"]);
     expect(filtresActifs(FILTRES_PAR_DEFAUT)).toBe(false);
   });
@@ -115,24 +115,24 @@ describe("emplacements uniques", () => {
     avis("Beth & Liam", { emplacements: ["option:photobooth", "accueil"] }),
   ];
 
-  it("cocher un grand avis le retire à l'avis qui l'avait, sans toucher à ses autres emplacements", () => {
+  it("cocher un grand avis le retire à l’avis qui l’avait, sans toucher à ses autres emplacements", () => {
     expect(retraitsNecessaires("nouveau", ["accueil_grand", "accueil"], autres)).toEqual([
       { id: "Pierre & Nina", auteurs: "Pierre & Nina", emplacement: "accueil_grand", emplacements: ["accueil"] },
     ]);
   });
 
-  it("plusieurs emplacements uniques d'un coup ; une grille n'est jamais retirée", () => {
+  it("plusieurs emplacements uniques d’un coup ; une grille n’est jamais retirée", () => {
     const r = retraitsNecessaires("nouveau", ["mariages_grand", "option:photobooth", "accueil"], autres);
     expect(r.map((x) => `${x.auteurs}:${x.emplacement}`)).toEqual(["Harold & David:mariages_grand", "Beth & Liam:option:photobooth"]);
     expect(r[1].emplacements).toEqual(["accueil"]);
   });
 
-  it("rien à retirer à l'avis lui-même ni sans emplacement unique", () => {
+  it("rien à retirer à l’avis lui-même ni sans emplacement unique", () => {
     expect(retraitsNecessaires("Pierre & Nina", ["accueil_grand"], autres)).toEqual([]);
     expect(retraitsNecessaires("nouveau", ["accueil", "mariages"], autres)).toEqual([]);
   });
 
-  it("indique l'avis qui occupe un emplacement (hors l'avis ouvert)", () => {
+  it("indique l’avis qui occupe un emplacement (hors l’avis ouvert)", () => {
     expect(titulaire(autres, "accueil_grand")?.auteurs).toBe("Pierre & Nina");
     expect(titulaire(autres, "accueil_grand", "Pierre & Nina")).toBeUndefined();
   });

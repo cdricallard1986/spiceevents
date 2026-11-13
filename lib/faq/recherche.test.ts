@@ -8,7 +8,7 @@ const THEMES: ThemeFaq[] = [
     titre: "Musique",
     questions: [
       { question: "Peut-on choisir la playlist ?", reponse: "Oui, grâce au questionnaire musical." },
-      { question: "Jouez-vous jusqu'à l'aube ?", reponse: "Jusqu'à 4 h, plus avec des heures supplémentaires." },
+      { question: "Jouez-vous jusqu’à l’aube ?", reponse: "Jusqu’à 4 h, plus avec des heures supplémentaires." },
     ],
   },
   { id: "technique", titre: "Technique", questions: [{ question: "Quel éclairage ?", reponse: "Des lyres et des projecteurs LED." }] },
@@ -17,7 +17,7 @@ const THEMES: ThemeFaq[] = [
 describe("recherche dans la FAQ", () => {
   it("ignore la casse, les accents, les ligatures et les apostrophes", () => {
     expect(normaliser("  Éclairage  Œuvre l’Aube ")).toBe("eclairage oeuvre l aube");
-    expect(motsRecherche("L'éclairage, à 4h ?")).toEqual(["eclairage", "4h"]);
+    expect(motsRecherche("L’éclairage, à 4h ?")).toEqual(["eclairage", "4h"]);
   });
 
   it("recherche vide ou trop courte : tout est affiché", () => {
@@ -31,7 +31,7 @@ describe("recherche dans la FAQ", () => {
     expect(filtrerThemes(THEMES, "playlist lyres")).toEqual([]);
   });
 
-  it("ne modifie pas les thèmes d'origine", () => {
+  it("ne modifie pas les thèmes d’origine", () => {
     filtrerThemes(THEMES, "aube");
     expect(THEMES[0].questions).toHaveLength(2);
   });

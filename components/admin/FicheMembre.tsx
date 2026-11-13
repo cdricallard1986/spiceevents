@@ -19,15 +19,15 @@ type Props = {
 };
 
 /**
- * Champs d'un DJ ou d'un musicien (modales d'édition et de création), dans
- * l'ordre de la carte de la page Nos DJ. Contrôlés par `useModalAutosave` :
+ * Champs d’un DJ ou d’un musicien (modales d’édition et de création), dans
+ * l’ordre de la carte de la page Nos DJ. Contrôlés par `useModalAutosave` :
  * toujours éditables, même pendant un enregistrement.
  */
 export function FicheMembre({ valeur, modifier, erreurs, creerUrlEnvoi, outils }: Props) {
   const id = useId();
   const champ = (nom: ChampMembre) => `${id}-${nom}`;
 
-  /** Un champ texte d'une ligne. */
+  /** Un champ texte d’une ligne. */
   const ligne = (nom: ChampMembre, libelle: string, max: number, options: { aide?: string; placeholder?: string; anglais?: boolean; className?: string } = {}) => (
     <Champ id={champ(nom)} libelle={libelle} erreur={erreurs[nom]} max={max} valeur={String(valeur[nom] ?? "")} aide={options.aide} className={options.className}>
       {(attributs) => (
@@ -72,7 +72,7 @@ export function FicheMembre({ valeur, modifier, erreurs, creerUrlEnvoi, outils }
 
       <div className="grid gap-6 sm:grid-cols-2">
         {ligne("nom", "Nom", L.nom, { placeholder: "Kevin R.", aide: "Prénom et initiale du nom de famille, ou nom de scène." })}
-        {ligne("alias", "Autre nom", L.alias, { placeholder: "Aurélien", aide: "Facultatif : le prénom d'un nom de scène, affiché sous le nom." })}
+        {ligne("alias", "Autre nom", L.alias, { placeholder: "Aurélien", aide: "Facultatif : le prénom d’un nom de scène, affiché sous le nom." })}
         <Champ id={champ("groupe")} libelle="Section de la page" erreur={erreurs.groupe}>
           {(attributs) => (
             <select {...attributs} value={valeur.groupe} onChange={(e) => modifier({ groupe: e.target.value as GroupeEquipe })}>
@@ -93,7 +93,7 @@ export function FicheMembre({ valeur, modifier, erreurs, creerUrlEnvoi, outils }
 
       <Groupe titre="Accroche" aide="La phrase en gras, en tête de la présentation.">
         {ligne("accroche_fr", "Accroche — français", L.accroche)}
-        {ligne("accroche_en", "Accroche — anglais", L.accroche, { anglais: true, aide: "Vide = l'accroche française." })}
+        {ligne("accroche_en", "Accroche — anglais", L.accroche, { anglais: true, aide: "Vide = l’accroche française." })}
       </Groupe>
 
       <Groupe titre="Présentation" aide="Une ligne vide sépare deux paragraphes.">
@@ -108,9 +108,9 @@ export function FicheMembre({ valeur, modifier, erreurs, creerUrlEnvoi, outils }
 
       <Groupe titre="Avis de mariés" aide="Facultatif : une citation qui le nomme, avec son auteur (« Roman, mariage de juillet 2026 »).">
         {texte("avis_texte_fr", "Avis — français", L.avisTexte, 3)}
-        {texte("avis_texte_en", "Avis — anglais", L.avisTexte, 3, { anglais: true, aide: "Vide = l'avis français." })}
-        {ligne("avis_auteur_fr", "Auteur de l'avis — français", L.avisAuteur)}
-        {ligne("avis_auteur_en", "Auteur de l'avis — anglais", L.avisAuteur, { anglais: true, aide: "Vide = l'auteur en français." })}
+        {texte("avis_texte_en", "Avis — anglais", L.avisTexte, 3, { anglais: true, aide: "Vide = l’avis français." })}
+        {ligne("avis_auteur_fr", "Auteur de l’avis — français", L.avisAuteur)}
+        {ligne("avis_auteur_en", "Auteur de l’avis — anglais", L.avisAuteur, { anglais: true, aide: "Vide = l’auteur en français." })}
       </Groupe>
 
       <Groupe titre="Lieux et clubs" aide="Facultatif : une liste de clubs ou de lieux, en petit sous la présentation.">

@@ -22,20 +22,20 @@ export type Avis = {
   emplacements: string[];
 };
 
-/** Colonnes lues (site et back office), dans l'ordre du type. */
+/** Colonnes lues (site et back office), dans l’ordre du type. */
 export const COLONNES_AVIS =
   "id, auteurs, role_fr, role_en, categorie, texte_fr, texte_en, citation_fr, citation_en, source, date_avis, lien_source, publie, ordre, emplacements";
 
 /**
- * Un avis prêt à afficher dans une langue. `langue` n'est renseignée que si le
- * texte n'est pas dans la langue de la page (anglais non traduit → « fr ») :
- * le composant pose alors `lang="fr"` pour les lecteurs d'écran et les moteurs.
+ * Un avis prêt à afficher dans une langue. `langue` n’est renseignée que si le
+ * texte n’est pas dans la langue de la page (anglais non traduit → « fr ») :
+ * le composant pose alors `lang="fr"` pour les lecteurs d’écran et les moteurs.
  */
 export type AvisAffiche = {
   cle: string;
   auteurs: string;
   role?: string;
-  /** Le texte affiché : citation, extrait ou texte complet selon l'endroit. */
+  /** Le texte affiché : citation, extrait ou texte complet selon l’endroit. */
   texte: string;
   langue?: "fr";
 };

@@ -7,16 +7,16 @@ import { schemaIdArticle } from "@/lib/journal/schema";
 import { ApercuArticle } from "@/components/admin/ApercuArticle";
 
 export const metadata: Metadata = {
-  title: "Aperçu de l'article",
+  title: "Aperçu de l’article",
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
 };
 
 type Props = { params: Promise<{ id: string }> };
 
 /**
- * Aperçu d'un article, brouillon compris, avec le rendu de la page publique
+ * Aperçu d’un article, brouillon compris, avec le rendu de la page publique
  * (en-tête, corps sous `prose-nuit`, styles du site) — sans le cadre du back
- * office. Réservé à l'administrateur (garde + middleware), jamais indexé.
+ * office. Réservé à l’administrateur (garde + middleware), jamais indexé.
  */
 export default async function PageApercu({ params }: Props) {
   const { supabase } = await exigerAdmin();

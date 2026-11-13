@@ -51,14 +51,14 @@ function rendre(actions = actionsSimulees(), liste = LISTE) {
   return actions;
 }
 
-/** Noms des avis affichés, dans l'ordre. */
-const affiches = () => screen.queryAllByRole("button", { name: /^Modifier l'avis de / }).map((b) => b.getAttribute("aria-label")!.replace("Modifier l'avis de ", ""));
+/** Noms des avis affichés, dans l’ordre. */
+const affiches = () => screen.queryAllByRole("button", { name: /^Modifier l’avis de / }).map((b) => b.getAttribute("aria-label")!.replace("Modifier l’avis de ", ""));
 
 beforeEach(() => window.localStorage.clear());
 afterEach(cleanup);
 
 describe("GestionAvis — liste", () => {
-  it("affiche tous les avis dans l'ordre du site, avec statut, catégorie, source et emplacements lisibles", () => {
+  it("affiche tous les avis dans l’ordre du site, avec statut, catégorie, source et emplacements lisibles", () => {
     rendre();
     expect(affiches()).toEqual(["Pierre & Nina", "Juliette", "Clémentine & Kévin"]);
     expect(screen.getByRole("status")).toHaveTextContent("3 avis · 2 publiés");
@@ -90,25 +90,25 @@ describe("GestionAvis — liste", () => {
 
   it("monte un avis : échange avec son voisin, puis la liste suit les nouveaux rangs", async () => {
     const actions = rendre();
-    expect(screen.getByRole("button", { name: "Monter l'avis de Pierre & Nina" })).toBeDisabled();
-    expect(screen.getByRole("button", { name: "Descendre l'avis de Clémentine & Kévin" })).toBeDisabled();
-    fireEvent.click(screen.getByRole("button", { name: "Monter l'avis de Juliette" }));
+    expect(screen.getByRole("button", { name: "Monter l’avis de Pierre & Nina" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "Descendre l’avis de Clémentine & Kévin" })).toBeDisabled();
+    fireEvent.click(screen.getByRole("button", { name: "Monter l’avis de Juliette" }));
     await waitFor(() => expect(affiches()).toEqual(["Juliette", "Pierre & Nina", "Clémentine & Kévin"]));
     expect(actions.echanger).toHaveBeenCalledWith({ id: "Juliette", avecId: "Pierre & Nina", sens: "monter" });
   });
 
-  it("un échange refusé laisse l'ordre et affiche l'erreur", async () => {
+  it("un échange refusé laisse l’ordre et affiche l’erreur", async () => {
     rendre(actionsSimulees({ echanger: vi.fn(async () => ({ ok: false as const, message: "Droits refusés par la base." })) }));
-    fireEvent.click(screen.getByRole("button", { name: "Descendre l'avis de Pierre & Nina" }));
+    fireEvent.click(screen.getByRole("button", { name: "Descendre l’avis de Pierre & Nina" }));
     await waitFor(() => expect(screen.getByRole("alert")).toHaveTextContent("Droits refusés par la base."));
     expect(affiches()).toEqual(["Pierre & Nina", "Juliette", "Clémentine & Kévin"]);
   });
 });
 
-describe("GestionAvis — modale d'édition", () => {
-  it("s'enregistre seule après la frappe, sans griser les champs", async () => {
+describe("GestionAvis — modale d’édition", () => {
+  it("s’enregistre seule après la frappe, sans griser les champs", async () => {
     const actions = rendre();
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Juliette" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Juliette" }));
     const dialogue = screen.getByRole("dialog", { name: "Juliette" });
     expect(within(dialogue).getByText(/le site public se met à jour à la visite suivante/)).toBeInTheDocument();
     const role = within(dialogue).getByLabelText("Rôle — anglais");
@@ -122,7 +122,7 @@ describe("GestionAvis — modale d'édition", () => {
 
   it("compte les caractères selon les limites de la base", () => {
     rendre();
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Juliette" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Juliette" }));
     const dialogue = screen.getByRole("dialog", { name: "Juliette" });
     expect(within(dialogue).getByText("8 / 120")).toBeInTheDocument();
     fireEvent.change(within(dialogue).getByLabelText("Citation — français"), { target: { value: "a".repeat(601) } });
@@ -131,18 +131,18 @@ describe("GestionAvis — modale d'édition", () => {
   });
 
   it("erreur de validation : bordure rouge sur le champ, message, toast et pastille « non enregistré »", async () => {
-    const enregistrer = vi.fn(async () => ({ ok: false as const, message: "Indiquez les auteurs de l'avis.", erreurs: { auteurs: "Indiquez les auteurs de l'avis." } }));
+    const enregistrer = vi.fn(async () => ({ ok: false as const, message: "Indiquez les auteurs de l’avis.", erreurs: { auteurs: "Indiquez les auteurs de l’avis." } }));
     rendre(actionsSimulees({ enregistrer }));
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Juliette" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Juliette" }));
     const auteurs = screen.getByLabelText("Auteurs");
     fireEvent.change(auteurs, { target: { value: "" } });
     await waitFor(() => expect(auteurs).toHaveClass("border-erreur"), { timeout: 2000 });
     expect(auteurs).toHaveAttribute("aria-invalid", "true");
-    expect(screen.getByRole("alert")).toHaveTextContent("Indiquez les auteurs de l'avis.");
+    expect(screen.getByRole("alert")).toHaveTextContent("Indiquez les auteurs de l’avis.");
     expect(screen.getByRole("button", { name: "⚠ Non enregistré — réessayer" })).toBeInTheDocument();
   });
 
-  it("cocher un grand avis : la case dit qui l'occupe, et le toast dit à qui il a été retiré", async () => {
+  it("cocher un grand avis : la case dit qui l’occupe, et le toast dit à qui il a été retiré", async () => {
     const actions = actionsSimulees({
       enregistrer: vi.fn(async () => ({
         ok: true as const,
@@ -151,31 +151,31 @@ describe("GestionAvis — modale d'édition", () => {
       })),
     });
     rendre(actions);
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Juliette" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Juliette" }));
     const dialogue = screen.getByRole("dialog", { name: "Juliette" });
     expect(within(dialogue).getByText("Un seul avis — actuellement : Pierre & Nina")).toBeInTheDocument();
     fireEvent.click(within(dialogue).getByLabelText(/Accueil — grand avis/));
-    await waitFor(() => expect(screen.getByText(/« Accueil — grand avis » a été retiré de l'avis de Pierre & Nina/)).toBeInTheDocument(), { timeout: 2000 });
+    await waitFor(() => expect(screen.getByText(/« Accueil — grand avis » a été retiré de l’avis de Pierre & Nina/)).toBeInTheDocument(), { timeout: 2000 });
     expect(actions.enregistrer).toHaveBeenCalledWith("Juliette", expect.objectContaining({ emplacements: ["accueil_grand"] }));
   });
 
   it("publier passe par une confirmation", async () => {
     const actions = rendre();
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Clémentine & Kévin" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Clémentine & Kévin" }));
     fireEvent.click(screen.getByRole("button", { name: "Publier" }));
-    const confirmation = screen.getByRole("alertdialog", { name: "Publier l'avis ?" });
+    const confirmation = screen.getByRole("alertdialog", { name: "Publier l’avis ?" });
     expect(actions.changerPublication).not.toHaveBeenCalled();
     fireEvent.click(within(confirmation).getByRole("button", { name: "Publier" }));
     await waitFor(() => expect(actions.changerPublication).toHaveBeenCalledWith({ id: "Clémentine & Kévin", publie: true }));
     await waitFor(() => expect(screen.getByRole("button", { name: "Retirer du site" })).toBeInTheDocument());
   });
 
-  it("supprimer : confirmation qui dit que c'est définitif, puis l'avis disparaît", async () => {
+  it("supprimer : confirmation qui dit que c’est définitif, puis l’avis disparaît", async () => {
     const actions = rendre();
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'avis de Juliette" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’avis de Juliette" }));
     fireEvent.click(screen.getByRole("button", { name: "Supprimer" }));
     const confirmation = screen.getByRole("alertdialog", { name: "Supprimer définitivement ?" });
-    expect(confirmation).toHaveTextContent("C'est définitif");
+    expect(confirmation).toHaveTextContent("C’est définitif");
     // Annuler ne supprime rien.
     fireEvent.click(within(confirmation).getByRole("button", { name: "Annuler" }));
     expect(actions.supprimer).not.toHaveBeenCalled();
@@ -188,7 +188,7 @@ describe("GestionAvis — modale d'édition", () => {
 });
 
 describe("GestionAvis — création", () => {
-  it("brouillon local, puis « Créer » : l'avis arrive non publié et sa fiche s'ouvre", async () => {
+  it("brouillon local, puis « Créer » : l’avis arrive non publié et sa fiche s’ouvre", async () => {
     const actions = rendre();
     fireEvent.click(screen.getByRole("button", { name: "Nouvel avis" }));
     const dialogue = screen.getByRole("dialog", { name: "Nouvel avis" });
@@ -197,11 +197,11 @@ describe("GestionAvis — création", () => {
     fireEvent.change(within(dialogue).getByLabelText("Texte — français"), { target: { value: "Merci !" } });
     expect(within(dialogue).getByText("• Brouillon gardé sur cet appareil")).toBeInTheDocument();
     expect(JSON.parse(window.localStorage.getItem("autosave:avis:nouveau")!).valeur).toMatchObject({ auteurs: "Nouveaux mariés", texte_fr: "Merci !" });
-    // Rien n'est envoyé au serveur avant « Créer ».
+    // Rien n’est envoyé au serveur avant « Créer ».
     await act(() => new Promise((r) => setTimeout(r, 900)));
     expect(actions.creer).not.toHaveBeenCalled();
 
-    fireEvent.click(within(dialogue).getByRole("button", { name: "Créer l'avis" }));
+    fireEvent.click(within(dialogue).getByRole("button", { name: "Créer l’avis" }));
     await waitFor(() => expect(screen.getByRole("dialog", { name: "Nouveaux mariés" })).toBeInTheDocument());
     expect(actions.creer).toHaveBeenCalledWith(expect.objectContaining({ auteurs: "Nouveaux mariés", texte_fr: "Merci !" }));
     expect(window.localStorage.getItem("autosave:avis:nouveau")).toBeNull();
@@ -210,13 +210,13 @@ describe("GestionAvis — création", () => {
   });
 
   it("création refusée : erreurs sur les champs, le brouillon reste", async () => {
-    const creer = vi.fn(async () => ({ ok: false as const, message: "Le texte français de l'avis est obligatoire.", erreurs: { texte_fr: "Le texte français de l'avis est obligatoire." } }));
+    const creer = vi.fn(async () => ({ ok: false as const, message: "Le texte français de l’avis est obligatoire.", erreurs: { texte_fr: "Le texte français de l’avis est obligatoire." } }));
     rendre(actionsSimulees({ creer }));
     fireEvent.click(screen.getByRole("button", { name: "Nouvel avis" }));
     fireEvent.change(screen.getByLabelText("Auteurs"), { target: { value: "X" } });
-    fireEvent.click(screen.getByRole("button", { name: "Créer l'avis" }));
+    fireEvent.click(screen.getByRole("button", { name: "Créer l’avis" }));
     await waitFor(() => expect(screen.getByLabelText("Texte — français")).toHaveClass("border-erreur"));
-    expect(screen.getByRole("alert")).toHaveTextContent("Le texte français de l'avis est obligatoire.");
+    expect(screen.getByRole("alert")).toHaveTextContent("Le texte français de l’avis est obligatoire.");
     expect(window.localStorage.getItem("autosave:avis:nouveau")).not.toBeNull();
   });
 });

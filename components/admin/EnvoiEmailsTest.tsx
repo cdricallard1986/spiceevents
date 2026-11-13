@@ -48,7 +48,7 @@ export function EnvoiEmailsTest({ action, destinataire, resendConfigure, modeles
         setEtat(resultat);
         if (resultat.statut !== "initial") afficher(resultat.message, resultat.statut === "succes" ? "succes" : "erreur");
       } catch {
-        const message = "L'envoi n'a pas pu être lancé. Rechargez la page (la session a peut-être expiré) puis réessayez.";
+        const message = "L’envoi n’a pas pu être lancé. Rechargez la page (la session a peut-être expiré) puis réessayez.";
         setEtat({ statut: "erreur", message });
         afficher(message, "erreur");
       }
@@ -93,13 +93,13 @@ export function EnvoiEmailsTest({ action, destinataire, resendConfigure, modeles
             {destinataire || "aucune adresse sur ce compte"}
           </p>
           <p id="email-test-destinataire-aide" className="text-xs text-sable/80">
-            Toujours l&apos;adresse du compte connecté : un test ne part jamais ailleurs.
+            Toujours l’adresse du compte connecté : un test ne part jamais ailleurs.
           </p>
         </div>
 
         {!resendConfigure && (
           <p className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-            La variable <code className="font-mono">resend_api_key</code> est absente de cet environnement Vercel : l&apos;aperçu fonctionne, l&apos;envoi
+            La variable <code className="font-mono">resend_api_key</code> est absente de cet environnement Vercel : l’aperçu fonctionne, l’envoi
             échouera.
           </p>
         )}
@@ -132,12 +132,12 @@ export function EnvoiEmailsTest({ action, destinataire, resendConfigure, modeles
               <dt className="text-sable">Répondre à</dt>
               <dd className="break-words text-ivoire">{apercu.replyTo}</dd>
             </dl>
-            {/* Cadre sans script ni accès à la page (sandbox vide) : on voit le rendu, rien ne s'exécute. */}
+            {/* Cadre sans script ni accès à la page (sandbox vide) : on voit le rendu, rien ne s’exécute. */}
             <iframe
               key={`${modele}-${langue}`}
-              title={`Aperçu de l'email : ${modeles.find((m) => m.valeur === modele)?.libelle ?? modele}, ${langue === "fr" ? "français" : "anglais"}`}
-              // Le logo des emails est servi par le site en ligne : dans l'aperçu, on le prend sur ce
-              // site-ci (la politique de sécurité du back office n'autorise que ses propres images).
+              title={`Aperçu de l’email : ${modeles.find((m) => m.valeur === modele)?.libelle ?? modele}, ${langue === "fr" ? "français" : "anglais"}`}
+              // Le logo des emails est servi par le site en ligne : dans l’aperçu, on le prend sur ce
+              // site-ci (la politique de sécurité du back office n’autorise que ses propres images).
               srcDoc={apercu.html.replaceAll(SITE.logoEmail, new URL(SITE.logoEmail).pathname)}
               sandbox=""
               className="mt-4 h-[44rem] w-full border border-ligne bg-white"

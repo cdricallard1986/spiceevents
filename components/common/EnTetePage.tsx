@@ -17,7 +17,7 @@ type Props = {
   children?: ReactNode;
 };
 
-/** Grand visuel d'ouverture de page, titre (h1) posé en bas de l'image. */
+/** Grand visuel d’ouverture de page, titre (h1) posé en bas de l’image. */
 export function EnTetePage({ image, surtitre, titre, intro, pleinEcran = false, cadrage, children }: Props) {
   return (
     <section className={`relative flex items-end overflow-hidden ${pleinEcran ? "min-h-[100svh]" : "min-h-[78svh]"}`}>

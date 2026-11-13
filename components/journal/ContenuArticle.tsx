@@ -5,15 +5,15 @@ import { LienArticle } from "./LienArticle";
 import { PhotoArticle } from "./PhotoArticle";
 
 /**
- * Corps d'un article : le document de l'éditeur (déjà validé par
+ * Corps d’un article : le document de l’éditeur (déjà validé par
  * `validerDocument`) rendu en React, sans aucune chaîne HTML injectée. Mêmes
- * balises qu'au temps des fichiers MDX (p, h2, h3, ul, ol, li, blockquote,
+ * balises qu’au temps des fichiers MDX (p, h2, h3, ul, ol, li, blockquote,
  * strong, em, a, figure) sous la classe `prose-nuit` de la page ; photos par
  * `PhotoArticle`, liens par `LienArticle`. Composant serveur pur : même
  * document, même rendu.
  *
  * Comme le rendu MDX, un retour à la ligne sépare les blocs (le HTML produit
- * reste comparable octet pour octet). Les paragraphes vides de l'éditeur
+ * reste comparable octet pour octet). Les paragraphes vides de l’éditeur
  * (lignes laissées blanches) ne sont pas rendus.
  */
 export function ContenuArticle({ document }: { document: DocumentArticle }) {
@@ -74,8 +74,8 @@ function ElementDeListe({ element }: { element: ElementListe }) {
 // --- Texte en ligne --------------------------------------------------------------
 
 /**
- * Le JSON de l'éditeur porte les marques à plat, nœud par nœud (« gras »,
- * « gras + lien »…) : il faut choisir l'imbrication des balises. La marque
+ * Le JSON de l’éditeur porte les marques à plat, nœud par nœud (« gras »,
+ * « gras + lien »…) : il faut choisir l’imbrication des balises. La marque
  * qui couvre le plus de nœuds consécutifs est ouverte en premier (un passage
  * en gras qui contient deux liens donne `<strong>… <a>…</a> … <a>…</a></strong>`) ;
  * à égalité : lien, puis italique, puis gras.
@@ -101,7 +101,7 @@ function enLigne(noeuds: NoeudEnLigne[], ouvertes: Marque[] = []): ReactNode[] {
       i++;
       continue;
     }
-    // Longueur de la suite de nœuds qui portent chaque nouvelle marque, à partir d'ici.
+    // Longueur de la suite de nœuds qui portent chaque nouvelle marque, à partir d’ici.
     const etendue = (m: Marque) => {
       let j = i;
       while (j < noeuds.length && porte(noeuds[j], m)) j++;

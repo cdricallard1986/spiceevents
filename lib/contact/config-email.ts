@@ -1,7 +1,7 @@
 import type { ConfigEmail } from "./email";
 
 /**
- * Adresses des emails du formulaire, lues dans l'environnement (variables
+ * Adresses des emails du formulaire, lues dans l’environnement (variables
  * Vercel `contact_destinataire`, `contact_expediteur`), avec les valeurs par
  * défaut du site. Logique pure, partagée par le formulaire et le back office.
  */

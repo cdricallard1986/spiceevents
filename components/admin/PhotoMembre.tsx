@@ -26,9 +26,9 @@ type Props = {
 };
 
 /**
- * Portrait d'un membre : au format de la carte de la page Nos DJ (3/2).
+ * Portrait d’un membre : au format de la carte de la page Nos DJ (3/2).
  * - Vide : grande zone de dépôt (glisser une photo ou cliquer pour choisir).
- * - Avec photo : au survol, icônes en transparence PAR-DESSUS l'image
+ * - Avec photo : au survol, icônes en transparence PAR-DESSUS l’image
  *   (remplacer, retirer) ; déposer un fichier la remplace ; un clic sur la
  *   photo choisit le point gardé au recadrage (le visage).
  * Envoi direct navigateur → Storage (URL signée), jamais par une Server Action.
@@ -46,7 +46,7 @@ export function PhotoMembre({ valeur, onChange, monogramme, erreur, idErreur, cr
     setEnvoi(true);
     try {
       const r = await envoyerPhotoArticle(fichier, creerUrlEnvoi, outils);
-      // Nouvelle photo : cadrage remis au centre, à rechoisir d'un clic.
+      // Nouvelle photo : cadrage remis au centre, à rechoisir d’un clic.
       onChange({ photo_chemin: r.chemin, photo_largeur: r.largeur, photo_hauteur: r.hauteur, photo_cadrage: "50% 50%" });
       afficher(r.reduite ? `Photo envoyée (réduite à ${r.largeur} × ${r.hauteur} px). Cliquez sur le visage pour le cadrage.` : "Photo envoyée. Cliquez sur le visage pour le cadrage.");
     } catch (e) {
@@ -107,7 +107,7 @@ export function PhotoMembre({ valeur, onChange, monogramme, erreur, idErreur, cr
                 style={{ left: `${point.x}%`, top: `${point.y}%` }}
               />
             </button>
-            {/* Icônes en transparence par-dessus l'image, au survol (au doigt : au premier toucher, via focus-within). */}
+            {/* Icônes en transparence par-dessus l’image, au survol (au doigt : au premier toucher, via focus-within). */}
             <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-end gap-2 bg-gradient-to-b from-nuit/80 to-transparent p-3 opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100">
               <button
                 type="button"
@@ -167,7 +167,7 @@ export function PhotoMembre({ valeur, onChange, monogramme, erreur, idErreur, cr
       />
       {aPhoto && (
         <p className={CLASSES_AIDE}>
-          Cadrée comme sur la page Nos DJ. Cliquez sur le visage pour qu&apos;il reste dans le cadre (point orange) ; survolez la photo pour la remplacer
+          Cadrée comme sur la page Nos DJ. Cliquez sur le visage pour qu’il reste dans le cadre (point orange) ; survolez la photo pour la remplacer
           ou la retirer, ou déposez-en une autre dessus.
         </p>
       )}

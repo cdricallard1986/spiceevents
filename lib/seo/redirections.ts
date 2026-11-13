@@ -12,13 +12,13 @@ export type Redirection = {
 };
 
 /**
- * spiceevents.uk (et www) n'est pas un second site : toute adresse renvoie vers
- * la version anglaise de spiceevents.fr, qui garde seule l'autorité du domaine.
- * La règle ne s'applique que lorsque ce domaine est branché sur Vercel.
+ * spiceevents.uk (et www) n’est pas un second site : toute adresse renvoie vers
+ * la version anglaise de spiceevents.fr, qui garde seule l’autorité du domaine.
+ * La règle ne s’applique que lorsque ce domaine est branché sur Vercel.
  */
 export const DOMAINE_ANGLAIS = { hote: "(www\\.)?spiceevents\\.uk", destination: "https://www.spiceevents.fr/en" };
 
-/** Ancienne page d'option → slug français de la nouvelle page `/animations/<slug>`. */
+/** Ancienne page d’option → slug français de la nouvelle page `/animations/<slug>`. */
 export const ANCIENNES_OPTIONS: Record<string, string> = {
   "/photobooth": "photobooth",
   "/bar-a-vinyles": "bar-a-vinyles",
@@ -45,11 +45,11 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/animations-tendances": "/animations",
   "/on-recrute": "/recrutement",
   "/blog": "/journal",
-  // Murs d'eau & végétaux : prestation retirée (novembre 2026).
+  // Murs d’eau & végétaux : prestation retirée (novembre 2026).
   "/mur-d-eau-and-vegetal": "/animations",
 };
 
-/** Pages d'option retirées du nouveau site (adresse FR et EN) → page Animations de la même langue. */
+/** Pages d’option retirées du nouveau site (adresse FR et EN) → page Animations de la même langue. */
 export const OPTIONS_RETIREES: Record<string, string> = {
   "/animations/murs-d-eau-et-vegetaux": "/animations",
   "/en/entertainment/water-and-green-walls": "/en/entertainment",

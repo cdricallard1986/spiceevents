@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
- * Enregistrement automatique des modales de saisie (règle d'ergonomie de
+ * Enregistrement automatique des modales de saisie (règle d’ergonomie de
  * Cédric) : on ouvre, on modifie, on ferme — pas de bouton « Enregistrer », pas
  * de perte, et les champs restent TOUJOURS éditables (ne jamais les griser
  * pendant une sauvegarde).
@@ -11,20 +11,20 @@ import { useCallback, useEffect, useRef, useState } from "react";
  * - Miroir instantané en localStorage à chaque frappe (survit au rechargement,
  *   au plantage, à la coupure réseau), puis enregistrement serveur ~800 ms après
  *   la dernière frappe.
- * - Une seule sauvegarde à la fois, dans l'ordre : le serveur ne reçoit jamais
+ * - Une seule sauvegarde à la fois, dans l’ordre : le serveur ne reçoit jamais
  *   une ancienne valeur après une plus récente. Chaque modification incrémente
  *   un numéro de séquence ; une réponse dont la séquence est dépassée (on a
- *   retapé pendant l'envoi) est ignorée — ni statut « Enregistré », ni rappel
+ *   retapé pendant l’envoi) est ignorée — ni statut « Enregistré », ni rappel
  *   `surEnregistre` — et la nouvelle valeur part juste après.
  * - `fermer()` envoie aussitôt ce qui attend et renvoie `false` seulement si
- *   l'enregistrement a échoué : c'est le seul cas où avertir avant de fermer.
+ *   l’enregistrement a échoué : c’est le seul cas où avertir avant de fermer.
  *
  * Trois modes :
  * - `edition` : ligne existante, enregistrement serveur automatique ;
  * - `creation-locale` (entité simple) : brouillon en localStorage seulement, la
- *   ligne n'est créée qu'au clic sur « Créer » (puis `oublierBrouillon()`) ;
+ *   ligne n’est créée qu’au clic sur « Créer » (puis `oublierBrouillon()`) ;
  * - `brouillon-base` (entité à cycle de vie) : une ligne « brouillon » est
- *   créée en base dès l'ouverture, puis tout se passe comme en édition.
+ *   créée en base dès l’ouverture, puis tout se passe comme en édition.
  */
 
 export type StatutSauvegarde = "a_jour" | "modifie" | "enregistrement" | "enregistre" | "erreur" | "brouillon";
@@ -32,9 +32,9 @@ export type StatutSauvegarde = "a_jour" | "modifie" | "enregistrement" | "enregi
 type Commun<T> = {
   /** Clé du miroir localStorage, unique par fiche (ex. `avis:42`, `avis:nouveau`). */
   cle: string;
-  /** Valeur d'ouverture (celle de la base, ou le formulaire vide). */
+  /** Valeur d’ouverture (celle de la base, ou le formulaire vide). */
   valeurInitiale: T;
-  /** Délai après la dernière frappe avant l'envoi au serveur. */
+  /** Délai après la dernière frappe avant l’envoi au serveur. */
   delaiMs?: number;
   /** Appelé après un enregistrement à jour (jamais pour une réponse périmée). */
   surEnregistre?: (resultat: unknown, valeur: T) => void;
@@ -46,7 +46,7 @@ export type OptionsAutosave<T> = Commun<T> &
     | { mode: "creation-locale" }
     | {
         mode: "brouillon-base";
-        /** Crée la ligne brouillon et renvoie son identifiant (appelé une fois, à l'ouverture). */
+        /** Crée la ligne brouillon et renvoie son identifiant (appelé une fois, à l’ouverture). */
         creerBrouillon: (valeur: T) => Promise<string>;
         enregistrer: (valeur: T, id: string) => Promise<unknown>;
       }
@@ -74,7 +74,7 @@ function ecrireMiroir(cle: string, miroir: Miroir) {
   try {
     window.localStorage.setItem(PREFIXE + cle, JSON.stringify(miroir));
   } catch {
-    // Stockage plein, bloqué ou navigation privée : l'enregistrement serveur reste le filet principal.
+    // Stockage plein, bloqué ou navigation privée : l’enregistrement serveur reste le filet principal.
   }
 }
 
@@ -95,14 +95,14 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
   const [id, setId] = useState<string | null>(null);
   const [brouillonRestaure, setBrouillonRestaure] = useState(false);
 
-  // Toujours les dernières options (fonctions d'enregistrement), sans relancer les effets.
+  // Toujours les dernières options (fonctions d’enregistrement), sans relancer les effets.
   const optionsRef = useRef(options);
   useEffect(() => {
     optionsRef.current = options;
   });
 
   const valeurRef = useRef<T>(options.valeurInitiale);
-  // Empreinte de la valeur d'ouverture : un miroir pris sur une autre version de la fiche est ignoré.
+  // Empreinte de la valeur d’ouverture : un miroir pris sur une autre version de la fiche est ignoré.
   const initialeRef = useRef(JSON.stringify(options.valeurInitiale));
   const sequenceRef = useRef(0);
   const sequenceEnregistreeRef = useRef(0);
@@ -138,7 +138,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     return creationRef.current;
   }, []);
 
-  /** Une sauvegarde ; ne lève jamais d'erreur. Renvoie vrai si la dernière saisie est en base. */
+  /** Une sauvegarde ; ne lève jamais d’erreur. Renvoie vrai si la dernière saisie est en base. */
   const executer = useCallback(async (): Promise<boolean> => {
     const o = optionsRef.current;
     if (o.mode === "creation-locale") return true;
@@ -170,7 +170,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
       if (sequence !== 0) o.surEnregistre?.(resultat, envoyee);
       return true;
     } catch (e) {
-      // Échec d'une valeur déjà dépassée : la plus récente partira de toute façon.
+      // Échec d’une valeur déjà dépassée : la plus récente partira de toute façon.
       if (sequence !== sequenceRef.current) return false;
       if (monteRef.current) {
         setErreur(e);
@@ -180,7 +180,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     }
   }, [cle, obtenirId]);
 
-  /** Met une sauvegarde dans la file (une à la fois, dans l'ordre). */
+  /** Met une sauvegarde dans la file (une à la fois, dans l’ordre). */
   const sauvegarder = useCallback((): Promise<boolean> => {
     annulerMinuteur();
     const suivante = fileRef.current.then(executer);
@@ -213,7 +213,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
 
   /**
    * À appeler à la fermeture : envoie ce qui attend. `true` = on peut fermer
-   * sans rien dire ; `false` = l'enregistrement a échoué, avertir avant de fermer.
+   * sans rien dire ; `false` = l’enregistrement a échoué, avertir avant de fermer.
    */
   const fermer = useCallback(async (): Promise<boolean> => {
     if (optionsRef.current.mode === "creation-locale") return true;
@@ -227,7 +227,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     setBrouillonRestaure(false);
   }, [cle]);
 
-  // Ouverture : reprise d'un miroir laissé par un rechargement ou un plantage,
+  // Ouverture : reprise d’un miroir laissé par un rechargement ou un plantage,
   // et création de la ligne brouillon en base (une seule fois, même en StrictMode).
   useEffect(() => {
     monteRef.current = true;
@@ -251,7 +251,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     if (optionsRef.current.mode === "brouillon-base" && !creationRef.current && !idRef.current) void sauvegarder();
     return () => {
       monteRef.current = false;
-      // Démontage avec une saisie en attente : on l'envoie quand même.
+      // Démontage avec une saisie en attente : on l’envoie quand même.
       if (minuteurRef.current) {
         annulerMinuteur();
         void sauvegarder();
@@ -259,7 +259,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     };
   }, [cle, delaiMs, sauvegarder]);
 
-  // Fermeture de l'onglet après un échec : seul cas où l'on avertit (le miroir garde la saisie).
+  // Fermeture de l’onglet après un échec : seul cas où l’on avertit (le miroir garde la saisie).
   useEffect(() => {
     if (statut !== "erreur") return;
     const avertir = (e: BeforeUnloadEvent) => e.preventDefault();
@@ -271,7 +271,7 @@ export function useModalAutosave<T>(options: OptionsAutosave<T>) {
     valeur,
     modifier,
     statut,
-    /** Dernière erreur d'enregistrement (null si la dernière sauvegarde a réussi). */
+    /** Dernière erreur d’enregistrement (null si la dernière sauvegarde a réussi). */
     erreur,
     /** Identifiant de la ligne brouillon (mode `brouillon-base`). */
     id,

@@ -5,8 +5,8 @@ import { SUPABASE_CLE_PUBLIQUE, SUPABASE_URL } from "./config";
 
 /**
  * Client Supabase lié à la session du visiteur (cookies), pour les Server
- * Components et les Server Actions. Clé publique : il n'a que les droits de la
- * RLS (`est_admin()` pour l'écriture). Un client neuf par requête.
+ * Components et les Server Actions. Clé publique : il n’a que les droits de la
+ * RLS (`est_admin()` pour l’écriture). Un client neuf par requête.
  */
 export async function clientServeur() {
   const magasin = await cookies();

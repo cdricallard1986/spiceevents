@@ -4,13 +4,13 @@ import { typographier } from "@/lib/typographie";
 
 /**
  * Page « Nos DJ » : textes de la page et section du fondateur (Cédric). Les DJ
- * et musiciens de l'équipe se gèrent dans le back office (/admin/dj, table
- * `equipe`) ; leurs fiches d'origine sont dans `contenu/equipe.ts`.
+ * et musiciens de l’équipe se gèrent dans le back office (/admin/dj, table
+ * `equipe`) ; leurs fiches d’origine sont dans `contenu/equipe.ts`.
  */
 export type Membre = {
   id: string;
   nom: string;
-  /** L'autre nom sous lequel les mariés le connaissent (nom de scène ou prénom), affiché sous le nom. */
+  /** L’autre nom sous lequel les mariés le connaissent (nom de scène ou prénom), affiché sous le nom. */
   alias?: string;
   role: string;
   styles: string[];
@@ -40,13 +40,13 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     seo: {
       titre: "Nos DJ de mariage et de soirée en Île-de-France | Spice Events",
       description:
-        "Cédric (DJ Dioz) et les DJ de l'équipe Spice Events : électro, funk, house, pop-rock avec guitariste, et un saxophoniste pour le live. Une même méthode pour chaque mariage.",
+        "Cédric (DJ Dioz) et les DJ de l’équipe Spice Events : électro, funk, house, pop-rock avec guitariste, et un saxophoniste pour le live. Une même méthode pour chaque mariage.",
     },
     hero: {
-      surtitre: "L'équipe",
+      surtitre: "L’équipe",
       titre: "Nos DJ. *Le piment aux platines.*",
       intro:
-        "Des styles différents, une même exigence : lire la piste, préparer chaque soirée avec vous et faire danser toutes les générations jusqu'au bout de la nuit.",
+        "Des styles différents, une même exigence : lire la piste, préparer chaque soirée avec vous et faire danser toutes les générations jusqu’au bout de la nuit.",
     },
     fondateur: {
       surtitre: "Le fondateur",
@@ -58,8 +58,8 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
       styles: ["Tous les styles", "Mariages", "Événements"],
       accroche: "Plus de 20 ans de platines et plus de 600 mariages et événements.",
       paragraphes: [
-        "Cédric a fait de sa passion un métier : il mixe lui-même une partie des mariages et prépare toutes les soirées de l'équipe, du questionnaire musical au déroulé du jour J.",
-        "Son credo : un bon DJ ne se cache pas derrière son ordinateur, il vit la soirée avec vous. Selon votre date, c'est lui qui mixe, ou il vous présente le DJ de l'équipe qui vous ressemble.",
+        "Cédric a fait de sa passion un métier : il mixe lui-même une partie des mariages et prépare toutes les soirées de l’équipe, du questionnaire musical au déroulé du jour J.",
+        "Son credo : un bon DJ ne se cache pas derrière son ordinateur, il vit la soirée avec vous. Selon votre date, c’est lui qui mixe, ou il vous présente le DJ de l’équipe qui vous ressemble.",
       ],
       lien: { libelle: "Écouter son mix", href: MIX_CEDRIC },
       image: "presta-cedric-portrait",
@@ -72,11 +72,11 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     musiciens: {
       surtitre: "En live",
       titre: "Un saxophone *sur vos platines*.",
-      intro: "Pour le vin d'honneur ou la soirée, un musicien joue en live sur les mix du DJ.",
+      intro: "Pour le vin d’honneur ou la soirée, un musicien joue en live sur les mix du DJ.",
     },
     methode: {
       surtitre: "La même méthode",
-      titre: "Quel que soit votre DJ, *rien n'est laissé au hasard*.",
+      titre: "Quel que soit votre DJ, *rien n’est laissé au hasard*.",
       points: [
         { titre: "Préparé par Cédric", texte: "Questionnaire musical, rendez-vous de préparation et déroulé de la soirée : Cédric prépare chaque mariage avec vous, puis le transmet à votre DJ." },
         { titre: "Votre musique", texte: "Vos incontournables, les morceaux à éviter, les moments clés : le DJ arrive en connaissant votre soirée." },
@@ -112,7 +112,7 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
       accroche: "Over 20 years on the decks and more than 600 weddings and events.",
       paragraphes: [
         "Cédric turned his passion into his profession: he plays some of the weddings himself and prepares every night the team plays, from the music questionnaire to the running order on the day.",
-        "His motto: a good DJ doesn't hide behind a laptop, he lives the night with you. Depending on your date, he plays himself or introduces you to the DJ from the team who suits you best.",
+        "His motto: a good DJ doesn’t hide behind a laptop, he lives the night with you. Depending on your date, he plays himself or introduces you to the DJ from the team who suits you best.",
       ],
       lien: { libelle: "Listen to his mix", href: MIX_CEDRIC },
       image: "presta-cedric-portrait",
@@ -125,7 +125,7 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     musiciens: {
       surtitre: "Live",
       titre: "A saxophone *over your DJ set*.",
-      intro: "For the drinks reception or the party, a musician plays live over the DJ's mixes.",
+      intro: "For the drinks reception or the party, a musician plays live over the DJ’s mixes.",
     },
     methode: {
       surtitre: "The same method",

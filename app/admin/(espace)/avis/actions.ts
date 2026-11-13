@@ -7,8 +7,8 @@ import { ETIQUETTE_AVIS } from "@/lib/avis/lecture";
 import { premiereErreur, schemaEchange, schemaIdAvis, schemaPublication, validerChampsAvis } from "@/lib/avis/schema";
 import { COLONNES_AVIS, type Avis } from "@/lib/avis/types";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
-// appelable par n'importe qui avec n'importe quels arguments. Chaque export :
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public,
+// appelable par n’importe qui avec n’importe quels arguments. Chaque export :
 // `exigerAdmin()` en tête, puis Zod (lib/avis/schema.ts), écriture avec le
 // client de SESSION (RLS : est_admin()) — jamais la clé service_role —, puis
 // `revalidateTag("avis")` : les pages publiques se régénèrent à la visite suivante.
@@ -27,8 +27,8 @@ function echec(action: string, e: ErreurSupabase): ResultatEchec {
 const INTROUVABLE: ResultatEchec = { ok: false, message: "Avis introuvable : il a peut-être été supprimé. Rechargez la page." };
 
 /**
- * Un emplacement unique (grand avis, page d'option) n'appartient qu'à un avis :
- * on le retire aux autres avis qui l'avaient. Appelé APRÈS l'écriture de l'avis
+ * Un emplacement unique (grand avis, page d’option) n’appartient qu’à un avis :
+ * on le retire aux autres avis qui l’avaient. Appelé APRÈS l’écriture de l’avis
  * (un échec laisse au pire deux titulaires — le site affiche le premier —,
  * jamais aucun).
  */
@@ -36,7 +36,7 @@ async function libererEmplacements(supabase: Supabase, id: string, emplacements:
   const uniques = emplacementsUniques(emplacements);
   if (uniques.length === 0) return { retraits: [] };
   const { data: autres, error } = await supabase.from("avis").select("id, auteurs, emplacements").overlaps("emplacements", uniques).neq("id", id);
-  const avertissement = "L'avis est enregistré, mais l'emplacement n'a pas pu être retiré à l'avis qui l'avait : décochez-le à la main.";
+  const avertissement = "L’avis est enregistré, mais l’emplacement n’a pas pu être retiré à l’avis qui l’avait : décochez-le à la main.";
   if (error) {
     console.warn(`[admin] Avis — retrait des emplacements uniques : ${error.code ?? ""} ${error.message}`);
     return { retraits: [], avertissement };
@@ -47,7 +47,7 @@ async function libererEmplacements(supabase: Supabase, id: string, emplacements:
   for (const [autreId, restants] of parAvis) {
     const { error: e } = await supabase.from("avis").update({ emplacements: restants }).eq("id", autreId);
     if (e) {
-      console.warn(`[admin] Avis — retrait d'emplacement sur ${autreId} : ${e.code ?? ""} ${e.message}`);
+      console.warn(`[admin] Avis — retrait d’emplacement sur ${autreId} : ${e.code ?? ""} ${e.message}`);
       return { retraits: faits, avertissement };
     }
     faits.push(...retraits.filter((r) => r.id === autreId));
@@ -55,7 +55,7 @@ async function libererEmplacements(supabase: Supabase, id: string, emplacements:
   return { retraits: faits };
 }
 
-/** Enregistrement automatique de la modale d'édition (tous les champs du formulaire). */
+/** Enregistrement automatique de la modale d’édition (tous les champs du formulaire). */
 export async function enregistrerAvis(id: unknown, champs: unknown): Promise<ResultatAvis> {
   const { supabase } = await exigerAdmin();
   const idValide = schemaIdAvis.safeParse(id);
@@ -93,7 +93,7 @@ export async function creerAvis(champs: unknown): Promise<ResultatAvis> {
   return { ok: true, avis, retraits, ...(avertissement ? { avertissement } : {}) };
 }
 
-/** Publier ou retirer du site (confirmé dans l'interface). */
+/** Publier ou retirer du site (confirmé dans l’interface). */
 export async function changerPublication(entree: unknown): Promise<ResultatPublication> {
   const { supabase } = await exigerAdmin();
   const v = schemaPublication.safeParse(entree);
@@ -105,7 +105,7 @@ export async function changerPublication(entree: unknown): Promise<ResultatPubli
   return { ok: true, avis: data as Avis };
 }
 
-/** Suppression définitive (confirmée dans l'interface ; l'historique reste dans audit_log). */
+/** Suppression définitive (confirmée dans l’interface ; l’historique reste dans audit_log). */
 export async function supprimerAvis(id: unknown): Promise<ResultatSuppression> {
   const { supabase } = await exigerAdmin();
   const v = schemaIdAvis.safeParse(id);
@@ -125,7 +125,7 @@ export async function echangerOrdre(entree: unknown): Promise<ResultatEchange> {
   const { id, avecId, sens } = v.data;
 
   const { data, error } = await supabase.from("avis").select("id, ordre").in("id", [id, avecId]);
-  if (error) return echec("Changement d'ordre", error);
+  if (error) return echec("Changement d’ordre", error);
   const a = data?.find((l) => l.id === id);
   const b = data?.find((l) => l.id === avecId);
   if (!a || !b) return INTROUVABLE;
@@ -135,7 +135,7 @@ export async function echangerOrdre(entree: unknown): Promise<ResultatEchange> {
     const { error: e } = await supabase.from("avis").update({ ordre }).eq("id", cible);
     if (e) {
       revalidateTag(ETIQUETTE_AVIS);
-      return { ...echec("Changement d'ordre", e), message: "Changement d'ordre interrompu : rechargez la page pour voir l'ordre réel." };
+      return { ...echec("Changement d’ordre", e), message: "Changement d’ordre interrompu : rechargez la page pour voir l’ordre réel." };
     }
   }
   revalidateTag(ETIQUETTE_AVIS);

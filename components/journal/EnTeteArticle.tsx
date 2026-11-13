@@ -5,8 +5,8 @@ import { srcImage } from "@/lib/journal/constantes";
 import type { Article } from "@/lib/journal/types";
 
 /**
- * Ouverture d'un article : même gabarit que `EnTetePage` (photo, voile, titre h1 en
- * bas), avec la couverture de l'article, qui n'est pas dans le registre d'images.
+ * Ouverture d’un article : même gabarit que `EnTetePage` (photo, voile, titre h1 en
+ * bas), avec la couverture de l’article, qui n’est pas dans le registre d’images.
  */
 export function EnTeteArticle({ article: a }: { article: Article }) {
   return (

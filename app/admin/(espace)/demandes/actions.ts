@@ -7,14 +7,14 @@ import type { ResultatSuivi } from "@/lib/demandes/admin";
 import { validerSuivi } from "@/lib/demandes/schema";
 import { COLONNES_SUIVI, type SuiviDemande } from "@/lib/demandes/types";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
-// appelable par n'importe qui avec n'importe quels arguments. Ici une seule
-// action d'écriture et un comptage : `exigerAdmin()` en tête, puis Zod (lib/demandes/schema.ts), écriture
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public,
+// appelable par n’importe qui avec n’importe quels arguments. Ici une seule
+// action d’écriture et un comptage : `exigerAdmin()` en tête, puis Zod (lib/demandes/schema.ts), écriture
 // avec le client de SESSION (RLS : est_admin(), droit `update` limité aux
 // colonnes statut et note_interne) — jamais la clé service_role.
 // Pas de suppression : la purge RGPD sera une tâche planifiée.
 
-/** Enregistrement automatique de la fiche d'une demande : statut et/ou note interne. */
+/** Enregistrement automatique de la fiche d’une demande : statut et/ou note interne. */
 export async function enregistrerSuiviDemande(entree: unknown): Promise<ResultatSuivi> {
   const { supabase } = await exigerAdmin();
   const v = validerSuivi(entree);

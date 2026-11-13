@@ -4,16 +4,16 @@ import { CHAMPS, LANGUES, LIMITES, TYPES_EVENEMENT, type Champ, type Langue, typ
 /**
  * Validation du formulaire de contact (logique pure, testée).
  * La sécurité ne dépend jamais du navigateur : ce schéma est appliqué par la
- * Server Action, le formulaire ne fait qu'afficher les erreurs renvoyées.
+ * Server Action, le formulaire ne fait qu’afficher les erreurs renvoyées.
  */
 
 export { CHAMPS, LANGUES, LIBELLES_TYPE, LIMITES, TYPES_EVENEMENT } from "./constantes";
 export type { Champ, Langue, TypeEvenement } from "./constantes";
 
-/** En dessous, l'envoi est trop rapide pour un humain : c'est un robot. */
+/** En dessous, l’envoi est trop rapide pour un humain : c’est un robot. */
 export const DELAI_MINIMUM_MS = 3000;
 
-/** Erreurs par champ ; `formulaire` pour ce qui ne dépend pas d'un champ visible. */
+/** Erreurs par champ ; `formulaire` pour ce qui ne dépend pas d’un champ visible. */
 export type ErreursChamps = Partial<Record<Champ | "formulaire", string>>;
 
 export type Demande = {
@@ -31,7 +31,7 @@ export type Demande = {
   langue: Langue;
   /** Champ piège : invisible pour un humain, donc vide. */
   site_web: string;
-  /** Horodatages (ms) d'ouverture et d'envoi du formulaire, pris par le navigateur. */
+  /** Horodatages (ms) d’ouverture et d’envoi du formulaire, pris par le navigateur. */
   ouvert_le: number;
   envoye_le: number;
 };
@@ -44,12 +44,12 @@ const MESSAGES = {
     trop_long: (max: number) => `${max} caractères maximum.`,
     email: "Indiquez une adresse email valide.",
     telephone: "Indiquez un numéro valide (ex. 06 12 34 56 78 ou +44 20 7946 0958).",
-    type: "Choisissez le type d'événement.",
+    type: "Choisissez le type d’événement.",
     date: "Indiquez une date valide.",
     date_passee: "Cette date est déjà passée.",
     invites: `Indiquez un nombre entier entre 1 et ${LIMITES.invitesMax}.`,
     message: "Dites-nous quelques mots sur votre projet.",
-    formulaire: "Le formulaire n'a pas pu être vérifié. Rechargez la page puis réessayez.",
+    formulaire: "Le formulaire n’a pas pu être vérifié. Rechargez la page puis réessayez.",
   },
   en: {
     prenoms: "Please enter your first names.",
@@ -67,7 +67,7 @@ const MESSAGES = {
   },
 } as const;
 
-/** Numéro saisi → format international (+33…), ou null s'il n'est pas plausible. */
+/** Numéro saisi → format international (+33…), ou null s’il n’est pas plausible. */
 export function normaliserTelephone(saisie: string): string | null {
   const s = saisie.trim();
   // Seuls chiffres, +, espaces et séparateurs usuels sont admis.
@@ -84,7 +84,7 @@ export function normaliserTelephone(saisie: string): string | null {
   return /^\+[1-9]\d{7,14}$/.test(n) ? n : null;
 }
 
-/** Date du jour à Paris (AAAA-MM-JJ) : c'est elle qui compte pour une date « passée ». */
+/** Date du jour à Paris (AAAA-MM-JJ) : c’est elle qui compte pour une date « passée ». */
 export function dateDuJourParis(maintenant: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris", year: "numeric", month: "2-digit", day: "2-digit" }).format(
     maintenant,
@@ -99,14 +99,14 @@ function dateExiste(iso: string): boolean {
 
 /** Chaîne vide (ou absente) → undefined, pour les champs facultatifs. */
 const vide = (v: unknown) => (typeof v !== "string" || v.trim() === "" ? undefined : v);
-/** Espaces multiples et retours à la ligne → un seul espace (champs d'une ligne). */
+/** Espaces multiples et retours à la ligne → un seul espace (champs d’une ligne). */
 const uneLigne = (v: unknown) => (typeof v === "string" ? v.replace(/\s+/g, " ").trim() : v);
 
 function creerSchema(langue: Langue, aujourdhui: string) {
   const m = MESSAGES[langue];
 
-  // Prénoms et nom sont repris dans les emails : on n'y accepte ni lien ni
-  // adresse web (« arnaque.com »), pour qu'ils ne servent pas à de l'hameçonnage.
+  // Prénoms et nom sont repris dans les emails : on n’y accepte ni lien ni
+  // adresse web (« arnaque.com »), pour qu’ils ne servent pas à de l’hameçonnage.
   const nomPropre = (requis: string) =>
     z.preprocess(
       uneLigne,
@@ -194,12 +194,12 @@ export function validerDemande(brut: Record<string, unknown>, maintenant: Date =
   return { ok: false, langue, erreurs };
 }
 
-/** Champ piège rempli, ou formulaire envoyé trop vite : ce n'est pas un humain. */
+/** Champ piège rempli, ou formulaire envoyé trop vite : ce n’est pas un humain. */
 export function estRobot(demande: Demande): boolean {
   return demande.site_web.trim() !== "" || demande.envoye_le - demande.ouvert_le < DELAI_MINIMUM_MS;
 }
 
-/** Lit les champs connus d'un FormData, en texte (un fichier envoyé à la place compte pour vide). */
+/** Lit les champs connus d’un FormData, en texte (un fichier envoyé à la place compte pour vide). */
 export function lireFormulaire(formulaire: FormData): Record<Champ, string> {
   const lu = {} as Record<Champ, string>;
   for (const champ of CHAMPS) {

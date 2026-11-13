@@ -27,21 +27,21 @@ function rendre(action: (e: EntreeEnvoiTest) => Promise<EtatEnvoiTest>, resendCo
 }
 
 describe("EnvoiEmailsTest", () => {
-  it("affiche le destinataire sans champ de saisie, et l'aperçu dans un cadre sans script", () => {
+  it("affiche le destinataire sans champ de saisie, et l’aperçu dans un cadre sans script", () => {
     rendre(vi.fn());
     expect(screen.getByText("moi@exemple.fr", { selector: "p" })).toBeInTheDocument();
     expect(screen.queryByRole("textbox")).toBeNull();
-    const cadre = screen.getByTitle(/Aperçu de l'email/);
+    const cadre = screen.getByTitle(/Aperçu de l’email/);
     expect(cadre).toHaveAttribute("sandbox", "");
     expect(cadre).toHaveAttribute("srcdoc", "<p>notif FR</p>");
   });
 
-  it("change l'aperçu avec le modèle et la langue, et n'envoie que ces deux choix", async () => {
+  it("change l’aperçu avec le modèle et la langue, et n’envoie que ces deux choix", async () => {
     const action = vi.fn(async (): Promise<EtatEnvoiTest> => ({ statut: "succes", message: "Email de test envoyé à moi@exemple.fr." }));
     rendre(action);
     fireEvent.change(screen.getByLabelText("Modèle"), { target: { value: "accuse" } });
     fireEvent.change(screen.getByLabelText("Langue de la demande"), { target: { value: "en" } });
-    expect(screen.getByTitle(/Aperçu de l'email/)).toHaveAttribute("srcdoc", "<p>accusé EN</p>");
+    expect(screen.getByTitle(/Aperçu de l’email/)).toHaveAttribute("srcdoc", "<p>accusé EN</p>");
     expect(screen.getByText("[TEST] accusé EN")).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Envoyer le test" }));
@@ -49,8 +49,8 @@ describe("EnvoiEmailsTest", () => {
     await waitFor(() => expect(screen.getAllByText("Email de test envoyé à moi@exemple.fr.").length).toBeGreaterThan(0));
   });
 
-  it("affiche l'erreur de Resend et prévient quand la clé manque", async () => {
-    rendre(async () => ({ statut: "erreur", message: "Resend a refusé l'envoi — validation_error : domaine non vérifié" }), false);
+  it("affiche l’erreur de Resend et prévient quand la clé manque", async () => {
+    rendre(async () => ({ statut: "erreur", message: "Resend a refusé l’envoi — validation_error : domaine non vérifié" }), false);
     expect(screen.getByText(/est absente de cet environnement Vercel/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Envoyer le test" }));
     await waitFor(() => expect(screen.getAllByRole("alert").some((e) => e.textContent?.includes("validation_error"))).toBe(true));

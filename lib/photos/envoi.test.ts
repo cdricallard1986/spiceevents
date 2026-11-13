@@ -4,7 +4,7 @@ import { MOTIF_CHEMIN_STOCKAGE, TAILLE_MAX_OCTETS, altDepuisNomFichier, cheminEn
 describe("cheminEnvoi", () => {
   const le = new Date("2026-10-18T22:15:00.123Z");
 
-  it("range l'envoi par année et mois, avec horodatage et aléa, extension tirée du type MIME", () => {
+  it("range l’envoi par année et mois, avec horodatage et aléa, extension tirée du type MIME", () => {
     expect(cheminEnvoi("image/jpeg", le, "a1b2c3d4e5f6")).toBe(`galeries/2026/10/${le.getTime()}-a1b2c3d4e5f6.jpg`);
     expect(cheminEnvoi("image/webp", le, "a1b2c3d4e5f6").endsWith(".webp")).toBe(true);
     expect(cheminEnvoi("image/avif", le, "a1b2c3d4e5f6").endsWith(".avif")).toBe(true);
@@ -24,7 +24,7 @@ describe("cheminEnvoi", () => {
 });
 
 describe("estCheminStockage", () => {
-  it("n'accepte que les envois du back office", () => {
+  it("n’accepte que les envois du back office", () => {
     expect(estCheminStockage("galeries/2026/10/1-abcdef.jpg")).toBe(true);
     for (const refuse of [
       "/images/hero.jpg",
@@ -75,7 +75,7 @@ describe("altDepuisNomFichier", () => {
     expect(altDepuisNomFichier("Mariés sur la piste.JPEG")).toBe("Mariés sur la piste");
   });
 
-  it("ne propose rien pour un nom d'appareil photo", () => {
+  it("ne propose rien pour un nom d’appareil photo", () => {
     for (const nom of ["IMG_1234.jpg", "DSC01234.JPG", "PXL_20250612_183012345.jpg", "20250612_183012.jpg", "IMG_1234 (2).jpeg", ".jpg"]) {
       expect(altDepuisNomFichier(nom), nom).toBe("");
     }

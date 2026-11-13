@@ -6,8 +6,8 @@ import { CommandesSuite } from "./CommandesSuite";
 
 /**
  * Comportements SQL (fonction `tests_sql()`, migration 0010) : un cas par
- * ligne, vert s'il est conforme, rouge sinon, avec ce qui a été observé.
- * L'exécution vit dans `useSuite`, appelé par `OngletsTests`.
+ * ligne, vert s’il est conforme, rouge sinon, avec ce qui a été observé.
+ * L’exécution vit dans `useSuite`, appelé par `OngletsTests`.
  */
 export function SuiteSql({ suite }: { suite: Suite<ResultatSuiteSql> }) {
   const { resultat } = suite;

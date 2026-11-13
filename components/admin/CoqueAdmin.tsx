@@ -28,12 +28,12 @@ function ecrireReplie(replie: boolean) {
 
 type Props = {
   children: ReactNode;
-  /** Numéro de version (package.json) : le back office n'a qu'un utilisateur, Cédric. */
+  /** Numéro de version (package.json) : le back office n’a qu’un utilisateur, Cédric. */
   version: string;
   email: string;
-  /** Demandes au statut « nouvelle » (pastille du menu) ; null si la base n'a pas répondu. */
+  /** Demandes au statut « nouvelle » (pastille du menu) ; null si la base n’a pas répondu. */
   nouvellesDemandes: number | null;
-  /** Relit ce nombre (Server Action) : à chaque page et au retour sur l'onglet. */
+  /** Relit ce nombre (Server Action) : à chaque page et au retour sur l’onglet. */
   relireDemandes: () => Promise<number | null>;
 };
 
@@ -58,7 +58,7 @@ export function CoqueAdmin({ children, version, email, nouvellesDemandes, relire
   useEffect(() => setTiroir(false), [chemin]);
   useEffect(() => setNouvelles(nouvellesDemandes), [nouvellesDemandes]);
 
-  // Pastille à jour : à chaque changement de page, au retour sur l'onglet, et toutes les deux minutes.
+  // Pastille à jour : à chaque changement de page, au retour sur l’onglet, et toutes les deux minutes.
   useEffect(() => {
     let actif = true;
     const maj = () => {
@@ -174,8 +174,8 @@ export function libelleNouvelles(n: number): string {
 function Pastille({ nombre, actif, replie }: { nombre: number; actif: boolean; replie: boolean }) {
   const couleurs = actif ? "bg-nuit text-or" : "bg-or text-nuit";
   return (
-    // Menu replié : un petit carré au coin de l'icône (comme sur le burger mobile), sans la cacher ;
-    // le nombre reste dans l'infobulle de l'entrée.
+    // Menu replié : un petit carré au coin de l’icône (comme sur le burger mobile), sans la cacher ;
+    // le nombre reste dans l’infobulle de l’entrée.
     replie ? (
       <span aria-hidden="true" className={`absolute left-[calc(50%+0.375rem)] top-2.5 size-2.5 ${actif ? "bg-nuit" : "bg-or"}`} />
     ) : (

@@ -4,12 +4,12 @@ import { describe, expect, it } from "vitest";
 
 /**
  * `dynamicParams` des pages publiques. Next applique `dynamicParams = false` à
- * une adresse dès qu'UN de ses segments le déclare : posé sur
+ * une adresse dès qu’UN de ses segments le déclare : posé sur
  * `app/[locale]/layout.tsx`, il interdirait aussi les articles du journal
  * publiés après le déploiement. Il est donc déclaré page par page :
  *
- * - toutes les pages : `false`, pour qu'une « langue » inconnue
- *   (`/favicon.ico`, `/x.png`… hors middleware) réponde 404 au lieu d'une
+ * - toutes les pages : `false`, pour qu’une « langue » inconnue
+ *   (`/favicon.ico`, `/x.png`… hors middleware) réponde 404 au lieu d’une
  *   erreur 500 (garde-fou `hasLocale` du layout, qui ne suffit pas seul) ;
  * - sauf `journal/[slug]` (`true` : article rendu à sa première visite) et la
  *   page 404 `[...reste]`.
@@ -31,11 +31,11 @@ const EXCEPTIONS: Record<string, string> = {
 };
 
 describe("pages publiques : dynamicParams", () => {
-  it("le layout des langues ne le déclare pas (il s'imposerait aux articles du journal)", () => {
+  it("le layout des langues ne le déclare pas (il s’imposerait aux articles du journal)", () => {
     expect(readFileSync(join(RACINE, "layout.tsx"), "utf8")).not.toMatch(/export const dynamicParams/);
   });
 
-  it("chaque page le met à false, sauf l'article du journal (true) et la page 404", () => {
+  it("chaque page le met à false, sauf l’article du journal (true) et la page 404", () => {
     const liste = pages(RACINE).sort();
     expect(liste.length).toBeGreaterThanOrEqual(16);
     for (const page of liste) {

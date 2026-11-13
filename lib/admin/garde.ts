@@ -13,14 +13,14 @@ export type ContexteAdmin = {
 /**
  * Garde du back office : à appeler EN TÊTE de chaque page et de chaque Server
  * Action admin. Le middleware vérifie déjà la session, mais :
- * - une Server Action est un point d'entrée HTTP public, appelable sans passer
+ * - une Server Action est un point d’entrée HTTP public, appelable sans passer
  *   par la page ;
  * - seul `est_admin()` (ligne dans `administrateurs`) donne accès : un compte
- *   créé par erreur n'a aucun droit.
+ *   créé par erreur n’a aucun droit.
  *
- * Renvoie le client lié à la session et l'utilisateur, ou redirige vers la
- * connexion (avec la raison). Mise en cache pour la durée d'une requête : la
- * mise en page et la page ne paient qu'une vérification.
+ * Renvoie le client lié à la session et l’utilisateur, ou redirige vers la
+ * connexion (avec la raison). Mise en cache pour la durée d’une requête : la
+ * mise en page et la page ne paient qu’une vérification.
  */
 export const exigerAdmin = cache(async (): Promise<ContexteAdmin> => {
   const supabase = await clientServeur();

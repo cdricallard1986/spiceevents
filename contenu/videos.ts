@@ -18,7 +18,7 @@ export const VIDEOS = {
     date: "2026-02-25",
     titre: { fr: "Des mariages inoubliables by Spice Events", en: "Unforgettable weddings by Spice Events" },
     description: {
-      fr: "Au cœur des mariages signés Spice Events : l'énergie, l'émotion et l'ambiance d'une soirée où la piste ne désemplit pas.",
+      fr: "Au cœur des mariages signés Spice Events : l’énergie, l’émotion et l’ambiance d’une soirée où la piste ne désemplit pas.",
       en: "Inside the weddings by Spice Events: the energy, the emotion and the atmosphere of a night when the dance floor never empties.",
     },
   },
@@ -42,7 +42,7 @@ export const VIDEOS = {
   },
 } satisfies Record<string, Video>;
 
-/** Lecteur YouTube en mode confidentialité renforcée (aucun cookie tant que la vidéo n'est pas lancée). */
+/** Lecteur YouTube en mode confidentialité renforcée (aucun cookie tant que la vidéo n’est pas lancée). */
 export function adresseLecteur(id: string): string {
   return `https://www.youtube-nocookie.com/embed/${id}`;
 }

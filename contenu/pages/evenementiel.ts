@@ -25,13 +25,13 @@ type Evenementiel = {
   appel: { titre: string; texte: string };
 };
 
-/** Photos d'en-tête de la page (secours : la liste vit en base, `entete:evenementiel`, gérée dans le back office). */
+/** Photos d’en-tête de la page (secours : la liste vit en base, `entete:evenementiel`, gérée dans le back office). */
 export const IMAGES_ENTETE_EVENEMENTIEL: CleImage[] = ["presta-gala-salle"];
 
 export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
   fr: {
     seo: {
-      titre: "Soirées privées & événements d'entreprise en Île-de-France | Spice Events",
+      titre: "Soirées privées & événements d’entreprise en Île-de-France | Spice Events",
       description:
         "Anniversaires, soirées privées, séminaires, galas, lancements de produit : direction musicale, sonorisation, éclairage et coordination clé en main à Paris et en Île-de-France.",
     },
@@ -45,7 +45,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
       surtitre: "Le piment de vos temps forts",
       titre: "Un événement à votre image, *maîtrisé de bout en bout.*",
       paragraphes: [
-        "Chaque temps fort est unique et mérite d'être vécu pleinement. Notre mission : faire de votre événement un moment inoubliable et à votre image, avec un service professionnel, innovant et humain.",
+        "Chaque temps fort est unique et mérite d’être vécu pleinement. Notre mission : faire de votre événement un moment inoubliable et à votre image, avec un service professionnel, innovant et humain.",
         "Musique, son, lumière, animations et coordination : tout est pensé pour que vous puissiez profiter de votre événement — ou vous concentrer sur vos invités et votre message.",
       ],
     },
@@ -62,17 +62,17 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
         {
           titre: "Entreprises",
           texte:
-            "Une prestation clé en main, à l'image de votre marque : prises de parole, remises de prix et projections intégrées au déroulé, puis une soirée qui rassemble vos équipes.",
+            "Une prestation clé en main, à l’image de votre marque : prises de parole, remises de prix et projections intégrées au déroulé, puis une soirée qui rassemble vos équipes.",
           exemples: ["Séminaires et conférences", "Galas et soirées annuelles", "Lancements de produit", "Soirées de networking"],
           image: "presta-gala-bleu",
         },
       ],
     },
     services: {
-      surtitre: "Une équipe, toute l'ambiance",
-      titre: "Vous avez l'occasion. *Nous avons le piment.*",
+      surtitre: "Une équipe, toute l’ambiance",
+      titre: "Vous avez l’occasion. *Nous avons le piment.*",
       liste: [
-        { icone: "♪", titre: "La musique", texte: "Un DJ qui s'adapte à votre public, du cocktail au dernier rappel." },
+        { icone: "♪", titre: "La musique", texte: "Un DJ qui s’adapte à votre public, du cocktail au dernier rappel." },
         { icone: "◌", titre: "Le son", texte: "Une diffusion claire, adaptée aux prises de parole et à chaque espace." },
         { icone: "✳", titre: "La lumière", texte: "Une mise en scène qui révèle le lieu et donne le ton." },
         { icone: "→", titre: "La coordination", texte: "Un déroulé préparé avec vos prestataires, pour profiter du moment." },
@@ -100,7 +100,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
       ],
       vedettes: [
         { image: "presta-lancement", surtitre: "Lancements & rencontres", titre: "Mettre vos idées en lumière." },
-        { image: "presta-dj-scene", surtitre: "La soirée continue", titre: "Et libérer l'énergie." },
+        { image: "presta-dj-scene", surtitre: "La soirée continue", titre: "Et libérer l’énergie." },
       ],
     },
     video: {
@@ -109,20 +109,20 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
       intro: "Cédric, alias DJ Dioz, en altitude au Grand-Bornand : la même lecture du public et la même énergie, quel que soit le décor.",
     },
     galerie: { surtitre: "En images", titre: "Nos nuits *en action*.", lien: "Voir la galerie" },
-    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu'en disent *nos clients.*" },
+    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu’en disent *nos clients.*" },
     faq: {
       surtitre: "Questions fréquentes",
       titre: "Tout savoir sur *nos prestations*.",
       questions: [
         {
-          question: "Intervenez-vous pour des événements d'entreprise ?",
+          question: "Intervenez-vous pour des événements d’entreprise ?",
           reponse:
-            "Oui : séminaires, galas, soirées annuelles, lancements de produit… Notre approche reste la même qu'en mariage : une organisation rigoureuse, une ambiance maîtrisée et une prestation clé en main, adaptée à votre image.",
+            "Oui : séminaires, galas, soirées annuelles, lancements de produit… Notre approche reste la même qu’en mariage : une organisation rigoureuse, une ambiance maîtrisée et une prestation clé en main, adaptée à votre image.",
         },
         {
           question: "Pouvez-vous sonoriser plusieurs espaces en même temps (cocktail, scène, piste) ?",
           reponse:
-            "Oui. Nous sonorisons et éclairons plusieurs zones avec du matériel dédié à chacune : chaque espace a son ambiance, avec une cohérence musicale et technique sur l'ensemble de l'événement.",
+            "Oui. Nous sonorisons et éclairons plusieurs zones avec du matériel dédié à chacune : chaque espace a son ambiance, avec une cohérence musicale et technique sur l’ensemble de l’événement.",
         },
         {
           question: "Pouvez-vous intégrer des discours ou des moments clés ?",
@@ -130,9 +130,9 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
             "Absolument. Discours, remises de prix, projections : nous les intégrons au déroulé technique et musical pour que chaque temps fort soit mis en valeur.",
         },
         {
-          question: "Pouvez-vous adapter l'ambiance à l'image de notre entreprise ?",
+          question: "Pouvez-vous adapter l’ambiance à l’image de notre entreprise ?",
           reponse:
-            "Oui. Nous personnalisons l'ambiance musicale et visuelle pour refléter l'identité et les valeurs de votre marque, dans le ton et selon les objectifs de votre événement.",
+            "Oui. Nous personnalisons l’ambiance musicale et visuelle pour refléter l’identité et les valeurs de votre marque, dans le ton et selon les objectifs de votre événement.",
         },
         {
           question: "Fournissez-vous tout le matériel ?",
@@ -140,15 +140,15 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
             "Oui, en partenariat avec MX Événement. Tout est testé avant chaque prestation, et nous prévoyons du matériel de remplacement pour parer à tout imprévu.",
         },
         {
-          question: "Êtes-vous présents pendant tout l'événement ?",
+          question: "Êtes-vous présents pendant tout l’événement ?",
           reponse:
-            "Oui : notre équipe reste présente du début à la fin pour gérer la régie, la musique et l'animation, en toute discrétion.",
+            "Oui : notre équipe reste présente du début à la fin pour gérer la régie, la musique et l’animation, en toute discrétion.",
         },
       ],
     },
     appel: {
       titre: "Votre prochaine soirée manque *de piment* ?",
-      texte: "Date, nombre d'invités, objectifs : dites-nous l'essentiel, Cédric vous répond personnellement.",
+      texte: "Date, nombre d’invités, objectifs : dites-nous l’essentiel, Cédric vous répond personnellement.",
     },
   },
   en: {
@@ -172,7 +172,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
       ],
     },
     formats: {
-      surtitre: "Who it's for",
+      surtitre: "Who it’s for",
       titre: "Two worlds, *the same standards*.",
       liste: [
         {
@@ -252,9 +252,9 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
             "Absolutely. Speeches, awards, presentations: we build them into the technical and musical running order so every highlight gets the attention it deserves.",
         },
         {
-          question: "Can you tailor the atmosphere to our company's image?",
+          question: "Can you tailor the atmosphere to our company’s image?",
           reponse:
-            "Yes. We adapt the music and visuals to reflect your brand's identity and values, in keeping with the tone and goals of your event.",
+            "Yes. We adapt the music and visuals to reflect your brand’s identity and values, in keeping with the tone and goals of your event.",
         },
         {
           question: "Do you supply all the equipment?",

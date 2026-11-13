@@ -5,10 +5,10 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 
 /**
- * Lien vers la même page dans l'autre langue. L'adresse traduite est lue dans
+ * Lien vers la même page dans l’autre langue. L’adresse traduite est lue dans
  * les balises <link rel="alternate" hreflang> que chaque page déclare dans ses
  * métadonnées : une seule source de vérité. Sans équivalent (journal), on
- * renvoie vers l'accueil de l'autre langue.
+ * renvoie vers l’accueil de l’autre langue.
  *
  * Le middleware renvoie toute adresse sans préfixe (`/`, `/mariages`) vers la
  * langue mémorisée dans le cookie NEXT_LOCALE : on y écrit la langue choisie

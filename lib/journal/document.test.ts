@@ -20,7 +20,7 @@ const image = (attrs: Record<string, unknown> = {}) => ({
   attrs: { src: "/journal/se-marier-en-hiver/1.jpg", width: 1200, height: 800, alt: "Mariés sous la neige", ...attrs },
 });
 
-/** Un document comme l'éditeur les écrit : tous les nœuds autorisés. */
+/** Un document comme l’éditeur les écrit : tous les nœuds autorisés. */
 const COMPLET = doc(
   { type: "heading", attrs: { level: 2 }, content: [texte("Le lieu")] },
   para(texte("Un "), texte("DJ", [lien("/mariages"), { type: "bold" }]), texte(" et "), texte("vous", [{ type: "italic" }]), { type: "hardBreak" }, texte("ensuite.")),
@@ -46,7 +46,7 @@ describe("validerDocument", () => {
     expect(validerDocument({ type: "doc", content: [{ type: "paragraph" }] }).ok).toBe(true);
   });
 
-  it("accepte les attributs que l'extension Link de Tiptap écrit, à null seulement", () => {
+  it("accepte les attributs que l’extension Link de Tiptap écrit, à null seulement", () => {
     const tiptap = { type: "link", attrs: { href: "https://mxevenement.com/", target: null, rel: null, class: null } };
     expect(validerDocument(doc(para(texte("MX", [tiptap])))).ok).toBe(true);
     expect(refus(doc(para(texte("MX", [{ type: "link", attrs: { href: "https://mxevenement.com/", target: "_self" } }]))))).toMatch(/target/);
@@ -67,7 +67,7 @@ describe("validerDocument", () => {
     expect(refus("<p>Bonjour</p>")).not.toBeNull();
   });
 
-  it("refuse les structures que l'éditeur ne produit pas", () => {
+  it("refuse les structures que l’éditeur ne produit pas", () => {
     expect(refus(doc({ type: "bulletList", content: [] }))).not.toBeNull();
     expect(refus(doc({ type: "bulletList", content: [{ type: "listItem", content: [image()] }] }))).not.toBeNull();
     expect(refus(doc({ type: "blockquote", content: [] }))).not.toBeNull();
@@ -77,7 +77,7 @@ describe("validerDocument", () => {
     expect(refus(doc(texte("hors paragraphe")))).not.toBeNull();
   });
 
-  it("n'accepte que des photos du site ou du stockage, avec dimensions et texte alternatif", () => {
+  it("n’accepte que des photos du site ou du stockage, avec dimensions et texte alternatif", () => {
     expect(refus(doc(image({ src: "https://exemple.com/photo.jpg" })))).toMatch(/Photo : fichier du site/);
     expect(refus(doc(image({ src: "/journal/../images/x.jpg" })))).toMatch(/Photo/);
     expect(refus(doc(image({ src: "/images/hero.jpg" })))).toMatch(/Photo/);
@@ -91,14 +91,14 @@ describe("validerDocument", () => {
     expect(refus(doc(image({ width: "1200" })))).not.toBeNull();
   });
 
-  it("borne la taille et l'imbrication (document hostile)", () => {
+  it("borne la taille et l’imbrication (document hostile)", () => {
     expect(refus(doc(para(texte("a".repeat(1_000_001)))))).toBe("Contenu trop long.");
     let profond: unknown = para(texte("fond"));
     for (let i = 0; i < PROFONDEUR_MAX_DOCUMENT; i++) profond = { type: "blockquote", content: [profond] };
     expect(refus(doc(profond))).toMatch(/trop imbriqué/);
   });
 
-  it("indique l'endroit fautif", () => {
+  it("indique l’endroit fautif", () => {
     expect(refus(doc(para(texte("ok")), para(texte("x", [lien("javascript:alert(1)")]))))).toMatch(/^Contenu invalide \(content\.1\.content\.0\.marks\.0\.attrs\.href\) : Lien refusé/);
   });
 });
@@ -151,12 +151,12 @@ describe("utilitaires", () => {
     expect(tempsDeLecture(DOCUMENT_VIDE)).toBe(1);
     expect(tempsDeLecture(doc(para(texte(Array(401).fill("mot").join(" ")))) as DocumentArticle)).toBe(3);
     expect(tempsDeLecture(doc(para(texte(Array(200).fill("peut-être").join(" ")))) as DocumentArticle)).toBe(2);
-    // La ponctuation seule n'est pas un mot ; chaque morceau de texte est compté à part (« l’ » + « éclairage »).
+    // La ponctuation seule n’est pas un mot ; chaque morceau de texte est compté à part (« l’ » + « éclairage »).
     expect(tempsDeLecture(doc(para(texte(Array(200).fill("mot").join(" ") + " , ; !"))) as DocumentArticle)).toBe(1);
     expect(tempsDeLecture(doc(para(...Array(201).fill(0).map(() => texte("l’")), texte("éclairage"))) as DocumentArticle)).toBe(2);
   });
 
-  it("liste les photos et les liens dans l'ordre de lecture", () => {
+  it("liste les photos et les liens dans l’ordre de lecture", () => {
     expect(imagesDuDocument(document).map((i) => i.src)).toEqual(["/journal/se-marier-en-hiver/1.jpg", "journal/2026/10/abc-def.webp"]);
     const d = doc(para(texte("Notre "), texte("DJ", [lien("/mariages")]), texte(" pro", [lien("/mariages"), { type: "bold" }]), texte(" et "), texte("MX", [lien("https://mxevenement.com/")])));
     expect(liensDuDocument(d as DocumentArticle)).toEqual([

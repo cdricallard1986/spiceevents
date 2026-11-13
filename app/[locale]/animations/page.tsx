@@ -102,7 +102,7 @@ export default async function PageAnimations({ params }: Props) {
             return {
               cle: o.slug.fr,
               categorie,
-              contenu: <CarteOption option={o} locale={locale} etiquette={c.catalogue.categories[categorie]} texte={c.accroches[o.slug.fr]} />,
+              contenu: <CarteOption option={o} locale={locale} etiquette={c.catalogue.categories[categorie]} />,
             };
           })}
         />

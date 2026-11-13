@@ -1,7 +1,7 @@
 import { OPTIONS } from "@/contenu/options";
 
 // Constantes des avis partagées par le site, le back office (navigateur compris)
-// et les schémas Zod : fichier sans Zod, pour ne pas l'embarquer côté client.
+// et les schémas Zod : fichier sans Zod, pour ne pas l’embarquer côté client.
 
 /** Longueurs maximales, alignées sur les contraintes de la table `avis` (migration 0003). */
 export const LIMITES_AVIS = {
@@ -30,12 +30,12 @@ export const LIBELLES_SOURCE: Record<Source, string> = {
   autre: "Autre",
 };
 
-/** Préfixe des emplacements « page d'option » : `option:<slug français>`. */
+/** Préfixe des emplacements « page d’option » : `option:<slug français>`. */
 export const PREFIXE_OPTION = "option:";
 
 export type Emplacement = "accueil_grand" | "accueil" | "mariages_grand" | "mariages" | `option:${string}`;
 
-/** Emplacement de la page d'une option (slug français, celui de `contenu/options.ts`). */
+/** Emplacement de la page d’une option (slug français, celui de `contenu/options.ts`). */
 export function emplacementOption(slugFr: string): Emplacement {
   return `${PREFIXE_OPTION}${slugFr}`;
 }
@@ -43,17 +43,17 @@ export function emplacementOption(slugFr: string): Emplacement {
 export type EmplacementPropose = {
   valeur: Emplacement;
   libelle: string;
-  /** Un seul avis à la fois (grand avis, page d'option) : le cocher le retire de l'avis qui l'avait. */
+  /** Un seul avis à la fois (grand avis, page d’option) : le cocher le retire de l’avis qui l’avait. */
   unique: boolean;
 };
 
-/** Tous les emplacements du site, dans l'ordre des cases à cocher du back office. */
+/** Tous les emplacements du site, dans l’ordre des cases à cocher du back office. */
 export const EMPLACEMENTS: readonly EmplacementPropose[] = [
   { valeur: "accueil_grand", libelle: "Accueil — grand avis", unique: true },
   { valeur: "accueil", libelle: "Accueil — grille", unique: false },
   { valeur: "mariages_grand", libelle: "Page Mariages — grand avis", unique: true },
   { valeur: "mariages", libelle: "Page Mariages — grille", unique: false },
-  // Une page d'option n'affiche qu'un grand avis : l'emplacement est unique, lui aussi.
+  // Une page d’option n’affiche qu’un grand avis : l’emplacement est unique, lui aussi.
   ...OPTIONS.map((o) => ({ valeur: emplacementOption(o.slug.fr), libelle: `Page ${o.titre.fr}`, unique: true })),
 ];
 

@@ -9,7 +9,7 @@ const CIBLES = "main h2, main .grid > li, main blockquote, main figure";
 /**
  * Apparitions courtes au défilement, sans boucle : chaque élément visé glisse de
  * quelques pixels en devenant visible, une seule fois. Rien sans JavaScript (le
- * contenu reste affiché) ni quand l'appareil demande moins d'animations.
+ * contenu reste affiché) ni quand l’appareil demande moins d’animations.
  */
 export function Apparitions() {
   const chemin = usePathname();
@@ -29,7 +29,7 @@ export function Apparitions() {
     );
     const elements = [...document.querySelectorAll<HTMLElement>(CIBLES)].filter((el) => !el.closest("[data-sans-apparition]"));
     elements.forEach((el, i) => {
-      // Décalage en cascade pour les cartes d'une même grille (3 temps au plus).
+      // Décalage en cascade pour les cartes d’une même grille (3 temps au plus).
       if (el.matches(".grid > li")) el.style.setProperty("--delai", `${(i % 3) * 55}ms`);
       el.classList.add("apparition");
       observateur.observe(el);

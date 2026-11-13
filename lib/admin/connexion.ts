@@ -11,16 +11,16 @@ import { RAISONS } from "./messages";
 import { validerConnexion, type ErreursConnexion } from "./schema";
 
 /**
- * Connexion au back office, du formulaire brut à la décision. La base, l'auth
- * Supabase et l'horloge sont injectées : la Server Action fournit les vraies,
+ * Connexion au back office, du formulaire brut à la décision. La base, l’auth
+ * Supabase et l’horloge sont injectées : la Server Action fournit les vraies,
  * les tests des fausses. Ordre :
  *
  * 1. validation Zod ;
  * 2. limite par IP (toutes les tentatives) et par compte (échecs) ;
  * 3. mot de passe (Supabase Auth) — un échec est compté pour le compte ;
- * 4. droit d'accès (`est_admin()`) : un compte sans droit est aussitôt
+ * 4. droit d’accès (`est_admin()`) : un compte sans droit est aussitôt
  *    déconnecté de cet appareil ;
- * 5. réponse jamais plus rapide que 1,5 s, quelle que soit l'issue.
+ * 5. réponse jamais plus rapide que 1,5 s, quelle que soit l’issue.
  */
 
 export const MESSAGES_CONNEXION = {
@@ -42,7 +42,7 @@ export type EtatConnexion =
       email: string;
     };
 
-/** Accès à `tentatives_connexion` (clé service_role). Les deux méthodes lèvent une erreur en cas d'échec. */
+/** Accès à `tentatives_connexion` (clé service_role). Les deux méthodes lèvent une erreur en cas d’échec. */
 export type MagasinTentatives = {
   compter(type: TypeTentative, empreinte: string, depuis: Date): Promise<number>;
   enregistrer(type: TypeTentative, empreinte: string): Promise<void>;
@@ -52,7 +52,7 @@ export type ResultatMotDePasse = "ok" | "refuse" | "indisponible";
 
 export type AuthConnexion = {
   verifierMotDePasse(email: string, motDePasse: string): Promise<ResultatMotDePasse>;
-  /** `est_admin()` pour la session qui vient de s'ouvrir ; lève une erreur si la base ne répond pas. */
+  /** `est_admin()` pour la session qui vient de s’ouvrir ; lève une erreur si la base ne répond pas. */
   estAdmin(): Promise<boolean>;
   /** Ferme la session sur CET appareil seulement (`scope: "local"`). */
   deconnecterLocalement(): Promise<void>;
@@ -100,7 +100,7 @@ async function etapes(brut: Record<string, string>, d: DependancesConnexion): Pr
     if (d.production) d.journal.avertir("[admin] Clé service_role absente : limite des connexions non appliquée.");
   } else {
     if (!d.secret) {
-      d.journal.erreur("[admin] Secret d'empreinte (contact_secret_ip) absent : connexion refusée par prudence.");
+      d.journal.erreur("[admin] Secret d’empreinte (contact_secret_ip) absent : connexion refusée par prudence.");
       return erreur("indisponible", email);
     }
     const empreinteIp = d.ip ? empreinteTentative("ip", d.ip, d.secret) : null;
@@ -118,7 +118,7 @@ async function etapes(brut: Record<string, string>, d: DependancesConnexion): Pr
       }
       if (empreinteIp) await d.tentatives.enregistrer("ip", empreinteIp);
     } catch (e) {
-      // Échoue fermé : sans compteur fiable, pas d'essai de mot de passe.
+      // Échoue fermé : sans compteur fiable, pas d’essai de mot de passe.
       d.journal.erreur("[admin] Limite des connexions invérifiable (base indisponible) : connexion refusée.", e);
       return erreur("indisponible", email);
     }
@@ -141,7 +141,7 @@ async function etapes(brut: Record<string, string>, d: DependancesConnexion): Pr
     return erreur("identifiants", email);
   }
 
-  // 4. Droit d'accès au back office.
+  // 4. Droit d’accès au back office.
   let admin: boolean | null;
   try {
     admin = await d.auth.estAdmin();
@@ -153,7 +153,7 @@ async function etapes(brut: Record<string, string>, d: DependancesConnexion): Pr
     try {
       await d.auth.deconnecterLocalement();
     } catch (e) {
-      d.journal.avertir("[admin] Déconnexion locale impossible après refus d'accès.", e);
+      d.journal.avertir("[admin] Déconnexion locale impossible après refus d’accès.", e);
     }
     return erreur(admin === false ? "accesRefuse" : "indisponible", email);
   }

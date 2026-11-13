@@ -12,12 +12,12 @@ export type PhotoAInserer = { chemin: string; largeur: number; hauteur: number; 
 
 const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session expirée). Rechargez la page puis réessayez.";
 export const AIDE_ALT_ARTICLE =
-  "Obligatoire : décrivez ce que montre la photo, pour les personnes qui ne la voient pas (lecteurs d'écran) et pour Google. Ex. « Piste de danse éclairée en doré pendant l'ouverture de bal ».";
+  "Obligatoire : décrivez ce que montre la photo, pour les personnes qui ne la voient pas (lecteurs d’écran) et pour Google. Ex. « Piste de danse éclairée en doré pendant l’ouverture de bal ».";
 
 /**
- * Photo du texte d'un article :
+ * Photo du texte d’un article :
  * - `ajout` : choix du fichier (ou fichier collé / glissé), texte alternatif
- *   DEMANDÉ AVANT l'insertion, légende facultative ; envoi direct au stockage
+ *   DEMANDÉ AVANT l’insertion, légende facultative ; envoi direct au stockage
  *   (`journal/<aaaa>/<mm>/…`), dimensions lues dans le navigateur ;
  * - `modification` : texte alternatif et légende de la photo sélectionnée.
  */
@@ -77,7 +77,7 @@ export function FenetrePhoto({
     if (envoi) return;
     const nouvelles: typeof erreurs = {};
     if (mode === "ajout" && !fichier) nouvelles.fichier = "Choisissez la photo à insérer.";
-    if (!alt.trim()) nouvelles.alt = "Décrivez la photo (texte alternatif) : c'est obligatoire.";
+    if (!alt.trim()) nouvelles.alt = "Décrivez la photo (texte alternatif) : c’est obligatoire.";
     else if (Array.from(alt.trim()).length > LIMITES_ARTICLES.altImage) nouvelles.alt = `${LIMITES_ARTICLES.altImage} caractères au maximum.`;
     if (Array.from(legende.trim()).length > LIMITES_ARTICLES.legendeImage) nouvelles.legende = `${LIMITES_ARTICLES.legendeImage} caractères au maximum.`;
     setErreurs(nouvelles);
@@ -136,7 +136,7 @@ export function FenetrePhoto({
             />
             <p className="text-xs text-sable/80">
               JPEG, PNG, WebP ou AVIF, {formaterTaille(TAILLE_MAX_OCTETS)} au maximum ; au-delà de 3 000 pixels de côté, la photo est réduite avant
-              l&apos;envoi. Elle s&apos;affichera sur toute la largeur du texte, comme sur le site.
+              l’envoi. Elle s’affichera sur toute la largeur du texte, comme sur le site.
             </p>
             {erreurs.fichier && (
               <p role="alert" className="text-sm text-erreur">
@@ -147,7 +147,7 @@ export function FenetrePhoto({
         )}
 
         {apercuAffiche && (
-          // eslint-disable-next-line @next/next/no-img-element -- aperçu local (blob:) ou du stockage, avant l'insertion.
+          // eslint-disable-next-line @next/next/no-img-element -- aperçu local (blob:) ou du stockage, avant l’insertion.
           <img src={apercuAffiche} alt="" className="max-h-64 w-auto self-start border border-ligne object-contain" />
         )}
 

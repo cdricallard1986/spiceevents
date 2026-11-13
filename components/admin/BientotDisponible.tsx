@@ -3,7 +3,7 @@ import type { Section } from "@/lib/admin/navigation";
 import { Icone } from "@/components/admin/Icones";
 import { classesBouton } from "@/components/ui/Bouton";
 
-/** Page d'une section prévue au plan mais pas encore construite. */
+/** Page d’une section prévue au plan mais pas encore construite. */
 export function BientotDisponible({ section }: { section: Section }) {
   return (
     <>

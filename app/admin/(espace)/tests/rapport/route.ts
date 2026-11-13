@@ -4,10 +4,10 @@ import { entetesRapportTests } from "@/lib/securite/entetes";
 
 /**
  * Rapport Vitest du dernier build, affiché dans un cadre par /admin/tests.
- * Réservé à l'administrateur (le middleware renvoie déjà vers la connexion
+ * Réservé à l’administrateur (le middleware renvoie déjà vers la connexion
  * sans session ; la garde vérifie en plus `est_admin()`).
  *
- * En-têtes propres à cette réponse (les mêmes que l'exception de
+ * En-têtes propres à cette réponse (les mêmes que l’exception de
  * next.config.ts, posés ici aussi par sécurité) : CSP `default-src 'none'`,
  * encadrement par le site seulement, jamais mis en cache.
  */

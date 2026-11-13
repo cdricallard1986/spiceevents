@@ -20,7 +20,7 @@ export function normaliserRecherche(texte: string): string {
   return texte.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().trim();
 }
 
-/** Les plus récentes en tête (puis l'identifiant, pour un ordre stable). */
+/** Les plus récentes en tête (puis l’identifiant, pour un ordre stable). */
 export function trierDemandes(liste: readonly Demande[]): Demande[] {
   return [...liste].sort((a, b) => (a.created_at < b.created_at ? 1 : a.created_at > b.created_at ? -1 : a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }
@@ -42,7 +42,7 @@ export function filtresActifs(f: FiltresDemandes): boolean {
 }
 
 /**
- * Nombre de demandes par statut (et au total). La recherche s'applique aux
+ * Nombre de demandes par statut (et au total). La recherche s’applique aux
  * compteurs : ils disent combien de résultats chaque onglet montrerait.
  */
 export function compterParStatut(liste: readonly Demande[], recherche = ""): Record<FiltreStatut, number> {
@@ -55,7 +55,7 @@ export function compterParStatut(liste: readonly Demande[], recherche = ""): Rec
   return compteurs;
 }
 
-/** Demandes dont l'email de notification n'est pas parti (le filet du formulaire). */
+/** Demandes dont l’email de notification n’est pas parti (le filet du formulaire). */
 export function sansEmail(liste: readonly Demande[]): Demande[] {
   return liste.filter((d) => !d.email_envoye);
 }
@@ -75,8 +75,8 @@ export function appliquerSuivi(liste: readonly Demande[], suivi: SuiviDemande): 
 }
 
 // --- Liens de contact ---------------------------------------------------------
-// Ils sont construits à partir de saisies du formulaire : on n'accepte que des
-// caractères attendus, sinon pas de lien (jamais d'injection de schéma).
+// Ils sont construits à partir de saisies du formulaire : on n’accepte que des
+// caractères attendus, sinon pas de lien (jamais d’injection de schéma).
 
 /** Chiffres et « + » initial seulement (ex. « 06 12 34 56 78 » → « 0612345678 »). */
 function chiffres(telephone: string): string | null {
@@ -84,7 +84,7 @@ function chiffres(telephone: string): string | null {
   return /^\+?\d{6,15}$/.test(n) ? n : null;
 }
 
-/** `tel:+33612345678`, ou null si le numéro n'est pas exploitable. */
+/** `tel:+33612345678`, ou null si le numéro n’est pas exploitable. */
 export function lienAppel(telephone: string): string | null {
   const n = chiffres(telephone);
   return n ? `tel:${n}` : null;
@@ -92,7 +92,7 @@ export function lienAppel(telephone: string): string | null {
 
 /**
  * Lien WhatsApp pour un portable français (06 / 07) : `https://wa.me/33612345678`.
- * null pour un fixe ou un numéro étranger (rien ne dit qu'il a WhatsApp).
+ * null pour un fixe ou un numéro étranger (rien ne dit qu’il a WhatsApp).
  */
 export function lienWhatsApp(telephone: string): string | null {
   let n = chiffres(telephone);
@@ -104,7 +104,7 @@ export function lienWhatsApp(telephone: string): string | null {
   return null;
 }
 
-/** `mailto:` avec l'objet « Votre demande — Spice Events » (ou anglais), ou null si l'adresse est douteuse. */
+/** `mailto:` avec l’objet « Votre demande — Spice Events » (ou anglais), ou null si l’adresse est douteuse. */
 export function lienEcrire(email: string, langue: "fr" | "en" = "fr"): string | null {
   const e = email.trim();
   if (!/^[^\s@<>()[\]\\,;:"'?&#%/]+@[^\s@<>()[\]\\,;:"'?&#%/]+\.[^\s@<>()[\]\\,;:"'?&#%/]+$/.test(e)) return null;
@@ -142,7 +142,7 @@ export function formaterReceptionCourte(iso: string): string {
   return new Intl.DateTimeFormat("fr-FR", { timeZone: FUSEAU, day: "numeric", month: "short", year: "numeric" }).format(d);
 }
 
-/** Date de l'événement (AAAA-MM-JJ) : « samedi 12 juin 2027 », ou null. */
+/** Date de l’événement (AAAA-MM-JJ) : « samedi 12 juin 2027 », ou null. */
 export function formaterDateEvenement(date: string | null, avecJour = true): string | null {
   if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
   const [a, m, j] = date.split("-").map(Number);

@@ -1,8 +1,8 @@
 import { DESTINATAIRE_PAR_DEFAUT, EXPEDITEUR_PAR_DEFAUT } from "@/lib/contact/config-email";
 
 /**
- * État de la configuration de l'environnement (page `/admin/tests`), logique
- * pure et testée. ⚠️ Un secret n'est JAMAIS renvoyé : seulement « présente » ou
+ * État de la configuration de l’environnement (page `/admin/tests`), logique
+ * pure et testée. ⚠️ Un secret n’est JAMAIS renvoyé : seulement « présente » ou
  * « absente ». Seules les valeurs non secrètes (adresses email, version) sont
  * affichées en clair.
  */
@@ -11,7 +11,7 @@ export type LigneConfiguration = {
   nom: string;
   description: string;
   secret: boolean;
-  /** Variable définie (non vide) dans l'environnement. */
+  /** Variable définie (non vide) dans l’environnement. */
   presente: boolean;
   /** Valeur affichée : null pour un secret, la valeur par défaut si la variable manque. */
   valeur: string | null;
@@ -23,7 +23,7 @@ type Environnement = Record<string, string | undefined>;
 
 const SECRETS = [
   { nom: "supabase_service_role_key", description: "Clé service_role : formulaire de contact, limite des connexions." },
-  { nom: "resend_api_key", description: "Clé d'API Resend : envoi des emails." },
+  { nom: "resend_api_key", description: "Clé d’API Resend : envoi des emails." },
   { nom: "contact_secret_ip", description: "Secret des empreintes HMAC des adresses IP." },
 ] as const;
 

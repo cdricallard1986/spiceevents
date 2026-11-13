@@ -5,7 +5,7 @@ describe("messageRaison", () => {
   it("explique chaque raison connue", () => {
     expect(messageRaison("session_expiree")).toBe(RAISONS.session_expiree);
     expect(messageRaison("deconnecte")).toBe(RAISONS.deconnecte);
-    expect(messageRaison("acces_refuse")).toBe("Ce compte n'a pas accès au back office.");
+    expect(messageRaison("acces_refuse")).toBe("Ce compte n’a pas accès au back office.");
   });
 
   it("ignore une raison inconnue ou absente", () => {
@@ -21,7 +21,7 @@ describe("messageRaison", () => {
     }
   });
 
-  it("prend la première valeur d'un paramètre répété", () => {
+  it("prend la première valeur d’un paramètre répété", () => {
     expect(messageRaison(["deconnecte", "session_expiree"])).toBe(RAISONS.deconnecte);
   });
 });

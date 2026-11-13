@@ -6,10 +6,10 @@ import { adresseLecteur } from "@/contenu/videos";
 type Props = { id: string; titre: string; libelleLecture: string };
 
 /**
- * Lecteur YouTube « à la demande » : d'abord l'image de la vidéo et un bouton
+ * Lecteur YouTube « à la demande » : d’abord l’image de la vidéo et un bouton
  * lecture (jamais un grand rectangle noir) ; le lecteur — mode confidentialité
- * renforcée — n'est chargé qu'au clic, et démarre aussitôt. Rien n'est chargé
- * depuis YouTube avant ce clic, sinon l'image d'aperçu (i.ytimg.com, sans cookie).
+ * renforcée — n’est chargé qu’au clic, et démarre aussitôt. Rien n’est chargé
+ * depuis YouTube avant ce clic, sinon l’image d’aperçu (i.ytimg.com, sans cookie).
  */
 export function LecteurYoutube({ id, titre, libelleLecture }: Props) {
   const [lance, setLance] = useState(false);
@@ -29,13 +29,13 @@ export function LecteurYoutube({ id, titre, libelleLecture }: Props) {
   }
   return (
     <button type="button" onClick={() => setLance(true)} className="group absolute inset-0 block h-full w-full" aria-label={`${libelleLecture} : ${titre}`}>
-      {/* eslint-disable-next-line @next/next/no-img-element -- image d'aperçu de YouTube, servie par YouTube */}
+      {/* eslint-disable-next-line @next/next/no-img-element -- image d’aperçu de YouTube, servie par YouTube */}
       <img
         src={image}
         alt=""
         loading="lazy"
         decoding="async"
-        // Toutes les vidéos n'ont pas d'aperçu en haute définition : repli sur l'aperçu standard.
+        // Toutes les vidéos n’ont pas d’aperçu en haute définition : repli sur l’aperçu standard.
         onError={() => setImage(`https://i.ytimg.com/vi/${id}/hqdefault.jpg`)}
         className="absolute inset-0 h-full w-full object-cover opacity-85 transition-opacity duration-300 group-hover:opacity-100"
       />

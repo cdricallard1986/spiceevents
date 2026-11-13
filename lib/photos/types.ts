@@ -15,7 +15,7 @@ export type Photo = {
   credit: string | null;
 };
 
-/** Colonnes lues (site et back office), dans l'ordre du type. */
+/** Colonnes lues (site et back office), dans l’ordre du type. */
 export const COLONNES_PHOTO = "id, origine, chemin, largeur, hauteur, alt_fr, alt_en, credit";
 
 /** Une photo dans une galerie (table `public.galeries_photos`). */

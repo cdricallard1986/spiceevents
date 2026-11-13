@@ -5,7 +5,7 @@ import type { Suite } from "@/hooks/useSuite";
 import { CommandesSuite } from "./CommandesSuite";
 
 const ROLES: Record<Role, { titre: string; description: string }> = {
-  visiteur: { titre: "Visiteur", description: "Clé publique, sans session : ce que n'importe qui peut tenter depuis Internet." },
+  visiteur: { titre: "Visiteur", description: "Clé publique, sans session : ce que n’importe qui peut tenter depuis Internet." },
   admin: { titre: "Cédric", description: "Votre session : les droits du back office." },
 };
 
@@ -13,8 +13,8 @@ const OPERATIONS = { select: "lecture", insert: "écriture", update: "modificati
 
 /**
  * Audit des droits en base : le résultat ligne par ligne (vert : conforme,
- * rouge : à corriger), par rôle. L'audit est lancé automatiquement à
- * l'ouverture de la page (`useSuite`, dans `OngletsTests`, qui appelle la
+ * rouge : à corriger), par rôle. L’audit est lancé automatiquement à
+ * l’ouverture de la page (`useSuite`, dans `OngletsTests`, qui appelle la
  * Server Action `lancerAuditRls`) ; « Relancer » le rejoue.
  */
 export function AuditRls({ suite }: { suite: Suite<ResultatAudit> }) {

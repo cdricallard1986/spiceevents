@@ -10,9 +10,9 @@ const DUREE_MS = 7000;
 type Props = {
   liste: AvisAffiche[];
   image: CleImage;
-  /** Libellés des boutons « précédent / suivant » et du choix d'un avis. */
+  /** Libellés des boutons « précédent / suivant » et du choix d’un avis. */
   libelles: { precedent: string; suivant: string; avis: string };
-  /** Nombre d'avis tirés au hasard dans la liste à chaque visite (par défaut : tous, dans l'ordre). */
+  /** Nombre d’avis tirés au hasard dans la liste à chaque visite (par défaut : tous, dans l’ordre). */
   tirage?: number;
   children?: React.ReactNode;
 };
@@ -29,7 +29,7 @@ export function tirerAuHasard<T>(liste: readonly T[], n: number, hasard: () => n
 
 /**
  * Grands avis qui se succèdent sur une photo de fond, en fondu. Le défilement
- * s'arrête au survol, au clavier et quand l'appareil demande moins d'animations ;
+ * s’arrête au survol, au clavier et quand l’appareil demande moins d’animations ;
  * les flèches et les points restent utilisables. Sans JavaScript : le premier avis.
  */
 export function AvisDefilants({ liste: tous, image, libelles, tirage, children }: Props) {

@@ -3,7 +3,6 @@ import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { ACCUEIL } from "@/contenu/pages/accueil";
-import { ANIMATIONS } from "@/contenu/pages/animations";
 import { OPTIONS } from "@/contenu/options";
 import { avisPublies } from "@/lib/avis/lecture";
 import { avisDeLEmplacement, grandAvis, grilleCitations } from "@/lib/avis/selection";
@@ -37,12 +36,12 @@ export default async function Accueil({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = ACCUEIL[locale];
-  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  // Diaporama d’en-tête choisi dans le back office (fiche de chaque photo).
   // Sans les photos déjà montrées plus bas (cartes des deux univers, avis).
   const entete = await photosEnTete("accueil", locale, [...c.portes.liste.map((p) => p.image), "chapiteau-diner"]);
   const fr = locale === "fr";
   // Avis choisis dans le back office (emplacements « Accueil — grand avis » et « Accueil — grille ») :
-  // le grand d'abord, puis la grille, sans doublon.
+  // le grand d’abord, puis la grille, sans doublon.
   const tous = await avisPublies();
   const grand = grandAvis(tous, "accueil_grand", locale, 300);
   const choisis = grilleCitations(avisDeLEmplacement(tous, "accueil"), locale);
@@ -50,7 +49,7 @@ export default async function Accueil({ params }: Props) {
 
   return (
     <>
-      {/* Une nuit de mariage ou d'événement tirée au hasard à chaque visite */}
+      {/* Une nuit de mariage ou d’événement tirée au hasard à chaque visite */}
       <EnTetePage image={entete} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} pleinEcran>
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href="/animations" variante="contour">{c.hero.ctaSecondaire}</Bouton>
@@ -62,7 +61,7 @@ export default async function Accueil({ params }: Props) {
       <BandeauPiment />
       <BandeauPreuves />
 
-      {/* Les deux portes d'entrée : mariages et événements */}
+      {/* Les deux portes d’entrée : mariages et événements */}
       <Section surtitre={c.portes.surtitre} titre={c.portes.titre}>
         <div className="grid gap-4 md:grid-cols-2">
           {c.portes.liste.map((p) => (
@@ -84,7 +83,7 @@ export default async function Accueil({ params }: Props) {
         </div>
       </Section>
 
-      {/* Le DJ : collage Cédric et platines (jamais deux photos d'un même événement côte à côte) */}
+      {/* Le DJ : collage Cédric et platines (jamais deux photos d’un même événement côte à côte) */}
       <section className="bg-nuit-2 py-20 md:py-28">
         <div className="conteneur grid items-center gap-14 lg:grid-cols-2">
           <div>
@@ -119,7 +118,7 @@ export default async function Accueil({ params }: Props) {
         <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {OPTIONS.slice(0, 4).map((o) => (
             <li key={o.slug.fr}>
-              <CarteOption option={o} locale={locale} texte={ANIMATIONS[locale].accroches[o.slug.fr]} />
+              <CarteOption option={o} locale={locale} />
             </li>
           ))}
         </ul>

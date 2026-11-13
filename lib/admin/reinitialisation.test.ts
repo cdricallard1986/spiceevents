@@ -32,7 +32,7 @@ describe("mot de passe oublié", () => {
     expect(comptes.get("ip")).toBe(1);
   });
 
-  it("même réponse, rien d'envoyé, pour une adresse inconnue ou un compte sans accès", async () => {
+  it("même réponse, rien d’envoyé, pour une adresse inconnue ou un compte sans accès", async () => {
     const { d } = deps({ estAdministrateur: vi.fn(async () => false) });
     const attendu = { statut: "envoye", message: MESSAGES_REINITIALISATION.envoye };
     expect(await traiterReinitialisation({ email: "inconnu@example.com" }, d)).toEqual(attendu);
@@ -40,7 +40,7 @@ describe("mot de passe oublié", () => {
     expect(d.envoyer).not.toHaveBeenCalled();
   });
 
-  it("répond en au moins 1,5 s, quelle que soit l'issue", async () => {
+  it("répond en au moins 1,5 s, quelle que soit l’issue", async () => {
     for (const email of ["cedric@spiceevents.fr", "inconnu@example.com", "pas-une-adresse"]) {
       const { d } = deps();
       await traiterReinitialisation({ email }, d);
@@ -62,7 +62,7 @@ describe("mot de passe oublié", () => {
     expect(d.genererLien).not.toHaveBeenCalled();
   });
 
-  it("base indisponible : échoue fermé ; erreur d'envoi : même réponse qu'un succès (rien ne révèle le compte)", async () => {
+  it("base indisponible : échoue fermé ; erreur d’envoi : même réponse qu’un succès (rien ne révèle le compte)", async () => {
     const { d } = deps();
     vi.mocked(d.tentatives!.compter).mockRejectedValueOnce(new Error("panne"));
     expect(await traiterReinitialisation({ email: "cedric@spiceevents.fr" }, d)).toMatchObject({ statut: "erreur", message: MESSAGES_REINITIALISATION.indisponible });

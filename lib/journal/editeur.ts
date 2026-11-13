@@ -8,18 +8,18 @@ import { srcImage } from "./constantes";
 import { estLienAutorise } from "./document";
 
 /**
- * Extensions Tiptap de l'éditeur des articles, réglées pour ne produire QUE
+ * Extensions Tiptap de l’éditeur des articles, réglées pour ne produire QUE
  * le format du document (lib/journal/document.ts) : paragraphes, intertitres
  * de niveau 2 et 3, listes, citation, séparateur, saut de ligne, photos, et du
  * texte en gras, en italique ou en lien. Tout le reste (code, texte barré ou
- * souligné, titres 1 et 4 à 6, tableaux…) n'est pas dans le schéma :
- * ProseMirror l'écarte d'un texte collé (le texte, lui, est gardé).
+ * souligné, titres 1 et 4 à 6, tableaux…) n’est pas dans le schéma :
+ * ProseMirror l’écarte d’un texte collé (le texte, lui, est gardé).
  *
- * Partagé par le composant de l'éditeur (navigateur, chargé seulement sur
+ * Partagé par le composant de l’éditeur (navigateur, chargé seulement sur
  * /admin/journal/[id]) et ses tests (jsdom).
  */
 
-/** Ce que le schéma de l'éditeur peut contenir (vérifié par les tests). */
+/** Ce que le schéma de l’éditeur peut contenir (vérifié par les tests). */
 export const NOEUDS_EDITEUR = ["doc", "paragraph", "text", "heading", "bulletList", "orderedList", "listItem", "blockquote", "horizontalRule", "hardBreak", "image"];
 export const MARQUES_EDITEUR = ["link", "bold", "italic"];
 
@@ -29,7 +29,7 @@ function nombre(valeur: string | null): number | null {
   return n >= 1 && n <= 20000 ? n : null;
 }
 
-/** Attributs d'une photo lus dans le HTML (collage, copie dans l'éditeur), ou `false` : refusée. */
+/** Attributs d’une photo lus dans le HTML (collage, copie dans l’éditeur), ou `false` : refusée. */
 function attributsPhoto(img: HTMLImageElement | null) {
   if (!img) return false;
   const src = cheminDepuisSrc(img.getAttribute("src"));
@@ -46,7 +46,7 @@ function attributsPhoto(img: HTMLImageElement | null) {
  * (`/journal/…` ou `journal/…`) affiché par son adresse publique, dimensions
  * réelles, texte alternatif, légende facultative (`title`). Pas de poignées de
  * taille : comme sur le site, la photo occupe la largeur du texte. Pas de
- * syntaxe Markdown `![…](…)` ni d'image collée d'un autre site ou en `data:`.
+ * syntaxe Markdown `![…](…)` ni d’image collée d’un autre site ou en `data:`.
  */
 export const NoeudPhoto = Image.extend({
   draggable: true,
@@ -54,7 +54,7 @@ export const NoeudPhoto = Image.extend({
   addAttributes() {
     return {
       src: { default: null, parseHTML: (el) => cheminDepuisSrc(el.getAttribute("src")), renderHTML: (a) => ({ src: a.src ? srcImage(String(a.src)) : null }) },
-      // Lus tels quels (sans conversion en nombre d'un texte comme « 2024 »).
+      // Lus tels quels (sans conversion en nombre d’un texte comme « 2024 »).
       alt: { default: null, parseHTML: (el) => el.getAttribute("alt") },
       title: { default: null, parseHTML: (el) => el.getAttribute("title") || null },
       width: { default: null, parseHTML: (el) => nombre(el.getAttribute("width")) },
@@ -64,7 +64,7 @@ export const NoeudPhoto = Image.extend({
 
   parseHTML() {
     return [
-      // Photo copiée dans l'éditeur : <figure data-photo-article><img …><figcaption>…</figcaption></figure>.
+      // Photo copiée dans l’éditeur : <figure data-photo-article><img …><figcaption>…</figcaption></figure>.
       { tag: "figure[data-photo-article]", getAttrs: (el) => attributsPhoto((el as HTMLElement).querySelector("img")) },
       { tag: "img[src]", getAttrs: (el) => attributsPhoto(el as HTMLImageElement) },
     ];
@@ -88,9 +88,9 @@ export const NoeudPhoto = Image.extend({
 /**
  * Lien : seulement les adresses que le document accepte (https://, http://,
  * mailto:, tel:, page du site `/…`) — un lien collé `javascript:` ou
- * `file:` perd son lien, le texte reste. Pas d'ouverture au clic dans
- * l'éditeur, pas de lien créé tout seul pendant la frappe ; `target`, `rel` et
- * `class` restent à null (le site choisit à l'affichage) et l'attribut `title`
+ * `file:` perd son lien, le texte reste. Pas d’ouverture au clic dans
+ * l’éditeur, pas de lien créé tout seul pendant la frappe ; `target`, `rel` et
+ * `class` restent à null (le site choisit à l’affichage) et l’attribut `title`
  * de Tiptap est retiré (le document ne le connaît pas).
  */
 export const MarqueLien = Link.extend({
@@ -111,8 +111,8 @@ export const MarqueLien = Link.extend({
   shouldAutoLink: (url) => estLienAutorise(url),
 });
 
-/** Les extensions de l'éditeur, dans l'ordre (le rang des marques — lien, gras, italique — en découle). */
-export function extensionsArticle({ placeholder = "Écrivez l'article ici…" }: { placeholder?: string } = {}): Extensions {
+/** Les extensions de l’éditeur, dans l’ordre (le rang des marques — lien, gras, italique — en découle). */
+export function extensionsArticle({ placeholder = "Écrivez l’article ici…" }: { placeholder?: string } = {}): Extensions {
   return [
     StarterKit.configure({
       code: false,
@@ -130,9 +130,9 @@ export function extensionsArticle({ placeholder = "Écrivez l'article ici…" }:
 }
 
 /**
- * HTML collé (Word, Google Docs, page web) avant l'analyse : un titre 1
+ * HTML collé (Word, Google Docs, page web) avant l’analyse : un titre 1
  * devient un intertitre (h2), un titre 4 à 6 un sous-intertitre (h3), au lieu
- * d'un simple paragraphe. Renvoie aussi le nombre d'images écartées (autre
+ * d’un simple paragraphe. Renvoie aussi le nombre d’images écartées (autre
  * site, `data:`, sans dimensions…) pour prévenir Cédric.
  */
 export function preparerHtmlColle(html: string): { html: string; imagesRefusees: number } {
@@ -146,9 +146,9 @@ export function preparerHtmlColle(html: string): { html: string; imagesRefusees:
 }
 
 /**
- * Document d'ouverture de l'éditeur : un article neuf (`content: []`) reçoit
+ * Document d’ouverture de l’éditeur : un article neuf (`content: []`) reçoit
  * un paragraphe vide — un document ProseMirror contient toujours au moins un
- * bloc, sinon on ne pourrait pas y écrire. Il disparaît à l'enregistrement
+ * bloc, sinon on ne pourrait pas y écrire. Il disparaît à l’enregistrement
  * (`documentDepuisEditeur` retire les paragraphes vides de la fin).
  */
 export function contenuPourEditeur(contenu: unknown): JSONContent {

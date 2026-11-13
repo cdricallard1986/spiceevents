@@ -6,7 +6,7 @@ import { Icone } from "./Icones";
 
 export type ResumeDemandes = { nouvelles: number; sansEmail: number };
 
-/** Un chiffre clé de l'accueil (null : la base n'a pas répondu, la case affiche un tiret). */
+/** Un chiffre clé de l’accueil (null : la base n’a pas répondu, la case affiche un tiret). */
 export type Chiffre = { valeur: number | null; libelle: string; href: string; alerte?: boolean };
 
 /** « Bonjour » le jour, « Bonsoir » à partir de 18 h (heure de Paris). */
@@ -21,7 +21,7 @@ function texteDemandes(d: ResumeDemandes): string {
 
 /**
  * Accueil du back office (charte Nocturne) : salutation, chiffres clés, puis
- * une carte par section. Composant d'affichage seul : la page lit
+ * une carte par section. Composant d’affichage seul : la page lit
  * les chiffres en base.
  */
 export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; chiffres: Chiffre[]; demandes: ResumeDemandes | null }) {
@@ -32,7 +32,7 @@ export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; ch
         <h1 className="max-w-[16em] font-display text-[2.75rem] leading-[0.95] md:text-7xl">
           <Accent texte={`${salut} Cédric. *Prêt à pimenter ?*`} />
         </h1>
-        <p className="mt-5 max-w-2xl text-sable">Avis, DJ, journal, photos et demandes : tout ce que vous publiez ici apparaît sur le site à la visite suivante d&apos;une page.</p>
+        <p className="mt-5 max-w-2xl text-sable">Avis, DJ, journal, photos et demandes : tout ce que vous publiez ici apparaît sur le site à la visite suivante d’une page.</p>
       </header>
 
       <ul className="grid grid-cols-2 border-l border-t border-ligne sm:grid-cols-3 lg:grid-cols-5" aria-label="En chiffres">

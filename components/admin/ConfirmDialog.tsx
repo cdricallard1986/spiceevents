@@ -16,7 +16,7 @@ type Props = {
   libelleAnnuler?: string;
   /** Suppression, envoi… : bouton rouge. */
   danger?: boolean;
-  /** Action en cours : le bouton de confirmation patiente (l'annulation reste possible). */
+  /** Action en cours : le bouton de confirmation patiente (l’annulation reste possible). */
   enCours?: boolean;
   onConfirmer: () => void;
   onAnnuler: () => void;

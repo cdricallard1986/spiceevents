@@ -5,7 +5,7 @@ import { CADRAGE_CENTRE, GROUPES, LIMITES_EQUIPE, MOTIF_CADRAGE, estCheminPhotoM
 import type { GroupeEquipe, MembreEquipe } from "./types";
 
 /**
- * Validation des fiches de l'équipe saisies dans le back office (Server
+ * Validation des fiches de l’équipe saisies dans le back office (Server
  * Actions), alignée sur les contraintes de la table `equipe` (migration 0012).
  * La sécurité ne dépend jamais du formulaire : tout est revérifié ici, puis
  * par la base.
@@ -83,7 +83,7 @@ export function stylesDepuisTexte(texte: string): string[] {
   return [...new Set(texte.split(/[,;\n]/).map((s) => s.trim().replace(/\s+/g, " ")).filter(Boolean))];
 }
 
-/** Fiche d'un membre existant, pour la modale d'édition. */
+/** Fiche d’un membre existant, pour la modale d’édition. */
 export function formulaireDepuisMembre(m: MembreEquipe): FormulaireMembre {
   return {
     groupe: m.groupe,
@@ -174,14 +174,14 @@ export const schemaChampsMembre = z
     role_en: facultatif(L.role, `Rôle (anglais) : ${L.role} caractères au maximum.`),
     styles_fr: styles("français"),
     styles_en: styles("anglais"),
-    accroche_fr: obligatoire(L.accroche, "L'accroche française est obligatoire.", `Accroche (français) : ${L.accroche} caractères au maximum.`),
+    accroche_fr: obligatoire(L.accroche, "L’accroche française est obligatoire.", `Accroche (français) : ${L.accroche} caractères au maximum.`),
     accroche_en: facultatif(L.accroche, `Accroche (anglais) : ${L.accroche} caractères au maximum.`),
     presentation_fr: texteLongObligatoire(L.presentation, "La présentation française est obligatoire.", `Présentation (français) : ${L.presentation} caractères au maximum.`),
     presentation_en: texteLongFacultatif(L.presentation, `Présentation (anglais) : ${L.presentation} caractères au maximum.`),
     avis_texte_fr: facultatif(L.avisTexte, `Avis (français) : ${L.avisTexte} caractères au maximum.`),
     avis_texte_en: facultatif(L.avisTexte, `Avis (anglais) : ${L.avisTexte} caractères au maximum.`),
-    avis_auteur_fr: facultatif(L.avisAuteur, `Auteur de l'avis (français) : ${L.avisAuteur} caractères au maximum.`),
-    avis_auteur_en: facultatif(L.avisAuteur, `Auteur de l'avis (anglais) : ${L.avisAuteur} caractères au maximum.`),
+    avis_auteur_fr: facultatif(L.avisAuteur, `Auteur de l’avis (français) : ${L.avisAuteur} caractères au maximum.`),
+    avis_auteur_en: facultatif(L.avisAuteur, `Auteur de l’avis (anglais) : ${L.avisAuteur} caractères au maximum.`),
     lieux_fr: facultatif(L.lieux, `Lieux (français) : ${L.lieux} caractères au maximum.`),
     lieux_en: facultatif(L.lieux, `Lieux (anglais) : ${L.lieux} caractères au maximum.`),
     lien_url: z
@@ -216,10 +216,10 @@ export const schemaChampsMembre = z
       ctx.addIssue({ code: "custom", path: ["photo_chemin"], message: "Dimensions de la photo inconnues : renvoyez-la depuis cette fiche." });
     }
     if (v.lien_url && !v.lien_libelle_fr) ctx.addIssue({ code: "custom", path: ["lien_libelle_fr"], message: "Donnez un texte au lien (ex. « Sa page Mixcloud »)." });
-    if (!v.lien_url && (v.lien_libelle_fr || v.lien_libelle_en)) ctx.addIssue({ code: "custom", path: ["lien_url"], message: "Indiquez l'adresse du lien, ou videz son texte." });
-    if (v.avis_texte_fr && !v.avis_auteur_fr) ctx.addIssue({ code: "custom", path: ["avis_auteur_fr"], message: "Indiquez qui a écrit l'avis (ex. « Roman, mariage de juillet 2026 »)." });
+    if (!v.lien_url && (v.lien_libelle_fr || v.lien_libelle_en)) ctx.addIssue({ code: "custom", path: ["lien_url"], message: "Indiquez l’adresse du lien, ou videz son texte." });
+    if (v.avis_texte_fr && !v.avis_auteur_fr) ctx.addIssue({ code: "custom", path: ["avis_auteur_fr"], message: "Indiquez qui a écrit l’avis (ex. « Roman, mariage de juillet 2026 »)." });
     if (!v.avis_texte_fr && (v.avis_texte_en || v.avis_auteur_fr || v.avis_auteur_en)) {
-      ctx.addIssue({ code: "custom", path: ["avis_texte_fr"], message: "Le texte français de l'avis est obligatoire dès qu'un avis est renseigné." });
+      ctx.addIssue({ code: "custom", path: ["avis_texte_fr"], message: "Le texte français de l’avis est obligatoire dès qu’un avis est renseigné." });
     }
   })
   .transform(
@@ -250,7 +250,7 @@ export function validerChampsMembre(brut: unknown): ValidationMembre {
   return { ok: false, erreurs };
 }
 
-/** Premier message d'erreur (pour le toast). */
+/** Premier message d’erreur (pour le toast). */
 export function premiereErreurMembre(erreurs: ErreursMembre): string {
   return Object.values(erreurs).find(Boolean) ?? "Fiche invalide.";
 }
@@ -262,4 +262,4 @@ export const schemaPublicationMembre = z.object({ id: schemaIdMembre, publie: z.
 /** Échange de rang entre deux membres (flèches « monter » / « descendre »). */
 export const schemaEchangeMembres = z
   .object({ id: schemaIdMembre, avecId: schemaIdMembre, sens: z.enum(["monter", "descendre"]) })
-  .refine((v) => v.id !== v.avecId, "Un membre ne s'échange pas avec lui-même.");
+  .refine((v) => v.id !== v.avecId, "Un membre ne s’échange pas avec lui-même.");

@@ -11,24 +11,24 @@ export const BAR_A_VINYLES: ContenuOption = typographier({
       seo: {
         titre: "Bar à vinyles pour mariage et soirée en Île-de-France | Spice Events",
         description:
-          "Vos invités choisissent un vinyle, le DJ l'intègre à la soirée : une animation conviviale et participative pour votre mariage ou votre événement à Paris et en Île-de-France.",
+          "Vos invités choisissent un vinyle, le DJ l’intègre à la soirée : une animation conviviale et participative pour votre mariage ou votre événement à Paris et en Île-de-France.",
       },
       hero: {
         surtitre: "Animation · Bar à vinyles",
         titre: "Vos invités choisissent, *le DJ fait le reste*.",
-        intro: "Entre nostalgie et modernité, le bar à vinyles fait de chacun de vos invités le DJ d'un morceau.",
+        intro: "Entre nostalgie et modernité, le bar à vinyles fait de chacun de vos invités le DJ d’un morceau.",
       },
       presentation: {
         surtitre: "Le concept",
         titre: "La musique devient *une expérience*.",
         paragraphes: [
-          "Vos invités fouillent dans les caisses, redécouvrent des pochettes, choisissent leur disque… et participent activement à l'ambiance.",
-          "Le DJ supervise et enchaîne leur choix en douceur avec la sélection en cours : la soirée reste fluide et la piste ne retombe pas. Une animation idéale dès le cocktail, pour un mariage, une soirée privée ou un événement d'entreprise.",
+          "Vos invités fouillent dans les caisses, redécouvrent des pochettes, choisissent leur disque… et participent activement à l’ambiance.",
+          "Le DJ supervise et enchaîne leur choix en douceur avec la sélection en cours : la soirée reste fluide et la piste ne retombe pas. Une animation idéale dès le cocktail, pour un mariage, une soirée privée ou un événement d’entreprise.",
         ],
       },
       listes: [
         {
-          titre: "Pourquoi on l'adore",
+          titre: "Pourquoi on l’adore",
           points: [
             "Une animation originale et participative",
             "Des échanges spontanés entre vos invités, autour de la musique",
@@ -42,7 +42,7 @@ export const BAR_A_VINYLES: ContenuOption = typographier({
         titre: "Trois gestes, *un souvenir*.",
         liste: [
           { titre: "Piochez", texte: "Rock, jazz, électro… vos invités choisissent dans notre large sélection de vinyles." },
-          { titre: "Donnez", texte: "Ils confient leur disque au DJ, qui l'intègre à la playlist en cours." },
+          { titre: "Donnez", texte: "Ils confient leur disque au DJ, qui l’intègre à la playlist en cours." },
           { titre: "Écoutez", texte: "Leur morceau résonne, et tout le monde rejoint la piste." },
         ],
       },

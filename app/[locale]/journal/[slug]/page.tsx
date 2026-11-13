@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     seo: { titre: `${a.titre} — Spice Events`, description: a.description },
     type: "article",
   });
-  // `metadonnees` n'accepte que les photos du registre : on remplace l'image de partage par la couverture.
+  // `metadonnees` n’accepte que les photos du registre : on remplace l’image de partage par la couverture.
   return {
     ...base,
     openGraph: { ...base.openGraph, images: [{ url: srcImage(a.couverture), alt: a.couvertureAlt }] },

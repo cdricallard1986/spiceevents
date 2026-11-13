@@ -26,7 +26,7 @@ describe("source des galeries", () => {
 });
 
 describe("galeries", () => {
-  it("propose les diaporamas d'en-tête, les deux galeries de la page Galerie, puis une par animation", () => {
+  it("propose les diaporamas d’en-tête, les deux galeries de la page Galerie, puis une par animation", () => {
     expect(GALERIES.slice(0, 4).map((g) => g.valeur)).toEqual(["entete:accueil", "entete:mariages", "entete:evenementiel", "entete:son-et-lumiere"]);
     expect(GALERIES.slice(0, 4).every((g) => g.famille === "entete" && !g.option)).toBe(true);
     expect(GALERIES.slice(4, 6).map((g) => g.libelle)).toEqual(["Galerie — Mariages", "Galerie — Événements"]);
@@ -44,13 +44,13 @@ describe("galeries", () => {
     for (const g of GALERIES) expect(g.valeur).toMatch(/^(galerie_mariages|galerie_evenements|option:[a-z0-9-]+|entete:[a-z0-9-]+)$/);
   });
 
-  it("une photo d'en-tête est en paysage et assez large pour le plein écran", () => {
+  it("une photo d’en-tête est en paysage et assez large pour le plein écran", () => {
     expect(convientEnTete({ largeur: 2400, hauteur: 1600 })).toBe(true);
     expect(convientEnTete({ largeur: 1200, hauteur: 800 })).toBe(false);
     expect(convientEnTete({ largeur: 2400, hauteur: 2400 })).toBe(false);
   });
 
-  it("donne l'adresse publique du bucket medias, ouverte à next/image dans next.config.ts", async () => {
+  it("donne l’adresse publique du bucket medias, ouverte à next/image dans next.config.ts", async () => {
     expect(urlPublique("galeries/2026/10/a.jpg", "https://abc.supabase.co/")).toBe("https://abc.supabase.co/storage/v1/object/public/medias/galeries/2026/10/a.jpg");
     const { readFileSync } = await import("node:fs");
     const config = readFileSync(`${process.cwd()}/next.config.ts`, "utf8");
@@ -90,7 +90,7 @@ describe("données de secours", () => {
     expect(idPhotoSite("hero-premiere-danse")).not.toBe(idPhotoSite("vinyles"));
   });
 
-  it("une photo partagée par plusieurs galeries n'est enregistrée qu'une fois", () => {
+  it("une photo partagée par plusieurs galeries n’est enregistrée qu’une fois", () => {
     const photos = photosDeRepli();
     expect(new Set(photos.map((p) => p.chemin)).size).toBe(photos.length);
     const ouverture = liaisonsDeRepli().filter((l) => l.galerie === "option:ouverture-de-bal");
@@ -104,7 +104,7 @@ describe("données de secours", () => {
 describe("sansPhotosDejaMontrees", async () => {
   const { sansPhotosDejaMontrees } = await import("./selection");
   const p = (src: string) => ({ src, width: 2000, height: 1300, alt: src });
-  it("retire de l'en-tête les photos déjà montrées sur la page", () => {
+  it("retire de l’en-tête les photos déjà montrées sur la page", () => {
     expect(sansPhotosDejaMontrees([p("/a.jpg"), p("/b.jpg"), p("/c.jpg")], ["/b.jpg", "/z.jpg"]).map((x) => x.src)).toEqual(["/a.jpg", "/c.jpg"]);
   });
   it("ne rend jamais un en-tête vide", () => {

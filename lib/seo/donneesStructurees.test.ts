@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { article, entreprise, filAriane, pageFaq, serialiser } from "./donneesStructurees";
 
 describe("données structurées", () => {
-  it("décrivent l'entreprise avec sa zone et ses distinctions, sans note inventée", () => {
+  it("décrivent l’entreprise avec sa zone et ses distinctions, sans note inventée", () => {
     const e = entreprise("fr");
     expect(e["@type"]).toBe("EntertainmentBusiness");
     expect(JSON.stringify(e.areaServed)).toContain("Île-de-France");
@@ -14,14 +14,14 @@ describe("données structurées", () => {
     expect(e.taxID).toBe("530672666");
   });
 
-  it("produisent une FAQ et un fil d'Ariane conformes", () => {
+  it("produisent une FAQ et un fil d’Ariane conformes", () => {
     const f = pageFaq([{ question: "Q ?", reponse: "R." }]);
     expect(f.mainEntity).toEqual([{ "@type": "Question", name: "Q ?", acceptedAnswer: { "@type": "Answer", text: "R." } }]);
     const a = filAriane([{ nom: "Accueil", url: "/" }, { nom: "FAQ", url: "/faq" }]);
     expect((a.itemListElement as { item: string }[])[1].item).toBe("https://www.spiceevents.fr/faq");
   });
 
-  it("décrivent un article avec l'adresse complète de sa couverture (fichier du site ou stockage)", () => {
+  it("décrivent un article avec l’adresse complète de sa couverture (fichier du site ou stockage)", () => {
     const base = { titre: "T", description: "D", date: "2026-02-03", url: "/journal/t" };
     expect(article({ ...base, image: "/journal/t/couverture.jpg" })).toMatchObject({
       "@type": "BlogPosting",

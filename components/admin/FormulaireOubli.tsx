@@ -15,8 +15,8 @@ const CLASSES_CHAMP =
   "w-full border bg-nuit px-3.5 py-3.5 text-base text-ivoire placeholder:text-sable/50 transition-colors focus:border-or";
 
 /**
- * Demande d'un lien de nouveau mot de passe. La réponse est la même que
- * l'adresse corresponde au compte ou non (rien n'est révélé) ; toute la
+ * Demande d’un lien de nouveau mot de passe. La réponse est la même que
+ * l’adresse corresponde au compte ou non (rien n’est révélé) ; toute la
  * décision est prise par la Server Action.
  */
 export function FormulaireOubli({ action }: Props) {
@@ -44,7 +44,7 @@ export function FormulaireOubli({ action }: Props) {
 
   return (
     <form action={envoyer} noValidate className="flex flex-col gap-6">
-      <p className="text-sable">Indiquez l&apos;adresse de votre compte : vous recevrez un lien pour choisir un nouveau mot de passe.</p>
+      <p className="text-sable">Indiquez l’adresse de votre compte : vous recevrez un lien pour choisir un nouveau mot de passe.</p>
       <div className="flex flex-col gap-2">
         <label htmlFor="oubli-email" className={CLASSES_LIBELLE}>
           Email

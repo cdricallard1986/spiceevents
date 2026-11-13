@@ -12,9 +12,9 @@ type Props = { action: (entree: { nouveau: unknown; confirmation: unknown }) => 
 const CLASSES_CHAMP = "w-full border bg-nuit px-3.5 py-3.5 text-base text-ivoire transition-colors focus:border-or";
 
 /**
- * Choix d'un nouveau mot de passe (deux saisies), décision par la Server Action.
+ * Choix d’un nouveau mot de passe (deux saisies), décision par la Server Action.
  * Règle de Cédric : les critères se cochent pendant la frappe, et une ligne dit
- * si les deux saisies sont identiques dès qu'on commence la confirmation.
+ * si les deux saisies sont identiques dès qu’on commence la confirmation.
  */
 export function FormulaireMotDePasse({ action }: Props) {
   const [etat, envoyer, enCours] = useActionState(

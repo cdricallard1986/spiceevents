@@ -7,16 +7,16 @@ import { CLASSES_PASTILLE } from "./champs";
 export { CLASSES_PASTILLE };
 
 /**
- * Vignette d'une photo du back office (fichier du site ou du bucket `medias`),
+ * Vignette d’une photo du back office (fichier du site ou du bucket `medias`),
  * recadrée dans son cadre : le parent fixe la taille (`relative` + dimensions).
- * Texte alternatif vide : la vignette accompagne toujours son texte, qu'un
- * lecteur d'écran lirait deux fois.
+ * Texte alternatif vide : la vignette accompagne toujours son texte, qu’un
+ * lecteur d’écran lirait deux fois.
  */
 export function ApercuPhoto({ photo, sizes = "160px", className = "" }: { photo: Pick<Photo, "origine" | "chemin">; sizes?: string; className?: string }) {
   return <Image src={adressePhoto(photo)} alt="" fill sizes={sizes} quality={70} className={`object-cover ${className}`} />;
 }
 
-/** Pastille de l'origine : fichier du site (non supprimable) ou photo envoyée. */
+/** Pastille de l’origine : fichier du site (non supprimable) ou photo envoyée. */
 export function PillOrigine({ photo }: { photo: Pick<Photo, "origine"> }) {
   return photo.origine === "site" ? (
     <span className={`${CLASSES_PASTILLE} border-ligne text-sable`}>Fichier du site</span>

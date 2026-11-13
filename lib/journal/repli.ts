@@ -4,19 +4,19 @@ import { ligneDepuisMdx } from "./conversion";
 import type { LigneArticle } from "./types";
 
 /**
- * Données de secours : les 37 articles MDX d'avant le back office
+ * Données de secours : les 37 articles MDX d’avant le back office
  * (`contenu/journal/*.mdx`), convertis au format de la table `articles`
- * À L'IDENTIQUE de l'import en base (migration 0009, générée par la même
+ * À L’IDENTIQUE de l’import en base (migration 0009, générée par la même
  * conversion et vérifiée par import-sql.test.ts). Servent quand Supabase
- * n'est pas configuré — voir `source.ts` : les pages n'ont ainsi qu'un seul
- * rendu, celui du document de l'éditeur. Retirées à l'étape 7 du plan.
+ * n’est pas configuré — voir `source.ts` : les pages n’ont ainsi qu’un seul
+ * rendu, celui du document de l’éditeur. Retirées à l’étape 7 du plan.
  */
 
 export const DOSSIER_MDX = path.join(process.cwd(), "contenu", "journal");
 
 let cache: LigneArticle[] | undefined;
 
-/** Les articles des fichiers, tous publiés, dans l'ordre des noms de fichier. */
+/** Les articles des fichiers, tous publiés, dans l’ordre des noms de fichier. */
 export function lignesDeRepli(dossier: string = DOSSIER_MDX): LigneArticle[] {
   if (dossier !== DOSSIER_MDX) return lire(dossier);
   cache ??= lire(dossier);

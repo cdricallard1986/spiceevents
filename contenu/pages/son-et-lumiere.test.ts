@@ -22,7 +22,7 @@ describe("page Son & lumière", () => {
     for (const l of ["fr", "en"] as const) expect(FAQ[l].themes.find((t) => t.id === "technique")?.questions.length).toBeGreaterThan(0);
   });
 
-  it("reçoit l'ancienne page « performances techniques » et les articles sur le matériel", () => {
+  it("reçoit l’ancienne page « performances techniques » et les articles sur le matériel", () => {
     const vers = (source: string) => redirections().find((r) => r.source === source)?.destination;
     expect(vers("/performances-techniques-son-and-lumieres")).toBe("/son-et-lumiere");
     expect(vers("/blog/nouvelle-regie-pioneer-blanche-edition-limitee")).toBe("/son-et-lumiere");

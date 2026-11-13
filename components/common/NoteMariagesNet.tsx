@@ -27,7 +27,7 @@ function noteAffichee(fr: boolean) {
 
 /**
  * La note Mariages.net en une ligne (sous les avis qui défilent) : étoiles, note,
- * nombre d'avis et lien vers la page d'avis Mariages.net. Aucun script extérieur.
+ * nombre d’avis et lien vers la page d’avis Mariages.net. Aucun script extérieur.
  */
 export function NoteMariagesNet() {
   const fr = useLocale() === "fr";

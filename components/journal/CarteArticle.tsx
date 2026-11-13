@@ -13,7 +13,7 @@ type Props = {
   compact?: boolean;
 };
 
-/** Vignette d'un article du journal, vers sa page (même présentation que `CarteOption`). */
+/** Vignette d’un article du journal, vers sa page (même présentation que `CarteOption`). */
 export function CarteArticle({ article: a, enAvant = false, compact = false }: Props) {
   const href = { pathname: "/journal/[slug]", params: { slug: a.slug } } as const;
   const meta = (
@@ -40,7 +40,7 @@ export function CarteArticle({ article: a, enAvant = false, compact = false }: P
           {meta}
           <h2 className="mt-4 font-display text-4xl leading-[1.08] group-hover:text-or md:text-5xl">{a.titre}</h2>
           <p className="mt-6 text-lg text-sable">{a.description}</p>
-          <span className={`${classesBouton("lien")} mt-8`}>Lire l&apos;article · {a.lecture} min →</span>
+          <span className={`${classesBouton("lien")} mt-8`}>Lire l’article · {a.lecture} min →</span>
         </div>
       </Link>
     );

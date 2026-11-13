@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import type { StatutSauvegarde } from "@/hooks/useModalAutosave";
 import { CLASSES_PASTILLE } from "./champs";
 
-/** Délai avant que « ✓ Enregistré » ne s'estompe en « ✓ À jour ». */
+/** Délai avant que « ✓ Enregistré » ne s’estompe en « ✓ À jour ». */
 const DUREE_ENREGISTRE_MS = 2000;
 
 const BASE = `${CLASSES_PASTILLE} transition-colors duration-500`;
@@ -20,10 +20,10 @@ const STYLES: Record<StatutSauvegarde, { texte: string; classes: string }> = {
 
 /**
  * Pill de statut des modales auto-enregistrées, à côté du titre. En erreur,
- * elle devient un bouton qui relance l'enregistrement.
+ * elle devient un bouton qui relance l’enregistrement.
  */
 export function PillStatut({ statut, onReessayer }: { statut: StatutSauvegarde; onReessayer?: () => void }) {
-  // « Enregistré » s'estompe après deux secondes (le statut reste le même côté hook).
+  // « Enregistré » s’estompe après deux secondes (le statut reste le même côté hook).
   const [estompe, setEstompe] = useState(false);
   useEffect(() => {
     setEstompe(false);

@@ -24,7 +24,7 @@ describe("validerChampsPhoto", () => {
 });
 
 describe("schemaDemandeEnvoi", () => {
-  it("n'accepte que les types du bucket et 15 Mo au plus", () => {
+  it("n’accepte que les types du bucket et 15 Mo au plus", () => {
     expect(schemaDemandeEnvoi.safeParse({ nomFichier: "a.jpg", type: "image/jpeg", taille: 1000 }).success).toBe(true);
     expect(schemaDemandeEnvoi.safeParse({ nomFichier: "a.svg", type: "image/svg+xml", taille: 1000 }).success).toBe(false);
     expect(schemaDemandeEnvoi.safeParse({ nomFichier: "a.jpg", type: "image/jpeg", taille: 15 * 1024 * 1024 + 1 }).success).toBe(false);
@@ -60,7 +60,7 @@ describe("galeries et ordre", () => {
     expect(schemaAjoutGalerie.safeParse({ galerie: "galerie_evenements", photoIds: [] }).success).toBe(false);
   });
 
-  it("une photo ne s'échange pas avec elle-même", () => {
+  it("une photo ne s’échange pas avec elle-même", () => {
     expect(schemaEchangePhotos.safeParse({ galerie: "galerie_mariages", photoId: ID, avecId: ID, sens: "monter" }).success).toBe(false);
   });
 });

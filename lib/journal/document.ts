@@ -2,16 +2,16 @@ import { z } from "zod";
 import { LIMITES_ARTICLES, estCheminImage, longueur } from "./constantes";
 
 /**
- * Contenu d'un article : le document JSON de l'éditeur visuel (Tiptap /
+ * Contenu d’un article : le document JSON de l’éditeur visuel (Tiptap /
  * ProseMirror), colonne `contenu` de la table `articles`.
  *
- * Seul un petit sous-ensemble est autorisé — celui des articles d'aujourd'hui
- * et de l'éditeur à venir : paragraphes, intertitres (niveaux 2 et 3), listes,
+ * Seul un petit sous-ensemble est autorisé — celui des articles d’aujourd’hui
+ * et de l’éditeur à venir : paragraphes, intertitres (niveaux 2 et 3), listes,
  * citation, séparateur, saut de ligne, photos, et du texte en gras, en
  * italique ou en lien. Le validateur (`validerDocument`) est STRICT : tout
  * nœud, marque ou attribut inconnu est refusé, et un lien ne peut viser
- * qu'une adresse web, un email, un téléphone ou une page du site. Il sert à
- * la lecture publique ET aux Server Actions de l'éditeur : le rendu
+ * qu’une adresse web, un email, un téléphone ou une page du site. Il sert à
+ * la lecture publique ET aux Server Actions de l’éditeur : le rendu
  * (components/journal/ContenuArticle.tsx) ne reçoit jamais autre chose.
  */
 
@@ -20,9 +20,9 @@ import { LIMITES_ARTICLES, estCheminImage, longueur } from "./constantes";
 export type MarqueGras = { type: "bold" };
 export type MarqueItalique = { type: "italic" };
 /**
- * Lien. `target`, `rel` et `class` sont les attributs que l'extension Link de
+ * Lien. `target`, `rel` et `class` sont les attributs que l’extension Link de
  * Tiptap écrit toujours dans son JSON : seuls `null` (ou leur absence) sont
- * acceptés — le rendu choisit lui-même (nouvel onglet pour l'extérieur).
+ * acceptés — le rendu choisit lui-même (nouvel onglet pour l’extérieur).
  */
 export type MarqueLien = { type: "link"; attrs: { href: string; target?: null; rel?: null; class?: null } };
 export type Marque = MarqueGras | MarqueItalique | MarqueLien;
@@ -33,7 +33,7 @@ export type NoeudEnLigne = NoeudTexte | SautDeLigne;
 
 export type Paragraphe = { type: "paragraph"; content?: NoeudEnLigne[] };
 export type Intertitre = { type: "heading"; attrs: { level: 2 | 3 }; content?: NoeudEnLigne[] };
-/** Élément de liste : un paragraphe, puis éventuellement d'autres blocs (schéma ProseMirror `paragraph block*`). */
+/** Élément de liste : un paragraphe, puis éventuellement d’autres blocs (schéma ProseMirror `paragraph block*`). */
 export type ElementListe = { type: "listItem"; content: [Paragraphe, ...Bloc[]] };
 export type ListePuces = { type: "bulletList"; content: ElementListe[] };
 export type ListeNumerotee = { type: "orderedList"; attrs?: { start?: number; type?: null }; content: ElementListe[] };
@@ -49,7 +49,7 @@ export type Image = { type: "image"; attrs: AttributsImage };
 export type Bloc = Paragraphe | Intertitre | ListePuces | ListeNumerotee | Citation | Separateur | Image;
 export type DocumentArticle = { type: "doc"; content: Bloc[] };
 
-/** Document d'un article neuf (valeur par défaut de la colonne). */
+/** Document d’un article neuf (valeur par défaut de la colonne). */
 export const DOCUMENT_VIDE: DocumentArticle = { type: "doc", content: [] };
 
 // --- Liens ----------------------------------------------------------------------
@@ -59,7 +59,7 @@ export const DOCUMENT_VIDE: DocumentArticle = { type: "doc", content: [] };
  * - une page du site : `/…` (jamais `//…`, qui viserait un autre domaine) ;
  * - une adresse web `https://…` ou `http://…` (les deux sont sans danger pour
  *   un lien de navigation ; `http://` est gardé pour deux liens externes des
- *   articles d'origine, dont la version https n'est pas vérifiée) ;
+ *   articles d’origine, dont la version https n’est pas vérifiée) ;
  * - `mailto:` (une adresse avec @) ou `tel:` (chiffres, +, points, tirets, parenthèses).
  * Tout le reste est refusé : `javascript:`, `data:`, `vbscript:`, ancre seule, espaces…
  */
@@ -161,11 +161,11 @@ const schemaCitation = z.strictObject({ type: z.literal("blockquote"), content: 
 
 export const schemaDocument: z.ZodType<DocumentArticle> = z.strictObject({ type: z.literal("doc"), content: z.array(schemaBloc) });
 
-/** Taille maximale du document (JSON, en caractères) et profondeur d'imbrication des blocs. */
+/** Taille maximale du document (JSON, en caractères) et profondeur d’imbrication des blocs. */
 export const TAILLE_MAX_DOCUMENT = 1_000_000;
 export const PROFONDEUR_MAX_DOCUMENT = 12;
 
-/** Profondeur d'imbrication des nœuds, sans récursion (un document hostile ne fait pas déborder la pile). */
+/** Profondeur d’imbrication des nœuds, sans récursion (un document hostile ne fait pas déborder la pile). */
 function profondeur(racine: unknown): number {
   let max = 0;
   const pile: [unknown, number][] = [[racine, 0]];
@@ -181,7 +181,7 @@ function profondeur(racine: unknown): number {
 
 export type ValidationDocument = { ok: true; document: DocumentArticle } | { ok: false; message: string };
 
-/** Valide un document (lecture en base, Server Actions) ; en erreur, un message en clair avec l'endroit fautif. */
+/** Valide un document (lecture en base, Server Actions) ; en erreur, un message en clair avec l’endroit fautif. */
 export function validerDocument(brut: unknown): ValidationDocument {
   let taille: number;
   try {
@@ -222,7 +222,7 @@ function texteBloc(b: Bloc): string {
 
 /**
  * Texte brut du document : le texte de chaque bloc, un bloc par ligne (les
- * photos n'y figurent pas). Sert au temps de lecture et aux vérifications.
+ * photos n’y figurent pas). Sert au temps de lecture et aux vérifications.
  */
 export function texteBrut(document: DocumentArticle): string {
   return document.content
@@ -237,7 +237,7 @@ export const MOTS_PAR_MINUTE = 200;
  * Temps de lecture en minutes (au moins 1), à 200 mots par minute. Un mot
  * est une suite de caractères qui contient une lettre ou un chiffre. Les
  * mots sont comptés morceau de texte par morceau de texte, un tiret
- * séparant deux mots : c'est le compte d'avant le back office (calculé sur
+ * séparant deux mots : c’est le compte d’avant le back office (calculé sur
  * le Markdown, où un lien ou du gras coupait le mot : « l’[éclairage](…) »),
  * pour que le temps affiché des articles importés ne change pas.
  */
@@ -268,12 +268,12 @@ function blocsAPlat(blocs: Bloc[]): Bloc[] {
   });
 }
 
-/** Les photos du document, dans l'ordre de lecture (listes et citations comprises). */
+/** Les photos du document, dans l’ordre de lecture (listes et citations comprises). */
 export function imagesDuDocument(document: DocumentArticle): AttributsImage[] {
   return blocsAPlat(document.content).flatMap((b) => (b.type === "image" ? [b.attrs] : []));
 }
 
-/** Les liens du document dans l'ordre : adresse et texte (les morceaux contigus d'un même lien sont réunis). */
+/** Les liens du document dans l’ordre : adresse et texte (les morceaux contigus d’un même lien sont réunis). */
 export function liensDuDocument(document: DocumentArticle): { href: string; texte: string }[] {
   const liens: { href: string; texte: string }[] = [];
   for (const b of blocsAPlat(document.content)) {

@@ -1,14 +1,14 @@
 /**
  * Pourquoi est-on sur la page de connexion ? Sans explication, être renvoyé
- * vers la connexion ressemble à un bug. La raison arrive par l'adresse
+ * vers la connexion ressemble à un bug. La raison arrive par l’adresse
  * (`/admin/connexion?raison=session_expiree`).
  */
 export const RAISONS = {
   session_expiree: "Votre session a expiré ou a été fermée depuis un autre appareil. Reconnectez-vous.",
   deconnecte: "Vous êtes déconnecté de cet appareil.",
-  acces_refuse: "Ce compte n'a pas accès au back office.",
+  acces_refuse: "Ce compte n’a pas accès au back office.",
   indisponible: "Le service de connexion ne répond pas. Réessayez dans un instant.",
-  lien_invalide: "Ce lien de nouveau mot de passe n'est plus valable (déjà utilisé, ou plus d'une heure). Demandez-en un autre avec « Mot de passe oublié ? ».",
+  lien_invalide: "Ce lien de nouveau mot de passe n’est plus valable (déjà utilisé, ou plus d’une heure). Demandez-en un autre avec « Mot de passe oublié ? ».",
 } as const;
 
 export type Raison = keyof typeof RAISONS;

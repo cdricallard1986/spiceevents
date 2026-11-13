@@ -36,7 +36,7 @@ function formaterDate(date: string | null): string | null {
  * Liste des articles du back office : brouillons en tête, puis publiés du
  * plus récent au plus ancien ; filtres par statut, catégorie, recherche dans
  * le titre. « Nouvel article » crée aussitôt un brouillon en base et ouvre
- * l'éditeur (/admin/journal/[id]).
+ * l’éditeur (/admin/journal/[id]).
  */
 export function GestionJournal({ articles, creer }: { articles: ArticleListe[]; creer: () => Promise<ResultatCreationArticle> }) {
   const [filtres, setFiltres] = useState<FiltresArticles>(FILTRES_ARTICLES_PAR_DEFAUT);
@@ -146,7 +146,7 @@ export function GestionJournal({ articles, creer }: { articles: ArticleListe[]; 
 
       {visibles.length === 0 ? (
         <p className="mt-6 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
-          {articles.length === 0 ? "Aucun article pour l'instant : écrivez le premier avec « Nouvel article »." : "Aucun article ne correspond à ces filtres."}
+          {articles.length === 0 ? "Aucun article pour l’instant : écrivez le premier avec « Nouvel article »." : "Aucun article ne correspond à ces filtres."}
         </p>
       ) : (
         <ul className="mt-6 border border-ligne bg-nuit-2">
@@ -166,7 +166,7 @@ function LigneArticle({ article: a }: { article: ArticleListe }) {
     <li className={`relative flex flex-col gap-3 border-t border-ligne px-4 py-4 transition-colors first:border-t-0 hover:bg-nuit-3/40 sm:flex-row sm:items-center sm:gap-6 sm:px-5 ${a.statut === "brouillon" ? "bg-nuit-3/60" : ""}`}>
       <div className="min-w-0 flex-1">
         <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
-          {/* Lien étiré : toute la ligne ouvre l'article (Cmd/Ctrl+clic : nouvel onglet). */}
+          {/* Lien étiré : toute la ligne ouvre l’article (Cmd/Ctrl+clic : nouvel onglet). */}
           <Link
             href={`/admin/journal/${a.id}`}
             className={`min-w-0 max-w-full truncate text-left font-display text-xl leading-tight after:absolute after:inset-0 hover:text-or ${a.titre.trim() ? "text-ivoire" : "italic text-sable"}`}
@@ -194,7 +194,7 @@ function LigneArticle({ article: a }: { article: ArticleListe }) {
         )}
         <Link
           href={`/admin/journal/${a.id}`}
-          aria-label={`Modifier l'article « ${titre} »`}
+          aria-label={`Modifier l’article « ${titre} »`}
           className={classesBouton("lien")}
         >
           Modifier →

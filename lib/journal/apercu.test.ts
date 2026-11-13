@@ -3,7 +3,7 @@ import { COUVERTURE_PROVISOIRE, apercuDepuisLigne } from "./apercu";
 import { articleDepuisLigne } from "./articles";
 import { lignesDeRepli } from "./repli";
 
-describe("aperçu d'un article", () => {
+describe("aperçu d’un article", () => {
   it("article complet : le même article que la page publique", () => {
     const [l] = lignesDeRepli();
     expect(apercuDepuisLigne(l)).toEqual({ ok: true, manques: [], article: articleDepuisLigne(l) });

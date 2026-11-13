@@ -9,11 +9,11 @@ import { COLONNES_AVIS, type Avis } from "./types";
  * Lecture des avis publiés pour les pages publiques (serveur seulement).
  *
  * - Client publishable sans cookies : les pages restent statiques.
- * - Mise en cache sous l'étiquette `avis` : chaque action du back office
+ * - Mise en cache sous l’étiquette `avis` : chaque action du back office
  *   appelle `revalidateTag("avis")`, et la page est régénérée à la visite
  *   suivante. Filet : régénération toutes les heures.
  * - Source choisie par `sourceAvis()` : Supabase, ou les fichiers de secours
- *   sans Supabase dans l'environnement. Une erreur de Supabase est levée,
+ *   sans Supabase dans l’environnement. Une erreur de Supabase est levée,
  *   jamais remplacée par les fichiers : on ne publie pas une page sans ses avis.
  */
 

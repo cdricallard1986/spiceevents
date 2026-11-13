@@ -4,8 +4,8 @@ import { Accent } from "@/components/common/Accent";
 import { Icone } from "./Icones";
 
 /**
- * En-tête d'une page du back office, dans la charte Nocturne du site : surtitre
- * orange, titre en capitales condensées dont la seconde moitié (l'accroche) est
+ * En-tête d’une page du back office, dans la charte Nocturne du site : surtitre
+ * orange, titre en capitales condensées dont la seconde moitié (l’accroche) est
  * orange, introduction, et éventuels boutons sous le texte.
  */
 export function EnTeteAdmin({ section, titre, intro, children }: { section: Section; titre?: string; intro?: ReactNode; children?: ReactNode }) {

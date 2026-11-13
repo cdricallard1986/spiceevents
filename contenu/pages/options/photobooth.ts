@@ -18,7 +18,7 @@ export const PHOTOBOOTH: ContenuOption = typographier({
         surtitre: "Animation · Photobooth",
         titre: "Les fous rires de vos invités, *imprimés sur le vif*.",
         intro:
-          "Capturez, imprimez, partagez : une borne photo fun et personnalisable, pour un mariage, un anniversaire ou un événement d'entreprise.",
+          "Capturez, imprimez, partagez : une borne photo fun et personnalisable, pour un mariage, un anniversaire ou un événement d’entreprise.",
       },
       presentation: {
         surtitre: "Le photobooth Spice Events",
@@ -52,7 +52,7 @@ export const PHOTOBOOTH: ContenuOption = typographier({
       ],
       appel: {
         titre: "Un photobooth pour *votre soirée* ?",
-        texte: "Donnez-nous votre date et le nombre d'invités : Cédric vous prépare un devis sur mesure.",
+        texte: "Donnez-nous votre date et le nombre d’invités : Cédric vous prépare un devis sur mesure.",
       },
     },
     en: {
@@ -71,7 +71,7 @@ export const PHOTOBOOTH: ContenuOption = typographier({
         surtitre: "The Spice Events photobooth",
         titre: "Instant memories, *captured in style*.",
         paragraphes: [
-          "With or without props, the photobooth brings out everyone's playful side: guests let go, strike pose after pose and leave with their photo printed there and then.",
+          "With or without props, the photobooth brings out everyone’s playful side: guests let go, strike pose after pose and leave with their photo printed there and then.",
           "Every photo is also sent to you digitally the Monday after, so you can relive the party straight away.",
         ],
       },

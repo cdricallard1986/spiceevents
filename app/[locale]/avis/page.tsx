@@ -28,7 +28,7 @@ export default async function PageAvis({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = PAGE_AVIS[locale];
-  // Tous les avis publiés, en entier, dans l'ordre réglé dans le back office.
+  // Tous les avis publiés, en entier, dans l’ordre réglé dans le back office.
   const tous = await avisPublies();
   const mariages = grilleTextes(avisDeCategorie(tous, "mariage"), locale);
   const evenements = grilleTextes(avisDeCategorie(tous, "evenement"), locale);

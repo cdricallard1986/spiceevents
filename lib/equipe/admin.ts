@@ -14,8 +14,8 @@ export function trierEquipe(liste: readonly MembreEquipe[]): MembreEquipe[] {
 }
 
 /**
- * Chemin sûr d'une photo envoyée : `equipe/<aaaa>/<mm>/<horodatage>-<aléa>.<ext>`.
- * L'extension vient du type MIME (validé), jamais du nom du fichier.
+ * Chemin sûr d’une photo envoyée : `equipe/<aaaa>/<mm>/<horodatage>-<aléa>.<ext>`.
+ * L’extension vient du type MIME (validé), jamais du nom du fichier.
  */
 export function cheminEnvoiMembre(type: TypeImage, maintenant: Date, alea: string): string {
   const aaaa = String(maintenant.getUTCFullYear());
@@ -23,7 +23,7 @@ export function cheminEnvoiMembre(type: TypeImage, maintenant: Date, alea: strin
   const propre = alea.toLowerCase().replace(/[^a-z0-9]/g, "");
   if (propre.length < 6) throw new Error("Aléa trop court pour un nom de fichier.");
   const chemin = `equipe/${aaaa}/${mm}/${maintenant.getTime()}-${propre}.${TYPES_IMAGE[type]}`;
-  if (!estCheminPhotoMembre(chemin)) throw new Error("Chemin d'envoi invalide.");
+  if (!estCheminPhotoMembre(chemin)) throw new Error("Chemin d’envoi invalide.");
   return chemin;
 }
 

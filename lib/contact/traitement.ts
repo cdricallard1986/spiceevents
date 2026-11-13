@@ -4,8 +4,8 @@ import { debutFenetre, empreinteIp, verifierLimite } from "./limite";
 import { estRobot, validerDemande, type Champ, type Demande, type ErreursChamps, type Langue } from "./schema";
 
 /**
- * Traitement d'une demande de contact, du formulaire brut à la réponse au
- * couple. La base et l'envoi d'emails sont injectés : la Server Action fournit
+ * Traitement d’une demande de contact, du formulaire brut à la réponse au
+ * couple. La base et l’envoi d’emails sont injectés : la Server Action fournit
  * les vrais (Supabase, Resend), les tests des faux. Ordre :
  *
  * 1. validation Zod (erreurs par champ) ;
@@ -16,7 +16,7 @@ import { estRobot, validerDemande, type Champ, type Demande, type ErreursChamps,
  * 6. accusé de réception au couple ;
  * 7. mise à jour des booléens `email_envoye` / `accuse_envoye`.
  *
- * Aucune demande perdue : la base OU l'email à Cédric suffit pour répondre
+ * Aucune demande perdue : la base OU l’email à Cédric suffit pour répondre
  * « succès ». Si les deux échouent, le couple est invité à téléphoner.
  */
 
@@ -48,14 +48,14 @@ export type LigneDemande = {
 
 export type Base = {
   compterRecentes(ipEmpreinte: string, depuis: Date): Promise<number>;
-  /** Renvoie l'identifiant de la ligne créée ; lève une erreur en cas d'échec. */
+  /** Renvoie l’identifiant de la ligne créée ; lève une erreur en cas d’échec. */
   inserer(ligne: LigneDemande): Promise<string>;
   marquer(id: string, etat: { email_envoye: boolean; accuse_envoye: boolean }): Promise<void>;
 };
 
 export type Envoi = {
   config: ConfigEmail;
-  /** Lève une erreur si l'email n'est pas parti. */
+  /** Lève une erreur si l’email n’est pas parti. */
   envoyer(email: EmailPrepare): Promise<void>;
 };
 
@@ -82,7 +82,7 @@ const MESSAGES = {
   fr: {
     validation: "Certains champs sont à vérifier.",
     limite: `Vous nous avez déjà envoyé plusieurs demandes. Pour aller plus vite, appelez Cédric au ${SITE.telephoneAffiche}.`,
-    panne: `Votre demande n'a pas pu être envoyée. Appelez Cédric au ${SITE.telephoneAffiche} ou écrivez à ${SITE.email}.`,
+    panne: `Votre demande n’a pas pu être envoyée. Appelez Cédric au ${SITE.telephoneAffiche} ou écrivez à ${SITE.email}.`,
   },
   en: {
     validation: "Please check the highlighted fields.",
@@ -146,7 +146,7 @@ export async function traiterDemande(brut: Record<string, string>, d: Dependance
   // 3. Limitation par IP.
   let ipEmpreinte: string | null = null;
   if (d.ip && d.secretIp) ipEmpreinte = empreinteIp(d.ip, d.secretIp);
-  else if (d.production) d.journal.avertir("[contact] IP ou secret d'empreinte absent : limite par IP non appliquée.");
+  else if (d.production) d.journal.avertir("[contact] IP ou secret d’empreinte absent : limite par IP non appliquée.");
 
   if (d.base && ipEmpreinte) {
     const base = d.base;
@@ -164,7 +164,7 @@ export async function traiterDemande(brut: Record<string, string>, d: Dependance
     try {
       id = await d.base.inserer(ligne(demande, ipEmpreinte));
     } catch (e) {
-      d.journal.erreur("[contact] Insertion en base impossible, on tente l'email.", e);
+      d.journal.erreur("[contact] Insertion en base impossible, on tente l’email.", e);
     }
   }
 
@@ -178,7 +178,7 @@ export async function traiterDemande(brut: Record<string, string>, d: Dependance
       d.journal.erreur("[contact] Email à Cédric non envoyé.", e);
     }
   } else {
-    d.journal.erreur("[contact] Resend non configuré : la demande n'est qu'en base.");
+    d.journal.erreur("[contact] Resend non configuré : la demande n’est qu’en base.");
   }
 
   if (!id && !emailEnvoye) {
@@ -203,7 +203,7 @@ export async function traiterDemande(brut: Record<string, string>, d: Dependance
     try {
       await d.base.marquer(id, { email_envoye: emailEnvoye, accuse_envoye: accuseEnvoye });
     } catch (e) {
-      d.journal.avertir("[contact] Mise à jour des indicateurs d'envoi impossible.", e);
+      d.journal.avertir("[contact] Mise à jour des indicateurs d’envoi impossible.", e);
     }
   }
 

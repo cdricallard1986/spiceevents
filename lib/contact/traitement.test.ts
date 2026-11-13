@@ -44,7 +44,7 @@ function fausseBase(options: { panneComptage?: boolean; panneInsertion?: boolean
   return { base, lignes, marques };
 }
 
-/** Faux envoi d'emails, avec des pannes à la demande. */
+/** Faux envoi d’emails, avec des pannes à la demande. */
 function fauxEnvoi(options: { panne?: boolean; panneAccuse?: boolean } = {}) {
   const envoyes: { to: string; subject: string }[] = [];
   const envoi: Envoi = {
@@ -82,7 +82,7 @@ describe("traiterDemande — cas nominal", () => {
     expect(b.marques).toEqual([{ id: "id-1", etat: { email_envoye: true, accuse_envoye: true } }]);
   });
 
-  it("stocke l'empreinte de l'IP, jamais l'IP en clair", async () => {
+  it("stocke l’empreinte de l’IP, jamais l’IP en clair", async () => {
     const b = fausseBase();
     await traiterDemande(brut(), deps({ base: b.base }));
     const ligne = b.lignes[0];
@@ -130,7 +130,7 @@ describe("traiterDemande — robots", () => {
   it.each([
     ["champ piège rempli", { site_web: "https://spam.example" }],
     ["envoi en moins de 3 s", { ouvert_le: "1000000", envoye_le: "1001000" }],
-  ])("%s : succès silencieux, rien n'est écrit ni envoyé", async (_, modifs) => {
+  ])("%s : succès silencieux, rien n’est écrit ni envoyé", async (_, modifs) => {
     const b = fausseBase();
     const e = fauxEnvoi();
     const r = await traiterDemande(brut(modifs), deps({ base: b.base, envoi: e.envoi }));
@@ -152,7 +152,7 @@ describe("traiterDemande — limitation par IP", () => {
     expect(e.envoyes).toHaveLength(0);
   });
 
-  it("compte sur la fenêtre d'une heure, par empreinte", async () => {
+  it("compte sur la fenêtre d’une heure, par empreinte", async () => {
     const b = fausseBase();
     await traiterDemande(brut(), deps({ base: b.base }));
     expect(b.base.compterRecentes).toHaveBeenCalledWith(expect.stringMatching(/^[0-9a-f]{64}$/), new Date("2026-10-15T07:00:00Z"));
@@ -166,7 +166,7 @@ describe("traiterDemande — limitation par IP", () => {
     expect(d.journal.avertir).toHaveBeenCalled();
   });
 
-  it("sans secret IP : pas d'empreinte, pas de limite, mais la demande passe", async () => {
+  it("sans secret IP : pas d’empreinte, pas de limite, mais la demande passe", async () => {
     const b = fausseBase();
     const r = await traiterDemande(brut(), deps({ base: b.base, secretIp: null }));
     expect(r).toEqual({ statut: "succes" });
@@ -176,7 +176,7 @@ describe("traiterDemande — limitation par IP", () => {
 });
 
 describe("traiterDemande — pannes (aucune demande perdue)", () => {
-  it("si l'insertion échoue, l'email part quand même : succès", async () => {
+  it("si l’insertion échoue, l’email part quand même : succès", async () => {
     const b = fausseBase({ panneInsertion: true });
     const e = fauxEnvoi();
     const d = deps({ base: b.base, envoi: e.envoi });
@@ -187,7 +187,7 @@ describe("traiterDemande — pannes (aucune demande perdue)", () => {
     expect(d.journal.erreur).toHaveBeenCalled();
   });
 
-  it("si l'email échoue mais que la demande est en base : succès, booléens à faux", async () => {
+  it("si l’email échoue mais que la demande est en base : succès, booléens à faux", async () => {
     const b = fausseBase();
     const e = fauxEnvoi({ panne: true });
     const r = await traiterDemande(brut(), deps({ base: b.base, envoi: e.envoi }));
@@ -195,7 +195,7 @@ describe("traiterDemande — pannes (aucune demande perdue)", () => {
     expect(b.marques).toEqual([{ id: "id-1", etat: { email_envoye: false, accuse_envoye: false } }]);
   });
 
-  it("si seul l'accusé échoue : succès, accuse_envoye à faux", async () => {
+  it("si seul l’accusé échoue : succès, accuse_envoye à faux", async () => {
     const b = fausseBase();
     const e = fauxEnvoi({ panneAccuse: true });
     const r = await traiterDemande(brut(), deps({ base: b.base, envoi: e.envoi }));
@@ -203,7 +203,7 @@ describe("traiterDemande — pannes (aucune demande perdue)", () => {
     expect(b.marques).toEqual([{ id: "id-1", etat: { email_envoye: true, accuse_envoye: false } }]);
   });
 
-  it("si ni la base ni l'email ne fonctionnent : erreur claire avec le téléphone, pas d'accusé", async () => {
+  it("si ni la base ni l’email ne fonctionnent : erreur claire avec le téléphone, pas d’accusé", async () => {
     const b = fausseBase({ panneInsertion: true });
     const e = fauxEnvoi({ panne: true });
     const d = deps({ base: b.base, envoi: e.envoi });
@@ -223,7 +223,7 @@ describe("traiterDemande — pannes (aucune demande perdue)", () => {
     expect(b.marques).toEqual([{ id: "id-1", etat: { email_envoye: false, accuse_envoye: false } }]);
   });
 
-  it("sans base configurée, l'email suffit : succès", async () => {
+  it("sans base configurée, l’email suffit : succès", async () => {
     const e = fauxEnvoi();
     const r = await traiterDemande(brut(), deps({ base: null, envoi: e.envoi }));
     expect(r).toEqual({ statut: "succes" });

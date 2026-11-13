@@ -23,7 +23,7 @@ describe("SelecteurLangue", () => {
     expect(await screen.findByRole("link", { name: "langue" })).toHaveAttribute("href", "/mariages");
   });
 
-  it("mémorise la langue choisie pour que le middleware ne ramène pas vers l'ancienne", () => {
+  it("mémorise la langue choisie pour que le middleware ne ramène pas vers l’ancienne", () => {
     locale = "en";
     document.cookie = "NEXT_LOCALE=en; path=/";
     render(<SelecteurLangue />);
@@ -31,7 +31,7 @@ describe("SelecteurLangue", () => {
     expect(document.cookie).toContain("NEXT_LOCALE=fr");
   });
 
-  it("passe à l'anglais depuis le français", () => {
+  it("passe à l’anglais depuis le français", () => {
     locale = "fr";
     render(<SelecteurLangue />);
     const lien = screen.getByRole("link", { name: "langue" });

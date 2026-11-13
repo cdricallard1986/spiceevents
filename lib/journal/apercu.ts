@@ -4,14 +4,14 @@ import type { Categorie } from "./constantes";
 import type { Article, LigneArticle } from "./types";
 
 /**
- * Article prêt pour l'aperçu du back office (/admin/journal/[id]/apercu) :
+ * Article prêt pour l’aperçu du back office (/admin/journal/[id]/apercu) :
  * le même rendu que la page publique (`EnTeteArticle` + `ContenuArticle`),
  * y compris pour un brouillon incomplet. Ce qui manque est remplacé à
- * l'écran (titre, date, couverture provisoire…) et listé dans `manques`
- * pour le bandeau de l'aperçu. Un contenu invalide n'est jamais rendu.
+ * l’écran (titre, date, couverture provisoire…) et listé dans `manques`
+ * pour le bandeau de l’aperçu. Un contenu invalide n’est jamais rendu.
  */
 
-/** Couverture affichée tant que l'article n'en a pas (un fichier du site). */
+/** Couverture affichée tant que l’article n’en a pas (un fichier du site). */
 export const COUVERTURE_PROVISOIRE = "/images/hero-premiere-danse.jpg";
 
 export type Apercu = { ok: true; article: Article; manques: string[] } | { ok: false; message: string };
@@ -35,7 +35,7 @@ export function apercuDepuisLigne(l: LigneArticle, maintenant: Date = new Date()
       titre: l.titre.trim() || "Article sans titre",
       ...(l.sous_titre ? { sousTitre: l.sous_titre } : {}),
       description: l.description ?? "",
-      // Affiché tel quel dans l'en-tête : « Sans catégorie » plutôt qu'une catégorie inventée.
+      // Affiché tel quel dans l’en-tête : « Sans catégorie » plutôt qu’une catégorie inventée.
       categorie: (l.categorie ?? "Sans catégorie") as Categorie,
       date: l.date_publication ?? aujourdhuiParis(maintenant),
       couverture: l.couverture ?? COUVERTURE_PROVISOIRE,

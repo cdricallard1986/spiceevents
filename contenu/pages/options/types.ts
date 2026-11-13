@@ -4,7 +4,7 @@ import type { Bilingue, Etape, Seo } from "../../types";
 /** Encadré à puces (ce qui est inclus, les options, les usages…). */
 export type ListeOption = { titre: string; intro?: string; points: string[] };
 
-/** Textes d'une page d'option, dans une langue. Les titres acceptent *l'accent doré*. */
+/** Textes d’une page d’option, dans une langue. Les titres acceptent *l’accent doré*. */
 export type TextesOption = {
   seo: Seo;
   hero: { surtitre: string; titre: string; intro: string };
@@ -16,14 +16,14 @@ export type TextesOption = {
   appel: { titre: string; texte: string };
 };
 
-/** Contenu complet d'une page `/animations/<option>` (fichier `contenu/pages/options/<slug-fr>.ts`). */
+/** Contenu complet d’une page `/animations/<option>` (fichier `contenu/pages/options/<slug-fr>.ts`). */
 export type ContenuOption = {
-  /** Photo d'en-tête : grande et paysage (elle couvre tout l'écran). */
+  /** Photo d’en-tête : grande et paysage (elle couvre tout l’écran). */
   image: CleImage;
-  /** 3 à 6 photos réelles de l'option. */
+  /** 3 à 6 photos réelles de l’option. */
   galerie: CleImage[];
   /**
-   * Photo derrière le grand avis de la page (à défaut : la photo d'en-tête). L'avis
+   * Photo derrière le grand avis de la page (à défaut : la photo d’en-tête). L’avis
    * affiché se choisit dans le back office (emplacement « Page <option> »).
    */
   imageAvis?: CleImage;

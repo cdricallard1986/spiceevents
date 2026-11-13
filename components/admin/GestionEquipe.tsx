@@ -37,8 +37,8 @@ const TITRES_GROUPE: Record<GroupeEquipe, string> = { dj: "Les DJ", musicien: "M
 type Ouverte = { type: "edition"; id: string } | { type: "creation" } | null;
 
 /**
- * Équipe de la page Nos DJ : les DJ puis les musiciens, dans l'ordre de la
- * page (flèches), modale d'édition auto-enregistrée, création (non publiée).
+ * Équipe de la page Nos DJ : les DJ puis les musiciens, dans l’ordre de la
+ * page (flèches), modale d’édition auto-enregistrée, création (non publiée).
  */
 export function GestionEquipe({
   membresInitiaux,
@@ -95,13 +95,13 @@ export function GestionEquipe({
       </div>
 
       <p className="mt-6 text-xs text-sable/80">
-        Les flèches changent l&apos;ordre des cartes sur la page Nos DJ. Le fondateur (Cédric) a sa propre section, en haut de la page : il ne se gère
+        Les flèches changent l’ordre des cartes sur la page Nos DJ. Le fondateur (Cédric) a sa propre section, en haut de la page : il ne se gère
         pas ici.
       </p>
 
       {triee.length === 0 ? (
         <p className="mt-4 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
-          Aucun DJ pour l&apos;instant : ajoutez le premier avec « Nouveau DJ ou musicien ».
+          Aucun DJ pour l’instant : ajoutez le premier avec « Nouveau DJ ou musicien ».
         </p>
       ) : (
         (["dj", "musicien"] as const).map((g) => {
@@ -273,7 +273,7 @@ function ModaleEdition({
   const { erreurs, signaler, effacer } = useErreursFiche<ErreursMembre>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
-  // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
+  // Valeur d’ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
   const [initiale] = useState(() => formulaireDepuisMembre(membre));
 
   const fiche = useModalAutosave<FormulaireMembre>({
@@ -307,7 +307,7 @@ function ModaleEdition({
     setEnCours(true);
     try {
       if (!(await fiche.enregistrerMaintenant())) {
-        afficher("La fiche n'est pas enregistrée (pastille rouge) : corrigez-la avant de la publier ou de la retirer.", "erreur");
+        afficher("La fiche n’est pas enregistrée (pastille rouge) : corrigez-la avant de la publier ou de la retirer.", "erreur");
         return;
       }
       const r = await actions.changerPublication({ id: membre.id, publie });
@@ -402,7 +402,7 @@ function ModaleEdition({
         titre="Retirer de la page Nos DJ ?"
         message={
           <p>
-            La carte de <span className="text-ivoire">{membre.nom}</span> n&apos;apparaîtra plus sur le site. La fiche reste ici, non publiée : vous pourrez
+            La carte de <span className="text-ivoire">{membre.nom}</span> n’apparaîtra plus sur le site. La fiche reste ici, non publiée : vous pourrez
             la republier.
           </p>
         }
@@ -417,7 +417,7 @@ function ModaleEdition({
         message={
           <p>
             La fiche de <span className="text-ivoire">{membre.nom}</span> sera supprimée du site et du back office.{" "}
-            <strong className="font-semibold text-erreur">C&apos;est définitif : elle ne pourra pas être récupérée.</strong> Pour la cacher sans la
+            <strong className="font-semibold text-erreur">C’est définitif : elle ne pourra pas être récupérée.</strong> Pour la cacher sans la
             perdre (DJ qui ne travaille plus avec vous), utilisez plutôt « Retirer du site ».
           </p>
         }
@@ -430,7 +430,7 @@ function ModaleEdition({
       <ConfirmDialog
         ouverte={confirmation === "fermer"}
         titre="Modification non enregistrée"
-        message={<p>La dernière modification n&apos;a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette fiche.</p>}
+        message={<p>La dernière modification n’a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette fiche.</p>}
         libelleConfirmer="Fermer quand même"
         libelleAnnuler="Rester"
         danger
@@ -494,7 +494,7 @@ function ModaleCreation({
     >
       <p className="mb-6 text-sm text-sable">
         La fiche sera créée <span className="text-ivoire">non publiée</span> : vous la publierez ensuite. En attendant, votre saisie est gardée sur cet
-        appareil. Rappel : le nom de famille s&apos;écrit avec sa seule initiale (« Kevin R. »).
+        appareil. Rappel : le nom de famille s’écrit avec sa seule initiale (« Kevin R. »).
       </p>
       {fiche.brouillonRestaure && (
         <p className="mb-6 border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire">Brouillon retrouvé sur cet appareil : vous reprenez où vous en étiez.</p>

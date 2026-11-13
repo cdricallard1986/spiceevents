@@ -63,17 +63,17 @@ describe("choix des avis", () => {
     expect(publies(liste).map((a) => a.id)).toEqual(["a", "b", "c", "d"]);
   });
 
-  it("une grille = les avis publiés qui portent l'emplacement, dans l'ordre", () => {
+  it("une grille = les avis publiés qui portent l’emplacement, dans l’ordre", () => {
     expect(avisDeLEmplacement(liste, "accueil").map((a) => a.id)).toEqual(["a", "c"]);
     expect(avisDeLEmplacement(liste, "option:photobooth")).toEqual([]);
   });
 
-  it("un grand avis = le premier avis publié qui porte l'emplacement (un avis non publié ne compte pas)", () => {
+  it("un grand avis = le premier avis publié qui porte l’emplacement (un avis non publié ne compte pas)", () => {
     expect(avisUnique(liste, "accueil_grand")?.id).toBe("a");
     expect(avisUnique(liste, "mariages_grand")).toBeUndefined();
   });
 
-  it("par catégorie, dans l'ordre", () => {
+  it("par catégorie, dans l’ordre", () => {
     expect(avisDeCategorie(liste, "mariage").map((a) => a.id)).toEqual(["a", "c", "d"]);
     expect(avisDeCategorie(liste, "evenement").map((a) => a.id)).toEqual(["b"]);
   });
@@ -119,7 +119,7 @@ describe("mise en forme par langue", () => {
 describe("textes affichés", () => {
   const long = "Une phrase. ".repeat(40).trim();
 
-  it("citation choisie, sinon l'extrait du début du texte", () => {
+  it("citation choisie, sinon l’extrait du début du texte", () => {
     expect(citationAffichee({ id: "1", auteurs: "A", texte: long, citation: "Choisie." }, 30)).toBe("Choisie.");
     expect(citationAffichee({ id: "1", auteurs: "A", texte: long, citation: null }, 30)).toBe("Une phrase. Une phrase.");
   });
@@ -136,7 +136,7 @@ describe("textes affichés", () => {
     expect(grilleTextes([avis("1", { texte_fr: long, citation_fr: "Choisie." })], "fr")[0].texte).toBe(long);
   });
 
-  it("grand avis : citation de l'avis de l'emplacement, langue signalée si non traduit", () => {
+  it("grand avis : citation de l’avis de l’emplacement, langue signalée si non traduit", () => {
     const liste = [avis("1", { emplacements: ["mariages_grand"], texte_en: null })];
     expect(grandAvis(liste, "mariages_grand", "en", 320)).toEqual({ cle: "1", auteurs: "Auteurs 1", texte: "Texte français 1.", langue: "fr" });
     expect(grandAvis(liste, "accueil_grand", "en", 320)).toBeUndefined();

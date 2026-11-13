@@ -23,14 +23,14 @@ afterEach(() => {
 });
 
 describe("DevToolbar", () => {
-  it("n'est jamais rendue en production", async () => {
+  it("n’est jamais rendue en production", async () => {
     vi.stubEnv("NODE_ENV", "production");
     const { container } = render(<DevToolbar />);
     expect(container).toBeEmptyDOMElement();
     expect(await BarreDev()).toBeNull();
   });
 
-  it("n'est pas rendue hors développement (tests, aperçus)", () => {
+  it("n’est pas rendue hors développement (tests, aperçus)", () => {
     vi.stubEnv("NODE_ENV", "test");
     const { container } = render(<DevToolbar />);
     expect(container).toBeEmptyDOMElement();
@@ -43,7 +43,7 @@ describe("DevToolbar", () => {
     expect(bouton.className).toContain("bg-nuit-3");
   });
 
-  it("garde la couleur « Cédric connecté » (or) d'un affichage à l'autre", () => {
+  it("garde la couleur « Cédric connecté » (or) d’un affichage à l’autre", () => {
     vi.stubEnv("NODE_ENV", "development");
     window.localStorage.setItem("dev:profil", "cedric");
     render(<DevToolbar />);

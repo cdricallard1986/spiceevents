@@ -4,9 +4,9 @@ import { useRef, useState } from "react";
 import { useToasts } from "./Toasts";
 
 /**
- * Erreurs d'une fiche du back office (avis, DJ, photo, article) : bordure
+ * Erreurs d’une fiche du back office (avis, DJ, photo, article) : bordure
  * rouge par champ + toast. La même erreur, à chaque nouvel essai
- * d'enregistrement automatique, ne s'affiche qu'une fois.
+ * d’enregistrement automatique, ne s’affiche qu’une fois.
  */
 export function useErreursFiche<E extends Partial<Record<string, string>>>() {
   const { afficher } = useToasts();

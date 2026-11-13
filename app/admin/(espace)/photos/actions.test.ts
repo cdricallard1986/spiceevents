@@ -2,8 +2,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
  * Server Actions des photos, avec une garde et un client Supabase simulés :
- * garde d'abord, Zod ensuite, écriture par le client de session (tables et
- * Storage), puis revalidation de l'étiquette « galeries ». Aucun fichier ne
+ * garde d’abord, Zod ensuite, écriture par le client de session (tables et
+ * Storage), puis revalidation de l’étiquette « galeries ». Aucun fichier ne
  * transite par ces actions.
  */
 
@@ -90,7 +90,7 @@ describe("garde et validation", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("une entrée invalide n'écrit rien", async () => {
+  it("une entrée invalide n’écrit rien", async () => {
     expect(await creerUrlEnvoi({ nomFichier: "a.svg", type: "image/svg+xml", taille: 10 })).toMatchObject({ ok: false, message: expect.stringContaining("Format refusé") });
     expect(await creerUrlEnvoi({ nomFichier: "a.jpg", type: "image/jpeg", taille: 16 * 1024 * 1024 })).toMatchObject({ ok: false, message: expect.stringContaining("trop lourd") });
     expect(await enregistrerPhoto({ ...ENVOI, alt_fr: " " })).toMatchObject({ ok: false, erreurs: { alt_fr: expect.stringContaining("obligatoire") } });
@@ -107,7 +107,7 @@ describe("garde et validation", () => {
 });
 
 describe("creerUrlEnvoi", () => {
-  it("calcule un chemin sûr (extension du type MIME, pas du nom) et demande l'URL signée avec la session", async () => {
+  it("calcule un chemin sûr (extension du type MIME, pas du nom) et demande l’URL signée avec la session", async () => {
     etat.repondre = (appel) => ({ data: { path: appel.operations[0][1][0], token: "jeton-signe", signedUrl: "https://…" }, error: null });
     const r = await creerUrlEnvoi({ nomFichier: "../../piste.php.jpg", type: "image/webp", taille: 1000 });
     expect(r).toMatchObject({ ok: true, jeton: "jeton-signe" });
@@ -118,7 +118,7 @@ describe("creerUrlEnvoi", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("deux envois n'ont jamais le même chemin", async () => {
+  it("deux envois n’ont jamais le même chemin", async () => {
     etat.repondre = (appel) => ({ data: { path: appel.operations[0][1][0], token: "t" }, error: null });
     const a = await creerUrlEnvoi({ nomFichier: "a.jpg", type: "image/jpeg", taille: 10 });
     const b = await creerUrlEnvoi({ nomFichier: "a.jpg", type: "image/jpeg", taille: 10 });
@@ -157,13 +157,13 @@ describe("enregistrerPhoto", () => {
     expect(liaison.operations[0]).toEqual(["insert", [[{ galerie: "galerie_mariages", photo_id: ID, ordre: 240 }]]]);
   });
 
-  it("un fichier absent du bucket n'est pas enregistré", async () => {
+  it("un fichier absent du bucket n’est pas enregistré", async () => {
     etat.repondre = (appel) => (appel.cible === "storage:medias" ? { data: false, error: { message: "Object not found", status: 400 } } : { data: PHOTO, error: null });
     expect(await enregistrerPhoto(ENVOI)).toMatchObject({ ok: false, message: expect.stringContaining("pas arrivé") });
     expect(appelsVers("photos")).toEqual([]);
   });
 
-  it("si l'ajout à la galerie échoue, la photo reste enregistrée et un avertissement le dit", async () => {
+  it("si l’ajout à la galerie échoue, la photo reste enregistrée et un avertissement le dit", async () => {
     etat.repondre = (appel) => {
       if (appel.cible === "storage:medias") return { data: true, error: null };
       if (appel.cible === "galeries_photos") return { data: null, error: { message: "réseau" } };
@@ -195,10 +195,10 @@ describe("modifierPhoto, galeries, ordre", () => {
     expect(appelsVers("galeries_photos")[2].operations[0]).toEqual(["insert", [[{ galerie: "option:photobooth", photo_id: AUTRE, ordre: 10 }]]]);
   });
 
-  it("retire d'une galerie (la photo reste) et avertit si une page d'option passe sous 2 photos", async () => {
+  it("retire d’une galerie (la photo reste) et avertit si une page d’option passe sous 2 photos", async () => {
     etat.repondre = (appel) => (operations(appel).includes("delete") ? { data: [{ photo_id: ID }], error: null } : { data: null, error: null, count: 1 });
     const r = await retirerDeGalerie({ galerie: "option:bar-a-vinyles", photoId: ID });
-    expect(r).toMatchObject({ ok: true, restantes: 1, avertissement: expect.stringContaining("ne s'affichera pas") });
+    expect(r).toMatchObject({ ok: true, restantes: 1, avertissement: expect.stringContaining("ne s’affichera pas") });
     const [retrait] = appelsVers("galeries_photos");
     expect(retrait.operations).toEqual([
       ["delete", []],
@@ -210,7 +210,7 @@ describe("modifierPhoto, galeries, ordre", () => {
     expect(revalidateTag).toHaveBeenCalledWith("galeries");
   });
 
-  it("pas d'avertissement pour la page Galerie", async () => {
+  it("pas d’avertissement pour la page Galerie", async () => {
     etat.repondre = (appel) => (operations(appel).includes("delete") ? { data: [{ photo_id: ID }], error: null } : { data: null, error: null, count: 0 });
     const r = await retirerDeGalerie({ galerie: "galerie_mariages", photoId: ID });
     expect(r).toEqual({ ok: true, galerie: "galerie_mariages", photoId: ID, restantes: 0 });
@@ -248,7 +248,7 @@ describe("supprimerPhoto", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("si le fichier ne peut pas être effacé, la photo n'est pas supprimée", async () => {
+  it("si le fichier ne peut pas être effacé, la photo n’est pas supprimée", async () => {
     etat.repondre = (appel) =>
       appel.cible === "storage:medias" ? { data: null, error: { message: "réseau" } } : { data: { id: ID, origine: "stockage", chemin: CHEMIN }, error: null };
     expect(await supprimerPhoto(ID)).toMatchObject({ ok: false });

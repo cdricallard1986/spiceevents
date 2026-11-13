@@ -3,7 +3,7 @@
  * `next.config.ts`). Fonction pure pour pouvoir la tester.
  *
  * ⚠️ Ajouter un service externe (lecteur vidéo, police, outil de mesure…) =
- * l'ajouter ici, sinon le navigateur le bloque sans autre signe qu'une erreur
+ * l’ajouter ici, sinon le navigateur le bloque sans autre signe qu’une erreur
  * dans la console.
  */
 
@@ -21,7 +21,7 @@ export function originesSupabase(url: string = SUPABASE_URL): string[] {
 export const TIERS = {
   // Lecteur YouTube en mode « sans cookies » pour les vidéos de démonstration.
   cadres: ["https://www.youtube-nocookie.com"],
-  // Images d'aperçu des vidéos (avant le clic sur « lecture »), servies par YouTube sans cookie.
+  // Images d’aperçu des vidéos (avant le clic sur « lecture »), servies par YouTube sans cookie.
   images: ["https://i.ytimg.com"],
   // Script de Vercel Web Analytics en développement (en production il est servi par le site).
   scripts: ["https://va.vercel-scripts.com"],
@@ -36,9 +36,9 @@ export type OptionsPolitique = {
  * Politique de sécurité du contenu. Le navigateur parle directement à Supabase
  * (back office : session, envoi direct des photos par URL signée) : son origine
  * est dans `connect-src`. Elle est aussi dans `img-src` : aperçus du back office
- * et photos du bucket `medias` (les pages publiques passent d'ordinaire par
+ * et photos du bucket `medias` (les pages publiques passent d’ordinaire par
  * `next/image`, servi par le site).
- * ⚠️ next.config.ts importe ce fichier : imports relatifs seulement (pas d'alias `@/`).
+ * ⚠️ next.config.ts importe ce fichier : imports relatifs seulement (pas d’alias `@/`).
  */
 export function politiqueContenu(production: boolean, supabaseUrl: string = SUPABASE_URL, options: OptionsPolitique = {}): string {
   const directives: Record<string, string[]> = {
@@ -82,8 +82,8 @@ export function entetesSecurite(production: boolean, options: OptionsPolitique =
 
 // --- Exception ciblée : le rapport des tests du back office -----------------
 //
-// La page /admin/tests affiche le rapport Vitest dans un cadre. Seule l'adresse
-// du rapport accepte d'être encadrée, et seulement par le site lui-même ; seule
+// La page /admin/tests affiche le rapport Vitest dans un cadre. Seule l’adresse
+// du rapport accepte d’être encadrée, et seulement par le site lui-même ; seule
 // la page /admin/tests peut encadrer une page du site. Tout le reste garde
 // `frame-ancestors 'none'` + `X-Frame-Options: DENY`.
 
@@ -105,7 +105,7 @@ export function entetesRapportTests(production: boolean): Entete[] {
 export type RegleEntetes = { source: string; headers: Entete[] };
 
 /**
- * Règles de `headers()` dans next.config.ts. ⚠️ L'ordre compte : quand deux
+ * Règles de `headers()` dans next.config.ts. ⚠️ L’ordre compte : quand deux
  * règles posent le même en-tête sur une adresse, Next garde la DERNIÈRE. Les
  * exceptions (adresses exactes, sans paramètre) viennent donc après la règle
  * générale et ne remplacent que la CSP et X-Frame-Options.

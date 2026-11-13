@@ -2,7 +2,7 @@ import type { CleImage } from "@/lib/images";
 import type { Bilingue, Seo } from "../types";
 import { typographier } from "@/lib/typographie";
 
-/** Une des deux grandes portes d'entrée de l'accueil : Mariages ou Événements. */
+/** Une des deux grandes portes d’entrée de l’accueil : Mariages ou Événements. */
 type Porte = { href: "/mariages" | "/evenementiel"; image: CleImage; surtitre: string; titre: string; texte: string; lien: string };
 
 type Accueil = {
@@ -16,8 +16,8 @@ type Accueil = {
 };
 
 /**
- * Photos d'en-tête de l'accueil, une tirée au hasard à chaque visite : des nuits de
- * mariage et des soirées d'événements (grandes et paysage).
+ * Photos d’en-tête de l’accueil, une tirée au hasard à chaque visite : des nuits de
+ * mariage et des soirées d’événements (grandes et paysage).
  */
 export const IMAGES_ACCUEIL: CleImage[] = [
   "hero-premiere-danse",
@@ -45,7 +45,7 @@ export const ACCUEIL: Bilingue<Accueil> = typographier({
       surtitre: "DJ · Son · Lumière · Mariages & événements",
       titre: "Votre nuit. *Notre piment.*",
       intro:
-        "Mariages, soirées privées, événements d'entreprise : Cédric et l'équipe Spice Events mettent en musique et en lumière vos plus belles nuits, de la première note au dernier morceau.",
+        "Mariages, soirées privées, événements d’entreprise : Cédric et l’équipe Spice Events mettent en musique et en lumière vos plus belles nuits, de la première note au dernier morceau.",
       ctaPrincipal: "Vérifier ma date",
       ctaSecondaire: "Nos animations",
     },
@@ -66,7 +66,7 @@ export const ACCUEIL: Bilingue<Accueil> = typographier({
           image: "presta-gala-bleu",
           surtitre: "Soirées privées & entreprises",
           titre: "Rassemblez. *Nous pimentons.*",
-          texte: "Anniversaire, gala, séminaire ou lancement : une ambiance à votre image, relevée d'une touche de Spice.",
+          texte: "Anniversaire, gala, séminaire ou lancement : une ambiance à votre image, relevée d’une touche de Spice.",
           lien: "Votre événement",
         },
       ],
@@ -84,7 +84,7 @@ export const ACCUEIL: Bilingue<Accueil> = typographier({
       titre: "Des animations qui *relèvent la fête*.",
       lien: "Toutes les animations",
     },
-    avis: { surtitre: "Ils ont dansé jusqu'au bout de la nuit", lien: "Voir tous les avis" },
+    avis: { surtitre: "Ils ont dansé jusqu’au bout de la nuit", lien: "Voir tous les avis" },
     appel: {
       titre: "Votre nuit manque *de piment* ?",
       texte: "Une date, quelques envies : Cédric vous répond personnellement. Ensemble, trouvons les ingrédients de votre fête.",
@@ -143,8 +143,8 @@ export const ACCUEIL: Bilingue<Accueil> = typographier({
     avis: { surtitre: "They danced till the end of the night", lien: "See all reviews" },
     appel: {
       titre: "Is your night missing *some spice*?",
-      texte: "A date, a few ideas: Cédric will reply to you personally. Let's find the ingredients for your party together.",
-      bouton: "Let's spice up your night",
+      texte: "A date, a few ideas: Cédric will reply to you personally. Let’s find the ingredients for your party together.",
+      bouton: "Let’s spice up your night",
     },
   },
 });

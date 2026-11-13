@@ -34,7 +34,7 @@ export function EnTete() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-40 border-b transition-colors duration-300 ${fond}`}>
-      {/* Plus haut en haut de page, un peu plus fin dès qu'on fait défiler. */}
+      {/* Plus haut en haut de page, un peu plus fin dès qu’on fait défiler. */}
       <div
         className={`conteneur flex items-center justify-between gap-6 transition-[height] duration-300 ${defile ? "h-16 md:h-[4.5rem]" : "h-20 md:h-28"}`}
       >
@@ -102,11 +102,6 @@ export function EnTete() {
                 </Link>
               </li>
             ))}
-            <li className="border-b border-ligne">
-              <Link href="/a-propos" className="block py-4 font-display text-3xl">
-                {t("aPropos")}
-              </Link>
-            </li>
             <li className="mt-8 flex flex-wrap items-center gap-6">
               <Link href="/contact" className="bg-or px-6 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-nuit">
                 {t("devis")}

@@ -5,16 +5,16 @@ import { classesBouton } from "@/components/ui/Bouton";
 
 type Props = {
   suite: Suite<unknown>;
-  /** Bilan du dernier résultat (null tant que rien n'est revenu). */
+  /** Bilan du dernier résultat (null tant que rien n’est revenu). */
   bilan: { reussis: number; total: number } | null;
-  /** Ce qu'on compte, au pluriel (« vérifications », « cas »). */
+  /** Ce qu’on compte, au pluriel (« vérifications », « cas »). */
   unite: string;
 };
 
 /**
  * Commandes communes aux suites « live » de /admin/tests : bouton Relancer,
  * état (en cours, conforme, en échec, heure de la dernière exécution) et
- * message clair si la suite n'a pas pu s'exécuter.
+ * message clair si la suite n’a pas pu s’exécuter.
  */
 export function CommandesSuite({ suite, bilan, unite }: Props) {
   const { enCours, erreur, termineeA, relancer } = suite;

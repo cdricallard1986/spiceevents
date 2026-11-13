@@ -4,8 +4,8 @@ import { describe, expect, it } from "vitest";
 
 /**
  * ⚠️ `supabase.auth.signOut()` sans argument vaut `scope: "global"` : il ferme
- * la session sur TOUS les appareils de l'utilisateur. Le bouton de déconnexion
- * ne doit fermer que l'appareil courant (`{ scope: "local" }`). Ce défaut est
+ * la session sur TOUS les appareils de l’utilisateur. Le bouton de déconnexion
+ * ne doit fermer que l’appareil courant (`{ scope: "local" }`). Ce défaut est
  * silencieux et revient au premier copier-coller : ce test le refuse partout.
  */
 
@@ -26,7 +26,7 @@ export function appelsSansArgument(source: string): number {
   return [...source.matchAll(/\.signOut\s*\(\s*\)/g)].length;
 }
 
-describe("déconnexion limitée à l'appareil", () => {
+describe("déconnexion limitée à l’appareil", () => {
   it("le détecteur repère un signOut() sans argument, et seulement lui", () => {
     expect(appelsSansArgument("await supabase.auth.signOut();")).toBe(1);
     expect(appelsSansArgument("supabase.auth.signOut(\n)")).toBe(1);

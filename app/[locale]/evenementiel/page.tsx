@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/evenementiel", seo: EVENEMENTIEL[locale].seo, image: "presta-gala-salle" });
 }
 
-// Six soirées différentes, jamais deux photos d'un même événement côte à côte (règle de Cédric) ;
-// aucune n'est déjà ailleurs sur la page (cartes, avis, en-tête).
+// Six soirées différentes, jamais deux photos d’un même événement côte à côte (règle de Cédric) ;
+// aucune n’est déjà ailleurs sur la page (cartes, avis, en-tête).
 const PHOTOS = [
   "presta-seminaire",
   "maison-evenement-soiree-lumiere",
@@ -46,7 +46,7 @@ export default async function PageEvenementiel({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = EVENEMENTIEL[locale];
-  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  // Diaporama d’en-tête choisi dans le back office (fiche de chaque photo).
   const entete = await photosEnTete("evenementiel", locale);
   const avisClients = grilleCitations(avisDeCategorie(await avisPublies(), "evenement"), locale);
 
@@ -95,7 +95,7 @@ export default async function PageEvenementiel({ params }: Props) {
         </ul>
       </Section>
 
-      {/* Ce que nous prenons en charge : fond noir, icônes à l'accent (couleur du piment) */}
+      {/* Ce que nous prenons en charge : fond noir, icônes à l’accent (couleur du piment) */}
       <section className="border-y border-ligne bg-nuit py-20 md:py-28">
         <div className="conteneur">
           <p className="surtitre mb-4">{c.services.surtitre}</p>
@@ -121,7 +121,7 @@ export default async function PageEvenementiel({ params }: Props) {
 
       {/* Méthode en trois temps, puis deux photos en grand (maquette Nocturne) */}
       <Section surtitre={c.methode.surtitre} titre={c.methode.titre}>
-        {/* Même présentation que les étapes des autres pages (chiffres romains), avec le verbe de l'étape. */}
+        {/* Même présentation que les étapes des autres pages (chiffres romains), avec le verbe de l’étape. */}
         <ol className="grid gap-10 md:grid-cols-3">
           {c.methode.etapes.map((e, i) => (
             <li key={e.titre} className="border-t border-ligne pt-6">

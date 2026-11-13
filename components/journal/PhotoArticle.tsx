@@ -4,7 +4,7 @@ type Props = { src: string; width: number | string; height: number | string; alt
 
 /**
  * Photo insérée dans un article. Les dimensions réelles viennent du document
- * de l'éditeur ; une photo en hauteur est limitée à la hauteur de l'écran.
+ * de l’éditeur ; une photo en hauteur est limitée à la hauteur de l’écran.
  * Légende facultative, sous la photo (même style que celle de la galerie).
  */
 export function PhotoArticle({ src, width, height, alt, legende }: Props) {

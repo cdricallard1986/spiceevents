@@ -19,10 +19,10 @@ import { CLASSES_LIBELLE } from "./champs";
 import { useErreursFiche } from "./useErreursFiche";
 
 export const AIDE_ALT =
-  "Décrivez la photo pour Google et les personnes malvoyantes (lecteurs d'écran) : ce qu'on y voit, en une phrase (« Mariés sur la piste sous des faisceaux dorés »).";
+  "Décrivez la photo pour Google et les personnes malvoyantes (lecteurs d’écran) : ce qu’on y voit, en une phrase (« Mariés sur la piste sous des faisceaux dorés »).";
 export const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session expirée). Rechargez la page puis réessayez.";
 
-/** Champs d'une photo : texte alternatif FR (obligatoire) et EN, crédit. Toujours éditables. */
+/** Champs d’une photo : texte alternatif FR (obligatoire) et EN, crédit. Toujours éditables. */
 export function ChampsPhoto({
   valeur,
   modifier,
@@ -71,9 +71,9 @@ export type ActionsFiche = {
 
 /**
  * « Où apparaît cette photo » : une case par emplacement du site (diaporamas
- * d'en-tête, page Galerie, pages des animations). Cocher l'ajoute à la fin de
- * la liste, décocher l'en retire ; enregistré aussitôt. Une photo trop petite
- * ou en portrait ne peut pas entrer dans un en-tête, et la dernière photo d'un
+ * d’en-tête, page Galerie, pages des animations). Cocher l’ajoute à la fin de
+ * la liste, décocher l’en retire ; enregistré aussitôt. Une photo trop petite
+ * ou en portrait ne peut pas entrer dans un en-tête, et la dernière photo d’un
  * en-tête ne peut pas en sortir.
  */
 export function EmplacementsPhoto({
@@ -118,7 +118,7 @@ export function EmplacementsPhoto({
   return (
     <fieldset className="flex flex-col gap-6 border-t border-ligne pt-6">
       <legend className="pr-3 text-lg font-semibold text-ivoire">Où apparaît cette photo</legend>
-      {presentes.size === 0 && <p className="-mt-3 text-sm text-sable">Nulle part pour l&apos;instant : cochez les emplacements où l&apos;afficher.</p>}
+      {presentes.size === 0 && <p className="-mt-3 text-sm text-sable">Nulle part pour l’instant : cochez les emplacements où l’afficher.</p>}
       {FAMILLES_GALERIES.map((f) => (
         <div key={f.famille}>
           <p className={CLASSES_LIBELLE}>{f.libelle}</p>
@@ -163,7 +163,7 @@ export function EmplacementsPhoto({
 type Confirmation = "supprimer" | "fermer" | null;
 
 /**
- * Fiche d'une photo, auto-enregistrée (textes alternatifs, crédit), avec son
+ * Fiche d’une photo, auto-enregistrée (textes alternatifs, crédit), avec son
  * aperçu. Suppression définitive pour une photo envoyée seulement ; retrait de
  * la galerie ouverte si elle en fait partie.
  */
@@ -194,7 +194,7 @@ export function FichePhoto({
   const { erreurs, signaler, effacer } = useErreursFiche<ErreursPhoto>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
-  // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
+  // Valeur d’ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
   const [initiale] = useState(() => formulaireDepuisPhoto(photo));
   const galeries = galeriesDeLaPhoto(liaisons, photo.id);
 
@@ -276,7 +276,7 @@ export function FichePhoto({
           ) : undefined
         }
       >
-        <p className="mb-6 text-sm text-sable">Chaque modification est enregistrée automatiquement ; le site public se met à jour à la visite suivante d&apos;une page.</p>
+        <p className="mb-6 text-sm text-sable">Chaque modification est enregistrée automatiquement ; le site public se met à jour à la visite suivante d’une page.</p>
         {fiche.brouillonRestaure && (
           <p className="mb-6 border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire">
             Une saisie non enregistrée a été retrouvée sur cet appareil : elle est reprise et enregistrée.
@@ -306,7 +306,7 @@ export function FichePhoto({
           <div className="flex flex-col gap-5">
             {!estSupprimable(photo) && (
               <p className="border-l-2 border-ligne bg-nuit-3 px-4 py-3 text-sm text-sable">
-                Cette photo fait partie des fichiers du site (livrés avec le code)&nbsp;: elle ne peut pas être supprimée ici. Pour ne plus l&apos;afficher,
+                Cette photo fait partie des fichiers du site (livrés avec le code)&nbsp;: elle ne peut pas être supprimée ici. Pour ne plus l’afficher,
                 décochez ses emplacements ci-dessous.
               </p>
             )}
@@ -327,12 +327,12 @@ export function FichePhoto({
           <>
             <p>
               {galeries.length === 0
-                ? "Cette photo n'est dans aucune galerie."
+                ? "Cette photo n’est dans aucune galerie."
                 : `Elle sera retirée de : ${galeries.map(libelleGalerie).join(", ")}.`}{" "}
               Son fichier sera effacé du stockage.
             </p>
             <p className="mt-3">
-              <strong className="font-semibold text-erreur">C&apos;est définitif : elle ne pourra pas être récupérée.</strong> Pour la cacher sans la perdre,
+              <strong className="font-semibold text-erreur">C’est définitif : elle ne pourra pas être récupérée.</strong> Pour la cacher sans la perdre,
               retirez-la plutôt des galeries.
             </p>
           </>
@@ -346,7 +346,7 @@ export function FichePhoto({
       <ConfirmDialog
         ouverte={confirmation === "fermer"}
         titre="Modification non enregistrée"
-        message={<p>La dernière modification n&apos;a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette photo.</p>}
+        message={<p>La dernière modification n’a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette photo.</p>}
         libelleConfirmer="Fermer quand même"
         libelleAnnuler="Rester"
         danger

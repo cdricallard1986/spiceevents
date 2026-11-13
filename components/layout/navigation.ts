@@ -3,18 +3,19 @@ import type { CheminStatique } from "@/i18n/routing";
 export type EntreeNav = { href: CheminStatique; cle: string; frSeulement?: boolean };
 
 /**
- * Menu principal (l'ordre est celui de l'affichage) : les trois portes d'entrée.
- * Avis, galerie et journal n'y figurent pas (choix de Cédric) : on les rejoint
- * par les liens placés sous les avis, les photos et les derniers articles, et
- * par le pied de page.
+ * Menu principal (l’ordre est celui de l’affichage), le même sur ordinateur et
+ * sur téléphone : les trois portes d’entrée, puis « À propos ». Avis, galerie et
+ * journal n’y figurent pas (choix de Cédric) : on les rejoint par les liens
+ * placés sous les avis, les photos et les derniers articles, et par le pied de page.
  */
 export const MENU: EntreeNav[] = [
   { href: "/mariages", cle: "mariages" },
   { href: "/animations", cle: "animations" },
   { href: "/evenementiel", cle: "evenementiel" },
+  { href: "/a-propos", cle: "aPropos" },
 ];
 
-/** Pied de page : le menu, plus les pages qui n'y sont pas (utile aussi à Google). */
+/** Pied de page : le menu, plus les pages qui n’y sont pas (utile aussi à Google). */
 export const LIENS_PIED: EntreeNav[] = [
   ...MENU,
   { href: "/son-et-lumiere", cle: "sonLumiere" },

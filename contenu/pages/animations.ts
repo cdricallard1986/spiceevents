@@ -2,7 +2,7 @@ import type { CleImage } from "@/lib/images";
 import type { Bilingue, QuestionReponse, Seo } from "../types";
 import { typographier } from "@/lib/typographie";
 
-/** Famille d'une animation, pour les filtres de la page (clé stable, libellé traduit). */
+/** Famille d’une animation, pour les filtres de la page (clé stable, libellé traduit). */
 export type CategorieAnimation = "musique" | "souvenirs" | "effets";
 
 /**
@@ -17,8 +17,7 @@ type Animations = {
   intro: { surtitre: string; titre: string; texte: string };
   vedettes: Vedette[];
   catalogue: { surtitre: string; titre: string; intro: string; tout: string; filtres: string; categories: Record<CategorieAnimation, string> };
-  /** Accroche de chaque carte du catalogue, par slug français d'option. */
-  accroches: Record<string, string>;
+  /** Accroche de chaque carte du catalogue, par slug français d’option. */
   faq: { surtitre: string; titre: string; questions: QuestionReponse[]; lien: string };
   appel: { titre: string; texte: string };
 };
@@ -40,7 +39,7 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
     seo: {
       titre: "Animations de mariage et de soirée en Île-de-France | Spice Events",
       description:
-        "Photobooth, bar à vinyles, livre d'or audio, ouverture de bal, guirlandes, feux d'artifice de jour, sonorisation de cérémonie : des animations sur mesure pour votre mariage en Île-de-France.",
+        "Photobooth, bar à vinyles, livre d’or audio, ouverture de bal, guirlandes, feux d’artifice de jour, sonorisation de cérémonie : des animations sur mesure pour votre mariage en Île-de-France.",
     },
     intro: {
       surtitre: "Les petits plus, les grands souvenirs",
@@ -65,13 +64,13 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
       {
         option: "photobooth",
         image: "presta-photobooth-invitees",
-        surtitre: "Souriez, c'est à vous",
+        surtitre: "Souriez, c’est à vous",
         titre: "Les souvenirs se partagent.",
       },
       {
         option: "ouverture-de-bal",
         image: "presta-bal-fumee-etincelles-chapiteau",
-        surtitre: "Le moment où tout s'arrête",
+        surtitre: "Le moment où tout s’arrête",
         titre: "Une première danse qui pétille.",
       },
       {
@@ -89,8 +88,8 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
       {
         option: "sonorisation-ceremonie-laique",
         image: "presta-ceremonie-cour",
-        surtitre: "Avant la fête, l'émotion",
-        titre: "Chaque mot porté jusqu'au dernier rang.",
+        surtitre: "Avant la fête, l’émotion",
+        titre: "Chaque mot porté jusqu’au dernier rang.",
       },
       {
         option: "sonorisation-deportee",
@@ -107,16 +106,6 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
       filtres: "Filtrer les animations",
       categories: { musique: "Musique", souvenirs: "Souvenirs", effets: "Lumière & effets" },
     },
-    accroches: {
-      "ouverture-de-bal": "Votre chanson, quelques étincelles et le temps qui s'arrête.",
-      "bar-a-vinyles": "Un disque choisi, une conversation qui commence. Le cocktail prend un autre tempo.",
-      "livre-d-or-audio": "Leurs rires, leurs mots, leurs voix. À réécouter longtemps.",
-      photobooth: "Des sourires spontanés. Et un souvenir à glisser dans sa poche.",
-      "guirlandes-lumineuses": "Une lumière douce pour prolonger les soirées d'été.",
-      "feux-d-artifice-de-jour": "Un instant haut en couleur pour une sortie inoubliable.",
-      "sonorisation-ceremonie-laique": "Chaque mot entendu. Chaque émotion partagée.",
-      "sonorisation-deportee": "La bonne ambiance, dans chacun de vos espaces.",
-    },
     faq: {
       surtitre: "Les réponses avant les questions",
       titre: "Quelques détails *utiles*.",
@@ -124,7 +113,7 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
         {
           question: "Comment choisir les animations ?",
           reponse:
-            "Nous partons de votre lieu, de votre déroulé et de vos envies. L'idée est de choisir quelques animations qui trouvent naturellement leur place dans la journée, sans l'encombrer.",
+            "Nous partons de votre lieu, de votre déroulé et de vos envies. L’idée est de choisir quelques animations qui trouvent naturellement leur place dans la journée, sans l’encombrer.",
         },
         {
           question: "Les effets sont-ils possibles dans tous les lieux ?",
@@ -173,7 +162,7 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
       {
         option: "photobooth",
         image: "presta-photobooth-invitees",
-        surtitre: "Smile, it's your turn",
+        surtitre: "Smile, it’s your turn",
         titre: "Memories are for sharing.",
       },
       {
@@ -215,16 +204,6 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
       filtres: "Filter the entertainment",
       categories: { musique: "Music", souvenirs: "Keepsakes", effets: "Light & effects" },
     },
-    accroches: {
-      "ouverture-de-bal": "Your song, a few sparks, and time standing still.",
-      "bar-a-vinyles": "A record picked, a conversation started. The drinks reception takes on a new tempo.",
-      "livre-d-or-audio": "Their laughter, their words, their voices. To play back for years.",
-      photobooth: "Spontaneous smiles. And a keepsake to slip into a pocket.",
-      "guirlandes-lumineuses": "Soft light to make summer evenings last.",
-      "feux-d-artifice-de-jour": "A burst of colour for an unforgettable exit.",
-      "sonorisation-ceremonie-laique": "Every word heard. Every emotion shared.",
-      "sonorisation-deportee": "The right atmosphere, in every one of your spaces.",
-    },
     faq: {
       surtitre: "Answers before you ask",
       titre: "A few *useful details*.",
@@ -232,12 +211,12 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
         {
           question: "How do we choose the entertainment?",
           reponse:
-            "We start from your venue, your schedule and what you'd love. The idea is to pick a few things that fit naturally into the day, without cluttering it.",
+            "We start from your venue, your schedule and what you’d love. The idea is to pick a few things that fit naturally into the day, without cluttering it.",
         },
         {
           question: "Are the effects possible in every venue?",
           reponse:
-            "Low fog and cold sparks mean checking the venue's rules and equipment: some venues have sensitive smoke detectors. We look into what's possible before confirming these options.",
+            "Low fog and cold sparks mean checking the venue’s rules and equipment: some venues have sensitive smoke detectors. We look into what’s possible before confirming these options.",
         },
         {
           question: "Can the photobooth be personalised?",
@@ -249,7 +228,7 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
     },
     appel: {
       titre: "A little spice *changes the night*.",
-      texte: "Let's choose together the small touches that make the big memories.",
+      texte: "Let’s choose together the small touches that make the big memories.",
     },
   },
 });

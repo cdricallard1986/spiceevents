@@ -1,6 +1,6 @@
 import type { IconeSection } from "@/lib/admin/navigation";
 
-/** Tracés des icônes du back office (trait fin, comme le burger de l'en-tête du site). */
+/** Tracés des icônes du back office (trait fin, comme le burger de l’en-tête du site). */
 const TRACES: Record<IconeSection | "burger" | "fermer" | "replier" | "deplier" | "site" | "sortie", string> = {
   accueil: "M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10",
   avis: "M4 5h16v11H9l-5 4V5zM8 9h8M8 12h5",

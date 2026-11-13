@@ -6,7 +6,7 @@ import { CLASSES_PILL } from "@/components/common/PillNouvelleVersion";
 /**
  * Toasts du back office : messages courts `fixed top-center`, au même style que
  * la pill « Nouvelle version disponible ». Les erreurs restent plus longtemps
- * et sont annoncées immédiatement aux lecteurs d'écran.
+ * et sont annoncées immédiatement aux lecteurs d’écran.
  */
 
 export type TypeToast = "succes" | "erreur" | "info";
@@ -35,7 +35,7 @@ export function FournisseurToasts({ children }: { children: ReactNode }) {
   const afficher = useCallback((message: string, type: TypeToast = "succes") => {
     compteur.current += 1;
     const id = compteur.current;
-    // Trois au plus à l'écran : les plus anciens laissent la place.
+    // Trois au plus à l’écran : les plus anciens laissent la place.
     setToasts((liste) => [...liste.slice(-2), { id, message, type }]);
   }, []);
   const valeur = useMemo(() => ({ afficher }), [afficher]);

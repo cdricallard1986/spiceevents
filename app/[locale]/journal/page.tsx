@@ -14,7 +14,7 @@ import { CarteArticle } from "@/components/journal/CarteArticle";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
-// Journal en français seulement : seule la version française est générée, l'anglais renvoie une 404.
+// Journal en français seulement : seule la version française est générée, l’anglais renvoie une 404.
 export function generateStaticParams() {
   return [{ locale: "fr" }];
 }
@@ -54,7 +54,7 @@ export default async function PageJournal({ params }: Props) {
         </section>
       )}
 
-      {/* Rubriques : bande orange, texte noir (comme le bandeau sous l'en-tête de la page Mariages) */}
+      {/* Rubriques : bande orange, texte noir (comme le bandeau sous l’en-tête de la page Mariages) */}
       <nav aria-label={c.filtres} className="bg-or text-nuit">
         <ul className="conteneur flex flex-wrap items-center gap-x-8 gap-y-3 py-5 md:py-6">
           {rubriques.map((r) => (

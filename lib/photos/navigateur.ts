@@ -1,11 +1,11 @@
 import { COTE_MAX, QUALITE_REDUCTION, dimensionsReduites, estTypeImage, type TypeImage } from "./envoi";
 
 /**
- * Préparation d'une photo dans le navigateur, avant l'envoi direct à Storage :
+ * Préparation d’une photo dans le navigateur, avant l’envoi direct à Storage :
  * lecture de ses dimensions (enregistrées avec la photo, pour que `next/image`
  * réserve la bonne place) et réduction des très grandes photos (côté le plus
  * long > 3 000 px) en JPEG qualité 0,85 — inutile de stocker 15 Mo pour un
- * affichage à l'écran.
+ * affichage à l’écran.
  */
 
 export type FichierPrepare = {
@@ -19,7 +19,7 @@ export type FichierPrepare = {
 
 type Decodee = { source: CanvasImageSource; largeur: number; hauteur: number; liberer: () => void };
 
-/** Décode l'image (orientation EXIF appliquée) : `createImageBitmap`, sinon un élément `<img>`. */
+/** Décode l’image (orientation EXIF appliquée) : `createImageBitmap`, sinon un élément `<img>`. */
 async function decoder(fichier: Blob): Promise<Decodee> {
   if (typeof createImageBitmap === "function") {
     try {
@@ -38,7 +38,7 @@ async function decoder(fichier: Blob): Promise<Decodee> {
     return { source: img, largeur: img.naturalWidth, hauteur: img.naturalHeight, liberer: () => URL.revokeObjectURL(url) };
   } catch {
     URL.revokeObjectURL(url);
-    throw new Error("Cette photo n'a pas pu être lue par le navigateur (fichier abîmé ou format non pris en charge).");
+    throw new Error("Cette photo n’a pas pu être lue par le navigateur (fichier abîmé ou format non pris en charge).");
   }
 }
 

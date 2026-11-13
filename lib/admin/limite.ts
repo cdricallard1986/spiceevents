@@ -14,7 +14,7 @@ import { createHmac } from "node:crypto";
  *
  * IP et email ne sont jamais stockés en clair : seulement leur empreinte
  * HMAC-SHA256 (secret serveur `contact_secret_ip`, partagé avec le formulaire de
- * contact). Le type est mêlé à la valeur, pour que l'empreinte d'une IP ici ne
+ * contact). Le type est mêlé à la valeur, pour que l’empreinte d’une IP ici ne
  * soit pas celle stockée avec les demandes de contact.
  *
  * Contrairement au formulaire de contact, on **échoue fermé** : si la base ne
@@ -31,14 +31,14 @@ export const LIMITE_CONNEXION = {
   fenetreMs: 15 * 60 * 1000,
 } as const;
 
-/** Durée minimale d'une réponse : sinon le temps de réponse révélerait si le compte existe. */
+/** Durée minimale d’une réponse : sinon le temps de réponse révélerait si le compte existe. */
 export const DUREE_MINIMALE_MS = 1500;
 
 export type TypeTentative = "ip" | "compte" | "reinitialisation";
 
 /** Empreinte HMAC-SHA256 (64 caractères hexadécimaux), seule valeur stockée. */
 export function empreinteTentative(type: TypeTentative, valeur: string, secret: string): string {
-  if (!secret) throw new Error("Secret d'empreinte manquant");
+  if (!secret) throw new Error("Secret d’empreinte manquant");
   return createHmac("sha256", secret).update(`connexion:${type}:${valeur}`).digest("hex");
 }
 
@@ -47,7 +47,7 @@ export function debutFenetreConnexion(maintenant: number): Date {
   return new Date(maintenant - LIMITE_CONNEXION.fenetreMs);
 }
 
-/** Autorise la tentative si l'IP et le compte sont sous leur seuil. */
+/** Autorise la tentative si l’IP et le compte sont sous leur seuil. */
 export function tentativeAutorisee(tentativesIp: number, echecsCompte: number): boolean {
   return tentativesIp < LIMITE_CONNEXION.parIp && echecsCompte < LIMITE_CONNEXION.parCompte;
 }

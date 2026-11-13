@@ -10,7 +10,7 @@ export const TYPES_EVENEMENT = ["mariage", "prive", "entreprise", "autre"] as co
 export type TypeEvenement = (typeof TYPES_EVENEMENT)[number];
 
 export const LIBELLES_TYPE: Record<Langue, Record<TypeEvenement, string>> = {
-  fr: { mariage: "Mariage", prive: "Événement privé", entreprise: "Événement d'entreprise", autre: "Autre" },
+  fr: { mariage: "Mariage", prive: "Événement privé", entreprise: "Événement d’entreprise", autre: "Autre" },
   en: { mariage: "Wedding", prive: "Private event", entreprise: "Corporate event", autre: "Other" },
 };
 

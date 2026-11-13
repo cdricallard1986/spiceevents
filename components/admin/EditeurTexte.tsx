@@ -12,19 +12,19 @@ import { FenetrePhoto, type PhotoAInserer } from "./FenetrePhoto";
 import { useToasts } from "./Toasts";
 
 /**
- * Corps d'un article : l'éditeur visuel (Tiptap), réglé pour ne produire que
- * le format du document (lib/journal/editeur.ts), avec sa barre d'outils
- * collante. Chargé à la demande (`next/dynamic`) par la page de l'éditeur :
- * rien de Tiptap n'arrive sur les autres pages.
+ * Corps d’un article : l’éditeur visuel (Tiptap), réglé pour ne produire que
+ * le format du document (lib/journal/editeur.ts), avec sa barre d’outils
+ * collante. Chargé à la demande (`next/dynamic`) par la page de l’éditeur :
+ * rien de Tiptap n’arrive sur les autres pages.
  *
- * Collage : le texte de Word, Google Docs ou d'une page web est gardé, dans
+ * Collage : le texte de Word, Google Docs ou d’une page web est gardé, dans
  * les formes connues ; une photo collée ou glissée comme fichier est envoyée
- * au stockage (texte alternatif demandé d'abord) ; une image d'un autre site
+ * au stockage (texte alternatif demandé d’abord) ; une image d’un autre site
  * ou en `data:` est écartée, avec un message.
  */
 
 type Props = {
-  /** Document d'ouverture (lu une fois : l'éditeur garde ensuite son propre état). */
+  /** Document d’ouverture (lu une fois : l’éditeur garde ensuite son propre état). */
   contenuInitial: unknown;
   /** À chaque modification : le document dans sa forme enregistrée. */
   onChange: (document: unknown) => void;
@@ -44,39 +44,39 @@ function fichierImage(liste: FileList | null | undefined): File | null {
 export default function EditeurTexte({ contenuInitial, onChange, creerUrlEnvoi, outils, erreur, idErreur }: Props) {
   const { afficher } = useToasts();
   const [fenetre, setFenetre] = useState<Fenetre>(null);
-  // Les réglages de l'éditeur sont lus une fois : les rappels passent par des références.
+  // Les réglages de l’éditeur sont lus une fois : les rappels passent par des références.
   const rappels = useRef({ onChange, afficher });
   useEffect(() => {
     rappels.current = { onChange, afficher };
   });
-  /** Où insérer la photo (sélection au moment de l'ouverture de la fenêtre, ou point de dépôt). */
+  /** Où insérer la photo (sélection au moment de l’ouverture de la fenêtre, ou point de dépôt). */
   const insertion = useRef<{ from: number; to: number } | null>(null);
 
   // Réglages créés une fois : `useEditor` les compare à chaque rendu (un nouvel objet relancerait `setOptions`).
   const [reglages] = useState(() => ({
     extensions: extensionsArticle(),
     content: contenuPourEditeur(contenuInitial),
-    // Rendu côté client seulement (pas d'écart d'hydratation).
+    // Rendu côté client seulement (pas d’écart d’hydratation).
     immediatelyRender: false,
     editorProps: {
       attributes: {
         class: "prose-nuit min-h-[50svh] px-4 py-6 outline-none sm:px-8 sm:py-8",
-        "aria-label": "Corps de l'article",
-        // Message d'erreur du serveur sous l'éditeur (absent : ignoré).
+        "aria-label": "Corps de l’article",
+        // Message d’erreur du serveur sous l’éditeur (absent : ignoré).
         ...(idErreur ? { "aria-describedby": idErreur } : {}),
       },
       transformPastedHTML(html) {
         const r = preparerHtmlColle(html);
         if (r.imagesRefusees > 0) {
           rappels.current.afficher(
-            `${r.imagesRefusees} image${r.imagesRefusees > 1 ? "s collées n'ont" : " collée n'a"} pas été reprise${r.imagesRefusees > 1 ? "s" : ""} (autre site ou image intégrée) : ajoutez-${r.imagesRefusees > 1 ? "les" : "la"} avec le bouton « Photo ».`,
+            `${r.imagesRefusees} image${r.imagesRefusees > 1 ? "s collées n’ont" : " collée n’a"} pas été reprise${r.imagesRefusees > 1 ? "s" : ""} (autre site ou image intégrée) : ajoutez-${r.imagesRefusees > 1 ? "les" : "la"} avec le bouton « Photo ».`,
             "info",
           );
         }
         return r.html;
       },
       handlePaste(view, event) {
-        // Une photo copiée seule (capture d'écran, « Copier l'image ») : on l'envoie au stockage.
+        // Une photo copiée seule (capture d’écran, « Copier l’image ») : on l’envoie au stockage.
         const fichier = fichierImage(event.clipboardData?.files);
         const texte = event.clipboardData?.getData("text/plain").trim() ?? "";
         if (!fichier || texte) return false;
@@ -132,9 +132,9 @@ export default function EditeurTexte({ contenuInitial, onChange, creerUrlEnvoi, 
         className={[
           "mx-auto max-w-[44rem]",
           "[&_.ProseMirror]:outline-none",
-          // Texte d'invite d'un article vide.
+          // Texte d’invite d’un article vide.
           "[&_p.is-editor-empty:first-child]:before:pointer-events-none [&_p.is-editor-empty:first-child]:before:float-left [&_p.is-editor-empty:first-child]:before:h-0 [&_p.is-editor-empty:first-child]:before:text-sable/60 [&_p.is-editor-empty:first-child]:before:content-[attr(data-placeholder)]",
-          // Photos : comme sur le site (largeur du texte, photo en hauteur limitée à l'écran), légende dessous.
+          // Photos : comme sur le site (largeur du texte, photo en hauteur limitée à l’écran), légende dessous.
           "[&_figure]:my-10 [&_figure_img]:max-h-[85svh] [&_figure_img]:object-contain [&_figcaption]:mt-3 [&_figcaption]:text-center [&_figcaption]:text-sm [&_figcaption]:text-sable",
           "[&_hr]:my-10 [&_hr]:border-ligne",
           // Bloc sélectionné (photo, séparateur) : contour doré.
@@ -142,7 +142,7 @@ export default function EditeurTexte({ contenuInitial, onChange, creerUrlEnvoi, 
         ].join(" ")}
       >
         <EditorContent editor={editor} />
-        {!editor && <p className="px-4 py-6 text-sable sm:px-8">Chargement de l&apos;éditeur…</p>}
+        {!editor && <p className="px-4 py-6 text-sable sm:px-8">Chargement de l’éditeur…</p>}
       </div>
       {erreur && (
         <p id={idErreur} className="border-t border-erreur px-4 py-3 text-sm text-erreur sm:px-8">
@@ -183,7 +183,7 @@ function photoSelectionnee(editor: Editor): { alt: string; legende: string; src:
   return { alt: String(attrs.alt ?? ""), legende: String(attrs.title ?? ""), src: String(attrs.src) };
 }
 
-// --- Barre d'outils ------------------------------------------------------------------
+// --- Barre d’outils ------------------------------------------------------------------
 
 const CLASSES_BARRE =
   "sticky top-16 z-20 flex items-center gap-1 overflow-x-auto overscroll-x-contain border-b border-ligne bg-nuit-2/95 px-2 py-2 backdrop-blur-md lg:top-0 [scrollbar-width:thin]";
@@ -274,7 +274,7 @@ function Separation() {
   return <span aria-hidden="true" className="mx-1 h-7 w-px shrink-0 bg-ligne" />;
 }
 
-/** Bouton de la barre : 44 px de haut au moins (doigt), `aria-pressed` pour ce qui s'active et se désactive. */
+/** Bouton de la barre : 44 px de haut au moins (doigt), `aria-pressed` pour ce qui s’active et se désactive. */
 function Outil({
   libelle,
   raccourci,

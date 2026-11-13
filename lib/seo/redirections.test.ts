@@ -3,13 +3,13 @@ import { OPTIONS } from "@/contenu/options";
 import { routing } from "@/i18n/routing";
 import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, OPTIONS_RETIREES, redirections } from "./redirections";
 
-/** Chemins internes FR valides, dynamiques résolus avec les vrais slugs d'options. */
+/** Chemins internes FR valides, dynamiques résolus avec les vrais slugs d’options. */
 const cheminsValides = new Set<string>([
   ...Object.keys(routing.pathnames).filter((c) => !c.includes("[")),
   ...OPTIONS.map((o) => `/animations/${o.slug.fr}`),
 ]);
 
-// Les 51 adresses d'articles de l'ancien sitemap.
+// Les 51 adresses d’articles de l’ancien sitemap.
 const ANCIENS_ARTICLES_RETIRES = 14;
 
 describe("redirections 301", () => {
@@ -32,7 +32,7 @@ describe("redirections 301", () => {
     for (const a of anciennes) {
       const conservee = cheminsValides.has(a);
       const redirigee = liste.some((r) => r.source === a);
-      expect(conservee || redirigee, `${a} n'est ni conservée ni redirigée`).toBe(true);
+      expect(conservee || redirigee, `${a} n’est ni conservée ni redirigée`).toBe(true);
     }
   });
 

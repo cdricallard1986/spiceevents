@@ -8,7 +8,7 @@ import { image } from "@/lib/images";
  * Lecture publique des galeries : source base ou listes de secours (même règle
  * que les avis), cache étiqueté « galeries » rafraîchi toutes les heures, et
  * une erreur de Supabase qui fait échouer la génération (jamais de repli
- * silencieux). En mode secours : exactement les photos d'avant.
+ * silencieux). En mode secours : exactement les photos d’avant.
  */
 
 const etat = vi.hoisted(() => ({
@@ -53,7 +53,7 @@ beforeEach(() => {
 });
 
 describe("photosDeGalerie — secours (sans Supabase)", () => {
-  it("rend les photos de la page Galerie exactement comme avant : mêmes fichiers, tailles et textes, dans l'ordre", async () => {
+  it("rend les photos de la page Galerie exactement comme avant : mêmes fichiers, tailles et textes, dans l’ordre", async () => {
     for (const locale of ["fr", "en"] as const) {
       expect(await photosDeGalerie("galerie_mariages", locale, FICHIERS)).toEqual(PHOTOS_MARIAGES.map((c) => image(c, locale)));
       expect(await photosDeGalerie("galerie_evenements", locale, FICHIERS)).toEqual(PHOTOS_EVENEMENTS.map((c) => image(c, locale)));
@@ -61,7 +61,7 @@ describe("photosDeGalerie — secours (sans Supabase)", () => {
     expect(etat.requetes).toEqual([]);
   });
 
-  it("rend les galeries des pages d'animations comme avant (vide pour le photobooth)", async () => {
+  it("rend les galeries des pages d’animations comme avant (vide pour le photobooth)", async () => {
     for (const [slug, c] of Object.entries(CONTENUS_OPTIONS)) {
       expect(await photosDeGalerie(`option:${slug}`, "en", FICHIERS), slug).toEqual(c.galerie.map((cle) => image(cle, "en")));
     }
@@ -83,7 +83,7 @@ describe("photosDeGalerie — base", () => {
     ...champs,
   });
 
-  it("lit Supabase en une requête, met en cache sous l'étiquette « galeries » (filet d'une heure)", async () => {
+  it("lit Supabase en une requête, met en cache sous l’étiquette « galeries » (filet d’une heure)", async () => {
     etat.reponse = { data: [], error: null };
     await photosDeGalerie("galerie_mariages", "fr", BASE);
     expect(etat.requetes[0]).toEqual(["from", ["galeries_photos"]]);
@@ -99,7 +99,7 @@ describe("photosDeGalerie — base", () => {
     expect(etat.requetes.length).toBeGreaterThan(0);
   });
 
-  it("garde la galerie demandée, dans l'ordre, et donne l'adresse publique des photos du bucket", async () => {
+  it("garde la galerie demandée, dans l’ordre, et donne l’adresse publique des photos du bucket", async () => {
     etat.reponse = {
       data: [
         { galerie: "galerie_mariages", photo_id: "b", ordre: 20, photo: photo("b", { alt_en: "Photo b (en)" }) },
@@ -126,14 +126,14 @@ describe("registre", () => {
   });
 });
 
-describe("diaporamas d'en-tête", () => {
+describe("diaporamas d’en-tête", () => {
   it("sans Supabase : les listes du code, dans la langue de la page", async () => {
     const { photosEnTete } = await import("./lecture");
     const { IMAGES_ACCUEIL_MARIAGES } = await import("@/contenu/pages/mariages");
     expect(await photosEnTete("mariages", "en", [], {})).toEqual(IMAGES_ACCUEIL_MARIAGES.map((c) => image(c, "en")));
   });
 
-  it("liste vide en base (migration pas encore appliquée) : jamais d'en-tête vide, la liste du code", async () => {
+  it("liste vide en base (migration pas encore appliquée) : jamais d’en-tête vide, la liste du code", async () => {
     etat.reponse = { data: [], error: null };
     const { photosEnTete } = await import("./lecture");
     expect(await photosEnTete("son-et-lumiere", "fr", [], { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co" })).toEqual([

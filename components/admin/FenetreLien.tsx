@@ -9,10 +9,10 @@ import { CLASSES_DANGER } from "./ConfirmDialog";
 import { Modale } from "./Modale";
 
 /**
- * Petite fenêtre « Lien » de l'éditeur : adresse vérifiée (https://, http://,
- * mailto:, tel: ou page du site `/…`), complétée quand c'est sans ambiguïté
+ * Petite fenêtre « Lien » de l’éditeur : adresse vérifiée (https://, http://,
+ * mailto:, tel: ou page du site `/…`), complétée quand c’est sans ambiguïté
  * (`www.…` → `https://www.…`). Sans texte sélectionné, le texte du lien est
- * demandé aussi. Sur un lien existant : modifier l'adresse ou retirer le lien.
+ * demandé aussi. Sur un lien existant : modifier l’adresse ou retirer le lien.
  */
 export function FenetreLien({ editor, onFermer }: { editor: Editor; onFermer: () => void }) {
   const id = useId();

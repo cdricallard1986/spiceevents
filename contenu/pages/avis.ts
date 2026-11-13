@@ -19,7 +19,7 @@ export const PAGE_AVIS: Bilingue<PageAvis> = typographier({
     },
     hero: {
       surtitre: "Avis",
-      titre: "Ce qu'ils retiennent *de leur nuit*.",
+      titre: "Ce qu’ils retiennent *de leur nuit*.",
       intro: "Les mots des mariés et des clients qui nous ont confié leur événement.",
     },
     awards: {

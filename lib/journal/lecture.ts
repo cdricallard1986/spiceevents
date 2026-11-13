@@ -5,21 +5,22 @@ import { articleDepuisLigne, trierParDate } from "./articles";
 import { lignesDeRepli } from "./repli";
 import { sourceArticles } from "./source";
 import { COLONNES_ARTICLE, type Article, type LigneArticle } from "./types";
+import { typographier } from "@/lib/typographie";
 
 /**
  * Lecture des articles publiés pour les pages publiques (serveur seulement),
  * sur le modèle des avis (lib/avis/lecture.ts) :
  *
  * - client publishable sans cookies : les pages restent statiques ;
- * - mise en cache sous l'étiquette `articles` : chaque action du back office
+ * - mise en cache sous l’étiquette `articles` : chaque action du back office
  *   appelle `revalidateTag("articles")`, la page est régénérée à la visite
  *   suivante. Filet : régénération toutes les heures ;
  * - une erreur de Supabase (ou un article publié invalide) est levée, jamais
  *   remplacée par les fichiers : on ne publie pas un journal incomplet.
  *
  * Une seule requête pour tout le journal (contenus compris : la liste affiche
- * le temps de lecture). Quelques centaines de Ko pour des dizaines d'articles,
- * loin de la limite de 2 Mo d'une entrée du cache de Next.
+ * le temps de lecture). Quelques centaines de Ko pour des dizaines d’articles,
+ * loin de la limite de 2 Mo d’une entrée du cache de Next.
  */
 
 export const ETIQUETTE_ARTICLES = "articles";
@@ -43,7 +44,8 @@ const lireBaseEnCache = unstable_cache(lireBase, ["articles-publies"], { tags: [
 export async function articlesPublies(env: Record<string, string | undefined> = process.env): Promise<Article[]> {
   const lignes = sourceArticles(env) === "base" ? await lireBaseEnCache() : lignesDeRepli();
   // La RLS ne laisse voir que les articles publiés ; le filtre reste ici par prudence.
-  return trierParDate(lignes.filter((l) => l.statut === "publie").map(articleDepuisLigne));
+  // Typographie du site (apostrophes ’, espaces fines insécables) sur les titres, textes et légendes.
+  return trierParDate(lignes.filter((l) => l.statut === "publie").map((l) => typographier(articleDepuisLigne(l))));
 }
 
 /** Un article publié par son adresse, ou undefined (page 404). */

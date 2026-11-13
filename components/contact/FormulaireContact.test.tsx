@@ -22,19 +22,19 @@ afterEach(() => {
 describe("FormulaireContact", () => {
   it("associe chaque champ à son libellé", () => {
     rendre(vi.fn());
-    for (const libelle of [/Vos prénoms/, /^Nom$/, /^Email/, /Téléphone/, /Type d'événement/, /Date de l'événement/, /Lieu/, /Nombre d'invités/, /Votre projet/]) {
+    for (const libelle of [/Vos prénoms/, /^Nom$/, /^Email/, /Téléphone/, /Type d.événement/, /Date de l.événement/, /Lieu/, /Nombre d.invités/, /Votre projet/]) {
       expect(screen.getByLabelText(libelle)).toBeInTheDocument();
     }
   });
 
-  it("propose les bons claviers et l'autoremplissage", () => {
+  it("propose les bons claviers et l’autoremplissage", () => {
     rendre(vi.fn());
     expect(screen.getByLabelText(/^Email/)).toHaveAttribute("autocomplete", "email");
     expect(screen.getByLabelText(/^Email/)).toHaveAttribute("inputmode", "email");
     expect(screen.getByLabelText(/Téléphone/)).toHaveAttribute("autocomplete", "tel");
     expect(screen.getByLabelText(/Téléphone/)).toHaveAttribute("inputmode", "tel");
     expect(screen.getByLabelText(/Vos prénoms/)).toHaveAttribute("autocomplete", "given-name");
-    expect(screen.getByLabelText(/Nombre d'invités/)).toHaveAttribute("inputmode", "numeric");
+    expect(screen.getByLabelText(/Nombre d.invités/)).toHaveAttribute("inputmode", "numeric");
   });
 
   it("envoie la langue, le champ piège vide et les horodatages", async () => {
@@ -49,7 +49,7 @@ describe("FormulaireContact", () => {
     expect(Number(fd.get("envoye_le"))).toBeGreaterThanOrEqual(Number(fd.get("ouvert_le")));
   });
 
-  it("cache le champ piège aux humains et aux lecteurs d'écran", () => {
+  it("cache le champ piège aux humains et aux lecteurs d’écran", () => {
     const { container } = rendre(vi.fn());
     const piege = container.querySelector('input[name="site_web"]');
     expect(piege).toHaveAttribute("tabindex", "-1");
@@ -80,7 +80,7 @@ describe("FormulaireContact", () => {
     await waitFor(() => expect(screen.getByLabelText(/Vos prénoms/)).toHaveValue("Julie & Thomas"));
   });
 
-  it("ne désactive jamais les champs pendant l'envoi ; seul le bouton l'indique", async () => {
+  it("ne désactive jamais les champs pendant l’envoi ; seul le bouton l’indique", async () => {
     let terminer: (e: EtatFormulaire) => void = () => {};
     const action = vi.fn(() => new Promise<EtatFormulaire>((r) => (terminer = r)));
     rendre(action);
@@ -99,15 +99,15 @@ describe("FormulaireContact", () => {
     expect(screen.queryByRole("button", { name: TEXTES.envoyer })).toBeNull();
   });
 
-  it("pré-sélectionne le type d'événement depuis ?type=", async () => {
+  it("pré-sélectionne le type d’événement depuis ?type=", async () => {
     window.history.replaceState(null, "", "/contact?type=entreprise");
     rendre(vi.fn());
-    await waitFor(() => expect(screen.getByLabelText(/Type d'événement/)).toHaveValue("entreprise"));
+    await waitFor(() => expect(screen.getByLabelText(/Type d.événement/)).toHaveValue("entreprise"));
   });
 
   it("ignore un ?type= inconnu", async () => {
     window.history.replaceState(null, "", "/contact?type=<script>");
     rendre(vi.fn());
-    await waitFor(() => expect(screen.getByLabelText(/Type d'événement/)).toHaveValue(""));
+    await waitFor(() => expect(screen.getByLabelText(/Type d.événement/)).toHaveValue(""));
   });
 });

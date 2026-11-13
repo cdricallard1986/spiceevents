@@ -10,7 +10,7 @@
  *    métadonnées (dimensions, textes alternatifs).
  */
 
-/** Types acceptés (ceux du bucket `medias`, migration 0006) et l'extension de chacun. */
+/** Types acceptés (ceux du bucket `medias`, migration 0006) et l’extension de chacun. */
 export const TYPES_IMAGE = {
   "image/jpeg": "jpg",
   "image/png": "png",
@@ -29,12 +29,12 @@ export function estTypeImage(type: string): type is TypeImage {
 /** 15 Mo : la limite du bucket. */
 export const TAILLE_MAX_OCTETS = 15 * 1024 * 1024;
 
-/** Côté le plus long au-delà duquel le navigateur réduit la photo avant l'envoi. */
+/** Côté le plus long au-delà duquel le navigateur réduit la photo avant l’envoi. */
 export const COTE_MAX = 3000;
 /** Qualité JPEG des photos réduites. */
 export const QUALITE_REDUCTION = 0.85;
 
-/** Chemin d'un fichier du bucket : celui qu'impose la table `photos` (CHECK de la migration 0006). */
+/** Chemin d’un fichier du bucket : celui qu’impose la table `photos` (CHECK de la migration 0006). */
 export const MOTIF_CHEMIN_STOCKAGE = /^galeries\/[a-z0-9/_-]+\.(jpg|jpeg|png|webp|avif)$/;
 
 /** Chemin acceptable pour une photo envoyée : le motif de la base, sans dossier vide. */
@@ -43,8 +43,8 @@ export function estCheminStockage(chemin: string): boolean {
 }
 
 /**
- * Chemin sûr d'un nouvel envoi : `galeries/<aaaa>/<mm>/<horodatage>-<aléa>.<ext>`.
- * L'extension vient du type MIME (validé), jamais du nom du fichier.
+ * Chemin sûr d’un nouvel envoi : `galeries/<aaaa>/<mm>/<horodatage>-<aléa>.<ext>`.
+ * L’extension vient du type MIME (validé), jamais du nom du fichier.
  */
 export function cheminEnvoi(type: TypeImage, maintenant: Date, alea: string): string {
   const aaaa = String(maintenant.getUTCFullYear());
@@ -64,8 +64,8 @@ export function dimensionsReduites(largeur: number, hauteur: number, max: number
 
 /**
  * Texte alternatif proposé à partir du nom du fichier, à corriger : extension,
- * tirets et soulignés retirés. Un nom d'appareil photo (« IMG_1234 »,
- * « DSC01234 ») ne décrit rien : rien n'est proposé.
+ * tirets et soulignés retirés. Un nom d’appareil photo (« IMG_1234 »,
+ * « DSC01234 ») ne décrit rien : rien n’est proposé.
  */
 export function altDepuisNomFichier(nom: string): string {
   const base = nom

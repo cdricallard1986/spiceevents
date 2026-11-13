@@ -4,9 +4,9 @@ import { describe, expect, it } from "vitest";
 import config from "../next.config";
 
 /**
- * En production, l'optimiseur d'images refuse (400) toute qualité absente de
- * `images.qualities` : l'image ne s'affiche pas, sans erreur visible au build.
- * Cas réel : l'agrandissement de la galerie demandait `quality={75}`.
+ * En production, l’optimiseur d’images refuse (400) toute qualité absente de
+ * `images.qualities` : l’image ne s’affiche pas, sans erreur visible au build.
+ * Cas réel : l’agrandissement de la galerie demandait `quality={75}`.
  */
 function fichiers(dossier: string): string[] {
   return readdirSync(dossier).flatMap((nom) => {
@@ -17,7 +17,7 @@ function fichiers(dossier: string): string[] {
 }
 
 describe("qualités des images", () => {
-  it("n'utilisent que les valeurs autorisées par next.config.ts", () => {
+  it("n’utilisent que les valeurs autorisées par next.config.ts", () => {
     const autorisees = config.images?.qualities ?? [];
     expect(autorisees.length).toBeGreaterThan(0);
     const fautives: string[] = [];

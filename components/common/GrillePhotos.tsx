@@ -12,13 +12,13 @@ const COLONNES: Record<number, string> = {
 type Props =
   /** Images du registre (pages Mariages, Événementiel). */
   | { cles: readonly CleImage[]; photos?: never }
-  /** Photos d'une galerie gérée dans le back office (pages d'animations). */
+  /** Photos d’une galerie gérée dans le back office (pages d’animations). */
   | { photos: readonly PhotoAffichee[]; cles?: never };
 
 /**
  * Galerie de 2 à 6 photos en grille, cellules de hauteur fixe (recadrage `object-cover`).
- * La première photo s'élargit quand il le faut pour que la grille tombe juste
- * (2 colonnes sur mobile, jusqu'à 4 sur grand écran).
+ * La première photo s’élargit quand il le faut pour que la grille tombe juste
+ * (2 colonnes sur mobile, jusqu’à 4 sur grand écran).
  */
 export function GrillePhotos({ cles, photos }: Props) {
   const elements = photos

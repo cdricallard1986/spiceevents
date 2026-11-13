@@ -23,7 +23,7 @@ const CLASSES_CHAMP =
 /**
  * Formulaire de connexion au back office. Toute la décision est prise par la
  * Server Action ; ici on affiche ses erreurs (bordure rouge, message sous le
- * champ, toast en haut de l'écran). Les champs ne sont jamais désactivés.
+ * champ, toast en haut de l’écran). Les champs ne sont jamais désactivés.
  */
 export function FormulaireConnexion({ action, suite }: Props) {
   const [etat, envoyer, enCours] = useActionState(action, { statut: "initial" });

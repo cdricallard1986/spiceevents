@@ -39,9 +39,6 @@ export async function PiedDePage() {
               </li>
             ))}
             <li>
-              <Link href="/a-propos" className={lien}>{tn("aPropos")}</Link>
-            </li>
-            <li>
               <Link href="/faq" className={lien}>{tn("faq")}</Link>
             </li>
           </ul>

@@ -38,29 +38,29 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
     },
     parcours: {
       surtitre: "Le parcours",
-      titre: "De l'école de cinéma *aux nuits blanches*.",
+      titre: "De l’école de cinéma *aux nuits blanches*.",
       paragraphes: [
-        "Cédric crée Spice Events très tôt, pour facturer ses premiers clients. Il est alors étudiant en cinéma, option son, et possède déjà une solide expérience de l'animation de soirées. Très vite, il veut professionnaliser ses prestations et les adapter aux mariages et aux événements : une expérience qui allie technique, ambiance et émotion.",
-        "Les débuts demandent patience et discipline : il réinvestit longtemps dans le matériel et la qualité plutôt que dans sa propre rémunération, et assume seul chaque décision. Les conseils d'autres professionnels et des rencontres décisives, comme celle de Maxime Gaudefroy, aujourd'hui son associé chez MX Événement, l'aident à structurer l'entreprise.",
-        "Le nom « Spice » dit cette ambition : pimenter les événements, les rendre uniques, et garder une certaine polyvalence. Cédric imaginait d'abord plusieurs déclinaisons — Spice Records, Spice Weddings, Spice the Night. C'est finalement Spice Events qui est devenu sa référence pour les mariages et les événements.",
+        "Cédric crée Spice Events très tôt, pour facturer ses premiers clients. Il est alors étudiant en cinéma, option son, et possède déjà une solide expérience de l’animation de soirées. Très vite, il veut professionnaliser ses prestations et les adapter aux mariages et aux événements : une expérience qui allie technique, ambiance et émotion.",
+        "Les débuts demandent patience et discipline : il réinvestit longtemps dans le matériel et la qualité plutôt que dans sa propre rémunération, et assume seul chaque décision. Les conseils d’autres professionnels et des rencontres décisives, comme celle de Maxime Gaudefroy, aujourd’hui son associé chez MX Événement, l’aident à structurer l’entreprise.",
+        "Le nom « Spice » dit cette ambition : pimenter les événements, les rendre uniques, et garder une certaine polyvalence. Cédric imaginait d’abord plusieurs déclinaisons — Spice Records, Spice Weddings, Spice the Night. C’est finalement Spice Events qui est devenu sa référence pour les mariages et les événements.",
       ],
     },
     citationPhare: {
       texte:
-        "La réussite, ce n'est pas juste avoir du matériel ou une bonne technique, c'est savoir écouter, anticiper et accompagner chaque mariage ou événement de A à Z.",
+        "La réussite, ce n’est pas juste avoir du matériel ou une bonne technique, c’est savoir écouter, anticiper et accompagner chaque mariage ou événement de A à Z.",
     },
     aujourdhui: {
-      surtitre: "Aujourd'hui",
-      titre: "Moins de dates, *plus d'attention*.",
+      surtitre: "Aujourd’hui",
+      titre: "Moins de dates, *plus d’attention*.",
       paragraphes: [
-        "Au sein de MX Événement, chaque associé a son domaine : Tristan l'administration et la comptabilité, Maxime la logistique et la production, Marc le suivi technique et la maintenance du matériel, Cédric la communication et le commercial. Les décisions se prennent ensemble.",
-        "Cédric a recentré Spice Events sur l'accompagnement humain et personnalisé. Avec une alternante, il se consacre aux mariages et aux événements qu'il choisit avec soin, pour garantir un suivi à 100 % : conseils musicaux, coordination avec vos prestataires, mise en scène des moments forts.",
-        "Pour lui, réussir un mariage, c'est comprendre les envies de chacun et traduire votre vision en réalité — du choix du matériel aux animations, en passant par la lumière et le déroulé de la journée.",
+        "Au sein de MX Événement, chaque associé a son domaine : Tristan l’administration et la comptabilité, Maxime la logistique et la production, Marc le suivi technique et la maintenance du matériel, Cédric la communication et le commercial. Les décisions se prennent ensemble.",
+        "Cédric a recentré Spice Events sur l’accompagnement humain et personnalisé. Avec une alternante, il se consacre aux mariages et aux événements qu’il choisit avec soin, pour garantir un suivi à 100 % : conseils musicaux, coordination avec vos prestataires, mise en scène des moments forts.",
+        "Pour lui, réussir un mariage, c’est comprendre les envies de chacun et traduire votre vision en réalité — du choix du matériel aux animations, en passant par la lumière et le déroulé de la journée.",
       ],
       citations: [
         {
           texte:
-            "J'ai toujours voulu être mon propre patron, construire mon travail et décider moi-même de la manière dont je développe mon entreprise.",
+            "J’ai toujours voulu être mon propre patron, construire mon travail et décider moi-même de la manière dont je développe mon entreprise.",
         },
         {
           texte:
@@ -75,12 +75,12 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
         "Derrière chaque événement, il y a des personnes, des émotions et des histoires à mettre en lumière. Nos valeurs nous accompagnent de la préparation à la dernière note.",
       liste: [
         {
-          titre: "L'humain avant tout",
+          titre: "L’humain avant tout",
           texte: "Nous plaçons les personnes au centre de tout ce que nous faisons, avec bienveillance et écoute.",
         },
         {
           titre: "Professionnalisme",
-          texte: "Rigueur, fiabilité et précision à chaque étape : la clé d'un résultat maîtrisé, sans imprévu.",
+          texte: "Rigueur, fiabilité et précision à chaque étape : la clé d’un résultat maîtrisé, sans imprévu.",
         },
         {
           titre: "Adaptation",
@@ -88,7 +88,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
         },
         {
           titre: "Partage",
-          texte: "Un événement réussi, c'est une belle collaboration et une vraie connexion entre les gens.",
+          texte: "Un événement réussi, c’est une belle collaboration et une vraie connexion entre les gens.",
         },
         {
           titre: "Émotion",
@@ -100,7 +100,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
       surtitre: "Son & lumière",
       titre: "Une technique *qui ne se remarque pas*.",
       intro:
-        "Un moment d'émotion ne doit jamais dépendre d'un imprévu technique. Chaque installation est pensée comme une mise en scène : calibrée pour le lieu, testée, doublée.",
+        "Un moment d’émotion ne doit jamais dépendre d’un imprévu technique. Chaque installation est pensée comme une mise en scène : calibrée pour le lieu, testée, doublée.",
       blocs: [
         {
           titre: "Un matériel professionnel",
@@ -134,7 +134,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
       partenariat: {
         titre: "Le partenariat MX Événement",
         texte:
-          "Notre partenaire technique partage la même règle : aucune place à l'improvisation. Son équipe, forte de plus de 10 ans d'expérience, prépare et installe des solutions sur mesure. Pour chaque événement :",
+          "Notre partenaire technique partage la même règle : aucune place à l’improvisation. Son équipe, forte de plus de 10 ans d’expérience, prépare et installe des solutions sur mesure. Pour chaque événement :",
         points: [
           "un matériel haut de gamme, entretenu et testé en atelier avant chaque sortie ;",
           "une logistique rigoureuse, pour une installation fluide et sécurisée ;",
@@ -143,12 +143,12 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
         ],
         lien: "Découvrir MX Événement",
       },
-      citation: "Parce qu'un moment d'émotion ne doit jamais dépendre d'un imprévu technique.",
+      citation: "Parce qu’un moment d’émotion ne doit jamais dépendre d’un imprévu technique.",
     },
     video: {
       surtitre: "En images",
       titre: "Un mix pensé *pour toutes les générations*.",
-      intro: "Un aperçu de l'ambiance que nous construisons avec vous, pour faire danser petits et grands.",
+      intro: "Un aperçu de l’ambiance que nous construisons avec vous, pour faire danser petits et grands.",
     },
   },
   en: {
@@ -174,7 +174,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
     },
     citationPhare: {
       texte:
-        "Success isn't just about having the gear or good technique. It's about listening, anticipating and supporting every wedding or event from start to finish.",
+        "Success isn’t just about having the gear or good technique. It’s about listening, anticipating and supporting every wedding or event from start to finish.",
     },
     aujourdhui: {
       surtitre: "Today",
@@ -225,7 +225,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
     },
     technique: {
       surtitre: "Sound & lighting",
-      titre: "Technology *you don't notice*.",
+      titre: "Technology *you don’t notice*.",
       intro:
         "A moment of emotion should never hinge on a technical hitch. Every set-up is staged with care: calibrated for the venue, tested and backed up.",
       blocs: [
@@ -253,7 +253,7 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
             "CE-certified equipment, checked before every use.",
             "Installation to a strict protocol: insulation, cabling, protection, load tests.",
             "Backup solutions ready to take over: power, player, mixing desk.",
-            "Electrical and fire risk prevention, in line with each venue's rules.",
+            "Electrical and fire risk prevention, in line with each venue’s rules.",
             "Smooth communication with the photographer, videographer or caterer to avoid any interference.",
           ],
         },

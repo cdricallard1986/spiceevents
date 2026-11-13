@@ -22,3 +22,15 @@ describe("typographie française", () => {
     expect(typographier(c)).toEqual({ fr: { titre: `Quelle nuit *préparez-vous*${F}?`, liste: [`a${F}: b`], n: 3, actif: true, rien: null }, en: { titre: "Which night?" } });
   });
 });
+
+describe("apostrophes", () => {
+  it("apostrophe typographique entre deux lettres, en français comme en anglais", () => {
+    expect(insecables("l'équipe d'Angel")).toBe("l’équipe d’Angel");
+    expect(insecables("Let's rock!")).toBe("Let’s rock!");
+    expect(insecables("aujourd’hui")).toBe("aujourd’hui");
+  });
+  it("ne touche pas aux guillemets de code ni aux apostrophes isolées", () => {
+    expect(insecables("'self' 'unsafe-inline'")).toBe("'self' 'unsafe-inline'");
+    expect(insecables("rock 'n' roll")).toBe("rock 'n' roll");
+  });
+});

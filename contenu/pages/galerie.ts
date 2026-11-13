@@ -14,12 +14,12 @@ export const GALERIE: Bilingue<Galerie> = typographier({
     seo: {
       titre: "Galerie photos — mariages et événements | Spice Events, Île-de-France",
       description:
-        "Premières danses, dîners mis en lumière, châteaux illuminés, soirées d'entreprise : une sélection de photos de mariages et d'événements animés par Spice Events.",
+        "Premières danses, dîners mis en lumière, châteaux illuminés, soirées d’entreprise : une sélection de photos de mariages et d’événements animés par Spice Events.",
     },
     hero: {
       surtitre: "Galerie",
       titre: "La lumière, la piste, *le piment.*",
-      intro: "Une sélection de mariages et d'événements que nous avons mis en musique et en lumière.",
+      intro: "Une sélection de mariages et d’événements que nous avons mis en musique et en lumière.",
     },
     mariages: { surtitre: "Mariages", titre: "De la cérémonie *au bout de la nuit*." },
     evenements: { surtitre: "Événements", titre: "Galas, lancements *et grandes soirées*." },
@@ -40,7 +40,7 @@ export const GALERIE: Bilingue<Galerie> = typographier({
   },
 });
 
-/** Photos de mariages, dans l'ordre d'affichage (on alterne ambiances et moments). */
+/** Photos de mariages, dans l’ordre d’affichage (on alterne ambiances et moments). */
 export const PHOTOS_MARIAGES: CleImage[] = [
   "hero-premiere-danse",
   "maison-mariage-ceremonie-arbres",
@@ -67,7 +67,7 @@ export const PHOTOS_MARIAGES: CleImage[] = [
   "maison-mariage-diner-violet",
 ];
 
-/** Photos d'événements privés et d'entreprise. */
+/** Photos d’événements privés et d’entreprise. */
 export const PHOTOS_EVENEMENTS: CleImage[] = [
   "maison-evenement-gala",
   "maison-evenement-scene-dj",

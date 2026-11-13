@@ -15,7 +15,7 @@ type Props = {
   textes: TextesFormulaire;
 };
 
-/** Types qu'on peut pré-sélectionner par l'adresse (`/contact?type=mariage`). */
+/** Types qu’on peut pré-sélectionner par l’adresse (`/contact?type=mariage`). */
 const TYPES_PRESELECTION = ["mariage", "prive", "entreprise"];
 
 const DUREE_TOAST_MS = 8000;
@@ -25,12 +25,12 @@ const CLASSES_CHAMP =
 
 /**
  * Formulaire de demande de devis. Toute la validation est faite par la Server
- * Action ; ici on se contente d'afficher ses erreurs (bordure rouge, message
- * sous le champ, toast en haut de l'écran). Les champs ne sont jamais
- * désactivés pendant l'envoi : seul le bouton indique qu'il est en cours.
+ * Action ; ici on se contente d’afficher ses erreurs (bordure rouge, message
+ * sous le champ, toast en haut de l’écran). Les champs ne sont jamais
+ * désactivés pendant l’envoi : seul le bouton indique qu’il est en cours.
  */
 export function FormulaireContact({ action, locale, textes }: Props) {
-  // Moment d'ouverture du formulaire : un envoi en moins de 3 s est un robot.
+  // Moment d’ouverture du formulaire : un envoi en moins de 3 s est un robot.
   const ouvertLe = useRef(0);
   const refType = useRef<HTMLSelectElement>(null);
   const refDate = useRef<HTMLInputElement>(null);
@@ -46,7 +46,7 @@ export function FormulaireContact({ action, locale, textes }: Props) {
 
   useEffect(() => {
     ouvertLe.current = Date.now();
-    // Date minimale = aujourd'hui (posée ici : la page est générée à l'avance).
+    // Date minimale = aujourd’hui (posée ici : la page est générée à l’avance).
     if (refDate.current) {
       const d = new Date();
       refDate.current.min = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -83,7 +83,7 @@ export function FormulaireContact({ action, locale, textes }: Props) {
     );
   }
 
-  /** Ajoute les horodatages au moment de l'envoi, puis appelle la Server Action. */
+  /** Ajoute les horodatages au moment de l’envoi, puis appelle la Server Action. */
   function soumettre(formulaire: FormData) {
     formulaire.set("ouvert_le", String(ouvertLe.current));
     formulaire.set("envoye_le", String(Date.now()));
@@ -228,7 +228,7 @@ export function FormulaireContact({ action, locale, textes }: Props) {
   );
 }
 
-/** Libellé + champ + message d'erreur sous le champ. */
+/** Libellé + champ + message d’erreur sous le champ. */
 function Champ({
   champ,
   libelle,

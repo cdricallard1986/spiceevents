@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState, type PointerEvent as EvenementPointeur } from "react";
 import { createPortal } from "react-dom";
 
-/** Le piment du logo, détouré (public/marque) : ses couleurs sont celles qu'on peut choisir. */
+/** Le piment du logo, détouré (public/marque) : ses couleurs sont celles qu’on peut choisir. */
 const IMAGE = "/marque/piment-logo.png";
 const CLE = "spice:couleur";
 
-/** Remplace l'accent orange du site (variables de la charte) par une autre couleur. */
+/** Remplace l’accent orange du site (variables de la charte) par une autre couleur. */
 export function appliquerCouleur(couleur: string | null) {
   const racine = document.documentElement.style;
   if (!couleur) {
@@ -41,7 +41,7 @@ type Props = { position: { x: number; y: number }; onFermer: () => void };
 
 /**
  * Petit secret du site : un clic droit sur le logo ouvre ce sélecteur, le piment du
- * logo lui-même. Le pixel choisi devient l'accent de tout le site, immédiatement.
+ * logo lui-même. Le pixel choisi devient l’accent de tout le site, immédiatement.
  */
 export function SelecteurPiment({ position, onFermer }: Props) {
   const image = useRef<HTMLImageElement>(null);
@@ -55,7 +55,7 @@ export function SelecteurPiment({ position, onFermer }: Props) {
     return () => window.removeEventListener("keydown", echap);
   }, [onFermer]);
 
-  /** Copie de l'image dans un canevas hors écran, pour lire la couleur des pixels. */
+  /** Copie de l’image dans un canevas hors écran, pour lire la couleur des pixels. */
   function preparer() {
     const img = image.current;
     if (!img) return;
@@ -90,7 +90,7 @@ export function SelecteurPiment({ position, onFermer }: Props) {
     memoriser(null);
   }
 
-  // Portail : l'en-tête (flou d'arrière-plan) servirait sinon de cadre aux éléments `fixed`.
+  // Portail : l’en-tête (flou d’arrière-plan) servirait sinon de cadre aux éléments `fixed`.
   return createPortal(
     <>
       <div className="fixed inset-0 z-[70]" onClick={onFermer} onContextMenu={(e) => (e.preventDefault(), onFermer())} />
@@ -122,7 +122,7 @@ export function SelecteurPiment({ position, onFermer }: Props) {
           )}
         </div>
         <button type="button" onClick={reinitialiser} className="mt-3 w-full border border-ligne py-2 text-[0.75rem] uppercase tracking-[0.14em] text-sable hover:border-or hover:text-or">
-          Piment d&apos;origine
+          Piment d’origine
         </button>
       </div>
     </>,

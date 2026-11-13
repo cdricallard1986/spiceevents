@@ -53,7 +53,7 @@ export default async function PageMariages({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = MARIAGES[locale];
-  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  // Diaporama d’en-tête choisi dans le back office (fiche de chaque photo).
   // Sans les photos déjà montrées plus bas (grille, moments, avis ; « contact-maries-lumiere » est la même
   // photo que « couple-faisceaux » sous une autre clé).
   const entete = await photosEnTete("mariages", locale, [
@@ -66,7 +66,7 @@ export default async function PageMariages({ params }: Props) {
   const tous = await avisPublies();
   const grand = grandAvis(tous, "mariages_grand", locale, 320);
   const choisis = grilleCitations(avisDeLEmplacement(tous, "mariages"), locale);
-  // Le grand avis d'abord, puis ceux de la grille, sans doublon.
+  // Le grand avis d’abord, puis ceux de la grille, sans doublon.
   const avisDefilants = [...(grand ? [grand] : []), ...choisis.filter((a) => a.cle !== grand?.cle)];
 
   return (
@@ -144,7 +144,7 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
-      {/* Méthode : cible de l'ancienne page /accompagnement */}
+      {/* Méthode : cible de l’ancienne page /accompagnement */}
       <Section id="methode" surtitre={c.methode.surtitre} titre={c.methode.titre} intro={c.methode.intro}>
         <Etapes etapes={c.methode.etapes} />
       </Section>
@@ -187,7 +187,7 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
-      {/* Nuvio (maquette Nocturne) : le texte à gauche, un aperçu de l'espace de préparation à droite */}
+      {/* Nuvio (maquette Nocturne) : le texte à gauche, un aperçu de l’espace de préparation à droite */}
       <section className="bg-nuit-2 py-20 md:py-28">
         <div className="conteneur grid items-center gap-14 lg:grid-cols-[1fr_1fr] lg:gap-20">
           <div>
@@ -234,7 +234,7 @@ export default async function PageMariages({ params }: Props) {
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.photos.lien} →</Bouton>
       </Section>
 
-      {/* Grands avis qui se succèdent (le « grand avis » d'abord, puis ceux de la grille), photo de fond. */}
+      {/* Grands avis qui se succèdent (le « grand avis » d’abord, puis ceux de la grille), photo de fond. */}
       <AvisDefilants
         liste={avisDefilants}
         image="couple-faisceaux"

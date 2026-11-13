@@ -4,14 +4,14 @@ import { CHEMIN_CONNEXION } from "@/lib/admin/session";
 import { HREF_COMPTE } from "@/lib/admin/navigation";
 
 /**
- * Lien de l'email « Mot de passe oublié » : ouvre la session de réinitialisation
+ * Lien de l’email « Mot de passe oublié » : ouvre la session de réinitialisation
  * puis mène à « Mon compte » pour choisir le nouveau mot de passe.
  *
  * - Une session est déjà ouverte dans ce navigateur : on ne la remplace JAMAIS
  *   en silence (règle de Cédric) ; seul un administrateur a un compte, et il est
  *   déjà connecté : on le mène directement à « Mon compte », le lien reste inutilisé.
  * - Lien expiré, déjà servi ou incomplet : retour à la connexion, avec la raison.
- * Le jeton n'est jamais journalisé ; la page suivante ne le voit pas (redirection).
+ * Le jeton n’est jamais journalisé ; la page suivante ne le voit pas (redirection).
  */
 export const dynamic = "force-dynamic";
 

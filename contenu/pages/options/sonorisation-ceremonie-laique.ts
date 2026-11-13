@@ -15,16 +15,16 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
       },
       hero: {
         surtitre: "Sonorisation · Cérémonie laïque",
-        titre: "Des émotions *qui méritent d'être entendues*.",
+        titre: "Des émotions *qui méritent d’être entendues*.",
         intro: "Vœux, discours, musiques, silences : une sonorisation invisible, pour que chacun vive la cérémonie sans effort.",
       },
       presentation: {
         surtitre: "Une technique invisible",
-        titre: "Le son s'efface, *l'émotion reste*.",
+        titre: "Le son s’efface, *l’émotion reste*.",
         paragraphes: [
-          "La cérémonie laïque est l'un des moments les plus forts de votre mariage. Tout repose sur la clarté du son et la fluidité du déroulé : notre rôle est que tout fonctionne parfaitement, sans jamais attirer l'attention sur la technique.",
-          "Nous installons une diffusion équilibrée, douce et précise : du premier au dernier rang, chacun profite des discours, des vœux et des musiques. Pas de son agressif, pas d'écho, pas de volume excessif — juste ce qu'il faut, là où il faut.",
-          "Dans un jardin, une salle annexe ou en plein air sans aucun équipement, nous apportons une solution autonome et fiable, dans le respect de l'esthétique du lieu. Nous coordonnons la partie sonore avec l'officiant et vos prestataires : vous n'avez rien à gérer.",
+          "La cérémonie laïque est l’un des moments les plus forts de votre mariage. Tout repose sur la clarté du son et la fluidité du déroulé : notre rôle est que tout fonctionne parfaitement, sans jamais attirer l’attention sur la technique.",
+          "Nous installons une diffusion équilibrée, douce et précise : du premier au dernier rang, chacun profite des discours, des vœux et des musiques. Pas de son agressif, pas d’écho, pas de volume excessif — juste ce qu’il faut, là où il faut.",
+          "Dans un jardin, une salle annexe ou en plein air sans aucun équipement, nous apportons une solution autonome et fiable, dans le respect de l’esthétique du lieu. Nous coordonnons la partie sonore avec l’officiant et vos prestataires : vous n’avez rien à gérer.",
         ],
       },
       listes: [
@@ -33,7 +33,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
           intro: "Avant le jour J, nous étudions :",
           points: [
             "La configuration du lieu",
-            "Le nombre d'intervenants",
+            "Le nombre d’intervenants",
             "Les moments clés du déroulé",
             "Les contraintes techniques : extérieur, vent, distances, alimentation électrique",
           ],
@@ -41,7 +41,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
         {
           titre: "Attentifs pendant la cérémonie",
           points: [
-            "L'entrée des mariés",
+            "L’entrée des mariés",
             "Une prise de parole imprévue",
             "La musique lancée au bon moment",
             "Un micro à ajuster si nécessaire",
@@ -69,8 +69,8 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
         titre: "The sound fades away, *the emotion stays*.",
         paragraphes: [
           "A celebrant-led ceremony is one of the most powerful moments of your wedding. Everything depends on clear sound and a smooth running order: our job is to make sure it all works perfectly, without ever drawing attention to the technology.",
-          "We set up balanced, gentle, precise sound so that everyone, from the front row to the back, can enjoy the speeches, vows and music. No harsh sound, no echo, no excessive volume — just what's needed, where it's needed.",
-          "In a garden, a side room or outdoors with no facilities at all, we bring a self-contained, reliable set-up that respects the look of the venue. We coordinate the sound with your celebrant and suppliers, so there's nothing for you to manage.",
+          "We set up balanced, gentle, precise sound so that everyone, from the front row to the back, can enjoy the speeches, vows and music. No harsh sound, no echo, no excessive volume — just what’s needed, where it’s needed.",
+          "In a garden, a side room or outdoors with no facilities at all, we bring a self-contained, reliable set-up that respects the look of the venue. We coordinate the sound with your celebrant and suppliers, so there’s nothing for you to manage.",
         ],
       },
       listes: [

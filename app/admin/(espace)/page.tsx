@@ -6,8 +6,8 @@ import { TableauDeBord, salutation, type ResumeDemandes } from "@/components/adm
 export const metadata: Metadata = { title: "Accueil" };
 
 /**
- * Demandes à traiter : les nouvelles, et parmi elles celles dont l'email de
- * notification n'est pas parti. null si la base ne répond pas.
+ * Demandes à traiter : les nouvelles, et parmi elles celles dont l’email de
+ * notification n’est pas parti. null si la base ne répond pas.
  */
 async function resumeDemandes(supabase: ContexteAdmin["supabase"]): Promise<ResumeDemandes | null> {
   const [nouvelles, sansEmail] = await Promise.all([compterNouvellesDemandes(supabase), compterNouvellesDemandes(supabase, true)]);

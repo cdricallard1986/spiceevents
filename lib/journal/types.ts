@@ -19,16 +19,16 @@ export type LigneArticle = {
   /** `/journal/…` (fichier du site) ou `journal/…` (chemin dans le bucket `medias`). */
   couverture: string | null;
   couverture_alt: string | null;
-  /** Document de l'éditeur (lib/journal/document.ts) ; validé à la lecture. */
+  /** Document de l’éditeur (lib/journal/document.ts) ; validé à la lecture. */
   contenu: unknown;
 };
 
-/** Colonnes lues par le site, dans l'ordre du type. */
+/** Colonnes lues par le site, dans l’ordre du type. */
 export const COLONNES_ARTICLE =
   "id, statut, publie_le, slug, titre, sous_titre, description, categorie, date_publication, couverture, couverture_alt, contenu";
 
 /**
- * Un article publié, prêt pour les pages publiques : tous les champs d'un
+ * Un article publié, prêt pour les pages publiques : tous les champs d’un
  * article publié sont renseignés (contrainte `articles_publie_complet`).
  */
 export type Article = {

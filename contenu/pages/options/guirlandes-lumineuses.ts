@@ -20,19 +20,19 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = typographier({
         surtitre: "Décor lumineux · Guirlandes",
         titre: "Une lumière chaude, *un lieu transformé*.",
         intro:
-          "Les guirlandes guinguette habillent votre lieu d'une lumière douce et féerique, du cocktail jusqu'à la dernière danse.",
+          "Les guirlandes guinguette habillent votre lieu d’une lumière douce et féerique, du cocktail jusqu’à la dernière danse.",
       },
       presentation: {
-        surtitre: "Bien plus qu'un éclairage",
-        titre: "Quand l'élégance rencontre *le savoir-faire*.",
+        surtitre: "Bien plus qu’un éclairage",
+        titre: "Quand l’élégance rencontre *le savoir-faire*.",
         paragraphes: [
-          "Intemporelles, les guirlandes guinguette diffusent une lumière chaude et enveloppante qui invite au partage. Elles s'accordent à tous les styles : champêtre, bohème, chic, moderne ou industriel.",
-          "En ciel étoilé au-dessus du dîner, tendues entre les arbres, au-dessus de la piste, le long des murs ou autour du buffet et de la scène : elles structurent l'espace et lui donnent une vraie identité. Nous adaptons la disposition et l'intensité à votre lieu, en intérieur comme en extérieur.",
+          "Intemporelles, les guirlandes guinguette diffusent une lumière chaude et enveloppante qui invite au partage. Elles s’accordent à tous les styles : champêtre, bohème, chic, moderne ou industriel.",
+          "En ciel étoilé au-dessus du dîner, tendues entre les arbres, au-dessus de la piste, le long des murs ou autour du buffet et de la scène : elles structurent l’espace et lui donnent une vraie identité. Nous adaptons la disposition et l’intensité à votre lieu, en intérieur comme en extérieur.",
         ],
       },
       listes: [
         {
-          titre: "Idées d'utilisation",
+          titre: "Idées d’utilisation",
           points: [
             "Cocktail et réception : des espaces conviviaux et chaleureux",
             "Dîner : une touche intimiste au-dessus des tables",
@@ -45,10 +45,10 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = typographier({
         surtitre: "Comment ça marche",
         titre: "Une installation *pensée sur mesure*.",
         liste: [
-          { titre: "Découverte du lieu", texte: "Nous étudions la disposition, l'architecture et l'ambiance que vous souhaitez." },
+          { titre: "Découverte du lieu", texte: "Nous étudions la disposition, l’architecture et l’ambiance que vous souhaitez." },
           { titre: "Installation", texte: "Emplacements, hauteurs, tensions : les guirlandes sont posées avec soin, pour un rendu élégant et homogène." },
-          { titre: "Tests & sécurité", texte: "Tout est vérifié avant l'événement, avec du matériel de remplacement en cas d'imprévu." },
-          { titre: "Ambiance sur mesure", texte: "Nous ajustons les emplacements jusqu'à obtenir exactement l'atmosphère voulue." },
+          { titre: "Tests & sécurité", texte: "Tout est vérifié avant l’événement, avec du matériel de remplacement en cas d’imprévu." },
+          { titre: "Ambiance sur mesure", texte: "Nous ajustons les emplacements jusqu’à obtenir exactement l’atmosphère voulue." },
         ],
       },
       appel: {
@@ -90,15 +90,15 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = typographier({
         surtitre: "How it works",
         titre: "An installation *designed around you*.",
         liste: [
-          { titre: "Getting to know the venue", texte: "We look at the layout, the architecture and the atmosphere you're after." },
+          { titre: "Getting to know the venue", texte: "We look at the layout, the architecture and the atmosphere you’re after." },
           { titre: "Installation", texte: "Positions, heights, tension: every string is hung with care for an elegant, even result." },
           { titre: "Tests & safety", texte: "Everything is checked before the event, with backup equipment in case of the unexpected." },
           { titre: "Tailored atmosphere", texte: "We fine-tune the positions until the mood is exactly right." },
         ],
       },
       appel: {
-        titre: "Let's make your night *shine.*",
-        texte: "Tell us about your event and your ideas: we'll design its lighting together.",
+        titre: "Let’s make your night *shine.*",
+        texte: "Tell us about your event and your ideas: we’ll design its lighting together.",
       },
     },
   },

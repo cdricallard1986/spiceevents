@@ -13,7 +13,7 @@ import { Photo } from "@/components/ui/Photo";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
-// Page en français seulement : seule la version française est générée, l'anglais renvoie une 404.
+// Page en français seulement : seule la version française est générée, l’anglais renvoie une 404.
 export function generateStaticParams() {
   return [{ locale: "fr" }];
 }

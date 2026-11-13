@@ -17,13 +17,13 @@ import { AuditRls } from "./AuditRls";
 import { SuiteSql } from "./SuiteSql";
 
 type PanneauStatique = {
-  /** Verdict calculé côté serveur (rapport du build, variables d'environnement). */
+  /** Verdict calculé côté serveur (rapport du build, variables d’environnement). */
   etat: EtatPastille;
   contenu: ReactNode;
 };
 
 type Props = {
-  /** Onglet demandé par l'adresse (`?onglet=`). */
+  /** Onglet demandé par l’adresse (`?onglet=`). */
   ongletInitial: CleOnglet;
   /** Server Action `lancerAuditRls` (injectée pour pouvoir tester le composant). */
   lancerAudit: () => Promise<ResultatAudit>;
@@ -42,28 +42,28 @@ const TONS = {
 const INTRO_SUITES: Record<"sql" | "droits", ReactNode> = {
   sql: (
     <>
-      Contraintes, triggers et cascades, vérifiés sur la vraie base : ce que les tests unitaires ne peuvent pas voir, puisqu&apos;ils ne connaissent que le
+      Contraintes, triggers et cascades, vérifiés sur la vraie base : ce que les tests unitaires ne peuvent pas voir, puisqu’ils ne connaissent que le
       code. Chaque cas écrit puis annule : la base ressort inchangée. Les cas vivent dans la fonction <code className="font-mono text-ivoire">tests_sql()</code>{" "}
       (migration 0010).
     </>
   ),
   droits: (
     <>
-      Chaque vérification interroge réellement Supabase : en visiteur anonyme, puis avec votre session. Aucune donnée n&apos;est lue ; une écriture qui
+      Chaque vérification interroge réellement Supabase : en visiteur anonyme, puis avec votre session. Aucune donnée n’est lue ; une écriture qui
       réussirait par erreur serait aussitôt effacée et signalée en rouge.
     </>
   ),
 };
 
 function messageAudit(): string {
-  return "L'audit n'a pas pu être lancé. Rechargez la page (la session a peut-être expiré) puis réessayez.";
+  return "L’audit n’a pas pu être lancé. Rechargez la page (la session a peut-être expiré) puis réessayez.";
 }
 
 function messageSql(e: unknown): string {
-  return e instanceof Error && e.message ? e.message : "La suite n'a pas pu être lancée.";
+  return e instanceof Error && e.message ? e.message : "La suite n’a pas pu être lancée.";
 }
 
-/** Pastille de verdict d'un onglet, lisible aussi par un lecteur d'écran (dans le nom de l'onglet). */
+/** Pastille de verdict d’un onglet, lisible aussi par un lecteur d’écran (dans le nom de l’onglet). */
 function Pastille({ etat }: { etat: EtatPastille }) {
   const p = pastille(etat);
   return (
@@ -78,11 +78,11 @@ function Pastille({ etat }: { etat: EtatPastille }) {
  * Page Tests en onglets : comportements SQL, audit des droits, tests unitaires
  * du dernier build, configuration.
  *
- * Les onglets plutôt qu'un empilement : chaque section mesure plusieurs
+ * Les onglets plutôt qu’un empilement : chaque section mesure plusieurs
  * dizaines de lignes, et surtout la pastille de chaque onglet donne le verdict
- * SANS l'ouvrir. Les deux suites « live » partent dès l'ouverture de la page,
- * onglet affiché ou non, en parallèle. L'onglet ouvert est gardé dans
- * l'adresse (`?onglet=droits`) : un lien ou un rechargement y revient.
+ * SANS l’ouvrir. Les deux suites « live » partent dès l’ouverture de la page,
+ * onglet affiché ou non, en parallèle. L’onglet ouvert est gardé dans
+ * l’adresse (`?onglet=droits`) : un lien ou un rechargement y revient.
  */
 export function OngletsTests({ ongletInitial, lancerAudit, lancerSql = interrogerSuiteSql, unitaires, configuration }: Props) {
   const [actif, setActif] = useState<CleOnglet>(ongletInitial);
@@ -100,13 +100,13 @@ export function OngletsTests({ ongletInitial, lancerAudit, lancerSql = interroge
 
   function choisir(cle: CleOnglet) {
     setActif(cle);
-    // L'adresse garde l'onglet (sans navigation : rien n'est rechargé).
+    // L’adresse garde l’onglet (sans navigation : rien n’est rechargé).
     try {
       const url = new URL(window.location.href);
       url.searchParams.set(PARAMETRE_ONGLET, cle);
       window.history.replaceState(null, "", url);
     } catch {
-      // Navigateur qui refuse (cadre, mode restreint) : l'onglet change quand même.
+      // Navigateur qui refuse (cadre, mode restreint) : l’onglet change quand même.
     }
   }
 
@@ -166,7 +166,7 @@ export function OngletsTests({ ongletInitial, lancerAudit, lancerSql = interroge
   );
 }
 
-/** Panneau d'un onglet : toujours rendu (le rapport encadré ne se recharge pas à chaque changement), masqué s'il n'est pas actif. */
+/** Panneau d’un onglet : toujours rendu (le rapport encadré ne se recharge pas à chaque changement), masqué s’il n’est pas actif. */
 function Panneau({ cle, actif, children }: { cle: CleOnglet; actif: CleOnglet; children: ReactNode }) {
   return (
     <div role="tabpanel" id={`panneau-${cle}`} aria-labelledby={`onglet-${cle}`} hidden={actif !== cle} tabIndex={0} className="pt-8">

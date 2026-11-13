@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl";
 import { Piment } from "./Piment";
 
-/** Bandeau orange de la charte Nocturne, sous l'en-tête des pages Accueil et Mariages. */
+/** Bandeau orange de la charte Nocturne, sous l’en-tête des pages Accueil et Mariages. */
 export function BandeauPiment() {
   const fr = useLocale() === "fr";
   return (
@@ -13,7 +13,7 @@ export function BandeauPiment() {
           <Piment className="h-11" />
           <Piment className="h-9 rotate-12" />
         </span>
-        <span>{fr ? "Ajoutons-y du piment" : "Let's add some spice"}</span>
+        <span>{fr ? "Ajoutons-y du piment" : "Let’s add some spice"}</span>
       </p>
     </div>
   );

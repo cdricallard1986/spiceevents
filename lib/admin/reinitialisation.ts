@@ -11,7 +11,7 @@ import { schemaConnexion } from "./schema";
  *    1,5 s (le temps de réponse ne révèle rien) ;
  * 2. limite par IP sur toutes les demandes (message explicite, partagé avec la
  *    connexion), et par compte sur les seuls liens réellement envoyés, EN
- *    SILENCE (compter les simples demandes permettrait de bloquer quelqu'un en
+ *    SILENCE (compter les simples demandes permettrait de bloquer quelqu’un en
  *    ne connaissant que son email) ;
  * 3. lien envoyé seulement à un compte administrateur (rien pour un autre) ;
  * 4. échoue fermé si la base ne répond pas ; sans clé service_role
@@ -23,9 +23,9 @@ export const LIENS_PAR_COMPTE = 3;
 export const MESSAGES_REINITIALISATION = {
   validation: "Indiquez une adresse email valide.",
   envoye:
-    "Si cette adresse correspond au compte du back office, un lien pour choisir un nouveau mot de passe vient d'y être envoyé. Il est valable une heure.",
+    "Si cette adresse correspond au compte du back office, un lien pour choisir un nouveau mot de passe vient d’y être envoyé. Il est valable une heure.",
   limite: "Trop de demandes depuis cette connexion. Réessayez dans 15 minutes.",
-  indisponible: "La demande n'a pas pu être traitée. Réessayez dans quelques minutes.",
+  indisponible: "La demande n’a pas pu être traitée. Réessayez dans quelques minutes.",
 } as const;
 
 export type EtatReinitialisation =
@@ -43,7 +43,7 @@ export type DependancesReinitialisation = {
   tentatives: MagasinTentatives | null;
   genererLien(email: string): Promise<LienGenere>;
   estAdministrateur(userId: string): Promise<boolean>;
-  /** Envoie l'email (le lien est construit par l'appelant avec le jeton) ; lève une erreur s'il n'est pas parti. */
+  /** Envoie l’email (le lien est construit par l’appelant avec le jeton) ; lève une erreur s’il n’est pas parti. */
   envoyer(email: string, jeton: string): Promise<void>;
   maintenant: () => number;
   attendre: (ms: number) => Promise<void>;
@@ -51,8 +51,8 @@ export type DependancesReinitialisation = {
 };
 
 /**
- * Adresse du lien de l'email, sur le déploiement qui l'envoie. Jamais déduite
- * de l'en-tête Host de la requête (un en-tête forgé enverrait le jeton vers un
+ * Adresse du lien de l’email, sur le déploiement qui l’envoie. Jamais déduite
+ * de l’en-tête Host de la requête (un en-tête forgé enverrait le jeton vers un
  * autre site) : variables système de Vercel seulement.
  */
 export function origineDesLiens(env: Record<string, string | undefined>): string {
@@ -84,7 +84,7 @@ async function etapes(brut: { email?: unknown }, d: DependancesReinitialisation)
   const envoye: EtatReinitialisation = { statut: "envoye", message: MESSAGES_REINITIALISATION.envoye };
 
   if (!d.tentatives || !d.secret) {
-    d.journal.avertir("[admin] Mot de passe oublié : clé service_role ou secret d'empreinte absent, aucun lien envoyé.");
+    d.journal.avertir("[admin] Mot de passe oublié : clé service_role ou secret d’empreinte absent, aucun lien envoyé.");
     return envoye;
   }
 
@@ -108,14 +108,14 @@ async function etapes(brut: { email?: unknown }, d: DependancesReinitialisation)
     return { statut: "erreur", message: MESSAGES_REINITIALISATION.indisponible, email };
   }
 
-  // Compte administrateur seulement ; sinon, même réponse, rien n'est envoyé.
+  // Compte administrateur seulement ; sinon, même réponse, rien n’est envoyé.
   try {
     const lien = await d.genererLien(email);
     if (!lien || !(await d.estAdministrateur(lien.userId))) return envoye;
     await d.envoyer(email, lien.jeton);
     await d.tentatives.enregistrer("reinitialisation", empreinteCompte);
   } catch (e) {
-    // Même réponse qu'un succès : un message d'erreur ici révélerait que le compte existe.
+    // Même réponse qu’un succès : un message d’erreur ici révélerait que le compte existe.
     d.journal.erreur("[admin] Mot de passe oublié : lien non envoyé.", e);
   }
   return envoye;

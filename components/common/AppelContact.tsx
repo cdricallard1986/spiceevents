@@ -26,7 +26,7 @@ export function AppelContact({ titre, texte, bouton, lienExterne }: Props) {
           <p className="mt-4 text-lg text-nuit/85">
             {texte ??
               (fr
-                ? "Dites-nous l'essentiel en deux minutes : Cédric vous répond personnellement, dans les meilleurs délais."
+                ? "Dites-nous l’essentiel en deux minutes : Cédric vous répond personnellement, dans les meilleurs délais."
                 : "Tell us the essentials in two minutes: Cédric will get back to you personally, as soon as possible.")}
           </p>
         </div>

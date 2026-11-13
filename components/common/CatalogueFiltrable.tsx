@@ -6,7 +6,7 @@ export type CarteCatalogue = { cle: string; categorie: string; contenu: ReactNod
 
 type Props = {
   cartes: CarteCatalogue[];
-  /** Catégories dans l'ordre des boutons : clé → libellé. */
+  /** Catégories dans l’ordre des boutons : clé → libellé. */
   categories: Record<string, string>;
   libelleTout: string;
   libelleFiltres: string;

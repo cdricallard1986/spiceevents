@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 export type Suite<T> = {
   enCours: boolean;
-  /** La suite n'a pas pu s'exécuter (message lisible). */
+  /** La suite n’a pas pu s’exécuter (message lisible). */
   erreur: string | null;
   /** Dernier résultat ; gardé affiché pendant une relance. */
   resultat: T | null;
@@ -18,9 +18,9 @@ export type Suite<T> = {
  * Lance une suite de tests « live » (comportements SQL, audit des droits) et
  * suit son état.
  *
- * Le lancement est AUTOMATIQUE à l'ouverture de la page, même si l'onglet
- * n'est pas affiché : une page de santé qui attend un clic pour dire si tout va
- * bien ne dit rien, et c'est ce qui renseigne la pastille de chaque onglet.
+ * Le lancement est AUTOMATIQUE à l’ouverture de la page, même si l’onglet
+ * n’est pas affiché : une page de santé qui attend un clic pour dire si tout va
+ * bien ne dit rien, et c’est ce qui renseigne la pastille de chaque onglet.
  * Le bouton « Relancer » reste, pour rejouer après une correction.
  *
  * Un seul lancement automatique, même quand React monte deux fois le composant
@@ -29,7 +29,7 @@ export type Suite<T> = {
 export function useSuite<T>(lancer: () => Promise<T>, messageErreur: (e: unknown) => string): Suite<T> {
   const [etat, setEtat] = useState<Omit<Suite<T>, "relancer">>({ enCours: true, erreur: null, resultat: null, termineeA: null });
 
-  // Toujours la dernière version des fonctions, sans relancer l'effet à chaque rendu.
+  // Toujours la dernière version des fonctions, sans relancer l’effet à chaque rendu.
   const fonctions = useRef({ lancer, messageErreur });
   useEffect(() => {
     fonctions.current = { lancer, messageErreur };

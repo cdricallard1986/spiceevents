@@ -12,7 +12,7 @@ export const metadata: Metadata = { title: "Emails" };
 
 /**
  * Test des emails du formulaire de contact : aperçu du rendu, puis envoi réel
- * par Resend (demande fictive, objet « [TEST] ») à l'adresse du compte connecté.
+ * par Resend (demande fictive, objet « [TEST] ») à l’adresse du compte connecté.
  */
 export default async function PageEmails() {
   const { utilisateur } = await exigerAdmin();

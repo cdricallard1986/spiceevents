@@ -7,7 +7,7 @@ type Journal = {
   hero: { surtitre: string; titre: string; intro: string };
   aLaUne: string;
   filtres: string;
-  /** Phrase d'introduction de chaque rubrique. */
+  /** Phrase d’introduction de chaque rubrique. */
   rubriques: Record<Categorie, string>;
   article: { lies: { surtitre: string; titre: string }; retour: string };
 };
@@ -30,7 +30,7 @@ export const JOURNAL: Journal = typographier({
     "Conseils mariage": "Préparer le grand jour : lieu, décoration, thématique, saison et organisation.",
     "Musique & ambiance": "Le rôle du DJ, la lecture de la piste et le rythme de la soirée.",
     Technique: "Sonorisation, éclairage et préparation : ce qui ne se voit pas, mais se ressent.",
-    Animations: "Livre d'or audio, guirlandes, photobooth… et comment bien les doser.",
+    Animations: "Livre d’or audio, guirlandes, photobooth… et comment bien les doser.",
     "Mariages réalisés": "Quelques mariages que nous avons sonorisés et mis en lumière.",
   },
   article: {

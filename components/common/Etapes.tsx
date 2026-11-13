@@ -7,7 +7,7 @@ export const ROMAINS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
 /**
  * Étapes numérotées en chiffres romains. Sur grand écran (≥ 1280 px), toutes
  * sur une seule ligne, quel que soit leur nombre ; entre 1024 et 1280 px, une
- * ligne jusqu'à 4 étapes, sinon 3 par ligne (colonnes trop étroites au-delà).
+ * ligne jusqu’à 4 étapes, sinon 3 par ligne (colonnes trop étroites au-delà).
  */
 export function Etapes({ etapes }: { etapes: Etape[] }) {
   const n = etapes.length;

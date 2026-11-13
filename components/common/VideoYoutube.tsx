@@ -5,7 +5,7 @@ import { JsonLd } from "./JsonLd";
 import { LecteurYoutube } from "./LecteurYoutube";
 
 /**
- * Vidéo YouTube de la chaîne Spice Events, au format 16/9 : image d'aperçu et
+ * Vidéo YouTube de la chaîne Spice Events, au format 16/9 : image d’aperçu et
  * bouton lecture, lecteur en mode confidentialité renforcée chargé seulement au
  * clic (aucun cookie avant), et ses données structurées VideoObject pour Google.
  */

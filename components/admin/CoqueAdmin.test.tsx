@@ -8,11 +8,11 @@ const { CoqueAdmin, libelleNouvelles } = await import("./CoqueAdmin");
 
 afterEach(cleanup);
 
-/** Le lien « Demandes » du menu latéral d'ordinateur (le tiroir du téléphone est fermé). */
+/** Le lien « Demandes » du menu latéral d’ordinateur (le tiroir du téléphone est fermé). */
 const lienDemandes = () => screen.getAllByRole("link").find((l) => l.getAttribute("href") === "/admin/demandes")!;
 
 describe("CoqueAdmin — pastille des nouvelles demandes", () => {
-  it("affiche le nombre à côté de « Demandes », lisible par les lecteurs d'écran", () => {
+  it("affiche le nombre à côté de « Demandes », lisible par les lecteurs d’écran", () => {
     render(
       <CoqueAdmin version="1.0.0" email="c@x.fr" nouvellesDemandes={3} relireDemandes={async () => 3}>
         contenu

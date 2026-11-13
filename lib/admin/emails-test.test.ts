@@ -26,7 +26,7 @@ describe("emailDeTest", () => {
     }
   });
 
-  it("réutilise les vrais modèles du formulaire (même corps, seuls l'objet et les adresses changent)", () => {
+  it("réutilise les vrais modèles du formulaire (même corps, seuls l’objet et les adresses changent)", () => {
     const demande = demandeFictive("en", MAINTENANT);
     const reel = emailAccuse(demande, CONFIG);
     const test = emailDeTest({ modele: "accuse", langue: "en" }, MOI, CONFIG, MAINTENANT);
@@ -52,7 +52,7 @@ describe("emailDeTest", () => {
 });
 
 describe("schemaEnvoiTest", () => {
-  it("n'accepte que le modèle et la langue — surtout pas une adresse", () => {
+  it("n’accepte que le modèle et la langue — surtout pas une adresse", () => {
     expect(schemaEnvoiTest.safeParse({ modele: "accuse", langue: "en" }).success).toBe(true);
     expect(schemaEnvoiTest.safeParse({ modele: "accuse", langue: "en", to: "x@y.z" }).success).toBe(false);
     expect(schemaEnvoiTest.safeParse({ modele: "facture", langue: "fr" }).success).toBe(false);
@@ -83,7 +83,7 @@ describe("traiterEnvoiTest", () => {
     };
   }
 
-  it("envoie et indique l'adresse et l'identifiant Resend", async () => {
+  it("envoie et indique l’adresse et l’identifiant Resend", async () => {
     const d = deps();
     const etat = await traiterEnvoiTest({ modele: "notification", langue: "fr" }, d);
     expect(etat).toEqual({ statut: "succes", message: `Email de test envoyé à ${MOI} (identifiant Resend : re_123).` });
@@ -99,18 +99,18 @@ describe("traiterEnvoiTest", () => {
     expect(d.expediteur!.envoyer).not.toHaveBeenCalled();
   });
 
-  it("explique que Resend n'est pas configuré", async () => {
+  it("explique que Resend n’est pas configuré", async () => {
     const etat = await traiterEnvoiTest({ modele: "accuse", langue: "en" }, deps({ expediteur: null }));
     expect(etat).toEqual({ statut: "erreur", message: "La variable resend_api_key est absente de cet environnement Vercel : aucun email ne peut partir." });
   });
 
-  it("affiche le nom et le message de l'erreur Resend", async () => {
+  it("affiche le nom et le message de l’erreur Resend", async () => {
     const d = deps({
       expediteur: { config: CONFIG, envoyer: async () => ({ ok: false as const, nom: "validation_error", message: "The domain is not verified." }) },
     });
     expect(await traiterEnvoiTest({ modele: "accuse", langue: "fr" }, d)).toEqual({
       statut: "erreur",
-      message: "Resend a refusé l'envoi — validation_error : The domain is not verified.",
+      message: "Resend a refusé l’envoi — validation_error : The domain is not verified.",
     });
   });
 

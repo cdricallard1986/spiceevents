@@ -8,7 +8,7 @@
  *
  * La page produite ne charge rien (ni script, ni police, ni image) : styles en
  * ligne seulement. Elle est servie avec `default-src 'none'`. Noms de tests et
- * messages d'échec sont échappés : un nom comme `<img onerror=…>` reste du texte.
+ * messages d’échec sont échappés : un nom comme `<img onerror=…>` reste du texte.
  */
 
 // --- Sortie JSON de Vitest (format « jest », champs utilisés seulement) ------
@@ -53,7 +53,7 @@ export type TestRapport = {
   chemin: string[];
   statut: StatutTest;
   dureeMs: number | null;
-  /** Messages d'échec, sans codes couleur du terminal. */
+  /** Messages d’échec, sans codes couleur du terminal. */
   messages: string[];
 };
 
@@ -84,7 +84,7 @@ export type ResumeRapport = Pick<Rapport, "date" | "dureeMs" | "totaux" | "fichi
 
 // --- Transformation ----------------------------------------------------------
 
-/** Codes couleur ANSI que Vitest met dans ses messages d'échec. */
+/** Codes couleur ANSI que Vitest met dans ses messages d’échec. */
 const ANSI = /\u001b\[[0-9;]*[A-Za-z]/g;
 
 export function sansCouleurs(texte: string): string {
@@ -118,8 +118,8 @@ export function construireRapport(sortie: SortieVitest, racine: string, maintena
       messages: (a.failureMessages ?? []).map(sansCouleurs),
     }));
     const message = f.message ? sansCouleurs(f.message).trim() : "";
-    // Un fichier « failed » sans test échoué : il n'a pas pu s'exécuter.
-    const erreur = message || (f.status === "failed" && !tests.some((t) => t.statut === "echoue") ? "Le fichier n'a pas pu être exécuté." : null);
+    // Un fichier « failed » sans test échoué : il n’a pas pu s’exécuter.
+    const erreur = message || (f.status === "failed" && !tests.some((t) => t.statut === "echoue") ? "Le fichier n’a pas pu être exécuté." : null);
     return { fichier: cheminRelatif(f.name, racine), erreur, dureeMs: duree(f.startTime, f.endTime), tests };
   });
 
@@ -245,7 +245,7 @@ function rendreFichier(f: FichierRapport): string {
   const compte = `${f.tests.length} test${f.tests.length > 1 ? "s" : ""}${echoues ? ` · <span class="ko">${echoues} échoué${echoues > 1 ? "s" : ""}</span>` : ""} · ${formaterDuree(f.dureeMs)}`;
   const erreur = f.erreur ? `<ul><li><pre>${echapperHtml(f.erreur)}</pre></li></ul>` : "";
   const tests = f.tests.length ? `<ul>${f.tests.map(rendreTest).join("")}</ul>` : "";
-  // Les fichiers en échec sont dépliés d'office.
+  // Les fichiers en échec sont dépliés d’office.
   return `<details${enEchec ? ' class="echec" open' : ""}><summary><span class="statut ${enEchec ? "ko" : "ok"}">${enEchec ? "✗" : "✓"}</span><span class="fichier">${echapperHtml(f.fichier)}</span><span class="compte">${compte}</span></summary>${erreur}${tests}</details>`;
 }
 
@@ -279,7 +279,7 @@ ${fichiers}
 `;
 }
 
-/** Page affichée tant qu'aucun build n'a produit de rapport (développement local). */
+/** Page affichée tant qu’aucun build n’a produit de rapport (développement local). */
 export function rapportAbsentHtml(): string {
   return `<!doctype html>
 <html lang="fr">
@@ -299,7 +299,7 @@ export function resumer(rapport: Rapport, version: string): ResumeRapport {
   return { date, dureeMs, totaux, fichiersEnErreur, succes, version };
 }
 
-/** Contenu du module `rapport-tests.generated.ts` (chaînes sérialisées en JSON : rien n'y est interprété). */
+/** Contenu du module `rapport-tests.generated.ts` (chaînes sérialisées en JSON : rien n’y est interprété). */
 export function moduleGenere(resume: ResumeRapport | null, html: string): string {
   return `// Fichier généré par outils/rapport-tests.mjs au prebuild — ne pas modifier à la main.
 // Module serveur : servi seulement par la route protégée /admin/tests/rapport (jamais dans public/).

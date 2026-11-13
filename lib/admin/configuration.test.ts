@@ -12,7 +12,7 @@ describe("etatConfiguration", () => {
   const lignes = etatConfiguration(env);
   const ligne = (nom: string) => lignes.find((l) => l.nom === nom)!;
 
-  it("ne renvoie jamais la valeur d'un secret, seulement sa présence", () => {
+  it("ne renvoie jamais la valeur d’un secret, seulement sa présence", () => {
     expect(JSON.stringify(lignes)).not.toContain("TRES_SECRET");
     expect(JSON.stringify(lignes)).not.toContain("secret-ip-123");
     expect(ligne("supabase_service_role_key")).toMatchObject({ secret: true, presente: true, valeur: null });
@@ -28,7 +28,7 @@ describe("etatConfiguration", () => {
     expect(ligne("contact_expediteur")).toMatchObject({ presente: false, valeur: configEmail({}).expediteur, parDefaut: true });
   });
 
-  it("nomme l'environnement", () => {
+  it("nomme l’environnement", () => {
     expect(nomEnvironnement({ VERCEL_ENV: "preview", NODE_ENV: "production" })).toBe("preview");
     expect(nomEnvironnement({ NODE_ENV: "development" })).toBe("development");
   });

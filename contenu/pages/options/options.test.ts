@@ -5,7 +5,7 @@ import { EVENEMENTIEL } from "@/contenu/pages/evenementiel";
 import { MARIAGES } from "@/contenu/pages/mariages";
 import { CONTENUS_OPTIONS } from "./index";
 
-describe("pages d'option", () => {
+describe("pages d’option", () => {
   it("chaque option a son contenu, et inversement", () => {
     expect(Object.keys(CONTENUS_OPTIONS).sort()).toEqual(OPTIONS.map((o) => o.slug.fr).sort());
   });
@@ -51,12 +51,13 @@ describe("référencement des pages prestations", () => {
 });
 
 describe("page Animations", () => {
-  it("chaque animation a une catégorie et une accroche dans les deux langues", async () => {
+  it("chaque animation a une catégorie, et une seule accroche (la même sur toutes les cartes) dans les deux langues", async () => {
     const { CATEGORIES_ANIMATIONS } = await import("@/contenu/pages/animations");
     for (const o of OPTIONS) {
       expect(CATEGORIES_ANIMATIONS[o.slug.fr], o.slug.fr).toBeDefined();
-      for (const l of ["fr", "en"] as const) expect(ANIMATIONS[l].accroches[o.slug.fr], `${l} ${o.slug.fr}`).toBeTruthy();
+      for (const l of ["fr", "en"] as const) expect(o.resume[l], `${l} ${o.slug.fr}`).toBeTruthy();
     }
+    for (const l of ["fr", "en"] as const) expect(ANIMATIONS[l]).not.toHaveProperty("accroches");
     for (const l of ["fr", "en"] as const) {
       for (const v of ANIMATIONS[l].vedettes) expect(OPTIONS.some((o) => o.slug.fr === v.option), v.option).toBe(true);
     }

@@ -4,7 +4,7 @@ import { validerSuivi } from "./schema";
 const ID = "3f1c9b4e-2d7a-4c1e-9b8f-6a5d4c3b2a10";
 
 describe("validerSuivi", () => {
-  it("accepte un statut, une note, ou les deux — et n'écrit que ce qui est fourni", () => {
+  it("accepte un statut, une note, ou les deux — et n’écrit que ce qui est fourni", () => {
     expect(validerSuivi({ id: ID, statut: "rappelee" })).toEqual({ ok: true, id: ID, champs: { statut: "rappelee" } });
     expect(validerSuivi({ id: ID, note_interne: "Rappeler lundi" })).toEqual({ ok: true, id: ID, champs: { note_interne: "Rappeler lundi" } });
     expect(validerSuivi({ id: ID, statut: "signee", note_interne: "Signé !" })).toEqual({ ok: true, id: ID, champs: { statut: "signee", note_interne: "Signé !" } });

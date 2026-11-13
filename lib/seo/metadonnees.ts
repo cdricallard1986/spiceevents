@@ -7,7 +7,7 @@ import { IMAGES, type CleImage } from "@/lib/images";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 
-/** Adresse publique d'une page dans une langue (avec `/en` pour l'anglais). */
+/** Adresse publique d’une page dans une langue (avec `/en` pour l’anglais). */
 export function adresse(href: Href, locale: Locale): string {
   return getPathname({ href, locale });
 }
@@ -23,7 +23,7 @@ type Options = {
 };
 
 /**
- * Métadonnées d'une page : titre, description, adresse canonique, équivalents
+ * Métadonnées d’une page : titre, description, adresse canonique, équivalents
  * linguistiques (hreflang, lus aussi par le sélecteur de langue), partage.
  */
 export function metadonnees({ locale, href, seo, image, alternatives, type = "website" }: Options): Metadata {

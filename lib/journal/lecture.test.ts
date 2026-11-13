@@ -90,7 +90,7 @@ describe("articlesPublies — secours (sans Supabase)", () => {
 });
 
 describe("articlesPublies — base", () => {
-  it("lit les seuls articles publiés de Supabase, met en cache sous l'étiquette « articles » (filet d'une heure)", async () => {
+  it("lit les seuls articles publiés de Supabase, met en cache sous l’étiquette « articles » (filet d’une heure)", async () => {
     await articlesPublies(BASE);
     expect(etat.requetes[0]).toEqual(["from", ["articles"]]);
     expect(etat.requetes[1][0]).toBe("select");

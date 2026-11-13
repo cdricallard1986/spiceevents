@@ -6,8 +6,8 @@ import { ContenuArticle } from "@/components/journal/ContenuArticle";
 import { EnTeteArticle } from "@/components/journal/EnTeteArticle";
 
 /**
- * Corps de l'aperçu d'un article (/admin/journal/[id]/apercu) : bandeau
- * « Aperçu » (statut, ce qui manque, retour à l'éditeur), puis exactement le
+ * Corps de l’aperçu d’un article (/admin/journal/[id]/apercu) : bandeau
+ * « Aperçu » (statut, ce qui manque, retour à l’éditeur), puis exactement le
  * rendu de la page publique — `EnTeteArticle` et `ContenuArticle` sous
  * `prose-nuit`. Les liens du site (`Link` de next-intl) demandent un
  * fournisseur next-intl, absent du back office : il est posé ici (français).
@@ -20,12 +20,12 @@ export function ApercuArticle({ ligne, erreurLecture = false }: { ligne: LigneAr
         <div className="conteneur flex flex-col gap-2 py-3 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p className="text-ivoire">
             <span className="font-semibold text-or">Aperçu</span>
-            {ligne && (ligne.statut === "publie" ? ` — publié à l'adresse ${adressePublique(ligne.slug)}` : " — brouillon, pas encore sur le site")}
+            {ligne && (ligne.statut === "publie" ? ` — publié à l’adresse ${adressePublique(ligne.slug)}` : " — brouillon, pas encore sur le site")}
             {apercu?.ok && apercu.manques.length > 0 && <span className="block text-sable sm:inline"> · À compléter : {apercu.manques.join(", ")}</span>}
           </p>
           {ligne && (
             <Link href={`/admin/journal/${ligne.id}`} className="shrink-0 font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair">
-              ← Retour à l&apos;éditeur
+              ← Retour à l’éditeur
             </Link>
           )}
         </div>
@@ -33,11 +33,11 @@ export function ApercuArticle({ ligne, erreurLecture = false }: { ligne: LigneAr
 
       {!apercu ? (
         <p role="alert" className="conteneur py-16 text-ivoire">
-          {erreurLecture ? "L'article n'a pas pu être chargé (la base ne répond pas). Rechargez la page dans un instant." : "Article introuvable."}
+          {erreurLecture ? "L’article n’a pas pu être chargé (la base ne répond pas). Rechargez la page dans un instant." : "Article introuvable."}
         </p>
       ) : !apercu.ok ? (
         <p role="alert" className="conteneur py-16 text-ivoire">
-          Le texte de l&apos;article ne peut pas être affiché : {apercu.message}
+          Le texte de l’article ne peut pas être affiché : {apercu.message}
         </p>
       ) : (
         <main>

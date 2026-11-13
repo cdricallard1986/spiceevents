@@ -30,8 +30,8 @@ type Props = {
 };
 
 /**
- * Photo de couverture d'un article (en-tête de l'article, carte du journal,
- * partage) : envoi d'une nouvelle photo (direct au stockage, sous
+ * Photo de couverture d’un article (en-tête de l’article, carte du journal,
+ * partage) : envoi d’une nouvelle photo (direct au stockage, sous
  * `journal/…`) ou choix dans la photothèque (copiée dans le dossier du
  * journal), et son texte alternatif, obligatoire pour publier.
  */
@@ -62,7 +62,7 @@ export function CouvertureArticle({ idChamp, couverture, alt, erreurs, onChange,
   async function choisir(photo: Photo) {
     setPhototheque(false);
     if (photo.origine === "site") {
-      // Fichier du site : le navigateur le relit puis l'envoie dans le dossier du journal.
+      // Fichier du site : le navigateur le relit puis l’envoie dans le dossier du journal.
       setEnvoi(true);
       try {
         const fichier = await outils.lireFichierDuSite(photo.chemin);
@@ -134,7 +134,7 @@ export function CouvertureArticle({ idChamp, couverture, alt, erreurs, onChange,
             }}
           />
           <p className="text-xs text-sable/80">
-            En haut de l&apos;article et sur sa carte dans le journal. Une photo en largeur, JPEG, PNG, WebP ou AVIF, {formaterTaille(TAILLE_MAX_OCTETS)} au
+            En haut de l’article et sur sa carte dans le journal. Une photo en largeur, JPEG, PNG, WebP ou AVIF, {formaterTaille(TAILLE_MAX_OCTETS)} au
             maximum.
           </p>
           {erreurs.couverture && (
@@ -151,7 +151,7 @@ export function CouvertureArticle({ idChamp, couverture, alt, erreurs, onChange,
         erreur={erreurs.couverture_alt}
         max={LIMITES_ARTICLES.couvertureAlt}
         valeur={alt}
-        aide="Obligatoire pour publier : décrivez ce que montre la photo (lecteurs d'écran, Google)."
+        aide="Obligatoire pour publier : décrivez ce que montre la photo (lecteurs d’écran, Google)."
       >
         {(attributs) => <textarea {...attributs} rows={2} value={alt} onChange={(e) => onChange({ couverture_alt: e.target.value })} />}
       </Champ>
@@ -159,7 +159,7 @@ export function CouvertureArticle({ idChamp, couverture, alt, erreurs, onChange,
       {phototheque && (
         <Modale ouverte onFermer={() => setPhototheque(false)} titre="Choisir la couverture" largeur="large">
           <p className="mb-5 text-sm text-sable">
-            La photo choisie est copiée dans le dossier du journal ; elle reste aussi dans ses galeries. Son texte alternatif est repris s&apos;il n&apos;y en
+            La photo choisie est copiée dans le dossier du journal ; elle reste aussi dans ses galeries. Son texte alternatif est repris s’il n’y en
             a pas encore.
           </p>
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">

@@ -40,7 +40,7 @@ export type ActionsPhotos = {
   supprimer: (id: string) => Promise<ResultatSuppressionPhoto>;
 };
 
-/** Envoi réel : préparation dans le navigateur, puis directement à Storage avec l'URL signée. */
+/** Envoi réel : préparation dans le navigateur, puis directement à Storage avec l’URL signée. */
 export const OUTILS_NAVIGATEUR: OutilsEnvoi = {
   preparer: preparerPhoto,
   async televerser(chemin, jeton, fichier, type) {
@@ -56,8 +56,8 @@ export const OUTILS_NAVIGATEUR: OutilsEnvoi = {
 type Ouverte = { id: string; depuisGalerie: boolean } | null;
 
 /**
- * Photos des galeries : la galerie choisie dans l'ordre (flèches, retrait
- * confirmé, fiche auto-enregistrée), l'ajout (envoi direct ou photothèque), et
+ * Photos des galeries : la galerie choisie dans l’ordre (flèches, retrait
+ * confirmé, fiche auto-enregistrée), l’ajout (envoi direct ou photothèque), et
  * la photothèque (toutes les photos ; suppression définitive des photos envoyées).
  */
 export function GestionPhotos({
@@ -74,7 +74,7 @@ export function GestionPhotos({
   const [photos, setPhotos] = useState<Photo[]>(photosInitiales);
   const [liaisons, setLiaisons] = useState<Liaison[]>(liaisonsInitiales);
   const [onglet, setOnglet] = useState<"galeries" | "phototheque">("galeries");
-  // À l'ouverture : la galerie Mariages (la plus utilisée), pas le premier en-tête de la liste.
+  // À l’ouverture : la galerie Mariages (la plus utilisée), pas le premier en-tête de la liste.
   const [galerie, setGalerie] = useState<string>("galerie_mariages");
   const [ouverte, setOuverte] = useState<Ouverte>(null);
   const [ajout, setAjout] = useState(false);
@@ -212,10 +212,10 @@ export function GestionPhotos({
           )}
           <p className="mt-6 text-xs text-sable/80">
             {entete
-              ? "Une de ces photos est tirée au hasard à chaque visite, en plein écran (l'ordre ne compte pas). « Retirer » l'enlève de cet en-tête seulement ; l'en-tête garde toujours au moins une photo."
-              : "Les flèches changent l'ordre des photos sur la page. « Retirer » enlève la photo de cette galerie seulement : elle reste dans la photothèque."}
-            {option ? ` La galerie d'une animation ne s'affiche qu'à partir de ${MINIMUM_PHOTOS_OPTION} photos.` : ""}
-            {" "}Pour choisir tous les emplacements d&apos;une photo d&apos;un coup, ouvrez sa fiche.
+              ? "Une de ces photos est tirée au hasard à chaque visite, en plein écran (l’ordre ne compte pas). « Retirer » l’enlève de cet en-tête seulement ; l’en-tête garde toujours au moins une photo."
+              : "Les flèches changent l’ordre des photos sur la page. « Retirer » enlève la photo de cette galerie seulement : elle reste dans la photothèque."}
+            {option ? ` La galerie d’une animation ne s’affiche qu’à partir de ${MINIMUM_PHOTOS_OPTION} photos.` : ""}
+            {" "}Pour choisir tous les emplacements d’une photo d’un coup, ouvrez sa fiche.
           </p>
           {dansLaGalerie.length === 0 ? (
             <p className="mt-4 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
@@ -313,13 +313,13 @@ export function GestionPhotos({
         message={
           <>
             <p>
-              La photo ne s&apos;affichera plus dans <span className="text-ivoire">{libelleGalerie(galerie)}</span>. Elle reste dans la photothèque : vous
-              pourrez l&apos;y remettre.
+              La photo ne s’affichera plus dans <span className="text-ivoire">{libelleGalerie(galerie)}</span>. Elle reste dans la photothèque : vous
+              pourrez l’y remettre.
             </p>
             {sousLeMinimum(galerie, restantesApresRetrait) && (
               <p className="mt-3 text-erreur">
-                Il ne restera {restantesApresRetrait === 0 ? "aucune photo" : `que ${restantesApresRetrait} photo`} : la galerie ne s&apos;affichera plus sur la
-                page de l&apos;animation tant qu&apos;elle n&apos;en aura pas au moins {MINIMUM_PHOTOS_OPTION}.
+                Il ne restera {restantesApresRetrait === 0 ? "aucune photo" : `que ${restantesApresRetrait} photo`} : la galerie ne s’affichera plus sur la
+                page de l’animation tant qu’elle n’en aura pas au moins {MINIMUM_PHOTOS_OPTION}.
               </p>
             )}
           </>

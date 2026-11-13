@@ -13,7 +13,7 @@ describe("ipDepuisEntetes", () => {
     expect(ipDepuisEntetes(" , ")).toBeNull();
   });
 
-  it("refuse une valeur qui n'a pas l'allure d'une adresse IP", () => {
+  it("refuse une valeur qui n’a pas l’allure d’une adresse IP", () => {
     expect(ipDepuisEntetes("<script>")).toBeNull();
     expect(ipDepuisEntetes("x".repeat(100))).toBeNull();
   });
@@ -24,7 +24,7 @@ describe("empreinteIp", () => {
     expect(empreinteIp("203.0.113.7", "secret")).toBe(empreinteIp("203.0.113.7", "secret"));
   });
 
-  it("ne contient jamais l'IP en clair", () => {
+  it("ne contient jamais l’IP en clair", () => {
     const e = empreinteIp("203.0.113.7", "secret");
     expect(e).not.toContain("203.0.113.7");
     expect(e).toMatch(/^[0-9a-f]{64}$/);
@@ -44,13 +44,13 @@ describe("empreinteIp", () => {
 });
 
 describe("debutFenetre", () => {
-  it("remonte d'une fenêtre (1 h)", () => {
+  it("remonte d’une fenêtre (1 h)", () => {
     expect(debutFenetre(new Date("2026-10-15T10:00:00Z")).toISOString()).toBe("2026-10-15T09:00:00.000Z");
   });
 });
 
 describe("verifierLimite", () => {
-  it(`autorise jusqu'à ${LIMITE.maximum} demandes par fenêtre`, async () => {
+  it(`autorise jusqu’à ${LIMITE.maximum} demandes par fenêtre`, async () => {
     expect(await verifierLimite(async () => LIMITE.maximum - 1)).toEqual({ autorise: true, degrade: false });
   });
 

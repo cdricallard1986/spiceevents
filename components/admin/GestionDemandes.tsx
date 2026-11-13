@@ -38,20 +38,20 @@ const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session ex
 const COLONNES = "lg:grid lg:grid-cols-[7.5rem_minmax(0,1.5fr)_minmax(0,1.1fr)_minmax(0,1fr)_5.5rem_8rem] lg:items-baseline lg:gap-x-4";
 export const AVERTISSEMENT_EMAIL = "Email non reçu — à traiter à la main";
 
-/** Pastille colorée du statut commercial d'une demande. */
+/** Pastille colorée du statut commercial d’une demande. */
 export function PastilleStatutDemande({ statut }: { statut: StatutDemande }) {
   return <span className={`${CLASSES_PASTILLE} ${COULEURS_STATUT[statut]}`}>{LIBELLES_STATUT[statut]}</span>;
 }
 
-/** Nom affiché d'une demande. */
+/** Nom affiché d’une demande. */
 export function nomComplet(d: Pick<Demande, "prenoms" | "nom">): string {
   return `${d.prenoms} ${d.nom}`.trim();
 }
 
 /**
  * Liste des demandes de contact du back office : filtres par statut (avec
- * compteurs), recherche, pagination, avertissement si l'email de notification
- * n'est pas parti, et fiche en modale auto-enregistrée (statut, note interne).
+ * compteurs), recherche, pagination, avertissement si l’email de notification
+ * n’est pas parti, et fiche en modale auto-enregistrée (statut, note interne).
  */
 export function GestionDemandes({ demandesInitiales, actions }: { demandesInitiales: Demande[]; actions: ActionsDemandes }) {
   const [liste, setListe] = useState<Demande[]>(demandesInitiales);
@@ -133,7 +133,7 @@ export function GestionDemandes({ demandesInitiales, actions }: { demandesInitia
       {/* Liste */}
       {visibles.length === 0 ? (
         <p className="mt-6 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
-          {liste.length === 0 ? "Aucune demande reçue pour l'instant." : "Aucune demande ne correspond à ces filtres."}
+          {liste.length === 0 ? "Aucune demande reçue pour l’instant." : "Aucune demande ne correspond à ces filtres."}
         </p>
       ) : (
         <div className="mt-6 lg:border lg:border-ligne lg:bg-nuit-2">
@@ -249,7 +249,7 @@ function LigneDemande({ demande: d, onOuvrir }: { demande: Demande; onOuvrir: ()
   );
 }
 
-/** Toast d'erreur sans répétition : la même erreur, à chaque nouvel essai d'enregistrement, ne s'affiche qu'une fois. */
+/** Toast d’erreur sans répétition : la même erreur, à chaque nouvel essai d’enregistrement, ne s’affiche qu’une fois. */
 function useErreur() {
   const { afficher } = useToasts();
   const dernier = useRef("");
@@ -277,11 +277,11 @@ function ModaleDemande({
 }) {
   const { signaler, effacer } = useErreur();
   const [confirmerFermeture, setConfirmerFermeture] = useState(false);
-  // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
+  // Valeur d’ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
   const [initiale] = useState<FormulaireSuivi>(() => ({ statut: demande.statut, note_interne: demande.note_interne ?? "" }));
 
   // Le miroir localStorage du hook ne contient que { statut, note_interne }
-  // (aucune coordonnée), et il est effacé dès que l'enregistrement réussit.
+  // (aucune coordonnée), et il est effacé dès que l’enregistrement réussit.
   const fiche = useModalAutosave<FormulaireSuivi>({
     mode: "edition",
     cle: `demande:${demande.id}`,
@@ -336,7 +336,7 @@ function ModaleDemande({
         titre="Modification non enregistrée"
         message={
           <p>
-            La dernière modification n&apos;a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette
+            La dernière modification n’a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cette
             demande.
           </p>
         }

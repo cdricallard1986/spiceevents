@@ -11,7 +11,7 @@ describe("source des avis des pages publiques", () => {
     expect(sourceAvis({ VERCEL: "1", VERCEL_ENV: "preview", NEXT_PUBLIC_SUPABASE_URL: "" })).toBe("base");
   });
 
-  it("les fichiers de secours sans Supabase dans l'environnement (local, tests), même pour un build de production", () => {
+  it("les fichiers de secours sans Supabase dans l’environnement (local, tests), même pour un build de production", () => {
     expect(sourceAvis({})).toBe("fichiers");
     expect(sourceAvis({ NODE_ENV: "production", NEXT_PUBLIC_SUPABASE_URL: "" })).toBe("fichiers");
   });

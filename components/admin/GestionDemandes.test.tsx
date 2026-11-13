@@ -52,7 +52,7 @@ function rendre(actions = actionsSimulees(), liste = LISTE) {
   return actions;
 }
 
-/** Noms des demandes affichées, dans l'ordre. */
+/** Noms des demandes affichées, dans l’ordre. */
 const affichees = () => screen.queryAllByRole("button", { name: /^Ouvrir la demande de / }).map((b) => b.getAttribute("aria-label")!.replace("Ouvrir la demande de ", ""));
 const filtre = (nom: RegExp) => screen.getByRole("button", { name: nom });
 
@@ -64,7 +64,7 @@ describe("GestionDemandes — liste", () => {
     rendre();
     expect(affichees()).toEqual(["Hélène Durand", "Juliette Martin", "Pierre Martin"]);
     expect(screen.getByText("15 oct. 2026")).toBeInTheDocument();
-    expect(screen.getByText("Événement d'entreprise")).toBeInTheDocument();
+    expect(screen.getByText("Événement d’entreprise")).toBeInTheDocument();
     expect(screen.getAllByText("12 juin 2027")).toHaveLength(2);
     expect(screen.getByText("Paris")).toBeInTheDocument();
     expect(screen.getAllByText("120 invités")).toHaveLength(2);
@@ -72,7 +72,7 @@ describe("GestionDemandes — liste", () => {
     expect(screen.getByRole("status")).toHaveTextContent("3 demandes · 1 sans email reçu");
   });
 
-  it("signale la demande dont l'email n'est pas parti", () => {
+  it("signale la demande dont l’email n’est pas parti", () => {
     rendre();
     const avertissements = screen.getAllByText("Email non reçu — à traiter à la main");
     expect(avertissements).toHaveLength(1);
@@ -118,7 +118,7 @@ describe("GestionDemandes — liste", () => {
 
   it("aucune pagination sous 50 demandes, et un message sans demande", () => {
     rendre(actionsSimulees(), []);
-    expect(screen.getByText("Aucune demande reçue pour l'instant.")).toBeInTheDocument();
+    expect(screen.getByText("Aucune demande reçue pour l’instant.")).toBeInTheDocument();
     expect(screen.queryByRole("navigation")).not.toBeInTheDocument();
   });
 });
@@ -159,15 +159,15 @@ describe("GestionDemandes — fiche", () => {
     expect(fiche).toHaveTextContent("Non précisée");
   });
 
-  it("avertit dans la fiche quand l'email n'est pas parti", () => {
+  it("avertit dans la fiche quand l’email n’est pas parti", () => {
     rendre();
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Hélène Durand" }));
     const fiche = screen.getByRole("dialog", { name: "Hélène Durand" });
     expect(within(fiche).getByRole("alert")).toHaveTextContent("Email non reçu — à traiter à la main.");
-    expect(within(fiche).getByRole("alert")).toHaveTextContent("pas non plus reçu d'accusé de réception");
+    expect(within(fiche).getByRole("alert")).toHaveTextContent("pas non plus reçu d’accusé de réception");
   });
 
-  it("statut et note s'enregistrent seuls (sans confirmation), sans griser les champs ; la liste suit", async () => {
+  it("statut et note s’enregistrent seuls (sans confirmation), sans griser les champs ; la liste suit", async () => {
     const actions = rendre();
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Juliette Martin" }));
     const fiche = screen.getByRole("dialog", { name: "Juliette Martin" });
@@ -212,7 +212,7 @@ describe("GestionDemandes — fiche", () => {
     expect(within(fiche).getByText(/^5\s001 \/ 5\s000/)).toHaveClass("text-erreur");
   });
 
-  it("échec d'enregistrement : toast, pastille « non enregistré », et avertissement avant de fermer", async () => {
+  it("échec d’enregistrement : toast, pastille « non enregistré », et avertissement avant de fermer", async () => {
     const enregistrer = vi.fn(async () => ({ ok: false as const, message: "Droits refusés par la base : reconnectez-vous puis réessayez." }));
     rendre(actionsSimulees({ enregistrer }));
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Juliette Martin" }));
@@ -221,7 +221,7 @@ describe("GestionDemandes — fiche", () => {
     expect(screen.getByText("Droits refusés par la base : reconnectez-vous puis réessayez.")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Fermer" }));
     await waitFor(() => expect(screen.getByRole("alertdialog", { name: "Modification non enregistrée" })).toBeInTheDocument());
-    // La liste n'a pas changé.
+    // La liste n’a pas changé.
     expect(filtre(/^Perdues 0$/)).toBeInTheDocument();
   });
 });

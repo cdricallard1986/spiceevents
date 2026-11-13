@@ -5,12 +5,12 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNo
 type Props = {
   /** Une diapositive par élément (carte déjà rendue côté serveur). */
   diapositives: { cle: string; contenu: ReactNode }[];
-  /** Diapositive alignée à gauche du contenu à l'arrivée (celles d'avant dépassent, floutées). */
+  /** Diapositive alignée à gauche du contenu à l’arrivée (celles d’avant dépassent, floutées). */
   depart?: number;
   libelles: { precedent: string; suivant: string; zone: string };
 };
 
-/** État d'une carte : entièrement dans la zone du contenu, ou qui dépasse (floutée), ou hors de l'écran. */
+/** État d’une carte : entièrement dans la zone du contenu, ou qui dépasse (floutée), ou hors de l’écran. */
 type Etat = "nette" | "ordinateur" | "floue" | "cachee";
 
 /** À partir de combien de cartes le carrousel tourne en boucle (en dessous, rien à faire défiler). */
@@ -22,17 +22,17 @@ const MINIMUM_BOUCLE = 3;
  * Défilement au doigt, à la molette ou aux flèches, aimanté sur chaque carte.
  *
  * En boucle, dans les deux sens : une fois la page chargée, une copie de la série est
- * ajoutée avant et après les cartes ; quand le défilement s'arrête dans une copie, la
- * bande revient sans animation sur la carte d'origine identique (rien ne bouge à l'écran).
- * Les copies n'existent que dans le navigateur (le HTML ne contient chaque carte qu'une
- * fois) et sont masquées aux lecteurs d'écran. Sans JavaScript : une simple bande qui
+ * ajoutée avant et après les cartes ; quand le défilement s’arrête dans une copie, la
+ * bande revient sans animation sur la carte d’origine identique (rien ne bouge à l’écran).
+ * Les copies n’existent que dans le navigateur (le HTML ne contient chaque carte qu’une
+ * fois) et sont masquées aux lecteurs d’écran. Sans JavaScript : une simple bande qui
  * défile, sans flou ni boucle.
  */
 export function CarrouselVedettes({ diapositives, depart = 0, libelles }: Props) {
   const piste = useRef<HTMLUListElement>(null);
   const n = diapositives.length;
   const [boucle, setBoucle] = useState(false);
-  // Avant toute mesure : seules les cartes visibles à l'arrivée sont nettes (pas de flou qui « arrive »).
+  // Avant toute mesure : seules les cartes visibles à l’arrivée sont nettes (pas de flou qui « arrive »).
   const [etats, setEtats] = useState<Etat[]>(() =>
     diapositives.map((_, i) => (i === depart ? "nette" : i === depart + 1 ? "ordinateur" : "floue")),
   );
@@ -55,14 +55,14 @@ export function CarrouselVedettes({ diapositives, depart = 0, libelles }: Props)
     setMesure(true);
   }, []);
 
-  /** Défilement arrêté dans une copie : saut invisible vers la même carte de la série d'origine. */
+  /** Défilement arrêté dans une copie : saut invisible vers la même carte de la série d’origine. */
   const recentrer = useCallback(() => {
     const el = piste.current;
     if (!el || el.children.length !== n * 3) return;
     const debut = (el.children[n] as HTMLElement).offsetLeft;
     const tour = (el.children[2 * n] as HTMLElement).offsetLeft - debut;
     const marge = parseFloat(getComputedStyle(el).scrollPaddingLeft) || 0;
-    // Position de la carte de gauche par rapport à la première carte d'origine (une demi-carte de tolérance).
+    // Position de la carte de gauche par rapport à la première carte d’origine (une demi-carte de tolérance).
     const position = el.scrollLeft + marge - debut;
     const demi = (el.children[n] as HTMLElement).offsetWidth / 2;
     if (position < -demi) el.scrollLeft += tour;
@@ -82,7 +82,7 @@ export function CarrouselVedettes({ diapositives, depart = 0, libelles }: Props)
     if (n >= MINIMUM_BOUCLE) setBoucle(true);
   }, [depart, mesurer, n]);
 
-  // Copies ajoutées avant les cartes : la bande se décale d'une série, avant l'affichage.
+  // Copies ajoutées avant les cartes : la bande se décale d’une série, avant l’affichage.
   useLayoutEffect(() => {
     const el = piste.current;
     if (!boucle || !el || el.children.length !== n * 3) return;
@@ -98,7 +98,7 @@ export function CarrouselVedettes({ diapositives, depart = 0, libelles }: Props)
     const surDefilement = () => {
       cancelAnimationFrame(image);
       image = requestAnimationFrame(mesurer);
-      // Fin du défilement (doigt levé, animation terminée) : `scrollend` n'existe pas partout.
+      // Fin du défilement (doigt levé, animation terminée) : `scrollend` n’existe pas partout.
       window.clearTimeout(arret);
       arret = window.setTimeout(recentrer, 140);
     };
@@ -138,9 +138,9 @@ export function CarrouselVedettes({ diapositives, depart = 0, libelles }: Props)
             <li
               key={d.cle}
               aria-hidden={d.copie || !nette ? true : undefined}
-              // Une copie hors de l'écran n'est ni cliquable ni atteignable au clavier.
+              // Une copie hors de l’écran n’est ni cliquable ni atteignable au clavier.
               inert={d.copie && etat === "cachee" ? true : undefined}
-              // Carte floutée : un clic fait défiler de son côté au lieu d'ouvrir la page.
+              // Carte floutée : un clic fait défiler de son côté au lieu d’ouvrir la page.
               onClickCapture={(e) => {
                 if (nette || (etat === "ordinateur" && window.innerWidth >= 768)) return;
                 e.preventDefault();

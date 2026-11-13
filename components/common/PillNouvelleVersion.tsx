@@ -16,7 +16,7 @@ export function PillNouvelleVersion() {
 
 /**
  * Affiche « Nouvelle version disponible — Recharger » quand le site a été
- * redéployé pendant que l'onglet était ouvert. Ne recharge jamais tout seul.
+ * redéployé pendant que l’onglet était ouvert. Ne recharge jamais tout seul.
  * Textes en paramètres : le back office (hors next-intl) la monte aussi.
  */
 export function PillVersion({ disponible: texteDisponible, recharger }: { disponible: string; recharger: string }) {
@@ -33,7 +33,7 @@ export function PillVersion({ disponible: texteDisponible, recharger }: { dispon
         const { empreinte } = (await reponse.json()) as { empreinte?: string };
         if (!annule && empreinte && actuelle && empreinte !== actuelle) setDisponible(true);
       } catch {
-        // Hors ligne ou réponse invalide : ce n'est pas une nouvelle version.
+        // Hors ligne ou réponse invalide : ce n’est pas une nouvelle version.
       }
     }
 

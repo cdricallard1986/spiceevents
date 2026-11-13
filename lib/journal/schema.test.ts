@@ -21,8 +21,8 @@ function erreurs(champs: Partial<Record<keyof FormulaireArticle, unknown>>) {
   return r.ok ? {} : r.erreurs;
 }
 
-describe("validation d'un article (éditeur)", () => {
-  it("accepte un brouillon presque vide : seule l'adresse est obligatoire", () => {
+describe("validation d’un article (éditeur)", () => {
+  it("accepte un brouillon presque vide : seule l’adresse est obligatoire", () => {
     expect(validerChampsArticle(brouillon)).toEqual({
       ok: true,
       champs: {
@@ -58,8 +58,8 @@ describe("validation d'un article (éditeur)", () => {
     if (r.ok) expect(verifierPublication(r.champs)).toEqual({});
   });
 
-  it("contrôle l'adresse comme la table : format et 120 caractères", () => {
-    expect(erreurs({ slug: "" }).slug).toBe("Indiquez l'adresse de l'article.");
+  it("contrôle l’adresse comme la table : format et 120 caractères", () => {
+    expect(erreurs({ slug: "" }).slug).toBe("Indiquez l’adresse de l’article.");
     expect(erreurs({ slug: "Se marier" }).slug).toMatch(/minuscules sans accents/);
     expect(erreurs({ slug: "a".repeat(121) }).slug).toMatch(/120 caractères/);
     expect(erreurs({ slug: undefined }).slug).toBeDefined();
@@ -84,7 +84,7 @@ describe("validation d'un article (éditeur)", () => {
     }
   });
 
-  it("valide le document de l'éditeur avec le validateur strict", () => {
+  it("valide le document de l’éditeur avec le validateur strict", () => {
     expect(erreurs({ contenu: { type: "doc", content: [{ type: "iframe" }] } }).contenu).toMatch(/Contenu invalide/);
     expect(erreurs({ contenu: "<p>x</p>" }).contenu).toMatch(/Contenu invalide/);
     expect(erreurs({ contenu: { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "x", marks: [{ type: "link", attrs: { href: "javascript:alert(1)" } }] }] }] } }).contenu).toMatch(/Lien refusé/);
@@ -94,11 +94,11 @@ describe("validation d'un article (éditeur)", () => {
     const r = validerChampsArticle(brouillon);
     if (!r.ok) throw new Error("brouillon refusé");
     expect(Object.keys(verifierPublication(r.champs)).sort()).toEqual(["categorie", "couverture", "couverture_alt", "date_publication", "description", "titre"]);
-    expect(premiereErreur(verifierPublication(r.champs))).toBe("Donnez un titre à l'article avant de le publier.");
+    expect(premiereErreur(verifierPublication(r.champs))).toBe("Donnez un titre à l’article avant de le publier.");
     expect(premiereErreur({})).toBe("Article invalide.");
   });
 
-  it("identifiant d'article : un UUID", () => {
+  it("identifiant d’article : un UUID", () => {
     expect(schemaIdArticle.safeParse("baddac3b-196a-5ccd-9f8f-e5c9cc7fe856").success).toBe(true);
     expect(schemaIdArticle.safeParse("1 or 1=1").success).toBe(false);
   });

@@ -2,7 +2,7 @@
  * Adresse et clé publique du projet Supabase, communes au serveur, au
  * middleware et au navigateur.
  *
- * La clé « publishable » est publique par nature (elle remplace l'ancienne clé
+ * La clé « publishable » est publique par nature (elle remplace l’ancienne clé
  * `anon`) : elle ne donne que les droits accordés par la RLS. Elle peut donc
  * figurer ici comme valeur par défaut. La clé `service_role`, elle, ne quitte
  * jamais le serveur (voir `admin.ts`).

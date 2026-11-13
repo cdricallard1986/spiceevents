@@ -7,27 +7,27 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Livre d'or audio pour mariage : le téléphone vintage | Spice Events",
+        titre: "Livre d’or audio pour mariage : le téléphone vintage | Spice Events",
         description:
           "Un téléphone vintage pour recueillir les messages vocaux de vos invités : un souvenir à réécouter pour toujours. Mariages et événements à Paris et en Île-de-France.",
       },
       hero: {
-        surtitre: "Animation · Livre d'or audio",
+        surtitre: "Animation · Livre d’or audio",
         titre: "Leurs voix, *pour toujours*.",
         intro:
           "Vos proches décrochent un combiné vintage et vous laissent un message : rires, émotions, déclarations… à réécouter encore et encore.",
       },
       presentation: {
         surtitre: "Le concept",
-        titre: "Bien plus qu'une page *de signatures*.",
+        titre: "Bien plus qu’une page *de signatures*.",
         paragraphes: [
-          "Le livre d'or audio garde ce qu'aucun mot écrit ne transmet : le ton d'une voix, un fou rire, une émotion sur le vif. Un vœu, une anecdote, une déclaration spontanée… chaque message devient un souvenir vivant.",
-          "Nous installons et personnalisons le téléphone pour qu'il s'accorde à votre décoration, dans un coin facile d'accès : près du photobooth, dans une cabine téléphonique personnalisée ou sur une valise vintage.",
+          "Le livre d’or audio garde ce qu’aucun mot écrit ne transmet : le ton d’une voix, un fou rire, une émotion sur le vif. Un vœu, une anecdote, une déclaration spontanée… chaque message devient un souvenir vivant.",
+          "Nous installons et personnalisons le téléphone pour qu’il s’accorde à votre décoration, dans un coin facile d’accès : près du photobooth, dans une cabine téléphonique personnalisée ou sur une valise vintage.",
         ],
       },
       listes: [
         {
-          titre: "Pourquoi vos invités l'adorent",
+          titre: "Pourquoi vos invités l’adorent",
           points: [
             "Simple : il suffit de décrocher et de parler",
             "Ludique : messages, anecdotes, et même chansons",
@@ -42,13 +42,13 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = typographier({
         liste: [
           { titre: "Décrochez le combiné", texte: "Vos proches saisissent le téléphone vintage." },
           { titre: "Laissez parler le cœur", texte: "Après le bip, ils enregistrent un mot doux, un vœu ou une anecdote." },
-          { titre: "Raccrochez", texte: "Le message est enregistré, sans rien d'autre à faire." },
-          { titre: "Réécoutez", texte: "Après l'événement, nous vous remettons tous les messages, à garder pour toujours." },
+          { titre: "Raccrochez", texte: "Le message est enregistré, sans rien d’autre à faire." },
+          { titre: "Réécoutez", texte: "Après l’événement, nous vous remettons tous les messages, à garder pour toujours." },
         ],
       },
       appel: {
         titre: "Gardez leurs voix *en souvenir.*",
-        texte: "Réservez le livre d'or audio pour votre mariage ou votre événement : Cédric vous répond personnellement.",
+        texte: "Réservez le livre d’or audio pour votre mariage ou votre événement : Cédric vous répond personnellement.",
       },
     },
     en: {

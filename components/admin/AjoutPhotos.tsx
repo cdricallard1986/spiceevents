@@ -16,7 +16,7 @@ import { Modale } from "./Modale";
 import { useToasts } from "./Toasts";
 import { CLASSES_ONGLET, CLASSES_ONGLET_ACTIF, CLASSES_ONGLET_INACTIF, CLASSES_PASTILLE } from "./champs";
 
-/** Server Actions de l'ajout (injectées pour pouvoir tester le composant). */
+/** Server Actions de l’ajout (injectées pour pouvoir tester le composant). */
 export type ActionsAjout = {
   creerUrlEnvoi: (entree: { nomFichier: string; type: TypeImage; taille: number }) => Promise<ResultatUrlEnvoi>;
   enregistrerPhoto: (entree: { chemin: string; largeur: number; hauteur: number; galerie: string } & FormulairePhoto) => Promise<ResultatEnregistrement>;
@@ -27,7 +27,7 @@ export type ActionsAjout = {
 export type OutilsEnvoi = {
   /** Dimensions, et réduction des très grandes photos. */
   preparer: (fichier: File) => Promise<FichierPrepare>;
-  /** Envoi direct à Storage avec l'URL signée (jamais par une Server Action). */
+  /** Envoi direct à Storage avec l’URL signée (jamais par une Server Action). */
   televerser: (chemin: string, jeton: string, fichier: Blob, type: TypeImage) => Promise<void>;
 };
 
@@ -52,7 +52,7 @@ const LIBELLES_ETAT: Record<Etat, string> = { attente: "Prête", envoi: "Envoi�
 /**
  * Ajout de photos à une galerie : envoi de nouveaux fichiers (sélection
  * multiple ou glisser-déposer, direct navigateur → Storage) ou choix dans la
- * photothèque. Le texte alternatif français est exigé avant l'envoi.
+ * photothèque. Le texte alternatif français est exigé avant l’envoi.
  */
 export function AjoutPhotos({
   galerie,
@@ -129,7 +129,7 @@ export function AjoutPhotos({
   /** Envoie une photo : préparation, URL signée, envoi direct, enregistrement. Renvoie la photo enregistrée. */
   async function envoyerUne(e: Element): Promise<{ photo: Photo; liaison: Liaison | null } | null> {
     if (!e.fiche.alt_fr.trim()) {
-      maj(e.cle, { etat: "echec", message: "Décrivez la photo (texte alternatif français) avant de l'envoyer.", erreurs: { alt_fr: "Texte alternatif obligatoire." } });
+      maj(e.cle, { etat: "echec", message: "Décrivez la photo (texte alternatif français) avant de l’envoyer.", erreurs: { alt_fr: "Texte alternatif obligatoire." } });
       return null;
     }
     maj(e.cle, { etat: "envoi", message: undefined, erreurs: {} });
@@ -155,7 +155,7 @@ export function AjoutPhotos({
         return null;
       }
       if (r.avertissement) afficher(r.avertissement, "erreur");
-      maj(e.cle, { etat: "fait", prepare, chemin, message: prepare.reduite ? `Réduite à ${prepare.largeur} × ${prepare.hauteur} px avant l'envoi.` : undefined });
+      maj(e.cle, { etat: "fait", prepare, chemin, message: prepare.reduite ? `Réduite à ${prepare.largeur} × ${prepare.hauteur} px avant l’envoi.` : undefined });
       return { photo: r.photo, liaison: r.liaison };
     } catch (erreur) {
       const message = erreur instanceof Error && erreur.message ? erreur.message : ERREUR_RESEAU;
@@ -169,7 +169,7 @@ export function AjoutPhotos({
     setEnCours(true);
     const nouvelles: Photo[] = [];
     const creees: Liaison[] = [];
-    // Une à la fois, dans l'ordre choisi : l'ordre de la galerie suit celui de la liste.
+    // Une à la fois, dans l’ordre choisi : l’ordre de la galerie suit celui de la liste.
     for (const e of aEnvoyer) {
       const r = await envoyerUne(e);
       if (r) {
@@ -184,7 +184,7 @@ export function AjoutPhotos({
       afficher(`${nouvelles.length} photo${nouvelles.length > 1 ? "s ajoutées" : " ajoutée"} à ${libelleGalerie(galerie)}.`);
       onFermer();
     } else {
-      afficher(`${echecs} photo${echecs > 1 ? "s n'ont" : " n'a"} pas pu être envoyée${echecs > 1 ? "s" : ""} : voyez le message sous chacune, puis réessayez.`, "erreur");
+      afficher(`${echecs} photo${echecs > 1 ? "s n’ont" : " n’a"} pas pu être envoyée${echecs > 1 ? "s" : ""} : voyez le message sous chacune, puis réessayez.`, "erreur");
     }
   }
 
@@ -192,7 +192,7 @@ export function AjoutPhotos({
     if (choisies.size === 0 || enCours) return;
     setEnCours(true);
     try {
-      // Dans l'ordre de la photothèque.
+      // Dans l’ordre de la photothèque.
       const ids = disponibles.filter((p) => choisies.has(p.id)).map((p) => p.id);
       const r = await actions.ajouterAGalerie({ galerie, photoIds: ids });
       if (!r.ok) {
@@ -211,7 +211,7 @@ export function AjoutPhotos({
 
   function fermer() {
     if (enCours) {
-      afficher("Envoi en cours : patientez jusqu'à la fin avant de fermer.", "info");
+      afficher("Envoi en cours : patientez jusqu’à la fin avant de fermer.", "info");
       return;
     }
     // Des photos choisies (et leurs textes) pas encore envoyées : on demande avant de les abandonner.
@@ -313,14 +313,14 @@ export function AjoutPhotos({
             />
             <p className="text-xs text-sable/80">
               JPEG, PNG, WebP ou AVIF, {formaterTaille(TAILLE_MAX_OCTETS)} au maximum. Les très grandes photos (plus de 3 000 pixels de côté) sont réduites
-              avant l&apos;envoi. Elles s&apos;ajoutent à la fin de la galerie, dans l&apos;ordre de la liste.
+              avant l’envoi. Elles s’ajoutent à la fin de la galerie, dans l’ordre de la liste.
             </p>
           </div>
 
           {elements.length > 0 && (
             <>
               <p className="border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-                Texte alternatif : {AIDE_ALT.replace("Décrivez", "décrivez")} Il est proposé à partir du nom du fichier — corrigez-le avant l&apos;envoi.
+                Texte alternatif : {AIDE_ALT.replace("Décrivez", "décrivez")} Il est proposé à partir du nom du fichier — corrigez-le avant l’envoi.
               </p>
               {enCours && (
                 <div role="progressbar" aria-label="Envoi des photos" aria-valuemin={0} aria-valuemax={elements.length} aria-valuenow={faites} className="h-1 w-full bg-ligne">
@@ -383,7 +383,7 @@ export function AjoutPhotos({
         <p className="border border-ligne bg-nuit px-5 py-8 text-center text-sable">Toutes les photos de la photothèque sont déjà dans cette galerie.</p>
       ) : (
         <>
-          <p className="mb-4 text-sm text-sable">Les photos cochées s&apos;ajoutent à la fin de la galerie. Elles restent aussi dans leurs autres galeries.</p>
+          <p className="mb-4 text-sm text-sable">Les photos cochées s’ajoutent à la fin de la galerie. Elles restent aussi dans leurs autres galeries.</p>
           <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {disponibles.map((p) => {
               const coche = choisies.has(p.id);
@@ -427,7 +427,7 @@ export function AjoutPhotos({
       titre="Fermer sans envoyer ?"
       message={
         <p>
-          {aEnvoyer.length} photo{aEnvoyer.length > 1 ? "s choisies ne sont" : " choisie n'est"} pas encore envoyée{aEnvoyer.length > 1 ? "s" : ""} : elle
+          {aEnvoyer.length} photo{aEnvoyer.length > 1 ? "s choisies ne sont" : " choisie n’est"} pas encore envoyée{aEnvoyer.length > 1 ? "s" : ""} : elle
           {aEnvoyer.length > 1 ? "s seront abandonnées" : " sera abandonnée"}, avec les textes saisis.
         </p>
       }

@@ -4,8 +4,8 @@ import { formulaireDepuisMembre } from "@/lib/equipe/schema";
 
 /**
  * Server Actions de la section DJ, avec une garde et un client Supabase
- * simulés : garde d'abord, Zod ensuite, écriture par le client de session,
- * puis revalidation de l'étiquette « equipe ».
+ * simulés : garde d’abord, Zod ensuite, écriture par le client de session,
+ * puis revalidation de l’étiquette « equipe ».
  */
 
 type Appel = { table: string; operations: [string, unknown[]][] };
@@ -80,7 +80,7 @@ beforeEach(() => {
 });
 
 describe("garde et validation", () => {
-  it("n'exporte que les actions prévues (chaque export est une porte publique)", () => {
+  it("n’exporte que les actions prévues (chaque export est une porte publique)", () => {
     expect(Object.keys(actions).sort()).toEqual(
       ["changerPublicationMembre", "creerMembre", "creerUrlEnvoiMembre", "echangerOrdreMembres", "enregistrerMembre", "supprimerMembre"].sort(),
     );
@@ -103,7 +103,7 @@ describe("garde et validation", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("une entrée invalide n'écrit rien et renvoie les erreurs par champ", async () => {
+  it("une entrée invalide n’écrit rien et renvoie les erreurs par champ", async () => {
     const r = await enregistrerMembre(ID, { ...FICHE, nom: "", lien_url: "javascript:alert(1)" });
     expect(r).toMatchObject({ ok: false, erreurs: { nom: expect.any(String), lien_url: expect.any(String) } });
     expect(await enregistrerMembre(ID, { ...FICHE, photo_chemin: "https://ailleurs.fr/x.jpg" })).toMatchObject({ ok: false, erreurs: { photo_chemin: expect.any(String) } });
@@ -119,7 +119,7 @@ describe("garde et validation", () => {
 });
 
 describe("enregistrement et création", () => {
-  it("met à jour la fiche avec les valeurs validées, sans toucher à la publication ni à l'ordre", async () => {
+  it("met à jour la fiche avec les valeurs validées, sans toucher à la publication ni à l’ordre", async () => {
     const r = await enregistrerMembre(ID, { ...FICHE, nom: "  Kevin R.  ", styles_fr: "Électro, Funk,, Électro" });
     expect(r).toEqual({ ok: true, membre: LIGNE });
     const [maj] = etat.appels;

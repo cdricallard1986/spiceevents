@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-// Le moteur de correspondance qu'utilise Next pour `headers()` (next.config.ts).
+// Le moteur de correspondance qu’utilise Next pour `headers()` (next.config.ts).
 import { getPathMatch } from "next/dist/shared/lib/router/utils/path-match";
 import {
   CHEMIN_PAGE_TESTS,
@@ -14,17 +14,17 @@ import {
 const valeur = (prod: boolean, cle: string) => entetesSecurite(prod).find((e) => e.key === cle)?.value;
 
 describe("entetesSecurite", () => {
-  it("interdit l'affichage du site dans un cadre", () => {
+  it("interdit l’affichage du site dans un cadre", () => {
     expect(valeur(true, "X-Frame-Options")).toBe("DENY");
     expect(politiqueContenu(true)).toContain("frame-ancestors 'none'");
   });
 
-  it("n'envoie HSTS qu'en production", () => {
+  it("n’envoie HSTS qu’en production", () => {
     expect(valeur(true, "Strict-Transport-Security")).toMatch(/max-age=\d+/);
     expect(valeur(false, "Strict-Transport-Security")).toBeUndefined();
   });
 
-  it("ne permet eval qu'en développement", () => {
+  it("ne permet eval qu’en développement", () => {
     expect(politiqueContenu(true)).not.toContain("unsafe-eval");
     expect(politiqueContenu(false)).toContain("unsafe-eval");
   });
@@ -54,12 +54,12 @@ describe("entetesSecurite", () => {
     expect(politiqueContenu(true)).toContain(`img-src 'self' data: blob: ${originesSupabase()[0]}`);
   });
 
-  it("réduit l'adresse du projet à son origine", () => {
+  it("réduit l’adresse du projet à son origine", () => {
     expect(originesSupabase("https://abcdef.supabase.co/")).toEqual(["https://abcdef.supabase.co", "wss://abcdef.supabase.co"]);
   });
 });
 
-/** En-têtes qu'une adresse reçoit : règles dans l'ordre, la dernière l'emporte (comportement de Next). */
+/** En-têtes qu’une adresse reçoit : règles dans l’ordre, la dernière l’emporte (comportement de Next). */
 function entetesPour(chemin: string, production = true): Record<string, string> {
   const resultat: Record<string, string> = {};
   for (const regle of reglesEntetes(production)) {
@@ -73,7 +73,7 @@ const frameAncestors = (csp: string) => csp.split("; ").find((d) => d.startsWith
 const frameSrc = (csp: string) => csp.split("; ").find((d) => d.startsWith("frame-src"));
 
 describe("exception du rapport des tests", () => {
-  it("le rapport accepte d'être encadré par le site, et seulement par lui", () => {
+  it("le rapport accepte d’être encadré par le site, et seulement par lui", () => {
     const e = entetesPour(CHEMIN_RAPPORT_TESTS);
     expect(e["X-Frame-Options"]).toBe("SAMEORIGIN");
     expect(e["Content-Security-Policy"]).toBe(POLITIQUE_RAPPORT_TESTS);

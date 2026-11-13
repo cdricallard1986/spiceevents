@@ -19,13 +19,13 @@ import { COLONNES_EQUIPE, type MembreEquipe } from "@/lib/equipe/types";
 import { BUCKET_MEDIAS } from "@/lib/photos/constantes";
 import { schemaDemandeEnvoi } from "@/lib/photos/schema";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
-// appelable par n'importe qui avec n'importe quels arguments. Chaque export :
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public,
+// appelable par n’importe qui avec n’importe quels arguments. Chaque export :
 // `exigerAdmin()` en tête, puis Zod (lib/equipe/schema.ts), écriture avec le
 // client de SESSION (RLS et policies Storage : est_admin()) — jamais la clé
 // service_role —, puis `revalidateTag("equipe")` : la page Nos DJ se régénère
 // à la visite suivante. Aucune photo ne transite par ici : le navigateur
-// l'envoie directement à Storage avec l'URL signée de `creerUrlEnvoiMembre`.
+// l’envoie directement à Storage avec l’URL signée de `creerUrlEnvoiMembre`.
 
 type ErreurSupabase = { code?: string; message: string; statusCode?: string; status?: number };
 
@@ -39,7 +39,7 @@ function echec(action: string, e: ErreurSupabase): ResultatEchecMembre {
 
 const INTROUVABLE: ResultatEchecMembre = { ok: false, message: "Fiche introuvable : elle a peut-être été supprimée. Rechargez la page." };
 
-/** Enregistrement automatique de la modale d'édition (tous les champs du formulaire). */
+/** Enregistrement automatique de la modale d’édition (tous les champs du formulaire). */
 export async function enregistrerMembre(id: unknown, champs: unknown): Promise<ResultatMembre> {
   const { supabase } = await exigerAdmin();
   const idValide = schemaIdMembre.safeParse(id);
@@ -74,7 +74,7 @@ export async function creerMembre(champs: unknown): Promise<ResultatMembre> {
   return { ok: true, membre: data as MembreEquipe };
 }
 
-/** Publier sur la page Nos DJ ou l'en retirer (confirmé dans l'interface). */
+/** Publier sur la page Nos DJ ou l’en retirer (confirmé dans l’interface). */
 export async function changerPublicationMembre(entree: unknown): Promise<ResultatMembre> {
   const { supabase } = await exigerAdmin();
   const v = schemaPublicationMembre.safeParse(entree);
@@ -86,7 +86,7 @@ export async function changerPublicationMembre(entree: unknown): Promise<Resulta
   return { ok: true, membre: data as MembreEquipe };
 }
 
-/** Suppression définitive (confirmée dans l'interface ; l'historique reste dans audit_log). */
+/** Suppression définitive (confirmée dans l’interface ; l’historique reste dans audit_log). */
 export async function supprimerMembre(id: unknown): Promise<ResultatSuppressionMembre> {
   const { supabase } = await exigerAdmin();
   const v = schemaIdMembre.safeParse(id);
@@ -106,7 +106,7 @@ export async function echangerOrdreMembres(entree: unknown): Promise<ResultatEch
   const { id, avecId, sens } = v.data;
 
   const { data, error } = await supabase.from("equipe").select("id, ordre").in("id", [id, avecId]);
-  if (error) return echec("Changement d'ordre", error);
+  if (error) return echec("Changement d’ordre", error);
   const a = data?.find((l) => l.id === id);
   const b = data?.find((l) => l.id === avecId);
   if (!a || !b) return INTROUVABLE;
@@ -116,7 +116,7 @@ export async function echangerOrdreMembres(entree: unknown): Promise<ResultatEch
     const { error: e } = await supabase.from("equipe").update({ ordre }).eq("id", cible);
     if (e) {
       revalidateTag(ETIQUETTE_EQUIPE);
-      return { ...echec("Changement d'ordre", e), message: "Changement d'ordre interrompu : rechargez la page pour voir l'ordre réel." };
+      return { ...echec("Changement d’ordre", e), message: "Changement d’ordre interrompu : rechargez la page pour voir l’ordre réel." };
     }
   }
   revalidateTag(ETIQUETTE_EQUIPE);
@@ -130,6 +130,6 @@ export async function creerUrlEnvoiMembre(entree: unknown): Promise<ResultatUrlE
   if (!v.success) return { ok: false, message: v.error.issues[0]?.message ?? "Demande invalide : rechargez la page puis réessayez." };
   const chemin = cheminEnvoiMembre(v.data.type, new Date(), randomBytes(6).toString("hex"));
   const { data, error } = await supabase.storage.from(BUCKET_MEDIAS).createSignedUploadUrl(chemin);
-  if (error || !data) return echec("Préparation de l'envoi", error ?? { message: "réponse vide" });
+  if (error || !data) return echec("Préparation de l’envoi", error ?? { message: "réponse vide" });
   return { ok: true, chemin: data.path, jeton: data.token };
 }

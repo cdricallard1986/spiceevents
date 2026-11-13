@@ -2,9 +2,9 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
  * Server Actions du journal, avec une garde et un client Supabase simulés :
- * garde d'abord, Zod ensuite, écriture par le client de session, messages
+ * garde d’abord, Zod ensuite, écriture par le client de session, messages
  * clairs pour les refus de la base (adresse prise, adresse figée, article
- * incomplet), puis revalidation de l'étiquette « articles » quand le site
+ * incomplet), puis revalidation de l’étiquette « articles » quand le site
  * public change. Aucune photo ne transite par ces actions.
  */
 
@@ -59,7 +59,7 @@ const CHAMPS = {
   slug: "se-marier-en-hiver",
   titre: " Se marier en hiver ",
   sous_titre: "",
-  description: "Nos conseils pour un mariage d'hiver.",
+  description: "Nos conseils pour un mariage d’hiver.",
   categorie: "Conseils mariage",
   date_publication: "2026-10-19",
   couverture: "journal/2026/10/1760000000000-a1b2c3d4e5f6.jpg",
@@ -67,7 +67,7 @@ const CHAMPS = {
   contenu: DOC,
   slugAuto: true,
 };
-/** La ligne en base (colonnes de l'éditeur). */
+/** La ligne en base (colonnes de l’éditeur). */
 const LIGNE = {
   id: ID,
   statut: "brouillon",
@@ -75,7 +75,7 @@ const LIGNE = {
   slug: "se-marier-en-hiver",
   titre: "Se marier en hiver",
   sous_titre: null,
-  description: "Nos conseils pour un mariage d'hiver.",
+  description: "Nos conseils pour un mariage d’hiver.",
   categorie: "Conseils mariage",
   date_publication: "2026-10-19",
   couverture: "journal/2026/10/1760000000000-a1b2c3d4e5f6.jpg",
@@ -117,13 +117,13 @@ describe("garde et validation", () => {
     expect(etat.appels).toEqual([]);
   });
 
-  it("une entrée invalide n'écrit rien", async () => {
+  it("une entrée invalide n’écrit rien", async () => {
     expect(await enregistrerArticle("pas-un-uuid", CHAMPS)).toMatchObject({ ok: false, message: expect.stringContaining("introuvable") });
     expect(await enregistrerArticle(ID, { ...CHAMPS, slug: "Avec Majuscules" })).toMatchObject({ ok: false, erreurs: { slug: expect.stringContaining("minuscules") } });
     expect(await enregistrerArticle(ID, { ...CHAMPS, categorie: "Inconnue" })).toMatchObject({ ok: false, erreurs: { categorie: "Catégorie inconnue." } });
     expect(await enregistrerArticle(ID, { ...CHAMPS, couverture: "https://autre.fr/a.jpg" })).toMatchObject({ ok: false, erreurs: { couverture: expect.any(String) } });
     expect(await enregistrerArticle(ID, { ...CHAMPS, description: "x".repeat(161) })).toMatchObject({ ok: false, erreurs: { description: expect.stringContaining("160") } });
-    // Document : lien dangereux, image d'un autre site, nœud inconnu.
+    // Document : lien dangereux, image d’un autre site, nœud inconnu.
     const lien = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "x", marks: [{ type: "link", attrs: { href: "javascript:alert(1)" } }] }] }] };
     expect(await enregistrerArticle(ID, { ...CHAMPS, contenu: lien })).toMatchObject({ ok: false, erreurs: { contenu: expect.stringContaining("Lien refusé") } });
     const image = { type: "doc", content: [{ type: "image", attrs: { src: "data:image/png;base64,AAAA", width: 1, height: 1, alt: "x" } }] };
@@ -174,7 +174,7 @@ describe("enregistrerArticle", () => {
       slug: "se-marier-en-hiver",
       titre: "Se marier en hiver",
       sous_titre: null,
-      description: "Nos conseils pour un mariage d'hiver.",
+      description: "Nos conseils pour un mariage d’hiver.",
       categorie: "Conseils mariage",
       date_publication: "2026-10-19",
       couverture: "journal/2026/10/1760000000000-a1b2c3d4e5f6.jpg",
@@ -188,7 +188,7 @@ describe("enregistrerArticle", () => {
     expect(cache.revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("article publié : régénère le site, mais refuse qu'il devienne incomplet", async () => {
+  it("article publié : régénère le site, mais refuse qu’il devienne incomplet", async () => {
     etat.repondre = () => ({ data: { ...LIGNE, statut: "publie", publie_le: "2026-10-01T10:00:00Z" }, error: null });
     expect(await enregistrerArticle(ID, CHAMPS)).toMatchObject({ ok: true });
     expect(cache.revalidateTag).toHaveBeenCalledWith("articles");
@@ -200,7 +200,7 @@ describe("enregistrerArticle", () => {
     expect(cache.revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("l'adresse d'un article déjà publié une fois ne change plus", async () => {
+  it("l’adresse d’un article déjà publié une fois ne change plus", async () => {
     etat.repondre = () => ({ data: { ...LIGNE, statut: "brouillon", publie_le: "2026-10-01T10:00:00Z" }, error: null });
     const r = await enregistrerArticle(ID, { ...CHAMPS, slug: "nouvelle-adresse", slugAuto: false });
     expect(r).toMatchObject({ ok: false, erreurs: { slug: expect.stringContaining("ne change plus") } });
@@ -234,7 +234,7 @@ describe("enregistrerArticle", () => {
     const refus = (error: Reponse["error"]) => (appel: Appel) => (operations(appel).includes("update") ? { data: null, error } : { data: LIGNE, error: null });
     etat.repondre = refus({ code: "23505", message: "duplicate key value violates unique constraint" });
     expect(await enregistrerArticle(ID, CHAMPS)).toMatchObject({ ok: false, erreurs: { slug: "Adresse déjà prise." } });
-    etat.repondre = refus({ code: "23514", message: "L'adresse d'un article déjà publié ne peut plus être modifiée." });
+    etat.repondre = refus({ code: "23514", message: "L’adresse d’un article déjà publié ne peut plus être modifiée." });
     expect(await enregistrerArticle(ID, CHAMPS)).toMatchObject({ ok: false, erreurs: { slug: expect.stringContaining("ne change plus") } });
     etat.repondre = refus({ code: "23514", message: 'new row violates check constraint "articles_publie_complet"' });
     expect(await enregistrerArticle(ID, CHAMPS)).toMatchObject({ ok: false, message: expect.stringContaining("doit rester complet") });
@@ -271,12 +271,12 @@ describe("publierArticle", () => {
     expect(operation(ecriture, "update")).toEqual([{ statut: "publie", publie_le: premiere }]);
   });
 
-  it("article incomplet : la liste de ce qui manque, rien n'est écrit", async () => {
+  it("article incomplet : la liste de ce qui manque, rien n’est écrit", async () => {
     etat.repondre = () => ({ data: { ...LIGNE, slug: "brouillon-a1b2c3d4e5", titre: "", description: null, couverture: null, couverture_alt: null }, error: null });
     const r = await publierArticle(ID);
     expect(r).toMatchObject({
       ok: false,
-      message: "Pour publier, il manque : l'adresse, le titre, la description (résultat Google), la photo de couverture, le texte alternatif de la couverture.",
+      message: "Pour publier, il manque : l’adresse, le titre, la description (résultat Google), la photo de couverture, le texte alternatif de la couverture.",
       erreurs: { titre: expect.any(String), description: expect.any(String), couverture: expect.any(String), couverture_alt: expect.any(String), slug: expect.any(String) },
     });
     expect(appelsVers("articles").some((a) => operations(a).includes("update"))).toBe(false);
@@ -307,13 +307,13 @@ describe("retirerArticle et supprimerArticle", () => {
     etat.repondre = (appel) => (operations(appel).includes("delete") ? { data: [{ id: ID }], error: null } : { data: { id: ID, publie_le: null }, error: null });
     expect(await supprimerArticle(ID)).toEqual({ ok: true, id: ID });
     const suppression = appelsVers("articles").find((a) => operations(a).includes("delete"))!;
-    // Condition revérifiée à la suppression : un article publié entre-temps n'est pas touché.
+    // Condition revérifiée à la suppression : un article publié entre-temps n’est pas touché.
     expect(operation(suppression, "is")).toEqual(["publie_le", null]);
     expect(cache.revalidatePath).toHaveBeenCalledWith("/admin/journal");
   });
 });
 
-describe("photos d'un article", () => {
+describe("photos d’un article", () => {
   it("creerUrlEnvoiArticle : chemin sûr sous journal/<aaaa>/<mm>/ (extension du type MIME), URL signée avec la session", async () => {
     etat.repondre = (appel) => ({ data: { path: appel.operations[0][1][0], token: "jeton" }, error: null });
     const r = await creerUrlEnvoiArticle({ nomFichier: "../../x.php.jpg", type: "image/webp", taille: 1000 });

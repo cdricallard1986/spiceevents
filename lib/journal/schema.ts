@@ -5,21 +5,21 @@ import { estSlugValide } from "./slug";
 import type { LigneArticle } from "./types";
 
 /**
- * Validation des champs d'un article saisis dans le back office (Server
- * Actions de l'éditeur), alignée sur les contraintes de la table `articles`
+ * Validation des champs d’un article saisis dans le back office (Server
+ * Actions de l’éditeur), alignée sur les contraintes de la table `articles`
  * (migration 0008) : adresse, longueurs, catégorie, date, couverture,
- * document de l'éditeur. La sécurité ne dépend jamais du formulaire : tout est
+ * document de l’éditeur. La sécurité ne dépend jamais du formulaire : tout est
  * revérifié ici, puis par la base.
  *
  * Deux niveaux, comme la table :
- * - `validerChampsArticle` : ce qu'un brouillon peut contenir (tout est
- *   facultatif, sauf l'adresse) — l'enregistrement automatique ;
- * - `verifierPublication` : en plus, ce qu'exige un article publié
+ * - `validerChampsArticle` : ce qu’un brouillon peut contenir (tout est
+ *   facultatif, sauf l’adresse) — l’enregistrement automatique ;
+ * - `verifierPublication` : en plus, ce qu’exige un article publié
  *   (contrainte `articles_publie_complet` : titre, description, catégorie,
  *   date, couverture et son texte alternatif).
  */
 
-/** Le formulaire de l'éditeur : des chaînes (vide = rien) et le document de l'éditeur. */
+/** Le formulaire de l’éditeur : des chaînes (vide = rien) et le document de l’éditeur. */
 export type FormulaireArticle = {
   slug: string;
   titre: string;
@@ -37,7 +37,7 @@ export type FormulaireArticle = {
 
 export type ChampArticle = keyof FormulaireArticle;
 
-/** Ce qui est écrit en base (colonnes modifiables par l'éditeur). */
+/** Ce qui est écrit en base (colonnes modifiables par l’éditeur). */
 export type ChampsArticle = Pick<
   LigneArticle,
   "slug" | "titre" | "sous_titre" | "description" | "categorie" | "date_publication" | "couverture" | "couverture_alt"
@@ -77,9 +77,9 @@ export function estDateValide(v: string): boolean {
 
 export const schemaChampsArticle = z.object({
   slug: z
-    .string("Indiquez l'adresse de l'article.")
+    .string("Indiquez l’adresse de l’article.")
     .trim()
-    .min(1, "Indiquez l'adresse de l'article.")
+    .min(1, "Indiquez l’adresse de l’article.")
     .refine((v) => v.length <= LIMITES_ARTICLES.slug, `Adresse : ${LIMITES_ARTICLES.slug} caractères au maximum.`)
     .refine(estSlugValide, "Adresse : minuscules sans accents, chiffres et tirets seulement (ex. se-marier-en-hiver)."),
   titre: texte(LIMITES_ARTICLES.titre, `Titre : ${LIMITES_ARTICLES.titre} caractères au maximum.`),
@@ -118,7 +118,7 @@ export type ValidationArticle = { ok: true; champs: ChampsArticle } | { ok: fals
 
 const CHAMPS: readonly ChampArticle[] = ["slug", "titre", "sous_titre", "description", "categorie", "date_publication", "couverture", "couverture_alt", "contenu"];
 
-/** Valide les champs d'un brouillon ; en erreur, le premier message de chaque champ. */
+/** Valide les champs d’un brouillon ; en erreur, le premier message de chaque champ. */
 export function validerChampsArticle(brut: unknown): ValidationArticle {
   const r = schemaChampsArticle.safeParse(brut);
   if (r.success) return { ok: true, champs: r.data };
@@ -136,20 +136,20 @@ export function validerChampsArticle(brut: unknown): ValidationArticle {
 
 /**
  * Ce qui manque pour publier (contrainte `articles_publie_complet`) ; vide :
- * l'article peut être publié. Les messages sont ceux de la fiche de l'éditeur.
+ * l’article peut être publié. Les messages sont ceux de la fiche de l’éditeur.
  */
 export function verifierPublication(c: ChampsArticle): ErreursArticle {
   const erreurs: ErreursArticle = {};
-  if (!c.titre) erreurs.titre = "Donnez un titre à l'article avant de le publier.";
+  if (!c.titre) erreurs.titre = "Donnez un titre à l’article avant de le publier.";
   if (!c.description) erreurs.description = "Écrivez la description (résultat Google) avant de publier.";
   if (!c.categorie) erreurs.categorie = "Choisissez la catégorie avant de publier.";
-  if (!c.date_publication) erreurs.date_publication = "Indiquez la date de l'article avant de le publier.";
+  if (!c.date_publication) erreurs.date_publication = "Indiquez la date de l’article avant de le publier.";
   if (!c.couverture) erreurs.couverture = "Choisissez la photo de couverture avant de publier.";
   if (!c.couverture_alt) erreurs.couverture_alt = "Décrivez la photo de couverture (texte alternatif) avant de publier.";
   return erreurs;
 }
 
-/** Premier message d'erreur (pour le toast). */
+/** Premier message d’erreur (pour le toast). */
 export function premiereErreur(erreurs: ErreursArticle): string {
   return Object.values(erreurs).find(Boolean) ?? "Article invalide.";
 }

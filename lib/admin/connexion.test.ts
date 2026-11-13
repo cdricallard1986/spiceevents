@@ -56,7 +56,7 @@ describe("traiterConnexion — cas nominal", () => {
     expect(lignes).toEqual([{ type: "ip", empreinte: empreinteTentative("ip", "203.0.113.7", SECRET) }]);
   });
 
-  it("vérifie le mot de passe avec l'email normalisé", async () => {
+  it("vérifie le mot de passe avec l’email normalisé", async () => {
     const { d } = dependances();
     await traiterConnexion({ email: " Cedric@SpiceEvents.FR ", motDePasse: BON.motDePasse }, d);
     expect(d.auth.verifierMotDePasse).toHaveBeenCalledWith("cedric@spiceevents.fr", BON.motDePasse);
@@ -84,7 +84,7 @@ describe("traiterConnexion — durée minimale", () => {
     expect(bloque.attentes).toEqual([DUREE_MINIMALE_MS]);
   });
 
-  it("n'attend pas de plus quand Supabase a déjà été lent", async () => {
+  it("n’attend pas de plus quand Supabase a déjà été lent", async () => {
     const { d, attentes } = dependances();
     let horloge = 0;
     d.maintenant = () => horloge;
@@ -114,9 +114,9 @@ describe("traiterConnexion — erreurs", () => {
     expect(d.auth.verifierMotDePasse).not.toHaveBeenCalled();
   });
 
-  it("déconnecte aussitôt (cet appareil) un compte sans droit d'accès", async () => {
+  it("déconnecte aussitôt (cet appareil) un compte sans droit d’accès", async () => {
     const { d } = dependances({}, "ok", false);
-    expect(await traiterConnexion(BON, d)).toMatchObject({ statut: "erreur", message: "Ce compte n'a pas accès au back office." });
+    expect(await traiterConnexion(BON, d)).toMatchObject({ statut: "erreur", message: "Ce compte n’a pas accès au back office." });
     expect(d.auth.deconnecterLocalement).toHaveBeenCalledOnce();
   });
 
@@ -141,7 +141,7 @@ describe("traiterConnexion — limite des tentatives", () => {
     expect(d.auth.verifierMotDePasse).not.toHaveBeenCalled();
   });
 
-  it("bloque un compte après trop d'échecs (même avec le bon mot de passe)", async () => {
+  it("bloque un compte après trop d’échecs (même avec le bon mot de passe)", async () => {
     const { d } = dependances({ tentatives: memoire({ compte: LIMITE_CONNEXION.parCompte }).magasin });
     expect(await traiterConnexion(BON, d)).toMatchObject({ message: MESSAGES_CONNEXION.limite });
     expect(d.auth.verifierMotDePasse).not.toHaveBeenCalled();
@@ -187,7 +187,7 @@ describe("traiterConnexion — limite des tentatives", () => {
     expect(d.auth.verifierMotDePasse).not.toHaveBeenCalled();
   });
 
-  it("refuse par prudence si le secret d'empreinte manque", async () => {
+  it("refuse par prudence si le secret d’empreinte manque", async () => {
     const { d } = dependances({ secret: null });
     expect(await traiterConnexion(BON, d)).toMatchObject({ message: MESSAGES_CONNEXION.indisponible });
     expect(d.auth.verifierMotDePasse).not.toHaveBeenCalled();

@@ -2,10 +2,10 @@ import type { CleImage } from "@/lib/images";
 import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
 import { typographier } from "@/lib/typographie";
 
-/** Un moment de la journée, avec les options qui s'y rattachent (slugs français de `contenu/options.ts`). */
+/** Un moment de la journée, avec les options qui s’y rattachent (slugs français de `contenu/options.ts`). */
 export type Moment = { titre: string; texte: string; accroche: string; image: CleImage; options: string[] };
 
-/** Photos d'en-tête de la page, une tirée au hasard à chaque visite : l'ambiance de la soirée (piste, lumières, son), grandes et paysage. */
+/** Photos d’en-tête de la page, une tirée au hasard à chaque visite : l’ambiance de la soirée (piste, lumières, son), grandes et paysage. */
 export const IMAGES_ACCUEIL_MARIAGES: CleImage[] = [
   "presta-mariage-hero",
   "maison-mariage-danse-genou",
@@ -47,7 +47,7 @@ type Mariages = {
     texte: string;
     points: string[];
     lien: string;
-    /** Aperçu illustratif de l'espace Nuvio (maquette Nocturne). */
+    /** Aperçu illustratif de l’espace Nuvio (maquette Nocturne). */
     apercu: { surtitre: string; titre: string; texte: string; avancement: string; note: string };
   };
   dj: {
@@ -80,7 +80,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       surtitre: "Mariages · Paris & Île-de-France",
       titre: "Un grand oui. *Une nuit pimentée.*",
       intro:
-        "Un mariage ne se vit qu'une fois. Nous préparons avec vous la musique, la lumière et le rythme de chaque moment, pour que vous n'ayez qu'une chose à faire : en profiter.",
+        "Un mariage ne se vit qu’une fois. Nous préparons avec vous la musique, la lumière et le rythme de chaque moment, pour que vous n’ayez qu’une chose à faire : en profiter.",
       ctaPrincipal: "Vérifier ma date",
       ctaSecondaire: "Notre méthode",
     },
@@ -94,7 +94,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       garanties: [
         {
           titre: "Un DJ expérimenté",
-          texte: "Rigoureux, à l'écoute, capable de s'adapter à toutes les ambiances et à tous vos invités.",
+          texte: "Rigoureux, à l’écoute, capable de s’adapter à toutes les ambiances et à tous vos invités.",
         },
         {
           titre: "Une sonorisation haut de gamme",
@@ -107,7 +107,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
         {
           titre: "Des animations soignées",
-          texte: "Créatives et originales, choisies pour servir votre journée, sans jamais l'encombrer.",
+          texte: "Créatives et originales, choisies pour servir votre journée, sans jamais l’encombrer.",
           lien: { href: "/animations", texte: "Voir les animations" },
         },
       ],
@@ -115,13 +115,13 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
     journee: {
       surtitre: "Du premier oui au dernier rappel",
       titre: "Chaque instant. *Sa touche de Spice.*",
-      intro: "Une cérémonie tout en douceur, un cocktail qui pétille, une piste qui s'anime : nous dosons la musique et la lumière au fil de votre journée.",
+      intro: "Une cérémonie tout en douceur, un cocktail qui pétille, une piste qui s’anime : nous dosons la musique et la lumière au fil de votre journée.",
       moments: [
         {
           titre: "La cérémonie",
           accroche: "Les mots. Les frissons.",
           texte:
-            "Micros pour l'officiant et vos proches, entrée des mariés, musiques lancées à la seconde près : une sonorisation douce et claire, entendue du premier au dernier rang, même en plein air.",
+            "Micros pour l’officiant et vos proches, entrée des mariés, musiques lancées à la seconde près : une sonorisation douce et claire, entendue du premier au dernier rang, même en plein air.",
           image: "presta-ceremonie-cour",
           options: ["sonorisation-ceremonie-laique", "feux-d-artifice-de-jour"],
         },
@@ -137,12 +137,12 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
           titre: "Le dîner",
           accroche: "Une lumière qui rassemble.",
           texte:
-            "Une lumière chaude qui sublime la salle, une musique d'ambiance choisie avec vous, et vos temps forts intégrés au déroulé : discours, projections, surprises des témoins.",
+            "Une lumière chaude qui sublime la salle, une musique d’ambiance choisie avec vous, et vos temps forts intégrés au déroulé : discours, projections, surprises des témoins.",
           image: "presta-diner-chateau",
           options: ["guirlandes-lumineuses"],
         },
         {
-          titre: "L'ouverture de bal",
+          titre: "L’ouverture de bal",
           accroche: "Votre bulle, au milieu de tous.",
           texte:
             "Votre chanson, mise en scène : lumière dédiée, et si votre lieu le permet, fumée lourde et étincelles froides synchronisées avec la musique.",
@@ -153,7 +153,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
           titre: "La nuit",
           accroche: "Encore un dernier morceau.",
           texte:
-            "Un mix qui fait danser toutes les générations et une piste qui ne désemplit pas, jusqu'à 4 h du matin — et plus tard avec des heures supplémentaires, si votre lieu le permet.",
+            "Un mix qui fait danser toutes les générations et une piste qui ne désemplit pas, jusqu’à 4 h du matin — et plus tard avec des heures supplémentaires, si votre lieu le permet.",
           image: "presta-piste-mains-levees",
           options: [],
         },
@@ -167,7 +167,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       etapes: [
         {
           titre: "Premier échange",
-          texte: "Un rendez-vous ou une visio pour cerner vos attentes, l'ambiance idéale et les besoins techniques de votre lieu.",
+          texte: "Un rendez-vous ou une visio pour cerner vos attentes, l’ambiance idéale et les besoins techniques de votre lieu.",
         },
         {
           titre: "Devis & validation",
@@ -175,7 +175,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
         {
           titre: "Planification",
-          texte: "Questionnaire musical, moments forts, playlists : nous construisons ensemble le déroulé, au fil d'échanges réguliers.",
+          texte: "Questionnaire musical, moments forts, playlists : nous construisons ensemble le déroulé, au fil d’échanges réguliers.",
         },
         {
           titre: "Coordination",
@@ -183,7 +183,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
         {
           titre: "Installation & tests",
-          texte: "Son et lumière installés et testés à l'avance, chaque réglage adapté à la configuration du lieu.",
+          texte: "Son et lumière installés et testés à l’avance, chaque réglage adapté à la configuration du lieu.",
         },
         {
           titre: "Le jour J",
@@ -192,11 +192,11 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       ],
     },
     nuvio: {
-      surtitre: "L'esprit léger, avant aussi",
+      surtitre: "L’esprit léger, avant aussi",
       titre: "Une belle fête *se prépare ensemble*.",
       texte:
         "Après la signature, vous préparez votre mariage sur Nuvio, la plateforme que nous avons conçue : vous, notre équipe et votre DJ voyez la même version, à jour à la seconde. Fini les informations éparpillées dans vingt emails.",
-      points: ["Déroulé heure par heure", "Vos musiques, moment par moment", "Devis signé en ligne", "Messagerie avec l'équipe"],
+      points: ["Déroulé heure par heure", "Vos musiques, moment par moment", "Devis signé en ligne", "Messagerie avec l’équipe"],
       lien: "Découvrir Nuvio",
       apercu: {
         surtitre: "Votre espace mariage",
@@ -211,31 +211,31 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       titre: "Un DJ qui vit la nuit *avec vous*.",
       citation: "Un bon DJ ne se cache pas derrière son ordinateur : il vit la soirée avec vous.",
       paragraphes: [
-        "DJ depuis plus de 20 ans, Cédric Allard a fait de sa passion un métier : plus de 600 mariages, soirées et événements professionnels à travers la France. Ce qu'il recherche avant tout, c'est le plaisir du partage — cette énergie unique qui naît quand la musique rassemble les gens.",
-        "Selon votre date, Cédric mixe lui-même ou vous présente un DJ de l'équipe, préparé avec la même méthode et la même exigence.",
+        "DJ depuis plus de 20 ans, Cédric Allard a fait de sa passion un métier : plus de 600 mariages, soirées et événements professionnels à travers la France. Ce qu’il recherche avant tout, c’est le plaisir du partage — cette énergie unique qui naît quand la musique rassemble les gens.",
+        "Selon votre date, Cédric mixe lui-même ou vous présente un DJ de l’équipe, préparé avec la même méthode et la même exigence.",
       ],
       differences: [
         {
           titre: "Il lit la piste",
-          texte: "Attentif à ce qui se passe sur la piste, il passe le bon morceau au bon moment, plutôt qu'une playlist figée.",
+          texte: "Attentif à ce qui se passe sur la piste, il passe le bon morceau au bon moment, plutôt qu’une playlist figée.",
         },
         {
           titre: "Toutes les générations",
-          texte: "Vos goûts d'abord, puis un mix qui fait danser les grands-parents comme vos amis.",
+          texte: "Vos goûts d’abord, puis un mix qui fait danser les grands-parents comme vos amis.",
         },
         {
           titre: "Un micro dosé",
-          texte: "Quelques mots pour faire vivre les temps forts, sans chanter ni monopoliser l'attention — ou pas de micro du tout, si vous préférez.",
+          texte: "Quelques mots pour faire vivre les temps forts, sans chanter ni monopoliser l’attention — ou pas de micro du tout, si vous préférez.",
         },
       ],
       lien: "En savoir plus sur Cédric",
       mix: "Écoutez Cédric aux platines (DJ Dioz) : un mix pour toutes les générations.",
-      equipe: "Rencontrer les DJ de l'équipe",
+      equipe: "Rencontrer les DJ de l’équipe",
     },
     video: {
       surtitre: "En images",
       titre: "Vos nuits, *en mouvement*.",
-      intro: "Quelques minutes au cœur de nos mariages : l'émotion de la première danse, et une piste pleine jusqu'au bout de la nuit.",
+      intro: "Quelques minutes au cœur de nos mariages : l’émotion de la première danse, et une piste pleine jusqu’au bout de la nuit.",
     },
     photos: { surtitre: "En images", titre: "Des nuits *qui ont du goût*.", lien: "Voir la galerie" },
     avis: {
@@ -253,22 +253,22 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         {
           question: "Parlez-vous au micro pendant la soirée ?",
           reponse:
-            "Seulement si vous le souhaitez. L'animation micro sert à faire vivre les temps forts et à dynamiser la soirée : pas de chant, pas d'écho dans la voix, pas d'interventions à tout bout de champ. Et si vous préférez sans micro, nous savons très bien nous en passer.",
+            "Seulement si vous le souhaitez. L’animation micro sert à faire vivre les temps forts et à dynamiser la soirée : pas de chant, pas d’écho dans la voix, pas d’interventions à tout bout de champ. Et si vous préférez sans micro, nous savons très bien nous en passer.",
         },
         {
           question: "Si un invité demande une chanson, que faites-vous ?",
           reponse:
-            "Nous essayons de lui faire plaisir, sauf si le titre va à l'encontre de vos consignes ou risque de vider la piste. Parfois, nous attendons simplement le bon moment pour le passer.",
+            "Nous essayons de lui faire plaisir, sauf si le titre va à l’encontre de vos consignes ou risque de vider la piste. Parfois, nous attendons simplement le bon moment pour le passer.",
         },
         {
-          question: "Jusqu'à quelle heure dure la musique ?",
+          question: "Jusqu’à quelle heure dure la musique ?",
           reponse:
             "Nous coupons la musique à 4 h du matin au plus tard, sauf si le règlement de votre lieu impose un horaire plus tôt, ou si vous réservez des heures supplémentaires.",
         },
         {
           question: "Intervenez-vous dans les salles avec détecteurs de fumée ou limiteur sonore ?",
           reponse:
-            "Pour garantir la qualité des effets, nous ne réalisons pas nos animations dans les lieux équipés de détecteurs de fumée sensibles. Les limiteurs sonores ne nous empêchent pas d'intervenir, mais nous vous conseillons d'éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu'un seuil est dépassé, et c'est toute l'ambiance de la soirée qui en pâtit. Signalez-nous ces équipements dès le premier échange : nous vérifions ensemble ce qui est possible.",
+            "Pour garantir la qualité des effets, nous ne réalisons pas nos animations dans les lieux équipés de détecteurs de fumée sensibles. Les limiteurs sonores ne nous empêchent pas d’intervenir, mais nous vous conseillons d’éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu’un seuil est dépassé, et c’est toute l’ambiance de la soirée qui en pâtit. Signalez-nous ces équipements dès le premier échange : nous vérifions ensemble ce qui est possible.",
         },
         {
           question: "Nos témoins peuvent-ils vous contacter directement ?",
@@ -278,25 +278,25 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         {
           question: "Et en cas de problème technique le jour J ?",
           reponse:
-            "Nous l'anticipons : tout le matériel est testé avant chaque prestation avec notre partenaire MX Événement, et du matériel de remplacement nous accompagne. En cas d'incident, nous intervenons immédiatement pour que la fête continue.",
+            "Nous l’anticipons : tout le matériel est testé avant chaque prestation avec notre partenaire MX Événement, et du matériel de remplacement nous accompagne. En cas d’incident, nous intervenons immédiatement pour que la fête continue.",
         },
         {
           question: "Travaillez-vous avec nos autres prestataires ?",
           reponse:
-            "Oui : lieu, traiteur, photographe, officiant, wedding planner… Nous nous coordonnons avec chacun pour que les temps forts s'enchaînent sans stress.",
+            "Oui : lieu, traiteur, photographe, officiant, wedding planner… Nous nous coordonnons avec chacun pour que les temps forts s’enchaînent sans stress.",
         },
         {
           question: "Proposez-vous plusieurs formules ?",
           reponse:
-            "Nous proposons une formule unique, complète, que vous pouvez enrichir d'une option premium. Nous vous en présentons le détail lors du premier échange.",
+            "Nous proposons une formule unique, complète, que vous pouvez enrichir d’une option premium. Nous vous en présentons le détail lors du premier échange.",
         },
         {
           question: "Comment réserver notre date ?",
           reponse:
-            "Il suffit de nous retourner le devis signé, accompagné d'un acompte de 50 % du montant total : votre date est alors réservée.",
+            "Il suffit de nous retourner le devis signé, accompagné d’un acompte de 50 % du montant total : votre date est alors réservée.",
         },
         {
-          question: "Vous déplacez-vous en dehors de l'Île-de-France ?",
+          question: "Vous déplacez-vous en dehors de l’Île-de-France ?",
           reponse:
             "Oui. Nous intervenons surtout en Île-de-France, mais nous nous déplaçons dans toute la France, en adaptant chaque prestation au lieu : salle de réception, domaine, extérieur ou site atypique.",
         },
@@ -406,7 +406,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       etapes: [
         {
           titre: "First conversation",
-          texte: "A meeting or video call to understand your expectations, the atmosphere you want and your venue's technical needs.",
+          texte: "A meeting or video call to understand your expectations, the atmosphere you want and your venue’s technical needs.",
         },
         {
           titre: "Quote & booking",
@@ -426,7 +426,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
         {
           titre: "The big day",
-          texte: "We're there from start to finish: music, transitions and lighting handled discreetly.",
+          texte: "We’re there from start to finish: music, transitions and lighting handled discreetly.",
         },
       ],
     },
@@ -448,7 +448,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
     dj: {
       surtitre: "Your DJ",
       titre: "A DJ who lives the night *with you*.",
-      citation: "A good DJ doesn't hide behind a laptop: he lives the night with you.",
+      citation: "A good DJ doesn’t hide behind a laptop: he lives the night with you.",
       paragraphes: [
         "A DJ for more than 20 years, Cédric Allard turned his passion into his profession: over 600 weddings, parties and corporate events across France. What drives him above all is sharing — that unique energy when music brings people together.",
         "Depending on your date, Cédric either plays himself or introduces you to a DJ from the team, prepared with the same method and the same high standards.",
@@ -469,7 +469,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
       ],
       lien: "More about Cédric",
       mix: "Hear Cédric on the decks (DJ Dioz): a mix for every generation.",
-      equipe: "Meet the team's DJs",
+      equipe: "Meet the team’s DJs",
     },
     video: {
       surtitre: "On film",
@@ -487,27 +487,27 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         {
           question: "How do you choose the music for our wedding?",
           reponse:
-            "It all starts with you: a music questionnaire and planning meetings tell us your favourite styles and songs, and anything you'd rather avoid. We then build a set that reflects you and that your guests will love too.",
+            "It all starts with you: a music questionnaire and planning meetings tell us your favourite styles and songs, and anything you’d rather avoid. We then build a set that reflects you and that your guests will love too.",
         },
         {
           question: "Do you use the microphone during the evening?",
           reponse:
-            "Only if you want us to. The microphone is there to bring key moments to life and lift the energy: no singing, no echo effects, no constant interruptions. And if you'd rather go without, that's absolutely fine.",
+            "Only if you want us to. The microphone is there to bring key moments to life and lift the energy: no singing, no echo effects, no constant interruptions. And if you’d rather go without, that’s absolutely fine.",
         },
         {
           question: "What if a guest requests a song?",
           reponse:
-            "We'll try to play it, unless it goes against your wishes or risks emptying the dance floor. Sometimes we simply wait for the right moment.",
+            "We’ll try to play it, unless it goes against your wishes or risks emptying the dance floor. Sometimes we simply wait for the right moment.",
         },
         {
           question: "How late does the music go on?",
           reponse:
-            "We stop the music at 4 am at the latest, unless your venue's rules require an earlier time, or you book extra hours.",
+            "We stop the music at 4 am at the latest, unless your venue’s rules require an earlier time, or you book extra hours.",
         },
         {
           question: "Do you work in venues with smoke detectors or sound limiters?",
           reponse:
-            "To guarantee the quality of the effects, we don't provide our entertainment in venues fitted with sensitive smoke detectors. Sound limiters don't stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. Let us know about them in our first conversation and we'll look at what's possible together.",
+            "To guarantee the quality of the effects, we don’t provide our entertainment in venues fitted with sensitive smoke detectors. Sound limiters don’t stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. Let us know about them in our first conversation and we’ll look at what’s possible together.",
         },
         {
           question: "Can our best man or bridesmaids contact you directly?",
@@ -527,7 +527,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         {
           question: "Do you offer several packages?",
           reponse:
-            "We offer a single, complete package, which you can enhance with a premium option. We'll walk you through the details in our first conversation.",
+            "We offer a single, complete package, which you can enhance with a premium option. We’ll walk you through the details in our first conversation.",
         },
         {
           question: "How do we book our date?",
@@ -543,8 +543,8 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
     },
     appel: {
       titre: "Ready to spice up your big day?",
-      texte: "Tell us what you'd love. Together, let's find the ingredients for your night.",
-      bouton: "Let's spice up your night",
+      texte: "Tell us what you’d love. Together, let’s find the ingredients for your night.",
+      bouton: "Let’s spice up your night",
     },
   },
 });

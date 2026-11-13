@@ -4,7 +4,7 @@ import type { QuestionReponse } from "@/contenu/types";
 
 /**
  * Données structurées schema.org (JSON-LD) lues par Google.
- * Pas de note agrégée : Google ignore les avis hébergés par l'entreprise elle-même.
+ * Pas de note agrégée : Google ignore les avis hébergés par l’entreprise elle-même.
  */
 
 type Objet = Record<string, unknown>;

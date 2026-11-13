@@ -19,7 +19,7 @@ export function FondAleatoire({ images, sizes = "100vw" }: { images: readonly Ph
   return (
     <div className="absolute inset-0">
       {images.map((p, i) => (
-        // L'attribut `hidden` change avant l'hydratation : écart attendu.
+        // L’attribut `hidden` change avant l’hydratation : écart attendu.
         <div key={typeof p === "string" ? p : p.src} className="absolute inset-0" hidden={i > 0} suppressHydrationWarning>
           {typeof p === "string" ? <Photo cle={p} remplir sizes={sizes} /> : <Photo photo={p} remplir sizes={sizes} />}
         </div>

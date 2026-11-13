@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
  * Server Action du suivi des demandes, avec une garde et un client Supabase
- * simulés : garde d'abord, Zod ensuite, écriture par le client de session des
+ * simulés : garde d’abord, Zod ensuite, écriture par le client de session des
  * seules colonnes statut et note_interne, puis revalidation de la page.
  */
 
@@ -15,7 +15,7 @@ const etat = vi.hoisted(() => ({
   admin: true,
 }));
 
-/** Client simulé : enregistre chaque chaîne d'appels et répond via `etat.repondre`. */
+/** Client simulé : enregistre chaque chaîne d’appels et répond via `etat.repondre`. */
 function fauxClient() {
   return {
     from(table: string) {
@@ -74,7 +74,7 @@ describe("enregistrerSuiviDemande", () => {
     expect(revalidatePath).not.toHaveBeenCalled();
   });
 
-  it("une entrée invalide n'écrit rien", async () => {
+  it("une entrée invalide n’écrit rien", async () => {
     for (const entree of [{ id: "x", statut: "signee" }, { id: ID, statut: "archivee" }, { id: ID }, { id: ID, statut: "signee", email: "pirate@example.com" }, null]) {
       expect(await enregistrerSuiviDemande(entree)).toMatchObject({ ok: false });
     }
@@ -94,7 +94,7 @@ describe("enregistrerSuiviDemande", () => {
     expect(revalidatePath).toHaveBeenCalledWith("/admin/demandes");
   });
 
-  it("n'écrit que la colonne fournie", async () => {
+  it("n’écrit que la colonne fournie", async () => {
     await enregistrerSuiviDemande({ id: ID, statut: "perdue" });
     expect(etat.appels[0].operations[0][1][0]).toEqual({ statut: "perdue" });
   });

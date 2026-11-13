@@ -7,8 +7,8 @@ type HrefLien = ComponentProps<typeof Link>["href"];
 const CHEMINS_STATIQUES = Object.keys(routing.pathnames).filter((c) => !c.includes("[")) as CheminStatique[];
 
 /**
- * Lien d'un article (adresse française, écrite par le script de conversion) →
- * href typé pour le `Link` de next-intl, ou null si ce n'est pas une page connue
+ * Lien d’un article (adresse française, écrite par le script de conversion) →
+ * href typé pour le `Link` de next-intl, ou null si ce n’est pas une page connue
  * du site (fichier, adresse externe, ancre seule) : on garde alors un simple `<a>`.
  */
 export function hrefInterne(adresse: string): HrefLien | null {

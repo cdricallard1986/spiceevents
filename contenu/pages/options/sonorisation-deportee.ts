@@ -22,9 +22,9 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
         surtitre: "Le principe",
         titre: "Plusieurs lieux, *une seule ambiance*.",
         paragraphes: [
-          "Les temps forts d'un mariage s'enchaînent souvent dans des lieux différents. La sonorisation déportée diffuse la musique et les prises de parole dans une ou plusieurs zones distinctes, reliées à la régie principale et parfaitement synchronisées.",
-          "Chaque zone a son propre réglage : volume, type de diffusion, ambiance. L'objectif n'est pas de faire du bruit partout, mais de créer une continuité naturelle entre les moments de votre journée, sans gêner les conversations.",
-          "Le matériel est professionnel, fiable et performant, pour un son clair, stable et homogène — et s'intègre naturellement à nos prestations DJ, son et lumière.",
+          "Les temps forts d’un mariage s’enchaînent souvent dans des lieux différents. La sonorisation déportée diffuse la musique et les prises de parole dans une ou plusieurs zones distinctes, reliées à la régie principale et parfaitement synchronisées.",
+          "Chaque zone a son propre réglage : volume, type de diffusion, ambiance. L’objectif n’est pas de faire du bruit partout, mais de créer une continuité naturelle entre les moments de votre journée, sans gêner les conversations.",
+          "Le matériel est professionnel, fiable et performant, pour un son clair, stable et homogène — et s’intègre naturellement à nos prestations DJ, son et lumière.",
         ],
       },
       listes: [
@@ -37,7 +37,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
           ],
         },
         {
-          titre: "Conseils d'implantation",
+          titre: "Conseils d’implantation",
           intro: "Dès la préparation, nous définissons les meilleurs emplacements selon :",
           points: ["La configuration du lieu", "Les distances entre les espaces", "Le déroulé précis de la journée"],
         },
@@ -63,7 +63,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
         titre: "Several spaces, *one atmosphere*.",
         paragraphes: [
           "The key moments of a wedding often happen in different places. Multi-room sound carries music and speeches to one or more separate areas, linked to the main control desk and perfectly in sync.",
-          "Each area is set up on its own: volume, type of sound, atmosphere. The aim isn't to fill every corner with noise, but to create a natural flow between the moments of your day, without drowning out conversation.",
+          "Each area is set up on its own: volume, type of sound, atmosphere. The aim isn’t to fill every corner with noise, but to create a natural flow between the moments of your day, without drowning out conversation.",
           "The equipment is professional, reliable and powerful, for clear, stable, even sound — and it fits seamlessly with our DJ, sound and lighting services.",
         ],
       },
@@ -83,8 +83,8 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
         },
       ],
       appel: {
-        titre: "Let's talk *sound*.",
-        texte: "Describe your event and its spaces: we'll suggest a discreet set-up that fits.",
+        titre: "Let’s talk *sound*.",
+        texte: "Describe your event and its spaces: we’ll suggest a discreet set-up that fits.",
       },
     },
   },

@@ -4,7 +4,7 @@ import type { Article, LigneArticle } from "./types";
 
 /**
  * Articles du journal (français seulement) pour les pages publiques : mise en
- * forme d'une ligne de la table `articles` et outils de présentation. Les
+ * forme d’une ligne de la table `articles` et outils de présentation. Les
  * lignes viennent de Supabase ou, sans Supabase, des fichiers MDX convertis
  * (voir `lecture.ts`).
  */
@@ -12,7 +12,7 @@ import type { Article, LigneArticle } from "./types";
 /**
  * Ligne publiée → article des pages. Un article publié est complet (contrainte
  * de la table) et son contenu doit passer le validateur du document : sinon
- * l'erreur nomme l'article et la génération de la page échoue — on ne publie
+ * l’erreur nomme l’article et la génération de la page échoue — on ne publie
  * jamais un contenu que le rendu ne connaît pas.
  */
 export function articleDepuisLigne(l: LigneArticle): Article {
@@ -43,7 +43,7 @@ export function trierParDate<T extends { date: string; titre: string }>(liste: T
   return [...liste].sort((a, b) => b.date.localeCompare(a.date) || a.titre.localeCompare(b.titre, "fr"));
 }
 
-/** Ancre d'une catégorie dans la page du journal : « Musique & ambiance » → `musique-ambiance`. */
+/** Ancre d’une catégorie dans la page du journal : « Musique & ambiance » → `musique-ambiance`. */
 export function ancreCategorie(categorie: Categorie): string {
   return categorie
     .normalize("NFD")
@@ -69,7 +69,7 @@ export function derniersArticles<T extends { categorie: string; date: string; ti
   return trierParDate(tous.filter((a) => !categories || categories.includes(a.categorie))).slice(0, nombre);
 }
 
-/** Articles liés : même catégorie d'abord (les plus récents), complétés par les plus récents. */
+/** Articles liés : même catégorie d’abord (les plus récents), complétés par les plus récents. */
 export function articlesLies<T extends { slug: string; categorie: string; date: string; titre: string }>(
   tous: T[],
   courant: T,

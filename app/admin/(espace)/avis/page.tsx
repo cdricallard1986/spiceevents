@@ -10,7 +10,7 @@ import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 export const metadata: Metadata = { title: "Avis" };
 
 /**
- * Avis des clients : liste filtrable, ordre, modale d'édition auto-enregistrée,
+ * Avis des clients : liste filtrable, ordre, modale d’édition auto-enregistrée,
  * création (non publiée), publication et suppression confirmées. Lecture et
  * écriture avec la session de Cédric (RLS : est_admin()).
  */
@@ -27,23 +27,23 @@ export default async function PageAvis() {
         section={section}
         intro={
           <>
-            Les avis des mariés et des clients : texte, traduction, pages où ils sont mis en avant, ordre d&apos;affichage. Après chaque modification, le
-            site public se met à jour à la visite suivante d&apos;une page.
+            Les avis des mariés et des clients : texte, traduction, pages où ils sont mis en avant, ordre d’affichage. Après chaque modification, le
+            site public se met à jour à la visite suivante d’une page.
           </>
         }
       />
 
       {siteSurFichiers && (
         <p className="mt-6 max-w-2xl border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-          Supabase n&apos;est pas configuré dans cet environnement (<code className="font-mono">NEXT_PUBLIC_SUPABASE_URL</code> absente) : les pages
-          publiques d&apos;ici affichent les avis des fichiers de secours, et vos modifications n&apos;y apparaîtront pas.
+          Supabase n’est pas configuré dans cet environnement (<code className="font-mono">NEXT_PUBLIC_SUPABASE_URL</code> absente) : les pages
+          publiques d’ici affichent les avis des fichiers de secours, et vos modifications n’y apparaîtront pas.
         </p>
       )}
 
       <div className="mt-10">
         {error ? (
           <p role="alert" className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-            La liste des avis n&apos;a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
+            La liste des avis n’a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
           </p>
         ) : (
           <GestionAvis

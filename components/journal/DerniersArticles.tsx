@@ -17,8 +17,8 @@ type Props = {
 
 /**
  * Les 5 derniers articles du journal sur une seule rangée (défilement horizontal
- * sur téléphone), avec le lien vers le journal. Le journal n'existe qu'en
- * français : rien n'est affiché sur les pages anglaises.
+ * sur téléphone), avec le lien vers le journal. Le journal n’existe qu’en
+ * français : rien n’est affiché sur les pages anglaises.
  */
 export async function DerniersArticles({ locale, surtitre, titre, categories, alterne }: Props) {
   if (locale !== "fr") return null;
@@ -27,7 +27,7 @@ export async function DerniersArticles({ locale, surtitre, titre, categories, al
 
   return (
     <Section surtitre={surtitre} titre={titre} alterne={alterne}>
-      {/* Sur téléphone et tablette, la rangée déborde jusqu'aux bords de l'écran pour défiler,
+      {/* Sur téléphone et tablette, la rangée déborde jusqu’aux bords de l’écran pour défiler,
           tout en commençant alignée sur le texte (mêmes marges que `.conteneur`). */}
       <ul className="-mx-5 flex snap-x snap-mandatory scroll-px-5 gap-6 overflow-x-auto px-5 pb-4 md:-mx-10 md:scroll-px-10 md:px-10 lg:mx-0 lg:grid lg:grid-cols-5 lg:overflow-visible lg:px-0 lg:pb-0">
         {liste.map((a) => (

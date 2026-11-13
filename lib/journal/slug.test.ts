@@ -5,7 +5,7 @@ import { estSlugValide, slugDepuisTitre, slugLibre } from "./slug";
 describe("slugDepuisTitre", () => {
   it("retire accents et majuscules, remplace espaces, apostrophes et ponctuation par un tiret", () => {
     expect(slugDepuisTitre("Comment choisir l’ambiance musicale de votre mariage ?")).toBe("comment-choisir-l-ambiance-musicale-de-votre-mariage");
-    expect(slugDepuisTitre("S'offrir un mariage 100 % responsable")).toBe("s-offrir-un-mariage-100-responsable");
+    expect(slugDepuisTitre("S’offrir un mariage 100 % responsable")).toBe("s-offrir-un-mariage-100-responsable");
     expect(slugDepuisTitre("Mariage de C&N au château de Sauvebœuf")).toBe("mariage-de-c-n-au-chateau-de-sauveboeuf");
     expect(slugDepuisTitre("  Été, Noël & « fêtes » — à Paris !  ")).toBe("ete-noel-fetes-a-paris");
     expect(slugDepuisTitre("Ex æquo, Straße")).toBe("ex-aequo-strasse");
@@ -16,11 +16,11 @@ describe("slugDepuisTitre", () => {
     expect(slugDepuisTitre(" ?! … ")).toBe("");
   });
 
-  it("coupe à 120 caractères, entre deux mots quand c'est possible", () => {
+  it("coupe à 120 caractères, entre deux mots quand c’est possible", () => {
     const titre = Array(40).fill("musique").join(" "); // 319 caractères
     const slug = slugDepuisTitre(titre);
     expect(slug.length).toBeLessThanOrEqual(120);
-    expect(slug).toBe(Array(15).fill("musique").join("-")); // 119 caractères : « musique » n'est pas coupé
+    expect(slug).toBe(Array(15).fill("musique").join("-")); // 119 caractères : « musique » n’est pas coupé
     expect(estSlugValide(slug)).toBe(true);
     expect(slugDepuisTitre("a".repeat(130))).toBe("a".repeat(120));
     // La coupe tombe juste avant un tiret : le mot entier est gardé.
@@ -48,7 +48,7 @@ describe("estSlugValide", () => {
 });
 
 describe("slugLibre", () => {
-  it("ajoute -2, -3… si l'adresse est prise, sans dépasser 120 caractères", () => {
+  it("ajoute -2, -3… si l’adresse est prise, sans dépasser 120 caractères", () => {
     expect(slugLibre("hiver", new Set())).toBe("hiver");
     expect(slugLibre("hiver", new Set(["hiver"]))).toBe("hiver-2");
     expect(slugLibre("hiver", new Set(["hiver", "hiver-2"]))).toBe("hiver-3");

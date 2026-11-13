@@ -7,19 +7,19 @@ import { SUPABASE_CLE_PUBLIQUE, SUPABASE_URL, nomCookieSession } from "./config"
 export type EtatSession = {
   /** Réponse « continuer », porteuse des cookies rafraîchis (ou effacés) par Supabase. */
   reponse: NextResponse;
-  /** Utilisateur validé par le serveur d'auth (`getUser()`), sinon null. */
+  /** Utilisateur validé par le serveur d’auth (`getUser()`), sinon null. */
   utilisateur: User | null;
-  /** Un cookie de session était présent : sans utilisateur, c'est qu'il a été refusé. */
+  /** Un cookie de session était présent : sans utilisateur, c’est qu’il a été refusé. */
   avaitSession: boolean;
-  /** Le serveur d'auth n'a pas répondu (panne réseau), à distinguer d'une session expirée. */
+  /** Le serveur d’auth n’a pas répondu (panne réseau), à distinguer d’une session expirée. */
   indisponible: boolean;
 };
 
 /**
  * Rafraîchit la session Supabase dans le middleware (les Server Components ne
- * peuvent pas écrire de cookies) et vérifie l'utilisateur avec `getUser()` —
+ * peuvent pas écrire de cookies) et vérifie l’utilisateur avec `getUser()` —
  * jamais `getSession()` seul, qui croit le cookie sans le faire valider : une
- * session révoquée resterait utilisable jusqu'à l'expiration du jeton.
+ * session révoquée resterait utilisable jusqu’à l’expiration du jeton.
  */
 export async function actualiserSession(requete: NextRequest): Promise<EtatSession> {
   let reponse = NextResponse.next({ request: requete });
@@ -27,7 +27,7 @@ export async function actualiserSession(requete: NextRequest): Promise<EtatSessi
     requete.cookies.getAll().map((c) => c.name),
     nomCookieSession(),
   );
-  // Aucun cookie de session : inutile d'interroger Supabase.
+  // Aucun cookie de session : inutile d’interroger Supabase.
   if (!avaitSession) return { reponse, utilisateur: null, avaitSession, indisponible: false };
 
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_CLE_PUBLIQUE, {
@@ -53,7 +53,7 @@ export async function actualiserSession(requete: NextRequest): Promise<EtatSessi
 }
 
 /**
- * Redirection qui REPORTE les cookies que Supabase vient d'écrire ou d'effacer :
+ * Redirection qui REPORTE les cookies que Supabase vient d’écrire ou d’effacer :
  * un `NextResponse.redirect()` neuf les perdrait, le cookie périmé survivrait et
  * le message « session expirée » reviendrait à chaque page.
  */

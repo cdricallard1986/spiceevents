@@ -26,9 +26,9 @@ type Props = {
 };
 
 /**
- * Fiche d'une demande de contact : coordonnées et liens (appeler, écrire,
+ * Fiche d’une demande de contact : coordonnées et liens (appeler, écrire,
  * WhatsApp, « Marquer comme traitée » pour une nouvelle demande), détails de
- * l'événement, message tel qu'il a été saisi (texte brut, jamais interprété en
+ * l’événement, message tel qu’il a été saisi (texte brut, jamais interprété en
  * HTML), puis le suivi : statut et note interne.
  */
 export function FicheDemande({ demande: d, valeur, modifier }: Props) {
@@ -43,9 +43,9 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
     <div className="flex flex-col gap-8">
       {!d.email_envoye && (
         <p role="alert" className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-          <strong className="font-semibold text-erreur">Email non reçu — à traiter à la main.</strong> L&apos;email de notification de cette demande
-          n&apos;est pas parti : elle n&apos;existe qu&apos;ici.
-          {!d.accuse_envoye && " Le client n'a pas non plus reçu d'accusé de réception."}
+          <strong className="font-semibold text-erreur">Email non reçu — à traiter à la main.</strong> L’email de notification de cette demande
+          n’est pas parti : elle n’existe qu’ici.
+          {!d.accuse_envoye && " Le client n’a pas non plus reçu d’accusé de réception."}
         </p>
       )}
 
@@ -60,7 +60,7 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
             </a>
           )}
           {ecrire && (
-            // Nouvel onglet : la messagerie web (Gmail…) s'ouvre à côté, le back office reste ouvert.
+            // Nouvel onglet : la messagerie web (Gmail…) s’ouvre à côté, le back office reste ouvert.
             <a href={ecrire} target="_blank" rel="noopener noreferrer" className={classesBouton("contour")}>
               Écrire
             </a>
@@ -94,8 +94,8 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
         <dl className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
           <Info libelle="Reçue le">{formaterReception(d.created_at)}</Info>
           <Info libelle="Langue de la demande">{LIBELLES_LANGUE[d.langue]}</Info>
-          <Info libelle="Type d'événement">{LIBELLES_TYPE.fr[d.type_evenement]}</Info>
-          <Info libelle="Date de l'événement">{formaterDateEvenement(d.date_evenement) ?? <Vide>Non précisée</Vide>}</Info>
+          <Info libelle="Type d’événement">{LIBELLES_TYPE.fr[d.type_evenement]}</Info>
+          <Info libelle="Date de l’événement">{formaterDateEvenement(d.date_evenement) ?? <Vide>Non précisée</Vide>}</Info>
           <Info libelle="Lieu">{d.lieu ?? <Vide>Non précisé</Vide>}</Info>
           <Info libelle="Invités">{formaterInvites(d.invites) ?? <Vide>Non précisé</Vide>}</Info>
           {d.email_envoye && (
@@ -103,7 +103,7 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
           )}
         </dl>
         <p className={`${CLASSES_LIBELLE} mt-6 mb-2`}>Message</p>
-        {/* Texte brut : React l'échappe, les retours à la ligne sont conservés. */}
+        {/* Texte brut : React l’échappe, les retours à la ligne sont conservés. */}
         <p lang={d.langue} className="whitespace-pre-wrap break-words border-l-2 border-or bg-nuit-3 px-4 py-3 text-ivoire">
           {d.message}
         </p>

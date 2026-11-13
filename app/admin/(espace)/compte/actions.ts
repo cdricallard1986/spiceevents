@@ -3,7 +3,7 @@
 import { exigerAdmin } from "@/lib/admin/garde";
 import { traiterChangement, type EtatMotDePasse } from "@/lib/admin/mot-de-passe";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public.
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public.
 // Garde `exigerAdmin()` en tête, puis Zod (dans traiterChangement).
 
 /**

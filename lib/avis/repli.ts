@@ -5,10 +5,10 @@ import type { Categorie, Emplacement } from "./constantes";
 import type { Avis } from "./types";
 
 /**
- * Données de secours : les fichiers d'avis d'avant le back office, convertis au
- * format de la table `avis`, À L'IDENTIQUE de l'import en base (migration 0004,
- * vérifié par repli.test.ts). Servent quand Supabase n'est pas configuré
- * (développement local, tests) — voir `source.ts`. Retirées à l'étape 7 du plan.
+ * Données de secours : les fichiers d’avis d’avant le back office, convertis au
+ * format de la table `avis`, À L’IDENTIQUE de l’import en base (migration 0004,
+ * vérifié par repli.test.ts). Servent quand Supabase n’est pas configuré
+ * (développement local, tests) — voir `source.ts`. Retirées à l’étape 7 du plan.
  */
 
 type AvisFichier = { cle?: string; auteurs: string; role?: string; categorie: Categorie; texte: string };
@@ -17,7 +17,7 @@ const FICHIER = brut as AvisFichier[];
 /** Traductions anglaises, par clé (ou auteurs). */
 const EN = traductions as Record<string, { texte: string; role?: string }>;
 
-/** Emplacements de l'import, par clé (ou auteurs) : les choix faits jusqu'ici dans le code des pages. */
+/** Emplacements de l’import, par clé (ou auteurs) : les choix faits jusqu’ici dans le code des pages. */
 export const EMPLACEMENTS_REPLI: Record<string, Emplacement[]> = {
   "Pierre & Nina": ["accueil_grand"],
   "Charlotte & David": ["accueil"],
@@ -36,7 +36,7 @@ export const EMPLACEMENTS_REPLI: Record<string, Emplacement[]> = {
   "Coralie & Benjamin": ["option:sonorisation-deportee"],
 };
 
-/** Citations de l'import : l'extrait qui commence à la phrase sur l'option (début de phrase, par langue). */
+/** Citations de l’import : l’extrait qui commence à la phrase sur l’option (début de phrase, par langue). */
 export const DEBUTS_CITATION_REPLI: Record<string, { fr: string; en: string }> = {
   "Beth & Liam": { fr: "Le photobooth", en: "The photo booth was" },
   "Clémentine & Kévin": { fr: "Notre ouverture de bal", en: "Our first dance" },
@@ -44,7 +44,7 @@ export const DEBUTS_CITATION_REPLI: Record<string, { fr: string; en: string }> =
   "Léa & Floris #2": { fr: "Le bar a vinyle", en: "The vinyl bar" },
 };
 
-/** Longueur des citations de l'import (celle des pages d'option). */
+/** Longueur des citations de l’import (celle des pages d’option). */
 const LONGUEUR_CITATION = 260;
 
 function citation(texte: string, debut: string | undefined): string | null {

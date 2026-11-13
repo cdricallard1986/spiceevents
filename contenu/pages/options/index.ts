@@ -11,7 +11,7 @@ import type { ContenuOption } from "./types";
 
 export type { ContenuOption, ListeOption, TextesOption } from "./types";
 
-/** Contenu de chaque page d'option, indexé par son slug français (voir `contenu/options.ts`). */
+/** Contenu de chaque page d’option, indexé par son slug français (voir `contenu/options.ts`). */
 export const CONTENUS_OPTIONS: Record<string, ContenuOption> = {
   "ouverture-de-bal": OUVERTURE_DE_BAL,
   "bar-a-vinyles": BAR_A_VINYLES,
@@ -25,6 +25,6 @@ export const CONTENUS_OPTIONS: Record<string, ContenuOption> = {
 
 export function contenuOption(option: Option): ContenuOption {
   const c = CONTENUS_OPTIONS[option.slug.fr];
-  if (!c) throw new Error(`Contenu manquant pour l'option : ${option.slug.fr}`);
+  if (!c) throw new Error(`Contenu manquant pour l’option : ${option.slug.fr}`);
   return c;
 }

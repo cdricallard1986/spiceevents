@@ -10,8 +10,8 @@ import { changerPublicationMembre, creerMembre, creerUrlEnvoiMembre, echangerOrd
 export const metadata: Metadata = { title: "DJ" };
 
 /**
- * DJ et musiciens de la page Nos DJ : liste dans l'ordre de la page, modale
- * d'édition auto-enregistrée (textes FR/EN, photo, cadrage), création (non
+ * DJ et musiciens de la page Nos DJ : liste dans l’ordre de la page, modale
+ * d’édition auto-enregistrée (textes FR/EN, photo, cadrage), création (non
  * publiée), publication et suppression confirmées. Lecture et écriture avec la
  * session de Cédric (RLS : est_admin()).
  */
@@ -28,7 +28,7 @@ export default async function PageDj() {
         section={section}
         intro={
           <>
-            Les DJ et musiciens de la page Nos DJ : photo, présentation, styles, avis, lien, ordre d&apos;affichage. Après chaque modification, la page se
+            Les DJ et musiciens de la page Nos DJ : photo, présentation, styles, avis, lien, ordre d’affichage. Après chaque modification, la page se
             met à jour à la visite suivante.
           </>
         }
@@ -36,15 +36,15 @@ export default async function PageDj() {
 
       {siteSurFichiers && (
         <p className="mt-6 max-w-2xl border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-          Supabase n&apos;est pas configuré dans cet environnement (<code className="font-mono">NEXT_PUBLIC_SUPABASE_URL</code> absente) : la page Nos DJ
-          d&apos;ici affiche l&apos;équipe du code, et vos modifications n&apos;y apparaîtront pas.
+          Supabase n’est pas configuré dans cet environnement (<code className="font-mono">NEXT_PUBLIC_SUPABASE_URL</code> absente) : la page Nos DJ
+          d’ici affiche l’équipe du code, et vos modifications n’y apparaîtront pas.
         </p>
       )}
 
       <div className="mt-10">
         {error ? (
           <p role="alert" className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-            La liste des DJ n&apos;a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
+            La liste des DJ n’a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
           </p>
         ) : (
           <GestionEquipe

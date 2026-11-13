@@ -14,7 +14,7 @@ export type ResultatEnvoi = { ok: true; id: string | null } | { ok: false; nom: 
 
 export type ExpediteurResend = {
   config: ConfigEmail;
-  /** Ne lève jamais : renvoie l'erreur de Resend (`name` + `message`) telle quelle. */
+  /** Ne lève jamais : renvoie l’erreur de Resend (`name` + `message`) telle quelle. */
   envoyer(email: EmailPrepare): Promise<ResultatEnvoi>;
 };
 
@@ -36,7 +36,7 @@ export function expediteurResend(): ExpediteurResend | null {
   };
 }
 
-/** Envoi du formulaire de contact (null si la clé d'API manque) : lève une erreur si l'email n'est pas parti. */
+/** Envoi du formulaire de contact (null si la clé d’API manque) : lève une erreur si l’email n’est pas parti. */
 export function envoi(): Envoi | null {
   const expediteur = expediteurResend();
   if (!expediteur) return null;

@@ -9,8 +9,8 @@ import type { LigneArticle, StatutArticle } from "./types";
 
 /**
  * Logique pure du journal dans le back office (/admin/journal) : liste,
- * filtres, adresse proposée, formulaire de l'éditeur, nettoyage des
- * brouillons vides, liens et photos de l'éditeur visuel. Sans Zod ni Tiptap :
+ * filtres, adresse proposée, formulaire de l’éditeur, nettoyage des
+ * brouillons vides, liens et photos de l’éditeur visuel. Sans Zod ni Tiptap :
  * ce fichier est aussi chargé par le navigateur.
  */
 
@@ -18,7 +18,7 @@ import type { LigneArticle, StatutArticle } from "./types";
 
 export type ResultatEchec = { ok: false; message: string; erreurs?: ErreursArticle };
 
-/** Un article tel que l'éditeur le reçoit (la ligne, avec sa dernière modification). */
+/** Un article tel que l’éditeur le reçoit (la ligne, avec sa dernière modification). */
 export type LigneArticleAdmin = LigneArticle & { updated_at: string };
 
 export type ResultatCreationArticle = { ok: true; id: string } | ResultatEchec;
@@ -54,7 +54,7 @@ export function pourRecherche(texte: string): string {
 
 /**
  * Ordre de la liste : les brouillons en tête (le plus récemment modifié
- * d'abord), puis les articles publiés du plus récent au plus ancien (date
+ * d’abord), puis les articles publiés du plus récent au plus ancien (date
  * affichée, puis titre).
  */
 export function trierArticlesAdmin<T extends ArticleListe>(liste: readonly T[]): T[] {
@@ -81,7 +81,7 @@ export const LIBELLES_STATUT: Record<StatutArticle, string> = { brouillon: "Brou
 
 // --- Adresse (slug) ----------------------------------------------------------------
 
-/** Adresse provisoire d'un brouillon neuf, tant qu'il n'a pas de titre : `brouillon-<aléa>`. */
+/** Adresse provisoire d’un brouillon neuf, tant qu’il n’a pas de titre : `brouillon-<aléa>`. */
 export const PREFIXE_SLUG_PROVISOIRE = "brouillon-";
 
 export function slugProvisoire(alea: string): string {
@@ -95,10 +95,10 @@ export function estSlugProvisoire(slug: string): boolean {
 }
 
 /**
- * L'adresse suit-elle encore le titre ? Oui pour un article jamais publié
- * dont l'adresse est la provisoire, celle du titre, ou celle du titre suivie
- * d'un numéro (`-2`, `-3`… : l'adresse du titre était déjà prise). Une adresse
- * saisie à la main, ou celle d'un article déjà publié, ne bouge plus.
+ * L’adresse suit-elle encore le titre ? Oui pour un article jamais publié
+ * dont l’adresse est la provisoire, celle du titre, ou celle du titre suivie
+ * d’un numéro (`-2`, `-3`… : l’adresse du titre était déjà prise). Une adresse
+ * saisie à la main, ou celle d’un article déjà publié, ne bouge plus.
  */
 export function slugSuitLeTitre(l: Pick<LigneArticle, "slug" | "titre" | "publie_le">): boolean {
   if (l.publie_le !== null) return false;
@@ -108,19 +108,19 @@ export function slugSuitLeTitre(l: Pick<LigneArticle, "slug" | "titre" | "publie
   if (l.slug === base) return true;
   const suite = l.slug.match(/^(.*)-(\d+)$/);
   if (!suite || Number(suite[2]) < 2) return false;
-  // `slugLibre` raccourcit l'adresse du titre pour que le numéro tienne dans les 120 caractères.
+  // `slugLibre` raccourcit l’adresse du titre pour que le numéro tienne dans les 120 caractères.
   const raccourcie = base.length + 1 + suite[2].length > LIMITES_ARTICLES.slug;
   return suite[1] === base || (raccourcie && suite[1].length > 0 && base.startsWith(`${suite[1]}-`));
 }
 
-/** Adresse proposée d'après le titre ; sans lettre ni chiffre dans le titre : l'adresse actuelle. */
+/** Adresse proposée d’après le titre ; sans lettre ni chiffre dans le titre : l’adresse actuelle. */
 export function slugPropose(titre: string, actuel: string): string {
   return slugDepuisTitre(titre) || actuel;
 }
 
-// --- Formulaire de l'éditeur ---------------------------------------------------------
+// --- Formulaire de l’éditeur ---------------------------------------------------------
 
-/** Le formulaire de l'éditeur : les champs de l'article + « l'adresse suit le titre ». */
+/** Le formulaire de l’éditeur : les champs de l’article + « l’adresse suit le titre ». */
 export type FormulaireEditeur = FormulaireArticle & { slugAuto: boolean };
 
 export function formulaireDepuisLigne(l: LigneArticle): FormulaireEditeur {
@@ -145,7 +145,7 @@ export const DELAI_BROUILLON_VIDE_MS = 24 * 60 * 60 * 1000;
 function blocVide(b: unknown): boolean {
   if (!b || typeof b !== "object") return false;
   const bloc = b as Partial<Bloc> & { content?: unknown[] };
-  // Un paragraphe vide (ou fait d'espaces) : ce qu'un éditeur neuf contient.
+  // Un paragraphe vide (ou fait d’espaces) : ce qu’un éditeur neuf contient.
   if (bloc.type !== "paragraph") return false;
   return (bloc.content ?? []).every((n) => {
     const noeud = n as { type?: string; text?: string };
@@ -166,7 +166,7 @@ export function documentVide(contenu: unknown): boolean {
  * Brouillon ouvert puis abandonné sans rien écrire (« Nouvel article »
  * cliqué par erreur) : jamais publié, ni titre, ni sous-titre, ni
  * description, ni couverture, ni contenu, et pas modifié depuis 24 heures.
- * Supprimé à l'ouverture de la liste.
+ * Supprimé à l’ouverture de la liste.
  */
 export function estBrouillonVide(
   l: Pick<LigneArticle, "statut" | "publie_le" | "titre" | "sous_titre" | "description" | "couverture" | "contenu"> & { updated_at: string },
@@ -179,7 +179,7 @@ export function estBrouillonVide(
   return documentVide(l.contenu);
 }
 
-// --- Document de l'éditeur ------------------------------------------------------------
+// --- Document de l’éditeur ------------------------------------------------------------
 
 type Json = null | boolean | number | string | Json[] | { [cle: string]: Json };
 
@@ -190,14 +190,14 @@ function sansNulls(attrs: Record<string, Json>, cles: readonly string[]): Record
 }
 
 /**
- * JSON de l'éditeur → forme enregistrée, celle des articles importés : les
+ * JSON de l’éditeur → forme enregistrée, celle des articles importés : les
  * attributs que Tiptap écrit toujours à `null` sont retirés (`target`, `rel`,
- * `class` d'un lien, `type` d'une liste numérotée, légende vide d'une photo).
+ * `class` d’un lien, `type` d’une liste numérotée, légende vide d’une photo).
  * Le validateur (`validerDocument`) accepte les deux formes ; celle-ci garde
- * la base lisible et rend l'aller-retour base → éditeur → base exact. Les
- * paragraphes vides de la fin sont retirés (l'éditeur en garde toujours un
+ * la base lisible et rend l’aller-retour base → éditeur → base exact. Les
+ * paragraphes vides de la fin sont retirés (l’éditeur en garde toujours un
  * après une photo ou une liste finale, pour pouvoir écrire dessous ; le site
- * ne les affiche pas). Rien d'autre n'est touché (texte, marques, blocs).
+ * ne les affiche pas). Rien d’autre n’est touché (texte, marques, blocs).
  */
 export function documentDepuisEditeur(json: unknown): unknown {
   const parcourir = (n: Json): Json => {
@@ -222,7 +222,7 @@ export function documentDepuisEditeur(json: unknown): unknown {
   return sortie;
 }
 
-// --- Liens de l'éditeur ----------------------------------------------------------------
+// --- Liens de l’éditeur ----------------------------------------------------------------
 
 export type AdresseLien = { ok: true; href: string } | { ok: false; message: string };
 
@@ -238,21 +238,21 @@ export const AIDE_LIEN = "Une adresse web (https://…), un email, un téléphon
  */
 export function normaliserAdresseLien(saisie: string): AdresseLien {
   const v = saisie.trim();
-  if (!v) return { ok: false, message: "Indiquez l'adresse du lien." };
+  if (!v) return { ok: false, message: "Indiquez l’adresse du lien." };
   let href = v;
   if (/^[^\s@/:]+@[^\s@/:]+\.[^\s@/:]+$/.test(v)) href = `mailto:${v}`;
   else if (/^(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+(\/\S*)?$/i.test(v) && !v.startsWith("/")) href = `https://${v}`;
   else if (/^\+?[0-9 ().-]{6,}$/.test(v)) href = `tel:${v.replace(/[\s]/g, "")}`;
   if (estLienAutorise(href)) return { ok: true, href };
   if (href.startsWith("//")) return { ok: false, message: "Adresse incomplète : commencez par https:// pour un autre site, ou par / pour une page du site." };
-  if (/\s/.test(href)) return { ok: false, message: "L'adresse ne doit pas contenir d'espace." };
+  if (/\s/.test(href)) return { ok: false, message: "L’adresse ne doit pas contenir d’espace." };
   return { ok: false, message: "Adresse refusée : https://, http://, mailto:, tel: ou une page du site commençant par /." };
 }
 
-// --- Photos de l'éditeur et couverture ---------------------------------------------------
+// --- Photos de l’éditeur et couverture ---------------------------------------------------
 
 /**
- * Chemin d'un envoi du back office dans le bucket `medias` :
+ * Chemin d’un envoi du back office dans le bucket `medias` :
  * `journal/<aaaa>/<mm>/<horodatage>-<aléa>.<ext>` (motif de la couverture et
  * des photos du texte, migration 0008). Extension tirée du type MIME validé,
  * jamais du nom du fichier.
@@ -263,15 +263,15 @@ export function cheminEnvoiArticle(type: TypeImage, maintenant: Date, alea: stri
   const propre = alea.toLowerCase().replace(/[^a-z0-9]/g, "");
   if (propre.length < 6) throw new Error("Aléa trop court pour un nom de fichier.");
   const chemin = `journal/${aaaa}/${mm}/${maintenant.getTime()}-${propre}.${TYPES_IMAGE[type]}`;
-  if (!estCheminImage(chemin)) throw new Error("Chemin d'envoi invalide.");
+  if (!estCheminImage(chemin)) throw new Error("Chemin d’envoi invalide.");
   return chemin;
 }
 
 /**
- * Adresse d'une image dans le HTML (collage, glisser-déposer, copie dans
- * l'éditeur) → chemin enregistrable, ou null. Seules les photos du journal
+ * Adresse d’une image dans le HTML (collage, glisser-déposer, copie dans
+ * l’éditeur) → chemin enregistrable, ou null. Seules les photos du journal
  * sont reprises : fichier du site (`/journal/…`) ou du bucket (`journal/…`,
- * aussi sous son adresse publique complète). Une image d'un autre site ou
+ * aussi sous son adresse publique complète). Une image d’un autre site ou
  * en `data:` est refusée : elle ne passerait pas le validateur du document.
  */
 export function cheminDepuisSrc(src: string | null | undefined, supabaseUrl: string = SUPABASE_URL): string | null {
@@ -287,25 +287,25 @@ export function categorieOuVide(v: string): Categorie | "" {
   return (CATEGORIES as readonly string[]).includes(v) ? (v as Categorie) : "";
 }
 
-/** Adresse publique d'un article publié. */
+/** Adresse publique d’un article publié. */
 export function adressePublique(slug: string): string {
   return `/journal/${slug}`;
 }
 
-/** Date AAAA-MM-JJ du jour, à Paris (date proposée d'un nouvel article). */
+/** Date AAAA-MM-JJ du jour, à Paris (date proposée d’un nouvel article). */
 export function aujourdhuiParis(maintenant: Date = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris", year: "numeric", month: "2-digit", day: "2-digit" }).format(maintenant);
 }
 
 /**
- * Ce qui manque pour publier, d'après le formulaire à l'écran (même liste que
+ * Ce qui manque pour publier, d’après le formulaire à l’écran (même liste que
  * `verifierPublication`, revérifiée par le serveur et par la base) : affiché
- * dans la fenêtre de publication avant même de l'envoyer.
+ * dans la fenêtre de publication avant même de l’envoyer.
  */
 export function manquesPublication(f: FormulaireEditeur): string[] {
   const manques: string[] = [];
   if (!f.titre.trim()) manques.push("le titre");
-  if (estSlugProvisoire(f.slug)) manques.push("l'adresse (donnez un titre à l'article)");
+  if (estSlugProvisoire(f.slug)) manques.push("l’adresse (donnez un titre à l’article)");
   if (!f.description.trim()) manques.push("la description (résultat Google)");
   if (!f.categorie) manques.push("la catégorie");
   if (!f.date_publication) manques.push("la date");

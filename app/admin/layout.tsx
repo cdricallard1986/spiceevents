@@ -9,7 +9,7 @@ import "../globals.css";
 
 /**
  * Mise en page racine du back office. `/admin` vit hors de `[locale]` (français
- * seul, hors next-intl) : c'est une seconde mise en page racine, avec son
+ * seul, hors next-intl) : c’est une seconde mise en page racine, avec son
  * propre `<html>`. Le segment statique `admin` passe avant `[locale]`, qui ne
  * peut donc jamais le capturer ; aller du site au back office recharge la page.
  */

@@ -5,8 +5,8 @@ import { typographier } from "@/lib/typographie";
 import type { GroupeEquipe, MembreEquipe } from "./types";
 
 /**
- * Carte d'un membre sur la page Nos DJ, dans une langue : projection en liste
- * blanche (chaque champ affiché est recopié explicitement, rien d'autre ne
+ * Carte d’un membre sur la page Nos DJ, dans une langue : projection en liste
+ * blanche (chaque champ affiché est recopié explicitement, rien d’autre ne
  * sort de la base). Champ anglais vide : le texte français.
  */
 export type CarteEquipe = {
@@ -25,7 +25,7 @@ export type CarteEquipe = {
   cadrage?: string;
 };
 
-/** Paragraphes d'une présentation (séparés par une ligne vide). */
+/** Paragraphes d’une présentation (séparés par une ligne vide). */
 export function paragraphes(texte: string): string[] {
   return texte
     .split(/\n\s*\n/)
@@ -33,7 +33,7 @@ export function paragraphes(texte: string): string[] {
     .filter(Boolean);
 }
 
-/** Adresse d'une photo de membre : fichier du site tel quel, sinon l'URL publique du bucket. */
+/** Adresse d’une photo de membre : fichier du site tel quel, sinon l’URL publique du bucket. */
 export function srcPhotoMembre(chemin: string): string {
   return chemin.startsWith("/") ? chemin : urlPublique(chemin);
 }
@@ -67,14 +67,14 @@ export function carteEquipe(membre: MembreEquipe, locale: Locale): CarteEquipe {
       src: srcPhotoMembre(m.photo_chemin),
       width: m.photo_largeur,
       height: m.photo_hauteur,
-      alt: en ? `${m.nom}, ${role} of the Spice Events team` : `${m.nom}, ${role} de l'équipe Spice Events`,
+      alt: en ? `${m.nom}, ${role} of the Spice Events team` : `${m.nom}, ${role} de l’équipe Spice Events`,
     };
     carte.cadrage = m.photo_cadrage;
   }
   return carte;
 }
 
-/** Initiales d'un nom, pour le monogramme sans photo (« David G. » → « DG », « DJ Pan's » → « P »). */
+/** Initiales d’un nom, pour le monogramme sans photo (« David G. » → « DG », « DJ Pan’s » → « P »). */
 export function initiales(nom: string): string {
   const mots = nom.replace(/^DJ\s+/i, "").split(/\s+/).filter(Boolean);
   return mots.map((m) => m[0]).join("").slice(0, 2).toUpperCase();

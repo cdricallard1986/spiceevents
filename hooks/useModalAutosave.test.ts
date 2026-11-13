@@ -45,7 +45,7 @@ describe("useModalAutosave — édition", () => {
     expect(enregistrer).not.toHaveBeenCalled();
   });
 
-  it("n'envoie qu'une fois, 800 ms après la dernière frappe (debounce)", async () => {
+  it("n’envoie qu’une fois, 800 ms après la dernière frappe (debounce)", async () => {
     const enregistrer = vi.fn(async () => {});
     const { result } = rendre({ mode: "edition", enregistrer });
     act(() => result.current.modifier({ note: "a" }));
@@ -69,7 +69,7 @@ describe("useModalAutosave — édition", () => {
     act(() => result.current.modifier({ note: "a" }));
     await avancer(800);
     expect(result.current.statut).toBe("enregistrement");
-    // On peut continuer à taper pendant l'envoi.
+    // On peut continuer à taper pendant l’envoi.
     act(() => result.current.modifier({ note: "ab" }));
     expect(result.current.valeur.note).toBe("ab");
     await act(async () => requete.resoudre());
@@ -99,7 +99,7 @@ describe("useModalAutosave — édition", () => {
     expect(surEnregistre).toHaveBeenCalledWith(undefined, { nom: "Pierre & Nina", note: "v2" });
   });
 
-  it("n'envoie jamais deux sauvegardes en même temps (ordre garanti côté serveur)", async () => {
+  it("n’envoie jamais deux sauvegardes en même temps (ordre garanti côté serveur)", async () => {
     const premiere = differee();
     const enregistrer = vi.fn().mockReturnValueOnce(premiere.promesse).mockResolvedValue(undefined);
     const { result } = rendre({ mode: "edition", enregistrer });
@@ -114,7 +114,7 @@ describe("useModalAutosave — édition", () => {
     expect(result.current.statut).toBe("enregistre");
   });
 
-  it("ignore l'échec d'une valeur déjà dépassée", async () => {
+  it("ignore l’échec d’une valeur déjà dépassée", async () => {
     const premiere = differee();
     const enregistrer = vi.fn().mockReturnValueOnce(premiere.promesse).mockResolvedValue(undefined);
     const { result } = rendre({ mode: "edition", enregistrer });
@@ -142,7 +142,7 @@ describe("useModalAutosave — édition", () => {
     expect(enregistrer).toHaveBeenCalledOnce();
   });
 
-  it("ferme sans rien envoyer quand rien n'a changé", async () => {
+  it("ferme sans rien envoyer quand rien n’a changé", async () => {
     const enregistrer = vi.fn(async () => {});
     const { result } = rendre({ mode: "edition", enregistrer });
     let peutFermer = false;
@@ -160,7 +160,7 @@ describe("useModalAutosave — édition", () => {
     await avancer(800);
     expect(result.current.statut).toBe("erreur");
     expect(result.current.erreur).toBeInstanceOf(Error);
-    // La saisie n'est pas perdue : le miroir local la garde.
+    // La saisie n’est pas perdue : le miroir local la garde.
     expect(miroir().valeur.note).toBe("important");
 
     // Fermer retente une fois ; nouvel échec → il faut avertir.
@@ -183,7 +183,7 @@ describe("useModalAutosave — édition", () => {
     expect(peutFermer).toBe(true);
   });
 
-  it("une nouvelle frappe après un échec relance l'enregistrement automatiquement", async () => {
+  it("une nouvelle frappe après un échec relance l’enregistrement automatiquement", async () => {
     const enregistrer = vi.fn().mockRejectedValueOnce(new Error("réseau")).mockResolvedValue(undefined);
     const { result } = rendre({ mode: "edition", enregistrer });
     act(() => result.current.modifier({ note: "a" }));
@@ -203,7 +203,7 @@ describe("useModalAutosave — édition", () => {
     expect(enregistrer).toHaveBeenCalledWith({ nom: "Pierre & Nina", note: "a" });
   });
 
-  it("reprend un miroir laissé par un rechargement, puis l'enregistre", async () => {
+  it("reprend un miroir laissé par un rechargement, puis l’enregistre", async () => {
     window.localStorage.setItem(
       "autosave:avis:1",
       JSON.stringify({ valeur: { nom: "Pierre & Nina", note: "perdue ?" }, initiale: JSON.stringify(INITIALE), le: Date.now() }),
@@ -231,7 +231,7 @@ describe("useModalAutosave — édition", () => {
 });
 
 describe("useModalAutosave — création", () => {
-  it("brouillon localStorage seul : rien n'est envoyé avant « Créer »", async () => {
+  it("brouillon localStorage seul : rien n’est envoyé avant « Créer »", async () => {
     const { result, unmount } = rendre({ cle: "avis:nouveau", mode: "creation-locale" });
     act(() => result.current.modifier({ nom: "Léa & Hugo" }));
     expect(result.current.statut).toBe("brouillon");
@@ -247,12 +247,12 @@ describe("useModalAutosave — création", () => {
     const reouverte = rendre({ cle: "avis:nouveau", mode: "creation-locale" });
     expect(reouverte.result.current.valeur.nom).toBe("Léa & Hugo");
     expect(reouverte.result.current.statut).toBe("brouillon");
-    // Après « Créer » : on l'oublie.
+    // Après « Créer » : on l’oublie.
     act(() => reouverte.result.current.oublierBrouillon());
     expect(miroir("avis:nouveau")).toBeNull();
   });
 
-  it("ligne brouillon en base : créée une seule fois à l'ouverture (même en StrictMode), puis auto-enregistrée", async () => {
+  it("ligne brouillon en base : créée une seule fois à l’ouverture (même en StrictMode), puis auto-enregistrée", async () => {
     const creation = differee<string>();
     const creerBrouillon = vi.fn(() => creation.promesse);
     const enregistrer = vi.fn(async () => {});
@@ -260,7 +260,7 @@ describe("useModalAutosave — création", () => {
     await avancer(0);
     expect(creerBrouillon).toHaveBeenCalledOnce();
 
-    // Saisie avant la réponse de la création : elle attend l'identifiant.
+    // Saisie avant la réponse de la création : elle attend l’identifiant.
     act(() => result.current.modifier({ nom: "Titre" }));
     await avancer(800);
     expect(enregistrer).not.toHaveBeenCalled();

@@ -89,7 +89,7 @@ describe("decisionAcces", () => {
     expect(decisionAcces(etat({ avaitSession: true }))).toEqual({ type: "rediriger", vers: "/admin/connexion?raison=session_expiree" });
   });
 
-  it("distingue une panne du serveur d'auth", () => {
+  it("distingue une panne du serveur d’auth", () => {
     expect(decisionAcces(etat({ avaitSession: true, indisponible: true }))).toEqual({ type: "rediriger", vers: "/admin/connexion?raison=indisponible" });
   });
 

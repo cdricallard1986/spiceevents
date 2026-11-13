@@ -9,7 +9,7 @@ type Props = {
   sizes: string;
   className?: string;
   priority?: boolean;
-  /** Remplit son parent (qui doit être `relative`) au lieu d'avoir sa taille propre. */
+  /** Remplit son parent (qui doit être `relative`) au lieu d’avoir sa taille propre. */
   remplir?: boolean;
   /** Point gardé au recadrage (`object-position`, ex. « 50% 25% »), par défaut le centre. */
   cadrage?: string;

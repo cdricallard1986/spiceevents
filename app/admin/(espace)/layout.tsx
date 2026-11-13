@@ -5,8 +5,8 @@ import { nombreNouvellesDemandes } from "./demandes/actions";
 import { CoqueAdmin } from "@/components/admin/CoqueAdmin";
 
 /**
- * Pages du back office (tout sauf la connexion) : réservées à l'administrateur.
- * Chaque page appelle aussi `exigerAdmin()` (une mise en page n'est pas
+ * Pages du back office (tout sauf la connexion) : réservées à l’administrateur.
+ * Chaque page appelle aussi `exigerAdmin()` (une mise en page n’est pas
  * réévaluée à chaque navigation) ; la vérification est mise en cache par requête.
  */
 export default async function LayoutEspace({ children }: { children: React.ReactNode }) {

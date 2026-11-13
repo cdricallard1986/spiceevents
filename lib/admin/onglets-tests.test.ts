@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { etatPastilleConfiguration, etatPastilleSuite, etatPastilleUnitaires, ongletDepuis, ongletVoisin, pastille } from "./onglets-tests";
 
 describe("ongletDepuis", () => {
-  it("lit l'onglet de l'adresse, sinon le premier", () => {
+  it("lit l’onglet de l’adresse, sinon le premier", () => {
     expect(ongletDepuis("droits")).toBe("droits");
     expect(ongletDepuis(["configuration", "sql"])).toBe("configuration");
     expect(ongletDepuis(undefined)).toBe("sql");
@@ -27,7 +27,7 @@ describe("pastilles", () => {
     expect(pastille({ type: "ok", total: 703 }).signe).toBe("✓ 703");
     expect(pastille({ type: "echec", nombre: 2 })).toEqual({ signe: "✗ 2", ton: "erreur", libelle: "2 échecs" });
     expect(pastille({ type: "en_cours" }).signe).toBe("…");
-    expect(pastille({ type: "erreur" })).toEqual({ signe: "!", ton: "erreur", libelle: "n'a pas pu s'exécuter" });
+    expect(pastille({ type: "erreur" })).toEqual({ signe: "!", ton: "erreur", libelle: "n’a pas pu s’exécuter" });
     expect(pastille({ type: "absent" }).ton).toBe("neutre");
   });
 
@@ -45,7 +45,7 @@ describe("pastilles", () => {
     expect(etatPastilleUnitaires({ succes: false, totaux: { total: 700, echoues: 0 }, fichiersEnErreur: 1 })).toEqual({ type: "echec", nombre: 1 });
   });
 
-  it("configuration : chaque secret absent est un échec, une valeur par défaut n'en est pas un", () => {
+  it("configuration : chaque secret absent est un échec, une valeur par défaut n’en est pas un", () => {
     expect(etatPastilleConfiguration([{ secret: true, presente: true }, { secret: false, presente: false }])).toEqual({ type: "ok" });
     expect(etatPastilleConfiguration([{ secret: true, presente: false }, { secret: true, presente: false }])).toEqual({ type: "echec", nombre: 2 });
   });

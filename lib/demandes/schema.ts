@@ -2,7 +2,7 @@ import { z } from "zod";
 import { LIMITE_NOTE, STATUTS } from "./constantes";
 
 /**
- * Validation du suivi d'une demande (Server Action du back office), alignée sur
+ * Validation du suivi d’une demande (Server Action du back office), alignée sur
  * la migration 0005 : statut parmi cinq valeurs, note interne de 5 000
  * caractères au plus. Seules ces deux colonnes peuvent être écrites — la base
  * le garantit aussi (droit `update` limité à ces colonnes).

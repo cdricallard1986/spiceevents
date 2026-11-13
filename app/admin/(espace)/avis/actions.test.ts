@@ -2,8 +2,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
  * Server Actions des avis, avec une garde et un client Supabase simulés :
- * garde d'abord, Zod ensuite, écriture par le client de session, puis
- * revalidation de l'étiquette « avis ».
+ * garde d’abord, Zod ensuite, écriture par le client de session, puis
+ * revalidation de l’étiquette « avis ».
  */
 
 type Appel = { table: string; operations: [string, unknown[]][] };
@@ -15,7 +15,7 @@ const etat = vi.hoisted(() => ({
   admin: true,
 }));
 
-/** Client simulé : enregistre chaque chaîne d'appels (`from("avis").update(…).eq(…)…`) et répond via `etat.repondre`. */
+/** Client simulé : enregistre chaque chaîne d’appels (`from("avis").update(…).eq(…)…`) et répond via `etat.repondre`. */
 function fauxClient() {
   return {
     from(table: string) {
@@ -96,9 +96,9 @@ describe("garde et validation", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("une entrée invalide n'écrit rien et renvoie les erreurs par champ", async () => {
+  it("une entrée invalide n’écrit rien et renvoie les erreurs par champ", async () => {
     const r = await enregistrerAvis(ID, { ...FICHE, auteurs: "", lien_source: "javascript:alert(1)" });
-    expect(r).toMatchObject({ ok: false, message: "Indiquez les auteurs de l'avis.", erreurs: { auteurs: expect.any(String), lien_source: expect.any(String) } });
+    expect(r).toMatchObject({ ok: false, message: "Indiquez les auteurs de l’avis.", erreurs: { auteurs: expect.any(String), lien_source: expect.any(String) } });
     expect(await enregistrerAvis("pas-un-uuid", FICHE)).toMatchObject({ ok: false });
     expect(await changerPublication({ id: ID, publie: "oui" })).toMatchObject({ ok: false });
     expect(await supprimerAvis({ id: ID })).toMatchObject({ ok: false });
@@ -109,7 +109,7 @@ describe("garde et validation", () => {
 });
 
 describe("enregistrerAvis", () => {
-  it("met à jour l'avis avec les valeurs validées, puis régénère les pages", async () => {
+  it("met à jour l’avis avec les valeurs validées, puis régénère les pages", async () => {
     const r = await enregistrerAvis(ID, { ...FICHE, auteurs: "  Pierre & Nina  " });
     expect(r).toEqual({ ok: true, avis: LIGNE, retraits: [] });
     const [maj] = etat.appels;
@@ -120,7 +120,7 @@ describe("enregistrerAvis", () => {
     expect(revalidateTag).toHaveBeenCalledWith("avis");
   });
 
-  it("un grand avis coché est retiré, dans la même action, à l'avis qui l'avait", async () => {
+  it("un grand avis coché est retiré, dans la même action, à l’avis qui l’avait", async () => {
     etat.repondre = (appel) => {
       if (operations(appel).includes("overlaps")) return { data: [{ id: AUTRE, auteurs: "Harold & David", emplacements: ["accueil_grand", "mariages"] }], error: null };
       return { data: LIGNE, error: null };
@@ -148,7 +148,7 @@ describe("enregistrerAvis", () => {
     expect(revalidateTag).not.toHaveBeenCalled();
   });
 
-  it("si le retrait à l'autre avis échoue, l'avis reste enregistré et un avertissement le dit", async () => {
+  it("si le retrait à l’autre avis échoue, l’avis reste enregistré et un avertissement le dit", async () => {
     etat.repondre = (appel) => (operations(appel).includes("overlaps") ? { data: null, error: { message: "réseau" } } : { data: LIGNE, error: null });
     const r = await enregistrerAvis(ID, { ...FICHE, emplacements: ["option:photobooth"] });
     expect(r).toMatchObject({ ok: true, retraits: [], avertissement: expect.stringContaining("décochez-le à la main") });
@@ -156,7 +156,7 @@ describe("enregistrerAvis", () => {
 });
 
 describe("creerAvis", () => {
-  it("crée l'avis NON publié, à la fin de la liste", async () => {
+  it("crée l’avis NON publié, à la fin de la liste", async () => {
     etat.repondre = (appel) => (operations(appel).includes("limit") ? { data: [{ ordre: 430 }], error: null } : { data: LIGNE, error: null });
     const r = await creerAvis({ ...FICHE, publie: true, ordre: 1 });
     expect(r).toMatchObject({ ok: true, avis: LIGNE });

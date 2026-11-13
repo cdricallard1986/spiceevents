@@ -25,21 +25,21 @@ import { slugLibre } from "@/lib/journal/slug";
 import { BUCKET_MEDIAS } from "@/lib/photos/constantes";
 import { schemaDemandeEnvoi, schemaIdPhoto } from "@/lib/photos/schema";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
-// appelable par n'importe qui avec n'importe quels arguments. Chaque export :
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public,
+// appelable par n’importe qui avec n’importe quels arguments. Chaque export :
 // `exigerAdmin()` en tête, puis Zod (lib/journal/schema.ts : champs, document
-// de l'éditeur, identifiant), écriture avec le client de SESSION (RLS :
+// de l’éditeur, identifiant), écriture avec le client de SESSION (RLS :
 // est_admin()) — jamais la clé service_role —, puis `revalidateTag("articles")`
 // dès que le site public peut changer.
 //
-// Aucune photo ne transite par ici : le navigateur l'envoie directement à
-// Storage avec l'URL signée de `creerUrlEnvoiArticle` (limite de 4,5 Mo de Vercel).
+// Aucune photo ne transite par ici : le navigateur l’envoie directement à
+// Storage avec l’URL signée de `creerUrlEnvoiArticle` (limite de 4,5 Mo de Vercel).
 
 type Supabase = ContexteAdmin["supabase"];
 type ErreurSupabase = { code?: string; message: string; statusCode?: string; status?: number };
 
 const LISTE = "/admin/journal";
-const SLUG_FIGE = "L'adresse d'un article publié ne change plus (Google et les liens vers l'article pointent dessus).";
+const SLUG_FIGE = "L’adresse d’un article publié ne change plus (Google et les liens vers l’article pointent dessus).";
 
 /** Message clair pour Cédric (le détail technique part dans les journaux du serveur). */
 function echec(action: string, e: ErreurSupabase): ResultatEchec {
@@ -49,7 +49,7 @@ function echec(action: string, e: ErreurSupabase): ResultatEchec {
   if (e.code === "23514") {
     if (/adresse/i.test(e.message)) return { ok: false, message: SLUG_FIGE, erreurs: { slug: SLUG_FIGE } };
     if (/publie_complet/.test(e.message)) return { ok: false, message: "Un article publié doit rester complet (titre, description, catégorie, date, couverture et son texte alternatif)." };
-    return { ok: false, message: "La base a refusé l'article : une valeur dépasse ses limites (longueur, adresse, catégorie, photo)." };
+    return { ok: false, message: "La base a refusé l’article : une valeur dépasse ses limites (longueur, adresse, catégorie, photo)." };
   }
   return { ok: false, message: `${action} impossible : la base ne répond pas. Réessayez dans un instant.` };
 }
@@ -72,7 +72,7 @@ async function slugsPris(supabase: Supabase, base: string, id: string): Promise<
   return new Set((data ?? []).map((l) => String(l.slug)));
 }
 
-/** « Nouvel article » : une ligne brouillon tout de suite (adresse provisoire, titre vide, date du jour), puis l'éditeur. */
+/** « Nouvel article » : une ligne brouillon tout de suite (adresse provisoire, titre vide, date du jour), puis l’éditeur. */
 export async function creerArticle(): Promise<ResultatCreationArticle> {
   const { supabase } = await exigerAdmin();
   for (let essai = 0; essai < 3; essai++) {
@@ -83,15 +83,15 @@ export async function creerArticle(): Promise<ResultatCreationArticle> {
       return { ok: true, id: String(data.id) };
     }
     // Adresse provisoire déjà prise (hasard) : on en tire une autre.
-    if (error?.code !== "23505") return echec("Création de l'article", error ?? { message: "réponse vide" });
+    if (error?.code !== "23505") return echec("Création de l’article", error ?? { message: "réponse vide" });
   }
-  return { ok: false, message: "Création de l'article impossible : réessayez." };
+  return { ok: false, message: "Création de l’article impossible : réessayez." };
 }
 
 /**
- * Enregistrement automatique de l'éditeur (tous les champs et le document).
- * L'adresse :
- * - d'un article déjà publié une fois ne change plus (et la base le refuse aussi) ;
+ * Enregistrement automatique de l’éditeur (tous les champs et le document).
+ * L’adresse :
+ * - d’un article déjà publié une fois ne change plus (et la base le refuse aussi) ;
  * - qui suit le titre (`slugAuto`) prend un numéro si elle est déjà prise (`-2`, `-3`…) ;
  * - saisie à la main et déjà prise : refusée, avec une proposition libre.
  * Un article en ligne reste complet : ce qui manquerait est signalé champ par champ.
@@ -118,11 +118,11 @@ export async function enregistrerArticle(id: unknown, champs: unknown): Promise<
   }
   if (slug !== actuel.slug) {
     const prises = await slugsPris(supabase, slug, idValide.data);
-    if (!(prises instanceof Set)) return echec("Vérification de l'adresse", prises);
+    if (!(prises instanceof Set)) return echec("Vérification de l’adresse", prises);
     if (prises.has(slug)) {
       const libre = slugLibre(slug, prises);
       if (!slugAuto) {
-        const message = `L'adresse ${adressePublique(slug)} est déjà prise par un autre article. Proposition : ${libre}`;
+        const message = `L’adresse ${adressePublique(slug)} est déjà prise par un autre article. Proposition : ${libre}`;
         return { ok: false, message, erreurs: { slug: message } };
       }
       slug = libre;
@@ -132,15 +132,15 @@ export async function enregistrerArticle(id: unknown, champs: unknown): Promise<
   const { data, error: erreurMaj } = await supabase.from("articles").update({ ...v.champs, slug }).eq("id", idValide.data).select(COLONNES_ARTICLE_ADMIN).maybeSingle();
   if (erreurMaj) return echec("Enregistrement", erreurMaj);
   if (!data) return INTROUVABLE;
-  // Un brouillon n'est pas sur le site : rien à régénérer.
+  // Un brouillon n’est pas sur le site : rien à régénérer.
   if (actuel.statut === "publie") revalidateTag(ETIQUETTE_ARTICLES);
   return { ok: true, article: data as LigneArticleAdmin };
 }
 
 /**
- * Publication (confirmée dans l'interface) : l'article doit être complet ;
+ * Publication (confirmée dans l’interface) : l’article doit être complet ;
  * sinon, la liste de ce qui manque. La date de première publication est
- * posée une seule fois : l'adresse est alors figée.
+ * posée une seule fois : l’adresse est alors figée.
  */
 export async function publierArticle(id: unknown): Promise<ResultatArticle> {
   const { supabase } = await exigerAdmin();
@@ -153,9 +153,9 @@ export async function publierArticle(id: unknown): Promise<ResultatArticle> {
   if (article.statut === "publie") return { ok: true, article };
 
   const v = validerChampsArticle(article);
-  if (!v.ok) return { ok: false, message: `L'article ne peut pas être publié : ${premiereErreur(v.erreurs)}`, erreurs: v.erreurs };
+  if (!v.ok) return { ok: false, message: `L’article ne peut pas être publié : ${premiereErreur(v.erreurs)}`, erreurs: v.erreurs };
   const manque = verifierPublication(v.champs);
-  if (estSlugProvisoire(article.slug)) manque.slug = "Choisissez l'adresse de l'article avant de le publier : elle ne changera plus ensuite.";
+  if (estSlugProvisoire(article.slug)) manque.slug = "Choisissez l’adresse de l’article avant de le publier : elle ne changera plus ensuite.";
   if (Object.keys(manque).length > 0) return { ok: false, message: messageManques(manque), erreurs: manque };
 
   const { data, error: erreurMaj } = await supabase
@@ -171,7 +171,7 @@ export async function publierArticle(id: unknown): Promise<ResultatArticle> {
   return { ok: true, article: data as LigneArticleAdmin };
 }
 
-/** Retirer du site (confirmé) : l'article redevient un brouillon ; son adresse reste figée et renvoie une page introuvable. */
+/** Retirer du site (confirmé) : l’article redevient un brouillon ; son adresse reste figée et renvoie une page introuvable. */
 export async function retirerArticle(id: unknown): Promise<ResultatArticle> {
   const { supabase } = await exigerAdmin();
   const idValide = schemaIdArticle.safeParse(id);
@@ -204,20 +204,20 @@ export async function supprimerArticle(id: unknown): Promise<ResultatSuppression
   return { ok: true, id: idValide.data };
 }
 
-/** URL signée pour envoyer UNE photo d'article (couverture ou texte) directement à Storage, sous `journal/<aaaa>/<mm>/…`. */
+/** URL signée pour envoyer UNE photo d’article (couverture ou texte) directement à Storage, sous `journal/<aaaa>/<mm>/…`. */
 export async function creerUrlEnvoiArticle(entree: unknown): Promise<ResultatUrlEnvoiArticle> {
   const { supabase } = await exigerAdmin();
   const v = schemaDemandeEnvoi.safeParse(entree);
   if (!v.success) return invalide(v.error.issues[0]?.message);
   const chemin = cheminEnvoiArticle(v.data.type, new Date(), randomBytes(6).toString("hex"));
   const { data, error } = await supabase.storage.from(BUCKET_MEDIAS).createSignedUploadUrl(chemin);
-  if (error || !data) return echec("Préparation de l'envoi", error ?? { message: "réponse vide" });
+  if (error || !data) return echec("Préparation de l’envoi", error ?? { message: "réponse vide" });
   return { ok: true, chemin: data.path, jeton: data.token };
 }
 
 /**
  * Couverture choisie dans la photothèque : une photo ENVOYÉE (`galeries/…`)
- * est copiée dans le dossier du journal du bucket (la couverture n'accepte que
+ * est copiée dans le dossier du journal du bucket (la couverture n’accepte que
  * `journal/…`), sans passer par le navigateur. Une photo du site est envoyée
  * par le navigateur, comme une nouvelle photo.
  */

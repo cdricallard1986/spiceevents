@@ -17,7 +17,7 @@ function rendre(action: Action) {
 }
 
 describe("FormulaireOubli", () => {
-  it("envoie l'adresse saisie, puis affiche la réponse unique (le compte existe ou non)", async () => {
+  it("envoie l’adresse saisie, puis affiche la réponse unique (le compte existe ou non)", async () => {
     const action = vi.fn<Action>(async () => ({ statut: "envoye", message: "Si cette adresse correspond au compte…" }));
     rendre(action);
     fireEvent.change(screen.getByLabelText("Email"), { target: { value: "cedric@spiceevents.fr" } });

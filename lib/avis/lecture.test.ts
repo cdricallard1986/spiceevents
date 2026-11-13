@@ -36,13 +36,13 @@ beforeEach(() => {
 });
 
 describe("lecture des avis publiés", () => {
-  it("mise en cache sous l'étiquette « avis », régénérée au plus tard toutes les heures", () => {
+  it("mise en cache sous l’étiquette « avis », régénérée au plus tard toutes les heures", () => {
     expect(cache.options).toEqual({ tags: [ETIQUETTE_AVIS], revalidate: REVALIDATION_AVIS });
     expect(ETIQUETTE_AVIS).toBe("avis");
     expect(REVALIDATION_AVIS).toBe(3600);
   });
 
-  it("sans Supabase dans l'environnement : les fichiers de secours, sans aucune requête", async () => {
+  it("sans Supabase dans l’environnement : les fichiers de secours, sans aucune requête", async () => {
     const liste = await avisPublies({});
     expect(liste).toHaveLength(43);
     expect(requete.appels).toEqual([]);

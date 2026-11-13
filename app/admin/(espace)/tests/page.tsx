@@ -20,9 +20,9 @@ type Props = { searchParams: Promise<Record<string, string | string[] | undefine
 
 /**
  * Tableau de santé du site, en onglets : comportements SQL et audit des droits
- * (joués sur la vraie base dès l'ouverture), tests unitaires du dernier build,
- * configuration de l'environnement. La pastille de chaque onglet donne le
- * verdict sans l'ouvrir.
+ * (joués sur la vraie base dès l’ouverture), tests unitaires du dernier build,
+ * configuration de l’environnement. La pastille de chaque onglet donne le
+ * verdict sans l’ouvrir.
  */
 export default async function PageTests({ searchParams }: Props) {
   await exigerAdmin();
@@ -37,10 +37,10 @@ export default async function PageTests({ searchParams }: Props) {
         section={section}
         intro={
           <>
-            D&apos;un coup d&apos;œil : la base refuse-t-elle bien ce qu&apos;elle doit refuser, et les tests automatiques passent-ils ? La pastille de chaque
-            onglet donne le verdict sans l&apos;ouvrir ; les deux premiers interrogent la vraie base dès l&apos;ouverture de la page.
+            D’un coup d’œil : la base refuse-t-elle bien ce qu’elle doit refuser, et les tests automatiques passent-ils ? La pastille de chaque
+            onglet donne le verdict sans l’ouvrir ; les deux premiers interrogent la vraie base dès l’ouverture de la page.
             <span className="mt-2 block text-sm text-sable/80">
-              Les mêmes audits tournent à chaque commit (job « Audits base » de la vérification GitHub) : l&apos;audit côté visiteur toujours, les
+              Les mêmes audits tournent à chaque commit (job « Audits base » de la vérification GitHub) : l’audit côté visiteur toujours, les
               comportements SQL dès que le secret <code className="font-mono">supabase_service_role_key</code> est défini dans GitHub.
             </span>
           </>
@@ -66,7 +66,7 @@ export default async function PageTests({ searchParams }: Props) {
                         </span>
                       </p>
                     ) : (
-                      <p className="text-sm text-sable">Rapport non encore généré : il l&apos;est à chaque build, avant la mise en ligne.</p>
+                      <p className="text-sm text-sable">Rapport non encore généré : il l’est à chaque build, avant la mise en ligne.</p>
                     )}
                     <p className="mt-1 text-sm text-sable">
                       {resume

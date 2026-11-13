@@ -6,13 +6,13 @@ const PANS = EQUIPE_INITIALE.find((m) => m.nom === "DJ Pan's")!;
 const KEVIN = EQUIPE_INITIALE.find((m) => m.nom === "Kevin R.")!;
 const ANGEL = EQUIPE_INITIALE.find((m) => m.nom === "Angel")!;
 
-describe("carte d'un membre sur la page Nos DJ", () => {
+describe("carte d’un membre sur la page Nos DJ", () => {
   it("français : textes, paragraphes, avis, lien, photo du site avec son cadrage", () => {
     const c = carteEquipe(PANS, "fr");
-    expect(c).toMatchObject({ nom: "DJ Pan's", alias: "Aurélien", role: "DJ, avec guitariste", accroche: "Let's rock\u202F!", lien: { href: "https://www.facebook.com/djpans", libelle: "Sa page Facebook" } });
+    expect(c).toMatchObject({ nom: "DJ Pan’s", alias: "Aurélien", role: "DJ, avec guitariste", accroche: "Let’s rock\u202F!", lien: { href: "https://www.facebook.com/djpans", libelle: "Sa page Facebook" } });
     expect(c.paragraphes).toHaveLength(2);
     expect(c.avis?.auteur).toBe("Juliette, mariage de septembre 2022");
-    expect(c.photo).toEqual({ src: "/images/dj-pans.jpg", width: 1200, height: 1800, alt: "DJ Pan's, DJ, avec guitariste de l'équipe Spice Events" });
+    expect(c.photo).toEqual({ src: "/images/dj-pans.jpg", width: 1200, height: 1800, alt: "DJ Pan’s, DJ, avec guitariste de l’équipe Spice Events" });
     expect(c.cadrage).toBe("50% 30%");
   });
 

@@ -26,12 +26,12 @@ type Props = {
   erreurs: ErreursAvis;
   /** Tous les avis : pour indiquer qui occupe un emplacement unique. */
   liste: readonly Avis[];
-  /** L'avis ouvert (absent en création). */
+  /** L’avis ouvert (absent en création). */
   avis?: Avis;
 };
 
 /**
- * Champs d'un avis (modales d'édition et de création). Contrôlés par
+ * Champs d’un avis (modales d’édition et de création). Contrôlés par
  * `useModalAutosave` : ils restent toujours éditables, même pendant un
  * enregistrement. Erreurs : bordure rouge + message sous le champ.
  */
@@ -73,13 +73,13 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
           )}
         </Champ>
 
-        <Champ id={champ("date_avis")} libelle="Date de l'avis" erreur={erreurs.date_avis} aide="Facultative.">
+        <Champ id={champ("date_avis")} libelle="Date de l’avis" erreur={erreurs.date_avis} aide="Facultative.">
           {(attributs) => <input {...attributs} type="date" value={valeur.date_avis} onChange={(e) => modifier({ date_avis: e.target.value })} />}
         </Champ>
 
         <Champ
           id={champ("lien_source")}
-          libelle="Lien vers l'avis d'origine"
+          libelle="Lien vers l’avis d’origine"
           erreur={erreurs.lien_source}
           max={LIMITES_AVIS.lien}
           valeur={valeur.lien_source}
@@ -100,7 +100,7 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
         </Champ>
       </div>
 
-      <Groupe titre="Rôle" aide="Pour un avis professionnel : la fonction de l'auteur (« Responsable communication »). Vide pour les mariés.">
+      <Groupe titre="Rôle" aide="Pour un avis professionnel : la fonction de l’auteur (« Responsable communication »). Vide pour les mariés.">
         <Champ id={champ("role_fr")} libelle="Rôle — français" erreur={erreurs.role_fr} max={LIMITES_AVIS.role} valeur={valeur.role_fr}>
           {(attributs) => <input {...attributs} type="text" value={valeur.role_fr} onChange={(e) => modifier({ role_fr: e.target.value })} />}
         </Champ>
@@ -109,7 +109,7 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
         </Champ>
       </Groupe>
 
-      <Groupe titre="Texte de l'avis" aide="Le texte complet, affiché sur la page Avis.">
+      <Groupe titre="Texte de l’avis" aide="Le texte complet, affiché sur la page Avis.">
         <Champ id={champ("texte_fr")} libelle="Texte — français" erreur={erreurs.texte_fr} max={LIMITES_AVIS.texte} valeur={valeur.texte_fr}>
           {(attributs) => <textarea {...attributs} rows={7} value={valeur.texte_fr} onChange={(e) => modifier({ texte_fr: e.target.value })} />}
         </Champ>
@@ -127,7 +127,7 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
 
       <Groupe
         titre="Citation mise en avant"
-        aide="L'extrait affiché dans les grands avis et les grilles (accueil, Mariages, pages d'animation). Vide = début de l'avis."
+        aide="L’extrait affiché dans les grands avis et les grilles (accueil, Mariages, pages d’animation). Vide = début de l’avis."
       >
         <Champ
           id={champ("citation_fr")}
@@ -135,7 +135,7 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
           erreur={erreurs.citation_fr}
           max={LIMITES_AVIS.citation}
           valeur={valeur.citation_fr}
-          aide="Vide = début de l'avis."
+          aide="Vide = début de l’avis."
         >
           {(attributs) => <textarea {...attributs} rows={3} value={valeur.citation_fr} onChange={(e) => modifier({ citation_fr: e.target.value })} />}
         </Champ>
@@ -145,7 +145,7 @@ export function FicheAvis({ valeur, modifier, erreurs, liste, avis }: Props) {
           erreur={erreurs.citation_en}
           max={LIMITES_AVIS.citation}
           valeur={valeur.citation_en}
-          aide="Vide = début de l'avis anglais (sans texte anglais : la citation française)."
+          aide="Vide = début de l’avis anglais (sans texte anglais : la citation française)."
         >
           {(attributs) => <textarea {...attributs} rows={3} lang="en" value={valeur.citation_en} onChange={(e) => modifier({ citation_en: e.target.value })} />}
         </Champ>
@@ -200,10 +200,10 @@ function Emplacements({
 
   return (
     <fieldset className="border-t border-ligne pt-6" aria-describedby={erreur ? idErreur : undefined}>
-      <legend className="pr-3 text-lg font-semibold text-ivoire">Où l&apos;avis apparaît</legend>
+      <legend className="pr-3 text-lg font-semibold text-ivoire">Où l’avis apparaît</legend>
       <p className={`${CLASSES_AIDE} -mt-1 mb-5`}>
         La page Avis montre tous les avis publiés. Cochez en plus les pages où celui-ci est mis en avant. Un grand avis et une page
-        d&apos;animation n&apos;en montrent qu&apos;un : le cocher ici le retire de l&apos;avis qui l&apos;avait.
+        d’animation n’en montrent qu’un : le cocher ici le retire de l’avis qui l’avait.
       </p>
       <div className={`grid gap-6 lg:grid-cols-2 ${erreur ? "border border-erreur p-4" : ""}`}>
         {groupes.map((g) => (
@@ -249,7 +249,7 @@ function Emplacements({
       </div>
       {uniqueCocheNonPublie && (
         <p className="mt-5 border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-          Cet avis n&apos;est pas publié : tant qu&apos;il ne l&apos;est pas, les grands avis cochés ici ne s&apos;affichent nulle part.
+          Cet avis n’est pas publié : tant qu’il ne l’est pas, les grands avis cochés ici ne s’affichent nulle part.
         </p>
       )}
       {erreur && (

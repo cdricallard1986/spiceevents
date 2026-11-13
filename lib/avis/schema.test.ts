@@ -10,7 +10,7 @@ function erreurs(champs: Partial<FormulaireAvis> | Record<string, unknown>) {
   return r.ok ? {} : r.erreurs;
 }
 
-describe("validation d'un avis", () => {
+describe("validation d’un avis", () => {
   it("accepte une fiche minimale : espaces retirés, champs vides → null, emplacements dédoublonnés", () => {
     const r = validerChampsAvis({ ...valide, role_en: "   ", emplacements: ["accueil", "accueil", "option:photobooth"] });
     expect(r).toEqual({
@@ -33,9 +33,9 @@ describe("validation d'un avis", () => {
   });
 
   it("exige les auteurs et le texte français", () => {
-    expect(erreurs({ auteurs: "  " }).auteurs).toBe("Indiquez les auteurs de l'avis.");
-    expect(erreurs({ texte_fr: "" }).texte_fr).toBe("Le texte français de l'avis est obligatoire.");
-    expect(erreurs({ auteurs: undefined }).auteurs).toBe("Indiquez les auteurs de l'avis.");
+    expect(erreurs({ auteurs: "  " }).auteurs).toBe("Indiquez les auteurs de l’avis.");
+    expect(erreurs({ texte_fr: "" }).texte_fr).toBe("Le texte français de l’avis est obligatoire.");
+    expect(erreurs({ auteurs: undefined }).auteurs).toBe("Indiquez les auteurs de l’avis.");
   });
 
   it("applique les longueurs de la base, en caractères (un émoji compte pour un)", () => {
@@ -50,7 +50,7 @@ describe("validation d'un avis", () => {
     expect(erreurs({ citation_fr: "🎉".repeat(600) }).citation_fr).toBeUndefined();
   });
 
-  it("n'accepte que les catégories et sources de la base", () => {
+  it("n’accepte que les catégories et sources de la base", () => {
     expect(erreurs({ categorie: "anniversaire" }).categorie).toBeDefined();
     expect(erreurs({ source: "facebook" }).source).toBeDefined();
     for (const source of ["site", "mariages_net", "google", "autre"]) expect(erreurs({ source }).source).toBeUndefined();
@@ -70,18 +70,18 @@ describe("validation d'un avis", () => {
     expect(erreurs({ emplacements: ["accueil_grand", "mariages_grand", "option:sonorisation-deportee"] }).emplacements).toBeUndefined();
   });
 
-  it("refuse une entrée qui n'est pas une fiche", () => {
+  it("refuse une entrée qui n’est pas une fiche", () => {
     expect(validerChampsAvis(null)).toMatchObject({ ok: false });
     expect(validerChampsAvis("texte")).toMatchObject({ ok: false });
   });
 
-  it("premier message d'erreur, pour le toast", () => {
+  it("premier message d’erreur, pour le toast", () => {
     expect(premiereErreur({ texte_fr: "A", auteurs: "B" })).toBe("A");
     expect(premiereErreur({})).toBe("Fiche invalide.");
   });
 });
 
-describe("lien vers l'avis d'origine", () => {
+describe("lien vers l’avis d’origine", () => {
   it("vide → aucun lien", () => {
     expect(normaliserLien("  ")).toEqual({ ok: true, lien: null });
   });
@@ -107,7 +107,7 @@ describe("lien vers l'avis d'origine", () => {
     expect(normaliserLien(`https://exemple.fr/${"a".repeat(500)}`)).toMatchObject({ ok: false, message: expect.stringContaining("trop long") });
   });
 
-  it("le schéma de l'avis applique ces règles", () => {
+  it("le schéma de l’avis applique ces règles", () => {
     expect(validerChampsAvis({ ...valide, lien_source: "www.google.com/maps" })).toMatchObject({ ok: true, champs: { lien_source: "https://www.google.com/maps" } });
     expect(erreurs({ lien_source: "javascript:alert(1)" }).lien_source).toContain("https://");
   });
@@ -136,7 +136,7 @@ describe("autres entrées des Server Actions", () => {
 });
 
 describe("fiche de la modale", () => {
-  it("un avis existant devient des chaînes (null → vide), et revient à l'identique après validation", () => {
+  it("un avis existant devient des chaînes (null → vide), et revient à l’identique après validation", () => {
     const a: Avis = {
       id: "1",
       auteurs: "Juliette",
@@ -172,7 +172,7 @@ describe("fiche de la modale", () => {
       lien_source: "https://g.page/r/abc",
       emplacements: ["accueil"],
     });
-    // La fiche ne partage pas le tableau de l'avis.
+    // La fiche ne partage pas le tableau de l’avis.
     f.emplacements.push("mariages");
     expect(a.emplacements).toEqual(["accueil"]);
   });

@@ -13,7 +13,7 @@ describe("plan du site", () => {
     expect(urls).toContain("https://www.spiceevents.fr/en/entertainment/vinyl-bar");
   });
 
-  it("ne publie le journal et le recrutement qu'en français", () => {
+  it("ne publie le journal et le recrutement qu’en français", () => {
     expect(urls).toContain("https://www.spiceevents.fr/journal/un-article");
     expect(urls.some((u) => u.includes("/en/journal") || u.includes("/en/careers"))).toBe(false);
   });
@@ -27,7 +27,7 @@ describe("plan du site", () => {
     });
   });
 
-  it("n'a pas de doublon", () => {
+  it("n’a pas de doublon", () => {
     expect(new Set(urls).size).toBe(urls.length);
   });
 });

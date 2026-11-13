@@ -22,7 +22,7 @@ export function GrandAvis({ citation, auteurs, image, langue }: { citation: stri
   );
 }
 
-/** Grille d'avis (page Avis, bas des pages) : le texte de chaque avis est déjà choisi (citation, extrait ou texte complet). */
+/** Grille d’avis (page Avis, bas des pages) : le texte de chaque avis est déjà choisi (citation, extrait ou texte complet). */
 export function GrilleAvis({ liste }: { liste: AvisAffiche[] }) {
   return (
     <ul className="columns-1 gap-6 md:columns-2 lg:columns-3">

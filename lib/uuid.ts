@@ -1,9 +1,9 @@
 import { createHash } from "node:crypto";
 
 /**
- * UUID v5 (SHA-1, RFC 9562) d'un nom dans un espace de noms : toujours le même
+ * UUID v5 (SHA-1, RFC 9562) d’un nom dans un espace de noms : toujours le même
  * pour le même nom. Sert aux identifiants fixes des imports en base (photos du
- * site, articles du journal) : l'import et les données de secours portent les mêmes.
+ * site, articles du journal) : l’import et les données de secours portent les mêmes.
  */
 export function uuidV5(nom: string, espace: string): string {
   const empreinte = createHash("sha1").update(Buffer.from(espace.replace(/-/g, ""), "hex")).update(nom, "utf8").digest();

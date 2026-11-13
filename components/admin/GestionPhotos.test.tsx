@@ -67,7 +67,7 @@ function rendre(actions = actionsSimulees(), outils = outilsSimules()) {
   return { actions, outils };
 }
 
-/** Photos affichées dans la galerie, dans l'ordre (par leur texte alternatif). */
+/** Photos affichées dans la galerie, dans l’ordre (par leur texte alternatif). */
 const affichees = () =>
   screen.queryAllByRole("button", { name: /^Modifier la photo \d+ : / }).map((b) => b.getAttribute("aria-label")!.replace(/^Modifier la photo \d+ : /, ""));
 
@@ -78,7 +78,7 @@ beforeEach(() => window.localStorage.clear());
 afterEach(cleanup);
 
 describe("GestionPhotos — galeries", () => {
-  it("montre la galerie Mariages dans l'ordre, et change de galerie", () => {
+  it("montre la galerie Mariages dans l’ordre, et change de galerie", () => {
     rendre();
     expect(affichees()).toEqual(["Photo piste", "Photo diner", "Photo envoyee"]);
     const choix = screen.getByLabelText("Emplacement");
@@ -91,10 +91,10 @@ describe("GestionPhotos — galeries", () => {
       "Galerie — Événements",
       "Ouverture de bal spectaculaire",
       "Bar à vinyles",
-      "Livre d'or audio",
+      "Livre d’or audio",
       "Photobooth",
       "Guirlandes lumineuses",
-      "Feux d'artifice de jour",
+      "Feux d’artifice de jour",
       "Sonorisation de cérémonie laïque",
       "Sonorisation déportée",
     ]);
@@ -113,13 +113,13 @@ describe("GestionPhotos — galeries", () => {
     expect(actions.echanger).toHaveBeenCalledWith({ galerie: "galerie_mariages", photoId: "diner", avecId: "piste", sens: "monter" });
   });
 
-  it("retire une photo après confirmation, et prévient si une page d'animation passe sous 2 photos", async () => {
+  it("retire une photo après confirmation, et prévient si une page d’animation passe sous 2 photos", async () => {
     const { actions } = rendre();
     fireEvent.change(screen.getByLabelText("Emplacement"), { target: { value: "option:bar-a-vinyles" } });
     fireEvent.click(screen.getByRole("button", { name: "Retirer de la galerie la photo 1 : Photo vinyles" }));
     const dialogue = screen.getByRole("alertdialog", { name: "Retirer de la galerie ?" });
     expect(dialogue).toHaveTextContent("Elle reste dans la photothèque");
-    expect(dialogue).toHaveTextContent("Il ne restera que 1 photo : la galerie ne s'affichera plus");
+    expect(dialogue).toHaveTextContent("Il ne restera que 1 photo : la galerie ne s’affichera plus");
     expect(actions.retirer).not.toHaveBeenCalled();
     fireEvent.click(within(dialogue).getByRole("button", { name: "Retirer" }));
     await waitFor(() => expect(affichees()).toEqual(["Photo envoyee"]));
@@ -141,7 +141,7 @@ describe("GestionPhotos — galeries", () => {
 });
 
 describe("GestionPhotos — photothèque", () => {
-  it("liste toutes les photos avec le nombre d'emplacements de chacune", () => {
+  it("liste toutes les photos avec le nombre d’emplacements de chacune", () => {
     rendre();
     fireEvent.click(screen.getByRole("button", { name: /^Photothèque/ }));
     const carte = (nom: string) => screen.getByRole("button", { name: `Ouvrir la fiche : ${nom}` }).closest("li")!;
@@ -172,7 +172,7 @@ describe("GestionPhotos — ajout", () => {
     fireEvent.change(champ, { target: { files: [new File(["x"], nom, { type })] } });
   }
 
-  it("envoie une photo directement au stockage, puis l'enregistre dans la galerie avec ses dimensions", async () => {
+  it("envoie une photo directement au stockage, puis l’enregistre dans la galerie avec ses dimensions", async () => {
     const { actions, outils } = rendre();
     fireEvent.click(screen.getByRole("button", { name: "Ajouter des photos" }));
     choisirFichier("maries-sur-la-piste.jpg");
@@ -206,7 +206,7 @@ describe("GestionPhotos — ajout", () => {
     const dialogue = screen.getByRole("dialog");
     expect(within(dialogue).getByLabelText("Texte alternatif — français (obligatoire)")).toHaveValue("");
     fireEvent.click(within(dialogue).getByRole("button", { name: "Envoyer 1 photo" }));
-    await waitFor(() => expect(dialogue).toHaveTextContent("Décrivez la photo (texte alternatif français) avant de l'envoyer."));
+    await waitFor(() => expect(dialogue).toHaveTextContent("Décrivez la photo (texte alternatif français) avant de l’envoyer."));
     expect(actions.creerUrlEnvoi).not.toHaveBeenCalled();
   });
 
@@ -218,7 +218,7 @@ describe("GestionPhotos — ajout", () => {
     expect(screen.queryByLabelText("Texte alternatif — français (obligatoire)")).toBeNull();
   });
 
-  it("après un échec d'enregistrement, un nouvel essai ne renvoie pas le fichier déjà arrivé", async () => {
+  it("après un échec d’enregistrement, un nouvel essai ne renvoie pas le fichier déjà arrivé", async () => {
     const enregistrerPhoto = vi
       .fn()
       .mockResolvedValueOnce({ ok: false, message: "la base ne répond pas" })
@@ -239,7 +239,7 @@ describe("GestionPhotos — ajout", () => {
     fireEvent.click(screen.getByRole("button", { name: "Ajouter des photos" }));
     fireEvent.click(screen.getByRole("button", { name: /^Choisir dans la photothèque/ }));
     const dialogue = screen.getByRole("dialog");
-    // Seule « vinyles » n'est pas dans la galerie Mariages.
+    // Seule « vinyles » n’est pas dans la galerie Mariages.
     expect(within(dialogue).getAllByRole("checkbox")).toHaveLength(1);
     fireEvent.click(within(dialogue).getByRole("checkbox"));
     fireEvent.click(within(dialogue).getByRole("button", { name: "Ajouter 1 photo" }));
@@ -247,7 +247,7 @@ describe("GestionPhotos — ajout", () => {
     await waitFor(() => expect(affichees()).toEqual(["Photo piste", "Photo diner", "Photo envoyee", "Photo vinyles"]));
   });
 
-  it("demande avant d'abandonner des photos choisies mais pas envoyées", () => {
+  it("demande avant d’abandonner des photos choisies mais pas envoyées", () => {
     rendre();
     fireEvent.click(screen.getByRole("button", { name: "Ajouter des photos" }));
     choisirFichier("piste.jpg");
@@ -256,14 +256,14 @@ describe("GestionPhotos — ajout", () => {
   });
 });
 
-describe("GestionPhotos — emplacements dans la fiche d'une photo", () => {
+describe("GestionPhotos — emplacements dans la fiche d’une photo", () => {
   const ouvrir = (nom: string) => {
     fireEvent.click(screen.getByRole("button", { name: /^Photothèque/ }));
     fireEvent.click(screen.getByRole("button", { name: `Ouvrir la fiche : ${nom}` }));
     return screen.getByRole("dialog");
   };
 
-  it("coche les emplacements actuels, ajoute et retire d'un clic", async () => {
+  it("coche les emplacements actuels, ajoute et retire d’un clic", async () => {
     const { actions } = rendre();
     const fiche = ouvrir("Photo vinyles");
     const vinyles = within(fiche).getByRole("checkbox", { name: "Bar à vinyles" });
@@ -280,7 +280,7 @@ describe("GestionPhotos — emplacements dans la fiche d'une photo", () => {
     await waitFor(() => expect(within(fiche).getByRole("checkbox", { name: "Bar à vinyles" })).not.toBeChecked());
   });
 
-  it("propose les diaporamas d'en-tête, mais pas pour une photo trop petite ou en portrait", () => {
+  it("propose les diaporamas d’en-tête, mais pas pour une photo trop petite ou en portrait", () => {
     const petite = photo("petite", { largeur: 1000, hauteur: 1400 });
     render(
       <FournisseurToasts>

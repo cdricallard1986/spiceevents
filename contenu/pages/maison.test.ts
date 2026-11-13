@@ -23,14 +23,14 @@ describe("FAQ", () => {
     expect(FAQ.en.themes.map((t) => t.id)).toEqual(FAQ.fr.themes.map((t) => t.id));
     FAQ.fr.themes.forEach((t, i) => expect(FAQ.en.themes[i].questions).toHaveLength(t.questions.length));
   });
-  it("n'a pas de question en double", () => {
+  it("n’a pas de question en double", () => {
     const toutes = FAQ.fr.themes.flatMap((t) => t.questions.map((q) => q.question));
     expect(new Set(toutes).size).toBe(toutes.length);
   });
 });
 
 describe("galerie", () => {
-  it("n'utilise que des photos existantes, sans doublon", () => {
+  it("n’utilise que des photos existantes, sans doublon", () => {
     const toutes = [...PHOTOS_MARIAGES, ...PHOTOS_EVENEMENTS];
     for (const cle of toutes) expect(IMAGES[cle], cle).toBeDefined();
     expect(new Set(toutes).size).toBe(toutes.length);

@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { LienBackOffice } from "./LienBackOffice";
 
-// La Server Action réelle (Supabase, en-têtes) n'a pas sa place ici : le formulaire est testé à part.
+// La Server Action réelle (Supabase, en-têtes) n’a pas sa place ici : le formulaire est testé à part.
 vi.mock("@/app/admin/connexion/actions", () => ({ seConnecter: vi.fn(async () => ({ statut: "initial" })) }));
 
 afterEach(cleanup);

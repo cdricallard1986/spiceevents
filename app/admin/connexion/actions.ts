@@ -15,15 +15,15 @@ import { emailReinitialisation } from "@/lib/contact/email";
 import { expediteurResend } from "@/lib/contact/resend";
 import { lienReinitialisation, origineDesLiens, traiterReinitialisation, type EtatReinitialisation } from "@/lib/admin/reinitialisation";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public.
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public.
 // Ce sont les trois seules actions admin SANS garde `exigerAdmin()`, par nature :
-// - `seConnecter` est la porte d'entrée (validation Zod, limite des tentatives,
+// - `seConnecter` est la porte d’entrée (validation Zod, limite des tentatives,
 //   durée minimale, vérification de `est_admin()` — logique dans lib/admin/) ;
 // - `demanderReinitialisation` (« Mot de passe oublié ? ») : Zod, limites par IP
 //   et par compte, durée minimale, réponse identique que le compte existe ou
 //   non, lien envoyé aux seuls administrateurs (lib/admin/reinitialisation.ts) ;
 // - `seDeconnecter` ne prend aucun argument et ne ferme que la session de
-//   l'appelant, sur son seul appareil.
+//   l’appelant, sur son seul appareil.
 // Toute autre action admin commence par `await exigerAdmin()` puis Zod.
 
 const TABLE = "tentatives_connexion";
@@ -141,8 +141,8 @@ export async function seDeconnecter(): Promise<void> {
   const supabase = await clientServeur();
   const { error } = await supabase.auth.signOut({ scope: "local" });
   if (error) {
-    // Supabase injoignable : la session n'a pas pu être révoquée côté serveur,
-    // mais cet appareil l'oublie quand même (les cookies sont effacés).
+    // Supabase injoignable : la session n’a pas pu être révoquée côté serveur,
+    // mais cet appareil l’oublie quand même (les cookies sont effacés).
     journal.avertir("[admin] Déconnexion : révocation impossible, cookies effacés localement.", error);
     const magasin = await cookies();
     const nom = nomCookieSession();

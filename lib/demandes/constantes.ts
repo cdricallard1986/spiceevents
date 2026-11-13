@@ -6,7 +6,7 @@
 export const STATUTS = ["nouvelle", "rappelee", "devis_envoye", "signee", "perdue"] as const;
 export type StatutDemande = (typeof STATUTS)[number];
 
-/** Libellé d'une demande (pastille, sélecteur de la fiche). */
+/** Libellé d’une demande (pastille, sélecteur de la fiche). */
 export const LIBELLES_STATUT: Record<StatutDemande, string> = {
   nouvelle: "Nouvelle",
   rappelee: "Rappelée",
@@ -28,7 +28,7 @@ export const LIBELLES_FILTRE: Record<StatutDemande | "toutes", string> = {
 /**
  * Couleur de la pastille de chaque statut, dans la charte Nocturne :
  * une nouvelle demande ressort en orange plein (texte noir), une demande signée en vert, une
- * demande perdue s'efface.
+ * demande perdue s’efface.
  */
 export const COULEURS_STATUT: Record<StatutDemande, string> = {
   nouvelle: "border-or bg-or text-nuit",

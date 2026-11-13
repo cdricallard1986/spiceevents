@@ -22,7 +22,7 @@ export type EtatMotDePasse =
   | { statut: "ok" }
   | { statut: "erreur"; message: string; erreurs: Partial<Record<"nouveau" | "confirmation", string>> };
 
-/** Résultat de Supabase : « ok », même mot de passe qu'avant, mot de passe jugé faible (connu des fuites), connexion trop ancienne, ou refus/indisponibilité. */
+/** Résultat de Supabase : « ok », même mot de passe qu’avant, mot de passe jugé faible (connu des fuites), connexion trop ancienne, ou refus/indisponibilité. */
 export type ResultatMiseAJour = "ok" | "identique" | "faible" | "reconnexion" | "refuse";
 
 /** Les règles affichées sous le champ et cochées pendant la frappe (mêmes que le schéma et Supabase). */
@@ -47,7 +47,7 @@ export function accordSaisies(nouveau: string, confirmation: string): "vide" | "
 
 /**
  * Changement du mot de passe de Cédric, connecté : validation, puis mise à jour par la
- * session (jamais la clé service_role). La garde `exigerAdmin()` est faite par l'action.
+ * session (jamais la clé service_role). La garde `exigerAdmin()` est faite par l’action.
  */
 export async function traiterChangement(
   formulaire: { nouveau: unknown; confirmation: unknown },
@@ -63,11 +63,11 @@ export async function traiterChangement(
     return { statut: "erreur", message: "Le mot de passe ne convient pas.", erreurs };
   }
   const resultat = await mettreAJour(lu.data.nouveau);
-  if (resultat === "identique") return { statut: "erreur", message: "C'est déjà votre mot de passe : choisissez-en un autre.", erreurs: { nouveau: "Identique à l'actuel." } };
+  if (resultat === "identique") return { statut: "erreur", message: "C’est déjà votre mot de passe : choisissez-en un autre.", erreurs: { nouveau: "Identique à l’actuel." } };
   if (resultat === "faible") {
     return { statut: "erreur", message: "Ce mot de passe figure dans des fuites de données connues : choisissez-en un autre.", erreurs: { nouveau: "Mot de passe connu des fuites de données." } };
   }
   if (resultat === "reconnexion") return { statut: "erreur", message: "Par sécurité, reconnectez-vous avant de changer votre mot de passe.", erreurs: {} };
-  if (resultat === "refuse") return { statut: "erreur", message: "Le changement n'a pas pu être fait. Reconnectez-vous, puis réessayez.", erreurs: {} };
+  if (resultat === "refuse") return { statut: "erreur", message: "Le changement n’a pas pu être fait. Reconnectez-vous, puis réessayez.", erreurs: {} };
   return { statut: "ok" };
 }

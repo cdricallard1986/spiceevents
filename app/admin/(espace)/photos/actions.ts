@@ -33,14 +33,14 @@ import {
 } from "@/lib/photos/schema";
 import { COLONNES_LIAISON, COLONNES_PHOTO, type Liaison, type Photo } from "@/lib/photos/types";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
-// appelable par n'importe qui avec n'importe quels arguments. Chaque export :
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public,
+// appelable par n’importe qui avec n’importe quels arguments. Chaque export :
 // `exigerAdmin()` en tête, puis Zod (lib/photos/schema.ts), écriture avec le
 // client de SESSION (RLS et policies Storage : est_admin()) — jamais la clé
 // service_role —, puis `revalidateTag("galeries")`.
 //
-// Aucun fichier ne transite par ici : le navigateur l'envoie directement à
-// Storage avec l'URL signée de `creerUrlEnvoi` (limite de 4,5 Mo de Vercel).
+// Aucun fichier ne transite par ici : le navigateur l’envoie directement à
+// Storage avec l’URL signée de `creerUrlEnvoi` (limite de 4,5 Mo de Vercel).
 
 type ErreurSupabase = { code?: string; message: string; statusCode?: string; status?: number };
 
@@ -66,13 +66,13 @@ export async function creerUrlEnvoi(entree: unknown): Promise<ResultatUrlEnvoi> 
   if (!v.success) return invalide(v.error.issues[0]?.message);
   const chemin = cheminEnvoi(v.data.type, new Date(), randomBytes(6).toString("hex"));
   const { data, error } = await supabase.storage.from(BUCKET_MEDIAS).createSignedUploadUrl(chemin);
-  if (error || !data) return echec("Préparation de l'envoi", error ?? { message: "réponse vide" });
+  if (error || !data) return echec("Préparation de l’envoi", error ?? { message: "réponse vide" });
   return { ok: true, chemin: data.path, jeton: data.token };
 }
 
 /**
- * 2. Après l'envoi : enregistre la photo (métadonnées seules) et, si une galerie
- * est donnée, l'y ajoute en dernière position.
+ * 2. Après l’envoi : enregistre la photo (métadonnées seules) et, si une galerie
+ * est donnée, l’y ajoute en dernière position.
  */
 export async function enregistrerPhoto(entree: unknown): Promise<ResultatEnregistrement> {
   const { supabase } = await exigerAdmin();
@@ -88,7 +88,7 @@ export async function enregistrerPhoto(entree: unknown): Promise<ResultatEnregis
   const present = await supabase.storage.from(BUCKET_MEDIAS).exists(chemin);
   if (present.data !== true) {
     if (present.error && present.error.status !== 400 && present.error.status !== 404) return echec("Vérification du fichier", present.error);
-    return { ok: false, message: "Le fichier n'est pas arrivé dans le stockage : renvoyez la photo." };
+    return { ok: false, message: "Le fichier n’est pas arrivé dans le stockage : renvoyez la photo." };
   }
 
   const { data, error } = await supabase
@@ -102,11 +102,11 @@ export async function enregistrerPhoto(entree: unknown): Promise<ResultatEnregis
   let liaison: Liaison | null = null;
   let avertissement: string | undefined;
   if (galerie && estGalerieEntete(galerie) && !convientEnTete(photo)) {
-    avertissement = `La photo est enregistrée dans la photothèque, mais pas ajoutée à l'en-tête : ${MESSAGE_ENTETE_INADAPTEE}`;
+    avertissement = `La photo est enregistrée dans la photothèque, mais pas ajoutée à l’en-tête : ${MESSAGE_ENTETE_INADAPTEE}`;
   } else if (galerie) {
     const r = await lierEnFin(supabase, galerie, [photo.id]);
     if (r.ok) liaison = r.liaisons[0] ?? null;
-    else avertissement = `La photo est enregistrée dans la photothèque, mais n'a pas pu être ajoutée à la galerie : ajoutez-la depuis la photothèque. (${r.message})`;
+    else avertissement = `La photo est enregistrée dans la photothèque, mais n’a pas pu être ajoutée à la galerie : ajoutez-la depuis la photothèque. (${r.message})`;
   }
   revalidateTag(ETIQUETTE_GALERIES);
   return { ok: true, photo, liaison, ...(avertissement ? { avertissement } : {}) };
@@ -114,7 +114,7 @@ export async function enregistrerPhoto(entree: unknown): Promise<ResultatEnregis
 
 type Supabase = Awaited<ReturnType<typeof exigerAdmin>>["supabase"];
 
-/** Ajoute des photos à la fin d'une galerie (dans l'ordre donné). */
+/** Ajoute des photos à la fin d’une galerie (dans l’ordre donné). */
 async function lierEnFin(supabase: Supabase, galerie: string, photoIds: readonly string[]): Promise<ResultatAjout> {
   const { data: dernier, error: erreurOrdre } = await supabase.from("galeries_photos").select("ordre").eq("galerie", galerie).order("ordre", { ascending: false }).limit(1);
   if (erreurOrdre) return echec("Ajout à la galerie", erreurOrdre);
@@ -125,7 +125,7 @@ async function lierEnFin(supabase: Supabase, galerie: string, photoIds: readonly
   return { ok: true, liaisons: (data ?? []) as Liaison[] };
 }
 
-/** Enregistrement automatique de la fiche d'une photo (textes alternatifs, crédit). */
+/** Enregistrement automatique de la fiche d’une photo (textes alternatifs, crédit). */
 export async function modifierPhoto(id: unknown, champs: unknown): Promise<ResultatPhoto> {
   const { supabase } = await exigerAdmin();
   const idValide = schemaIdPhoto.safeParse(id);
@@ -139,7 +139,7 @@ export async function modifierPhoto(id: unknown, champs: unknown): Promise<Resul
   return { ok: true, photo: data as Photo };
 }
 
-/** Ajoute des photos de la photothèque à la fin d'une galerie (celles qui y sont déjà sont ignorées). */
+/** Ajoute des photos de la photothèque à la fin d’une galerie (celles qui y sont déjà sont ignorées). */
 export async function ajouterAGalerie(entree: unknown): Promise<ResultatAjout> {
   const { supabase } = await exigerAdmin();
   const v = schemaAjoutGalerie.safeParse(entree);
@@ -154,7 +154,7 @@ export async function ajouterAGalerie(entree: unknown): Promise<ResultatAjout> {
   // Un en-tête est en plein écran : seulement des photos en paysage, assez grandes.
   if (estGalerieEntete(galerie)) {
     const { data: dims, error: erreurDims } = await supabase.from("photos").select("id, largeur, hauteur").in("id", nouvelles);
-    if (erreurDims) return echec("Ajout à l'en-tête", erreurDims);
+    if (erreurDims) return echec("Ajout à l’en-tête", erreurDims);
     if ((dims ?? []).length !== nouvelles.length) return INTROUVABLE;
     if ((dims ?? []).some((d) => !convientEnTete(d))) return { ok: false, message: MESSAGE_ENTETE_INADAPTEE };
   }
@@ -163,23 +163,23 @@ export async function ajouterAGalerie(entree: unknown): Promise<ResultatAjout> {
   return r;
 }
 
-/** Retire une photo d'une galerie (confirmé dans l'interface) : la photo reste dans la photothèque. */
+/** Retire une photo d’une galerie (confirmé dans l’interface) : la photo reste dans la photothèque. */
 export async function retirerDeGalerie(entree: unknown): Promise<ResultatRetrait> {
   const { supabase } = await exigerAdmin();
   const v = schemaPhotoDansGalerie.safeParse(entree);
   if (!v.success) return INTROUVABLE;
   const { galerie, photoId } = v.data;
 
-  // Un diaporama d'en-tête garde toujours au moins une photo.
+  // Un diaporama d’en-tête garde toujours au moins une photo.
   if (estGalerieEntete(galerie)) {
     const { count: total, error: erreurTotal } = await supabase.from("galeries_photos").select("photo_id", { count: "exact", head: true }).eq("galerie", galerie);
-    if (erreurTotal) return echec("Retrait de l'en-tête", erreurTotal);
-    if ((total ?? 0) <= 1) return { ok: false, message: `${libelleGalerie(galerie)} : c'est la dernière photo. Ajoutez-en une autre avant de retirer celle-ci.` };
+    if (erreurTotal) return echec("Retrait de l’en-tête", erreurTotal);
+    if ((total ?? 0) <= 1) return { ok: false, message: `${libelleGalerie(galerie)} : c’est la dernière photo. Ajoutez-en une autre avant de retirer celle-ci.` };
   }
 
   const { data, error } = await supabase.from("galeries_photos").delete().eq("galerie", galerie).eq("photo_id", photoId).select("photo_id");
   if (error) return echec("Retrait de la galerie", error);
-  if (!data || data.length === 0) return { ok: false, message: "Cette photo n'est déjà plus dans la galerie. Rechargez la page." };
+  if (!data || data.length === 0) return { ok: false, message: "Cette photo n’est déjà plus dans la galerie. Rechargez la page." };
   revalidateTag(ETIQUETTE_GALERIES);
 
   const { count, error: erreurCompte } = await supabase.from("galeries_photos").select("photo_id", { count: "exact", head: true }).eq("galerie", galerie);
@@ -187,7 +187,7 @@ export async function retirerDeGalerie(entree: unknown): Promise<ResultatRetrait
   return { ok: true, galerie, photoId, restantes: count, ...(sousLeMinimum(galerie, count) ? { avertissement: messageMinimum(galerie, count) } : {}) };
 }
 
-/** Monter / descendre : échange le rang de deux photos voisines d'une galerie. */
+/** Monter / descendre : échange le rang de deux photos voisines d’une galerie. */
 export async function echangerOrdrePhotos(entree: unknown): Promise<ResultatEchangePhotos> {
   const { supabase } = await exigerAdmin();
   const v = schemaEchangePhotos.safeParse(entree);
@@ -195,7 +195,7 @@ export async function echangerOrdrePhotos(entree: unknown): Promise<ResultatEcha
   const { galerie, photoId, avecId, sens } = v.data;
 
   const { data, error } = await supabase.from("galeries_photos").select("photo_id, ordre").eq("galerie", galerie).in("photo_id", [photoId, avecId]);
-  if (error) return echec("Changement d'ordre", error);
+  if (error) return echec("Changement d’ordre", error);
   const a = data?.find((l) => l.photo_id === photoId);
   const b = data?.find((l) => l.photo_id === avecId);
   if (!a || !b) return INTROUVABLE;
@@ -205,7 +205,7 @@ export async function echangerOrdrePhotos(entree: unknown): Promise<ResultatEcha
     const { error: e } = await supabase.from("galeries_photos").update({ ordre }).eq("galerie", galerie).eq("photo_id", cible);
     if (e) {
       revalidateTag(ETIQUETTE_GALERIES);
-      return { ...echec("Changement d'ordre", e), message: "Changement d'ordre interrompu : rechargez la page pour voir l'ordre réel." };
+      return { ...echec("Changement d’ordre", e), message: "Changement d’ordre interrompu : rechargez la page pour voir l’ordre réel." };
     }
   }
   revalidateTag(ETIQUETTE_GALERIES);
@@ -213,8 +213,8 @@ export async function echangerOrdrePhotos(entree: unknown): Promise<ResultatEcha
 }
 
 /**
- * Suppression définitive d'une photo ENVOYÉE (confirmée dans l'interface) :
- * le fichier du bucket d'abord, puis la ligne (ses liaisons partent avec elle).
+ * Suppression définitive d’une photo ENVOYÉE (confirmée dans l’interface) :
+ * le fichier du bucket d’abord, puis la ligne (ses liaisons partent avec elle).
  * Une photo du site (fichier livré avec le code) ne se supprime pas.
  */
 export async function supprimerPhoto(id: unknown): Promise<ResultatSuppressionPhoto> {

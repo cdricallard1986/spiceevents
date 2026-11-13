@@ -13,7 +13,7 @@ describe("hrefInterne", () => {
     expect(hrefInterne("/animations/photobooth")).toEqual({ pathname: "/animations/[option]", params: { option: "photobooth" } });
   });
 
-  it("garde l'ancre d'une page connue, et laisse le reste à un simple <a>", () => {
+  it("garde l’ancre d’une page connue, et laisse le reste à un simple <a>", () => {
     expect(hrefInterne("/mariages#methode")).toEqual({ pathname: "/mariages", hash: "methode" });
     expect(hrefInterne("/journal/un-article#partie")).toBeNull();
     expect(hrefInterne("/mariages#")).toBeNull();

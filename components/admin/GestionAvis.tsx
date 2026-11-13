@@ -36,19 +36,19 @@ export type ActionsAvis = {
   echanger: (entree: { id: string; avecId: string; sens: "monter" | "descendre" }) => Promise<ResultatEchange>;
 };
 
-const AIDE_MISE_A_JOUR = "Chaque modification est enregistrée automatiquement ; le site public se met à jour à la visite suivante d'une page.";
+const AIDE_MISE_A_JOUR = "Chaque modification est enregistrée automatiquement ; le site public se met à jour à la visite suivante d’une page.";
 const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session expirée). Rechargez la page puis réessayez.";
 
 /** Message des emplacements uniques retirés à un autre avis. */
 function messageRetrait(r: Retrait): string {
-  return `« ${libelleEmplacement(r.emplacement)} » a été retiré de l'avis de ${r.auteurs} : un seul avis à la fois à cet endroit.`;
+  return `« ${libelleEmplacement(r.emplacement)} » a été retiré de l’avis de ${r.auteurs} : un seul avis à la fois à cet endroit.`;
 }
 
 type Ouverte = { type: "edition"; id: string } | { type: "creation" } | null;
 
 /**
  * Liste des avis du back office : filtres, ordre (flèches), ouverture de la
- * modale d'édition auto-enregistrée, création d'un avis (non publié).
+ * modale d’édition auto-enregistrée, création d’un avis (non publié).
  */
 export function GestionAvis({ avisInitiaux, actions }: { avisInitiaux: Avis[]; actions: ActionsAvis }) {
   const [liste, setListe] = useState<Avis[]>(avisInitiaux);
@@ -61,7 +61,7 @@ export function GestionAvis({ avisInitiaux, actions }: { avisInitiaux: Avis[]; a
   const nbPublies = liste.filter((a) => a.publie).length;
   const avisOuvert = ouverte?.type === "edition" ? liste.find((a) => a.id === ouverte.id) : undefined;
 
-  /** Après un enregistrement : l'avis à jour, et les emplacements retirés aux autres. */
+  /** Après un enregistrement : l’avis à jour, et les emplacements retirés aux autres. */
   function integrer(avis: Avis, retraits: Retrait[]) {
     setListe((l) => {
       const existe = l.some((a) => a.id === avis.id);
@@ -157,14 +157,14 @@ export function GestionAvis({ avisInitiaux, actions }: { avisInitiaux: Avis[]; a
       </div>
 
       <p className="mt-6 text-xs text-sable/80">
-        Les flèches changent l&apos;ordre des avis sur le site (page Avis et grilles). Avec un filtre, un avis s&apos;échange avec son voisin dans la liste
+        Les flèches changent l’ordre des avis sur le site (page Avis et grilles). Avec un filtre, un avis s’échange avec son voisin dans la liste
         affichée.
       </p>
 
       {/* Liste */}
       {visibles.length === 0 ? (
         <p className="mt-4 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
-          {liste.length === 0 ? "Aucun avis pour l'instant : créez le premier avec « Nouvel avis »." : "Aucun avis ne correspond à ces filtres."}
+          {liste.length === 0 ? "Aucun avis pour l’instant : créez le premier avec « Nouvel avis »." : "Aucun avis ne correspond à ces filtres."}
         </p>
       ) : (
         <ul className="mt-4 border border-ligne bg-nuit-2">
@@ -286,7 +286,7 @@ function LigneAvis({
         <button
           type="button"
           onClick={onOuvrir}
-          aria-label={`Modifier l'avis de ${a.auteurs}`}
+          aria-label={`Modifier l’avis de ${a.auteurs}`}
           className={`mt-3 ${classesBouton("lien")}`}
         >
           Modifier →
@@ -294,14 +294,14 @@ function LigneAvis({
       </div>
       {/* Les flèches gardent leur propre action, sans ouvrir la fiche. */}
       <div className="flex shrink-0 flex-col gap-2" onClick={(e) => e.stopPropagation()}>
-        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter l'avis de ${a.auteurs}`} className={CLASSES_FLECHE}>
+        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter l’avis de ${a.auteurs}`} className={CLASSES_FLECHE}>
           ↑
         </button>
         <button
           type="button"
           onClick={() => onDeplacer("descendre")}
           disabled={dernier || enDeplacement}
-          aria-label={`Descendre l'avis de ${a.auteurs}`}
+          aria-label={`Descendre l’avis de ${a.auteurs}`}
           className={CLASSES_FLECHE}
         >
           ↓
@@ -333,7 +333,7 @@ function ModaleEdition({
   const { erreurs, signaler, effacer } = useErreursFiche<ErreursAvis>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
-  // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
+  // Valeur d’ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
   const [initiale] = useState(() => formulaireDepuisAvis(avis));
 
   const fiche = useModalAutosave<FormulaireAvis>({
@@ -368,9 +368,9 @@ function ModaleEdition({
   async function publier(publie: boolean) {
     setEnCours(true);
     try {
-      // D'abord ce qui attend : on publie la fiche telle qu'elle est à l'écran.
+      // D’abord ce qui attend : on publie la fiche telle qu’elle est à l’écran.
       if (!(await fiche.enregistrerMaintenant())) {
-        afficher("La fiche n'est pas enregistrée (pastille rouge) : corrigez-la avant de publier ou de retirer l'avis.", "erreur");
+        afficher("La fiche n’est pas enregistrée (pastille rouge) : corrigez-la avant de publier ou de retirer l’avis.", "erreur");
         return;
       }
       const r = await actions.changerPublication({ id: avis.id, publie });
@@ -448,11 +448,11 @@ function ModaleEdition({
 
       <ConfirmDialog
         ouverte={confirmation === "publier"}
-        titre="Publier l'avis ?"
+        titre="Publier l’avis ?"
         message={
           <p>
-            L&apos;avis de <span className="text-ivoire">{avis.auteurs}</span> apparaîtra sur le site (page Avis et emplacements cochés) dès la visite
-            suivante d&apos;une page.
+            L’avis de <span className="text-ivoire">{avis.auteurs}</span> apparaîtra sur le site (page Avis et emplacements cochés) dès la visite
+            suivante d’une page.
           </p>
         }
         libelleConfirmer="Publier"
@@ -462,10 +462,10 @@ function ModaleEdition({
       />
       <ConfirmDialog
         ouverte={confirmation === "retirer"}
-        titre="Retirer l'avis du site ?"
+        titre="Retirer l’avis du site ?"
         message={
           <p>
-            L&apos;avis de <span className="text-ivoire">{avis.auteurs}</span> n&apos;apparaîtra plus sur le site. Il reste ici, non publié : vous pourrez le
+            L’avis de <span className="text-ivoire">{avis.auteurs}</span> n’apparaîtra plus sur le site. Il reste ici, non publié : vous pourrez le
             republier.
           </p>
         }
@@ -479,8 +479,8 @@ function ModaleEdition({
         titre="Supprimer définitivement ?"
         message={
           <p>
-            L&apos;avis de <span className="text-ivoire">{avis.auteurs}</span> sera supprimé du site et du back office.{" "}
-            <strong className="font-semibold text-erreur">C&apos;est définitif : il ne pourra pas être récupéré.</strong> Pour le cacher sans le perdre,
+            L’avis de <span className="text-ivoire">{avis.auteurs}</span> sera supprimé du site et du back office.{" "}
+            <strong className="font-semibold text-erreur">C’est définitif : il ne pourra pas être récupéré.</strong> Pour le cacher sans le perdre,
             utilisez plutôt « Retirer du site ».
           </p>
         }
@@ -495,7 +495,7 @@ function ModaleEdition({
         titre="Modification non enregistrée"
         message={
           <p>
-            La dernière modification n&apos;a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cet avis.
+            La dernière modification n’a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cet avis.
           </p>
         }
         libelleConfirmer="Fermer quand même"
@@ -557,12 +557,12 @@ function ModaleCreation({
       aside={fiche.statut === "brouillon" ? <PillStatut statut="brouillon" /> : undefined}
       pied={
         <button type="button" onClick={() => void creer()} disabled={enCours} className={`${classesBouton("primaire")} disabled:cursor-wait disabled:opacity-70`}>
-          {enCours ? "Création…" : "Créer l'avis"}
+          {enCours ? "Création…" : "Créer l’avis"}
         </button>
       }
     >
       <p className="mb-6 text-sm text-sable">
-        L&apos;avis sera créé <span className="text-ivoire">non publié</span> : vous le publierez ensuite. En attendant, votre saisie est gardée sur cet
+        L’avis sera créé <span className="text-ivoire">non publié</span> : vous le publierez ensuite. En attendant, votre saisie est gardée sur cet
         appareil.
       </p>
       {fiche.brouillonRestaure && (

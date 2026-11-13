@@ -15,13 +15,13 @@ import {
 const REFUS: ReponseApi = { erreur: { code: "42501", message: "permission denied for table x" } };
 const VIDE: ReponseApi = { erreur: null, lignes: 0 };
 
-/** Clé d'un select : la table, puis le filtre éventuel (`select:avis?publie=false`). */
+/** Clé d’un select : la table, puis le filtre éventuel (`select:avis?publie=false`). */
 function cleSelect(table: string, filtre?: Record<string, string | boolean>) {
   const f = Object.entries(filtre ?? {}).map(([c, v]) => `${c}=${String(v)}`);
   return `select:${table}${f.length ? `?${f.join("&")}` : ""}`;
 }
 
-/** Client simulé : la réponse dépend de l'opération et de la cible. */
+/** Client simulé : la réponse dépend de l’opération et de la cible. */
 function client(
   reponses: Record<string, ReponseApi>,
   parDefaut: ReponseApi = REFUS,
@@ -67,7 +67,7 @@ function baseSaine() {
   return {
     visiteur: client({
       "rpc:audit_trigger": { erreur: { code: "PGRST202", message: "Could not find the function" } },
-      // RLS : l'anonyme voit les 43 avis publiés, aucun avis non publié.
+      // RLS : l’anonyme voit les 43 avis publiés, aucun avis non publié.
       "select:avis?publie=true": { erreur: null, lignes: 43 },
       "select:avis?publie=false": VIDE,
       // Équipe : les 6 fiches publiées, aucune fiche retirée du site.
@@ -92,7 +92,7 @@ function baseSaine() {
       "select:photos": { erreur: null, lignes: 57 },
       "select:galeries_photos": { erreur: null, lignes: 60 },
       "list:medias": { erreur: null, lignes: 1 },
-      // Droit `update` sur statut et note_interne seulement (la ligne visée n'existe pas : 0 ligne modifiée).
+      // Droit `update` sur statut et note_interne seulement (la ligne visée n’existe pas : 0 ligne modifiée).
       "update:demandes_contact(note_interne,statut)": { erreur: null },
     }),
   };
@@ -120,7 +120,7 @@ describe("juger", () => {
     expect(r.constat).toContain("2 lignes visibles");
   });
 
-  it("« refusé » : seul un refus de l'API passe ; un succès est une faille", () => {
+  it("« refusé » : seul un refus de l’API passe ; un succès est une faille", () => {
     expect(juger(v("refusé", "rpc"), { erreur: { code: "PGRST202", message: "x" } }).ok).toBe(true);
     const faille = juger(v("refusé", "rpc"), { erreur: null, valeur: false });
     expect(faille).toMatchObject({ ok: false, faille: true });
@@ -128,7 +128,7 @@ describe("juger", () => {
     expect(juger(v("refusé", "insert"), { erreur: null, id: "1" }).constat).toContain("ligne créée");
   });
 
-  it("une panne ou une erreur inconnue n'est jamais verte (l'audit ne conclut pas sur une panne)", () => {
+  it("une panne ou une erreur inconnue n’est jamais verte (l’audit ne conclut pas sur une panne)", () => {
     for (const attendu of ["refusé", "vide", "autorisé"] as const) {
       const r = juger(v(attendu), { erreur: { message: "TypeError: fetch failed" } });
       expect(r.ok).toBe(false);
@@ -142,7 +142,7 @@ describe("juger", () => {
     expect(juger(v("autorisé"), VIDE)).toEqual({ ok: true, faille: false, constat: "Autorisé : 0 ligne visible" });
     expect(juger(v("autorisé", "rpc", true), { erreur: null, valeur: true }).ok).toBe(true);
     expect(juger(v("autorisé", "rpc", true), { erreur: null, valeur: false })).toMatchObject({ ok: false, faille: false });
-    expect(juger(v("autorisé"), REFUS)).toMatchObject({ ok: false, constat: "Refusé alors qu'il devrait être permis : droits refusés (42501)" });
+    expect(juger(v("autorisé"), REFUS)).toMatchObject({ ok: false, constat: "Refusé alors qu’il devrait être permis : droits refusés (42501)" });
   });
 });
 
@@ -174,7 +174,7 @@ describe("lancerAudit", () => {
     expect(nettoyer).toHaveBeenCalledWith("demandes_contact", "abc");
   });
 
-  it("sans clé service_role ou si l'effacement échoue : demande de supprimer la ligne à la main", async () => {
+  it("sans clé service_role ou si l’effacement échoue : demande de supprimer la ligne à la main", async () => {
     const clients = baseSaine();
     clients.visiteur = client({ "insert:demandes_contact": { erreur: null, id: "abc" } });
     const sansCle = await lancerAudit({ clients, nettoyer: null });
@@ -184,7 +184,7 @@ describe("lancerAudit", () => {
     expect(echec.resultats.find((x) => x.faille)!.constat).toContain("suppression impossible (réseau)");
   });
 
-  it("une exception du client devient une réponse inattendue, et l'audit continue", async () => {
+  it("une exception du client devient une réponse inattendue, et l’audit continue", async () => {
     const clients = baseSaine();
     clients.visiteur.select = async () => {
       throw new Error("délai dépassé");
@@ -194,7 +194,7 @@ describe("lancerAudit", () => {
     expect(audit.resultats[0]).toMatchObject({ ok: false, constat: "Réponse inattendue — délai dépassé" });
   });
 
-  it("un insert sans ligne fictive définie échoue clairement au lieu d'écrire n'importe quoi", async () => {
+  it("un insert sans ligne fictive définie échoue clairement au lieu d’écrire n’importe quoi", async () => {
     const audit = await lancerAudit({ clients: baseSaine(), nettoyer: null }, [
       { libelle: "x", role: "visiteur", cible: "inconnue", operation: "insert", attendu: "refusé" },
     ]);
@@ -213,13 +213,13 @@ describe("lancerAudit — avis", () => {
     expect(r.constat).toContain("2 lignes visibles");
   });
 
-  it("le visiteur qui ne lit aucun avis publié est en échec (le site n'aurait plus d'avis), sans être une faille", async () => {
+  it("le visiteur qui ne lit aucun avis publié est en échec (le site n’aurait plus d’avis), sans être une faille", async () => {
     const clients = baseSaine();
     clients.visiteur = client({ "select:avis?publie=false": VIDE });
     const audit = await lancerAudit({ clients, nettoyer: null });
     const r = audit.resultats.find((x) => x.verification.cible === "avis" && x.verification.filtre?.publie === true)!;
     expect(r).toMatchObject({ ok: false, faille: false });
-    expect(r.constat).toContain("Refusé alors qu'il devrait être permis");
+    expect(r.constat).toContain("Refusé alors qu’il devrait être permis");
   });
 
   it("modifier et supprimer visent une ligne inexistante : un droit accordé par erreur ne touche aucune vraie donnée", async () => {
@@ -257,7 +257,7 @@ describe("lancerAudit — avis", () => {
     expect(suppression).toMatchObject({ ok: false, faille: true, constat: "FAILLE — accès permis : suppression permise" });
   });
 
-  it("un insert d'avis réussi par le visiteur est effacé aussitôt", async () => {
+  it("un insert d’avis réussi par le visiteur est effacé aussitôt", async () => {
     const clients = baseSaine();
     const sain = baseSaine().visiteur;
     clients.visiteur = { ...sain, insert: async (table) => (table === "avis" ? { erreur: null, id: "av1" } : REFUS) };
@@ -288,7 +288,7 @@ describe("lancerAudit — photos et stockage", () => {
     expect(trouver(audit, "admin", "medias", "list")).toMatchObject({ ok: true, constat: "Autorisé : 1 élément visible" });
   });
 
-  it("l'envoi visé est une vraie image PNG, au nom manifestement fictif, dans le bucket medias", async () => {
+  it("l’envoi visé est une vraie image PNG, au nom manifestement fictif, dans le bucket medias", async () => {
     const clients = baseSaine();
     await lancerAudit({ clients, nettoyer: null });
     expect(clients.visiteur.envois).toEqual([{ bucket: "medias", chemin: FICHIER_FICTIF.chemin, type: "image/png", taille: 68 }]);
@@ -307,7 +307,7 @@ describe("lancerAudit — photos et stockage", () => {
     expect(nettoyerFichier).toHaveBeenCalledWith("medias", FICHIER_FICTIF.chemin);
   });
 
-  it("sans clé service_role ou si l'effacement échoue : demande de supprimer le fichier à la main", async () => {
+  it("sans clé service_role ou si l’effacement échoue : demande de supprimer le fichier à la main", async () => {
     const clients = baseSaine();
     clients.visiteur = { ...clients.visiteur, upload: async (_b, chemin) => ({ erreur: null, id: chemin }) };
     const sansCle = await lancerAudit({ clients, nettoyer: null });
@@ -316,7 +316,7 @@ describe("lancerAudit — photos et stockage", () => {
     expect(trouver(echec, "visiteur", "medias", "upload").constat).toContain("suppression impossible (réseau)");
   });
 
-  it("des fichiers listables par le visiteur sont une faille ; un fichier déjà présent (409) n'est jamais vert", async () => {
+  it("des fichiers listables par le visiteur sont une faille ; un fichier déjà présent (409) n’est jamais vert", async () => {
     const clients = baseSaine();
     clients.visiteur = { ...clients.visiteur, list: async () => ({ erreur: null, lignes: 3 }), upload: async () => ({ erreur: { code: "409", message: "The resource already exists" } }) };
     const audit = await lancerAudit({ clients, nettoyer: null });
@@ -355,14 +355,14 @@ describe("lancerAudit — demandes de contact", () => {
       (x) => x.verification.role === role && x.verification.cible === "demandes_contact" && x.verification.operation === operation && (refuse === undefined || (x.verification.attendu === "refusé") === refuse),
     )!;
 
-  it("l'admin lit les demandes ; s'il ne les voit plus, c'est un échec (la page Demandes serait vide), pas une faille", async () => {
+  it("l’admin lit les demandes ; s’il ne les voit plus, c’est un échec (la page Demandes serait vide), pas une faille", async () => {
     const clients = baseSaine();
     clients.admin = client({ ...{ "rpc:est_admin": { erreur: null, valeur: true } }, "select:demandes_contact": REFUS });
     const audit = await lancerAudit({ clients, nettoyer: null });
-    expect(trouver(audit, "admin", "select")).toMatchObject({ ok: false, faille: false, constat: "Refusé alors qu'il devrait être permis : droits refusés (42501)" });
+    expect(trouver(audit, "admin", "select")).toMatchObject({ ok: false, faille: false, constat: "Refusé alors qu’il devrait être permis : droits refusés (42501)" });
   });
 
-  it("l'admin modifie statut et note, mais pas l'email : un droit par colonne trop large est une faille", async () => {
+  it("l’admin modifie statut et note, mais pas l’email : un droit par colonne trop large est une faille", async () => {
     const saine = await lancerAudit({ clients: baseSaine(), nettoyer: null });
     expect(trouver(saine, "admin", "update", false)).toMatchObject({ ok: true, constat: "Autorisé : modification permise" });
     expect(trouver(saine, "admin", "update", true)).toMatchObject({ ok: true, constat: "Bloqué : droits refusés (42501)" });
@@ -440,7 +440,7 @@ describe("liste des vérifications", () => {
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "est_admin")!.valeur).toBe(true);
   });
 
-  it("équipe : le visiteur lit les fiches publiées, aucune fiche retirée, et n'écrit rien ; l'admin lit tout", () => {
+  it("équipe : le visiteur lit les fiches publiées, aucune fiche retirée, et n’écrit rien ; l’admin lit tout", () => {
     const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur" && x.cible === "equipe");
     expect(visiteur.map((x) => `${x.operation}:${JSON.stringify(x.filtre ?? {})}:${x.attendu}`)).toEqual([
       'select:{"publie":true}:autorisé',
@@ -452,7 +452,7 @@ describe("liste des vérifications", () => {
     expect(LIGNES_FICTIVES.equipe).toMatchObject({ publie: false });
   });
 
-  it("articles : le visiteur lit les publiés, aucun brouillon, et n'écrit rien ; l'admin lit tout", () => {
+  it("articles : le visiteur lit les publiés, aucun brouillon, et n’écrit rien ; l’admin lit tout", () => {
     const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur" && (x.cible === "articles" || x.cible === "articles_slug_fige"));
     expect(visiteur.map((x) => `${x.operation}:${x.cible}:${JSON.stringify(x.filtre ?? {})}:${x.attendu}`)).toEqual([
       'select:articles:{"statut":"publie"}:autorisé',
@@ -464,7 +464,7 @@ describe("liste des vérifications", () => {
     ]);
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "articles")).toMatchObject({ operation: "select", attendu: "autorisé" });
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "articles")!.filtre).toBeUndefined();
-    // Ligne fictive : un brouillon, valide pour la table (slug au bon format), pour qu'une faille se voie.
+    // Ligne fictive : un brouillon, valide pour la table (slug au bon format), pour qu’une faille se voie.
     expect(LIGNES_FICTIVES.articles).toMatchObject({ statut: "brouillon" });
     expect(String(LIGNES_FICTIVES.articles.slug)).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
@@ -490,7 +490,7 @@ describe("lancerAudit — articles du journal", () => {
       (x) => x.verification.role === role && x.verification.cible === "articles" && x.verification.operation === operation && JSON.stringify(x.verification.filtre) === JSON.stringify(filtre),
     )!;
 
-  it("base saine : publiés visibles, brouillons invisibles, écritures refusées, l'admin voit tout", async () => {
+  it("base saine : publiés visibles, brouillons invisibles, écritures refusées, l’admin voit tout", async () => {
     const audit = await lancerAudit({ clients: baseSaine(), nettoyer: null });
     expect(trouver(audit, "visiteur", "select", { statut: "publie" })).toMatchObject({ ok: true, constat: "Autorisé : 37 lignes visibles" });
     expect(trouver(audit, "visiteur", "select", { statut: "brouillon" })).toMatchObject({ ok: true, constat: "Bloqué : aucune ligne visible (RLS)" });

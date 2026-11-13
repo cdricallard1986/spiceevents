@@ -8,13 +8,13 @@ import { FournisseurToasts } from "./Toasts";
 
 const routeur = vi.hoisted(() => ({ push: vi.fn() }));
 vi.mock("next/navigation", async (original) => ({ ...(await original<typeof import("next/navigation")>()), useRouter: () => routeur, usePathname: () => "/admin/journal" }));
-// L'éditeur visuel (Tiptap) a ses propres tests (lib/journal/editeur.test.ts) : ici, une zone de texte qui envoie un document.
+// L’éditeur visuel (Tiptap) a ses propres tests (lib/journal/editeur.test.ts) : ici, une zone de texte qui envoie un document.
 vi.mock("next/dynamic", () => ({
   default: () =>
     function EditeurSimule({ onChange }: { onChange: (doc: unknown) => void }) {
       return (
         <textarea
-          aria-label="Corps de l'article"
+          aria-label="Corps de l’article"
           onChange={(e) => onChange({ type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: e.target.value }] }] })}
         />
       );
@@ -88,12 +88,12 @@ afterEach(() => {
 });
 
 describe("EditeurArticle — enregistrement automatique", () => {
-  it("le titre propose l'adresse et tout part au serveur après la frappe, sans bouton « Enregistrer »", async () => {
+  it("le titre propose l’adresse et tout part au serveur après la frappe, sans bouton « Enregistrer »", async () => {
     vi.useFakeTimers();
     const actions = rendreEditeur();
     fireEvent.change(screen.getByLabelText("Titre"), { target: { value: "Se marier en hiver !" } });
     expect(screen.getByText("/journal/se-marier-en-hiver")).toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText("Corps de l'article"), { target: { value: "Bonjour" } });
+    fireEvent.change(screen.getByLabelText("Corps de l’article"), { target: { value: "Bonjour" } });
     await act(async () => {
       await vi.advanceTimersByTimeAsync(900);
     });
@@ -108,7 +108,7 @@ describe("EditeurArticle — enregistrement automatique", () => {
     expect(screen.getByText("✓ Enregistré")).toBeInTheDocument();
   });
 
-  it("une erreur du serveur s'affiche sous le champ et la pill devient « réessayer »", async () => {
+  it("une erreur du serveur s’affiche sous le champ et la pill devient « réessayer »", async () => {
     vi.useFakeTimers();
     rendreEditeur(
       ligne(),
@@ -122,7 +122,7 @@ describe("EditeurArticle — enregistrement automatique", () => {
     expect(screen.getAllByText("Description trop longue.").length).toBeGreaterThan(0);
   });
 
-  it("« Tous les articles » enregistre ce qui attend avant de partir ; avertit seulement si l'enregistrement échoue", async () => {
+  it("« Tous les articles » enregistre ce qui attend avant de partir ; avertit seulement si l’enregistrement échoue", async () => {
     const actions = rendreEditeur(ligne(), actionsSimulees({ enregistrer: vi.fn(async () => ({ ok: false as const, message: "Refusé." })) }));
     fireEvent.change(screen.getByLabelText("Titre"), { target: { value: "A" } });
     fireEvent.click(screen.getByRole("link", { name: /Tous les articles/ }));
@@ -135,22 +135,22 @@ describe("EditeurArticle — enregistrement automatique", () => {
 });
 
 describe("EditeurArticle — adresse", () => {
-  it("modifiée à la main, elle ne suit plus le titre ; on peut reprendre l'adresse proposée", async () => {
+  it("modifiée à la main, elle ne suit plus le titre ; on peut reprendre l’adresse proposée", async () => {
     rendreEditeur(ligne({ titre: "Se marier en hiver", slug: "se-marier-en-hiver" }));
-    fireEvent.click(screen.getByRole("button", { name: "Modifier l'adresse" }));
+    fireEvent.click(screen.getByRole("button", { name: "Modifier l’adresse" }));
     const champ = screen.getByLabelText("Adresse");
     fireEvent.change(champ, { target: { value: "Mon Adresse" } });
     expect(champ).toHaveValue("mon-adresse");
     fireEvent.change(screen.getByLabelText("Titre"), { target: { value: "Autre titre" } });
     expect(screen.getByLabelText("Adresse")).toHaveValue("mon-adresse");
-    fireEvent.click(screen.getByRole("button", { name: /Reprendre l'adresse proposée/ }));
+    fireEvent.click(screen.getByRole("button", { name: /Reprendre l’adresse proposée/ }));
     expect(screen.getByText("/journal/autre-titre")).toBeInTheDocument();
   });
 
-  it("verrouillée après une première publication, avec l'explication", () => {
+  it("verrouillée après une première publication, avec l’explication", () => {
     rendreEditeur(ligne({ ...COMPLET, statut: "brouillon", publie_le: "2026-01-01T00:00:00Z" }));
     expect(screen.queryByLabelText("Adresse")).toBeNull();
-    expect(screen.getByText(/l'adresse d'un article publié ne change plus/)).toBeInTheDocument();
+    expect(screen.getByText(/l’adresse d’un article publié ne change plus/)).toBeInTheDocument();
     expect(screen.getByText("Retiré du site")).toBeInTheDocument();
   });
 });
@@ -166,11 +166,11 @@ describe("EditeurArticle — publication, retrait, suppression", () => {
     expect(actions.publier).not.toHaveBeenCalled();
   });
 
-  it("Publier un article complet : confirmation (adresse figée), enregistrement d'abord, puis publication", async () => {
+  it("Publier un article complet : confirmation (adresse figée), enregistrement d’abord, puis publication", async () => {
     const actions = rendreEditeur(ligne(COMPLET));
-    fireEvent.change(screen.getByLabelText("Sous-titre"), { target: { value: "Pour un jour d'hiver" } });
+    fireEvent.change(screen.getByLabelText("Sous-titre"), { target: { value: "Pour un jour d’hiver" } });
     fireEvent.click(screen.getByRole("button", { name: "Publier" }));
-    const fenetre = screen.getByRole("alertdialog", { name: "Publier l'article ?" });
+    const fenetre = screen.getByRole("alertdialog", { name: "Publier l’article ?" });
     expect(fenetre).toHaveTextContent("/journal/se-marier-en-hiver");
     expect(fenetre).toHaveTextContent("Cette adresse ne pourra plus changer ensuite.");
     fireEvent.click(within(fenetre).getByRole("button", { name: "Publier" }));
@@ -178,7 +178,7 @@ describe("EditeurArticle — publication, retrait, suppression", () => {
     expect(vi.mocked(actions.enregistrer).mock.invocationCallOrder[0]).toBeLessThan(vi.mocked(actions.publier).mock.invocationCallOrder[0]);
     expect(await screen.findByText("Publié")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Retirer du site" })).toBeInTheDocument();
-    // Déjà publié : plus de suppression, seulement l'explication.
+    // Déjà publié : plus de suppression, seulement l’explication.
     expect(screen.queryByRole("button", { name: "Supprimer le brouillon" })).toBeNull();
     expect(screen.getByText(/ne peut plus être supprimé/)).toBeInTheDocument();
   });
@@ -194,11 +194,11 @@ describe("EditeurArticle — publication, retrait, suppression", () => {
     expect(screen.getByText("Pour publier, il manque : la catégorie.")).toBeInTheDocument();
   });
 
-  it("Retirer du site : la confirmation prévient que l'adresse renverra une page introuvable", async () => {
+  it("Retirer du site : la confirmation prévient que l’adresse renverra une page introuvable", async () => {
     const actions = rendreEditeur(ligne({ ...COMPLET, statut: "publie", publie_le: "2026-01-01T00:00:00Z" }));
     expect(screen.getByRole("link", { name: /Voir sur le site/ })).toHaveAttribute("href", "/journal/se-marier-en-hiver");
     fireEvent.click(screen.getByRole("button", { name: "Retirer du site" }));
-    const fenetre = screen.getByRole("alertdialog", { name: "Retirer l'article du site ?" });
+    const fenetre = screen.getByRole("alertdialog", { name: "Retirer l’article du site ?" });
     expect(fenetre).toHaveTextContent("page introuvable");
     fireEvent.click(within(fenetre).getByRole("button", { name: "Retirer du site" }));
     await waitFor(() => expect(actions.retirer).toHaveBeenCalledWith(ID));
@@ -247,11 +247,11 @@ describe("GestionJournal — liste", () => {
     );
     return creer;
   }
-  const titres = () => screen.getAllByRole("link", { name: /^Modifier l'article/ }).map((l) => l.getAttribute("aria-label"));
+  const titres = () => screen.getAllByRole("link", { name: /^Modifier l’article/ }).map((l) => l.getAttribute("aria-label"));
 
   it("brouillons en tête, puis publiés du plus récent au plus ancien ; « Voir sur le site » pour un publié", () => {
     rendreListe();
-    expect(titres()).toEqual(["Modifier l'article « Article sans titre »", "Modifier l'article « Article récent »", "Modifier l'article « Ancien article »"]);
+    expect(titres()).toEqual(["Modifier l’article « Article sans titre »", "Modifier l’article « Article récent »", "Modifier l’article « Ancien article »"]);
     expect(screen.getAllByRole("link", { name: /Voir sur le site/ }).map((l) => l.getAttribute("href"))).toEqual(["/journal/recent", "/journal/ancien"]);
   });
 
@@ -262,12 +262,12 @@ describe("GestionJournal — liste", () => {
     fireEvent.click(screen.getByRole("button", { name: /^Publiés/ }));
     expect(titres()).toHaveLength(2);
     fireEvent.change(screen.getByLabelText("Rechercher (titre)"), { target: { value: "recent" } });
-    expect(titres()).toEqual(["Modifier l'article « Article récent »"]);
+    expect(titres()).toEqual(["Modifier l’article « Article récent »"]);
     fireEvent.click(screen.getByRole("button", { name: "Effacer les filtres" }));
     expect(titres()).toHaveLength(3);
   });
 
-  it("« Nouvel article » crée le brouillon puis ouvre l'éditeur", async () => {
+  it("« Nouvel article » crée le brouillon puis ouvre l’éditeur", async () => {
     const creer = rendreListe();
     fireEvent.click(screen.getByRole("button", { name: "Nouvel article" }));
     await waitFor(() => expect(routeur.push).toHaveBeenCalledWith(`/admin/journal/${ID}`));

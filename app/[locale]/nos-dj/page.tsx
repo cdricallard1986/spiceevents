@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/nos-dj", seo: NOS_DJ[locale].seo, image: "mariage-soiree-regie" });
 }
 
-/** Étiquettes de style d'un membre (capitales fines, charte Nocturne). */
+/** Étiquettes de style d’un membre (capitales fines, charte Nocturne). */
 function Styles({ styles }: { styles: string[] }) {
   return (
     <ul className="flex flex-wrap gap-2">
@@ -35,7 +35,7 @@ function Styles({ styles }: { styles: string[] }) {
   );
 }
 
-/** Carte d'un DJ ou d'un musicien : son portrait, ou son monogramme en attendant. */
+/** Carte d’un DJ ou d’un musicien : son portrait, ou son monogramme en attendant. */
 function CarteMembre({ m }: { m: CarteEquipe }) {
   return (
     <article id={m.id} className="flex h-full scroll-mt-28 flex-col border border-ligne bg-nuit-2">
@@ -127,7 +127,7 @@ export default async function PageNosDj({ params }: Props) {
         </div>
       </section>
 
-      {/* Les DJ de l'équipe (back office : /admin/dj) */}
+      {/* Les DJ de l’équipe (back office : /admin/dj) */}
       {djs.length > 0 && (
         <Section surtitre={c.equipe.surtitre} titre={c.equipe.titre} intro={c.equipe.intro} alterne>
           <ul className="grid gap-6 lg:grid-cols-2">

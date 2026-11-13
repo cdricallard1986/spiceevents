@@ -9,13 +9,13 @@ import { avisDeLEmplacement, avisUnique, grilleCitations } from "./selection";
 
 /**
  * Les données de secours doivent être celles de la base : même 43 avis, mêmes
- * textes, traductions, citations, emplacements et rangs que l'import
+ * textes, traductions, citations, emplacements et rangs que l’import
  * (supabase/migrations/0004_import_avis.sql). Ce test relit la migration.
  */
 
 type Valeur = string | number | boolean | null;
 
-/** Lit les lignes `(…), (…);` d'un INSERT : chaînes SQL ('' = '), null, booléens, entiers. */
+/** Lit les lignes `(…), (…);` d’un INSERT : chaînes SQL ('' = '), null, booléens, entiers. */
 function lignesInsert(sql: string): Valeur[][] {
   const debut = sql.indexOf(" values");
   const lignes: Valeur[][] = [];
@@ -68,7 +68,7 @@ describe("données de secours (fichiers JSON au format de la base)", () => {
     expect(IMPORT).toHaveLength(43);
   });
 
-  it("sont identiques, avis par avis, à l'import en base (migration 0004)", () => {
+  it("sont identiques, avis par avis, à l’import en base (migration 0004)", () => {
     expect(repli).toHaveLength(IMPORT.length);
     repli.forEach((a, i) => {
       const attendu = IMPORT[i];
@@ -77,12 +77,12 @@ describe("données de secours (fichiers JSON au format de la base)", () => {
     });
   });
 
-  it("ont des identifiants uniques, sans date ni lien (comme l'import)", () => {
+  it("ont des identifiants uniques, sans date ni lien (comme l’import)", () => {
     expect(new Set(repli.map((a) => a.id)).size).toBe(repli.length);
     expect(repli.every((a) => a.date_avis === null && a.lien_source === null)).toBe(true);
   });
 
-  it("n'utilisent que des emplacements connus, et des clés d'avis existantes", () => {
+  it("n’utilisent que des emplacements connus, et des clés d’avis existantes", () => {
     const cles = new Set((brut as { cle?: string; auteurs: string }[]).map((a) => a.cle ?? a.auteurs));
     for (const [cle, emplacements] of Object.entries(EMPLACEMENTS_REPLI)) {
       expect(cles.has(cle), cle).toBe(true);
@@ -91,7 +91,7 @@ describe("données de secours (fichiers JSON au format de la base)", () => {
     for (const cle of Object.keys(DEBUTS_CITATION_REPLI)) expect(cles.has(cle), cle).toBe(true);
   });
 
-  it("donnent les mêmes avis qu'avant sur chaque page", () => {
+  it("donnent les mêmes avis qu’avant sur chaque page", () => {
     const auteurs = (liste: { auteurs: string }[]) => liste.map((a) => a.auteurs);
     expect(avisUnique(repli, "accueil_grand")?.auteurs).toBe("Pierre & Nina");
     expect(auteurs(avisDeLEmplacement(repli, "accueil"))).toEqual(["Charlotte & David", "Frédéric & Selda", "Clémentine & Kévin"]);
@@ -117,7 +117,7 @@ describe("données de secours (fichiers JSON au format de la base)", () => {
     });
   });
 
-  it("la citation d'une option commence à la phrase sur l'option, dans les deux langues", () => {
+  it("la citation d’une option commence à la phrase sur l’option, dans les deux langues", () => {
     const bar = avisUnique(repli, "option:bar-a-vinyles")!;
     expect(grilleCitations([bar], "fr")[0].texte.startsWith("Le bar a vinyle")).toBe(true);
     expect(grilleCitations([bar], "en")[0].texte.startsWith("The vinyl bar")).toBe(true);

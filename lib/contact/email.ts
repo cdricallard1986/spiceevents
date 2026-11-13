@@ -5,14 +5,14 @@ import { LIBELLES_TYPE, type Demande, type Langue } from "./schema";
  * Construction des emails du formulaire de contact (logique pure, testée).
  *
  * Règles de sécurité :
- * - tout texte saisi passe par `echapper()` avant d'entrer dans le HTML : un
+ * - tout texte saisi passe par `echapper()` avant d’entrer dans le HTML : un
  *   prénom comme `<a href="…">Confirmez votre compte</a>` deviendrait sinon un
  *   vrai lien dans un email envoyé par notre domaine ;
- * - aucun lien n'est construit à partir d'une saisie (pas de mailto:/tel: vers
+ * - aucun lien n’est construit à partir d’une saisie (pas de mailto:/tel: vers
  *   le couple) : les seuls liens sont fixes (le site, le téléphone de Cédric) ;
- * - l'accusé de réception, envoyé à l'adresse saisie, ne reprend AUCUN texte
- *   libre (message, lieu, nom) : sinon un robot pourrait s'en servir pour faire
- *   envoyer son propre texte à n'importe qui, signé Spice Events.
+ * - l’accusé de réception, envoyé à l’adresse saisie, ne reprend AUCUN texte
+ *   libre (message, lieu, nom) : sinon un robot pourrait s’en servir pour faire
+ *   envoyer son propre texte à n’importe qui, signé Spice Events.
  */
 
 export type ConfigEmail = {
@@ -49,7 +49,7 @@ export function formaterDate(iso: string, langue: Langue): string {
     timeZone: "UTC",
   })
     .format(new Date(Date.UTC(a, m - 1, j)))
-    // Selon la version d'ICU, l'anglais britannique met ou non une virgule après le jour.
+    // Selon la version d’ICU, l’anglais britannique met ou non une virgule après le jour.
     .replace(",", "");
 }
 
@@ -59,7 +59,7 @@ export function formaterTelephone(telephone: string): string {
   return `0${telephone.slice(3)}`.replace(/(\d{2})(?=\d)/g, "$1 ");
 }
 
-/** « 2027-06-12 » → « 12/06/2027 » (objet de l'email). */
+/** « 2027-06-12 » → « 12/06/2027 » (objet de l’email). */
 function dateCourte(iso: string): string {
   return iso.split("-").reverse().join("/");
 }
@@ -74,10 +74,10 @@ const POLICE_TEXTE = "Helvetica,Arial,sans-serif";
 
 const BANDEAU = {
   fr: ["Vos nuits ont du goût", "Ajoutons-y du piment"],
-  en: ["Your nights have flavour", "Let's add some spice"],
+  en: ["Your nights have flavour", "Let’s add some spice"],
 } as const;
 
-/** Bouton (lien FIXE seulement : jamais construit à partir d'une saisie). */
+/** Bouton (lien FIXE seulement : jamais construit à partir d’une saisie). */
 function bouton(libelle: string, href: string): string {
   return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:28px 0 0"><tr><td style="background:${COULEURS.or}">
 <a href="${href}" style="display:inline-block;padding:14px 26px;font-family:${POLICE_TEXTE};font-size:13px;font-weight:bold;letter-spacing:0.16em;text-transform:uppercase;color:${COULEURS.fond};text-decoration:none">${echapper(libelle)}</a>
@@ -193,8 +193,8 @@ const ACCUSE = {
     signature: "À très vite,\nCédric Allard — Spice Events",
   },
   en: {
-    sujet: "We've received your request — Spice Events",
-    titre: "We've received",
+    sujet: "We’ve received your request — Spice Events",
+    titre: "We’ve received",
     accroche: "your request.",
     animations: "Discover our entertainment",
     lienAnimations: "/en/entertainment",
@@ -204,7 +204,7 @@ const ACCUSE = {
     evenement: "Event",
     date: "Date",
     invites: "Guests",
-    urgent: "A question that can't wait? Call Cédric on",
+    urgent: "A question that can’t wait? Call Cédric on",
     signature: "Speak soon,\nCédric Allard — Spice Events",
   },
 } as const;
@@ -241,18 +241,18 @@ ${bouton(t.animations, `${SITE.url}${t.lienAnimations}`)}`,
 /**
  * Lien pour choisir un nouveau mot de passe du back office, envoyé à Cédric.
  * `lien` est construit par le serveur (adresse du déploiement + jeton de
- * Supabase), jamais à partir d'une saisie.
+ * Supabase), jamais à partir d’une saisie.
  */
 export function emailReinitialisation(destinataire: string, lien: string, config: ConfigEmail): EmailPrepare {
   const html = gabarit(
     "Mot de passe oublié ?",
     "On vous rouvre la régie.",
     `<p style="margin:16px 0 0">Bonjour Cédric,</p>
-<p style="margin:16px 0 0">Une demande de nouveau mot de passe a été faite pour le back office de Spice Events. Le bouton ci-dessous vous permet d'en choisir un ; il est valable une heure, et une seule fois.</p>
+<p style="margin:16px 0 0">Une demande de nouveau mot de passe a été faite pour le back office de Spice Events. Le bouton ci-dessous vous permet d’en choisir un ; il est valable une heure, et une seule fois.</p>
 ${bouton("Choisir un nouveau mot de passe", lien)}
-<p style="margin:24px 0 0;color:${COULEURS.doux};font-size:13px">Si vous n'êtes pas à l'origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable. Une fois le nouveau choisi, vos autres appareils sont déconnectés.</p>`,
+<p style="margin:24px 0 0;color:${COULEURS.doux};font-size:13px">Si vous n’êtes pas à l’origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable. Une fois le nouveau choisi, vos autres appareils sont déconnectés.</p>`,
     "fr",
   );
-  const text = `Bonjour Cédric,\n\nUne demande de nouveau mot de passe a été faite pour le back office de Spice Events. Ce lien vous permet d'en choisir un (valable une heure, une seule fois) :\n${lien}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable.`;
+  const text = `Bonjour Cédric,\n\nUne demande de nouveau mot de passe a été faite pour le back office de Spice Events. Ce lien vous permet d’en choisir un (valable une heure, une seule fois) :\n${lien}\n\nSi vous n’êtes pas à l’origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable.`;
   return { from: config.expediteur, to: destinataire, replyTo: config.destinataire, subject: "Back office Spice Events : choisir un nouveau mot de passe", html, text };
 }

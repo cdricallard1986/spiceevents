@@ -21,7 +21,7 @@ type Props = { moments: MomentAffiche[]; locale: Locale; etiquette: string };
 
 /**
  * « Chaque instant » (maquette Nocturne) : une carte par moment de la journée,
- * photo qui s'élève au survol ; un clic ouvre le détail du moment et ses animations.
+ * photo qui s’élève au survol ; un clic ouvre le détail du moment et ses animations.
  */
 export function JourneeMariage({ moments, locale, etiquette }: Props) {
   const [ouvert, setOuvert] = useState<number | null>(null);
@@ -83,7 +83,7 @@ export function JourneeMariage({ moments, locale, etiquette }: Props) {
               </ul>
             )}
             <Link href="/contact" className="self-start bg-or px-7 py-4 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-nuit hover:bg-or-clair">
-              {locale === "fr" ? "Parlons de votre mariage" : "Let's talk about your wedding"} →
+              {locale === "fr" ? "Parlons de votre mariage" : "Let’s talk about your wedding"} →
             </Link>
           </div>
         )}

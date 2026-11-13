@@ -42,7 +42,7 @@ describe("AuditRls", () => {
     expect(screen.getByRole("status")).toHaveTextContent("1 en échec · 1/2 vérifications · 12:00:05");
   });
 
-  it("« Relancer » rejoue l'audit ; le bouton est inactif pendant l'exécution", () => {
+  it("« Relancer » rejoue l’audit ; le bouton est inactif pendant l’exécution", () => {
     const s = suite({ resultat: AUDIT });
     render(<AuditRls suite={s} />);
     fireEvent.click(screen.getByRole("button", { name: "Relancer" }));
@@ -52,8 +52,8 @@ describe("AuditRls", () => {
     expect(screen.getByRole("button", { name: "Exécution en cours…" })).toBeDisabled();
   });
 
-  it("dit clairement que l'audit n'a pas pu partir", () => {
-    render(<AuditRls suite={suite({ erreur: "L'audit n'a pas pu être lancé." })} />);
-    expect(screen.getByRole("alert")).toHaveTextContent("n'a pas pu être lancé");
+  it("dit clairement que l’audit n’a pas pu partir", () => {
+    render(<AuditRls suite={suite({ erreur: "L’audit n’a pas pu être lancé." })} />);
+    expect(screen.getByRole("alert")).toHaveTextContent("n’a pas pu être lancé");
   });
 });

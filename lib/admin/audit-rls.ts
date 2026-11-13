@@ -1,8 +1,8 @@
 /**
  * Audit des droits en base (page `/admin/tests`), logique pure et testée.
  *
- * Chaque vérification interroge la VRAIE base, par l'API publique, sous un rôle :
- * - `visiteur` : clé publishable sans session (ce que peut faire n'importe qui) ;
+ * Chaque vérification interroge la VRAIE base, par l’API publique, sous un rôle :
+ * - `visiteur` : clé publishable sans session (ce que peut faire n’importe qui) ;
  * - `admin` : la session de Cédric.
  * Les unitaires ne voient pas un GRANT oublié ou une policy trop large : cet
  * audit, si.
@@ -11,20 +11,20 @@
  * pour un `insert`, une ligne fictive dans `LIGNES_FICTIVES`, et pour un
  * `update`, des valeurs dans `MODIFICATIONS_FICTIVES` (ou `valeurs` sur la
  * vérification, pour tester une colonne précise). `update` et `delete`
- * visent une ligne qui n'existe pas (`ID_INEXISTANT`) : même en cas de faille,
- * aucune vraie donnée n'est touchée — seul le droit est mis à l'épreuve.
+ * visent une ligne qui n’existe pas (`ID_INEXISTANT`) : même en cas de faille,
+ * aucune vraie donnée n’est touchée — seul le droit est mis à l’épreuve.
  *
- * Storage : `upload` tente d'envoyer `FICHIER_FICTIF` dans un bucket (un succès
- * est une faille : le fichier est effacé aussitôt), `list` compte ce qu'on y voit.
+ * Storage : `upload` tente d’envoyer `FICHIER_FICTIF` dans un bucket (un succès
+ * est une faille : le fichier est effacé aussitôt), `list` compte ce qu’on y voit.
  */
 
 export type Role = "visiteur" | "admin";
 export type Operation = "select" | "insert" | "update" | "delete" | "rpc" | "upload" | "list";
 
 /**
- * - `refusé` : l'API doit répondre par un refus de droits ;
+ * - `refusé` : l’API doit répondre par un refus de droits ;
  * - `vide` : refus OU aucune ligne visible (RLS sans policy : PostgREST renvoie
- *   l'un ou l'autre selon que les GRANT ont été retirés ou non) ;
+ *   l’un ou l’autre selon que les GRANT ont été retirés ou non) ;
  * - `autorisé` : réponse sans erreur (et la valeur attendue, si précisée).
  */
 export type Attendu = "refusé" | "vide" | "autorisé";
@@ -51,17 +51,17 @@ export const VERIFICATIONS: readonly Verification[] = [
   { libelle: "Lire les demandes de contact", role: "visiteur", cible: "demandes_contact", operation: "select", attendu: "vide" },
   { libelle: "Lire les administrateurs", role: "visiteur", cible: "administrateurs", operation: "select", attendu: "vide" },
   { libelle: "Lire les tentatives de connexion", role: "visiteur", cible: "tentatives_connexion", operation: "select", attendu: "vide" },
-  { libelle: "Lire le journal d'audit", role: "visiteur", cible: "audit_log", operation: "select", attendu: "vide" },
+  { libelle: "Lire le journal d’audit", role: "visiteur", cible: "audit_log", operation: "select", attendu: "vide" },
   {
-    libelle: "Créer une demande de contact par l'API",
+    libelle: "Créer une demande de contact par l’API",
     role: "visiteur",
     cible: "demandes_contact",
     operation: "insert",
     attendu: "refusé",
     note: "Seul le serveur du site (clé service_role) écrit les demandes.",
   },
-  { libelle: "Modifier une demande de contact par l'API", role: "visiteur", cible: "demandes_contact", operation: "update", attendu: "refusé" },
-  { libelle: "Supprimer une demande de contact par l'API", role: "visiteur", cible: "demandes_contact", operation: "delete", attendu: "refusé" },
+  { libelle: "Modifier une demande de contact par l’API", role: "visiteur", cible: "demandes_contact", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une demande de contact par l’API", role: "visiteur", cible: "demandes_contact", operation: "delete", attendu: "refusé" },
   {
     libelle: "Lire les avis publiés",
     role: "visiteur",
@@ -80,9 +80,9 @@ export const VERIFICATIONS: readonly Verification[] = [
     attendu: "vide",
     note: "Un avis non publié (brouillon, retiré du site) ne doit être visible que dans le back office.",
   },
-  { libelle: "Créer un avis par l'API", role: "visiteur", cible: "avis", operation: "insert", attendu: "refusé" },
-  { libelle: "Modifier un avis par l'API", role: "visiteur", cible: "avis", operation: "update", attendu: "refusé" },
-  { libelle: "Supprimer un avis par l'API", role: "visiteur", cible: "avis", operation: "delete", attendu: "refusé" },
+  { libelle: "Créer un avis par l’API", role: "visiteur", cible: "avis", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier un avis par l’API", role: "visiteur", cible: "avis", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer un avis par l’API", role: "visiteur", cible: "avis", operation: "delete", attendu: "refusé" },
   {
     libelle: "Lire les DJ publiés",
     role: "visiteur",
@@ -101,31 +101,31 @@ export const VERIFICATIONS: readonly Verification[] = [
     attendu: "vide",
     note: "Une fiche retirée du site (DJ qui ne travaille plus avec vous) ne doit être visible que dans le back office.",
   },
-  { libelle: "Créer une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "insert", attendu: "refusé" },
-  { libelle: "Modifier une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "update", attendu: "refusé" },
-  { libelle: "Supprimer une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "delete", attendu: "refusé" },
+  { libelle: "Créer une fiche DJ par l’API", role: "visiteur", cible: "equipe", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier une fiche DJ par l’API", role: "visiteur", cible: "equipe", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une fiche DJ par l’API", role: "visiteur", cible: "equipe", operation: "delete", attendu: "refusé" },
   {
     libelle: "Lire les photos des galeries",
     role: "visiteur",
     cible: "photos",
     operation: "select",
     attendu: "autorisé",
-    note: "Les photos sont publiques : ce sont celles de la page Galerie et des pages d'animations.",
+    note: "Les photos sont publiques : ce sont celles de la page Galerie et des pages d’animations.",
   },
   { libelle: "Lire les galeries (photos et ordre)", role: "visiteur", cible: "galeries_photos", operation: "select", attendu: "autorisé" },
-  { libelle: "Créer une photo par l'API", role: "visiteur", cible: "photos", operation: "insert", attendu: "refusé" },
-  { libelle: "Modifier une photo par l'API", role: "visiteur", cible: "photos", operation: "update", attendu: "refusé" },
-  { libelle: "Supprimer une photo par l'API", role: "visiteur", cible: "photos", operation: "delete", attendu: "refusé" },
-  { libelle: "Ajouter une photo à une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "insert", attendu: "refusé" },
-  { libelle: "Changer l'ordre d'une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "update", attendu: "refusé" },
-  { libelle: "Retirer une photo d'une galerie par l'API", role: "visiteur", cible: "galeries_photos", operation: "delete", attendu: "refusé" },
+  { libelle: "Créer une photo par l’API", role: "visiteur", cible: "photos", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier une photo par l’API", role: "visiteur", cible: "photos", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une photo par l’API", role: "visiteur", cible: "photos", operation: "delete", attendu: "refusé" },
+  { libelle: "Ajouter une photo à une galerie par l’API", role: "visiteur", cible: "galeries_photos", operation: "insert", attendu: "refusé" },
+  { libelle: "Changer l’ordre d’une galerie par l’API", role: "visiteur", cible: "galeries_photos", operation: "update", attendu: "refusé" },
+  { libelle: "Retirer une photo d’une galerie par l’API", role: "visiteur", cible: "galeries_photos", operation: "delete", attendu: "refusé" },
   {
     libelle: "Envoyer un fichier dans le stockage des photos",
     role: "visiteur",
     cible: "medias",
     operation: "upload",
     attendu: "refusé",
-    note: "Seul le back office envoie des photos (URL signée créée par une action réservée à l'administrateur).",
+    note: "Seul le back office envoie des photos (URL signée créée par une action réservée à l’administrateur).",
   },
   {
     libelle: "Lister le stockage des photos",
@@ -145,17 +145,17 @@ export const VERIFICATIONS: readonly Verification[] = [
     note: "Les articles publiés sont publics : ce sont ceux du journal.",
   },
   {
-    libelle: "Lire les brouillons d'articles",
+    libelle: "Lire les brouillons d’articles",
     role: "visiteur",
     cible: "articles",
     operation: "select",
     filtre: { statut: "brouillon" },
     attendu: "vide",
-    note: "Un brouillon (créé dès l'ouverture de l'éditeur) ne doit être visible que dans le back office.",
+    note: "Un brouillon (créé dès l’ouverture de l’éditeur) ne doit être visible que dans le back office.",
   },
-  { libelle: "Créer un article par l'API", role: "visiteur", cible: "articles", operation: "insert", attendu: "refusé" },
-  { libelle: "Modifier un article par l'API", role: "visiteur", cible: "articles", operation: "update", attendu: "refusé" },
-  { libelle: "Supprimer un article par l'API", role: "visiteur", cible: "articles", operation: "delete", attendu: "refusé" },
+  { libelle: "Créer un article par l’API", role: "visiteur", cible: "articles", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier un article par l’API", role: "visiteur", cible: "articles", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer un article par l’API", role: "visiteur", cible: "articles", operation: "delete", attendu: "refusé" },
   { libelle: "Appeler est_admin()", role: "visiteur", cible: "est_admin", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler audit_trigger()", role: "visiteur", cible: "audit_trigger", operation: "rpc", attendu: "refusé" },
   { libelle: "Appeler touch_updated_at()", role: "visiteur", cible: "touch_updated_at", operation: "rpc", attendu: "refusé" },
@@ -165,12 +165,12 @@ export const VERIFICATIONS: readonly Verification[] = [
     cible: "articles_slug_fige",
     operation: "rpc",
     attendu: "refusé",
-    note: "Fonction du trigger qui fige l'adresse d'un article publié : jamais appelable par l'API.",
+    note: "Fonction du trigger qui fige l’adresse d’un article publié : jamais appelable par l’API.",
   },
 
   // --- Administrateur (session de Cédric) ---
   { libelle: "Appeler est_admin()", role: "admin", cible: "est_admin", operation: "rpc", attendu: "autorisé", valeur: true },
-  { libelle: "Lire le journal d'audit", role: "admin", cible: "audit_log", operation: "select", attendu: "autorisé" },
+  { libelle: "Lire le journal d’audit", role: "admin", cible: "audit_log", operation: "select", attendu: "autorisé" },
   {
     libelle: "Lire tous les avis, publiés ou non",
     role: "admin",
@@ -193,7 +193,7 @@ export const VERIFICATIONS: readonly Verification[] = [
     cible: "articles",
     operation: "select",
     attendu: "autorisé",
-    note: "L'éditeur du journal voit aussi les brouillons.",
+    note: "L’éditeur du journal voit aussi les brouillons.",
   },
   { libelle: "Lire les photos", role: "admin", cible: "photos", operation: "select", attendu: "autorisé" },
   { libelle: "Lire les galeries", role: "admin", cible: "galeries_photos", operation: "select", attendu: "autorisé" },
@@ -203,7 +203,7 @@ export const VERIFICATIONS: readonly Verification[] = [
     cible: "medias",
     operation: "list",
     attendu: "autorisé",
-    note: "Le back office lit ses fichiers (suppression d'une photo envoyée).",
+    note: "Le back office lit ses fichiers (suppression d’une photo envoyée).",
   },
   {
     libelle: "Lire les demandes de contact",
@@ -214,7 +214,7 @@ export const VERIFICATIONS: readonly Verification[] = [
     note: "Le back office (page Demandes) lit toutes les demandes reçues.",
   },
   {
-    libelle: "Modifier le statut et la note d'une demande",
+    libelle: "Modifier le statut et la note d’une demande",
     role: "admin",
     cible: "demandes_contact",
     operation: "update",
@@ -222,7 +222,7 @@ export const VERIFICATIONS: readonly Verification[] = [
     note: "Seules ces deux colonnes sont ouvertes à la session admin (suivi commercial).",
   },
   {
-    libelle: "Modifier l'email d'une demande",
+    libelle: "Modifier l’email d’une demande",
     role: "admin",
     cible: "demandes_contact",
     operation: "update",
@@ -231,7 +231,7 @@ export const VERIFICATIONS: readonly Verification[] = [
     note: "Ce que le client a saisi ne se modifie pas : le droit `update` ne porte que sur statut et note_interne.",
   },
   {
-    libelle: "Créer une demande de contact par l'API",
+    libelle: "Créer une demande de contact par l’API",
     role: "admin",
     cible: "demandes_contact",
     operation: "insert",
@@ -248,7 +248,7 @@ export const VERIFICATIONS: readonly Verification[] = [
   },
 ];
 
-/** Lignes manifestement fictives pour les tests d'`insert` (valides, pour qu'une faille se voie). */
+/** Lignes manifestement fictives pour les tests d'`insert` (valides, pour qu’une faille se voie). */
 export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
   demandes_contact: {
     langue: "fr",
@@ -257,20 +257,20 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
     email: "audit-rls@example.invalid",
     telephone: "+33600000000",
     type_evenement: "autre",
-    message: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
+    message: "Ligne fictive de l’audit RLS du back office : elle n’aurait jamais dû pouvoir être créée. À supprimer.",
   },
   avis: {
     auteurs: "AUDIT RLS — LIGNE FICTIVE",
     categorie: "mariage",
-    texte_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
+    texte_fr: "Ligne fictive de l’audit RLS du back office : elle n’aurait jamais dû pouvoir être créée. À supprimer.",
     publie: false,
   },
   // Non publiée : même créée par une faille, elle ne serait jamais visible sur le site.
   equipe: {
     nom: "AUDIT RLS — LIGNE FICTIVE",
     role_fr: "À supprimer",
-    accroche_fr: "Ligne fictive de l'audit RLS du back office.",
-    presentation_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
+    accroche_fr: "Ligne fictive de l’audit RLS du back office.",
+    presentation_fr: "Ligne fictive de l’audit RLS du back office : elle n’aurait jamais dû pouvoir être créée. À supprimer.",
     publie: false,
   },
   photos: {
@@ -291,7 +291,7 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
 };
 
 /**
- * Fichier des tests d'`upload` : une image PNG d'un pixel (un vrai type
+ * Fichier des tests d'`upload` : une image PNG d’un pixel (un vrai type
  * accepté par le bucket, pour que seul le droit puisse la refuser), au nom
  * manifestement fictif.
  */
@@ -306,7 +306,7 @@ export function octetsFichierFictif(): Uint8Array {
   return Uint8Array.from(atob(FICHIER_FICTIF.base64), (c) => c.charCodeAt(0));
 }
 
-/** Valeurs des tests d'`update` (valides, pour qu'une faille se voie). */
+/** Valeurs des tests d'`update` (valides, pour qu’une faille se voie). */
 export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
   avis: { auteurs: "AUDIT RLS — MODIFICATION FICTIVE" },
   demandes_contact: { statut: "perdue", note_interne: "AUDIT RLS — MODIFICATION FICTIVE" },
@@ -321,14 +321,14 @@ export const ID_INEXISTANT = "00000000-0000-0000-0000-000000000000";
 
 // --- Exécution ---------------------------------------------------------------
 
-/** Réponse de l'API, réduite à ce qui sert à juger (jamais les données elles-mêmes). */
+/** Réponse de l’API, réduite à ce qui sert à juger (jamais les données elles-mêmes). */
 export type ReponseApi = {
   erreur: { code?: string; message: string } | null;
   /** select : nombre de lignes visibles. */
   lignes?: number | null;
   /** rpc : valeur renvoyée. */
   valeur?: unknown;
-  /** insert réussi : identifiant de la ligne créée ; upload réussi : chemin du fichier (pour l'effacer). */
+  /** insert réussi : identifiant de la ligne créée ; upload réussi : chemin du fichier (pour l’effacer). */
   id?: string | null;
 };
 
@@ -343,7 +343,7 @@ export type ClientAudit = {
   rpc(fonction: string): Promise<ReponseApi>;
   /** Envoie un fichier dans un bucket (refusé attendu : un succès est une faille). */
   upload(bucket: string, chemin: string, contenu: Uint8Array, type: string): Promise<ReponseApi>;
-  /** Liste la racine d'un bucket : `lignes` = nombre d'éléments visibles. */
+  /** Liste la racine d’un bucket : `lignes` = nombre d’éléments visibles. */
   list(bucket: string): Promise<ReponseApi>;
 };
 
@@ -375,12 +375,12 @@ export type ResultatAudit = {
 };
 
 /**
- * Codes qui veulent dire « l'API a refusé » :
+ * Codes qui veulent dire « l’API a refusé » :
  * - 42501 : droits insuffisants (GRANT retiré, ou policy RLS qui rejette une écriture) ;
  * - PGRST202 : fonction introuvable pour ce rôle (non exposée) ;
- * - STORAGE-403 : Storage a refusé l'opération (policy RLS sur storage.objects),
- *   code posé par l'adaptateur du serveur.
- * Tout autre code (réseau, 5xx, erreur SQL…) est « inattendu » : l'audit ne
+ * - STORAGE-403 : Storage a refusé l’opération (policy RLS sur storage.objects),
+ *   code posé par l’adaptateur du serveur.
+ * Tout autre code (réseau, 5xx, erreur SQL…) est « inattendu » : l’audit ne
  * conclut pas au vert sur une panne.
  */
 const CODES_REFUS: Record<string, string> = {
@@ -435,7 +435,7 @@ export function juger(verification: Verification, reponse: ReponseApi): Omit<Res
       return { ok: false, faille: true, constat: `FAILLE — ${decrireAccord(c, verification.operation)}` };
 
     case "autorisé": {
-      if (c.type === "refuse") return { ok: false, faille: false, constat: `Refusé alors qu'il devrait être permis : ${c.detail}` };
+      if (c.type === "refuse") return { ok: false, faille: false, constat: `Refusé alors qu’il devrait être permis : ${c.detail}` };
       if (verification.valeur !== undefined && JSON.stringify(c.valeur) !== JSON.stringify(verification.valeur)) {
         return { ok: false, faille: false, constat: `Valeur inattendue : ${decrireAccord(c, verification.operation)} au lieu de ${JSON.stringify(verification.valeur)}` };
       }
@@ -464,7 +464,7 @@ async function executer(client: ClientAudit, v: Verification): Promise<ReponseAp
   }
 }
 
-/** Lance toutes les vérifications, l'une après l'autre (une vingtaine de requêtes). */
+/** Lance toutes les vérifications, l’une après l’autre (une vingtaine de requêtes). */
 export async function lancerAudit(
   d: DependancesAudit,
   verifications: readonly Verification[] = VERIFICATIONS,
@@ -476,7 +476,7 @@ export async function lancerAudit(
     const jugement = juger(verification, reponse);
     let constat = jugement.constat;
 
-    // Une écriture qui n'aurait pas dû réussir : on efface la ligne aussitôt.
+    // Une écriture qui n’aurait pas dû réussir : on efface la ligne aussitôt.
     if (verification.operation === "insert" && !reponse.erreur && jugement.faille) {
       if (!reponse.id) constat += " — identifiant inconnu : vérifiez la table à la main.";
       else if (!d.nettoyer) constat += ` — clé service_role absente : supprimez à la main la ligne ${reponse.id}.`;
@@ -489,7 +489,7 @@ export async function lancerAudit(
         }
       }
     }
-    // Un fichier qui n'aurait pas dû être accepté : on l'efface aussitôt.
+    // Un fichier qui n’aurait pas dû être accepté : on l’efface aussitôt.
     if (verification.operation === "upload" && !reponse.erreur && jugement.faille) {
       const chemin = reponse.id ?? FICHIER_FICTIF.chemin;
       if (!d.nettoyerFichier) constat += ` — clé service_role absente : supprimez à la main le fichier ${verification.cible}/${chemin}.`;

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { nettoyerBrouillonsVides } from "./nettoyage";
 
-/** Client simulé : enregistre les appels, répond selon l'opération (lecture ou suppression). */
+/** Client simulé : enregistre les appels, répond selon l’opération (lecture ou suppression). */
 function client(reponses: { lecture: { data: unknown; error: unknown }; suppression?: { data: unknown; error: unknown } }) {
   const appels: [string, unknown[]][][] = [];
   const from = vi.fn(() => {

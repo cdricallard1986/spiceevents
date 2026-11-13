@@ -38,13 +38,13 @@ export function estCheminPhotoMembre(chemin: string): boolean {
   return MOTIF_PHOTO_STOCKAGE.test(chemin) && !chemin.includes("//") && !/\/\./.test(chemin);
 }
 
-/** Cadrage arrondi au pour cent, à partir d'un clic sur la photo (fractions 0–1). */
+/** Cadrage arrondi au pour cent, à partir d’un clic sur la photo (fractions 0–1). */
 export function cadrageDepuisClic(x: number, y: number): string {
   const pc = (v: number) => Math.round(Math.min(1, Math.max(0, Number.isFinite(v) ? v : 0.5)) * 100);
   return `${pc(x)}% ${pc(y)}%`;
 }
 
-/** Les deux pourcentages d'un cadrage (le centre s'il est illisible). */
+/** Les deux pourcentages d’un cadrage (le centre s’il est illisible). */
 export function lireCadrage(cadrage: string): { x: number; y: number } {
   const m = MOTIF_CADRAGE.exec(cadrage);
   return m ? { x: Number(m[1]), y: Number(m[2]) } : { x: 50, y: 50 };

@@ -8,12 +8,10 @@ type Props = {
   locale: Locale;
   /** Petit libellé au-dessus du titre (catégorie, page Animations). */
   etiquette?: string;
-  /** Texte de la carte à la place du résumé de l'option. */
-  texte?: string;
 };
 
-/** Vignette d'une animation, vers sa page. */
-export function CarteOption({ option, locale, etiquette, texte }: Props) {
+/** Vignette d’une animation, vers sa page : partout le même titre et la même accroche (`resume`). */
+export function CarteOption({ option, locale, etiquette }: Props) {
   return (
     <Link
       href={{ pathname: "/animations/[option]", params: { option: option.slug[locale] } }}
@@ -34,7 +32,7 @@ export function CarteOption({ option, locale, etiquette, texte }: Props) {
         {"\u00a0"}
         <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
       </h3>
-      <p className="px-2 text-[0.9375rem] text-sable">{texte ?? option.resume[locale]}</p>
+      <p className="px-2 text-[0.9375rem] text-sable">{option.resume[locale]}</p>
     </Link>
   );
 }

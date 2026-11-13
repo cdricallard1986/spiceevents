@@ -30,7 +30,7 @@ export function generateStaticParams({ params }: { params: { locale: string } })
   return OPTIONS.map((o) => ({ option: o.slug[locale] }));
 }
 
-/** Adresse de l'option dans une langue (slug traduit). */
+/** Adresse de l’option dans une langue (slug traduit). */
 function hrefOption(option: Option, locale: Locale) {
   return { pathname: "/animations/[option]" as const, params: { option: option.slug[locale] } };
 }
@@ -66,7 +66,7 @@ export default async function PageOption({ params }: Props) {
   const c = contenuOption(option);
   const t = c.textes[locale];
   const fr = locale === "fr";
-  // Avis choisi dans le back office (emplacement « Page <option> ») ; sa citation commence d'ordinaire à la phrase sur l'option.
+  // Avis choisi dans le back office (emplacement « Page <option> ») ; sa citation commence d’ordinaire à la phrase sur l’option.
   const avisOption = grandAvis(await avisPublies(), emplacementOption(option.slug.fr), locale, 260);
   // Photos choisies dans le back office (galerie « option:<slug> ») ; listes du code en secours, sans Supabase.
   const galerie = await photosDeGalerie(galerieOption(option.slug.fr), locale);
@@ -144,7 +144,7 @@ export default async function PageOption({ params }: Props) {
 
       {avisOption && <GrandAvis citation={avisOption.texte} auteurs={avisOption.auteurs} langue={avisOption.langue} image={c.imageAvis ?? c.image} />}
 
-      <Section surtitre={fr ? "À combiner" : "Mix and match"} titre={fr ? "D'autres idées pour *votre fête*." : "More ideas for *your celebration*."}>
+      <Section surtitre={fr ? "À combiner" : "Mix and match"} titre={fr ? "D’autres idées pour *votre fête*." : "More ideas for *your celebration*."}>
         <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {autresOptions(option).map((o) => (
             <li key={o.slug.fr}>

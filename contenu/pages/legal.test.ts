@@ -14,7 +14,7 @@ describe("mentions légales", () => {
     }
   });
 
-  it("ne laissent un champ à compléter que pour le capital, tant qu'il est inconnu", () => {
+  it("ne laissent un champ à compléter que pour le capital, tant qu’il est inconnu", () => {
     const restants = [MENTIONS_LEGALES, CONFIDENTIALITE].flatMap((p) => [texte(p.fr), texte(p.en)]).join(" ").match(/\[À COMPLÉTER[^\]]*\]/g) ?? [];
     const attendus = SITE.societe.capital ? [] : restants.filter((r) => r.includes("capital"));
     expect(restants).toEqual(attendus);

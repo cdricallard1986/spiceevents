@@ -20,7 +20,7 @@ import { LecteurYoutube } from "@/components/common/LecteurYoutube";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
-/** Vidéo de présentation de MX Événement (celle de l'ancienne page « performances techniques »). */
+/** Vidéo de présentation de MX Événement (celle de l’ancienne page « performances techniques »). */
 const ID_VIDEO = "DWSC6XgbY_M";
 
 /** Installations liées à la technique, présentées en bas de page. */
@@ -38,7 +38,7 @@ export default async function PageSonEtLumiere({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = SON_ET_LUMIERE[locale];
-  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  // Diaporama d’en-tête choisi dans le back office (fiche de chaque photo).
   const entete = await photosEnTete("son-et-lumiere", locale);
   const fr = locale === "fr";
   const questions = FAQ[locale].themes.find((t) => t.id === "technique")?.questions ?? [];
@@ -164,7 +164,7 @@ export default async function PageSonEtLumiere({ params }: Props) {
         </div>
       </Section>
 
-      {/* Les installations qui s'appuient sur cette technique */}
+      {/* Les installations qui s’appuient sur cette technique */}
       <Section titre={c.liens.titre} intro={c.liens.texte}>
         <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {options.map((o) => (

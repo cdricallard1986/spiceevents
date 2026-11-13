@@ -15,14 +15,14 @@ function rendre(action: (etat: EtatConnexion, fd: FormData) => Promise<EtatConne
 }
 
 describe("FormulaireConnexion", () => {
-  it("propose l'autoremplissage du gestionnaire de mots de passe", () => {
+  it("propose l’autoremplissage du gestionnaire de mots de passe", () => {
     rendre(vi.fn());
     expect(screen.getByLabelText("Email")).toHaveAttribute("autocomplete", "username");
     expect(screen.getByLabelText("Mot de passe")).toHaveAttribute("autocomplete", "current-password");
     expect(screen.getByLabelText("Mot de passe")).toHaveAttribute("type", "password");
   });
 
-  it("envoie l'email, le mot de passe et la page de retour", async () => {
+  it("envoie l’email, le mot de passe et la page de retour", async () => {
     const action = vi.fn<(e: EtatConnexion, fd: FormData) => Promise<EtatConnexion>>(async () => ({ statut: "connecte" }));
     rendre(action, "/admin/avis");
     fireEvent.change(screen.getByLabelText("Email"), { target: { value: "cedric@spiceevents.fr" } });
@@ -35,7 +35,7 @@ describe("FormulaireConnexion", () => {
     expect(fd.get("suite")).toBe("/admin/avis");
   });
 
-  it("affiche l'erreur : bordure rouge, message sous le champ, toast en haut", async () => {
+  it("affiche l’erreur : bordure rouge, message sous le champ, toast en haut", async () => {
     const action = vi.fn(async (): Promise<EtatConnexion> => ({
       statut: "erreur",
       message: "Vérifiez les champs signalés.",
@@ -52,7 +52,7 @@ describe("FormulaireConnexion", () => {
     expect(champ).toHaveValue("pas-un-email");
   });
 
-  it("ne désactive jamais les champs pendant l'envoi", async () => {
+  it("ne désactive jamais les champs pendant l’envoi", async () => {
     let terminer!: (e: EtatConnexion) => void;
     const action = vi.fn(() => new Promise<EtatConnexion>((r) => (terminer = r)));
     rendre(action);

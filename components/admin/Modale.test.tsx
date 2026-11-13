@@ -15,7 +15,7 @@ function AvecBouton({ onFermer = () => {} }: { onFermer?: () => void }) {
       </button>
       <Modale
         ouverte={ouverte}
-        titre="Modifier l'avis"
+        titre="Modifier l’avis"
         onFermer={() => {
           onFermer();
           setOuverte(false);
@@ -34,7 +34,7 @@ describe("Modale", () => {
     const ouvrir = screen.getByRole("button", { name: "Ouvrir" });
     ouvrir.focus();
     fireEvent.click(ouvrir);
-    const dialogue = screen.getByRole("dialog", { name: "Modifier l'avis" });
+    const dialogue = screen.getByRole("dialog", { name: "Modifier l’avis" });
     expect(dialogue).toHaveAttribute("aria-modal", "true");
     expect(screen.getByLabelText("Auteurs")).toHaveFocus();
     fireEvent.keyDown(dialogue, { key: "Escape" });
@@ -42,7 +42,7 @@ describe("Modale", () => {
     expect(ouvrir).toHaveFocus();
   });
 
-  it("garde le focus à l'intérieur (Tab tourne)", () => {
+  it("garde le focus à l’intérieur (Tab tourne)", () => {
     render(<AvecBouton />);
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir" }));
     const dialogue = screen.getByRole("dialog");
@@ -64,7 +64,7 @@ describe("Modale", () => {
     expect(onFermer).toHaveBeenCalledTimes(2);
   });
 
-  it("fige la page derrière tant qu'elle est ouverte", () => {
+  it("fige la page derrière tant qu’elle est ouverte", () => {
     render(<AvecBouton />);
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir" }));
     expect(document.body.style.overflow).toBe("hidden");

@@ -6,7 +6,7 @@ import { validerDocument, type DocumentArticle } from "./document";
 import { MARQUES_EDITEUR, NOEUDS_EDITEUR, contenuPourEditeur, extensionsArticle, preparerHtmlColle } from "./editeur";
 import { lignesDeRepli } from "./repli";
 
-// L'éditeur réel (extensions de l'admin) dans jsdom, sans React.
+// L’éditeur réel (extensions de l’admin) dans jsdom, sans React.
 
 const editeurs: Editor[] = [];
 
@@ -20,17 +20,17 @@ afterEach(() => {
   editeurs.splice(0).forEach((e) => e.destroy());
 });
 
-/** Ce que l'éditeur enregistre : son JSON mis en forme. */
+/** Ce que l’éditeur enregistre : son JSON mis en forme. */
 function sortie(e: Editor): unknown {
   return documentDepuisEditeur(e.getJSON());
 }
 
-/** Collage réel (logique de collage de ProseMirror et des extensions), sans presse-papiers : jsdom n'a pas de ClipboardEvent. */
+/** Collage réel (logique de collage de ProseMirror et des extensions), sans presse-papiers : jsdom n’a pas de ClipboardEvent. */
 function collerHtml(e: Editor, html: string) {
   e.view.pasteHTML(preparerHtmlColle(html).html, Object.assign(new Event("paste"), { clipboardData: null }) as ClipboardEvent);
 }
 
-/** Position d'un texte dans le document. */
+/** Position d’un texte dans le document. */
 function trouver(e: Editor, texte: string): { from: number; to: number } {
   let trouve: { from: number; to: number } | null = null;
   e.state.doc.descendants((n, pos) => {
@@ -70,7 +70,7 @@ describe("éditeur des articles : schéma", () => {
 });
 
 describe("éditeur des articles : document édité", () => {
-  it("un article neuf s'ouvre avec un paragraphe où écrire, et s'enregistre vide", () => {
+  it("un article neuf s’ouvre avec un paragraphe où écrire, et s’enregistre vide", () => {
     const e = editeur({ type: "doc", content: [] });
     expect(e.getJSON()).toEqual({ type: "doc", content: [{ type: "paragraph" }] });
     expect(() => e.state.doc.check()).not.toThrow();
@@ -79,7 +79,7 @@ describe("éditeur des articles : document édité", () => {
     expect(sortie(e)).toEqual({ type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Premier mot" }] }] });
   });
 
-  it("un document écrit avec les commandes de la barre d'outils passe validerDocument (brut et mis en forme)", () => {
+  it("un document écrit avec les commandes de la barre d’outils passe validerDocument (brut et mis en forme)", () => {
     const e = editeur();
     e.commands.insertContent("<p>Intertitre</p><p>Un texte en gras et en italique, puis un lien.</p><p>Sous-intertitre</p><p>Premier point</p><p>Étape</p><p>Une citation</p><p>Fin</p>");
     expect(selectionner(e, "Intertitre").setHeading({ level: 2 }).run()).toBe(true);
@@ -90,7 +90,7 @@ describe("éditeur des articles : document édité", () => {
     expect(selectionner(e, "Premier point").toggleBulletList().run()).toBe(true);
     expect(selectionner(e, "Étape").toggleOrderedList().run()).toBe(true);
     expect(selectionner(e, "Une citation").toggleBlockquote().run()).toBe(true);
-    // Saut de ligne au milieu d'un paragraphe, séparateur et photos à la fin.
+    // Saut de ligne au milieu d’un paragraphe, séparateur et photos à la fin.
     const fin = trouver(e, "Fin");
     e.chain().setTextSelection(fin.from + 1).setHardBreak().run();
     e.chain().setTextSelection(e.state.doc.content.size - 1).setHorizontalRule().run();
@@ -127,7 +127,7 @@ describe("éditeur des articles : document édité", () => {
         "text",
       ].sort(),
     );
-    // Forme enregistrée : plus d'attributs à null.
+    // Forme enregistrée : plus d’attributs à null.
     const texte = JSON.stringify(propre);
     expect(texte).not.toContain("null");
     expect(texte).toContain('"attrs":{"href":"/mariages"}');
@@ -152,15 +152,15 @@ describe("éditeur des articles : les 37 articles importés", () => {
     expect(lignes).toHaveLength(37);
   });
 
-  it.each(lignes.map((l) => [l.slug, l.contenu] as const))("%s : chargé dans l'éditeur, il ressort identique", (_slug, contenu) => {
+  it.each(lignes.map((l) => [l.slug, l.contenu] as const))("%s : chargé dans l’éditeur, il ressort identique", (_slug, contenu) => {
     const e = editeur(contenu as JSONContent);
-    // Document conforme au schéma de l'éditeur (rien n'a été écarté ni réparé au chargement).
+    // Document conforme au schéma de l’éditeur (rien n’a été écarté ni réparé au chargement).
     expect(() => e.state.doc.check()).not.toThrow();
     expect(validerDocument(e.getJSON()).ok).toBe(true);
     expect(sortie(e)).toEqual(contenu);
   });
 
-  it("copier-coller d'un article entier dans l'éditeur (HTML de l'éditeur) ne perd rien", () => {
+  it("copier-coller d’un article entier dans l’éditeur (HTML de l’éditeur) ne perd rien", () => {
     const source = lignes.find((l) => JSON.stringify(l.contenu).includes('"image"') && JSON.stringify(l.contenu).includes('"link"'))!;
     expect(source).toBeDefined();
     const html = editeur(source.contenu as JSONContent).getHTML();
@@ -194,12 +194,12 @@ describe("éditeur des articles : collage depuis Word, Google Docs, une page web
     expect(types(doc)).toEqual(expect.arrayContaining(["marque:bold", "marque:italic", "bulletList"]));
   });
 
-  it("refuse les images collées en data: ou venues d'un autre site, et les liens dangereux", () => {
+  it("refuse les images collées en data: ou venues d’un autre site, et les liens dangereux", () => {
     const e = editeur();
     const html = `<p>Avant</p>
       <img src="data:image/png;base64,iVBORw0KGgo=" width="10" height="10" alt="pixel">
       <p><img src="https://autre-site.fr/photo.jpg" width="800" height="600" alt="ailleurs"> au milieu</p>
-      <figure><img src="https://autre-site.fr/b.jpg" alt="b"><figcaption>Légende d'ailleurs</figcaption></figure>
+      <figure><img src="https://autre-site.fr/b.jpg" alt="b"><figcaption>Légende d’ailleurs</figcaption></figure>
       <p><a href="javascript:alert(1)">piège</a> <a href="file:///C:/doc.docx">fichier</a> <a href="https://www.spiceevents.fr/mariages" title="t" target="_blank" rel="noopener">bon lien</a></p>
       <p>Après</p>`;
     expect(preparerHtmlColle(html).imagesRefusees).toBe(3);
@@ -216,7 +216,7 @@ describe("éditeur des articles : collage depuis Word, Google Docs, une page web
     expect(texte).toContain('{"type":"link","attrs":{"href":"https://www.spiceevents.fr/mariages"}}');
   });
 
-  it("reprend une photo du journal collée sous son adresse publique (copie depuis l'éditeur ou le site)", () => {
+  it("reprend une photo du journal collée sous son adresse publique (copie depuis l’éditeur ou le site)", () => {
     const e = editeur();
     collerHtml(e, `<img src="${urlPublique("journal/2026/10/1760000000000-abcdef.webp")}" width="1200" height="800" alt="Salle" title="Légende">`);
     expect(sortie(e)).toEqual({
@@ -225,7 +225,7 @@ describe("éditeur des articles : collage depuis Word, Google Docs, une page web
     });
   });
 
-  it("la syntaxe Markdown d'image tapée au clavier ne crée pas de photo", () => {
+  it("la syntaxe Markdown d’image tapée au clavier ne crée pas de photo", () => {
     const e = editeur();
     e.chain().focus().insertContent("![x](https://autre-site.fr/a.jpg)", { applyInputRules: true }).run();
     expect(JSON.stringify(e.getJSON())).not.toContain('"image"');

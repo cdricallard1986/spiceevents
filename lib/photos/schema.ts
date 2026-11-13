@@ -10,7 +10,7 @@ import type { Photo } from "./types";
  * jamais du formulaire : tout est revérifié ici, puis par la base.
  */
 
-/** La fiche d'une photo dans le back office : des chaînes (vide = rien). */
+/** La fiche d’une photo dans le back office : des chaînes (vide = rien). */
 export type FormulairePhoto = { alt_fr: string; alt_en: string; credit: string };
 export type ChampPhoto = keyof FormulairePhoto;
 export type ChampsPhoto = Pick<Photo, "alt_fr" | "alt_en" | "credit">;
@@ -27,7 +27,7 @@ const maximum = (max: number) => (v: string) => longueur(v) <= max;
 const altFr = z
   .string("Décrivez la photo en français (texte alternatif).")
   .trim()
-  .min(1, "Décrivez la photo en français (texte alternatif) : c'est obligatoire.")
+  .min(1, "Décrivez la photo en français (texte alternatif) : c’est obligatoire.")
   .refine(maximum(LIMITES_PHOTOS.alt), `Texte alternatif (français) : ${LIMITES_PHOTOS.alt} caractères au maximum.`);
 
 function facultatif(max: number, trop: string) {
@@ -71,7 +71,7 @@ export const schemaIdPhoto = z.uuid("Photo introuvable.");
 
 export const schemaGalerie = z.string("Galerie inconnue.").refine(estGalerieConnue, "Galerie inconnue.").transform((g) => g as Galerie);
 
-/** Demande d'URL d'envoi : le type et la taille annoncés par le navigateur (le bucket les revérifie). */
+/** Demande d’URL d’envoi : le type et la taille annoncés par le navigateur (le bucket les revérifie). */
 export const schemaDemandeEnvoi = z.object({
   nomFichier: z.string("Fichier invalide.").min(1, "Fichier sans nom.").max(255, "Nom de fichier trop long."),
   type: z.enum(LISTE_TYPES_IMAGE, "Format refusé : envoyez une photo JPEG, PNG, WebP ou AVIF."),
@@ -88,7 +88,7 @@ const dimension = z
   .min(1, "Dimensions de la photo invalides.")
   .max(LIMITES_PHOTOS.dimension, "Photo trop grande (20 000 pixels de côté au maximum).");
 
-/** Enregistrement d'une photo envoyée : son chemin dans le bucket, ses dimensions, sa fiche, et sa galerie éventuelle. */
+/** Enregistrement d’une photo envoyée : son chemin dans le bucket, ses dimensions, sa fiche, et sa galerie éventuelle. */
 export const schemaEnregistrement = schemaChampsPhoto.extend({
   chemin: z.string("Fichier introuvable.").refine(estCheminStockage, "Chemin de fichier refusé : il doit être un envoi du back office (galeries/…)."),
   largeur: dimension,
@@ -109,7 +109,7 @@ export const schemaAjoutGalerie = z.object({
     .transform((ids) => [...new Set(ids)]),
 });
 
-/** Échange de rang entre deux photos voisines d'une galerie. */
+/** Échange de rang entre deux photos voisines d’une galerie. */
 export const schemaEchangePhotos = z
   .object({ galerie: schemaGalerie, photoId: schemaIdPhoto, avecId: schemaIdPhoto, sens: z.enum(["monter", "descendre"]) })
-  .refine((v) => v.photoId !== v.avecId, "Une photo ne s'échange pas avec elle-même.");
+  .refine((v) => v.photoId !== v.avecId, "Une photo ne s’échange pas avec elle-même.");

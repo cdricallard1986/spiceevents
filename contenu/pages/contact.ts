@@ -43,7 +43,7 @@ export const CONTACT: Bilingue<Contact> = typographier({
     seo: {
       titre: "Contact & devis — DJ mariage à Paris et en Île-de-France | Spice Events",
       description:
-        "Demandez un devis pour votre DJ de mariage ou d'événement à Paris et en Île-de-France. Cédric vous répond personnellement, dans les meilleurs délais. Formulaire ou 06 76 40 37 76.",
+        "Demandez un devis pour votre DJ de mariage ou d’événement à Paris et en Île-de-France. Cédric vous répond personnellement, dans les meilleurs délais. Formulaire ou 06 76 40 37 76.",
     },
     hero: {
       surtitre: "Contact · Devis",
@@ -60,14 +60,14 @@ export const CONTACT: Bilingue<Contact> = typographier({
         nom: "Nom",
         email: "Email",
         telephone: "Téléphone",
-        type: "Type d'événement",
+        type: "Type d’événement",
         typeChoisir: "Choisir…",
-        date: "Date de l'événement",
+        date: "Date de l’événement",
         lieu: "Lieu",
         lieuExemple: "Ville ou nom du domaine",
-        invites: "Nombre d'invités",
+        invites: "Nombre d’invités",
         message: "Votre projet",
-        messageExemple: "L'ambiance que vous imaginez, les moments clés, les animations qui vous tentent…",
+        messageExemple: "L’ambiance que vous imaginez, les moments clés, les animations qui vous tentent…",
         facultatif: "facultatif",
         envoyer: "Envoyer ma demande",
         envoiEnCours: "Envoi en cours…",
@@ -83,8 +83,8 @@ export const CONTACT: Bilingue<Contact> = typographier({
       titre: "Nous joindre",
       telephone: "Téléphone",
       email: "Email",
-      zone: "Zone d'intervention",
-      zoneTexte: "Paris et toute l'Île-de-France",
+      zone: "Zone d’intervention",
+      zoneTexte: "Paris et toute l’Île-de-France",
       pastille: "Réponse personnelle de Cédric",
     },
     awards: {

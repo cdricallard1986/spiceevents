@@ -14,7 +14,7 @@ import { CLASSES_BANDEAU } from "./champs";
 export function CadreConnexion({ titre, message, children }: { titre: string; message?: string | null; children: ReactNode }) {
   return (
     <main id="contenu" className="grid min-h-dvh lg:grid-cols-[minmax(0,1.15fr)_minmax(28rem,1fr)]">
-      {/* Ordinateur : une nuit de fête tirée au hasard, comme l'en-tête de la page Mariages. */}
+      {/* Ordinateur : une nuit de fête tirée au hasard, comme l’en-tête de la page Mariages. */}
       <div aria-hidden="true" className="relative hidden overflow-hidden lg:block">
         <FondAleatoire images={IMAGES_ACCUEIL_MARIAGES} sizes="60vw" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.35)_0%,rgba(20,20,20,0.1)_40%,rgba(20,20,20,0.92)_100%)]" />

@@ -65,11 +65,11 @@ describe("construireRapport", () => {
     expect(rapport.fichiers[0].dureeMs).toBe(2500);
   });
 
-  it("retire les codes couleur des messages d'échec", () => {
+  it("retire les codes couleur des messages d’échec", () => {
     expect(rapport.fichiers[0].tests[0].messages[0]).toBe("AssertionError: expected <script>1</script>");
   });
 
-  it("signale un fichier qui n'a pas pu s'exécuter, même sans test échoué", () => {
+  it("signale un fichier qui n’a pas pu s’exécuter, même sans test échoué", () => {
     const r = construireRapport({ success: false, testResults: [{ name: "/projet/x.test.ts", status: "failed", message: "Cannot find module", assertionResults: [] }] }, RACINE);
     expect(r.fichiersEnErreur).toBe(1);
     expect(r.succes).toBe(false);
@@ -96,7 +96,7 @@ describe("construireRapport", () => {
 describe("rapportHtml", () => {
   const html = rapportHtml(construireRapport(SORTIE, RACINE), "1.2.3");
 
-  it("échappe les noms de tests, les blocs et les messages d'échec", () => {
+  it("échappe les noms de tests, les blocs et les messages d’échec", () => {
     expect(html).not.toContain("<img");
     expect(html).not.toContain("<script>");
     expect(html).not.toContain("<b>bloc</b>");
@@ -124,7 +124,7 @@ describe("rapportHtml", () => {
     expect(html).toContain('<details class="echec" open>');
   });
 
-  it("la page par défaut dit que le rapport n'est pas encore généré", () => {
+  it("la page par défaut dit que le rapport n’est pas encore généré", () => {
     expect(rapportAbsentHtml()).toContain("Rapport non encore généré");
     expect(rapportAbsentHtml()).not.toMatch(/<script/i);
   });

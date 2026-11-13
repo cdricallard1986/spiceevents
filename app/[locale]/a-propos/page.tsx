@@ -54,7 +54,7 @@ export default async function PageAPropos({ params }: Props) {
 
       <GrandAvis citation={c.citationPhare.texte} auteurs={SITE.fondateur} image="maison-cedric-dessus" />
 
-      {/* Aujourd'hui : organisation et recentrage, avec deux citations */}
+      {/* Aujourd’hui : organisation et recentrage, avec deux citations */}
       <Section surtitre={c.aujourdhui.surtitre} titre={c.aujourdhui.titre}>
         <div className="grid gap-14 lg:grid-cols-[1.2fr_1fr]">
           <div>

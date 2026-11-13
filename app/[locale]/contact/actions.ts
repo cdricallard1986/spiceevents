@@ -7,13 +7,13 @@ import { envoi } from "@/lib/contact/resend";
 import { lireFormulaire } from "@/lib/contact/schema";
 import { traiterDemande, type Base, type EtatFormulaire, type Journal } from "@/lib/contact/traitement";
 
-// ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public.
-// Il n'exporte donc QUE l'action du formulaire ; toute la logique (validation,
+// ⚠️ Fichier « use server » : chaque export est un point d’entrée HTTP public.
+// Il n’exporte donc QUE l’action du formulaire ; toute la logique (validation,
 // anti-robot, limitation, emails) vit dans lib/contact/, testée.
 
 const TABLE = "demandes_contact";
 
-/** Accès à la table via la clé service_role (null si Supabase n'est pas configuré). */
+/** Accès à la table via la clé service_role (null si Supabase n’est pas configuré). */
 function base(): Base | null {
   const supabase = clientAdmin();
   if (!supabase) return null;

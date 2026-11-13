@@ -23,7 +23,7 @@ afterEach(() => {
 const visible = () => document.querySelector('figure[aria-hidden="false"] figcaption')?.textContent;
 
 describe("AvisDefilants", () => {
-  it("passe tout seul à l'avis suivant, puis revient au premier", () => {
+  it("passe tout seul à l’avis suivant, puis revient au premier", () => {
     render(<AvisDefilants liste={liste} image="couple-faisceaux" libelles={libelles} />);
     expect(visible()).toBe("Harold & David");
     act(() => vi.advanceTimersByTime(7000));
@@ -34,7 +34,7 @@ describe("AvisDefilants", () => {
     expect(visible()).toBe("Harold & David");
   });
 
-  it("se pilote aux flèches et aux points, et s'arrête au survol", () => {
+  it("se pilote aux flèches et aux points, et s’arrête au survol", () => {
     render(<AvisDefilants liste={liste} image="couple-faisceaux" libelles={libelles} />);
     fireEvent.click(screen.getByRole("button", { name: "Avis précédent" }));
     expect(visible()).toBe("Pierre & Nina");
@@ -56,7 +56,7 @@ describe("AvisDefilants", () => {
     expect(visible()).toBe("Pierre & Nina");
   });
 
-  it("ne défile pas quand l'appareil demande moins d'animations", () => {
+  it("ne défile pas quand l’appareil demande moins d’animations", () => {
     window.matchMedia = vi.fn().mockReturnValue({ matches: true }) as unknown as typeof window.matchMedia;
     render(<AvisDefilants liste={liste} image="couple-faisceaux" libelles={libelles} />);
     act(() => vi.advanceTimersByTime(20000));

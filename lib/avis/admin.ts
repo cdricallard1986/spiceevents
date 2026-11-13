@@ -42,13 +42,13 @@ export function filtresActifs(f: FiltresAvis): boolean {
   return f.categorie !== "toutes" || f.statut !== "tous" || f.source !== "toutes" || f.recherche.trim() !== "";
 }
 
-/** Rang d'un nouvel avis : à la fin de la liste. */
+/** Rang d’un nouvel avis : à la fin de la liste. */
 export function ordreSuivant(ordres: readonly number[]): number {
   return ordres.length === 0 ? 10 : Math.max(...ordres) + 10;
 }
 
 /**
- * Nouveaux rangs après un échange entre deux avis. S'ils avaient le même rang
+ * Nouveaux rangs après un échange entre deux avis. S’ils avaient le même rang
  * (lignes créées hors du back office), celui qui monte passe juste devant.
  */
 export function rangsEchanges(a: { ordre: number }, b: { ordre: number }, aMonte: boolean): { a: number; b: number } {
@@ -56,16 +56,16 @@ export function rangsEchanges(a: { ordre: number }, b: { ordre: number }, aMonte
   return aMonte ? { a: b.ordre - 1, b: b.ordre } : { a: b.ordre + 1, b: b.ordre };
 }
 
-/** Emplacements uniques (grands avis, pages d'option) parmi une liste. */
+/** Emplacements uniques (grands avis, pages d’option) parmi une liste. */
 export function emplacementsUniques(emplacements: readonly string[]): string[] {
   return emplacements.filter(estEmplacementUnique);
 }
 
-/** Un emplacement unique retiré d'un autre avis, parce qu'il vient d'être donné à celui-ci. */
+/** Un emplacement unique retiré d’un autre avis, parce qu’il vient d’être donné à celui-ci. */
 export type Retrait = { id: string; auteurs: string; emplacement: string; emplacements: string[] };
 
 /**
- * Pour que l'avis `id` soit seul sur ses emplacements uniques : ce qu'il faut
+ * Pour que l’avis `id` soit seul sur ses emplacements uniques : ce qu’il faut
  * retirer aux autres avis (nouveaux emplacements de chacun).
  */
 export function retraitsNecessaires(id: string, emplacements: readonly string[], autres: readonly Pick<Avis, "id" | "auteurs" | "emplacements">[]): Retrait[] {
@@ -81,7 +81,7 @@ export function retraitsNecessaires(id: string, emplacements: readonly string[],
   return retraits;
 }
 
-/** L'avis qui occupe actuellement un emplacement unique (autre que `saufId`), pour l'indiquer à côté de la case. */
+/** L’avis qui occupe actuellement un emplacement unique (autre que `saufId`), pour l’indiquer à côté de la case. */
 export function titulaire(liste: readonly Avis[], emplacement: string, saufId?: string): Avis | undefined {
   return trierAvis(liste).find((a) => a.id !== saufId && a.emplacements.includes(emplacement));
 }
@@ -90,9 +90,9 @@ export function titulaire(liste: readonly Avis[], emplacement: string, saufId?: 
 
 export type ResultatEchec = { ok: false; message: string; erreurs?: ErreursAvis };
 
-/** Enregistrement ou création : l'avis tel qu'en base, et les emplacements retirés à d'autres avis. */
+/** Enregistrement ou création : l’avis tel qu’en base, et les emplacements retirés à d’autres avis. */
 export type ResultatAvis =
-  | { ok: true; avis: Avis; retraits: Retrait[]; /** Retrait aux autres avis impossible (l'avis, lui, est enregistré). */ avertissement?: string }
+  | { ok: true; avis: Avis; retraits: Retrait[]; /** Retrait aux autres avis impossible (l’avis, lui, est enregistré). */ avertissement?: string }
   | ResultatEchec;
 
 export type ResultatPublication = { ok: true; avis: Avis } | ResultatEchec;

@@ -19,13 +19,13 @@ type SonEtLumiere = {
   appel: { titre: string; texte: string };
 };
 
-/** Photos d'en-tête de la page (secours : la liste vit en base, `entete:son-et-lumiere`, gérée dans le back office). */
+/** Photos d’en-tête de la page (secours : la liste vit en base, `entete:son-et-lumiere`, gérée dans le back office). */
 export const IMAGES_ENTETE_SON_LUMIERE: CleImage[] = ["son-lumiere-installation", "son-lumiere-regie-lets-dance"];
 
 export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
   fr: {
     seo: {
-      titre: "Sonorisation et éclairage de mariage et d'événement : notre matériel | Spice Events",
+      titre: "Sonorisation et éclairage de mariage et d’événement : notre matériel | Spice Events",
       description:
         "L-Acoustics, Yamaha, Pioneer DJ, Shure : un matériel son et lumière professionnel, testé en atelier avant chaque date, avec secours sur place. Paris et Île-de-France.",
     },
@@ -39,8 +39,8 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
       surtitre: "Notre promesse",
       titre: "Une nuit qui brille, *une technique qui tient*.",
       paragraphes: [
-        "Un mariage ou un événement réussi repose sur un équilibre : de l'émotion, et une technique qui ne se remarque jamais. Une coupure de son pendant les discours, une lumière qui s'éteint pendant l'ouverture du bal : ce sont des instants qui ne se rattrapent pas.",
-        "C'est pourquoi chaque prestation est pensée comme une mise en scène technique, où chaque câble, chaque réglage et chaque faisceau a son importance — avec notre partenaire MX Événement, prestataire son et lumière.",
+        "Un mariage ou un événement réussi repose sur un équilibre : de l’émotion, et une technique qui ne se remarque jamais. Une coupure de son pendant les discours, une lumière qui s’éteint pendant l’ouverture du bal : ce sont des instants qui ne se rattrapent pas.",
+        "C’est pourquoi chaque prestation est pensée comme une mise en scène technique, où chaque câble, chaque réglage et chaque faisceau a son importance — avec notre partenaire MX Événement, prestataire son et lumière.",
       ],
       citation: "Un matériel haut de gamme, une préparation minutieuse et une exécution sans faille : voilà notre promesse.",
     },
@@ -75,16 +75,16 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
         {
           titre: "Lumière",
           texte: "Une mise en lumière du lieu pour le dîner, des effets dynamiques synchronisés à la musique pour la piste.",
-          modeles: ["Lyres et projecteurs Chauvet Pro", "Portman, Wolfmix", "Structures, gobos et mise en lumière d'architecture"],
+          modeles: ["Lyres et projecteurs Chauvet Pro", "Portman, Wolfmix", "Structures, gobos et mise en lumière d’architecture"],
           image: "son-lumiere-regie-bleue",
         },
       ],
-      note: "Le matériel est adapté à chaque lieu et à chaque nombre d'invités : une cérémonie dans un jardin n'appelle pas la même installation qu'une soirée de 300 personnes.",
+      note: "Le matériel est adapté à chaque lieu et à chaque nombre d’invités : une cérémonie dans un jardin n’appelle pas la même installation qu’une soirée de 300 personnes.",
     },
     preparation: {
       surtitre: "Avant chaque date",
       titre: "Avant la nuit, *tout est calé*.",
-      intro: "Le jour J ne commence pas à l'arrivée des invités : il se prépare à l'atelier, puis sur place, bien avant le premier morceau.",
+      intro: "Le jour J ne commence pas à l’arrivée des invités : il se prépare à l’atelier, puis sur place, bien avant le premier morceau.",
       etapes: [
         {
           titre: "Contrôle en atelier",
@@ -92,11 +92,11 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
         },
         {
           titre: "Repérage du lieu",
-          texte: "Configuration, distances, alimentation électrique, contraintes du lieu : l'installation est pensée en amont.",
+          texte: "Configuration, distances, alimentation électrique, contraintes du lieu : l’installation est pensée en amont.",
         },
         {
           titre: "Installation & calage",
-          texte: "Son et lumière réglés pour la salle, câblages sécurisés, tests complets avant l'arrivée des invités.",
+          texte: "Son et lumière réglés pour la salle, câblages sécurisés, tests complets avant l’arrivée des invités.",
         },
         {
           titre: "Redondances vérifiées",
@@ -108,14 +108,14 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
         },
         {
           titre: "Démontage",
-          texte: "Le matériel est démonté et rechargé à l'heure convenue avec le lieu.",
+          texte: "Le matériel est démonté et rechargé à l’heure convenue avec le lieu.",
         },
       ],
     },
     securite: {
       surtitre: "Sécurité",
-      titre: "La sécurité n'est pas un détail, *c'est notre priorité*.",
-      intro: "Parce qu'un moment d'émotion ne doit jamais dépendre d'un imprévu technique.",
+      titre: "La sécurité n’est pas un détail, *c’est notre priorité*.",
+      intro: "Parce qu’un moment d’émotion ne doit jamais dépendre d’un imprévu technique.",
       points: [
         "Des équipements aux normes CE, contrôlés avant chaque utilisation.",
         "Une installation selon un protocole strict : isolation, câblage, protections, tests de charge.",
@@ -129,7 +129,7 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
       surtitre: "Notre partenaire technique",
       titre: "MX Événement, *la précision technique*.",
       paragraphes: [
-        "Le son et la lumière de nos prestations sont fournis par MX Événement, prestataire son, lumière et structure, dont Cédric est associé. Son équipe, forte de plus de 10 ans d'expérience, partage notre règle : aucune place à l'improvisation.",
+        "Le son et la lumière de nos prestations sont fournis par MX Événement, prestataire son, lumière et structure, dont Cédric est associé. Son équipe, forte de plus de 10 ans d’expérience, partage notre règle : aucune place à l’improvisation.",
         "Ce partenariat nous donne accès à un parc de matériel professionnel entretenu en atelier, et à une logistique rodée aux mariages comme aux grands événements.",
       ],
       points: [
@@ -147,12 +147,12 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
     },
     liens: {
       titre: "Des solutions pour *chaque moment*",
-      texte: "La cérémonie en plein air, le cocktail loin de la piste, l'ouverture de bal : découvrez les installations qui s'y prêtent.",
+      texte: "La cérémonie en plein air, le cocktail loin de la piste, l’ouverture de bal : découvrez les installations qui s’y prêtent.",
     },
     faq: { surtitre: "Questions fréquentes", titre: "La technique, *en pratique*.", lien: "Toutes les questions" },
     appel: {
       titre: "Parlons de *votre événement*.",
-      texte: "Votre date, le nombre d'invités et le déroulé : nous vous proposons une installation adaptée, testée et sécurisée.",
+      texte: "Votre date, le nombre d’invités et le déroulé : nous vous proposons une installation adaptée, testée et sécurisée.",
     },
   },
   en: {
@@ -172,7 +172,7 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
       titre: "A night that shines, *technology that holds*.",
       paragraphes: [
         "A successful wedding or event rests on a balance: emotion, and technology nobody ever notices. Sound cutting out during the speeches, lights failing during the first dance: those are moments you never get back.",
-        "That's why every booking is designed as a technical production, where every cable, every setting and every beam of light matters — with our partner MX Événement, a sound and lighting company.",
+        "That’s why every booking is designed as a technical production, where every cable, every setting and every beam of light matters — with our partner MX Événement, a sound and lighting company.",
       ],
       citation: "Premium equipment, meticulous preparation and flawless execution: that is our promise.",
     },
@@ -210,12 +210,12 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
           image: "son-lumiere-regie-bleue",
         },
       ],
-      note: "The equipment is matched to each venue and guest count: a garden ceremony doesn't call for the same setup as a party for 300.",
+      note: "The equipment is matched to each venue and guest count: a garden ceremony doesn’t call for the same setup as a party for 300.",
     },
     preparation: {
       surtitre: "Before every date",
       titre: "Before the night, *everything is set*.",
-      intro: "The big day doesn't start when the guests arrive: it is prepared in the workshop, then on site, long before the first song.",
+      intro: "The big day doesn’t start when the guests arrive: it is prepared in the workshop, then on site, long before the first song.",
       etapes: [
         { titre: "Workshop check", texte: "Every item is checked and tested before it leaves: speakers, consoles, microphones, cables, lights." },
         { titre: "Venue survey", texte: "Layout, distances, power supply, venue rules: the setup is planned in advance." },
@@ -227,14 +227,14 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
     },
     securite: {
       surtitre: "Safety",
-      titre: "Safety isn't a detail, *it's our priority*.",
+      titre: "Safety isn’t a detail, *it’s our priority*.",
       intro: "Because a moment of emotion should never depend on a technical hitch.",
       points: [
         "CE-compliant equipment, checked before every use.",
         "Installation to a strict protocol: insulation, cabling, protection, load tests.",
         "Secured, tested and duplicated power networks and cabling.",
         "Backup solutions ready to take over: power, player, console.",
-        "Electrical and fire risk prevention, in line with each venue's rules.",
+        "Electrical and fire risk prevention, in line with each venue’s rules.",
         "Coordination with the photographer, videographer and caterer to avoid any interference.",
       ],
     },
@@ -265,7 +265,7 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
     faq: { surtitre: "Frequently asked questions", titre: "Technology, *in practice*.", lien: "All questions" },
     appel: {
       titre: "Tell us about *your event*.",
-      texte: "Your date, the guest count and the schedule: we'll suggest a setup that is tailored, tested and safe.",
+      texte: "Your date, the guest count and the schedule: we’ll suggest a setup that is tailored, tested and safe.",
     },
   },
 });

@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Mon compte" };
 
 type Props = { searchParams: Promise<{ raison?: string | string[] }> };
 
-/** Le compte de Cédric : son adresse et le changement de mot de passe (aussi l'arrivée du lien « Mot de passe oublié »). */
+/** Le compte de Cédric : son adresse et le changement de mot de passe (aussi l’arrivée du lien « Mot de passe oublié »). */
 export default async function PageCompte({ searchParams }: Props) {
   const { utilisateur } = await exigerAdmin();
   const section = sectionDe("/admin/compte");

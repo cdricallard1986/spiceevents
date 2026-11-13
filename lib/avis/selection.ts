@@ -10,7 +10,7 @@ import { insecables } from "@/lib/typographie";
  * rang (`ordre`), réglés depuis le back office.
  */
 
-/** Extrait court (citation) d'un texte : les phrases entières jusqu'à ~longueur caractères. */
+/** Extrait court (citation) d’un texte : les phrases entières jusqu’à ~longueur caractères. */
 export function extrait(texte: string, longueur = 220): string {
   if (texte.length <= longueur) return texte;
   const phrases = texte.match(/[^.!?…]+[.!?…]+/g) ?? [texte];
@@ -29,17 +29,17 @@ export function publies(liste: readonly Avis[]): Avis[] {
     .sort((a, b) => a.ordre - b.ordre || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 }
 
-/** Avis d'une grille : les avis publiés qui portent l'emplacement, dans l'ordre. */
+/** Avis d’une grille : les avis publiés qui portent l’emplacement, dans l’ordre. */
 export function avisDeLEmplacement(liste: readonly Avis[], emplacement: Emplacement): Avis[] {
   return publies(liste).filter((a) => a.emplacements.includes(emplacement));
 }
 
-/** Grand avis (accueil, mariages, page d'option) : le premier avis publié qui porte l'emplacement. */
+/** Grand avis (accueil, mariages, page d’option) : le premier avis publié qui porte l’emplacement. */
 export function avisUnique(liste: readonly Avis[], emplacement: Emplacement): Avis | undefined {
   return avisDeLEmplacement(liste, emplacement)[0];
 }
 
-/** Avis publiés d'une catégorie (page Avis, page Événementiel), dans l'ordre. */
+/** Avis publiés d’une catégorie (page Avis, page Événementiel), dans l’ordre. */
 export function avisDeCategorie(liste: readonly Avis[], categorie: Categorie): Avis[] {
   return publies(liste).filter((a) => a.categorie === categorie);
 }
@@ -51,20 +51,22 @@ export type AvisEnLangue = {
   role?: string;
   texte: string;
   citation: string | null;
-  /** Renseignée seulement si le texte n'est pas dans la langue demandée (anglais non traduit). */
+  /** Renseignée seulement si le texte n’est pas dans la langue demandée (anglais non traduit). */
   langue?: "fr";
 };
 
 /**
  * Mise en forme par langue. En anglais : le texte anglais, ou à défaut le
  * français — et dans ce cas, la citation française aussi (jamais une citation
- * d'une langue sur le texte d'une autre), avec `langue: "fr"`. Le rôle anglais,
+ * d’une langue sur le texte d’une autre), avec `langue: "fr"`. Le rôle anglais,
  * à défaut le français.
  */
 export function enLangue(avis: Avis, locale: Locale): AvisEnLangue {
   const role = (locale === "en" ? (avis.role_en ?? avis.role_fr) : avis.role_fr) ?? undefined;
-  const base = { id: avis.id, auteurs: avis.auteurs, ...(role ? { role } : {}) };
-  if (locale === "en" && avis.texte_en) return { ...base, texte: avis.texte_en, citation: avis.citation_en };
+  const base = { id: avis.id, auteurs: insecables(avis.auteurs), ...(role ? { role: insecables(role) } : {}) };
+  if (locale === "en" && avis.texte_en) {
+    return { ...base, texte: insecables(avis.texte_en), citation: avis.citation_en === null ? null : insecables(avis.citation_en) };
+  }
   // Texte français : espaces fines insécables avant ; : ! ? (la ponctuation ne part pas seule à la ligne).
   return {
     ...base,
@@ -99,7 +101,7 @@ export function grilleTextes(liste: readonly Avis[], locale: Locale): AvisAffich
   });
 }
 
-/** Grand avis sur photo : sa citation, ou rien si aucun avis ne porte l'emplacement. */
+/** Grand avis sur photo : sa citation, ou rien si aucun avis ne porte l’emplacement. */
 export function grandAvis(liste: readonly Avis[], emplacement: Emplacement, locale: Locale, longueurExtrait: number): AvisAffiche | undefined {
   const a = avisUnique(liste, emplacement);
   if (!a) return undefined;

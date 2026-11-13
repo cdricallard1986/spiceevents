@@ -52,7 +52,7 @@ const LISTE = [
 ];
 
 describe("statuts", () => {
-  it("chaque statut a un libellé, un filtre et une couleur ; l'ordre suit le parcours commercial", () => {
+  it("chaque statut a un libellé, un filtre et une couleur ; l’ordre suit le parcours commercial", () => {
     expect(STATUTS).toEqual(["nouvelle", "rappelee", "devis_envoye", "signee", "perdue"]);
     for (const s of STATUTS) {
       expect(LIBELLES_STATUT[s]).toBeTruthy();
@@ -96,7 +96,7 @@ describe("liste", () => {
     expect(compterParStatut([])).toEqual({ nouvelle: 0, rappelee: 0, devis_envoye: 0, signee: 0, perdue: 0, toutes: 0 });
   });
 
-  it("repère les demandes dont l'email n'est pas parti", () => {
+  it("repère les demandes dont l’email n’est pas parti", () => {
     expect(sansEmail(LISTE).map((d) => d.id)).toEqual(["b"]);
   });
 
@@ -135,15 +135,15 @@ describe("liens de contact", () => {
     expect(lienWhatsApp("07.12.34.56.78")).toBe("https://wa.me/33712345678");
     expect(lienWhatsApp("0033 6 12 34 56 78")).toBe("https://wa.me/33612345678");
     expect(lienWhatsApp("+33 (0)6 12 34 56 78")).toBe("https://wa.me/33612345678");
-    // Fixe, numéro spécial, étranger : rien ne dit qu'il a WhatsApp.
+    // Fixe, numéro spécial, étranger : rien ne dit qu’il a WhatsApp.
     expect(lienWhatsApp("+33142345678")).toBeNull();
     expect(lienWhatsApp("0142345678")).toBeNull();
     expect(lienWhatsApp("+442079460958")).toBeNull();
     expect(lienWhatsApp("+3361234567")).toBeNull();
-    expect(lienWhatsApp("n'importe quoi")).toBeNull();
+    expect(lienWhatsApp("n’importe quoi")).toBeNull();
   });
 
-  it("Écrire : mailto: avec l'objet dans la langue de la demande ; adresse douteuse → pas de lien", () => {
+  it("Écrire : mailto: avec l’objet dans la langue de la demande ; adresse douteuse → pas de lien", () => {
     expect(lienEcrire("juliette@example.com")).toBe(`mailto:juliette@example.com?subject=${encodeURIComponent("Votre demande — Spice Events")}`);
     expect(lienEcrire("juliette@example.com", "en")).toBe(`mailto:juliette@example.com?subject=${encodeURIComponent("Your enquiry — Spice Events")}`);
     expect(decodeURIComponent(lienEcrire("a@b.fr")!.split("subject=")[1])).toBe("Votre demande — Spice Events");
@@ -160,14 +160,14 @@ describe("liens de contact", () => {
 });
 
 describe("dates et nombres en français", () => {
-  it("réception à l'heure de Paris (heure d'été et d'hiver)", () => {
+  it("réception à l’heure de Paris (heure d’été et d’hiver)", () => {
     expect(formaterReception("2026-10-18T14:05:00Z")).toBe("18 octobre 2026 à 16:05");
     expect(formaterReception("2026-12-31T23:30:00Z")).toBe("1 janvier 2027 à 00:30");
     expect(formaterReception("pas une date")).toBe("—");
     expect(formaterReceptionCourte("2026-10-18T14:05:00Z")).toBe("18 oct. 2026");
   });
 
-  it("date de l'événement, avec ou sans le jour de la semaine", () => {
+  it("date de l’événement, avec ou sans le jour de la semaine", () => {
     expect(formaterDateEvenement("2027-06-12")).toBe("samedi 12 juin 2027");
     expect(formaterDateEvenement("2027-06-12", false)).toBe("12 juin 2027");
     expect(formaterDateEvenement(null)).toBeNull();

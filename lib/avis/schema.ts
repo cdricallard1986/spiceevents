@@ -51,7 +51,7 @@ export const FORMULAIRE_VIDE: FormulaireAvis = {
   emplacements: [],
 };
 
-/** Fiche d'un avis existant, pour la modale d'édition. */
+/** Fiche d’un avis existant, pour la modale d’édition. */
 export function formulaireDepuisAvis(a: Avis): FormulaireAvis {
   return {
     auteurs: a.auteurs,
@@ -91,7 +91,7 @@ function facultatif(max: number, trop: string) {
 }
 
 /**
- * Lien vers l'avis d'origine : https seulement. Un domaine saisi sans schéma est
+ * Lien vers l’avis d’origine : https seulement. Un domaine saisi sans schéma est
  * complété en https:// ; tout autre schéma (http:, javascript:…) est refusé.
  */
 export function normaliserLien(saisie: string): { ok: true; lien: string | null } | { ok: false; message: string } {
@@ -99,18 +99,18 @@ export function normaliserLien(saisie: string): { ok: true; lien: string | null 
   if (v === "") return { ok: true, lien: null };
   let lien: string;
   if (/^https:\/\//i.test(v)) lien = `https://${v.slice(8)}`;
-  else if (/^http:\/\//i.test(v)) return { ok: false, message: "Lien refusé : l'adresse doit commencer par https:// (connexion sécurisée)." };
-  // Un autre schéma (javascript:, mailto:…) — mais « domaine:port » n'en est pas un.
+  else if (/^http:\/\//i.test(v)) return { ok: false, message: "Lien refusé : l’adresse doit commencer par https:// (connexion sécurisée)." };
+  // Un autre schéma (javascript:, mailto:…) — mais « domaine:port » n’en est pas un.
   else if (/^[a-z][a-z0-9+.-]*:/i.test(v) && !/^[^/:]+:\d+(\/|$)/.test(v)) {
     return { ok: false, message: "Lien refusé : seules les adresses https:// sont acceptées." };
   } else lien = `https://${v.replace(/^\/+/, "")}`;
-  if (!/^https:\/\/[^\s]+$/.test(lien)) return { ok: false, message: "Lien invalide : une adresse ne contient pas d'espace." };
+  if (!/^https:\/\/[^\s]+$/.test(lien)) return { ok: false, message: "Lien invalide : une adresse ne contient pas d’espace." };
   if (longueur(lien) > LIMITES_AVIS.lien) return { ok: false, message: `Lien trop long (${LIMITES_AVIS.lien} caractères au maximum).` };
   try {
     const url = new URL(lien);
     if (!url.hostname.includes(".")) throw new Error();
   } catch {
-    return { ok: false, message: "Lien invalide : vérifiez l'adresse (ex. https://www.mariages.net/…)." };
+    return { ok: false, message: "Lien invalide : vérifiez l’adresse (ex. https://www.mariages.net/…)." };
   }
   return { ok: true, lien };
 }
@@ -122,15 +122,15 @@ function estDateValide(v: string): boolean {
 }
 
 export const schemaChampsAvis = z.object({
-  auteurs: obligatoire(LIMITES_AVIS.auteurs, "Indiquez les auteurs de l'avis.", `Auteurs : ${LIMITES_AVIS.auteurs} caractères au maximum.`),
+  auteurs: obligatoire(LIMITES_AVIS.auteurs, "Indiquez les auteurs de l’avis.", `Auteurs : ${LIMITES_AVIS.auteurs} caractères au maximum.`),
   role_fr: facultatif(LIMITES_AVIS.role, `Rôle (français) : ${LIMITES_AVIS.role} caractères au maximum.`),
   role_en: facultatif(LIMITES_AVIS.role, `Rôle (anglais) : ${LIMITES_AVIS.role} caractères au maximum.`),
   categorie: z.enum(CATEGORIES, "Choisissez la catégorie : mariage ou événementiel."),
-  texte_fr: obligatoire(LIMITES_AVIS.texte, "Le texte français de l'avis est obligatoire.", `Texte (français) : ${LIMITES_AVIS.texte} caractères au maximum.`),
+  texte_fr: obligatoire(LIMITES_AVIS.texte, "Le texte français de l’avis est obligatoire.", `Texte (français) : ${LIMITES_AVIS.texte} caractères au maximum.`),
   texte_en: facultatif(LIMITES_AVIS.texte, `Texte (anglais) : ${LIMITES_AVIS.texte} caractères au maximum.`),
   citation_fr: facultatif(LIMITES_AVIS.citation, `Citation (français) : ${LIMITES_AVIS.citation} caractères au maximum.`),
   citation_en: facultatif(LIMITES_AVIS.citation, `Citation (anglais) : ${LIMITES_AVIS.citation} caractères au maximum.`),
-  source: z.enum(SOURCES, "Choisissez la source de l'avis."),
+  source: z.enum(SOURCES, "Choisissez la source de l’avis."),
   date_avis: z
     .string()
     .nullish()
@@ -150,7 +150,7 @@ export const schemaChampsAvis = z.object({
     }),
   emplacements: z
     .array(z.string(), "Emplacements invalides.")
-    .max(30, "Trop d'emplacements.")
+    .max(30, "Trop d’emplacements.")
     .transform((liste) => [...new Set(liste)])
     .superRefine((liste, ctx) => {
       const inconnu = liste.find((e) => !estEmplacementConnu(e));
@@ -177,7 +177,7 @@ export function validerChampsAvis(brut: unknown): ValidationAvis {
   return { ok: false, erreurs };
 }
 
-/** Premier message d'erreur (pour le toast). */
+/** Premier message d’erreur (pour le toast). */
 export function premiereErreur(erreurs: ErreursAvis): string {
   return Object.values(erreurs).find(Boolean) ?? "Fiche invalide.";
 }
@@ -189,4 +189,4 @@ export const schemaPublication = z.object({ id: schemaIdAvis, publie: z.boolean(
 /** Échange de rang entre deux avis (flèches « monter » / « descendre »). */
 export const schemaEchange = z
   .object({ id: schemaIdAvis, avecId: schemaIdAvis, sens: z.enum(["monter", "descendre"]) })
-  .refine((v) => v.id !== v.avecId, "Un avis ne s'échange pas avec lui-même.");
+  .refine((v) => v.id !== v.avecId, "Un avis ne s’échange pas avec lui-même.");

@@ -4,10 +4,10 @@ import { describe, expect, it } from "vitest";
 
 /**
  * ⚠️ Un fichier « use server » est une porte publique : chaque fonction
- * exportée devient un point d'entrée HTTP, appelable sans passer par la page.
+ * exportée devient un point d’entrée HTTP, appelable sans passer par la page.
  * Dans le back office, chacune doit COMMENCER par la garde `exigerAdmin()`
  * (la validation Zod vient ensuite). Ce test le vérifie dans tous les fichiers
- * d'actions de `app/admin/(espace)`.
+ * d’actions de `app/admin/(espace)`.
  */
 
 const RACINE = join(__dirname, "..");
@@ -21,7 +21,7 @@ function fichiersActions(dossier: string): string[] {
   });
 }
 
-/** Fonctions exportées dont la première instruction n'est pas un appel à `exigerAdmin()`. */
+/** Fonctions exportées dont la première instruction n’est pas un appel à `exigerAdmin()`. */
 export function exportsSansGarde(source: string): string[] {
   const fautifs: string[] = [];
   for (const m of source.matchAll(/export\s+async\s+function\s+(\w+)\s*\(/g)) {
@@ -59,7 +59,7 @@ describe("Server Actions du back office", () => {
     }
   });
 
-  it("aucune action du back office n'utilise la clé service_role", () => {
+  it("aucune action du back office n’utilise la clé service_role", () => {
     for (const f of fichiersActions(ESPACE)) expect(readFileSync(f, "utf8"), relative(RACINE, f)).not.toMatch(/clientAdmin|supabase_service_role_key|lib\/supabase\/admin/);
   });
 });

@@ -1,5 +1,5 @@
 /**
- * Règles d'accès au back office appliquées par le middleware (logique pure,
+ * Règles d’accès au back office appliquées par le middleware (logique pure,
  * testée, sans dépendance Node : le middleware tourne sur le runtime Edge).
  */
 
@@ -21,7 +21,7 @@ export function estCheminConnexion(chemin: string): boolean {
 
 /**
  * Pages ouvertes sans session, et elles seules : la connexion, « mot de passe
- * oublié », et la route qui ouvre la session depuis le lien de l'email.
+ * oublié », et la route qui ouvre la session depuis le lien de l’email.
  */
 export function estCheminPublic(chemin: string): boolean {
   return chemin === CHEMIN_CONNEXION || chemin === CHEMIN_OUBLI || chemin === CHEMIN_CONFIRMER;
@@ -36,7 +36,7 @@ export function aCookieSession(noms: readonly string[], nomCookie: string): bool
 }
 
 /**
- * Adresse où revenir après la connexion (`?suite=`). N'accepte qu'un chemin du
+ * Adresse où revenir après la connexion (`?suite=`). N’accepte qu’un chemin du
  * back office : jamais une autre origine (`//exemple.com`, `/\exemple.com`),
  * sinon la page de connexion deviendrait une redirection ouverte.
  */
@@ -49,7 +49,7 @@ export function cheminDeRetour(valeur: unknown): string {
 
 export type EtatAcces = {
   chemin: string;
-  /** Partie `?…` de l'adresse demandée (vide ou commençant par `?`). */
+  /** Partie `?…` de l’adresse demandée (vide ou commençant par `?`). */
   recherche: string;
   connecte: boolean;
   avaitSession: boolean;

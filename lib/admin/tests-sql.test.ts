@@ -46,13 +46,13 @@ describe("lancerTestsSql", () => {
 
   it("une suite qui ne tourne pas est une erreur, jamais un verdict", async () => {
     expect(await lancerTestsSql(client({ data: null, error: { code: "PGRST202", message: "Could not find the function public.tests_sql" } }))).toEqual({
-      erreur: "La suite « tests_sql » n'a pas pu s'exécuter (PGRST202) : Could not find the function public.tests_sql",
+      erreur: "La suite « tests_sql » n’a pas pu s’exécuter (PGRST202) : Could not find the function public.tests_sql",
     });
-    expect(await lancerTestsSql(client(new Error("fetch failed")))).toEqual({ erreur: "La suite « tests_sql » n'a pas pu s'exécuter : fetch failed" });
+    expect(await lancerTestsSql(client(new Error("fetch failed")))).toEqual({ erreur: "La suite « tests_sql » n’a pas pu s’exécuter : fetch failed" });
   });
 
   it("une suite vide ou une réponse illisible ne passe pas pour verte", async () => {
-    expect(await lancerTestsSql(client({ data: [], error: null }))).toEqual({ erreur: "La suite « tests_sql » n'a renvoyé aucun cas : impossible de conclure." });
+    expect(await lancerTestsSql(client({ data: [], error: null }))).toEqual({ erreur: "La suite « tests_sql » n’a renvoyé aucun cas : impossible de conclure." });
     expect(await lancerTestsSql(client({ data: [{ nom: "a", ok: "oui" }], error: null }))).toEqual({ erreur: "La suite « tests_sql » a renvoyé une réponse illisible." });
     expect(await lancerTestsSql(client({ data: { nom: "a" }, error: null }))).toHaveProperty("erreur");
   });
@@ -71,7 +71,7 @@ describe("interrogerSuiteSql (navigateur)", () => {
   });
 
   it("lève la raison renvoyée par la route quand la suite ne tourne pas", async () => {
-    repondre(500, { error: "La suite « tests_sql » n'a pas pu s'exécuter : fonction absente" });
+    repondre(500, { error: "La suite « tests_sql » n’a pas pu s’exécuter : fonction absente" });
     await expect(interrogerSuiteSql()).rejects.toThrow("fonction absente");
     vi.unstubAllGlobals();
   });

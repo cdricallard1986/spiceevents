@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 import { Link } from "@/i18n/navigation";
 import { estExterne, hrefInterne } from "@/lib/journal/liens";
 
-/** Lien du corps d'un article : `Link` pour les pages du site, nouvel onglet pour l'extérieur. */
+/** Lien du corps d’un article : `Link` pour les pages du site, nouvel onglet pour l’extérieur. */
 export function LienArticle({ href = "", children, ...props }: ComponentProps<"a">) {
   const interne = hrefInterne(href);
   if (interne) {

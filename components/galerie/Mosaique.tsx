@@ -6,16 +6,16 @@ import { useLocale } from "next-intl";
 import type { PhotoAffichee } from "@/lib/photos/types";
 import { Photo } from "@/components/ui/Photo";
 
-/** Photos d'une galerie gérée dans le back office (fichiers du site ou du bucket), déjà dans la langue de la page. */
+/** Photos d’une galerie gérée dans le back office (fichiers du site ou du bucket), déjà dans la langue de la page. */
 type Props = { photos: readonly PhotoAffichee[] };
 
-/** Largeur d'une colonne : 3 colonnes dans le conteneur (82rem moins les marges) sur grand écran. */
+/** Largeur d’une colonne : 3 colonnes dans le conteneur (82rem moins les marges) sur grand écran. */
 const TAILLES = "(min-width: 1312px) 400px, (min-width: 1024px) 31vw, (min-width: 640px) 47vw, 100vw";
 
 /**
- * Mosaïque de photos en colonnes. Chaque photo s'agrandit dans une fenêtre
+ * Mosaïque de photos en colonnes. Chaque photo s’agrandit dans une fenêtre
  * (`<dialog>` natif : Échap ferme, le focus revient sur la vignette) ;
- * flèches gauche/droite pour passer d'une photo à l'autre. Sans JavaScript,
+ * flèches gauche/droite pour passer d’une photo à l’autre. Sans JavaScript,
  * la mosaïque reste lisible.
  */
 export function Mosaique({ photos }: Props) {

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { lireConnexion, validerConnexion } from "./schema";
 
 describe("validerConnexion", () => {
-  it("normalise l'email (espaces, majuscules)", () => {
+  it("normalise l’email (espaces, majuscules)", () => {
     expect(validerConnexion({ email: "  Cedric@SpiceEvents.fr ", motDePasse: "secret" })).toEqual({
       ok: true,
       identifiants: { email: "cedric@spiceevents.fr", motDePasse: "secret" },
@@ -24,7 +24,7 @@ describe("validerConnexion", () => {
     expect(validerConnexion({ email: "a@b.fr", motDePasse: "x".repeat(201) }).ok).toBe(false);
   });
 
-  it("refuse une entrée qui n'est pas un objet", () => {
+  it("refuse une entrée qui n’est pas un objet", () => {
     expect(validerConnexion(null).ok).toBe(false);
     expect(validerConnexion("a@b.fr").ok).toBe(false);
   });

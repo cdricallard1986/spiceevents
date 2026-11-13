@@ -32,7 +32,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
     hero: {
       surtitre: "Questions fréquentes",
       titre: "Toutes vos questions, *nos réponses*.",
-      intro: "Musique, technique, animations, réservation : l'essentiel pour préparer sereinement votre mariage ou votre événement.",
+      intro: "Musique, technique, animations, réservation : l’essentiel pour préparer sereinement votre mariage ou votre événement.",
     },
     sommaire: "Thèmes",
     recherche: {
@@ -50,9 +50,9 @@ export const FAQ: Bilingue<PageFaq> = typographier({
         titre: "Général",
         questions: [
           {
-            question: "Quelle est l'expérience de Spice Events ?",
+            question: "Quelle est l’expérience de Spice Events ?",
             reponse:
-              "Spice Events intervient dans l'événementiel depuis plus de 20 ans, avec des centaines de projets réalisés pour des clients privés et professionnels. Chaque événement profite de ce savoir-faire pour une prestation fluide et adaptée à vos besoins.",
+              "Spice Events intervient dans l’événementiel depuis plus de 20 ans, avec des centaines de projets réalisés pour des clients privés et professionnels. Chaque événement profite de ce savoir-faire pour une prestation fluide et adaptée à vos besoins.",
           },
           {
             question: "Quels services proposez-vous ?",
@@ -60,24 +60,24 @@ export const FAQ: Bilingue<PageFaq> = typographier({
               "Nous prenons en charge toute la partie musicale et technique de votre événement : sonorisation, éclairage, animation et coordination avec vos autres prestataires, pour que chaque moment se déroule sans stress.",
           },
           {
-            question: "Sur quels types d'événements intervenez-vous ?",
+            question: "Sur quels types d’événements intervenez-vous ?",
             reponse:
-              "Mariages, anniversaires, soirées privées et événements d'entreprise. Chaque projet est traité avec le même soin et le même professionnalisme.",
+              "Mariages, anniversaires, soirées privées et événements d’entreprise. Chaque projet est traité avec le même soin et le même professionnalisme.",
           },
           {
             question: "Pouvez-vous intervenir partout en France ?",
             reponse:
-              "Oui, nous nous déplaçons sur l'ensemble du territoire. Chaque prestation est adaptée au lieu : salle de réception, espace extérieur ou site atypique.",
+              "Oui, nous nous déplaçons sur l’ensemble du territoire. Chaque prestation est adaptée au lieu : salle de réception, espace extérieur ou site atypique.",
           },
           {
             question: "Pouvez-vous vous adapter à différents lieux et configurations ?",
             reponse:
-              "Totalement. En intérieur, en extérieur, dans un domaine ou un espace d'entreprise, nous adaptons la sonorisation, l'éclairage et la logistique à chaque contexte.",
+              "Totalement. En intérieur, en extérieur, dans un domaine ou un espace d’entreprise, nous adaptons la sonorisation, l’éclairage et la logistique à chaque contexte.",
           },
           {
             question: "Peut-on adapter vos prestations à nos envies ?",
             reponse:
-              "Absolument. Musique, animations, son et lumière : tout s'ajuste à vos goûts, à ceux de vos invités et à l'ambiance souhaitée pour chaque moment.",
+              "Absolument. Musique, animations, son et lumière : tout s’ajuste à vos goûts, à ceux de vos invités et à l’ambiance souhaitée pour chaque moment.",
           },
         ],
       },
@@ -94,17 +94,17 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Si un invité demande une musique, que faites-vous ?",
             reponse:
-              "Nous essayons de le satisfaire, sauf si le titre va à l'encontre de vos consignes ou s'il risque de toute évidence de vider la piste. Parfois, nous attendons simplement le bon moment pour le passer.",
+              "Nous essayons de le satisfaire, sauf si le titre va à l’encontre de vos consignes ou s’il risque de toute évidence de vider la piste. Parfois, nous attendons simplement le bon moment pour le passer.",
           },
           {
-            question: "Jusqu'à quelle heure dure la soirée ?",
+            question: "Jusqu’à quelle heure dure la soirée ?",
             reponse:
               "Nous coupons la musique à 4 h du matin au plus tard, sauf si le règlement de la salle impose un horaire plus tôt ou si vous demandez des heures supplémentaires.",
           },
           {
             question: "Parlez-vous au micro ?",
             reponse:
-              "Selon vos préférences. L'animation micro sert à interagir avec vos invités et à dynamiser la soirée — pas à chanter, ajouter de l'écho ou intervenir en continu. Si vous n'en voulez pas, nous savons très bien nous en passer.",
+              "Selon vos préférences. L’animation micro sert à interagir avec vos invités et à dynamiser la soirée — pas à chanter, ajouter de l’écho ou intervenir en continu. Si vous n’en voulez pas, nous savons très bien nous en passer.",
           },
           {
             question: "Nos témoins ou organisateurs peuvent-ils vous contacter ?",
@@ -135,27 +135,27 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Proposez-vous plusieurs formules ?",
             reponse:
-              "Nous proposons une formule unique, complète, que vous pouvez enrichir d'une option premium. Nous vous en présentons le détail lors du premier échange.",
+              "Nous proposons une formule unique, complète, que vous pouvez enrichir d’une option premium. Nous vous en présentons le détail lors du premier échange.",
           },
           {
-            question: "Pouvez-vous nous recommander d'autres prestataires ?",
+            question: "Pouvez-vous nous recommander d’autres prestataires ?",
             reponse:
               "Oui. Pour ce que nous ne proposons pas nous-mêmes (musiciens, magicien, artificier…), nous vous orientons vers des partenaires de confiance avec qui nous aimons travailler.",
           },
           {
             question: "Comment réserver notre date ?",
             reponse:
-              "Il suffit de nous retourner le devis signé, accompagné d'un acompte de 50 % du montant total. Votre date est alors bloquée et nous passons à la préparation.",
+              "Il suffit de nous retourner le devis signé, accompagné d’un acompte de 50 % du montant total. Votre date est alors bloquée et nous passons à la préparation.",
           },
           {
-            question: "Nous accompagnez-vous dès la conception de l'événement ?",
+            question: "Nous accompagnez-vous dès la conception de l’événement ?",
             reponse:
-              "Oui. Nous analysons vos besoins, vous conseillons sur l'ambiance musicale et la mise en lumière, et planifions avec vous l'ensemble du déroulé.",
+              "Oui. Nous analysons vos besoins, vous conseillons sur l’ambiance musicale et la mise en lumière, et planifions avec vous l’ensemble du déroulé.",
           },
           {
-            question: "Êtes-vous présents pendant tout l'événement ?",
+            question: "Êtes-vous présents pendant tout l’événement ?",
             reponse:
-              "Oui, notre équipe est présente du début à la fin pour gérer la régie, la musique et l'animation, de façon continue et discrète.",
+              "Oui, notre équipe est présente du début à la fin pour gérer la régie, la musique et l’animation, de façon continue et discrète.",
           },
         ],
       },
@@ -172,17 +172,17 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Comment gérez-vous les imprévus techniques le jour J ?",
             reponse:
-              "Nous les anticipons : tests complets avant chaque date et matériel de secours sur place. En cas d'incident, nous intervenons immédiatement pour que la musique et les animations continuent sans interruption.",
+              "Nous les anticipons : tests complets avant chaque date et matériel de secours sur place. En cas d’incident, nous intervenons immédiatement pour que la musique et les animations continuent sans interruption.",
           },
           {
             question: "Pouvez-vous sonoriser plusieurs espaces en même temps ?",
             reponse:
-              "Oui : cocktail, scène, piste de danse… Chaque espace dispose de son propre matériel son et lumière, avec une ambiance adaptée et une cohérence d'ensemble.",
+              "Oui : cocktail, scène, piste de danse… Chaque espace dispose de son propre matériel son et lumière, avec une ambiance adaptée et une cohérence d’ensemble.",
           },
           {
             question: "Y a-t-il des restrictions pour les salles avec détecteurs de fumée ou limiteur sonore ?",
             reponse:
-              "Pour les détecteurs de fumée, oui : nous ne réalisons pas de prestation dans les lieux équipés de détecteurs sensibles, qui compromettent les effets visuels. Les limiteurs sonores ne nous empêchent pas d'intervenir, mais nous vous conseillons d'éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu'un seuil est dépassé, et c'est toute l'ambiance de la soirée qui en pâtit. Nous vérifions toujours les contraintes du lieu en amont.",
+              "Pour les détecteurs de fumée, oui : nous ne réalisons pas de prestation dans les lieux équipés de détecteurs sensibles, qui compromettent les effets visuels. Les limiteurs sonores ne nous empêchent pas d’intervenir, mais nous vous conseillons d’éviter un lieu qui en est équipé : le son est coupé ou bridé dès qu’un seuil est dépassé, et c’est toute l’ambiance de la soirée qui en pâtit. Nous vérifions toujours les contraintes du lieu en amont.",
           },
         ],
       },
@@ -192,19 +192,19 @@ export const FAQ: Bilingue<PageFaq> = typographier({
         lien: { href: "/animations", texte: "Toutes les animations" },
         questions: [
           {
-            question: "Qu'apporte le bar à vinyles à une soirée ?",
+            question: "Qu’apporte le bar à vinyles à une soirée ?",
             reponse:
-              "Vos invités deviennent DJ le temps de quelques morceaux. C'est une animation originale et participative, qui crée des échanges et une ambiance unique.",
+              "Vos invités deviennent DJ le temps de quelques morceaux. C’est une animation originale et participative, qui crée des échanges et une ambiance unique.",
           },
           {
-            question: "Pourquoi choisir un livre d'or audio ?",
+            question: "Pourquoi choisir un livre d’or audio ?",
             reponse:
               "Il transforme les messages de vos invités en souvenirs vivants : des voix, des émotions et des mots que vous pourrez réécouter et partager.",
           },
           {
-            question: "Comment le photobooth s'intègre-t-il à l'ambiance ?",
+            question: "Comment le photobooth s’intègre-t-il à l’ambiance ?",
             reponse:
-              "Il devient un point de rendez-vous de la soirée : vos invités se lâchent, créent des moments spontanés et repartent avec des photos imprimées ou numériques. Il s'adapte à tous les styles et thèmes.",
+              "Il devient un point de rendez-vous de la soirée : vos invités se lâchent, créent des moments spontanés et repartent avec des photos imprimées ou numériques. Il s’adapte à tous les styles et thèmes.",
           },
           {
             question: "Les étincelles froides et la fumée lourde sont-elles compatibles avec tous les lieux ?",
@@ -212,21 +212,21 @@ export const FAQ: Bilingue<PageFaq> = typographier({
               "Pas toujours : certains lieux sont équipés de détecteurs de fumée sensibles, incompatibles avec ces effets. Nous vérifions les contraintes techniques du lieu avant toute installation.",
           },
           {
-            question: "Les guirlandes lumineuses s'installent-elles en intérieur et en extérieur ?",
+            question: "Les guirlandes lumineuses s’installent-elles en intérieur et en extérieur ?",
             reponse:
-              "Oui : salle, jardin, terrasse ou cour, elles créent une ambiance chaleureuse et élégante et s'intègrent à votre décoration.",
+              "Oui : salle, jardin, terrasse ou cour, elles créent une ambiance chaleureuse et élégante et s’intègrent à votre décoration.",
           },
         ],
       },
       {
         id: "entreprise",
-        titre: "Événements d'entreprise",
+        titre: "Événements d’entreprise",
         lien: { href: "/evenementiel", texte: "Nos événements" },
         questions: [
           {
-            question: "Intervenez-vous pour des événements d'entreprise ?",
+            question: "Intervenez-vous pour des événements d’entreprise ?",
             reponse:
-              "Oui : séminaires, galas, lancements de produit… Nous proposons une prestation clé en main, avec une organisation rigoureuse et une ambiance adaptée à l'image de votre entreprise.",
+              "Oui : séminaires, galas, lancements de produit… Nous proposons une prestation clé en main, avec une organisation rigoureuse et une ambiance adaptée à l’image de votre entreprise.",
           },
           {
             question: "Comment assurez-vous la réussite de notre événement ?",
@@ -239,9 +239,9 @@ export const FAQ: Bilingue<PageFaq> = typographier({
               "Oui. Discours, remises de prix ou projections sont intégrés au déroulé technique et musical, pour que chaque moment important soit mis en valeur.",
           },
           {
-            question: "Pouvez-vous adapter la prestation à l'image de notre entreprise ?",
+            question: "Pouvez-vous adapter la prestation à l’image de notre entreprise ?",
             reponse:
-              "Absolument. Nous personnalisons l'ambiance musicale et visuelle pour refléter l'identité et les valeurs de votre marque, dans le respect du ton de votre événement.",
+              "Absolument. Nous personnalisons l’ambiance musicale et visuelle pour refléter l’identité et les valeurs de votre marque, dans le respect du ton de votre événement.",
           },
         ],
       },
@@ -295,7 +295,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Can you work anywhere in France?",
             reponse:
-              "Yes, we travel throughout France. Each service is adapted to the venue, whether it's a reception hall, an outdoor space or a more unusual setting.",
+              "Yes, we travel throughout France. Each service is adapted to the venue, whether it’s a reception hall, an outdoor space or a more unusual setting.",
           },
           {
             question: "Can you adapt to different venues and layouts?",
@@ -327,12 +327,12 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "How late does the party go on?",
             reponse:
-              "We stop the music at 4 am at the latest, unless the venue's rules require an earlier finish or you ask for extra hours.",
+              "We stop the music at 4 am at the latest, unless the venue’s rules require an earlier finish or you ask for extra hours.",
           },
           {
             question: "Do you use the microphone?",
             reponse:
-              "Only as much as you'd like. Microphone work is there to interact with your guests and lift the energy — not to sing, add echo effects or talk all night. If you'd rather do without, that's absolutely fine.",
+              "Only as much as you’d like. Microphone work is there to interact with your guests and lift the energy — not to sing, add echo effects or talk all night. If you’d rather do without, that’s absolutely fine.",
           },
           {
             question: "Can our best man, maid of honour or planner contact you?",
@@ -362,12 +362,12 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Do you offer several packages?",
             reponse:
-              "We offer a single, complete package, which you can enhance with a premium option. We'll walk you through the details in our first conversation.",
+              "We offer a single, complete package, which you can enhance with a premium option. We’ll walk you through the details in our first conversation.",
           },
           {
             question: "Can you recommend other suppliers?",
             reponse:
-              "Yes. For anything we don't provide ourselves (musicians, a magician, fireworks…), we'll point you to trusted partners we love working with.",
+              "Yes. For anything we don’t provide ourselves (musicians, a magician, fireworks…), we’ll point you to trusted partners we love working with.",
           },
           {
             question: "How do we book our date?",
@@ -409,7 +409,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Are there restrictions for venues with smoke detectors or sound limiters?",
             reponse:
-              "For smoke detectors, yes: we don't perform in venues fitted with sensitive detectors, as they compromise the visual effects. Sound limiters don't stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. We always check the venue's constraints beforehand.",
+              "For smoke detectors, yes: we don’t perform in venues fitted with sensitive detectors, as they compromise the visual effects. Sound limiters don’t stop us from performing, but we advise against choosing a venue fitted with one: the sound is cut or capped as soon as a threshold is exceeded, and the whole atmosphere of the evening suffers. We always check the venue’s constraints beforehand.",
           },
         ],
       },
@@ -421,7 +421,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "What does the vinyl bar add to a party?",
             reponse:
-              "Your guests become the DJ for a few songs. It's an original, hands-on activity that gets people talking and creates a unique atmosphere.",
+              "Your guests become the DJ for a few songs. It’s an original, hands-on activity that gets people talking and creates a unique atmosphere.",
           },
           {
             question: "Why choose an audio guestbook?",
@@ -436,7 +436,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Are cold sparks and low fog suitable for every venue?",
             reponse:
-              "Not always: some venues have sensitive smoke detectors, which aren't compatible with these effects. We check the venue's technical constraints before setting anything up.",
+              "Not always: some venues have sensitive smoke detectors, which aren’t compatible with these effects. We check the venue’s technical constraints before setting anything up.",
           },
           {
             question: "Can fairy lights be installed indoors and outdoors?",
@@ -453,7 +453,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
           {
             question: "Do you work on corporate events?",
             reponse:
-              "Yes: seminars, galas, product launches… We offer a turnkey service, with rigorous organisation and an atmosphere that reflects your company's image.",
+              "Yes: seminars, galas, product launches… We offer a turnkey service, with rigorous organisation and an atmosphere that reflects your company’s image.",
           },
           {
             question: "How do you make sure our event is a success?",
@@ -466,9 +466,9 @@ export const FAQ: Bilingue<PageFaq> = typographier({
               "Yes. Speeches, award ceremonies and screenings are built into the technical and musical running order, so that every important moment gets the spotlight.",
           },
           {
-            question: "Can you adapt the service to our company's image?",
+            question: "Can you adapt the service to our company’s image?",
             reponse:
-              "Absolutely. We tailor the music and visual atmosphere to reflect your brand's identity and values, in keeping with the tone of your event.",
+              "Absolutely. We tailor the music and visual atmosphere to reflect your brand’s identity and values, in keeping with the tone of your event.",
           },
         ],
       },
@@ -480,7 +480,7 @@ export const FAQ: Bilingue<PageFaq> = typographier({
   },
 });
 
-/** Toutes les questions d'une langue, à plat (pour le balisage FAQPage). */
+/** Toutes les questions d’une langue, à plat (pour le balisage FAQPage). */
 export function questionsFaq(locale: Locale): QuestionReponse[] {
   return FAQ[locale].themes.flatMap((t) => t.questions);
 }

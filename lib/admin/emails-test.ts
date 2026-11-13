@@ -27,12 +27,12 @@ export const PREFIXE_TEST = "[TEST] ";
 /** Délai minimal entre deux envois de test. */
 export const INTERVALLE_ENVOIS_MS = 10_000;
 
-/** Entrée de la Server Action : rien d'autre (surtout pas d'adresse). */
+/** Entrée de la Server Action : rien d’autre (surtout pas d’adresse). */
 export const schemaEnvoiTest = z.object({ modele: z.enum(MODELES), langue: z.enum(["fr", "en"]) }).strict();
 
 export type EntreeEnvoiTest = z.infer<typeof schemaEnvoiTest>;
 
-/** Date de l'événement fictif : dans un an, au format AAAA-MM-JJ. */
+/** Date de l’événement fictif : dans un an, au format AAAA-MM-JJ. */
 function dansUnAn(maintenant: Date): string {
   const d = new Date(Date.UTC(maintenant.getUTCFullYear() + 1, maintenant.getUTCMonth(), Math.min(maintenant.getUTCDate(), 28)));
   return d.toISOString().slice(0, 10);
@@ -50,7 +50,7 @@ export function demandeFictive(langue: Langue, maintenant: Date): Demande {
     lieu: "Lieu fictif (test), Île-de-France",
     invites: 120,
     message:
-      "DEMANDE FICTIVE — email de test envoyé depuis le back office (page Emails).\nAucune suite à donner : ce couple n'existe pas.",
+      "DEMANDE FICTIVE — email de test envoyé depuis le back office (page Emails).\nAucune suite à donner : ce couple n’existe pas.",
     langue,
     site_web: "",
     ouvert_le: 0,
@@ -60,7 +60,7 @@ export function demandeFictive(langue: Langue, maintenant: Date): Demande {
 
 /**
  * Email de test prêt à partir : le modèle réel, puis
- * - destinataire remplacé par l'adresse du compte connecté (jamais une saisie) ;
+ * - destinataire remplacé par l’adresse du compte connecté (jamais une saisie) ;
  * - « Répondre » de la notification vers cette même adresse (pas vers le couple fictif) ;
  * - objet préfixé « [TEST] ».
  */
@@ -82,14 +82,14 @@ export function emailDeTest(entree: EntreeEnvoiTest, destinataire: string, confi
 // --- Limite des envois ---------------------------------------------------------
 
 export type Limiteur = {
-  /** Réserve un envoi pour `cle` ; sinon indique le temps d'attente restant. */
+  /** Réserve un envoi pour `cle` ; sinon indique le temps d’attente restant. */
   reserver(cle: string, maintenant: number): { autorise: true } | { autorise: false; attenteMs: number };
 };
 
 /**
  * Un envoi toutes les `intervalleMs` par clé (le compte connecté). En mémoire :
  * propre à chaque instance du serveur, ce qui suffit contre un double clic ou
- * une boucle accidentelle — ce n'est pas une limite de sécurité.
+ * une boucle accidentelle — ce n’est pas une limite de sécurité.
  */
 export function creerLimiteur(intervalleMs: number = INTERVALLE_ENVOIS_MS): Limiteur {
   const derniers = new Map<string, number>();
@@ -116,10 +116,10 @@ export type EtatEnvoiTest =
 
 export const MESSAGES_ENVOI = {
   invalide: "Choix invalide : rechargez la page puis réessayez.",
-  sansEmail: "Le compte connecté n'a pas d'adresse email : envoi impossible.",
+  sansEmail: "Le compte connecté n’a pas d’adresse email : envoi impossible.",
   nonConfigure: "La variable resend_api_key est absente de cet environnement Vercel : aucun email ne peut partir.",
   attente: (ms: number) => `Un envoi toutes les 10 secondes au plus : réessayez dans ${Math.ceil(ms / 1000)} s.`,
-  refuse: (nom: string, message: string) => `Resend a refusé l'envoi — ${nom} : ${message}`,
+  refuse: (nom: string, message: string) => `Resend a refusé l’envoi — ${nom} : ${message}`,
   envoye: (destinataire: string, id: string | null) => `Email de test envoyé à ${destinataire}${id ? ` (identifiant Resend : ${id})` : ""}.`,
 } as const;
 
@@ -134,7 +134,7 @@ export type DependancesEnvoiTest = {
   maintenant: Date;
 };
 
-/** Validation, limite, envoi : la Server Action n'y ajoute que la garde. */
+/** Validation, limite, envoi : la Server Action n’y ajoute que la garde. */
 export async function traiterEnvoiTest(brut: unknown, d: DependancesEnvoiTest): Promise<EtatEnvoiTest> {
   const entree = schemaEnvoiTest.safeParse(brut);
   if (!entree.success) return { statut: "erreur", message: MESSAGES_ENVOI.invalide };

@@ -10,10 +10,10 @@ const LARGEURS = { etroite: "max-w-md", normale: "max-w-2xl", large: "max-w-4xl"
 
 type Props = {
   ouverte: boolean;
-  /** Échap, clic sur le fond ou bouton ×. Pour une modale auto-enregistrée : `fermer()` du hook d'abord. */
+  /** Échap, clic sur le fond ou bouton ×. Pour une modale auto-enregistrée : `fermer()` du hook d’abord. */
   onFermer: () => void;
   titre: string;
-  /** À côté du titre (pill de statut d'enregistrement…). */
+  /** À côté du titre (pill de statut d’enregistrement…). */
   aside?: ReactNode;
   children: ReactNode;
   /** Boutons du bas (alignés à droite). */
@@ -21,17 +21,17 @@ type Props = {
   largeur?: keyof typeof LARGEURS;
   /** `alertdialog` pour une confirmation. */
   role?: "dialog" | "alertdialog";
-  /** Élément à focaliser à l'ouverture (par défaut : le premier champ ou bouton). */
+  /** Élément à focaliser à l’ouverture (par défaut : le premier champ ou bouton). */
   focusInitial?: RefObject<HTMLElement | null>;
-  /** Id d'un texte qui décrit la modale (`aria-describedby`). */
+  /** Id d’un texte qui décrit la modale (`aria-describedby`). */
   descriptionId?: string;
 };
 
 /**
- * Modale accessible : titre annoncé, focus placé à l'ouverture puis rendu à
- * l'élément d'origine à la fermeture, Tab qui tourne dans la modale, Échap et
+ * Modale accessible : titre annoncé, focus placé à l’ouverture puis rendu à
+ * l’élément d’origine à la fermeture, Tab qui tourne dans la modale, Échap et
  * clic sur le fond pour fermer, page derrière figée. Sur téléphone, elle
- * occupe tout l'écran.
+ * occupe tout l’écran.
  */
 export function Modale({
   ouverte,
@@ -56,7 +56,7 @@ export function Modale({
   useEffect(() => {
     if (!ouverte) return;
     const origine = document.activeElement as HTMLElement | null;
-    // Le premier champ du contenu plutôt que le bouton × de l'en-tête.
+    // Le premier champ du contenu plutôt que le bouton × de l’en-tête.
     const cible =
       focusInitial?.current ??
       contenu.current?.querySelector<HTMLElement>(FOCALISABLES) ??

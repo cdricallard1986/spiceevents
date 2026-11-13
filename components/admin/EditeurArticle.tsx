@@ -31,10 +31,10 @@ import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
 import { useErreursFiche } from "./useErreursFiche";
 
-// L'éditeur visuel (Tiptap, le plus gros morceau) n'est chargé que sur cette page, après le reste.
+// L’éditeur visuel (Tiptap, le plus gros morceau) n’est chargé que sur cette page, après le reste.
 const EditeurTexte = dynamic(() => import("./EditeurTexte"), {
   ssr: false,
-  loading: () => <p className="border border-ligne bg-nuit-2 px-4 py-6 text-sable sm:px-8">Chargement de l&apos;éditeur…</p>,
+  loading: () => <p className="border border-ligne bg-nuit-2 px-4 py-6 text-sable sm:px-8">Chargement de l’éditeur…</p>,
 });
 
 /** Server Actions (injectées pour pouvoir tester le composant). */
@@ -54,7 +54,7 @@ type Confirmation = "publier" | "retirer" | "supprimer" | "quitter" | null;
 
 
 /**
- * Éditeur d'un article (page plein écran : un article est long). Même
+ * Éditeur d’un article (page plein écran : un article est long). Même
  * mécanique que les modales du back office : enregistrement automatique
  * (`useModalAutosave`, mode `edition` — la ligne brouillon existe déjà),
  * pill de statut, enregistrement immédiat au départ de la page ;
@@ -82,7 +82,7 @@ export function EditeurArticle({
   const [ligne, setLigne] = useState(ligneInitiale);
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
-  // Valeur d'ouverture figée : les réponses du serveur ne réécrivent pas la saisie en cours.
+  // Valeur d’ouverture figée : les réponses du serveur ne réécrivent pas la saisie en cours.
   const [initiale] = useState(() => formulaireDepuisLigne(ligneInitiale));
 
   const fiche = useModalAutosave<FormulaireEditeur>({
@@ -129,11 +129,11 @@ export function EditeurArticle({
     else setConfirmation("quitter");
   }
 
-  /** Aperçu dans un nouvel onglet, après l'enregistrement de ce qui attend (sinon l'aperçu serait en retard). */
+  /** Aperçu dans un nouvel onglet, après l’enregistrement de ce qui attend (sinon l’aperçu serait en retard). */
   async function apercu() {
     const fenetre = window.open("about:blank", "_blank");
     const ok = await fiche.enregistrerMaintenant();
-    if (!ok) afficher("La dernière modification n'est pas enregistrée (pastille rouge) : l'aperçu montre la version précédente.", "erreur");
+    if (!ok) afficher("La dernière modification n’est pas enregistrée (pastille rouge) : l’aperçu montre la version précédente.", "erreur");
     const adresse = `/admin/journal/${id}/apercu`;
     if (fenetre) {
       fenetre.opener = null;
@@ -144,9 +144,9 @@ export function EditeurArticle({
   async function changerStatut(action: "publier" | "retirer") {
     setEnCours(true);
     try {
-      // D'abord ce qui attend : on publie l'article tel qu'il est à l'écran.
+      // D’abord ce qui attend : on publie l’article tel qu’il est à l’écran.
       if (!(await fiche.enregistrerMaintenant())) {
-        afficher("L'article n'est pas enregistré (pastille rouge) : corrigez-le avant de le publier ou de le retirer du site.", "erreur");
+        afficher("L’article n’est pas enregistré (pastille rouge) : corrigez-le avant de le publier ou de le retirer du site.", "erreur");
         return;
       }
       const r = await (action === "publier" ? actions.publier(id) : actions.retirer(id));
@@ -235,7 +235,7 @@ export function EditeurArticle({
       </div>
 
       <p className="mt-6 text-sm text-sable">
-        Chaque modification est enregistrée automatiquement{publie ? " ; l'article en ligne se met à jour à la visite suivante d'une page" : " ; l'article n'est pas sur le site tant qu'il n'est pas publié"}.
+        Chaque modification est enregistrée automatiquement{publie ? " ; l’article en ligne se met à jour à la visite suivante d’une page" : " ; l’article n’est pas sur le site tant qu’il n’est pas publié"}.
       </p>
       {fiche.brouillonRestaure && (
         <p className="mt-4 border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire">
@@ -246,7 +246,7 @@ export function EditeurArticle({
       <div className="mt-8 flex flex-col gap-8">
         <div className="grid gap-6 sm:grid-cols-2">
           <Champ id={champ("titre")} libelle="Titre" erreur={erreurs.titre} max={LIMITES_ARTICLES.titre} valeur={v.titre} className="sm:col-span-2">
-            {(attributs) => <input {...attributs} type="text" value={v.titre} onChange={(e) => modifierTitre(e.target.value)} placeholder="Comment choisir l'ambiance de votre mariage ?" />}
+            {(attributs) => <input {...attributs} type="text" value={v.titre} onChange={(e) => modifierTitre(e.target.value)} placeholder="Comment choisir l’ambiance de votre mariage ?" />}
           </Champ>
           <Champ id={champ("sous_titre")} libelle="Sous-titre" erreur={erreurs.sous_titre} max={LIMITES_ARTICLES.sousTitre} valeur={v.sous_titre} aide="Facultatif : affiché sous le titre." className="sm:col-span-2">
             {(attributs) => <textarea {...attributs} rows={2} value={v.sous_titre} onChange={(e) => fiche.modifier({ sous_titre: e.target.value })} />}
@@ -257,7 +257,7 @@ export function EditeurArticle({
             erreur={erreurs.description}
             max={LIMITES_ARTICLES.description}
             valeur={v.description}
-            aide="C'est le texte affiché par Google sous le titre de l'article (et lors d'un partage) : une ou deux phrases qui donnent envie de lire."
+            aide="C’est le texte affiché par Google sous le titre de l’article (et lors d’un partage) : une ou deux phrases qui donnent envie de lire."
             className="sm:col-span-2"
           >
             {(attributs) => <textarea {...attributs} rows={3} value={v.description} onChange={(e) => fiche.modifier({ description: e.target.value })} />}
@@ -274,7 +274,7 @@ export function EditeurArticle({
               </select>
             )}
           </Champ>
-          <Champ id={champ("date_publication")} libelle="Date de publication" erreur={erreurs.date_publication} aide="La date affichée sur l'article et qui le classe dans le journal.">
+          <Champ id={champ("date_publication")} libelle="Date de publication" erreur={erreurs.date_publication} aide="La date affichée sur l’article et qui le classe dans le journal.">
             {(attributs) => <input {...attributs} type="date" value={v.date_publication} onChange={(e) => fiche.modifier({ date_publication: e.target.value })} />}
           </Champ>
 
@@ -303,13 +303,13 @@ export function EditeurArticle({
         </div>
 
         <div className="border-t border-ligne pt-8">
-          <p className={`${CLASSES_LIBELLE} mb-2`}>Texte de l&apos;article</p>
+          <p className={`${CLASSES_LIBELLE} mb-2`}>Texte de l’article</p>
           <p className={`${CLASSES_AIDE} mb-4`}>
             Intertitres, gras, italique, listes, citations, liens et photos. Un texte collé depuis Word, Google Docs ou une page web garde sa mise en forme
             simple ; les images collées depuis un autre site ne sont pas reprises : ajoutez-les avec le bouton « Photo ».
           </p>
           <EditeurTexte
-            // Une saisie reprise de cet appareil remplace le contenu d'ouverture : l'éditeur repart de celle-ci.
+            // Une saisie reprise de cet appareil remplace le contenu d’ouverture : l’éditeur repart de celle-ci.
             key={fiche.brouillonRestaure ? "repris" : "ouverture"}
             contenuInitial={v.contenu}
             onChange={(contenu) => fiche.modifier({ contenu })}
@@ -324,7 +324,7 @@ export function EditeurArticle({
           {dejaPublie ? (
             <p className="max-w-xl text-sm text-sable">
               Cet article a déjà été publié : il ne peut plus être supprimé (son adresse est connue de Google et des liens qui pointent vers lui).
-              {publie ? " Pour qu'il n'apparaisse plus, retirez-le du site : il restera ici en brouillon." : " Il n'est plus sur le site et reste ici en brouillon."}
+              {publie ? " Pour qu’il n’apparaisse plus, retirez-le du site : il restera ici en brouillon." : " Il n’est plus sur le site et reste ici en brouillon."}
             </p>
           ) : (
             <button type="button" onClick={() => setConfirmation("supprimer")} className={`${CLASSES_DANGER} self-start`}>
@@ -336,7 +336,7 @@ export function EditeurArticle({
 
       <ConfirmDialog
         ouverte={confirmation === "publier"}
-        titre={manques.length ? "Pas encore prêt à publier" : dejaPublie ? "Republier l'article ?" : "Publier l'article ?"}
+        titre={manques.length ? "Pas encore prêt à publier" : dejaPublie ? "Republier l’article ?" : "Publier l’article ?"}
         message={
           manques.length ? (
             <>
@@ -349,8 +349,8 @@ export function EditeurArticle({
             </>
           ) : (
             <p>
-              L&apos;article apparaîtra dans le journal à l&apos;adresse <span className="text-ivoire">{adressePublique(adresseAffichee)}</span> dès la visite
-              suivante d&apos;une page.{" "}
+              L’article apparaîtra dans le journal à l’adresse <span className="text-ivoire">{adressePublique(adresseAffichee)}</span> dès la visite
+              suivante d’une page.{" "}
               {!dejaPublie && <strong className="font-semibold text-ivoire">Cette adresse ne pourra plus changer ensuite.</strong>}
             </p>
           )
@@ -362,10 +362,10 @@ export function EditeurArticle({
       />
       <ConfirmDialog
         ouverte={confirmation === "retirer"}
-        titre="Retirer l'article du site ?"
+        titre="Retirer l’article du site ?"
         message={
           <p>
-            L&apos;article n&apos;apparaîtra plus dans le journal, et son adresse <span className="text-ivoire">{adressePublique(ligne.slug)}</span> renverra une
+            L’article n’apparaîtra plus dans le journal, et son adresse <span className="text-ivoire">{adressePublique(ligne.slug)}</span> renverra une
             page introuvable (les liens et Google qui pointent dessus tomberont sur une erreur). Il reste ici en brouillon : vous pourrez le republier à la même
             adresse.
           </p>
@@ -382,7 +382,7 @@ export function EditeurArticle({
         message={
           <p>
             Le brouillon « {v.titre.trim() || "sans titre"} » sera supprimé.{" "}
-            <strong className="font-semibold text-erreur">C&apos;est définitif : il ne pourra pas être récupéré.</strong>
+            <strong className="font-semibold text-erreur">C’est définitif : il ne pourra pas être récupéré.</strong>
           </p>
         }
         libelleConfirmer="Supprimer définitivement"
@@ -394,7 +394,7 @@ export function EditeurArticle({
       <ConfirmDialog
         ouverte={confirmation === "quitter"}
         titre="Modification non enregistrée"
-        message={<p>La dernière modification n&apos;a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cet article.</p>}
+        message={<p>La dernière modification n’a pas pu être enregistrée. Elle reste gardée sur cet appareil : vous la retrouverez en rouvrant cet article.</p>}
         libelleConfirmer="Quitter quand même"
         libelleAnnuler="Rester"
         danger
@@ -409,8 +409,8 @@ export function EditeurArticle({
 }
 
 /**
- * Adresse de l'article : proposée d'après le titre tant que l'article n'a
- * jamais été publié et qu'elle n'a pas été modifiée à la main ; verrouillée
+ * Adresse de l’article : proposée d’après le titre tant que l’article n’a
+ * jamais été publié et qu’elle n’a pas été modifiée à la main ; verrouillée
  * après la première publication.
  */
 function Adresse({
@@ -437,7 +437,7 @@ function Adresse({
           <span className="text-sable">spiceevents.fr</span>
           {adressePublique(adresseAffichee)}
         </p>
-        <p className={CLASSES_AIDE}>Verrouillée : l&apos;adresse d&apos;un article publié ne change plus (Google et les liens vers l&apos;article pointent dessus).</p>
+        <p className={CLASSES_AIDE}>Verrouillée : l’adresse d’un article publié ne change plus (Google et les liens vers l’article pointent dessus).</p>
       </div>
     );
   }
@@ -450,9 +450,9 @@ function Adresse({
           {adressePublique(adresseAffichee)}
         </p>
         <p className={CLASSES_AIDE}>
-          Proposée d&apos;après le titre. Elle sera figée à la première publication.{" "}
+          Proposée d’après le titre. Elle sera figée à la première publication.{" "}
           <button type="button" onClick={() => modifier({ slugAuto: false, slug: adresseAffichee })} className={lien}>
-            Modifier l&apos;adresse
+            Modifier l’adresse
           </button>
         </p>
         {erreur && <p className="text-sm text-erreur">{erreur}</p>}
@@ -489,7 +489,7 @@ function Adresse({
           </div>
           {slugDepuisTitre(v.titre) && (
             <button type="button" onClick={() => modifier((p) => ({ ...p, slugAuto: true, slug: slugPropose(p.titre, p.slug) }))} className={`${lien} self-start`}>
-              Reprendre l&apos;adresse proposée d&apos;après le titre
+              Reprendre l’adresse proposée d’après le titre
             </button>
           )}
         </div>

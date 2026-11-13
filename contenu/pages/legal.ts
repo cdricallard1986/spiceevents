@@ -63,7 +63,7 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = typographier({
       {
         titre: "Liens externes",
         paragraphes: [
-          `Le site contient des liens vers d'autres sites (Mariages.net, Instagram, Facebook, YouTube, MX Événement…). ${SITE.nom} n'est pas responsable de leur contenu.`,
+          `Le site contient des liens vers d’autres sites (Mariages.net, Instagram, Facebook, YouTube, MX Événement…). ${SITE.nom} n’est pas responsable de leur contenu.`,
         ],
       },
       {
@@ -132,7 +132,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
     seo: {
       titre: "Politique de confidentialité — Spice Events",
       description:
-        "Comment Spice Events traite les données du formulaire de contact : finalité, base légale, durée de conservation, sous-traitants, vos droits RGPD et mesure d'audience sans cookie.",
+        "Comment Spice Events traite les données du formulaire de contact : finalité, base légale, durée de conservation, sous-traitants, vos droits RGPD et mesure d’audience sans cookie.",
     },
     hero: { surtitre: "Vos données", titre: "Politique de *confidentialité*" },
     miseAJour: "Dernière mise à jour : 16 octobre 2026",
@@ -150,14 +150,14 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
           "votre nom ;",
           "votre adresse email et votre numéro de téléphone ;",
           "la date et le lieu de votre événement ;",
-          "le nombre d'invités ;",
+          "le nombre d’invités ;",
           "votre message.",
         ],
       },
       {
         titre: "Finalité et base légale",
         paragraphes: [
-          "Ces données servent uniquement à répondre à votre demande et à établir un devis. Ce traitement repose sur l'exécution de mesures précontractuelles prises à votre demande (article 6.1.b du RGPD).",
+          "Ces données servent uniquement à répondre à votre demande et à établir un devis. Ce traitement repose sur l’exécution de mesures précontractuelles prises à votre demande (article 6.1.b du RGPD).",
           "Elles ne sont ni vendues, ni louées, ni utilisées à des fins publicitaires.",
         ],
       },
@@ -177,20 +177,20 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
         ],
       },
       {
-        titre: "Transferts hors de l'Union européenne",
+        titre: "Transferts hors de l’Union européenne",
         paragraphes: [
-          "Les demandes de contact sont stockées chez Supabase dans un centre de données situé dans l'Union européenne. Vercel et Resend sont des sociétés américaines : les transferts éventuels de données vers les États-Unis sont encadrés par les clauses contractuelles types de la Commission européenne et, le cas échéant, par le cadre de protection des données UE–États-Unis (Data Privacy Framework).",
+          "Les demandes de contact sont stockées chez Supabase dans un centre de données situé dans l’Union européenne. Vercel et Resend sont des sociétés américaines : les transferts éventuels de données vers les États-Unis sont encadrés par les clauses contractuelles types de la Commission européenne et, le cas échéant, par le cadre de protection des données UE–États-Unis (Data Privacy Framework).",
         ],
       },
       {
         titre: "Vos droits",
         paragraphes: [
-          `Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation du traitement et de portabilité de vos données. Pour les exercer, écrivez-nous à ${MAIL}.`,
+          `Vous disposez d’un droit d’accès, de rectification, d’effacement, d’opposition, de limitation du traitement et de portabilité de vos données. Pour les exercer, écrivez-nous à ${MAIL}.`,
           "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL : [cnil.fr](https://www.cnil.fr).",
         ],
       },
       {
-        titre: "Mesure d'audience",
+        titre: "Mesure d’audience",
         paragraphes: [
           "Nous mesurons la fréquentation du site avec Vercel Web Analytics, sans cookie et sans collecter de donnée personnelle : seules des statistiques globales et anonymes (pages vues, provenance) sont produites.",
         ],
@@ -198,8 +198,8 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
       {
         titre: "Cookies",
         paragraphes: [
-          "Le site n'utilise aucun cookie publicitaire ni de suivi. Un cookie technique peut mémoriser la langue que vous avez choisie ; il est strictement nécessaire au fonctionnement du site.",
-          "Les vidéos du site sont intégrées en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : le lecteur n'est chargé que si vous cliquez sur « lecture », et YouTube ne dépose d'informations dans votre navigateur qu'à ce moment-là. Avant ce clic, seule l'image d'aperçu de la vidéo est affichée depuis les serveurs d'images de YouTube (i.ytimg.com), sans cookie.",
+          "Le site n’utilise aucun cookie publicitaire ni de suivi. Un cookie technique peut mémoriser la langue que vous avez choisie ; il est strictement nécessaire au fonctionnement du site.",
+          "Les vidéos du site sont intégrées en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : le lecteur n’est chargé que si vous cliquez sur « lecture », et YouTube ne dépose d’informations dans votre navigateur qu’à ce moment-là. Avant ce clic, seule l’image d’aperçu de la vidéo est affichée depuis les serveurs d’images de YouTube (i.ytimg.com), sans cookie.",
         ],
       },
     ],
@@ -253,7 +253,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
       {
         titre: "Transfers outside the European Union",
         paragraphes: [
-          "Contact requests are stored by Supabase in a data centre located in the European Union. Vercel and Resend are US companies: any transfer of data to the United States is covered by the European Commission's standard contractual clauses and, where applicable, by the EU–US Data Privacy Framework.",
+          "Contact requests are stored by Supabase in a data centre located in the European Union. Vercel and Resend are US companies: any transfer of data to the United States is covered by the European Commission’s standard contractual clauses and, where applicable, by the EU–US Data Privacy Framework.",
         ],
       },
       {
@@ -273,7 +273,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
         titre: "Cookies",
         paragraphes: [
           "This website uses no advertising or tracking cookies. A technical cookie may remember the language you have chosen; it is strictly necessary for the website to work.",
-          "The videos on this site are embedded using YouTube's privacy-enhanced mode (youtube-nocookie.com): the player only loads when you click \"play\", and YouTube only stores information in your browser at that point. Before that click, only the video's preview image is shown, from YouTube's image servers (i.ytimg.com), without cookies.",
+          "The videos on this site are embedded using YouTube’s privacy-enhanced mode (youtube-nocookie.com): the player only loads when you click \"play\", and YouTube only stores information in your browser at that point. Before that click, only the video’s preview image is shown, from YouTube’s image servers (i.ytimg.com), without cookies.",
         ],
       },
     ],

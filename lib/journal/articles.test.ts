@@ -43,13 +43,13 @@ describe("articleDepuisLigne", () => {
     expect(articleDepuisLigne(ligne())).not.toHaveProperty("sousTitre");
   });
 
-  it("refuse un contenu que le rendu ne connaît pas, en nommant l'article", () => {
+  it("refuse un contenu que le rendu ne connaît pas, en nommant l’article", () => {
     const script = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "x", marks: [{ type: "link", attrs: { href: "javascript:alert(1)" } }] }] }] };
     expect(() => articleDepuisLigne(ligne({ contenu: script }))).toThrow(/comment-un-dj-lit-il-une-piste-de-danse.*Lien refusé/);
     expect(() => articleDepuisLigne(ligne({ contenu: { type: "doc", content: [{ type: "codeBlock" }] } }))).toThrow(/Contenu invalide/);
   });
 
-  it("refuse un article publié incomplet (la contrainte de la table l'interdit déjà)", () => {
+  it("refuse un article publié incomplet (la contrainte de la table l’interdit déjà)", () => {
     expect(() => articleDepuisLigne(ligne({ description: null }))).toThrow(/sans description/);
     expect(() => articleDepuisLigne(ligne({ categorie: null }))).toThrow(/catégorie/);
     expect(() => articleDepuisLigne(ligne({ couverture: null }))).toThrow(/couverture/);
@@ -83,7 +83,7 @@ describe("outils de présentation", () => {
     expect(formaterDate("2026-02-03")).toBe("3 février 2026");
   });
 
-  it("propose d'abord les articles de la même catégorie", () => {
+  it("propose d’abord les articles de la même catégorie", () => {
     const a = (slug: string, categorie: string, date: string) => ({ slug, categorie, date, titre: slug });
     const tous = [a("x", "Technique", "2026-01-01"), a("y", "Animations", "2026-04-01"), a("z", "Technique", "2025-01-01"), a("w", "Animations", "2026-02-01")];
     expect(articlesLies(tous, tous[0]).map((l) => l.slug)).toEqual(["z", "y", "w"]);
@@ -109,7 +109,7 @@ describe("articles du dépôt (données de secours)", () => {
     }
   });
 
-  it("ne pointe plus vers l'ancien site et n'a que des liens internes connus", () => {
+  it("ne pointe plus vers l’ancien site et n’a que des liens internes connus", () => {
     for (const l of lignes) {
       for (const { href } of liensDuDocument(doc(l))) {
         expect(href, l.slug).not.toMatch(/spiceevents\.fr\/|strikingly/);
@@ -118,7 +118,7 @@ describe("articles du dépôt (données de secours)", () => {
     }
   });
 
-  it("ne renvoie qu'à des articles existants", () => {
+  it("ne renvoie qu’à des articles existants", () => {
     const slugs = new Set(lignes.map((l) => l.slug));
     for (const l of lignes) {
       for (const { href } of liensDuDocument(doc(l))) {
@@ -129,7 +129,7 @@ describe("articles du dépôt (données de secours)", () => {
   });
 });
 
-describe("derniersArticles (rangées de l'accueil, de Mariages et d'Événementiel)", () => {
+describe("derniersArticles (rangées de l’accueil, de Mariages et d’Événementiel)", () => {
   const liste = [
     { titre: "A", categorie: "Technique", date: "2026-01-01" },
     { titre: "B", categorie: "Conseils mariage", date: "2026-03-01" },

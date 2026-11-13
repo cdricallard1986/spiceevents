@@ -13,7 +13,7 @@ export type EntreePlan = {
   lastModified?: string;
 };
 
-/** Pages sans paramètre publiées, par ordre d'importance. */
+/** Pages sans paramètre publiées, par ordre d’importance. */
 const PAGES: { chemin: Chemin; priorite: number }[] = [
   { chemin: "/", priorite: 1 },
   { chemin: "/mariages", priorite: 0.95 },

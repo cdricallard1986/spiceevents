@@ -33,7 +33,7 @@ export default async function PageDemandes() {
         intro={
           <>
             Les demandes reçues par le formulaire de contact, les plus récentes en tête. Ouvrez une demande pour rappeler, écrire ou suivre où vous en
-            êtes : le statut et la note interne ne sont visibles qu&apos;ici.
+            êtes : le statut et la note interne ne sont visibles qu’ici.
           </>
         }
       />
@@ -41,7 +41,7 @@ export default async function PageDemandes() {
       <div className="mt-10">
         {error ? (
           <p role="alert" className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-            La liste des demandes n&apos;a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
+            La liste des demandes n’a pas pu être chargée (la base ne répond pas). Rechargez la page dans un instant.
           </p>
         ) : (
           <>

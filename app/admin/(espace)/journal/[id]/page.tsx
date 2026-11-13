@@ -12,8 +12,8 @@ export const metadata: Metadata = { title: "Article" };
 type Props = { params: Promise<{ id: string }> };
 
 /**
- * Éditeur d'un article (brouillon ou publié), en pleine page. La ligne existe
- * toujours (« Nouvel article » crée le brouillon avant d'ouvrir cette page).
+ * Éditeur d’un article (brouillon ou publié), en pleine page. La ligne existe
+ * toujours (« Nouvel article » crée le brouillon avant d’ouvrir cette page).
  * La photothèque sert au choix de la couverture.
  */
 export default async function PageArticle({ params }: Props) {
@@ -27,10 +27,10 @@ export default async function PageArticle({ params }: Props) {
     supabase.from("photos").select(COLONNES_PHOTO).order("created_at", { ascending: false }).order("chemin", { ascending: true }),
   ]);
   if (article.error) {
-    console.warn(`[admin] Journal — lecture de l'article : ${article.error.code ?? ""} ${article.error.message}`);
+    console.warn(`[admin] Journal — lecture de l’article : ${article.error.code ?? ""} ${article.error.message}`);
     return (
       <p role="alert" className="border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">
-        L&apos;article n&apos;a pas pu être chargé (la base ne répond pas). Rechargez la page dans un instant.
+        L’article n’a pas pu être chargé (la base ne répond pas). Rechargez la page dans un instant.
       </p>
     );
   }

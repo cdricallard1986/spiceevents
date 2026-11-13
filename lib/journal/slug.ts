@@ -1,16 +1,16 @@
 import { LIMITES_ARTICLES, MOTIF_SLUG } from "./constantes";
 
 /**
- * Adresse (slug) d'un article à partir de son titre, comme celles des
+ * Adresse (slug) d’un article à partir de son titre, comme celles des
  * articles importés : sans accents, en minuscules, chaque suite de caractères
  * autres que lettres et chiffres (espaces, apostrophes, ponctuation, &…)
  * devient un tiret. 120 caractères au plus (contrainte de la table), coupé
- * entre deux mots quand c'est possible.
+ * entre deux mots quand c’est possible.
  *
  * « Comment choisir l’ambiance musicale de votre mariage ? »
  *   → `comment-choisir-l-ambiance-musicale-de-votre-mariage`
  *
- * Rend une chaîne vide si le titre n'a ni lettre ni chiffre (au formulaire de le signaler).
+ * Rend une chaîne vide si le titre n’a ni lettre ni chiffre (au formulaire de le signaler).
  */
 export function slugDepuisTitre(titre: string, max: number = LIMITES_ARTICLES.slug): string {
   const slug = titre
@@ -25,7 +25,7 @@ export function slugDepuisTitre(titre: string, max: number = LIMITES_ARTICLES.sl
   return couper(slug, max);
 }
 
-/** Coupe à `max` caractères, au dernier tiret si la coupe tombe au milieu d'un mot. */
+/** Coupe à `max` caractères, au dernier tiret si la coupe tombe au milieu d’un mot. */
 function couper(slug: string, max: number): string {
   if (slug.length <= max) return slug;
   const coupe = slug.slice(0, max);

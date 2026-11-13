@@ -9,11 +9,11 @@ import { carteEquipe, type CarteEquipe } from "./affichage";
 import { COLONNES_EQUIPE, type MembreEquipe } from "./types";
 
 /**
- * Lecture de l'équipe publiée pour la page Nos DJ (serveur seulement), sur le
+ * Lecture de l’équipe publiée pour la page Nos DJ (serveur seulement), sur le
  * modèle des avis : client publishable sans cookies (page statique), cache
  * étiqueté `equipe` (chaque action du back office appelle
- * `revalidateTag("equipe")`), filet d'une heure. Sans Supabase dans
- * l'environnement : l'équipe du code (`contenu/equipe.ts`). Une erreur de
+ * `revalidateTag("equipe")`), filet d’une heure. Sans Supabase dans
+ * l’environnement : l’équipe du code (`contenu/equipe.ts`). Une erreur de
  * Supabase est levée, jamais remplacée par ces données : on ne publie pas
  * une équipe périmée.
  */
@@ -23,7 +23,7 @@ export const REVALIDATION_EQUIPE = 3600;
 
 async function lireBase(): Promise<MembreEquipe[]> {
   const { data, error } = await clientPublic().from("equipe").select(COLONNES_EQUIPE).eq("publie", true).order("ordre", { ascending: true });
-  if (error) throw new Error(`[equipe] Lecture de l'équipe impossible dans Supabase : ${error.message}`);
+  if (error) throw new Error(`[equipe] Lecture de l’équipe impossible dans Supabase : ${error.message}`);
   return (data ?? []) as MembreEquipe[];
 }
 

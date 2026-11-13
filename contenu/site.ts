@@ -1,10 +1,10 @@
-/** Informations de l'entreprise, communes à tout le site. */
+/** Informations de l’entreprise, communes à tout le site. */
 export const SITE = {
   nom: "Spice Events",
   url: "https://www.spiceevents.fr",
   /**
    * Logo des emails (lettres claires, 600 × 349) : adresse absolue sur le domaine
-   * Vercel du site, en ligne dès aujourd'hui et qui le reste après la bascule de
+   * Vercel du site, en ligne dès aujourd’hui et qui le reste après la bascule de
    * www.spiceevents.fr (encore sur Strikingly en novembre 2026).
    */
   logoEmail: "https://spiceevents.vercel.app/marque/logo-spice-clair.png",
@@ -37,12 +37,12 @@ export const SITE = {
     tva: "FR78530672666",
     ape: "9002Z",
   },
-  /** Distinctions réelles (badges Mariages.net présents sur l'ancien site). */
+  /** Distinctions réelles (badges Mariages.net présents sur l’ancien site). */
   weddingAwards: [2022, 2024, 2025, 2026],
-  /** Note et nombre d'avis sur Mariages.net (donnés par Cédric le 12/11/2026, à mettre à jour à la main). */
+  /** Note et nombre d’avis sur Mariages.net (donnés par Cédric le 12/11/2026, à mettre à jour à la main). */
   avisMariagesNet: { note: 4.9, nombre: 72, url: "https://www.mariages.net/musique-mariage/spice-events--e127122/avis" },
   /** Plateforme de préparation des mariages conçue par Spice Events (espace mariés, agence, DJ, technicien). */
   nuvio: "https://nuvio.disco-very.com/",
-  /** Chiffres tirés des textes de l'ancien site (biographie de Cédric). */
+  /** Chiffres tirés des textes de l’ancien site (biographie de Cédric). */
   chiffres: { anneesExperience: 20, evenements: 600 },
 } as const;

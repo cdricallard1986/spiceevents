@@ -1,6 +1,6 @@
 import type { QuestionReponse } from "@/contenu/types";
 
-/** Questions dépliables, accessibles au clavier sans JavaScript. `ouvertes` : toutes dépliées (résultats d'une recherche). */
+/** Questions dépliables, accessibles au clavier sans JavaScript. `ouvertes` : toutes dépliées (résultats d’une recherche). */
 export function Faq({ questions, ouvertes = false }: { questions: QuestionReponse[]; ouvertes?: boolean }) {
   return (
     <div className="divide-y divide-ligne border-y border-ligne">

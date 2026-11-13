@@ -12,7 +12,7 @@ import {
 // « Maintenant » fixe : 15 octobre 2026, 10 h à Paris.
 const MAINTENANT = new Date("2026-10-15T08:00:00Z");
 
-/** Une demande valide, telle qu'envoyée par le formulaire (tout en texte). */
+/** Une demande valide, telle qu’envoyée par le formulaire (tout en texte). */
 function brut(modifs: Record<string, string> = {}): Record<string, string> {
   return {
     prenoms: "Julie & Thomas",
@@ -58,7 +58,7 @@ describe("validerDemande", () => {
     });
   });
 
-  it("rend facultatifs la date, le lieu et le nombre d'invités", () => {
+  it("rend facultatifs la date, le lieu et le nombre d’invités", () => {
     const r = validerDemande(brut({ date: "", lieu: "  ", invites: "" }), MAINTENANT);
     expect(r.ok).toBe(true);
     if (!r.ok) return;
@@ -77,7 +77,7 @@ describe("validerDemande", () => {
     expect(erreurs({ email: "pas un email" }).email).toBeDefined();
   });
 
-  it("refuse un type d'événement inconnu", () => {
+  it("refuse un type d’événement inconnu", () => {
     expect(erreurs({ type: "concert" }).type).toBeDefined();
   });
 
@@ -85,17 +85,17 @@ describe("validerDemande", () => {
     expect(validerDemande(brut({ type }), MAINTENANT).ok).toBe(true);
   });
 
-  it("refuse une date passée, accepte aujourd'hui", () => {
+  it("refuse une date passée, accepte aujourd’hui", () => {
     expect(erreurs({ date: "2026-10-14" }).date).toBeDefined();
     expect(validerDemande(brut({ date: "2026-10-15" }), MAINTENANT).ok).toBe(true);
   });
 
-  it("refuse une date qui n'existe pas ou mal formée", () => {
+  it("refuse une date qui n’existe pas ou mal formée", () => {
     expect(erreurs({ date: "2027-02-30" }).date).toBeDefined();
     expect(erreurs({ date: "12/06/2027" }).date).toBeDefined();
   });
 
-  it("exige un nombre d'invités entier et raisonnable", () => {
+  it("exige un nombre d’invités entier et raisonnable", () => {
     expect(erreurs({ invites: "0" }).invites).toBeDefined();
     expect(erreurs({ invites: "12.5" }).invites).toBeDefined();
     expect(erreurs({ invites: "beaucoup" }).invites).toBeDefined();
@@ -117,7 +117,7 @@ describe("validerDemande", () => {
   });
 
   it("accepte les prénoms composés, apostrophes et accents", () => {
-    const r = validerDemande(brut({ prenoms: "Anne-Sophie & Jean-Pierre", nom: "O'Connor-Lefèvre" }), MAINTENANT);
+    const r = validerDemande(brut({ prenoms: "Anne-Sophie & Jean-Pierre", nom: "O’Connor-Lefèvre" }), MAINTENANT);
     expect(r.ok).toBe(true);
   });
 
@@ -136,7 +136,7 @@ describe("validerDemande", () => {
     expect(erreurs({ envoye_le: "abc" }).formulaire).toBeDefined();
   });
 
-  it("donne les messages d'erreur dans la langue du formulaire", () => {
+  it("donne les messages d’erreur dans la langue du formulaire", () => {
     const fr = erreurs({ email: "x" }).email;
     const en = erreurs({ email: "x", langue: "en" }).email;
     expect(fr).toMatch(/adresse/i);
@@ -149,12 +149,12 @@ describe("validerDemande", () => {
     expect(r.ok && r.demande.langue).toBe("fr");
   });
 
-  it("n'échoue pas sur le champ piège rempli (c'est estRobot qui décide)", () => {
+  it("n’échoue pas sur le champ piège rempli (c’est estRobot qui décide)", () => {
     const r = validerDemande(brut({ site_web: "https://spam.example" }), MAINTENANT);
     expect(r.ok).toBe(true);
   });
 
-  it("renvoie la langue même en cas d'erreur", () => {
+  it("renvoie la langue même en cas d’erreur", () => {
     const r = validerDemande(brut({ email: "", langue: "en" }), MAINTENANT);
     expect(r.ok).toBe(false);
     expect(r.langue).toBe("en");
@@ -182,7 +182,7 @@ describe("estRobot", () => {
     expect(estRobot(demande({ ouvert_le: "1000000", envoye_le: String(1000000 + DELAI_MINIMUM_MS) }))).toBe(false);
   });
 
-  it("repère un horodatage d'envoi antérieur à l'ouverture", () => {
+  it("repère un horodatage d’envoi antérieur à l’ouverture", () => {
     expect(estRobot(demande({ ouvert_le: "2000000", envoye_le: "1000000" }))).toBe(true);
   });
 });
@@ -211,7 +211,7 @@ describe("normaliserTelephone", () => {
 
 describe("dateDuJourParis", () => {
   it("donne la date à Paris, pas en UTC", () => {
-    // 23 h 30 UTC le 14 = 1 h 30 à Paris le 15 (heure d'été).
+    // 23 h 30 UTC le 14 = 1 h 30 à Paris le 15 (heure d’été).
     expect(dateDuJourParis(new Date("2026-10-14T23:30:00Z"))).toBe("2026-10-15");
     expect(dateDuJourParis(new Date("2026-10-15T08:00:00Z"))).toBe("2026-10-15");
   });
@@ -230,7 +230,7 @@ describe("lireFormulaire", () => {
     expect(lu.email).toBe("");
   });
 
-  it("ignore les fichiers envoyés à la place d'un texte", () => {
+  it("ignore les fichiers envoyés à la place d’un texte", () => {
     const fd = new FormData();
     fd.set("message", new Blob(["x"]), "x.txt");
     expect(lireFormulaire(fd).message).toBe("");

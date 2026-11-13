@@ -7,9 +7,9 @@ import { clientNavigateur } from "@/lib/supabase/client";
 /**
  * Barre de développement (OBLIGATOIRE sur les plateformes de Cédric), active
  * seulement avec `NODE_ENV=development` : jamais rendue en production. Un seul
- * profil réel ici, elle indique d'un coup d'œil sous quelle identité on teste :
+ * profil réel ici, elle indique d’un coup d’œil sous quelle identité on teste :
  * « Cédric connecté » (or) ou « visiteur » (gris). La couleur est gardée dans
- * le navigateur : elle reste juste dès l'affichage, même après rechargement.
+ * le navigateur : elle reste juste dès l’affichage, même après rechargement.
  */
 export function DevToolbar() {
   if (process.env.NODE_ENV !== "development") return null;
@@ -69,7 +69,7 @@ function BarreOutilsDev() {
     }
 
     void verifier();
-    // Pas d'appel Supabase directement dans le rappel (risque de blocage) : on le diffère.
+    // Pas d’appel Supabase directement dans le rappel (risque de blocage) : on le diffère.
     const { data } = supabase.auth.onAuthStateChange(() => {
       window.setTimeout(() => void verifier(), 0);
     });

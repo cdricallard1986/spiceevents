@@ -14,11 +14,11 @@ import { COLONNES_LIAISON, COLONNES_PHOTO, type LigneGalerie, type PhotoAffichee
  * modèle des avis (lib/avis/lecture.ts) :
  *
  * - client publishable sans cookies : les pages restent statiques ;
- * - mise en cache sous l'étiquette `galeries` : chaque action du back office
+ * - mise en cache sous l’étiquette `galeries` : chaque action du back office
  *   appelle `revalidateTag("galeries")`, la page est régénérée à la visite
  *   suivante. Filet : régénération toutes les heures ;
  * - une erreur de Supabase est levée, jamais remplacée par les listes de
- *   secours : on ne publie pas une page avec d'autres photos que celles choisies.
+ *   secours : on ne publie pas une page avec d’autres photos que celles choisies.
  */
 
 export const ETIQUETTE_GALERIES = "galeries";
@@ -44,15 +44,15 @@ export async function lignesDesGaleries(env: Record<string, string | undefined> 
 }
 
 /**
- * Photos d'une galerie (`galerie_mariages`, `galerie_evenements`,
- * `option:<slug>`), dans l'ordre, prêtes à afficher dans la langue de la page.
+ * Photos d’une galerie (`galerie_mariages`, `galerie_evenements`,
+ * `option:<slug>`), dans l’ordre, prêtes à afficher dans la langue de la page.
  */
 export async function photosDeGalerie(galerie: string, locale: Locale, env: Record<string, string | undefined> = process.env): Promise<PhotoAffichee[]> {
   return galerieEnLangue(await lignesDesGaleries(env), galerie, locale);
 }
 
 /**
- * Photos du diaporama d'en-tête d'une page (`entete:<page>`), choisies dans le
+ * Photos du diaporama d’en-tête d’une page (`entete:<page>`), choisies dans le
  * back office. Liste vide en base (toutes retirées, ou migration 0011 pas
  * encore appliquée) : la liste du code, pour ne jamais publier un en-tête vide.
  * `sauf` : les photos déjà montrées plus bas sur la page, retirées du tirage

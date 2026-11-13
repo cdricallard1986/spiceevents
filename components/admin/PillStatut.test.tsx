@@ -18,14 +18,14 @@ describe("PillStatut", () => {
     expect(screen.getByRole("status")).toHaveTextContent(texte);
   });
 
-  it("« Enregistré » s'estompe en « À jour »", () => {
+  it("« Enregistré » s’estompe en « À jour »", () => {
     vi.useFakeTimers();
     render(<PillStatut statut="enregistre" />);
     act(() => vi.advanceTimersByTime(2000));
     expect(screen.getByRole("status")).toHaveTextContent("✓ À jour");
   });
 
-  it("en erreur, devient un bouton qui relance l'enregistrement", () => {
+  it("en erreur, devient un bouton qui relance l’enregistrement", () => {
     const onReessayer = vi.fn();
     render(<PillStatut statut="erreur" onReessayer={onReessayer} />);
     fireEvent.click(screen.getByRole("button", { name: "⚠ Non enregistré — réessayer" }));

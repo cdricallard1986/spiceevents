@@ -1,6 +1,6 @@
 /**
- * Sections du back office, dans l'ordre du menu latéral et des cartes de
- * l'accueil. `disponible: false` = étape du plan pas encore construite (la page
+ * Sections du back office, dans l’ordre du menu latéral et des cartes de
+ * l’accueil. `disponible: false` = étape du plan pas encore construite (la page
  * affiche « bientôt disponible »).
  */
 
@@ -20,7 +20,7 @@ export const ACCUEIL_ADMIN: Section = {
   href: "/admin",
   libelle: "Accueil",
   accroche: "Prêt à pimenter ?",
-  description: "Vue d'ensemble du back office.",
+  description: "Vue d’ensemble du back office.",
   icone: "accueil",
   disponible: true,
 };
@@ -29,7 +29,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/avis",
     libelle: "Avis",
-    accroche: "Ce qu'ils en disent.",
+    accroche: "Ce qu’ils en disent.",
     description: "Avis des mariés : texte, traduction, pages où ils apparaissent, ordre.",
     icone: "avis",
     disponible: true,
@@ -97,13 +97,13 @@ export const HREF_COMPTE = "/admin/compte";
 
 export const MENU: readonly Section[] = [ACCUEIL_ADMIN, ...SECTIONS.filter((s) => s.href !== HREF_COMPTE)];
 
-/** L'entrée du menu est-elle celle de la page affichée ? (L'accueil seulement sur `/admin` exact.) */
+/** L’entrée du menu est-elle celle de la page affichée ? (L’accueil seulement sur `/admin` exact.) */
 export function estActive(href: string, chemin: string): boolean {
   if (href === ACCUEIL_ADMIN.href) return chemin === href;
   return chemin === href || chemin.startsWith(`${href}/`);
 }
 
-/** Section d'après son adresse (pour les pages « bientôt disponible »). */
+/** Section d’après son adresse (pour les pages « bientôt disponible »). */
 export function sectionDe(href: string): Section {
   const section = SECTIONS.find((s) => s.href === href);
   if (!section) throw new Error(`Section inconnue : ${href}`);
