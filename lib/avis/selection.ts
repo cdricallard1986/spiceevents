@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/routing";
 import type { Categorie, Emplacement } from "./constantes";
 import type { Avis, AvisAffiche } from "./types";
+import { insecables } from "@/lib/typographie";
 
 /**
  * Choix et mise en forme des avis pour les pages publiques (logique pure et
@@ -64,7 +65,13 @@ export function enLangue(avis: Avis, locale: Locale): AvisEnLangue {
   const role = (locale === "en" ? (avis.role_en ?? avis.role_fr) : avis.role_fr) ?? undefined;
   const base = { id: avis.id, auteurs: avis.auteurs, ...(role ? { role } : {}) };
   if (locale === "en" && avis.texte_en) return { ...base, texte: avis.texte_en, citation: avis.citation_en };
-  return { ...base, texte: avis.texte_fr, citation: avis.citation_fr, ...(locale === "en" ? { langue: "fr" as const } : {}) };
+  // Texte français : espaces fines insécables avant ; : ! ? (la ponctuation ne part pas seule à la ligne).
+  return {
+    ...base,
+    texte: insecables(avis.texte_fr),
+    citation: avis.citation_fr === null ? null : insecables(avis.citation_fr),
+    ...(locale === "en" ? { langue: "fr" as const } : {}),
+  };
 }
 
 /** Citation affichée : celle choisie dans le back office, sinon le début du texte. */

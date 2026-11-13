@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type Galerie = {
   seo: Seo;
@@ -8,7 +9,7 @@ type Galerie = {
   evenements: { surtitre: string; titre: string };
 };
 
-export const GALERIE: Bilingue<Galerie> = {
+export const GALERIE: Bilingue<Galerie> = typographier({
   fr: {
     seo: {
       titre: "Galerie photos — mariages et événements | Spice Events, Île-de-France",
@@ -17,7 +18,7 @@ export const GALERIE: Bilingue<Galerie> = {
     },
     hero: {
       surtitre: "Galerie",
-      titre: "La lumière, *la piste*, le piment.",
+      titre: "La lumière, la piste, *le piment.*",
       intro: "Une sélection de mariages et d'événements que nous avons mis en musique et en lumière.",
     },
     mariages: { surtitre: "Mariages", titre: "De la cérémonie *au bout de la nuit*." },
@@ -31,13 +32,13 @@ export const GALERIE: Bilingue<Galerie> = {
     },
     hero: {
       surtitre: "Gallery",
-      titre: "The light, *the dance floor*, the spice.",
+      titre: "The light, the dance floor, *the spice.*",
       intro: "A selection of weddings and events we have brought to life with music and lighting.",
     },
     mariages: { surtitre: "Weddings", titre: "From the ceremony *to the end of the night*." },
     evenements: { surtitre: "Events", titre: "Galas, launches *and big nights out*." },
   },
-};
+});
 
 /** Photos de mariages, dans l'ordre d'affichage (on alterne ambiances et moments). */
 export const PHOTOS_MARIAGES: CleImage[] = [

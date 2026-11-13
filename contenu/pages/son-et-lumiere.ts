@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Etape, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Une famille de matériel : marques et modèles du parc, avec une photo du vrai matériel. */
 export type FamilleMateriel = { titre: string; texte: string; modeles: string[]; image: CleImage };
@@ -21,7 +22,7 @@ type SonEtLumiere = {
 /** Photos d'en-tête de la page (secours : la liste vit en base, `entete:son-et-lumiere`, gérée dans le back office). */
 export const IMAGES_ENTETE_SON_LUMIERE: CleImage[] = ["son-lumiere-installation", "son-lumiere-regie-lets-dance"];
 
-export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
+export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
   fr: {
     seo: {
       titre: "Sonorisation et éclairage de mariage et d'événement : notre matériel | Spice Events",
@@ -267,4 +268,4 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
       texte: "Your date, the guest count and the schedule: we'll suggest a setup that is tailored, tested and safe.",
     },
   },
-};
+});

@@ -10,6 +10,7 @@ import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { FormulaireContact } from "@/components/contact/FormulaireContact";
 import { envoyerDemande } from "./actions";
 import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
+import { ROMAINS } from "@/components/common/Etapes";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -21,7 +22,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/contact", seo: CONTACT[locale].seo, image: "contact-maries-lumiere" });
 }
 
-const ROMAINS = ["I", "II", "III"];
 
 export default async function PageContact({ params }: Props) {
   const { locale } = await params;

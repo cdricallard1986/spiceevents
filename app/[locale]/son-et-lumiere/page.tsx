@@ -16,11 +16,12 @@ import { Section } from "@/components/common/Section";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
+import { LecteurYoutube } from "@/components/common/LecteurYoutube";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
 /** Vidéo de présentation de MX Événement (celle de l'ancienne page « performances techniques »). */
-const VIDEO = "https://www.youtube-nocookie.com/embed/DWSC6XgbY_M";
+const ID_VIDEO = "DWSC6XgbY_M";
 
 /** Installations liées à la technique, présentées en bas de page. */
 const OPTIONS_TECHNIQUES = ["sonorisation-ceremonie-laique", "sonorisation-deportee", "ouverture-de-bal", "guirlandes-lumineuses"];
@@ -159,15 +160,7 @@ export default async function PageSonEtLumiere({ params }: Props) {
 
       <Section surtitre={c.video.surtitre} titre={c.video.titre} alterne>
         <div className="relative aspect-video w-full overflow-hidden border border-ligne bg-nuit">
-          <iframe
-            src={VIDEO}
-            title={c.video.titreLecteur}
-            loading="lazy"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            referrerPolicy="strict-origin-when-cross-origin"
-            className="absolute inset-0 h-full w-full"
-          />
+          <LecteurYoutube id={ID_VIDEO} titre={c.video.titreLecteur} libelleLecture={locale === "fr" ? "Lire la vidéo" : "Play the video"} />
         </div>
       </Section>
 

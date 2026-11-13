@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { insecables } from "@/lib/typographie";
 
 /**
  * Met en valeur les passages entre astérisques : « La nuit dont vos invités
@@ -6,7 +7,7 @@ import { Fragment } from "react";
  * Le reste est du texte brut.
  */
 export function Accent({ texte, couleur = "text-or" }: { texte: string; couleur?: string }) {
-  const morceaux = texte.split(/\*([^*]+)\*/g);
+  const morceaux = insecables(texte).split(/\*([^*]+)\*/g);
   return (
     <>
       {morceaux.map((m, i) =>

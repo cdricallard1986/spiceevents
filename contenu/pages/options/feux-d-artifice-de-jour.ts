@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = {
+export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = typographier({
   image: "presta-feux-artifice-jour-nuit",
   // Une seule photo pour l'instant : la galerie est masquée en attendant.
   galerie: [],
@@ -89,4 +90,4 @@ export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = {
       },
     },
   },
-};
+});

@@ -2,10 +2,10 @@ import "server-only";
 import { unstable_cache } from "next/cache";
 import type { Locale } from "@/i18n/routing";
 import { clientPublic } from "@/lib/supabase/public";
-import { image } from "@/lib/images";
+import { image, type CleImage } from "@/lib/images";
 import { galerieEntete, type PageEntete } from "./constantes";
 import { ENTETES_REPLI, lignesDeRepli } from "./repli";
-import { galerieEnLangue } from "./selection";
+import { galerieEnLangue, sansPhotosDejaMontrees } from "./selection";
 import { sourcePhotos } from "./source";
 import { COLONNES_LIAISON, COLONNES_PHOTO, type LigneGalerie, type PhotoAffichee } from "./types";
 
@@ -55,8 +55,16 @@ export async function photosDeGalerie(galerie: string, locale: Locale, env: Reco
  * Photos du diaporama d'en-tête d'une page (`entete:<page>`), choisies dans le
  * back office. Liste vide en base (toutes retirées, ou migration 0011 pas
  * encore appliquée) : la liste du code, pour ne jamais publier un en-tête vide.
+ * `sauf` : les photos déjà montrées plus bas sur la page, retirées du tirage
+ * (la même photo ne revient pas deux fois sur une page).
  */
-export async function photosEnTete(page: PageEntete, locale: Locale, env: Record<string, string | undefined> = process.env): Promise<PhotoAffichee[]> {
+export async function photosEnTete(
+  page: PageEntete,
+  locale: Locale,
+  sauf: readonly CleImage[] = [],
+  env: Record<string, string | undefined> = process.env,
+): Promise<PhotoAffichee[]> {
   const photos = await photosDeGalerie(galerieEntete(page), locale, env);
-  return photos.length > 0 ? photos : ENTETES_REPLI[page].map((cle) => image(cle, locale));
+  const liste = photos.length > 0 ? photos : ENTETES_REPLI[page].map((cle) => image(cle, locale));
+  return sansPhotosDejaMontrees(liste, sauf.map((cle) => image(cle, locale).src));
 }

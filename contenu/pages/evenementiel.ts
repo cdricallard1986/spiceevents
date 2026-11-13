@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type Format = { titre: string; texte: string; exemples: string[]; image: CleImage };
 
@@ -27,7 +28,7 @@ type Evenementiel = {
 /** Photos d'en-tête de la page (secours : la liste vit en base, `entete:evenementiel`, gérée dans le back office). */
 export const IMAGES_ENTETE_EVENEMENTIEL: CleImage[] = ["presta-gala-salle"];
 
-export const EVENEMENTIEL: Bilingue<Evenementiel> = {
+export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
   fr: {
     seo: {
       titre: "Soirées privées & événements d'entreprise en Île-de-France | Spice Events",
@@ -42,7 +43,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     promesse: {
       surtitre: "Le piment de vos temps forts",
-      titre: "Un événement *à votre image*, maîtrisé de bout en bout.",
+      titre: "Un événement à votre image, *maîtrisé de bout en bout.*",
       paragraphes: [
         "Chaque temps fort est unique et mérite d'être vécu pleinement. Notre mission : faire de votre événement un moment inoubliable et à votre image, avec un service professionnel, innovant et humain.",
         "Musique, son, lumière, animations et coordination : tout est pensé pour que vous puissiez profiter de votre événement — ou vous concentrer sur vos invités et votre message.",
@@ -82,17 +83,17 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       titre: "Bien préparé. *Pleinement vécu.*",
       etapes: [
         {
-          numero: "01 / On échange",
+          numero: "On échange",
           titre: "Votre idée devient un projet.",
           texte: "Vos objectifs, votre public, votre lieu : nous définissons ensemble ce qui compte.",
         },
         {
-          numero: "02 / On prépare",
+          numero: "On prépare",
           titre: "Chaque détail a sa place.",
           texte: "Devis sur mesure, sélection musicale et coordination technique avec vos prestataires.",
         },
         {
-          numero: "03 / On fait vivre",
+          numero: "On fait vivre",
           titre: "Place à votre événement.",
           texte: "Installation, tests et présence sur place. Notre équipe accompagne vos temps forts.",
         },
@@ -108,7 +109,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       intro: "Cédric, alias DJ Dioz, en altitude au Grand-Bornand : la même lecture du public et la même énergie, quel que soit le décor.",
     },
     galerie: { surtitre: "En images", titre: "Nos nuits *en action*.", lien: "Voir la galerie" },
-    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu'en disent *nos clients*." },
+    avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu'en disent *nos clients.*" },
     faq: {
       surtitre: "Questions fréquentes",
       titre: "Tout savoir sur *nos prestations*.",
@@ -164,7 +165,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
     },
     promesse: {
       surtitre: "The spice in your big moments",
-      titre: "An event *that reflects you*, handled from start to finish.",
+      titre: "An event that reflects you, *handled from start to finish.*",
       paragraphes: [
         "Every big moment is unique and deserves to be lived to the full. Our mission: to make your event unforgettable and true to you, with a professional, innovative and personal service.",
         "Music, sound, lighting, entertainment and coordination: everything is designed so you can enjoy your event — or focus on your guests and your message.",
@@ -204,17 +205,17 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       titre: "Well prepared. *Fully lived.*",
       etapes: [
         {
-          numero: "01 / We talk",
+          numero: "We talk",
           titre: "Your idea becomes a project.",
           texte: "Your goals, your audience, your venue: together we define what matters.",
         },
         {
-          numero: "02 / We prepare",
+          numero: "We prepare",
           titre: "Every detail in its place.",
           texte: "A tailored quote, the music selection and technical coordination with your suppliers.",
         },
         {
-          numero: "03 / We bring it to life",
+          numero: "We bring it to life",
           titre: "Over to your event.",
           texte: "Setup, tests and presence on site. Our team supports your key moments.",
         },
@@ -230,7 +231,7 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       intro: "Cédric, aka DJ Dioz, high in the mountains at Le Grand-Bornand: the same feel for the crowd and the same energy, whatever the setting.",
     },
     galerie: { surtitre: "In pictures", titre: "Our nights *in action*.", lien: "View the gallery" },
-    avis: { surtitre: "They trusted us", titre: "What *our clients* say." },
+    avis: { surtitre: "They trusted us", titre: "What *our clients say.*" },
     faq: {
       surtitre: "Frequently asked questions",
       titre: "All about *our services*.",
@@ -272,4 +273,4 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
       texte: "Date, number of guests, goals: tell us the essentials and Cédric will get back to you personally.",
     },
   },
-};
+});

@@ -1,7 +1,8 @@
 import type { CSSProperties } from "react";
 import type { Etape } from "@/contenu/types";
 
-const ROMAINS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
+/** Numérotation des étapes et des moments, partout sur le site : chiffres romains. */
+export const ROMAINS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
 
 /**
  * Étapes numérotées en chiffres romains. Sur grand écran (≥ 1280 px), toutes

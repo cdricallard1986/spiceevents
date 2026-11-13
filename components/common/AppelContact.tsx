@@ -1,14 +1,20 @@
 import { useLocale } from "next-intl";
-import { Bouton } from "@/components/ui/Bouton";
+import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Accent } from "./Accent";
 
-type Props = { titre?: string; texte?: string; bouton?: string };
+type Props = {
+  titre?: string;
+  texte?: string;
+  bouton?: string;
+  /** Adresse externe (ex. `mailto:` de la candidature) à la place du formulaire de contact. */
+  lienExterne?: string;
+};
 
 /**
  * Bande orange de fin de page (charte Nocturne) : une question, une phrase, un
  * bouton sombre vers le formulaire de contact.
  */
-export function AppelContact({ titre, texte, bouton }: Props) {
+export function AppelContact({ titre, texte, bouton, lienExterne }: Props) {
   const fr = useLocale() === "fr";
   return (
     <section className="bg-or text-nuit">
@@ -24,9 +30,15 @@ export function AppelContact({ titre, texte, bouton }: Props) {
                 : "Tell us the essentials in two minutes: Cédric will get back to you personally, as soon as possible.")}
           </p>
         </div>
-        <Bouton href="/contact" variante="sombre" className="gap-6">
-          {bouton ?? (fr ? "Vérifier ma date" : "Check my date")} <span aria-hidden="true">→</span>
-        </Bouton>
+        {lienExterne ? (
+          <a href={lienExterne} className={`${classesBouton("sombre")} gap-6`}>
+            {bouton} <span aria-hidden="true">→</span>
+          </a>
+        ) : (
+          <Bouton href="/contact" variante="sombre" className="gap-6">
+            {bouton ?? (fr ? "Vérifier ma date" : "Check my date")} <span aria-hidden="true">→</span>
+          </Bouton>
+        )}
       </div>
     </section>
   );

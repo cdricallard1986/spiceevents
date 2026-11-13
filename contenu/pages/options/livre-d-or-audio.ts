@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const LIVRE_D_OR_AUDIO: ContenuOption = {
+export const LIVRE_D_OR_AUDIO: ContenuOption = typographier({
   image: "presta-livre-or-entete",
   galerie: ["telephone-livre-or", "presta-livre-or-cadre"],
   textes: {
@@ -46,7 +47,7 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = {
         ],
       },
       appel: {
-        titre: "Gardez *leurs voix* en souvenir.",
+        titre: "Gardez leurs voix *en souvenir.*",
         texte: "Réservez le livre d'or audio pour votre mariage ou votre événement : Cédric vous répond personnellement.",
       },
     },
@@ -92,9 +93,9 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = {
         ],
       },
       appel: {
-        titre: "Keep *their voices* forever.",
+        titre: "Keep their voices *forever.*",
         texte: "Book the audio guestbook for your wedding or event: Cédric will get back to you personally.",
       },
     },
   },
-};
+});

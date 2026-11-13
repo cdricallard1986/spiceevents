@@ -21,6 +21,8 @@ export function originesSupabase(url: string = SUPABASE_URL): string[] {
 export const TIERS = {
   // Lecteur YouTube en mode « sans cookies » pour les vidéos de démonstration.
   cadres: ["https://www.youtube-nocookie.com"],
+  // Images d'aperçu des vidéos (avant le clic sur « lecture »), servies par YouTube sans cookie.
+  images: ["https://i.ytimg.com"],
   // Script de Vercel Web Analytics en développement (en production il est servi par le site).
   scripts: ["https://va.vercel-scripts.com"],
 } as const;
@@ -44,7 +46,7 @@ export function politiqueContenu(production: boolean, supabaseUrl: string = SUPA
     // Pas de nonce : Next injecte des scripts en ligne, un nonce rendrait toutes les pages dynamiques.
     "script-src": ["'self'", "'unsafe-inline'", ...TIERS.scripts, ...(production ? [] : ["'unsafe-eval'"])],
     "style-src": ["'self'", "'unsafe-inline'"],
-    "img-src": ["'self'", "data:", "blob:", originesSupabase(supabaseUrl)[0]],
+    "img-src": ["'self'", "data:", "blob:", originesSupabase(supabaseUrl)[0], ...TIERS.images],
     "font-src": ["'self'"],
     "connect-src": ["'self'", ...originesSupabase(supabaseUrl), ...TIERS.scripts],
     "frame-src": [...(options.cadresDuSite ? ["'self'"] : []), ...TIERS.cadres],

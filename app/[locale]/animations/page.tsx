@@ -70,7 +70,7 @@ export default async function PageAnimations({ params }: Props) {
                   >
                     <Photo cle={v.image} remplir sizes="(min-width: 768px) 50vw, 82vw" className="-z-10 transition-transform duration-700 group-hover:scale-[1.025]" />
                     <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(transparent_35%,rgba(0,0,0,0.78))]" />
-                    <div className="flex w-full items-end justify-between gap-6 p-6 md:p-8">
+                    <div className="texte-sur-photo flex w-full items-end justify-between gap-6 p-6 md:p-8">
                       <div>
                         <p className="surtitre mb-3">{v.surtitre}</p>
                         <h2 className="font-display text-4xl leading-[0.95] md:text-5xl">{v.titre}</h2>

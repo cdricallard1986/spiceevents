@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, QuestionReponse, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Famille d'une animation, pour les filtres de la page (clé stable, libellé traduit). */
 export type CategorieAnimation = "musique" | "souvenirs" | "effets";
@@ -23,7 +24,7 @@ type Animations = {
 };
 
 /** Famille de chaque animation (slug français → catégorie). */
-export const CATEGORIES_ANIMATIONS: Record<string, CategorieAnimation> = {
+export const CATEGORIES_ANIMATIONS: Record<string, CategorieAnimation> = typographier({
   "ouverture-de-bal": "effets",
   "bar-a-vinyles": "musique",
   "livre-d-or-audio": "souvenirs",
@@ -32,9 +33,9 @@ export const CATEGORIES_ANIMATIONS: Record<string, CategorieAnimation> = {
   "feux-d-artifice-de-jour": "effets",
   "sonorisation-ceremonie-laique": "musique",
   "sonorisation-deportee": "musique",
-};
+});
 
-export const ANIMATIONS: Bilingue<Animations> = {
+export const ANIMATIONS: Bilingue<Animations> = typographier({
   fr: {
     seo: {
       titre: "Animations de mariage et de soirée en Île-de-France | Spice Events",
@@ -251,4 +252,4 @@ export const ANIMATIONS: Bilingue<Animations> = {
       texte: "Let's choose together the small touches that make the big memories.",
     },
   },
-};
+});

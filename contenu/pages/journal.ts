@@ -1,5 +1,6 @@
 import type { Categorie } from "@/lib/journal/constantes";
 import type { Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type Journal = {
   seo: Seo;
@@ -12,7 +13,7 @@ type Journal = {
 };
 
 /** Page publiée en français seulement (les articles ne sont pas traduits). */
-export const JOURNAL: Journal = {
+export const JOURNAL: Journal = typographier({
   seo: {
     titre: "Journal : conseils mariage, DJ, son & lumière — Spice Events",
     description:
@@ -36,4 +37,4 @@ export const JOURNAL: Journal = {
     lies: { surtitre: "Le journal", titre: "À lire *aussi*" },
     retour: "Tout le journal",
   },
-};
+});

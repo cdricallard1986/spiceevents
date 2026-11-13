@@ -6,6 +6,7 @@ import type { CleImage } from "@/lib/images";
 import { Link } from "@/i18n/navigation";
 import { Modale } from "@/components/admin/Modale";
 import { Photo } from "@/components/ui/Photo";
+import { ROMAINS } from "./Etapes";
 
 export type MomentAffiche = {
   titre: string;
@@ -42,11 +43,14 @@ export function JourneeMariage({ moments, locale, etiquette }: Props) {
                   <Photo cle={moment.image} remplir sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw" className="photo-arrivee" />
                 </span>
               </span>
-              <span className="mt-6 text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-sable">
-                {String(i + 1).padStart(2, "0")} / {etiquette}
+              {/* Chiffres romains et titre en Barlow, comme les étapes et les cartes du reste du site. */}
+              <span className="mt-6 font-display text-2xl text-or">
+                <span className="sr-only">{etiquette} </span>
+                {ROMAINS[i]}.
               </span>
-              <span className="mt-3 text-xl font-semibold tracking-tight group-hover:text-or">
-                {moment.titre}{" "}
+              <span className="mt-2 font-display text-2xl leading-tight group-hover:text-or">
+                {moment.titre}
+                {"\u00a0"}
                 <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">
                   →
                 </span>

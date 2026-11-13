@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const SONORISATION_DEPORTEE: ContenuOption = {
+export const SONORISATION_DEPORTEE: ContenuOption = typographier({
   image: "presta-enceinte",
   galerie: ["presta-sono-salle", "presta-sono-diner", "presta-chapiteau-nuit"],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
@@ -87,4 +88,4 @@ export const SONORISATION_DEPORTEE: ContenuOption = {
       },
     },
   },
-};
+});

@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/routing";
 import type { CleImage } from "@/lib/images";
 import type { Bilingue } from "./types";
+import { typographier } from "@/lib/typographie";
 
 /**
  * Les animations et options, chacune avec sa page `/animations/<slug>`.
@@ -14,7 +15,7 @@ export type Option = {
   image: CleImage;
 };
 
-export const OPTIONS: Option[] = [
+export const OPTIONS: Option[] = typographier([
   {
     slug: { fr: "ouverture-de-bal", en: "first-dance-effects" },
     titre: { fr: "Ouverture de bal spectaculaire", en: "Spectacular first dance" },
@@ -87,7 +88,7 @@ export const OPTIONS: Option[] = [
     },
     image: "presta-sono-grand-salon",
   },
-];
+]);
 
 export function optionParSlug(slug: string, locale: Locale): Option | undefined {
   return OPTIONS.find((o) => o.slug[locale] === slug);

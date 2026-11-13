@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const OUVERTURE_DE_BAL: ContenuOption = {
+export const OUVERTURE_DE_BAL: ContenuOption = typographier({
   image: "presta-bal-fumee-etincelles-chapiteau",
   galerie: ["presta-bal-fumee-nb", "hero-premiere-danse", "maison-mariage-danse-gobos", "couple-faisceaux"],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
@@ -83,4 +84,4 @@ export const OUVERTURE_DE_BAL: ContenuOption = {
       },
     },
   },
-};
+});

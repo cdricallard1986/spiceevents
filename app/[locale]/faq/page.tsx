@@ -49,7 +49,7 @@ export default async function PageFaq({ params }: Props) {
         </div>
       </section>
 
-      <AppelContact titre={c.contact.titre} texte={c.contact.texte} />
+      <AppelContact titre={c.contact.titre} texte={c.contact.texte} bouton={locale === "fr" ? "Poser ma question" : "Ask my question"} />
     </>
   );
 }

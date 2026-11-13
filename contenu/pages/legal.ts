@@ -1,5 +1,6 @@
 import { SITE } from "../site";
 import type { Bilingue, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /**
  * Pages légales, écrites en blocs simples. Dans les paragraphes et les listes,
@@ -21,7 +22,7 @@ const ADRESSE = `${S.adresse.ligne1}, ${S.adresse.rue}, ${S.adresse.codePostal} 
 const CAPITAL_FR = S.capital ? `au capital de ${S.capital}` : "[À COMPLÉTER : capital social]";
 const CAPITAL_EN = S.capital ? `with a share capital of ${S.capital}` : "[À COMPLÉTER : capital social]";
 
-export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
+export const MENTIONS_LEGALES: Bilingue<PageLegale> = typographier({
   fr: {
     seo: {
       titre: "Mentions légales — Spice Events",
@@ -124,9 +125,9 @@ export const MENTIONS_LEGALES: Bilingue<PageLegale> = {
       },
     ],
   },
-};
+});
 
-export const CONFIDENTIALITE: Bilingue<PageLegale> = {
+export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
   fr: {
     seo: {
       titre: "Politique de confidentialité — Spice Events",
@@ -198,7 +199,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         titre: "Cookies",
         paragraphes: [
           "Le site n'utilise aucun cookie publicitaire ni de suivi. Un cookie technique peut mémoriser la langue que vous avez choisie ; il est strictement nécessaire au fonctionnement du site.",
-          "Les vidéos du site sont intégrées en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : YouTube ne dépose d'informations dans votre navigateur que si vous lancez une lecture.",
+          "Les vidéos du site sont intégrées en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : le lecteur n'est chargé que si vous cliquez sur « lecture », et YouTube ne dépose d'informations dans votre navigateur qu'à ce moment-là. Avant ce clic, seule l'image d'aperçu de la vidéo est affichée depuis les serveurs d'images de YouTube (i.ytimg.com), sans cookie.",
         ],
       },
     ],
@@ -272,9 +273,9 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         titre: "Cookies",
         paragraphes: [
           "This website uses no advertising or tracking cookies. A technical cookie may remember the language you have chosen; it is strictly necessary for the website to work.",
-          "The videos on this site are embedded using YouTube's privacy-enhanced mode (youtube-nocookie.com): YouTube only stores information in your browser if you start playing a video.",
+          "The videos on this site are embedded using YouTube's privacy-enhanced mode (youtube-nocookie.com): the player only loads when you click \"play\", and YouTube only stores information in your browser at that point. Before that click, only the video's preview image is shown, from YouTube's image servers (i.ytimg.com), without cookies.",
         ],
       },
     ],
   },
-};
+});

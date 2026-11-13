@@ -1,5 +1,6 @@
 import { hasLocale } from "next-intl";
 import { getRequestConfig } from "next-intl/server";
+import { typographier } from "../lib/typographie";
 import { routing } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
@@ -7,6 +8,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const locale = hasLocale(routing.locales, demandee) ? demandee : routing.defaultLocale;
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    // Typographie française (espaces fines insécables) sur tous les textes de l'interface.
+    messages: typographier((await import(`../messages/${locale}.json`)).default),
   };
 });

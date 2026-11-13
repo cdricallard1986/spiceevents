@@ -42,3 +42,14 @@ export function photosDeLaGalerie(photos: readonly Photo[], liaisons: readonly L
     .sort(comparerLiaisons)
     .map((l) => parId.get(l.photo_id)!);
 }
+
+/**
+ * Diaporama d'en-tête sans les photos déjà montrées plus bas sur la même page
+ * (adresses `src`) : la même photo ne doit pas revenir deux fois. Si tout y
+ * passait, la liste d'origine (jamais d'en-tête vide).
+ */
+export function sansPhotosDejaMontrees(photos: readonly PhotoAffichee[], dejaMontrees: Iterable<string>): PhotoAffichee[] {
+  const vues = new Set(dejaMontrees);
+  const restantes = photos.filter((p) => !vues.has(p.src));
+  return restantes.length > 0 ? restantes : [...photos];
+}

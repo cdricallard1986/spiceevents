@@ -40,9 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 
+// Pas de photo déjà montrée ailleurs sur la page (moments, avis), et une grande case en paysage.
 const PHOTOS = [
-  "presta-maries-enlaces",
-  "presta-piste-mains-levees",
+  "maison-mariage-danse-genou",
+  "piste-invites",
   "presta-salle-rouge",
   "presta-invites-chapiteau",
   "presta-piste-laser",
@@ -53,7 +54,14 @@ export default async function PageMariages({ params }: Props) {
   setRequestLocale(locale);
   const c = MARIAGES[locale];
   // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
-  const entete = await photosEnTete("mariages", locale);
+  // Sans les photos déjà montrées plus bas (grille, moments, avis ; « contact-maries-lumiere » est la même
+  // photo que « couple-faisceaux » sous une autre clé).
+  const entete = await photosEnTete("mariages", locale, [
+    ...PHOTOS,
+    ...c.journee.moments.map((m) => m.image),
+    "couple-faisceaux",
+    "contact-maries-lumiere",
+  ]);
   // Avis choisis dans le back office (emplacements « Page Mariages — grand avis » et « — grille »).
   const tous = await avisPublies();
   const grand = grandAvis(tous, "mariages_grand", locale, 320);

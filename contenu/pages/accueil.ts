@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Une des deux grandes portes d'entrée de l'accueil : Mariages ou Événements. */
 type Porte = { href: "/mariages" | "/evenementiel"; image: CleImage; surtitre: string; titre: string; texte: string; lien: string };
@@ -33,7 +34,7 @@ export const IMAGES_ACCUEIL: CleImage[] = [
   "soiree-piste-costumes",
 ];
 
-export const ACCUEIL: Bilingue<Accueil> = {
+export const ACCUEIL: Bilingue<Accueil> = typographier({
   fr: {
     seo: {
       titre: "DJ mariage en Île-de-France — son, lumière & animations | Spice Events",
@@ -54,7 +55,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
       liste: [
         {
           href: "/mariages",
-          image: "presta-bal-etincelles-fumee",
+          image: "maison-mariage-danse-genou",
           surtitre: "Mariages",
           titre: "Un grand oui. *Une nuit pimentée.*",
           texte: "De la cérémonie au dernier morceau, une journée qui vous ressemble et une fête qui vous rassemble.",
@@ -110,7 +111,7 @@ export const ACCUEIL: Bilingue<Accueil> = {
       liste: [
         {
           href: "/mariages",
-          image: "presta-bal-etincelles-fumee",
+          image: "maison-mariage-danse-genou",
           surtitre: "Weddings",
           titre: "A big “I do”. *A spicy night.*",
           texte: "From the ceremony to the last song, a day that feels like you and a party that brings everyone together.",
@@ -146,4 +147,4 @@ export const ACCUEIL: Bilingue<Accueil> = {
       bouton: "Let's spice up your night",
     },
   },
-};
+});

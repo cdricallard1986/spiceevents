@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = {
+export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
   image: "presta-ceremonie-arbre",
   galerie: ["presta-ceremonie-officiant", "presta-ceremonie-champ", "presta-ceremonie-cour"],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
@@ -99,4 +100,4 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = {
       },
     },
   },
-};
+});

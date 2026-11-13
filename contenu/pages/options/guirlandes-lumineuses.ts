@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const GUIRLANDES_LUMINEUSES: ContenuOption = {
+export const GUIRLANDES_LUMINEUSES: ContenuOption = typographier({
   image: "grange-guirlandes",
   galerie: [
     "presta-guirlandes-salle",
@@ -96,9 +97,9 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = {
         ],
       },
       appel: {
-        titre: "Let's make *your night* shine.",
+        titre: "Let's make your night *shine.*",
         texte: "Tell us about your event and your ideas: we'll design its lighting together.",
       },
     },
   },
-};
+});

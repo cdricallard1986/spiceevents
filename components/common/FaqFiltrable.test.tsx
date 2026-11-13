@@ -48,7 +48,8 @@ describe("FaqFiltrable", () => {
     render(<FaqFiltrable themes={c.themes} textes={c.recherche} />);
     chercher("xylophone");
     expect(questionsAffichees()).toHaveLength(0);
-    expect(screen.getByText(c.recherche.aucune)).toBeInTheDocument();
+    // Testing Library ramène les espaces (insécables compris) à une espace simple dans la page, pas dans le texte cherché.
+    expect(screen.getByText(c.recherche.aucune.replace(/\s+/g, " "))).toBeInTheDocument();
     expect(screen.getByRole("link", { name: `${c.recherche.contact} →` })).toHaveAttribute("href", "/contact");
     fireEvent.click(screen.getByRole("button", { name: c.recherche.effacer }));
     expect(screen.getByLabelText(c.recherche.label)).toHaveValue("");

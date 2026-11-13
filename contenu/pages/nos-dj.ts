@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /**
  * Page « Nos DJ » : textes de la page et section du fondateur (Cédric). Les DJ
@@ -34,7 +35,7 @@ type NosDj = {
 
 const MIX_CEDRIC = "https://www.youtube.com/watch?v=zchNbRcZ_gI";
 
-export const NOS_DJ: Bilingue<NosDj> = {
+export const NOS_DJ: Bilingue<NosDj> = typographier({
   fr: {
     seo: {
       titre: "Nos DJ de mariage et de soirée en Île-de-France | Spice Events",
@@ -141,4 +142,4 @@ export const NOS_DJ: Bilingue<NosDj> = {
       bouton: "Check my date",
     },
   },
-};
+});

@@ -32,7 +32,7 @@ export default async function PageAPropos({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image="maison-cedric-portrait" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
+      <EnTetePage image="maison-cedric-portrait" cadrage="40% 0%" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
 
       {/* Parcours : texte + portrait */}
       <section className="py-20 md:py-28">

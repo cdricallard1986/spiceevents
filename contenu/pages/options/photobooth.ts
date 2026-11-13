@@ -1,6 +1,7 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const PHOTOBOOTH: ContenuOption = {
+export const PHOTOBOOTH: ContenuOption = typographier({
   image: "presta-photobooth-borne",
   // Galerie de secours (sans Supabase) ; en ligne, les photos se choisissent dans le back office.
   galerie: [],
@@ -102,4 +103,4 @@ export const PHOTOBOOTH: ContenuOption = {
       },
     },
   },
-};
+});

@@ -16,7 +16,7 @@ export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return metadonnees({ locale, href: "/galerie", seo: GALERIE[locale].seo, image: "maison-mariage-charpente" });
+  return metadonnees({ locale, href: "/galerie", seo: GALERIE[locale].seo, image: "mariage-soiree-faisceaux" });
 }
 
 export default async function PageGalerie({ params }: Props) {
@@ -28,7 +28,7 @@ export default async function PageGalerie({ params }: Props) {
 
   return (
     <>
-      <EnTetePage image="maison-mariage-charpente" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
+      <EnTetePage image="mariage-soiree-faisceaux" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} />
 
       <Section surtitre={c.mariages.surtitre} titre={c.mariages.titre}>
         <Mosaique photos={mariages} />

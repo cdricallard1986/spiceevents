@@ -7,9 +7,9 @@ import { SITE } from "@/contenu/site";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { EnTetePage } from "@/components/common/EnTetePage";
+import { AppelContact } from "@/components/common/AppelContact";
 import { Section } from "@/components/common/Section";
 import { Photo } from "@/components/ui/Photo";
-import { classesBouton } from "@/components/ui/Bouton";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -75,19 +75,7 @@ export default async function PageRecrutement({ params }: Props) {
 
       <Section surtitre={c.pourquoi.surtitre} titre={c.pourquoi.titre} intro={c.pourquoi.texte} />
 
-      <section className="border-t border-ligne">
-        <div className="conteneur flex flex-wrap items-end justify-between gap-10 py-24 md:py-32">
-          <div className="max-w-2xl">
-            <h2 className="font-display text-4xl leading-[1.05] md:text-6xl">
-              <Accent texte={c.candidature.titre} />
-            </h2>
-            <p className="mt-6 text-lg text-sable">{c.candidature.texte}</p>
-          </div>
-          <a href={mailto} className={classesBouton("primaire")}>
-            {c.candidature.bouton}
-          </a>
-        </div>
-      </section>
+      <AppelContact titre={c.candidature.titre} texte={c.candidature.texte} bouton={c.candidature.bouton} lienExterne={mailto} />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import type { Bilingue, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type PageAvis = {
   seo: Seo;
@@ -9,7 +10,7 @@ type PageAvis = {
   mariagesNet: { surtitre: string; titre: string; texte: string; lien: string };
 };
 
-export const PAGE_AVIS: Bilingue<PageAvis> = {
+export const PAGE_AVIS: Bilingue<PageAvis> = typographier({
   fr: {
     seo: {
       titre: "Avis clients — DJ mariage Spice Events en Île-de-France",
@@ -60,4 +61,4 @@ export const PAGE_AVIS: Bilingue<PageAvis> = {
       lien: "Read or leave a review",
     },
   },
-};
+});

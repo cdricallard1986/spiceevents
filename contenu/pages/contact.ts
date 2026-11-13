@@ -1,4 +1,5 @@
 import type { Bilingue, Etape, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Textes du formulaire (passés au composant client). */
 export type TextesFormulaire = {
@@ -37,7 +38,7 @@ type Contact = {
   rgpd: { texte: string; lien: string };
 };
 
-export const CONTACT: Bilingue<Contact> = {
+export const CONTACT: Bilingue<Contact> = typographier({
   fr: {
     seo: {
       titre: "Contact & devis — DJ mariage à Paris et en Île-de-France | Spice Events",
@@ -182,4 +183,4 @@ export const CONTACT: Bilingue<Contact> = {
       lien: "Privacy policy",
     },
   },
-};
+});

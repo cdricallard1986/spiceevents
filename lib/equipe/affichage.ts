@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/routing";
 import { urlPublique } from "@/lib/photos/constantes";
 import type { PhotoAffichee } from "@/lib/photos/types";
+import { typographier } from "@/lib/typographie";
 import type { GroupeEquipe, MembreEquipe } from "./types";
 
 /**
@@ -37,7 +38,9 @@ export function srcPhotoMembre(chemin: string): string {
   return chemin.startsWith("/") ? chemin : urlPublique(chemin);
 }
 
-export function carteEquipe(m: MembreEquipe, locale: Locale): CarteEquipe {
+export function carteEquipe(membre: MembreEquipe, locale: Locale): CarteEquipe {
+  // Textes saisis dans le back office : typographie française (espaces fines insécables).
+  const m = typographier(membre);
   const en = locale === "en";
   const choisir = (fr: string | null, anglais: string | null) => (en && anglais ? anglais : fr);
   const role = choisir(m.role_fr, m.role_en) ?? m.role_fr;

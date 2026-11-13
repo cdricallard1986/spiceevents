@@ -130,13 +130,13 @@ describe("diaporamas d'en-tête", () => {
   it("sans Supabase : les listes du code, dans la langue de la page", async () => {
     const { photosEnTete } = await import("./lecture");
     const { IMAGES_ACCUEIL_MARIAGES } = await import("@/contenu/pages/mariages");
-    expect(await photosEnTete("mariages", "en", {})).toEqual(IMAGES_ACCUEIL_MARIAGES.map((c) => image(c, "en")));
+    expect(await photosEnTete("mariages", "en", [], {})).toEqual(IMAGES_ACCUEIL_MARIAGES.map((c) => image(c, "en")));
   });
 
   it("liste vide en base (migration pas encore appliquée) : jamais d'en-tête vide, la liste du code", async () => {
     etat.reponse = { data: [], error: null };
     const { photosEnTete } = await import("./lecture");
-    expect(await photosEnTete("son-et-lumiere", "fr", { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co" })).toEqual([
+    expect(await photosEnTete("son-et-lumiere", "fr", [], { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co" })).toEqual([
       image("son-lumiere-installation", "fr"),
       image("son-lumiere-regie-lets-dance", "fr"),
     ]);

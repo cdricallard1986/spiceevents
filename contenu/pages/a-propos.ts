@@ -1,4 +1,5 @@
 import type { Bilingue, Etape, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type Citation = { texte: string };
 type BlocTechnique = { titre: string; points: string[] };
@@ -22,7 +23,7 @@ type APropos = {
   video: { surtitre: string; titre: string; intro: string };
 };
 
-export const A_PROPOS: Bilingue<APropos> = {
+export const A_PROPOS: Bilingue<APropos> = typographier({
   fr: {
     seo: {
       titre: "Cédric Allard, DJ mariage et fondateur de Spice Events — Île-de-France",
@@ -277,4 +278,4 @@ export const A_PROPOS: Bilingue<APropos> = {
       intro: "A glimpse of the atmosphere we build with you, to get young and old alike on the dance floor.",
     },
   },
-};
+});

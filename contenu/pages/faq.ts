@@ -1,5 +1,6 @@
 import type { Locale, CheminStatique } from "@/i18n/routing";
 import type { Bilingue, QuestionReponse, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Un thème de la FAQ ; `questions` sert aussi au futur balisage FAQPage. */
 export type ThemeFaq = {
@@ -21,7 +22,7 @@ type PageFaq = {
   contact: { titre: string; texte: string };
 };
 
-export const FAQ: Bilingue<PageFaq> = {
+export const FAQ: Bilingue<PageFaq> = typographier({
   fr: {
     seo: {
       titre: "FAQ DJ mariage — musique, technique, réservation | Spice Events",
@@ -477,7 +478,7 @@ export const FAQ: Bilingue<PageFaq> = {
       texte: "Drop us a line: Cédric will get back to you personally.",
     },
   },
-};
+});
 
 /** Toutes les questions d'une langue, à plat (pour le balisage FAQPage). */
 export function questionsFaq(locale: Locale): QuestionReponse[] {

@@ -1,4 +1,5 @@
 import type { Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 type Recrutement = {
   seo: Seo;
@@ -11,7 +12,7 @@ type Recrutement = {
 };
 
 /** Page publiée en français seulement. */
-export const RECRUTEMENT: Recrutement = {
+export const RECRUTEMENT: Recrutement = typographier({
   seo: {
     titre: "Recrutement : DJ généraliste mariages et événements — Spice Events",
     description:
@@ -65,4 +66,4 @@ export const RECRUTEMENT: Recrutement = {
     bouton: "Envoyer ma candidature",
     objet: "Candidature DJ généraliste",
   },
-};
+});

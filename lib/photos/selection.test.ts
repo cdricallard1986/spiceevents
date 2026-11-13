@@ -100,3 +100,14 @@ describe("données de secours", () => {
     expect(liaisonsDeRepli().filter((l) => l.photo_id === id).map((l) => l.galerie)).toEqual(["galerie_mariages", "option:ouverture-de-bal"]);
   });
 });
+
+describe("sansPhotosDejaMontrees", async () => {
+  const { sansPhotosDejaMontrees } = await import("./selection");
+  const p = (src: string) => ({ src, width: 2000, height: 1300, alt: src });
+  it("retire de l'en-tête les photos déjà montrées sur la page", () => {
+    expect(sansPhotosDejaMontrees([p("/a.jpg"), p("/b.jpg"), p("/c.jpg")], ["/b.jpg", "/z.jpg"]).map((x) => x.src)).toEqual(["/a.jpg", "/c.jpg"]);
+  });
+  it("ne rend jamais un en-tête vide", () => {
+    expect(sansPhotosDejaMontrees([p("/a.jpg")], ["/a.jpg"]).map((x) => x.src)).toEqual(["/a.jpg"]);
+  });
+});

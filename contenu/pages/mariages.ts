@@ -1,5 +1,6 @@
 import type { CleImage } from "@/lib/images";
 import type { Bilingue, Carte, Etape, QuestionReponse, Seo } from "../types";
+import { typographier } from "@/lib/typographie";
 
 /** Un moment de la journée, avec les options qui s'y rattachent (slugs français de `contenu/options.ts`). */
 export type Moment = { titre: string; texte: string; accroche: string; image: CleImage; options: string[] };
@@ -68,7 +69,7 @@ type Mariages = {
   appel: { titre: string; texte: string; bouton: string };
 };
 
-export const MARIAGES: Bilingue<Mariages> = {
+export const MARIAGES: Bilingue<Mariages> = typographier({
   fr: {
     seo: {
       titre: "DJ mariage Paris & Île-de-France : musique, son, lumière | Spice Events",
@@ -546,4 +547,4 @@ export const MARIAGES: Bilingue<Mariages> = {
       bouton: "Let's spice up your night",
     },
   },
-};
+});

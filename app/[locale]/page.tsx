@@ -38,7 +38,8 @@ export default async function Accueil({ params }: Props) {
   setRequestLocale(locale);
   const c = ACCUEIL[locale];
   // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
-  const entete = await photosEnTete("accueil", locale);
+  // Sans les photos déjà montrées plus bas (cartes des deux univers, avis).
+  const entete = await photosEnTete("accueil", locale, [...c.portes.liste.map((p) => p.image), "chapiteau-diner"]);
   const fr = locale === "fr";
   // Avis choisis dans le back office (emplacements « Accueil — grand avis » et « Accueil — grille ») :
   // le grand d'abord, puis la grille, sans doublon.
@@ -68,7 +69,7 @@ export default async function Accueil({ params }: Props) {
             <Link key={p.href} href={p.href} className="group relative isolate flex min-h-[28rem] items-end overflow-hidden md:min-h-[36rem]">
               <Photo cle={p.image} remplir sizes="(min-width: 768px) 50vw, 100vw" className="-z-10 transition-transform duration-700 group-hover:scale-[1.025]" />
               <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(transparent_30%,rgba(0,0,0,0.85))]" />
-              <div className="p-6 md:p-10">
+              <div className="texte-sur-photo p-6 md:p-10">
                 <p className="surtitre mb-3">{p.surtitre}</p>
                 <h3 className="font-display text-4xl leading-[0.95] md:text-5xl">
                   <Accent texte={p.titre} />

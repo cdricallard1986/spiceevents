@@ -1,10 +1,11 @@
 import type { ContenuOption } from "./types";
+import { typographier } from "@/lib/typographie";
 
-export const BAR_A_VINYLES: ContenuOption = {
+export const BAR_A_VINYLES: ContenuOption = typographier({
   image: "presta-vinyles-tourne-disque",
   galerie: ["vinyles", "presta-vinyles-installation", "presta-vinyles-veranda", "presta-vinyles-platine"],
   // Photo derrière le grand avis (l\'avis lui-même se choisit dans le back office).
-  imageAvis: "presta-vinyles-installation",
+  imageAvis: "presta-vinyles-salon",
   textes: {
     fr: {
       seo: {
@@ -95,4 +96,4 @@ export const BAR_A_VINYLES: ContenuOption = {
       },
     },
   },
-};
+});

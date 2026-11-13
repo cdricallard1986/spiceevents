@@ -29,7 +29,10 @@ export function CarteOption({ option, locale, etiquette, texte }: Props) {
       </div>
       {etiquette && <p className="surtitre px-2 text-[0.6875rem]">{etiquette}</p>}
       <h3 className="px-2 font-display text-2xl group-hover:text-or">
-        {option.titre[locale]} <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
+        {/* Espace insécable : la flèche ne part jamais seule à la ligne. */}
+        {option.titre[locale]}
+        {"\u00a0"}
+        <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
       </h3>
       <p className="px-2 text-[0.9375rem] text-sable">{texte ?? option.resume[locale]}</p>
     </Link>

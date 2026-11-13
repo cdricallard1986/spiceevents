@@ -19,6 +19,7 @@ import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
 import { VideoYoutube } from "@/components/common/VideoYoutube";
 import { VIDEOS } from "@/contenu/videos";
+import { ROMAINS } from "@/components/common/Etapes";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -30,13 +31,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/evenementiel", seo: EVENEMENTIEL[locale].seo, image: "presta-gala-salle" });
 }
 
+// Six soirées différentes, jamais deux photos d'un même événement côte à côte (règle de Cédric) ;
+// aucune n'est déjà ailleurs sur la page (cartes, avis, en-tête).
 const PHOTOS = [
   "presta-seminaire",
   "maison-evenement-soiree-lumiere",
   "presta-concert-foule",
   "presta-mange-debout",
-  "maison-evenement-concert",
-  "presta-soiree-privee",
+  "maison-evenement-faisceaux",
+  "maison-evenement-cabine-dj",
 ] as const;
 
 export default async function PageEvenementiel({ params }: Props) {
@@ -56,7 +59,8 @@ export default async function PageEvenementiel({ params }: Props) {
 
       {/* Promesse */}
       <section className="py-20 md:py-28">
-        <div className="conteneur max-w-4xl">
+        <div className="conteneur">
+          <div className="max-w-4xl">
           <p className="surtitre mb-4">{c.promesse.surtitre}</p>
           <h2 className="font-display text-4xl leading-[1.08] md:text-[3.5rem]">
             <Accent texte={c.promesse.titre} />
@@ -64,6 +68,7 @@ export default async function PageEvenementiel({ params }: Props) {
           {c.promesse.paragraphes.map((p) => (
             <p key={p} className="mt-6 text-lg text-sable">{p}</p>
           ))}
+          </div>
         </div>
       </section>
 
@@ -116,12 +121,18 @@ export default async function PageEvenementiel({ params }: Props) {
 
       {/* Méthode en trois temps, puis deux photos en grand (maquette Nocturne) */}
       <Section surtitre={c.methode.surtitre} titre={c.methode.titre}>
+        {/* Même présentation que les étapes des autres pages (chiffres romains), avec le verbe de l'étape. */}
         <ol className="grid gap-10 md:grid-cols-3">
-          {c.methode.etapes.map((e) => (
-            <li key={e.numero}>
-              <p className="border-b border-ligne pb-4 text-[0.75rem] font-medium uppercase tracking-[0.14em] text-sable">{e.numero}</p>
-              <h3 className="mt-6 text-2xl font-semibold tracking-tight">{e.titre}</h3>
-              <p className="mt-3 text-[0.9375rem] text-sable">{e.texte}</p>
+          {c.methode.etapes.map((e, i) => (
+            <li key={e.titre} className="border-t border-ligne pt-6">
+              <p className="mb-3 flex items-baseline gap-3">
+                <span aria-hidden="true" className="font-display text-2xl text-or">
+                  {ROMAINS[i]}.
+                </span>
+                <span className="text-[0.75rem] font-medium uppercase tracking-[0.14em] text-sable">{e.numero}</span>
+              </p>
+              <h3 className="mb-2 text-lg font-semibold tracking-wide">{e.titre}</h3>
+              <p className="text-[0.9375rem] text-sable">{e.texte}</p>
             </li>
           ))}
         </ol>
@@ -130,7 +141,7 @@ export default async function PageEvenementiel({ params }: Props) {
             <figure key={v.titre} className="group relative isolate flex min-h-[20rem] items-end overflow-hidden md:min-h-[26rem]">
               <Photo cle={v.image} remplir sizes="(min-width: 768px) 55vw, 100vw" className="-z-10 transition-transform duration-700 group-hover:scale-[1.025]" />
               <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(transparent_40%,rgba(0,0,0,0.75))]" />
-              <figcaption className="p-6 md:p-8">
+              <figcaption className="texte-sur-photo p-6 md:p-8">
                 <p className="mb-3 text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-ivoire">{v.surtitre}</p>
                 <p className="font-display text-3xl leading-[0.95] md:text-4xl">{v.titre}</p>
               </figcaption>
@@ -153,7 +164,7 @@ export default async function PageEvenementiel({ params }: Props) {
       <AvisDefilants
         liste={avisClients}
         tirage={5}
-        image="presta-gala-bleu"
+        image="maison-evenement-bal"
         libelles={
           locale === "fr"
             ? { precedent: "Avis précédent", suivant: "Avis suivant", avis: "Avis" }
