@@ -8,6 +8,7 @@ export const RAISONS = {
   deconnecte: "Vous êtes déconnecté de cet appareil.",
   acces_refuse: "Ce compte n'a pas accès au back office.",
   indisponible: "Le service de connexion ne répond pas. Réessayez dans un instant.",
+  lien_invalide: "Ce lien de nouveau mot de passe n'est plus valable (déjà utilisé, ou plus d'une heure). Demandez-en un autre avec « Mot de passe oublié ? ».",
 } as const;
 
 export type Raison = keyof typeof RAISONS;

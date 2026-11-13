@@ -34,7 +34,7 @@ export const LIMITE_CONNEXION = {
 /** Durée minimale d'une réponse : sinon le temps de réponse révélerait si le compte existe. */
 export const DUREE_MINIMALE_MS = 1500;
 
-export type TypeTentative = "ip" | "compte";
+export type TypeTentative = "ip" | "compte" | "reinitialisation";
 
 /** Empreinte HMAC-SHA256 (64 caractères hexadécimaux), seule valeur stockée. */
 export function empreinteTentative(type: TypeTentative, valeur: string, secret: string): string {

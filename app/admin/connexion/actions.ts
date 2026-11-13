@@ -11,11 +11,17 @@ import { lireConnexion } from "@/lib/admin/schema";
 import { CHEMIN_CONNEXION, aCookieSession, cheminDeRetour } from "@/lib/admin/session";
 import { nomCookieSession } from "@/lib/supabase/config";
 import type { Journal } from "@/lib/contact/traitement";
+import { emailReinitialisation } from "@/lib/contact/email";
+import { expediteurResend } from "@/lib/contact/resend";
+import { lienReinitialisation, origineDesLiens, traiterReinitialisation, type EtatReinitialisation } from "@/lib/admin/reinitialisation";
 
 // ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public.
-// Ce sont les deux seules actions admin SANS garde `exigerAdmin()`, par nature :
+// Ce sont les trois seules actions admin SANS garde `exigerAdmin()`, par nature :
 // - `seConnecter` est la porte d'entrée (validation Zod, limite des tentatives,
 //   durée minimale, vérification de `est_admin()` — logique dans lib/admin/) ;
+// - `demanderReinitialisation` (« Mot de passe oublié ? ») : Zod, limites par IP
+//   et par compte, durée minimale, réponse identique que le compte existe ou
+//   non, lien envoyé aux seuls administrateurs (lib/admin/reinitialisation.ts) ;
 // - `seDeconnecter` ne prend aucun argument et ne ferme que la session de
 //   l'appelant, sur son seul appareil.
 // Toute autre action admin commence par `await exigerAdmin()` puis Zod.
@@ -84,6 +90,47 @@ export async function seConnecter(_etat: EtatConnexion, formulaire: FormData): P
 
   if (etat.statut === "connecte") redirect(cheminDeRetour(formulaire.get("suite")));
   return etat;
+}
+
+/** « Mot de passe oublié ? » : envoie à Cédric un lien pour choisir un nouveau mot de passe (utilisée avec `useActionState`). */
+export async function demanderReinitialisation(_etat: EtatReinitialisation, formulaire: FormData): Promise<EtatReinitialisation> {
+  const entetes = await headers();
+  const service = clientAdmin();
+  const expediteur = expediteurResend();
+  return traiterReinitialisation(
+    { email: formulaire.get("email") },
+    {
+      ip: ipDepuisEntetes(entetes.get("x-forwarded-for")),
+      secret: process.env.contact_secret_ip || null,
+      // Sans service_role ni Resend, rien ne peut partir : même réponse, journalisée.
+      tentatives: service && expediteur ? tentatives() : null,
+      async genererLien(email) {
+        if (!service) return null;
+        const { data, error } = await service.auth.admin.generateLink({ type: "recovery", email });
+        if (error) {
+          // Compte inconnu : pas de lien (même réponse). Toute autre erreur remonte.
+          if (error.status === 404 || error.code === "user_not_found") return null;
+          throw error;
+        }
+        const jeton = data.properties?.hashed_token;
+        return data.user && jeton ? { userId: data.user.id, jeton } : null;
+      },
+      async estAdministrateur(userId) {
+        if (!service) return false;
+        const { data, error } = await service.from("administrateurs").select("user_id").eq("user_id", userId).maybeSingle();
+        if (error) throw error;
+        return data !== null;
+      },
+      async envoyer(email, jeton) {
+        if (!expediteur) throw new Error("resend_api_key absente");
+        const r = await expediteur.envoyer(emailReinitialisation(email, lienReinitialisation(origineDesLiens(process.env), jeton), expediteur.config));
+        if (!r.ok) throw new Error(`${r.nom} : ${r.message}`);
+      },
+      maintenant: () => Date.now(),
+      attendre: (ms) => new Promise((resoudre) => setTimeout(resoudre, ms)),
+      journal,
+    },
+  );
 }
 
 /**

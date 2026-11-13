@@ -128,3 +128,14 @@ describe("traiterEnvoiTest", () => {
     expect(d.expediteur!.envoyer).toHaveBeenCalledTimes(1);
   });
 });
+
+describe("email de test « mot de passe oublié »", async () => {
+  const { emailDeTest, LIEN_FACTICE_REINITIALISATION, PREFIXE_TEST } = await import("./emails-test");
+  it("lien factice (aucun jeton), adressé au seul compte connecté, objet [TEST]", () => {
+    const e = emailDeTest({ modele: "reinitialisation", langue: "fr" }, "cedric@spiceevents.fr", { destinataire: "x@y.fr", expediteur: "Spice <c@s.fr>" }, new Date());
+    expect(e.to).toBe("cedric@spiceevents.fr");
+    expect(e.subject.startsWith(PREFIXE_TEST)).toBe(true);
+    expect(e.html).toContain(LIEN_FACTICE_REINITIALISATION);
+    expect(e.html).not.toContain("token_hash");
+  });
+});

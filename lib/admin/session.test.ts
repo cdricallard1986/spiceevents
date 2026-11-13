@@ -100,3 +100,21 @@ describe("decisionAcces", () => {
     });
   });
 });
+
+describe("pages ouvertes sans session", async () => {
+  const { decisionAcces, estCheminPublic, cheminDeRetour } = await import("./session");
+  const base = { recherche: "", connecte: false, avaitSession: false, indisponible: false };
+  it("connexion, mot de passe oublié et confirmation du lien : accessibles ; le reste non", () => {
+    for (const chemin of ["/admin/connexion", "/admin/connexion/oubli", "/admin/auth/confirmer"]) {
+      expect(estCheminPublic(chemin), chemin).toBe(true);
+      expect(decisionAcces({ ...base, chemin }), chemin).toEqual({ type: "continuer" });
+    }
+    for (const chemin of ["/admin/connexion/oubli/x", "/admin/auth", "/admin/compte"]) {
+      expect(decisionAcces({ ...base, chemin }).type, chemin).toBe("rediriger");
+    }
+  });
+  it("ne revient jamais sur une page publique après la connexion", () => {
+    expect(cheminDeRetour("/admin/connexion/oubli")).toBe("/admin");
+    expect(cheminDeRetour("/admin/auth/confirmer?token_hash=x")).toBe("/admin");
+  });
+});

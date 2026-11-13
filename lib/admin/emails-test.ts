@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { emailAccuse, emailNotification, type ConfigEmail, type EmailPrepare } from "@/lib/contact/email";
+import { emailAccuse, emailNotification, emailReinitialisation, type ConfigEmail, type EmailPrepare } from "@/lib/contact/email";
 import type { ExpediteurResend } from "@/lib/contact/resend";
 import type { Demande, Langue } from "@/lib/contact/schema";
 
@@ -10,13 +10,17 @@ import type { Demande, Langue } from "@/lib/contact/schema";
  * UNIQUEMENT au compte connecté.
  */
 
-export const MODELES = ["notification", "accuse"] as const;
+export const MODELES = ["notification", "accuse", "reinitialisation"] as const;
 export type Modele = (typeof MODELES)[number];
 
 export const LIBELLES_MODELE: Record<Modele, string> = {
   notification: "Notification à Cédric",
   accuse: "Accusé de réception au couple",
+  reinitialisation: "Mot de passe oublié (back office, en français)",
 };
+
+/** Lien factice des tests : il ne mène à aucune réinitialisation (aucun jeton). */
+export const LIEN_FACTICE_REINITIALISATION = "https://www.spiceevents.fr/admin/connexion?test=lien-factice";
 
 export const PREFIXE_TEST = "[TEST] ";
 
@@ -61,6 +65,10 @@ export function demandeFictive(langue: Langue, maintenant: Date): Demande {
  * - objet préfixé « [TEST] ».
  */
 export function emailDeTest(entree: EntreeEnvoiTest, destinataire: string, config: ConfigEmail, maintenant: Date): EmailPrepare {
+  if (entree.modele === "reinitialisation") {
+    const email = emailReinitialisation(destinataire, LIEN_FACTICE_REINITIALISATION, config);
+    return { ...email, to: destinataire, replyTo: destinataire, subject: `${PREFIXE_TEST}${email.subject}` };
+  }
   const demande = demandeFictive(entree.langue, maintenant);
   const email = entree.modele === "notification" ? emailNotification(demande, config) : emailAccuse(demande, config);
   return {

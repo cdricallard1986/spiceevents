@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useActionState, useEffect, useRef } from "react";
+import { CHEMIN_OUBLI } from "@/lib/admin/session";
 import type { EtatConnexion } from "@/lib/admin/connexion";
 import { LIMITES_CONNEXION, type ChampConnexion } from "@/lib/admin/constantes";
 import { classesBouton } from "@/components/ui/Bouton";
@@ -72,9 +74,14 @@ export function FormulaireConnexion({ action, suite }: Props) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="connexion-motDePasse" className={CLASSES_LIBELLE}>
-          Mot de passe
-        </label>
+        <div className="flex items-baseline justify-between gap-4">
+          <label htmlFor="connexion-motDePasse" className={CLASSES_LIBELLE}>
+            Mot de passe
+          </label>
+          <Link href={CHEMIN_OUBLI} className="-my-2.5 py-2.5 text-sm text-sable underline underline-offset-4 hover:text-or">
+            Mot de passe oublié ?
+          </Link>
+        </div>
         <input {...attributs("motDePasse")} type="password" required maxLength={LIMITES_CONNEXION.motDePasse} autoComplete="current-password" />
         {erreurs.motDePasse && (
           <p id="connexion-motDePasse-erreur" className="text-sm text-erreur">

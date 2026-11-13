@@ -16,7 +16,7 @@ import "../globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: "Back office", template: `%s · Back office ${SITE.nom}` },
-  // Jamais indexé (en plus de `Disallow: /admin` dans robots.txt et de l'en-tête X-Robots-Tag).
+  // Jamais indexé (balise meta ici + en-tête X-Robots-Tag ; robots.txt laisse lire ce « noindex »).
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
   formatDetection: { telephone: false },
 };

@@ -235,3 +235,24 @@ ${bouton(t.animations, `${SITE.url}${t.lienAnimations}`)}`,
 
   return { from: config.expediteur, to: demande.email, replyTo: config.destinataire, subject: t.sujet, html, text };
 }
+
+// --- Mot de passe oublié du back office (toujours en français) ----------------
+
+/**
+ * Lien pour choisir un nouveau mot de passe du back office, envoyé à Cédric.
+ * `lien` est construit par le serveur (adresse du déploiement + jeton de
+ * Supabase), jamais à partir d'une saisie.
+ */
+export function emailReinitialisation(destinataire: string, lien: string, config: ConfigEmail): EmailPrepare {
+  const html = gabarit(
+    "Mot de passe oublié ?",
+    "On vous rouvre la régie.",
+    `<p style="margin:16px 0 0">Bonjour Cédric,</p>
+<p style="margin:16px 0 0">Une demande de nouveau mot de passe a été faite pour le back office de Spice Events. Le bouton ci-dessous vous permet d'en choisir un ; il est valable une heure, et une seule fois.</p>
+${bouton("Choisir un nouveau mot de passe", lien)}
+<p style="margin:24px 0 0;color:${COULEURS.doux};font-size:13px">Si vous n'êtes pas à l'origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable. Une fois le nouveau choisi, vos autres appareils sont déconnectés.</p>`,
+    "fr",
+  );
+  const text = `Bonjour Cédric,\n\nUne demande de nouveau mot de passe a été faite pour le back office de Spice Events. Ce lien vous permet d'en choisir un (valable une heure, une seule fois) :\n${lien}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez cet email : votre mot de passe actuel reste valable.`;
+  return { from: config.expediteur, to: destinataire, replyTo: config.destinataire, subject: "Back office Spice Events : choisir un nouveau mot de passe", html, text };
+}

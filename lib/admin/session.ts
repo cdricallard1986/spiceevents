@@ -11,9 +11,20 @@ export function estCheminAdmin(chemin: string): boolean {
   return chemin === CHEMIN_ADMIN || chemin.startsWith(`${CHEMIN_ADMIN}/`);
 }
 
-/** La page de connexion, et elle seule, reste ouverte sans session. */
+export const CHEMIN_OUBLI = "/admin/connexion/oubli";
+export const CHEMIN_CONFIRMER = "/admin/auth/confirmer";
+
+/** La page de connexion. */
 export function estCheminConnexion(chemin: string): boolean {
   return chemin === CHEMIN_CONNEXION;
+}
+
+/**
+ * Pages ouvertes sans session, et elles seules : la connexion, « mot de passe
+ * oublié », et la route qui ouvre la session depuis le lien de l'email.
+ */
+export function estCheminPublic(chemin: string): boolean {
+  return chemin === CHEMIN_CONNEXION || chemin === CHEMIN_OUBLI || chemin === CHEMIN_CONFIRMER;
 }
 
 /**
@@ -32,7 +43,7 @@ export function aCookieSession(noms: readonly string[], nomCookie: string): bool
 export function cheminDeRetour(valeur: unknown): string {
   if (typeof valeur !== "string" || valeur.length > 300) return CHEMIN_ADMIN;
   if (!/^\/admin(\/[A-Za-z0-9\-_/]*)?(\?[A-Za-z0-9\-_=&%.]*)?$/.test(valeur)) return CHEMIN_ADMIN;
-  if (valeur.includes("//") || estCheminConnexion(valeur.split("?")[0])) return CHEMIN_ADMIN;
+  if (valeur.includes("//") || estCheminPublic(valeur.split("?")[0])) return CHEMIN_ADMIN;
   return valeur;
 }
 
@@ -49,14 +60,14 @@ export type DecisionAcces = { type: "continuer" } | { type: "rediriger"; vers: s
 
 /**
  * Décision du middleware pour une adresse `/admin…` :
- * - la connexion est toujours accessible ;
+ * - la connexion, « mot de passe oublié » et la confirmation du lien sont toujours accessibles ;
  * - connecté (`getUser()` validé) → on continue ; la garde serveur
  *   (`exigerAdmin`) vérifie ensuite que le compte est bien administrateur ;
  * - sinon → connexion, avec la raison si un cookie de session a été refusé
  *   (session expirée, fermée depuis un autre appareil, mot de passe changé).
  */
 export function decisionAcces(etat: EtatAcces): DecisionAcces {
-  if (estCheminConnexion(etat.chemin) || etat.connecte) return { type: "continuer" };
+  if (estCheminPublic(etat.chemin) || etat.connecte) return { type: "continuer" };
   const parametres = new URLSearchParams();
   if (etat.indisponible) parametres.set("raison", "indisponible");
   else if (etat.avaitSession) parametres.set("raison", "session_expiree");
