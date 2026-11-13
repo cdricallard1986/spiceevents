@@ -420,6 +420,27 @@
     "fr": "Baiser des mariés sur la plage devant un éventail de fumées colorées vertes, jaunes et orange",
     "en": "A couple kissing on the beach in front of a fan of green, yellow and orange coloured smoke"
    }
+  },
+  "presta-feux-artifice-jour-arc-en-ciel": {
+   "fichier": "pexels_feux-artifice-jour-fumees-arc-en-ciel.jpg",
+   "alt": {
+    "fr": "Mariés bras levés sous des fumées colorées arc-en-ciel, devant une façade fleurie et des lustres",
+    "en": "A couple raising their arms beneath rainbow-coloured smoke, in front of a flower-covered facade with chandeliers"
+   }
+  },
+  "presta-feux-artifice-jour-arche-fleurie": {
+   "fichier": "pexels_feux-artifice-jour-arche-fleurie.jpg",
+   "alt": {
+    "fr": "Le marié renverse la mariée sous une arche fleurie, devant une gerbe de fumées colorées orange, rouge et bleue",
+    "en": "The groom dips the bride beneath a floral arch, against a burst of orange, red and blue coloured smoke"
+   }
+  },
+  "presta-feux-artifice-jour-gateau-mer": {
+   "fichier": "pexels_feux-artifice-jour-gateau-mer.jpg",
+   "alt": {
+    "fr": "Baiser des mariés près du gâteau, au bord de la mer, sous un éventail de fumées multicolores",
+    "en": "A couple kissing beside the wedding cake by the sea, beneath a fan of multicoloured smoke"
+   }
   }
  }
 }
