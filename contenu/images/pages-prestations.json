@@ -399,6 +399,13 @@
     "fr": "Ouverture de bal en noir et blanc, dans la fumée lourde, entourée de fontaines d'étincelles et de boules à facettes",
     "en": "A black-and-white first dance in low fog, surrounded by spark fountains and mirror balls"
    }
+  },
+  "presta-bal-jardin-etincelles": {
+   "fichier": "pexels_ouverture-bal-jardin-etincelles.jpg",
+   "alt": {
+    "fr": "Ouverture de bal en plein air, dans la fumée lourde, entre des fontaines d'étincelles froides devant une arche fleurie",
+    "en": "An outdoor first dance in low fog between cold-spark fountains, in front of a floral arch"
+   }
   }
  }
 }
