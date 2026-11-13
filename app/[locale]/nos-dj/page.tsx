@@ -47,6 +47,7 @@ function CarteMembre({ m }: { m: Membre }) {
         <div>
           <p className="text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-or">{m.role}</p>
           <h3 className="mt-2 font-display text-3xl leading-none md:text-4xl">{m.nom}</h3>
+          {m.alias && <p className="mt-2 text-sm text-sable">{m.alias}</p>}
         </div>
         <span aria-hidden="true" className="font-display text-5xl leading-none text-or/25 md:text-6xl">
           {initiales(m.nom)}

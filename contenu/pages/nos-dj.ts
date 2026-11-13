@@ -3,14 +3,14 @@ import type { Bilingue, Seo } from "../types";
 
 /**
  * Page « Nos DJ » : l'équipe de Cédric (novembre 2026). Biographies reprises de
- * l'ancien site (Kevin, DJ Pan's, David, Lucas), Antoine et Angel présentés à
+ * l'ancien site (Kevin, DJ Pan's alias Aurélien, David, Lucas), Antoine et Angel présentés à
  * partir des avis Mariages.net de 2026. Sans photo : un monogramme en attendant
  * les portraits.
  */
 export type Membre = {
   id: string;
   nom: string;
-  /** Nom de scène, affiché sous le nom. */
+  /** L'autre nom sous lequel les mariés le connaissent (nom de scène ou prénom), affiché sous le nom. */
   alias?: string;
   role: string;
   styles: string[];
@@ -101,6 +101,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "pans",
           nom: "DJ Pan's",
+          alias: "Aurélien",
           role: "DJ, avec guitariste",
           styles: ["Rock", "Pop", "New wave", "Rockabilly"],
           accroche: "Let's rock !",
@@ -108,6 +109,10 @@ export const NOS_DJ: Bilingue<NosDj> = {
             "Du rockabilly à l'électro-rock, en passant par la pop, la new wave et le surf : aucune branche du rock ne manque à sa playlist.",
             "Major de sa promotion à l'école des Deejays de l'UCPA, rodé par des centaines de clubs en France et à l'étranger, et passé par la radio, il propose un vrai show pop-rock accompagné d'un guitariste : nouveautés et classiques, pépites et raretés, entrecoupés de riffs ravageurs.",
           ],
+          avis: {
+            texte: "Aurélien nous a fait danser toute la nuit en s'adaptant à nos goûts. Il a été extrêmement gentil et arrangeant !",
+            auteur: "Juliette, mariage de septembre 2022",
+          },
           lien: { libelle: "Sa page Facebook", href: FACEBOOK_PANS },
         },
         {
@@ -228,6 +233,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "pans",
           nom: "DJ Pan's",
+          alias: "Aurélien",
           role: "DJ, with guitarist",
           styles: ["Rock", "Pop", "New wave", "Rockabilly"],
           accroche: "Let's rock!",
@@ -235,6 +241,10 @@ export const NOS_DJ: Bilingue<NosDj> = {
             "From rockabilly to electro-rock, by way of pop, new wave and surf: no branch of rock is missing from his playlist.",
             "Top of his class at the UCPA DJ school, seasoned by hundreds of clubs in France and abroad and by radio work, he offers a real pop-rock show with a live guitarist: new releases and classics, gems and rarities, cut with blistering riffs.",
           ],
+          avis: {
+            texte: "Aurélien kept us dancing all night, adapting to our tastes. He was extremely kind and accommodating!",
+            auteur: "Juliette, September 2022 wedding",
+          },
           lien: { libelle: "His Facebook page", href: FACEBOOK_PANS },
         },
         {
