@@ -17,6 +17,7 @@ type Evenementiel = {
     etapes: (Etape & { numero: string })[];
     vedettes: { image: CleImage; surtitre: string; titre: string }[];
   };
+  video: { surtitre: string; titre: string; intro: string };
   galerie: { surtitre: string; titre: string; lien: string };
   avis: { surtitre: string; titre: string };
   faq: { surtitre: string; titre: string; questions: QuestionReponse[] };
@@ -100,6 +101,11 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
         { image: "presta-lancement", surtitre: "Lancements & rencontres", titre: "Mettre vos idées en lumière." },
         { image: "presta-dj-scene", surtitre: "La soirée continue", titre: "Et libérer l'énergie." },
       ],
+    },
+    video: {
+      surtitre: "Aux platines",
+      titre: "Un set *qui sort du cadre*.",
+      intro: "Cédric, alias DJ Dioz, en altitude au Grand-Bornand : la même lecture du public et la même énergie, quel que soit le décor.",
     },
     galerie: { surtitre: "En images", titre: "Nos nuits *en action*.", lien: "Voir la galerie" },
     avis: { surtitre: "Ils nous ont fait confiance", titre: "Ce qu'en disent *nos clients*." },
@@ -217,6 +223,11 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = {
         { image: "presta-lancement", surtitre: "Launches & gatherings", titre: "Putting your ideas in the spotlight." },
         { image: "presta-dj-scene", surtitre: "The party goes on", titre: "And setting the energy free." },
       ],
+    },
+    video: {
+      surtitre: "On the decks",
+      titre: "A set *that breaks the mould*.",
+      intro: "Cédric, aka DJ Dioz, high in the mountains at Le Grand-Bornand: the same feel for the crowd and the same energy, whatever the setting.",
     },
     galerie: { surtitre: "In pictures", titre: "Our nights *in action*.", lien: "View the gallery" },
     avis: { surtitre: "They trusted us", titre: "What *our clients* say." },

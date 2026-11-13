@@ -198,7 +198,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         titre: "Cookies",
         paragraphes: [
           "Le site n'utilise aucun cookie publicitaire ni de suivi. Un cookie technique peut mémoriser la langue que vous avez choisie ; il est strictement nécessaire au fonctionnement du site.",
-          "La vidéo de la page À propos est intégrée en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : YouTube ne dépose d'informations dans votre navigateur que si vous lancez la lecture.",
+          "Les vidéos du site sont intégrées en mode de confidentialité renforcée de YouTube (youtube-nocookie.com) : YouTube ne dépose d'informations dans votre navigateur que si vous lancez une lecture.",
         ],
       },
     ],
@@ -272,7 +272,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = {
         titre: "Cookies",
         paragraphes: [
           "This website uses no advertising or tracking cookies. A technical cookie may remember the language you have chosen; it is strictly necessary for the website to work.",
-          "The video on the About page is embedded using YouTube's privacy-enhanced mode (youtube-nocookie.com): YouTube only stores information in your browser if you start playing the video.",
+          "The videos on this site are embedded using YouTube's privacy-enhanced mode (youtube-nocookie.com): YouTube only stores information in your browser if you start playing a video.",
         ],
       },
     ],

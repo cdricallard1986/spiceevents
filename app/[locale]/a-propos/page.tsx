@@ -12,10 +12,10 @@ import { Etapes } from "@/components/common/Etapes";
 import { Section } from "@/components/common/Section";
 import { Photo } from "@/components/ui/Photo";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
+import { VideoYoutube } from "@/components/common/VideoYoutube";
+import { VIDEOS } from "@/contenu/videos";
 
 type Props = { params: Promise<{ locale: Locale }> };
-
-const VIDEO = "https://www.youtube-nocookie.com/embed/zchNbRcZ_gI";
 
 // Langue ou adresse non générée (« /x.png », « /wp-login.php »…) → 404 sans rendu (voir app/[locale]/layout.tsx).
 export const dynamicParams = false;
@@ -138,17 +138,7 @@ export default async function PageAPropos({ params }: Props) {
       </Section>
 
       <Section surtitre={c.video.surtitre} titre={c.video.titre} intro={c.video.intro} alterne>
-        <div className="relative aspect-video w-full overflow-hidden border border-ligne bg-nuit">
-          <iframe
-            src={VIDEO}
-            title={c.video.titreLecteur}
-            loading="lazy"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            referrerPolicy="strict-origin-when-cross-origin"
-            className="absolute inset-0 h-full w-full"
-          />
-        </div>
+        <VideoYoutube video={VIDEOS.mixMariage} locale={locale} />
       </Section>
 
       <AppelContact />

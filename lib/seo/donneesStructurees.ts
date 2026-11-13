@@ -86,6 +86,21 @@ export function article(a: { titre: string; description: string; date: string; u
   };
 }
 
+/** Vidéo YouTube de la chaîne Spice Events, intégrée dans une page du site. */
+export function video(v: { id: string; titre: string; description: string; date: string }): Objet {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: v.titre,
+    description: v.description,
+    thumbnailUrl: [`https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg`, `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
+    uploadDate: v.date,
+    embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+    url: `https://www.youtube.com/watch?v=${v.id}`,
+    publisher: { "@id": `${SITE.url}/#entreprise` },
+  };
+}
+
 /** JSON sûr à placer dans une balise <script> (aucune fermeture de balise possible). */
 export function serialiser(objet: Objet): string {
   return JSON.stringify(objet).replace(/</g, "\\u003c");

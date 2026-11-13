@@ -56,7 +56,10 @@ type Mariages = {
     paragraphes: string[];
     differences: Etape[];
     lien: string;
+    /** Au-dessus du mix vidéo de Cédric (DJ Dioz). */
+    mix: string;
   };
+  video: { surtitre: string; titre: string; intro: string };
   photos: { surtitre: string; titre: string; lien: string };
   avis: { lien: string };
   faq: { surtitre: string; titre: string; questions: QuestionReponse[]; lien: string };
@@ -223,6 +226,12 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
       ],
       lien: "En savoir plus sur Cédric",
+      mix: "Écoutez Cédric aux platines (DJ Dioz) : un mix pour toutes les générations.",
+    },
+    video: {
+      surtitre: "En images",
+      titre: "Vos nuits, *en mouvement*.",
+      intro: "Quelques minutes au cœur de nos mariages : l'émotion de la première danse, et une piste pleine jusqu'au bout de la nuit.",
     },
     photos: { surtitre: "En images", titre: "Des nuits *qui ont du goût*.", lien: "Voir la galerie" },
     avis: {
@@ -455,6 +464,12 @@ export const MARIAGES: Bilingue<Mariages> = {
         },
       ],
       lien: "More about Cédric",
+      mix: "Hear Cédric on the decks (DJ Dioz): a mix for every generation.",
+    },
+    video: {
+      surtitre: "On film",
+      titre: "Your nights, *in motion*.",
+      intro: "A few minutes inside our weddings: the emotion of the first dance, and a dance floor that stays full until the very end.",
     },
     photos: { surtitre: "In pictures", titre: "Nights *full of flavour*.", lien: "View the gallery" },
     avis: {

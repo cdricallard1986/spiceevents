@@ -26,6 +26,8 @@ import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
 import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
+import { VideoYoutube } from "@/components/common/VideoYoutube";
+import { VIDEOS } from "@/contenu/videos";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -101,6 +103,11 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
+      {/* La vidéo des mariages Spice Events (chaîne YouTube) */}
+      <Section surtitre={c.video.surtitre} titre={c.video.titre} intro={c.video.intro} alterne>
+        <VideoYoutube video={VIDEOS.mariages} locale={locale} />
+      </Section>
+
       {/* « Chaque instant » (maquette Nocturne) : un moment par carte, détail en fenêtre. */}
       <section className="py-20 md:py-28">
         <div className="conteneur">
@@ -162,6 +169,8 @@ export default async function PageMariages({ params }: Props) {
                 </li>
               ))}
             </ul>
+            <p className="mt-10 text-[0.8125rem] font-semibold uppercase tracking-[0.2em] text-or">{c.dj.mix}</p>
+            <VideoYoutube video={VIDEOS.mixMariage} locale={locale} className="mt-4" />
             <Bouton href="/a-propos" variante="lien" className="mt-10">{c.dj.lien} →</Bouton>
           </div>
         </div>

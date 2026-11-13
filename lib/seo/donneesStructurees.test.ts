@@ -38,3 +38,14 @@ describe("données structurées", () => {
     expect(serialiser({ texte: "</script><script>alert(1)</script>" })).not.toContain("</script>");
   });
 });
+
+describe("video", () => {
+  it("décrit une vidéo YouTube intégrée (VideoObject) : vignette, date, lecteur sans cookie", async () => {
+    const { video } = await import("./donneesStructurees");
+    const v = video({ id: "OofgpDRcaYA", titre: "Des mariages inoubliables", description: "Au cœur des mariages", date: "2026-02-25" });
+    expect(v["@type"]).toBe("VideoObject");
+    expect(v.uploadDate).toBe("2026-02-25");
+    expect(v.embedUrl).toBe("https://www.youtube-nocookie.com/embed/OofgpDRcaYA");
+    expect(v.thumbnailUrl).toContain("https://i.ytimg.com/vi/OofgpDRcaYA/hqdefault.jpg");
+  });
+});

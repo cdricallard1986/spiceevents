@@ -17,6 +17,8 @@ import { Section } from "@/components/common/Section";
 import { Bouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
+import { VideoYoutube } from "@/components/common/VideoYoutube";
+import { VIDEOS } from "@/contenu/videos";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -135,6 +137,11 @@ export default async function PageEvenementiel({ params }: Props) {
             </figure>
           ))}
         </div>
+      </Section>
+
+      {/* Un set de Cédric (DJ Dioz) en montagne, sur la chaîne YouTube */}
+      <Section surtitre={c.video.surtitre} titre={c.video.titre} intro={c.video.intro} alterne>
+        <VideoYoutube video={VIDEOS.mixMontagne} locale={locale} />
       </Section>
 
       <Section surtitre={c.galerie.surtitre} titre={c.galerie.titre}>

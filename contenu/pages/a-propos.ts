@@ -19,7 +19,7 @@ type APropos = {
     partenariat: { titre: string; texte: string; points: string[]; lien: string };
     citation: string;
   };
-  video: { surtitre: string; titre: string; intro: string; titreLecteur: string };
+  video: { surtitre: string; titre: string; intro: string };
 };
 
 export const A_PROPOS: Bilingue<APropos> = {
@@ -148,7 +148,6 @@ export const A_PROPOS: Bilingue<APropos> = {
       surtitre: "En images",
       titre: "Un mix pensé *pour toutes les générations*.",
       intro: "Un aperçu de l'ambiance que nous construisons avec vous, pour faire danser petits et grands.",
-      titreLecteur: "Vidéo Spice Events : un mix intergénérationnel",
     },
   },
   en: {
@@ -276,7 +275,6 @@ export const A_PROPOS: Bilingue<APropos> = {
       surtitre: "On film",
       titre: "A mix designed *for every generation*.",
       intro: "A glimpse of the atmosphere we build with you, to get young and old alike on the dance floor.",
-      titreLecteur: "Spice Events video: a mix for every generation",
     },
   },
 };
