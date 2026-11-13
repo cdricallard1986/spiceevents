@@ -39,19 +39,23 @@ function Styles({ styles }: { styles: string[] }) {
   );
 }
 
-/** Carte d'un DJ ou d'un musicien : monogramme en attendant son portrait. */
+/** Carte d'un DJ ou d'un musicien : son portrait, ou son monogramme en attendant. */
 function CarteMembre({ m }: { m: Membre }) {
   return (
     <article id={m.id} className="flex h-full scroll-mt-28 flex-col border border-ligne bg-nuit-2">
-      <div className="flex items-end justify-between gap-4 border-b border-ligne p-6 md:p-8">
-        <div>
-          <p className="text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-or">{m.role}</p>
-          <h3 className="mt-2 font-display text-3xl leading-none md:text-4xl">{m.nom}</h3>
-          {m.alias && <p className="mt-2 text-sm text-sable">{m.alias}</p>}
-        </div>
-        <span aria-hidden="true" className="font-display text-5xl leading-none text-or/25 md:text-6xl">
-          {initiales(m.nom)}
-        </span>
+      <div className="relative aspect-[3/2] overflow-hidden border-b border-ligne bg-nuit-3">
+        {m.image ? (
+          <Photo cle={m.image} remplir cadrage={m.cadrage} sizes="(min-width: 1024px) 40rem, 100vw" />
+        ) : (
+          <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center font-display text-[7rem] leading-none text-or/25 md:text-[9rem]">
+            {initiales(m.nom)}
+          </span>
+        )}
+      </div>
+      <div className="border-b border-ligne p-6 md:p-8">
+        <p className="text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-or">{m.role}</p>
+        <h3 className="mt-2 font-display text-3xl leading-none md:text-4xl">{m.nom}</h3>
+        {m.alias && <p className="mt-2 text-sm text-sable">{m.alias}</p>}
       </div>
       <div className="flex flex-1 flex-col gap-5 p-6 md:p-8">
         <p className="text-lg font-semibold text-ivoire">{m.accroche}</p>

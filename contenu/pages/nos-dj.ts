@@ -4,8 +4,8 @@ import type { Bilingue, Seo } from "../types";
 /**
  * Page « Nos DJ » : l'équipe de Cédric (novembre 2026). Biographies reprises de
  * l'ancien site (Kevin, DJ Pan's alias Aurélien, David, Lucas), Antoine et Angel présentés à
- * partir des avis Mariages.net de 2026. Sans photo : un monogramme en attendant
- * les portraits.
+ * partir des avis Mariages.net de 2026. Portraits tirés du Drive Spice et identifiés
+ * par Cédric ; sans photo (Antoine, Angel) : un monogramme en attendant.
  */
 export type Membre = {
   id: string;
@@ -21,6 +21,8 @@ export type Membre = {
   lieux?: string;
   lien?: { libelle: string; href: string };
   image?: CleImage;
+  /** Point de l'image gardé au recadrage de la carte (`object-position`), pour garder le visage. */
+  cadrage?: string;
 };
 
 type NosDj = {
@@ -88,6 +90,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "kevin",
           nom: "Kevin R.",
+          image: "dj-kevin-r",
+          cadrage: "50% 8%",
           role: "DJ",
           styles: ["Électro", "Funk", "French Touch"],
           accroche: "Né en 1992, il baigne dans la musique depuis toujours.",
@@ -101,6 +105,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "pans",
           nom: "DJ Pan's",
+          image: "dj-pans",
+          cadrage: "50% 30%",
           alias: "Aurélien",
           role: "DJ, avec guitariste",
           styles: ["Rock", "Pop", "New wave", "Rockabilly"],
@@ -118,6 +124,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "david",
           nom: "David G.",
+          image: "dj-david-g",
+          cadrage: "55% 30%",
           role: "DJ",
           styles: ["House", "Deep house", "Mariages"],
           accroche: "Depuis ses 15 ans, David vous fait danser.",
@@ -129,6 +137,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "lucas",
           nom: "Lucas M.",
+          image: "dj-lucas-m",
+          cadrage: "50% 22%",
           role: "DJ et musicien",
           styles: ["Funk", "Rock", "Disco", "Actuel"],
           accroche: "De la technique à la magie.",
@@ -220,6 +230,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "kevin",
           nom: "Kevin R.",
+          image: "dj-kevin-r",
+          cadrage: "50% 8%",
           role: "DJ",
           styles: ["Electro", "Funk", "French Touch"],
           accroche: "Born in 1992, he has grown up surrounded by music.",
@@ -233,6 +245,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "pans",
           nom: "DJ Pan's",
+          image: "dj-pans",
+          cadrage: "50% 30%",
           alias: "Aurélien",
           role: "DJ, with guitarist",
           styles: ["Rock", "Pop", "New wave", "Rockabilly"],
@@ -250,6 +264,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "david",
           nom: "David G.",
+          image: "dj-david-g",
+          cadrage: "55% 30%",
           role: "DJ",
           styles: ["House", "Deep house", "Weddings"],
           accroche: "David has been getting people dancing since he was 15.",
@@ -261,6 +277,8 @@ export const NOS_DJ: Bilingue<NosDj> = {
         {
           id: "lucas",
           nom: "Lucas M.",
+          image: "dj-lucas-m",
+          cadrage: "50% 22%",
           role: "DJ and musician",
           styles: ["Funk", "Rock", "Disco", "Current hits"],
           accroche: "From technique to magic.",
