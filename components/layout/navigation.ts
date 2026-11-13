@@ -18,6 +18,7 @@ export const MENU: EntreeNav[] = [
 export const LIENS_PIED: EntreeNav[] = [
   ...MENU,
   { href: "/son-et-lumiere", cle: "sonLumiere" },
+  { href: "/nos-dj", cle: "nosDj" },
   { href: "/avis", cle: "avis" },
   { href: "/galerie", cle: "galerie" },
   { href: "/journal", cle: "journal", frSeulement: true },

@@ -58,6 +58,8 @@ type Mariages = {
     lien: string;
     /** Au-dessus du mix vidéo de Cédric (DJ Dioz). */
     mix: string;
+    /** Lien vers la page « Nos DJ ». */
+    equipe: string;
   };
   video: { surtitre: string; titre: string; intro: string };
   photos: { surtitre: string; titre: string; lien: string };
@@ -227,6 +229,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
       lien: "En savoir plus sur Cédric",
       mix: "Écoutez Cédric aux platines (DJ Dioz) : un mix pour toutes les générations.",
+      equipe: "Rencontrer les DJ de l'équipe",
     },
     video: {
       surtitre: "En images",
@@ -465,6 +468,7 @@ export const MARIAGES: Bilingue<Mariages> = {
       ],
       lien: "More about Cédric",
       mix: "Hear Cédric on the decks (DJ Dioz): a mix for every generation.",
+      equipe: "Meet the team's DJs",
     },
     video: {
       surtitre: "On film",

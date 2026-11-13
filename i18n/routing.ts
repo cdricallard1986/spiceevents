@@ -19,6 +19,7 @@ export const routing = defineRouting({
     "/evenementiel": { fr: "/evenementiel", en: "/events" },
     "/son-et-lumiere": { fr: "/son-et-lumiere", en: "/sound-and-lighting" },
     "/a-propos": { fr: "/a-propos", en: "/about" },
+    "/nos-dj": { fr: "/nos-dj", en: "/our-djs" },
     "/avis": { fr: "/avis", en: "/reviews" },
     "/galerie": { fr: "/galerie", en: "/gallery" },
     "/faq": "/faq",

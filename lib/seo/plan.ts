@@ -22,6 +22,7 @@ const PAGES: { chemin: Chemin; priorite: number }[] = [
   { chemin: "/avis", priorite: 0.8 },
   { chemin: "/evenementiel", priorite: 0.7 },
   { chemin: "/a-propos", priorite: 0.7 },
+  { chemin: "/nos-dj", priorite: 0.7 },
   { chemin: "/son-et-lumiere", priorite: 0.7 },
   { chemin: "/galerie", priorite: 0.6 },
   { chemin: "/faq", priorite: 0.6 },

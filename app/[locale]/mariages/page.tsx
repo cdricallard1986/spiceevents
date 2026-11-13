@@ -171,7 +171,10 @@ export default async function PageMariages({ params }: Props) {
             </ul>
             <p className="mt-10 text-[0.8125rem] font-semibold uppercase tracking-[0.2em] text-or">{c.dj.mix}</p>
             <VideoYoutube video={VIDEOS.mixMariage} locale={locale} className="mt-4" />
-            <Bouton href="/a-propos" variante="lien" className="mt-10">{c.dj.lien} →</Bouton>
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-4">
+              <Bouton href="/a-propos" variante="lien">{c.dj.lien} →</Bouton>
+              <Bouton href="/nos-dj" variante="lien">{c.dj.equipe} →</Bouton>
+            </div>
           </div>
         </div>
       </section>
