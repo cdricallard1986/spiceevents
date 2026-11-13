@@ -14,7 +14,7 @@ import {
 } from "@/lib/journal/admin";
 import { CATEGORIES, type Categorie } from "@/lib/journal/constantes";
 import { classesBouton } from "@/components/ui/Bouton";
-import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET, CLASSES_ONGLET_ACTIF, CLASSES_ONGLET_INACTIF } from "./champs";
 import { PillArticle } from "./PillArticle";
 import { useToasts } from "./Toasts";
 
@@ -84,7 +84,7 @@ export function GestionJournal({ articles, creer }: { articles: ArticleListe[]; 
                   type="button"
                   aria-pressed={actif}
                   onClick={() => modifierFiltre("statut", o.valeur)}
-                  className={`${CLASSES_ONGLET} ${actif ? "border-or bg-or text-nuit" : "border-ligne text-sable hover:border-or hover:text-or"}`}
+                  className={`${CLASSES_ONGLET} ${actif ? CLASSES_ONGLET_ACTIF : CLASSES_ONGLET_INACTIF}`}
                 >
                   {o.libelle}
                   <span className={`tabular-nums ${actif ? "text-nuit/70" : "text-sable/70"}`}>{nombres[o.valeur]}</span>
@@ -163,10 +163,14 @@ function LigneArticle({ article: a }: { article: ArticleListe }) {
   const date = formaterDate(a.date_publication);
   const titre = a.titre.trim() || "Article sans titre";
   return (
-    <li className={`flex flex-col gap-3 border-t border-ligne px-4 py-4 first:border-t-0 sm:flex-row sm:items-center sm:gap-6 sm:px-5 ${a.statut === "brouillon" ? "bg-nuit-3/60" : ""}`}>
+    <li className={`relative flex flex-col gap-3 border-t border-ligne px-4 py-4 transition-colors first:border-t-0 hover:bg-nuit-3/40 sm:flex-row sm:items-center sm:gap-6 sm:px-5 ${a.statut === "brouillon" ? "bg-nuit-3/60" : ""}`}>
       <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <Link href={`/admin/journal/${a.id}`} className={`text-left font-display text-xl leading-tight hover:text-or ${a.titre.trim() ? "text-ivoire" : "italic text-sable"}`}>
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
+          {/* Lien étiré : toute la ligne ouvre l'article (Cmd/Ctrl+clic : nouvel onglet). */}
+          <Link
+            href={`/admin/journal/${a.id}`}
+            className={`min-w-0 max-w-full truncate text-left font-display text-xl leading-tight after:absolute after:inset-0 hover:text-or ${a.titre.trim() ? "text-ivoire" : "italic text-sable"}`}
+          >
             {titre}
           </Link>
           <PillArticle statut={a.statut} dejaPublie={a.publie_le !== null} />
@@ -177,7 +181,7 @@ function LigneArticle({ article: a }: { article: ArticleListe }) {
           {a.statut === "publie" && ` · ${adressePublique(a.slug)}`}
         </p>
       </div>
-      <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-2">
+      <div className="relative z-10 flex shrink-0 flex-wrap items-center gap-x-6 gap-y-2">
         {a.statut === "publie" && (
           <a
             href={adressePublique(a.slug)}
@@ -191,7 +195,7 @@ function LigneArticle({ article: a }: { article: ArticleListe }) {
         <Link
           href={`/admin/journal/${a.id}`}
           aria-label={`Modifier l'article « ${titre} »`}
-          className="inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+          className={classesBouton("lien")}
         >
           Modifier →
         </Link>

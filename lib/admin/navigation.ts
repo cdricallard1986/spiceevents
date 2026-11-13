@@ -29,7 +29,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/avis",
     libelle: "Avis",
-  accroche: "Ce qu'ils en disent.",
+    accroche: "Ce qu'ils en disent.",
     description: "Avis des mariés : texte, traduction, pages où ils apparaissent, ordre.",
     icone: "avis",
     disponible: true,
@@ -37,7 +37,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/dj",
     libelle: "DJ",
-  accroche: "Ceux qui font danser.",
+    accroche: "Ceux qui font danser.",
     description: "DJ et musiciens de la page Nos DJ : présentation, photo, ordre, publication.",
     icone: "dj",
     disponible: true,
@@ -45,7 +45,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/journal",
     libelle: "Journal",
-  accroche: "Le carnet pimenté.",
+    accroche: "Le carnet pimenté.",
     description: "Articles du journal : rédaction, photos, publication.",
     icone: "journal",
     disponible: true,
@@ -53,7 +53,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/photos",
     libelle: "Photos",
-  accroche: "Vos plus belles nuits.",
+    accroche: "Vos plus belles nuits.",
     description: "Photos du site : diaporamas des en-têtes, galeries, ordre, texte alternatif.",
     icone: "photos",
     disponible: true,
@@ -61,7 +61,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/demandes",
     libelle: "Demandes",
-  accroche: "Ils veulent du piment.",
+    accroche: "Ils veulent du piment.",
     description: "Demandes reçues par le formulaire de contact, statut et notes.",
     icone: "demandes",
     disponible: true,
@@ -69,7 +69,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/tests",
     libelle: "Tests",
-  accroche: "Sous le capot.",
+    accroche: "Sous le capot.",
     description: "Comportements SQL, audit des droits, tests automatiques, configuration.",
     icone: "tests",
     disponible: true,
@@ -77,22 +77,25 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/emails",
     libelle: "Emails",
-  accroche: "Le courrier qui part.",
-    description: "Envoi réel des emails du formulaire à une adresse de test.",
+    accroche: "Le courrier qui part.",
+    description: "Envoi réel des emails du formulaire à votre adresse, pour les vérifier.",
     icone: "emails",
     disponible: true,
   },
   {
     href: "/admin/compte",
     libelle: "Mon compte",
-  accroche: "Votre clé du back office.",
+    accroche: "Votre clé du back office.",
     description: "Votre adresse de connexion et le changement de mot de passe.",
     icone: "compte",
     disponible: true,
   },
 ];
 
-export const MENU: readonly Section[] = [ACCUEIL_ADMIN, ...SECTIONS];
+/** Adresse de « Mon compte » : en bas du menu, au clic sur son nom (règle de Cédric), pas dans la liste. */
+export const HREF_COMPTE = "/admin/compte";
+
+export const MENU: readonly Section[] = [ACCUEIL_ADMIN, ...SECTIONS.filter((s) => s.href !== HREF_COMPTE)];
 
 /** L'entrée du menu est-elle celle de la page affichée ? (L'accueil seulement sur `/admin` exact.) */
 export function estActive(href: string, chemin: string): boolean {

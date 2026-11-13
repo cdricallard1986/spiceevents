@@ -53,7 +53,7 @@ export function PillVersion({ disponible: texteDisponible, recharger }: { dispon
       <button
         type="button"
         onClick={() => window.location.reload()}
-        className={`${CLASSES_PILL} rounded-full border-or`}
+        className={`${CLASSES_PILL} border-or`}
       >
         {texteDisponible} — <span className="font-semibold text-or">{recharger}</span>
       </button>

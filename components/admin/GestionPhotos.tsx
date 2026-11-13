@@ -24,7 +24,7 @@ import { clientNavigateur } from "@/lib/supabase/client";
 import { classesBouton } from "@/components/ui/Bouton";
 import { AjoutPhotos, type OutilsEnvoi } from "./AjoutPhotos";
 import { ApercuPhoto, CLASSES_PASTILLE, PillOrigine } from "./ApercuPhoto";
-import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET } from "./champs";
+import { CLASSES_CHAMP, CLASSES_FLECHE, CLASSES_LIBELLE, CLASSES_ONGLET, CLASSES_ONGLET_ACTIF, CLASSES_ONGLET_INACTIF } from "./champs";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { ERREUR_RESEAU, FichePhoto } from "./FichePhoto";
 import { useToasts } from "./Toasts";
@@ -52,8 +52,6 @@ export const OUTILS_NAVIGATEUR: OutilsEnvoi = {
   },
 };
 
-const CLASSES_FLECHE =
-  "flex size-10 items-center justify-center border border-ligne text-lg text-sable transition-colors hover:border-or hover:text-or disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ligne disabled:hover:text-sable";
 
 type Ouverte = { id: string; depuisGalerie: boolean } | null;
 
@@ -160,7 +158,7 @@ export function GestionPhotos({
                   type="button"
                   aria-pressed={actif}
                   onClick={() => setOnglet(valeur)}
-                  className={`${CLASSES_ONGLET} ${actif ? "border-or bg-or text-nuit" : "border-ligne text-sable hover:border-or hover:text-or"}`}
+                  className={`${CLASSES_ONGLET} ${actif ? CLASSES_ONGLET_ACTIF : CLASSES_ONGLET_INACTIF}`}
                 >
                   {libelle}
                   {nombre !== null && <span className={`tabular-nums ${actif ? "text-nuit/70" : "text-sable/70"}`}>{nombre}</span>}
@@ -254,8 +252,12 @@ export function GestionPhotos({
               {photos.map((p) => {
                 const n = galeriesDeLaPhoto(liaisons, p.id).length;
                 return (
-                  <li key={p.id} className="flex flex-col border border-ligne bg-nuit-2">
-                    <button type="button" onClick={() => setOuverte({ id: p.id, depuisGalerie: false })} className="group relative block aspect-[4/3] overflow-hidden" aria-label={`Ouvrir la fiche : ${nomPhoto(p)}`}>
+                  <li
+                    key={p.id}
+                    onClick={() => setOuverte({ id: p.id, depuisGalerie: false })}
+                    className="group flex cursor-pointer flex-col border border-ligne bg-nuit-2 transition-colors hover:border-or/60"
+                  >
+                    <button type="button" className="relative block aspect-[4/3] overflow-hidden" aria-label={`Ouvrir la fiche : ${nomPhoto(p)}`}>
                       <ApercuPhoto photo={p} sizes="(min-width: 1024px) 260px, (min-width: 640px) 33vw, 50vw" className="transition-transform duration-700 group-hover:scale-105" />
                     </button>
                     <div className="flex flex-1 flex-col gap-2 p-3">
@@ -352,16 +354,18 @@ function LignePhoto({
 }) {
   const nom = nomPhoto(p);
   return (
-    <li className="flex gap-4 border-t border-ligne px-4 py-4 first:border-t-0 sm:px-5">
-      <button type="button" onClick={onOuvrir} tabIndex={-1} aria-hidden="true" className="group relative h-20 w-28 shrink-0 overflow-hidden bg-nuit sm:h-24 sm:w-36">
+    <li onClick={onOuvrir} className="group flex cursor-pointer gap-4 border-t border-ligne px-4 py-4 transition-colors first:border-t-0 hover:bg-nuit-3/40 sm:px-5">
+      <span className="relative h-14 w-20 shrink-0 overflow-hidden bg-nuit sm:h-24 sm:w-36">
         <ApercuPhoto photo={p} sizes="144px" className="transition-transform duration-700 group-hover:scale-105" />
-      </button>
+      </span>
       <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <span className="font-display text-xl leading-tight text-or tabular-nums">{rang}</span>
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
+          <span className="min-w-0 max-w-full truncate font-display text-xl leading-tight text-ivoire">
+            <span className="mr-2 text-or tabular-nums">{rang}.</span>
+            {p.alt_fr}
+          </span>
           <PillOrigine photo={p} />
         </div>
-        <p className="mt-1 line-clamp-2 text-sm text-ivoire">{p.alt_fr}</p>
         <p className="mt-1 text-xs text-sable/80">
           {p.largeur} × {p.hauteur} px{p.credit ? ` · ${p.credit}` : ""}
           {!p.alt_en && " · sans texte anglais"}
@@ -371,13 +375,16 @@ function LignePhoto({
             type="button"
             onClick={onOuvrir}
             aria-label={`Modifier la photo ${rang} : ${nom}`}
-            className="inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+            className={classesBouton("lien")}
           >
             Modifier →
           </button>
           <button
             type="button"
-            onClick={onRetirer}
+            onClick={(e) => {
+              e.stopPropagation();
+              onRetirer();
+            }}
             aria-label={`Retirer de la galerie la photo ${rang} : ${nom}`}
             className="text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-sable hover:text-erreur"
           >
@@ -385,7 +392,7 @@ function LignePhoto({
           </button>
         </div>
       </div>
-      <div className="flex shrink-0 flex-col gap-2">
+      <div className="flex shrink-0 flex-col gap-2" onClick={(e) => e.stopPropagation()}>
         <button type="button" onClick={() => onDeplacer("monter")} disabled={premiere || enDeplacement} aria-label={`Monter la photo ${rang}`} className={CLASSES_FLECHE}>
           ↑
         </button>

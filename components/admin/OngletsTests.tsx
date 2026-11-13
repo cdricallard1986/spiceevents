@@ -120,7 +120,7 @@ export function OngletsTests({ ongletInitial, lancerAudit, lancerSql = interroge
 
   return (
     <div>
-      <div role="tablist" aria-label="Suites de tests" onKeyDown={clavier} className="flex overflow-x-auto">
+      <div role="tablist" aria-label="Suites de tests" onKeyDown={clavier} className="relative flex overflow-x-auto">
         {ONGLETS.map((o) => {
           const selectionne = actif === o.cle;
           return (

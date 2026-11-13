@@ -19,7 +19,7 @@ export default async function PageCompte() {
         intro={
           <>
             Connecté avec <span className="text-ivoire">{utilisateur.email}</span>. Le nouveau mot de passe vaut pour toutes vos
-            prochaines connexions ; vos autres appareils restent connectés.
+            prochaines connexions. Par sécurité, vos autres appareils sont déconnectés ; celui-ci reste connecté.
           </>
         }
       />

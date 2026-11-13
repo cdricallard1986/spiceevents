@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import { useModalAutosave } from "@/hooks/useModalAutosave";
 import {
   FILTRES_PAR_DEFAUT,
@@ -18,12 +18,14 @@ import { FORMULAIRE_VIDE, formulaireDepuisAvis, type ErreursAvis, type Formulair
 import { extrait } from "@/lib/avis/selection";
 import type { Avis } from "@/lib/avis/types";
 import { classesBouton } from "@/components/ui/Bouton";
-import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_PASTILLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_FLECHE, CLASSES_LIBELLE, CLASSES_PASTILLE } from "./champs";
 import { CLASSES_DANGER, ConfirmDialog } from "./ConfirmDialog";
 import { FicheAvis } from "./FicheAvis";
 import { Modale } from "./Modale";
 import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
+import { useErreursFiche } from "./useErreursFiche";
+import { PillPublication } from "./PillPublication";
 
 /** Server Actions (injectées pour pouvoir tester le composant). */
 export type ActionsAvis = {
@@ -240,11 +242,6 @@ function Filtre({
   );
 }
 
-export function PillPublication({ publie }: { publie: boolean }) {
-  return (
-    <span className={`${CLASSES_PASTILLE} ${publie ? "border-succes/60 text-succes" : "border-ligne text-sable"}`}>{publie ? "Publié" : "Non publié"}</span>
-  );
-}
 
 function LigneAvis({
   avis: a,
@@ -262,13 +259,11 @@ function LigneAvis({
   onDeplacer: (sens: "monter" | "descendre") => void;
 }) {
   const date = a.date_avis ? new Date(`${a.date_avis}T12:00:00Z`).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }) : null;
-  const classesFleche =
-    "flex size-10 items-center justify-center border border-ligne text-lg text-sable transition-colors hover:border-or hover:text-or disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ligne disabled:hover:text-sable";
   return (
-    <li className={`flex gap-4 border-t border-ligne px-4 py-4 first:border-t-0 sm:px-5 ${a.publie ? "" : "bg-nuit-3/60"}`}>
+    <li onClick={onOuvrir} className={`flex cursor-pointer gap-4 border-t border-ligne px-4 py-4 transition-colors first:border-t-0 hover:bg-nuit-3/40 sm:px-5 ${a.publie ? "" : "bg-nuit-3/60"}`}>
       <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <button type="button" onClick={onOuvrir} className="text-left font-display text-xl leading-tight text-ivoire hover:text-or">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
+          <button type="button" onClick={onOuvrir} className="min-w-0 max-w-full truncate text-left font-display text-xl leading-tight text-ivoire hover:text-or">
             {a.auteurs}
           </button>
           <PillPublication publie={a.publie} />
@@ -292,13 +287,14 @@ function LigneAvis({
           type="button"
           onClick={onOuvrir}
           aria-label={`Modifier l'avis de ${a.auteurs}`}
-          className="mt-3 inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+          className={`mt-3 ${classesBouton("lien")}`}
         >
           Modifier →
         </button>
       </div>
-      <div className="flex shrink-0 flex-col gap-2">
-        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter l'avis de ${a.auteurs}`} className={classesFleche}>
+      {/* Les flèches gardent leur propre action, sans ouvrir la fiche. */}
+      <div className="flex shrink-0 flex-col gap-2" onClick={(e) => e.stopPropagation()}>
+        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter l'avis de ${a.auteurs}`} className={CLASSES_FLECHE}>
           ↑
         </button>
         <button
@@ -306,7 +302,7 @@ function LigneAvis({
           onClick={() => onDeplacer("descendre")}
           disabled={dernier || enDeplacement}
           aria-label={`Descendre l'avis de ${a.auteurs}`}
-          className={classesFleche}
+          className={CLASSES_FLECHE}
         >
           ↓
         </button>
@@ -315,24 +311,6 @@ function LigneAvis({
   );
 }
 
-/** Toast d'erreur sans répétition : la même erreur, à chaque nouvel essai d'enregistrement, ne s'affiche qu'une fois. */
-function useErreurs() {
-  const { afficher } = useToasts();
-  const [erreurs, setErreurs] = useState<ErreursAvis>({});
-  const dernier = useRef("");
-  return {
-    erreurs,
-    signaler(message: string, champs: ErreursAvis = {}) {
-      setErreurs(champs);
-      if (message !== dernier.current) afficher(message, "erreur");
-      dernier.current = message;
-    },
-    effacer() {
-      setErreurs({});
-      dernier.current = "";
-    },
-  };
-}
 
 type Confirmation = "publier" | "retirer" | "supprimer" | "fermer" | null;
 
@@ -352,7 +330,7 @@ function ModaleEdition({
   onFermer: () => void;
 }) {
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursAvis>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
   // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
@@ -545,7 +523,7 @@ function ModaleCreation({
   onFermer: () => void;
 }) {
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursAvis>();
   const [enCours, setEnCours] = useState(false);
   const fiche = useModalAutosave<FormulaireAvis>({ mode: "creation-locale", cle: "avis:nouveau", valeurInitiale: FORMULAIRE_VIDE });
 

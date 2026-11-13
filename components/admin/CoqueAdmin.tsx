@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/layout/Logo";
-import { MENU, estActive } from "@/lib/admin/navigation";
+import { HREF_COMPTE, MENU, estActive } from "@/lib/admin/navigation";
 import { seDeconnecter } from "@/app/admin/connexion/actions";
 import { Icone } from "./Icones";
 
@@ -99,7 +99,7 @@ export function CoqueAdmin({ children, version, email, nouvellesDemandes, relire
   return (
     <div className="min-h-dvh">
       {/* Téléphone et tablette : barre du haut + tiroir. */}
-      <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-ligne bg-[#0e0e0e]/95 px-4 backdrop-blur-md lg:hidden">
+      <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-ligne bg-nuit-0/95 px-4 backdrop-blur-md lg:hidden">
         <Link href="/admin" className="shrink-0">
           <Logo className="h-9" />
         </Link>
@@ -119,7 +119,7 @@ export function CoqueAdmin({ children, version, email, nouvellesDemandes, relire
       {tiroir && (
         <div className="fixed inset-0 z-40 lg:hidden">
           <button type="button" aria-label="Fermer le menu" onClick={() => setTiroir(false)} className="absolute inset-0 bg-nuit/80" />
-          <div id="menu-admin-mobile" className="relative flex h-full w-[min(20rem,85vw)] flex-col border-r border-ligne bg-[#0e0e0e]">
+          <div id="menu-admin-mobile" className="relative flex h-full w-[min(20rem,85vw)] flex-col border-r border-ligne bg-nuit-0">
             <div className="flex h-16 items-center justify-between border-b border-ligne px-5">
               <span className="surtitre">Back office</span>
               <button type="button" onClick={() => setTiroir(false)} aria-label="Fermer le menu" className="flex size-11 items-center justify-center">
@@ -133,7 +133,7 @@ export function CoqueAdmin({ children, version, email, nouvellesDemandes, relire
 
       {/* Ordinateur : menu latéral fixe, repliable. */}
       <aside
-        className={`fixed inset-y-0 left-0 z-30 hidden flex-col border-r border-ligne bg-[#0e0e0e] transition-[width] duration-200 lg:flex ${replie ? "w-[4.5rem]" : "w-64"}`}
+        className={`fixed inset-y-0 left-0 z-30 hidden flex-col border-r border-ligne bg-nuit-0 transition-[width] duration-200 lg:flex ${replie ? "w-[4.5rem]" : "w-64"}`}
       >
         <div className={`flex items-center border-b border-ligne ${replie ? "h-24 justify-center" : "h-28 justify-between pl-6 pr-3"}`}>
           {!replie && (
@@ -174,14 +174,15 @@ export function libelleNouvelles(n: number): string {
 function Pastille({ nombre, actif, replie }: { nombre: number; actif: boolean; replie: boolean }) {
   const couleurs = actif ? "bg-nuit text-or" : "bg-or text-nuit";
   return (
-    <span
-      aria-hidden="true"
-      className={`${couleurs} inline-flex min-w-6 items-center justify-center px-1.5 font-display text-sm leading-6 tabular-nums ${
-        replie ? "absolute right-2 top-1 min-w-5 px-1 text-xs leading-5" : "ml-auto"
-      }`}
-    >
-      {nombre > 99 ? "99+" : nombre}
-    </span>
+    // Menu replié : un petit carré au coin de l'icône (comme sur le burger mobile), sans la cacher ;
+    // le nombre reste dans l'infobulle de l'entrée.
+    replie ? (
+      <span aria-hidden="true" className={`absolute left-[calc(50%+0.375rem)] top-2.5 size-2.5 ${actif ? "bg-nuit" : "bg-or"}`} />
+    ) : (
+      <span aria-hidden="true" className={`${couleurs} ml-auto inline-flex min-w-6 items-center justify-center px-1.5 font-display text-sm leading-6 tabular-nums`}>
+        {nombre > 99 ? "99+" : nombre}
+      </span>
+    )
   );
 }
 
@@ -222,6 +223,19 @@ function ContenuMenu({ chemin, replie, version, email, nouvelles }: { chemin: st
       </nav>
 
       <div className="border-t border-ligne py-3">
+        {/* « Mon compte » au clic sur son nom, avec le rôle en sous-titre. */}
+        <Link
+          href={HREF_COMPTE}
+          aria-current={estActive(HREF_COMPTE, chemin) ? "page" : undefined}
+          title={replie ? `Mon compte — ${email}` : email}
+          className={`${secondaire} h-14 ${estActive(HREF_COMPTE, chemin) ? "text-or" : "text-ivoire hover:text-or"}`}
+        >
+          <Icone nom="compte" />
+          <span className={replie ? "sr-only" : "flex min-w-0 flex-col leading-tight"}>
+            <span className="truncate font-semibold">Cédric</span>
+            <span className="truncate text-xs text-sable">Administrateur · Mon compte</span>
+          </span>
+        </Link>
         <Link href="/" target="_blank" rel="noopener" title={replie ? "Voir le site" : undefined} className={`${secondaire} text-sable hover:text-or`}>
           <Icone nom="site" />
           <span className={replie ? "sr-only" : ""}>Voir le site</span>

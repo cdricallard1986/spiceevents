@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import type { EntreeEnvoiTest, EtatEnvoiTest, Modele } from "@/lib/admin/emails-test";
 import type { Langue } from "@/lib/contact/constantes";
+import { SITE } from "@/contenu/site";
 import { classesBouton } from "@/components/ui/Bouton";
 import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
 import { useToasts } from "./Toasts";
@@ -135,7 +136,9 @@ export function EnvoiEmailsTest({ action, destinataire, resendConfigure, modeles
             <iframe
               key={`${modele}-${langue}`}
               title={`Aperçu de l'email : ${modeles.find((m) => m.valeur === modele)?.libelle ?? modele}, ${langue === "fr" ? "français" : "anglais"}`}
-              srcDoc={apercu.html}
+              // Le logo des emails est servi par le site en ligne : dans l'aperçu, on le prend sur ce
+              // site-ci (la politique de sécurité du back office n'autorise que ses propres images).
+              srcDoc={apercu.html.replaceAll(SITE.logoEmail, new URL(SITE.logoEmail).pathname)}
               sandbox=""
               className="mt-4 h-[44rem] w-full border border-ligne bg-white"
             />

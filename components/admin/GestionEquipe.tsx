@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { useModalAutosave } from "@/hooks/useModalAutosave";
 import { trierEquipe, type ResultatEchangeMembres, type ResultatMembre, type ResultatSuppressionMembre } from "@/lib/equipe/admin";
 import { initiales, paragraphes, srcPhotoMembre } from "@/lib/equipe/affichage";
@@ -10,13 +10,14 @@ import { FORMULAIRE_MEMBRE_VIDE, formulaireDepuisMembre, type ErreursMembre, typ
 import type { GroupeEquipe, MembreEquipe } from "@/lib/equipe/types";
 import { OUTILS_ENVOI_ARTICLE, type DemandeEnvoi, type OutilsEnvoiArticle } from "@/lib/journal/navigateur";
 import { classesBouton } from "@/components/ui/Bouton";
-import { CLASSES_PASTILLE } from "./champs";
+import { CLASSES_FLECHE, CLASSES_PASTILLE } from "./champs";
 import { CLASSES_DANGER, ConfirmDialog } from "./ConfirmDialog";
 import { FicheMembre } from "./FicheMembre";
-import { PillPublication } from "./GestionAvis";
+import { PillPublication } from "./PillPublication";
 import { Modale } from "./Modale";
 import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
+import { useErreursFiche } from "./useErreursFiche";
 
 /** Server Actions (injectées pour pouvoir tester le composant). */
 export type ActionsEquipe = {
@@ -100,7 +101,7 @@ export function GestionEquipe({
 
       {triee.length === 0 ? (
         <p className="mt-4 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
-          Personne pour l&apos;instant : ajoutez le premier DJ avec « Nouveau DJ ou musicien ».
+          Aucun DJ pour l&apos;instant : ajoutez le premier avec « Nouveau DJ ou musicien ».
         </p>
       ) : (
         (["dj", "musicien"] as const).map((g) => {
@@ -108,7 +109,7 @@ export function GestionEquipe({
           if (membres.length === 0) return null;
           return (
             <section key={g} className="mt-8">
-              <h2 className="mb-3 font-display text-2xl uppercase tracking-[0.04em] text-ivoire">{TITRES_GROUPE[g]}</h2>
+              <h2 className="surtitre mb-3">{TITRES_GROUPE[g]}</h2>
               <ul className="border border-ligne bg-nuit-2">
                 {membres.map((m, i) => (
                   <LigneMembre
@@ -160,7 +161,7 @@ export function GestionEquipe({
 /** Vignette de la liste : la photo telle que cadrée sur la page, ou le monogramme. */
 function Vignette({ membre: m }: { membre: MembreEquipe }) {
   return (
-    <span className="relative block aspect-[3/2] w-24 shrink-0 overflow-hidden border border-ligne bg-nuit-3 sm:w-36">
+    <span className="relative block aspect-[3/2] w-20 shrink-0 overflow-hidden border border-ligne bg-nuit-3 sm:w-36">
       {m.photo_chemin ? (
         <Image
           src={srcPhotoMembre(m.photo_chemin)}
@@ -195,24 +196,22 @@ function LigneMembre({
   onOuvrir: () => void;
   onDeplacer: (sens: "monter" | "descendre") => void;
 }) {
-  const classesFleche =
-    "flex size-10 items-center justify-center border border-ligne text-lg text-sable transition-colors hover:border-or hover:text-or disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ligne disabled:hover:text-sable";
   const manques = [!m.photo_chemin && "sans photo", !m.accroche_en && !m.presentation_en && "sans traduction anglaise"].filter(Boolean);
   return (
-    <li className={`flex gap-4 border-t border-ligne px-4 py-4 first:border-t-0 sm:px-5 ${m.publie ? "" : "bg-nuit-3/60"}`}>
-      <button type="button" onClick={onOuvrir} tabIndex={-1} aria-hidden="true" className="self-start">
+    <li onClick={onOuvrir} className={`flex cursor-pointer gap-4 border-t border-ligne px-4 py-4 transition-colors first:border-t-0 hover:bg-nuit-3/40 sm:px-5 ${m.publie ? "" : "bg-nuit-3/60"}`}>
+      <span className="self-start">
         <Vignette membre={m} />
-      </button>
+      </span>
       <div className="min-w-0 flex-1">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <button type="button" onClick={onOuvrir} className="min-w-0 truncate text-left font-display text-xl leading-tight text-ivoire hover:text-or">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
+          <button type="button" onClick={onOuvrir} className="min-w-0 max-w-full truncate text-left font-display text-xl leading-tight text-ivoire hover:text-or">
             {m.nom}
           </button>
           <PillPublication publie={m.publie} />
         </div>
         <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-or">
           {m.role_fr}
-          {m.alias ? <span className="ml-2 normal-case tracking-normal text-sable">· {m.alias}</span> : null}
+          {m.alias ? <span className="normal-case tracking-normal text-sable"> · {m.alias}</span> : null}
         </p>
         <p className="mt-1 line-clamp-2 text-sm text-sable sm:line-clamp-1">{m.accroche_fr}</p>
         <p className="mt-1 text-xs text-sable/80">
@@ -234,16 +233,17 @@ function LigneMembre({
           type="button"
           onClick={onOuvrir}
           aria-label={`Modifier la fiche de ${m.nom}`}
-          className="mt-3 inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+          className={`mt-3 ${classesBouton("lien")}`}
         >
           Modifier →
         </button>
       </div>
-      <div className="flex shrink-0 flex-col gap-2">
-        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter ${m.nom}`} className={classesFleche}>
+      {/* Les flèches gardent leur propre action, sans ouvrir la fiche. */}
+      <div className="flex shrink-0 flex-col gap-2" onClick={(e) => e.stopPropagation()}>
+        <button type="button" onClick={() => onDeplacer("monter")} disabled={premier || enDeplacement} aria-label={`Monter ${m.nom}`} className={CLASSES_FLECHE}>
           ↑
         </button>
-        <button type="button" onClick={() => onDeplacer("descendre")} disabled={dernier || enDeplacement} aria-label={`Descendre ${m.nom}`} className={classesFleche}>
+        <button type="button" onClick={() => onDeplacer("descendre")} disabled={dernier || enDeplacement} aria-label={`Descendre ${m.nom}`} className={CLASSES_FLECHE}>
           ↓
         </button>
       </div>
@@ -251,24 +251,6 @@ function LigneMembre({
   );
 }
 
-/** Toast d'erreur sans répétition : la même erreur, à chaque nouvel essai d'enregistrement, ne s'affiche qu'une fois. */
-function useErreurs() {
-  const { afficher } = useToasts();
-  const [erreurs, setErreurs] = useState<ErreursMembre>({});
-  const dernier = useRef("");
-  return {
-    erreurs,
-    signaler(message: string, champs: ErreursMembre = {}) {
-      setErreurs(champs);
-      if (message !== dernier.current) afficher(message, "erreur");
-      dernier.current = message;
-    },
-    effacer() {
-      setErreurs({});
-      dernier.current = "";
-    },
-  };
-}
 
 type Confirmation = "publier" | "retirer" | "supprimer" | "fermer" | null;
 
@@ -288,7 +270,7 @@ function ModaleEdition({
   onFermer: () => void;
 }) {
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursMembre>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
   // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
@@ -474,7 +456,7 @@ function ModaleCreation({
   onFermer: () => void;
 }) {
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursMembre>();
   const [enCours, setEnCours] = useState(false);
   const fiche = useModalAutosave<FormulaireMembre>({ mode: "creation-locale", cle: "equipe:nouveau", valeurInitiale: FORMULAIRE_MEMBRE_VIDE });
 

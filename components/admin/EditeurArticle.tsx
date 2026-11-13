@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { useModalAutosave } from "@/hooks/useModalAutosave";
 import {
   adressePublique,
@@ -29,6 +29,7 @@ import { CouvertureArticle } from "./CouvertureArticle";
 import { PillArticle } from "./PillArticle";
 import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
+import { useErreursFiche } from "./useErreursFiche";
 
 // L'éditeur visuel (Tiptap, le plus gros morceau) n'est chargé que sur cette page, après le reste.
 const EditeurTexte = dynamic(() => import("./EditeurTexte"), {
@@ -51,24 +52,6 @@ const LISTE = "/admin/journal";
 
 type Confirmation = "publier" | "retirer" | "supprimer" | "quitter" | null;
 
-/** Toast d'erreur sans répétition (même règle que les autres fiches du back office). */
-function useErreurs() {
-  const { afficher } = useToasts();
-  const [erreurs, setErreurs] = useState<ErreursArticle>({});
-  const dernier = useRef("");
-  return {
-    erreurs,
-    signaler(message: string, champs: ErreursArticle = {}) {
-      setErreurs(champs);
-      if (message !== dernier.current) afficher(message, "erreur");
-      dernier.current = message;
-    },
-    effacer() {
-      setErreurs({});
-      dernier.current = "";
-    },
-  };
-}
 
 /**
  * Éditeur d'un article (page plein écran : un article est long). Même
@@ -94,7 +77,7 @@ export function EditeurArticle({
   const champ = (nom: string) => `${idChamps}-${nom}`;
   const router = useRouter();
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursArticle>();
   // État en base (statut, adresse retenue…), mis à jour par chaque réponse du serveur.
   const [ligne, setLigne] = useState(ligneInitiale);
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
@@ -216,7 +199,7 @@ export function EditeurArticle({
           e.preventDefault();
           void quitter();
         }}
-        className="inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+        className={classesBouton("lien")}
       >
         ← Tous les articles
       </Link>

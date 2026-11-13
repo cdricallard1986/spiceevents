@@ -10,6 +10,7 @@ import { messageRaison } from "@/lib/admin/messages";
 import { CHEMIN_ADMIN, cheminDeRetour } from "@/lib/admin/session";
 import { clientServeur } from "@/lib/supabase/server";
 import { seConnecter } from "./actions";
+import { CLASSES_BANDEAU } from "@/components/admin/champs";
 
 export const metadata: Metadata = { title: "Connexion" };
 
@@ -38,12 +39,12 @@ export default async function PageConnexion({ searchParams }: Props) {
         <div className="absolute inset-x-0 bottom-0 p-12 xl:p-16">
           <p className="surtitre mb-4">Spice Events</p>
           <p className="max-w-[11em] font-display text-6xl leading-[0.95] xl:text-7xl">
-            <Accent texte="Les coulisses *du piment*." />
+            <Accent texte="Les coulisses *du piment.*" />
           </p>
         </div>
       </div>
 
-      <div className="flex items-center justify-center border-ligne px-4 py-12 sm:px-8 lg:border-l lg:bg-[#0e0e0e]">
+      <div className="flex items-center justify-center border-ligne px-4 py-12 sm:px-8 lg:border-l lg:bg-nuit-0">
         <div className="w-full max-w-md">
           <Link href="/" aria-label="Spice Events — retour au site" className="block w-fit">
             <Logo className="h-16" />
@@ -53,7 +54,7 @@ export default async function PageConnexion({ searchParams }: Props) {
             <Accent texte="Connexion. *Entrez en régie.*" />
           </h1>
           {message && (
-            <p role="status" className="mt-6 border-l-4 border-or bg-nuit-2 px-4 py-3 text-sm text-ivoire">
+            <p role="status" className={`mt-6 ${CLASSES_BANDEAU}`}>
               {message}
             </p>
           )}

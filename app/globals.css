@@ -6,6 +6,8 @@
  * de la charte précédente (« or » = l'accent) pour ne pas toucher aux composants.
  */
 @theme {
+  /* Fond le plus sombre : menu latéral du back office, colonne de connexion. */
+  --color-nuit-0: #0e0e0e;
   --color-nuit: #141414;
   --color-nuit-2: #202020;
   --color-nuit-3: #282828;
@@ -25,6 +27,16 @@
 }
 
 @layer base {
+  /* iPhone : un champ sous 16 px fait agrandir la page au toucher (et l'agrandissement reste
+     d'une page à l'autre). Sur écran tactile, tous les champs à 16 px, une fois pour toutes ;
+     `!important` DANS la couche bat les utilitaires `text-sm`. Jamais `maximum-scale=1`. */
+  @media (pointer: coarse) {
+    input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="color"]),
+    select,
+    textarea {
+      font-size: 16px !important;
+    }
+  }
   html {
     color-scheme: dark;
     scroll-behavior: smooth;

@@ -39,13 +39,13 @@ export default async function PageTests({ searchParams }: Props) {
           <>
             D&apos;un coup d&apos;œil : la base refuse-t-elle bien ce qu&apos;elle doit refuser, et les tests automatiques passent-ils ? La pastille de chaque
             onglet donne le verdict sans l&apos;ouvrir ; les deux premiers interrogent la vraie base dès l&apos;ouverture de la page.
+            <span className="mt-2 block text-sm text-sable/80">
+              Les mêmes audits tournent à chaque commit (job « Audits base » de la vérification GitHub) : l&apos;audit côté visiteur toujours, les
+              comportements SQL dès que le secret <code className="font-mono">supabase_service_role_key</code> est défini dans GitHub.
+            </span>
           </>
         }
       />
-      <p className="mt-2 max-w-2xl text-sm text-sable/80">
-        Les mêmes audits tournent à chaque commit (job « Audits base » de la vérification GitHub) : l&apos;audit côté visiteur toujours, les comportements SQL
-        dès que le secret <code className="font-mono">supabase_service_role_key</code> est défini dans GitHub.
-      </p>
 
       <div className="mt-10">
         <OngletsTests

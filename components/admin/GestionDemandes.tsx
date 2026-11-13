@@ -21,7 +21,7 @@ import {
 import { COULEURS_STATUT, LIBELLES_FILTRE, LIBELLES_STATUT, type StatutDemande } from "@/lib/demandes/constantes";
 import type { FormulaireSuivi } from "@/lib/demandes/schema";
 import type { Demande, SuiviDemande } from "@/lib/demandes/types";
-import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET, CLASSES_PASTILLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET, CLASSES_ONGLET_ACTIF, CLASSES_ONGLET_INACTIF, CLASSES_PASTILLE } from "./champs";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { FicheDemande } from "./FicheDemande";
 import { Modale } from "./Modale";
@@ -101,7 +101,7 @@ export function GestionDemandes({ demandesInitiales, actions }: { demandesInitia
                     aria-pressed={actif}
                     onClick={() => modifierFiltres({ statut: s })}
                     className={`${CLASSES_ONGLET} ${
-                      actif ? "border-or bg-or text-nuit" : "border-ligne text-sable hover:border-or hover:text-or"
+                      actif ? CLASSES_ONGLET_ACTIF : CLASSES_ONGLET_INACTIF
                     }`}
                   >
                     {LIBELLES_FILTRE[s]}{" "}
@@ -206,7 +206,7 @@ function LigneDemande({ demande: d, onOuvrir }: { demande: Demande; onOuvrir: ()
         {formaterReceptionCourte(d.created_at)}
       </p>
       <div className="mt-1 min-w-0 lg:mt-0">
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1">
           <button
             type="button"
             onClick={(e) => {
@@ -214,7 +214,7 @@ function LigneDemande({ demande: d, onOuvrir }: { demande: Demande; onOuvrir: ()
               onOuvrir();
             }}
             aria-label={`Ouvrir la demande de ${nom}`}
-            className="text-left font-display text-xl leading-tight text-ivoire hover:text-or"
+            className="min-w-0 max-w-full truncate text-left font-display text-xl leading-tight text-ivoire hover:text-or"
           >
             {nom}
           </button>

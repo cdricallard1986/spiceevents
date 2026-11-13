@@ -24,9 +24,10 @@ async function compter(requete: PromiseLike<{ count: number | null; error: { mes
 export default async function AccueilAdmin() {
   const { supabase } = await exigerAdmin();
   const tete = { count: "exact", head: true } as const;
-  const [demandes, avis, photos, articles] = await Promise.all([
+  const [demandes, avis, djs, photos, articles] = await Promise.all([
     resumeDemandes(supabase),
     compter(supabase.from("avis").select("id", tete).eq("publie", true)),
+    compter(supabase.from("equipe").select("id", tete).eq("publie", true)),
     compter(supabase.from("photos").select("id", tete)),
     compter(supabase.from("articles").select("id", tete).eq("statut", "publie")),
   ]);
@@ -37,6 +38,7 @@ export default async function AccueilAdmin() {
       chiffres={[
         { valeur: demandes?.nouvelles ?? null, libelle: "Nouvelles demandes", href: "/admin/demandes", alerte: Boolean(demandes?.nouvelles) },
         { valeur: avis, libelle: "Avis publiés", href: "/admin/avis" },
+        { valeur: djs, libelle: "DJ et musiciens publiés", href: "/admin/dj" },
         { valeur: photos, libelle: "Photos", href: "/admin/photos" },
         { valeur: articles, libelle: "Articles en ligne", href: "/admin/journal" },
       ]}

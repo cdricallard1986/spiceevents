@@ -115,7 +115,7 @@ function BarreOutilsDev() {
         type="button"
         onClick={() => setOuvert((v) => !v)}
         aria-expanded={ouvert}
-        className={`rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] shadow-lg ${style.classes}`}
+        className={`border px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] shadow-lg ${style.classes}`}
       >
         Dev · {style.libelle}
       </button>

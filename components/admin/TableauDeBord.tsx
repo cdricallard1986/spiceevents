@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SECTIONS, type Section } from "@/lib/admin/navigation";
 import { Accent } from "@/components/common/Accent";
-import { CLASSES_PANNEAU } from "./champs";
+import { CLASSES_BANDEAU_ERREUR, CLASSES_PANNEAU } from "./champs";
 import { Icone } from "./Icones";
 
 export type ResumeDemandes = { nouvelles: number; sansEmail: number };
@@ -32,12 +32,12 @@ export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; ch
         <h1 className="max-w-[16em] font-display text-[2.75rem] leading-[0.95] md:text-7xl">
           <Accent texte={`${salut} Cédric. *Prêt à pimenter ?*`} />
         </h1>
-        <p className="mt-5 max-w-2xl text-sable">Avis, journal, photos et demandes : tout ce que vous publiez ici apparaît sur le site en quelques secondes.</p>
+        <p className="mt-5 max-w-2xl text-sable">Avis, DJ, journal, photos et demandes : tout ce que vous publiez ici apparaît sur le site à la visite suivante d&apos;une page.</p>
       </header>
 
-      <ul className="grid grid-cols-2 border-l border-t border-ligne lg:grid-cols-4" aria-label="En chiffres">
+      <ul className="grid grid-cols-2 border-l border-t border-ligne sm:grid-cols-3 lg:grid-cols-5" aria-label="En chiffres">
         {chiffres.map((c) => (
-          <li key={c.libelle} className="border-b border-r border-ligne">
+          <li key={c.libelle} className="border-b border-r border-ligne first:col-span-2 sm:first:col-span-1">
             <Link href={c.href} className="group flex h-full flex-col gap-2 p-5 transition-colors hover:bg-nuit-2 md:p-6">
               <span className={`font-display text-5xl leading-none tabular-nums md:text-6xl ${c.alerte ? "text-or" : "text-ivoire group-hover:text-or"}`}>
                 {c.valeur ?? "–"}
@@ -49,7 +49,7 @@ export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; ch
       </ul>
 
       {demandes && demandes.sansEmail > 0 && (
-        <p role="alert" className="mt-6 border-l-4 border-erreur bg-nuit-2 px-5 py-4 text-sm text-ivoire">
+        <p role="alert" className={`mt-6 ${CLASSES_BANDEAU_ERREUR}`}>
           ⚠ {demandes.sansEmail} nouvelle{demandes.sansEmail > 1 ? "s" : ""} demande{demandes.sansEmail > 1 ? "s" : ""} sans email reçu —{" "}
           <Link href="/admin/demandes" className="font-semibold text-erreur underline underline-offset-4">
             à traiter à la main

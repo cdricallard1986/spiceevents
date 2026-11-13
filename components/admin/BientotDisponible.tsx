@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Section } from "@/lib/admin/navigation";
 import { Icone } from "@/components/admin/Icones";
+import { classesBouton } from "@/components/ui/Bouton";
 
 /** Page d'une section prévue au plan mais pas encore construite. */
 export function BientotDisponible({ section }: { section: Section }) {
@@ -16,7 +17,7 @@ export function BientotDisponible({ section }: { section: Section }) {
         <p className="mt-3 text-sable">Cette section sera bientôt disponible.</p>
         <Link
           href="/admin"
-          className="mt-6 inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.16em] text-or hover:text-or-clair"
+          className={`mt-6 ${classesBouton("lien")}`}
         >
           ← Accueil du back office
         </Link>

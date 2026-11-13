@@ -16,3 +16,10 @@ export const CLASSES_ONGLET_ACTIF = "border-or bg-or text-nuit";
 export const CLASSES_ONGLET_INACTIF = "border-ligne text-sable hover:border-or hover:text-or";
 /** Panneau (filtres, liste, carte) : fond un ton au-dessus de la nuit. */
 export const CLASSES_PANNEAU = "border border-ligne bg-nuit-2";
+
+/** Bandeau d'information (bordure orange) ou d'alerte (bordure rouge) : la forme de tous les messages en ligne du back office. */
+export const CLASSES_BANDEAU = "border-l-2 border-or bg-nuit-3 px-4 py-3 text-sm text-ivoire";
+export const CLASSES_BANDEAU_ERREUR = "border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire";
+/** Flèches d'ordre (monter / descendre) des listes. */
+export const CLASSES_FLECHE =
+  "flex size-10 items-center justify-center border border-ligne text-lg text-sable transition-colors hover:border-or hover:text-or disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ligne disabled:hover:text-sable";

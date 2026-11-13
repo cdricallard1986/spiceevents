@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import type { StatutSauvegarde } from "@/hooks/useModalAutosave";
+import { CLASSES_PASTILLE } from "./champs";
 
 /** Délai avant que « ✓ Enregistré » ne s'estompe en « ✓ À jour ». */
 const DUREE_ENREGISTRE_MS = 2000;
 
-const BASE = "inline-flex items-center gap-1.5 border px-2 py-0.5 text-[0.6875rem] font-semibold uppercase leading-5 tracking-[0.12em] transition-colors duration-500";
+const BASE = `${CLASSES_PASTILLE} transition-colors duration-500`;
 
 const STYLES: Record<StatutSauvegarde, { texte: string; classes: string }> = {
   a_jour: { texte: "✓ À jour", classes: "border-ligne text-sable" },

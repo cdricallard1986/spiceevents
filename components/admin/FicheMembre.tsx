@@ -113,7 +113,7 @@ export function FicheMembre({ valeur, modifier, erreurs, creerUrlEnvoi, outils }
         {ligne("avis_auteur_en", "Auteur de l'avis — anglais", L.avisAuteur, { anglais: true, aide: "Vide = l'auteur en français." })}
       </Groupe>
 
-      <Groupe titre="Lieux où il a joué" aide="Facultatif : une liste de clubs ou de lieux, en petit sous la présentation.">
+      <Groupe titre="Lieux et clubs" aide="Facultatif : une liste de clubs ou de lieux, en petit sous la présentation.">
         {texte("lieux_fr", "Lieux — français", L.lieux, 2)}
         {texte("lieux_en", "Lieux — anglais", L.lieux, 2, { anglais: true, aide: "Vide = la liste française." })}
       </Groupe>

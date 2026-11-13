@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useId, useRef, useState } from "react";
+import { useId, useState } from "react";
 import { useModalAutosave } from "@/hooks/useModalAutosave";
 import { estSupprimable, galeriesDeLaPhoto, nomPhoto, type ResultatAjout, type ResultatPhoto, type ResultatRetrait, type ResultatSuppressionPhoto } from "@/lib/photos/admin";
 import { FAMILLES_GALERIES, GALERIES, LIMITES_PHOTOS, MESSAGE_ENTETE_INADAPTEE, convientEnTete, libelleGalerie } from "@/lib/photos/constantes";
@@ -16,6 +16,7 @@ import { Modale } from "./Modale";
 import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
 import { CLASSES_LIBELLE } from "./champs";
+import { useErreursFiche } from "./useErreursFiche";
 
 export const AIDE_ALT =
   "Décrivez la photo pour Google et les personnes malvoyantes (lecteurs d'écran) : ce qu'on y voit, en une phrase (« Mariés sur la piste sous des faisceaux dorés »).";
@@ -59,24 +60,6 @@ export function ChampsPhoto({
   );
 }
 
-/** Toast d'erreur sans répétition : la même erreur, à chaque nouvel essai d'enregistrement, ne s'affiche qu'une fois. */
-function useErreurs() {
-  const { afficher } = useToasts();
-  const [erreurs, setErreurs] = useState<ErreursPhoto>({});
-  const dernier = useRef("");
-  return {
-    erreurs,
-    signaler(message: string, champs: ErreursPhoto = {}) {
-      setErreurs(champs);
-      if (message !== dernier.current) afficher(message, "erreur");
-      dernier.current = message;
-    },
-    effacer() {
-      setErreurs({});
-      dernier.current = "";
-    },
-  };
-}
 
 export type ActionsFiche = {
   modifier: (id: string, champs: FormulairePhoto) => Promise<ResultatPhoto>;
@@ -133,12 +116,12 @@ export function EmplacementsPhoto({
   }
 
   return (
-    <fieldset className="flex flex-col gap-6">
-      <legend className={`${CLASSES_LIBELLE} mb-1`}>Où apparaît cette photo</legend>
+    <fieldset className="flex flex-col gap-6 border-t border-ligne pt-6">
+      <legend className="pr-3 text-lg font-semibold text-ivoire">Où apparaît cette photo</legend>
       {presentes.size === 0 && <p className="-mt-3 text-sm text-sable">Nulle part pour l&apos;instant : cochez les emplacements où l&apos;afficher.</p>}
       {FAMILLES_GALERIES.map((f) => (
         <div key={f.famille}>
-          <p className="font-display text-lg leading-tight text-ivoire">{f.libelle}</p>
+          <p className={CLASSES_LIBELLE}>{f.libelle}</p>
           <p className="mt-1 text-xs text-sable/80">
             {f.aide}
             {f.famille === "entete" && !adaptee ? ` ${MESSAGE_ENTETE_INADAPTEE}` : ""}
@@ -208,7 +191,7 @@ export function FichePhoto({
   onFermer: () => void;
 }) {
   const { afficher } = useToasts();
-  const { erreurs, signaler, effacer } = useErreurs();
+  const { erreurs, signaler, effacer } = useErreursFiche<ErreursPhoto>();
   const [confirmation, setConfirmation] = useState<Confirmation>(null);
   const [enCours, setEnCours] = useState(false);
   // Valeur d'ouverture figée : la liste se met à jour après chaque enregistrement, la fiche ouverte non.
@@ -323,7 +306,7 @@ export function FichePhoto({
           <div className="flex flex-col gap-5">
             {!estSupprimable(photo) && (
               <p className="border-l-2 border-ligne bg-nuit-3 px-4 py-3 text-sm text-sable">
-                Cette photo fait partie des fichiers du site (livrés avec le code) : elle ne peut pas être supprimée ici. Pour ne plus l&apos;afficher,
+                Cette photo fait partie des fichiers du site (livrés avec le code)&nbsp;: elle ne peut pas être supprimée ici. Pour ne plus l&apos;afficher,
                 décochez ses emplacements ci-dessous.
               </p>
             )}

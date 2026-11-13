@@ -14,7 +14,7 @@ import { AIDE_ALT, ChampsPhoto, ERREUR_RESEAU } from "./FichePhoto";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { Modale } from "./Modale";
 import { useToasts } from "./Toasts";
-import { CLASSES_ONGLET, CLASSES_PASTILLE } from "./champs";
+import { CLASSES_ONGLET, CLASSES_ONGLET_ACTIF, CLASSES_ONGLET_INACTIF, CLASSES_PASTILLE } from "./champs";
 
 /** Server Actions de l'ajout (injectées pour pouvoir tester le composant). */
 export type ActionsAjout = {
@@ -238,7 +238,7 @@ export function AjoutPhotos({
             type="button"
             onClick={() => void envoyer()}
             disabled={enCours || aEnvoyer.length === 0}
-            className={`${classesBouton("primaire")} disabled:cursor-not-allowed disabled:opacity-60`}
+            className={`${classesBouton("primaire")} disabled:cursor-not-allowed disabled:opacity-70`}
           >
             {enCours
               ? `Envoi… ${faites} / ${elements.length}`
@@ -251,7 +251,7 @@ export function AjoutPhotos({
             type="button"
             onClick={() => void ajouterDepuisPhototheque()}
             disabled={enCours || choisies.size === 0}
-            className={`${classesBouton("primaire")} disabled:cursor-not-allowed disabled:opacity-60`}
+            className={`${classesBouton("primaire")} disabled:cursor-not-allowed disabled:opacity-70`}
           >
             {enCours ? "Ajout…" : choisies.size === 0 ? "Ajouter" : `Ajouter ${choisies.size} photo${choisies.size > 1 ? "s" : ""}`}
           </button>
@@ -273,7 +273,7 @@ export function AjoutPhotos({
                 aria-pressed={actif}
                 disabled={enCours}
                 onClick={() => setMode(valeur)}
-                className={`${CLASSES_ONGLET} ${actif ? "border-or bg-or text-nuit" : "border-ligne text-sable hover:border-or hover:text-or"}`}
+                className={`${CLASSES_ONGLET} ${actif ? CLASSES_ONGLET_ACTIF : CLASSES_ONGLET_INACTIF}`}
               >
                 {libelle}
                 {nombre !== null && <span className={`tabular-nums ${actif ? "text-nuit/70" : "text-sable/70"}`}>{nombre}</span>}

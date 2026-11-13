@@ -108,10 +108,10 @@ export function CouvertureArticle({ idChamp, couverture, alt, erreurs, onChange,
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex flex-wrap gap-3">
-            <button type="button" onClick={() => champFichier.current?.click()} disabled={envoi} className={`${classesBouton("contour")} disabled:opacity-60`}>
+            <button type="button" onClick={() => champFichier.current?.click()} disabled={envoi} className={`${classesBouton("contour")} disabled:cursor-wait disabled:opacity-70`}>
               Envoyer une photo
             </button>
-            <button type="button" onClick={() => setPhototheque(true)} disabled={envoi || photos.length === 0} className={`${classesBouton("contour")} disabled:opacity-60`}>
+            <button type="button" onClick={() => setPhototheque(true)} disabled={envoi || photos.length === 0} className={`${classesBouton("contour")} disabled:cursor-wait disabled:opacity-70`}>
               Choisir dans la photothèque
             </button>
           </div>
