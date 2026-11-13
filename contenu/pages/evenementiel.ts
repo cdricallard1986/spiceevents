@@ -23,6 +23,9 @@ type Evenementiel = {
   appel: { titre: string; texte: string };
 };
 
+/** Photos d'en-tête de la page (secours : la liste vit en base, `entete:evenementiel`, gérée dans le back office). */
+export const IMAGES_ENTETE_EVENEMENTIEL: CleImage[] = ["presta-gala-salle"];
+
 export const EVENEMENTIEL: Bilingue<Evenementiel> = {
   fr: {
     seo: {

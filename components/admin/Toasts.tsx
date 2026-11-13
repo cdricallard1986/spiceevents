@@ -13,7 +13,8 @@ export type TypeToast = "succes" | "erreur" | "info";
 type Toast = { id: number; message: string; type: TypeToast };
 
 const DUREES: Record<TypeToast, number> = { succes: 4000, info: 5000, erreur: 8000 };
-const BORDURES: Record<TypeToast, string> = { succes: "border-or", info: "border-ligne", erreur: "border-erreur" };
+/** Toast : cadre fin et filet de couleur à gauche (orange : fait ; rouge : erreur). */
+const BORDURES: Record<TypeToast, string> = { succes: "border-ligne border-l-4 border-l-or", info: "border-ligne border-l-4 border-l-sable", erreur: "border-erreur border-l-4" };
 
 type ContexteToasts = { afficher: (message: string, type?: TypeToast) => void };
 
@@ -60,7 +61,7 @@ function ToastUnique({ toast, onFermer }: { toast: Toast; onFermer: (id: number)
   return (
     <div
       role={toast.type === "erreur" ? "alert" : "status"}
-      className={`${CLASSES_PILL} ${BORDURES[toast.type]} pointer-events-auto flex max-w-full items-start gap-4 rounded-2xl sm:rounded-full`}
+      className={`${CLASSES_PILL} ${BORDURES[toast.type]} pointer-events-auto flex max-w-full items-start gap-4`}
     >
       <p className="flex-1">{toast.message}</p>
       <button

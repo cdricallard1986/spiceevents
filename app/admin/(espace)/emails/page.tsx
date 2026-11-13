@@ -4,9 +4,9 @@ import { sectionDe } from "@/lib/admin/navigation";
 import { LIBELLES_MODELE, MODELES, emailDeTest } from "@/lib/admin/emails-test";
 import { configEmail } from "@/lib/contact/config-email";
 import { LANGUES } from "@/lib/contact/constantes";
-import { Icone } from "@/components/admin/Icones";
 import { EnvoiEmailsTest, type Apercu } from "@/components/admin/EnvoiEmailsTest";
 import { envoyerEmailTest } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Emails" };
 
@@ -32,15 +32,15 @@ export default async function PageEmails() {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 mb-10 max-w-2xl text-sable">
-        Les vrais emails du formulaire de contact, remplis avec une demande fictive et envoyés par Resend à votre adresse, objet préfixé
-        « [TEST] ». Utile pour vérifier le rendu et diagnostiquer la configuration de Resend.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            Les vrais emails du formulaire de contact, remplis avec une demande fictive et envoyés par Resend à votre adresse, objet préfixé
+            « [TEST] ». Utile pour vérifier le rendu et diagnostiquer la configuration de Resend.
+          </>
+        }
+      />
       <EnvoiEmailsTest
         action={envoyerEmailTest}
         destinataire={destinataire}

@@ -5,6 +5,7 @@ import type { EtatMotDePasse } from "@/lib/admin/mot-de-passe";
 import { LONGUEUR_MOT_DE_PASSE } from "@/lib/admin/mot-de-passe";
 import { classesBouton } from "@/components/ui/Bouton";
 import { useToasts } from "./Toasts";
+import { CLASSES_LIBELLE } from "./champs";
 
 type Props = { action: (entree: { nouveau: unknown; confirmation: unknown }) => Promise<EtatMotDePasse> };
 
@@ -30,7 +31,7 @@ export function FormulaireMotDePasse({ action }: Props) {
 
   const champ = (nom: "nouveau" | "confirmation", libelle: string, aide?: string) => (
     <div className="flex flex-col gap-2">
-      <label htmlFor={`mdp-${nom}`} className="text-[0.8125rem] tracking-[0.08em] text-sable">
+      <label htmlFor={`mdp-${nom}`} className={CLASSES_LIBELLE}>
         {libelle}
       </label>
       <input

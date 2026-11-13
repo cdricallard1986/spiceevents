@@ -81,8 +81,12 @@ describe("GestionPhotos — galeries", () => {
   it("montre la galerie Mariages dans l'ordre, et change de galerie", () => {
     rendre();
     expect(affichees()).toEqual(["Photo piste", "Photo diner", "Photo envoyee"]);
-    const choix = screen.getByLabelText("Galerie");
+    const choix = screen.getByLabelText("Emplacement");
     expect(within(choix).getAllByRole("option").map((o) => o.textContent)).toEqual([
+      "En-tête — Accueil",
+      "En-tête — Mariages",
+      "En-tête — Événements",
+      "En-tête — Son & lumière",
       "Galerie — Mariages",
       "Galerie — Événements",
       "Ouverture de bal spectaculaire",
@@ -111,7 +115,7 @@ describe("GestionPhotos — galeries", () => {
 
   it("retire une photo après confirmation, et prévient si une page d'animation passe sous 2 photos", async () => {
     const { actions } = rendre();
-    fireEvent.change(screen.getByLabelText("Galerie"), { target: { value: "option:bar-a-vinyles" } });
+    fireEvent.change(screen.getByLabelText("Emplacement"), { target: { value: "option:bar-a-vinyles" } });
     fireEvent.click(screen.getByRole("button", { name: "Retirer de la galerie la photo 1 : Photo vinyles" }));
     const dialogue = screen.getByRole("alertdialog", { name: "Retirer de la galerie ?" });
     expect(dialogue).toHaveTextContent("Elle reste dans la photothèque");
@@ -137,13 +141,13 @@ describe("GestionPhotos — galeries", () => {
 });
 
 describe("GestionPhotos — photothèque", () => {
-  it("liste toutes les photos avec le nombre de galeries de chacune", () => {
+  it("liste toutes les photos avec le nombre d'emplacements de chacune", () => {
     rendre();
     fireEvent.click(screen.getByRole("button", { name: /^Photothèque/ }));
     const carte = (nom: string) => screen.getByRole("button", { name: `Ouvrir la fiche : ${nom}` }).closest("li")!;
-    expect(carte("Photo envoyee")).toHaveTextContent("Dans 2 galeries");
+    expect(carte("Photo envoyee")).toHaveTextContent("2 emplacements");
     expect(carte("Photo envoyee")).toHaveTextContent("Envoyée");
-    expect(carte("Photo piste")).toHaveTextContent("Dans 1 galerie");
+    expect(carte("Photo piste")).toHaveTextContent("1 emplacement");
     expect(carte("Photo piste")).toHaveTextContent("Fichier du site");
   });
 
@@ -249,5 +253,58 @@ describe("GestionPhotos — ajout", () => {
     choisirFichier("piste.jpg");
     fireEvent.click(within(screen.getByRole("dialog")).getByRole("button", { name: "Fermer" }));
     expect(screen.getByRole("alertdialog", { name: "Fermer sans envoyer ?" })).toBeInTheDocument();
+  });
+});
+
+describe("GestionPhotos — emplacements dans la fiche d'une photo", () => {
+  const ouvrir = (nom: string) => {
+    fireEvent.click(screen.getByRole("button", { name: /^Photothèque/ }));
+    fireEvent.click(screen.getByRole("button", { name: `Ouvrir la fiche : ${nom}` }));
+    return screen.getByRole("dialog");
+  };
+
+  it("coche les emplacements actuels, ajoute et retire d'un clic", async () => {
+    const { actions } = rendre();
+    const fiche = ouvrir("Photo vinyles");
+    const vinyles = within(fiche).getByRole("checkbox", { name: "Bar à vinyles" });
+    const evenements = within(fiche).getByRole("checkbox", { name: "Galerie — Événements" });
+    expect(vinyles).toBeChecked();
+    expect(evenements).not.toBeChecked();
+
+    fireEvent.click(evenements);
+    await waitFor(() => expect(actions.ajouterAGalerie).toHaveBeenCalledWith({ galerie: "galerie_evenements", photoIds: ["vinyles"] }));
+    await waitFor(() => expect(within(fiche).getByRole("checkbox", { name: "Galerie — Événements" })).toBeChecked());
+
+    fireEvent.click(within(fiche).getByRole("checkbox", { name: "Bar à vinyles" }));
+    await waitFor(() => expect(actions.retirer).toHaveBeenCalledWith({ galerie: "option:bar-a-vinyles", photoId: "vinyles" }));
+    await waitFor(() => expect(within(fiche).getByRole("checkbox", { name: "Bar à vinyles" })).not.toBeChecked());
+  });
+
+  it("propose les diaporamas d'en-tête, mais pas pour une photo trop petite ou en portrait", () => {
+    const petite = photo("petite", { largeur: 1000, hauteur: 1400 });
+    render(
+      <FournisseurToasts>
+        <GestionPhotos photosInitiales={[...PHOTOS, petite]} liaisonsInitiales={LIAISONS} actions={actionsSimulees()} outils={outilsSimules()} />
+      </FournisseurToasts>,
+    );
+    let fiche = ouvrir("Photo piste");
+    expect(within(fiche).getByRole("checkbox", { name: "Accueil" })).toBeEnabled();
+    fireEvent.click(within(fiche).getByRole("button", { name: "Fermer" }));
+    fiche = ouvrir("Photo petite");
+    expect(within(fiche).getByRole("checkbox", { name: "Accueil" })).toBeDisabled();
+    expect(fiche).toHaveTextContent("trop petite ou pas assez en paysage");
+  });
+
+  it("garde toujours une photo dans un en-tête : la dernière ne peut pas être décochée", () => {
+    render(
+      <FournisseurToasts>
+        <GestionPhotos photosInitiales={PHOTOS} liaisonsInitiales={[...LIAISONS, { galerie: "entete:evenementiel", photo_id: "piste", ordre: 10 }]} actions={actionsSimulees()} outils={outilsSimules()} />
+      </FournisseurToasts>,
+    );
+    const fiche = ouvrir("Photo piste");
+    const evenements = within(fiche).getByRole("checkbox", { name: /^Événements/ });
+    expect(evenements).toBeChecked();
+    expect(evenements).toBeDisabled();
+    expect(fiche).toHaveTextContent("Seule photo");
   });
 });

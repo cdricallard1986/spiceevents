@@ -3,9 +3,9 @@ import { exigerAdmin } from "@/lib/admin/garde";
 import { sectionDe } from "@/lib/admin/navigation";
 import { sourceAvis } from "@/lib/avis/source";
 import { COLONNES_AVIS, type Avis } from "@/lib/avis/types";
-import { Icone } from "@/components/admin/Icones";
 import { GestionAvis } from "@/components/admin/GestionAvis";
 import { changerPublication, creerAvis, echangerOrdre, enregistrerAvis, supprimerAvis } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Avis" };
 
@@ -23,15 +23,15 @@ export default async function PageAvis() {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 max-w-2xl text-sable">
-        Les avis des mariés et des clients : texte, traduction, pages où ils sont mis en avant, ordre d&apos;affichage. Après chaque modification, le
-        site public se met à jour à la visite suivante d&apos;une page.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            Les avis des mariés et des clients : texte, traduction, pages où ils sont mis en avant, ordre d&apos;affichage. Après chaque modification, le
+            site public se met à jour à la visite suivante d&apos;une page.
+          </>
+        }
+      />
 
       {siteSurFichiers && (
         <p className="mt-6 max-w-2xl border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">

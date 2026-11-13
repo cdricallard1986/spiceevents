@@ -3,7 +3,7 @@ import { DerniersArticles } from "@/components/journal/DerniersArticles";
 import { CATEGORIES_MARIAGE } from "@/lib/journal/constantes";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { IMAGES_ACCUEIL_MARIAGES, MARIAGES } from "@/contenu/pages/mariages";
+import { MARIAGES } from "@/contenu/pages/mariages";
 import { OPTIONS } from "@/contenu/options";
 import { SITE } from "@/contenu/site";
 import { avisPublies } from "@/lib/avis/lecture";
@@ -24,6 +24,7 @@ import { LogoNuvio } from "@/components/common/LogoNuvio";
 import { Section } from "@/components/common/Section";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
+import { photosEnTete } from "@/lib/photos/lecture";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -48,6 +49,8 @@ export default async function PageMariages({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = MARIAGES[locale];
+  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  const entete = await photosEnTete("mariages", locale);
   // Avis choisis dans le back office (emplacements « Page Mariages — grand avis » et « — grille »).
   const tous = await avisPublies();
   const grand = grandAvis(tous, "mariages_grand", locale, 320);
@@ -58,7 +61,7 @@ export default async function PageMariages({ params }: Props) {
   return (
     <>
       {/* Pleine largeur : une photo de soirée tirée au hasard parmi 20 à chaque visite. */}
-      <EnTetePage image={IMAGES_ACCUEIL_MARIAGES} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
+      <EnTetePage image={entete} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href={{ pathname: "/mariages", hash: "methode" }} variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">

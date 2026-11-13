@@ -21,7 +21,7 @@ import {
 import { COULEURS_STATUT, LIBELLES_FILTRE, LIBELLES_STATUT, type StatutDemande } from "@/lib/demandes/constantes";
 import type { FormulaireSuivi } from "@/lib/demandes/schema";
 import type { Demande, SuiviDemande } from "@/lib/demandes/types";
-import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET, CLASSES_PASTILLE } from "./champs";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { FicheDemande } from "./FicheDemande";
 import { Modale } from "./Modale";
@@ -34,7 +34,6 @@ export type ActionsDemandes = {
 };
 
 const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session expirée). Rechargez la page puis réessayez.";
-const CLASSES_PASTILLE = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs tracking-[0.02em]";
 /** Colonnes de la liste sur grand écran (en dessous : une carte par demande). */
 const COLONNES = "lg:grid lg:grid-cols-[7.5rem_minmax(0,1.5fr)_minmax(0,1.1fr)_minmax(0,1fr)_5.5rem_8rem] lg:items-baseline lg:gap-x-4";
 export const AVERTISSEMENT_EMAIL = "Email non reçu — à traiter à la main";
@@ -101,7 +100,7 @@ export function GestionDemandes({ demandesInitiales, actions }: { demandesInitia
                     type="button"
                     aria-pressed={actif}
                     onClick={() => modifierFiltres({ statut: s })}
-                    className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors ${
+                    className={`${CLASSES_ONGLET} ${
                       actif ? "border-or bg-or text-nuit" : "border-ligne text-sable hover:border-or hover:text-or"
                     }`}
                   >

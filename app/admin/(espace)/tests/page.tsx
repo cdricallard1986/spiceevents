@@ -10,6 +10,7 @@ import { CHEMIN_RAPPORT_TESTS } from "@/lib/securite/entetes";
 import { Icone } from "@/components/admin/Icones";
 import { OngletsTests } from "@/components/admin/OngletsTests";
 import { lancerAuditRls } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Tests" };
 
@@ -32,15 +33,15 @@ export default async function PageTests({ searchParams }: Props) {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 max-w-2xl text-sable">
-        D&apos;un coup d&apos;œil : la base refuse-t-elle bien ce qu&apos;elle doit refuser, et les tests automatiques passent-ils ? La pastille de chaque
-        onglet donne le verdict sans l&apos;ouvrir ; les deux premiers interrogent la vraie base dès l&apos;ouverture de la page.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            D&apos;un coup d&apos;œil : la base refuse-t-elle bien ce qu&apos;elle doit refuser, et les tests automatiques passent-ils ? La pastille de chaque
+            onglet donne le verdict sans l&apos;ouvrir ; les deux premiers interrogent la vraie base dès l&apos;ouverture de la page.
+          </>
+        }
+      />
       <p className="mt-2 max-w-2xl text-sm text-sable/80">
         Les mêmes audits tournent à chaque commit (job « Audits base » de la vérification GitHub) : l&apos;audit côté visiteur toujours, les comportements SQL
         dès que le secret <code className="font-mono">supabase_service_role_key</code> est défini dans GitHub.

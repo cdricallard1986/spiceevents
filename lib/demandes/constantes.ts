@@ -26,12 +26,12 @@ export const LIBELLES_FILTRE: Record<StatutDemande | "toutes", string> = {
 };
 
 /**
- * Couleur de la pastille de chaque statut, dans la charte « Nuit de fête » :
- * une nouvelle demande ressort en or plein, une demande signée en vert, une
+ * Couleur de la pastille de chaque statut, dans la charte Nocturne :
+ * une nouvelle demande ressort en orange plein (texte noir), une demande signée en vert, une
  * demande perdue s'efface.
  */
 export const COULEURS_STATUT: Record<StatutDemande, string> = {
-  nouvelle: "border-or bg-or/15 text-or",
+  nouvelle: "border-or bg-or text-nuit",
   rappelee: "border-ivoire/50 text-ivoire",
   devis_envoye: "border-or-clair/50 text-or-clair",
   signee: "border-succes/60 text-succes",

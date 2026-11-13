@@ -15,6 +15,7 @@ import { Faq } from "@/components/common/Faq";
 import { Section } from "@/components/common/Section";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
+import { photosEnTete } from "@/lib/photos/lecture";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -36,13 +37,15 @@ export default async function PageSonEtLumiere({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = SON_ET_LUMIERE[locale];
+  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  const entete = await photosEnTete("son-et-lumiere", locale);
   const fr = locale === "fr";
   const questions = FAQ[locale].themes.find((t) => t.id === "technique")?.questions ?? [];
   const options = OPTIONS.filter((o) => OPTIONS_TECHNIQUES.includes(o.slug.fr));
 
   return (
     <>
-      <EnTetePage image={["son-lumiere-installation", "son-lumiere-regie-lets-dance"]} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
+      <EnTetePage image={entete} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{fr ? "Demander un devis" : "Request a quote"}</Bouton>
         <Bouton href={{ pathname: "/son-et-lumiere", hash: "materiel" }} variante="contour">
           {fr ? "Voir le matériel" : "See the equipment"}

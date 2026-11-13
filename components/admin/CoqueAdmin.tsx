@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/layout/Logo";
@@ -31,20 +31,53 @@ type Props = {
   /** Numéro de version (package.json) : le back office n'a qu'un utilisateur, Cédric. */
   version: string;
   email: string;
+  /** Demandes au statut « nouvelle » (pastille du menu) ; null si la base n'a pas répondu. */
+  nouvellesDemandes: number | null;
+  /** Relit ce nombre (Server Action) : à chaque page et au retour sur l'onglet. */
+  relireDemandes: () => Promise<number | null>;
 };
 
+/** Toutes les deux minutes au plus, même onglet ouvert sans bouger. */
+const RELECTURE_MS = 120_000;
+
 /**
- * Cadre du back office : menu latéral repliable (burger, état conservé dans ce
- * navigateur) sur ordinateur, tiroir sur téléphone. En bas du menu : lien vers
- * le site, numéro de version, déconnexion de cet appareil.
+ * Cadre du back office, charte Nocturne : menu latéral noir repliable (burger,
+ * état conservé dans ce navigateur) sur ordinateur, tiroir sur téléphone ; la
+ * page active est un bloc orange au texte noir, comme le bandeau du site. À côté
+ * de « Demandes », une pastille compte les nouvelles demandes. En bas du menu :
+ * lien vers le site, numéro de version, déconnexion de cet appareil.
  */
-export function CoqueAdmin({ children, version, email }: Props) {
+export function CoqueAdmin({ children, version, email, nouvellesDemandes, relireDemandes }: Props) {
   const chemin = usePathname();
   const [replie, setReplie] = useState(false);
   const [tiroir, setTiroir] = useState(false);
+  const [nouvelles, setNouvelles] = useState(nouvellesDemandes);
+  const relire = useRef(relireDemandes);
 
   useEffect(() => setReplie(lireReplie()), []);
   useEffect(() => setTiroir(false), [chemin]);
+  useEffect(() => setNouvelles(nouvellesDemandes), [nouvellesDemandes]);
+
+  // Pastille à jour : à chaque changement de page, au retour sur l'onglet, et toutes les deux minutes.
+  useEffect(() => {
+    let actif = true;
+    const maj = () => {
+      if (document.visibilityState !== "visible") return;
+      relire.current().then(
+        (n) => actif && n !== null && setNouvelles(n),
+        () => {},
+      );
+    };
+    maj();
+    const minuteur = window.setInterval(maj, RELECTURE_MS);
+    document.addEventListener("visibilitychange", maj);
+    return () => {
+      actif = false;
+      window.clearInterval(minuteur);
+      document.removeEventListener("visibilitychange", maj);
+    };
+  }, [chemin]);
+
   useEffect(() => {
     if (!tiroir) return;
     const surTouche = (e: KeyboardEvent) => e.key === "Escape" && setTiroir(false);
@@ -66,7 +99,7 @@ export function CoqueAdmin({ children, version, email }: Props) {
   return (
     <div className="min-h-dvh">
       {/* Téléphone et tablette : barre du haut + tiroir. */}
-      <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-ligne bg-nuit/90 px-4 backdrop-blur-md lg:hidden">
+      <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b border-ligne bg-[#0e0e0e]/95 px-4 backdrop-blur-md lg:hidden">
         <Link href="/admin" className="shrink-0">
           <Logo className="h-9" />
         </Link>
@@ -75,36 +108,38 @@ export function CoqueAdmin({ children, version, email }: Props) {
           onClick={() => setTiroir(true)}
           aria-expanded={tiroir}
           aria-controls="menu-admin-mobile"
-          aria-label="Ouvrir le menu"
-          className="flex size-11 items-center justify-center"
+          aria-label={nouvelles ? `Ouvrir le menu (${libelleNouvelles(nouvelles)})` : "Ouvrir le menu"}
+          className="relative flex size-11 items-center justify-center"
         >
           <Icone nom="burger" className="size-6" />
+          {nouvelles ? <span aria-hidden="true" className="absolute right-1.5 top-1.5 size-2.5 bg-or" /> : null}
         </button>
       </header>
 
       {tiroir && (
         <div className="fixed inset-0 z-40 lg:hidden">
           <button type="button" aria-label="Fermer le menu" onClick={() => setTiroir(false)} className="absolute inset-0 bg-nuit/80" />
-          <div id="menu-admin-mobile" className="relative flex h-full w-[min(20rem,85vw)] flex-col border-r border-ligne bg-nuit-2">
-            <div className="flex h-16 items-center justify-between border-b border-ligne px-4">
+          <div id="menu-admin-mobile" className="relative flex h-full w-[min(20rem,85vw)] flex-col border-r border-ligne bg-[#0e0e0e]">
+            <div className="flex h-16 items-center justify-between border-b border-ligne px-5">
               <span className="surtitre">Back office</span>
               <button type="button" onClick={() => setTiroir(false)} aria-label="Fermer le menu" className="flex size-11 items-center justify-center">
                 <Icone nom="fermer" className="size-6" />
               </button>
             </div>
-            <ContenuMenu chemin={chemin} replie={false} version={version} email={email} />
+            <ContenuMenu chemin={chemin} replie={false} version={version} email={email} nouvelles={nouvelles} />
           </div>
         </div>
       )}
 
       {/* Ordinateur : menu latéral fixe, repliable. */}
       <aside
-        className={`fixed inset-y-0 left-0 z-30 hidden flex-col border-r border-ligne bg-nuit-2 transition-[width] duration-200 lg:flex ${replie ? "w-[4.5rem]" : "w-64"}`}
+        className={`fixed inset-y-0 left-0 z-30 hidden flex-col border-r border-ligne bg-[#0e0e0e] transition-[width] duration-200 lg:flex ${replie ? "w-[4.5rem]" : "w-64"}`}
       >
-        <div className={`flex h-20 items-center border-b border-ligne ${replie ? "justify-center" : "justify-between pl-6 pr-3"}`}>
+        <div className={`flex items-center border-b border-ligne ${replie ? "h-24 justify-center" : "h-28 justify-between pl-6 pr-3"}`}>
           {!replie && (
-            <Link href="/admin" className="shrink-0">
-              <Logo className="h-11" />
+            <Link href="/admin" className="flex shrink-0 flex-col gap-2">
+              <Logo className="h-12" />
+              <span className="text-[0.625rem] font-semibold uppercase tracking-[0.32em] text-or">Back office</span>
             </Link>
           )}
           <button
@@ -118,11 +153,11 @@ export function CoqueAdmin({ children, version, email }: Props) {
             <Icone nom="burger" className="size-6" />
           </button>
         </div>
-        <ContenuMenu chemin={chemin} replie={replie} version={version} email={email} />
+        <ContenuMenu chemin={chemin} replie={replie} version={version} email={email} nouvelles={nouvelles} />
       </aside>
 
       <div className={`transition-[padding] duration-200 ${replie ? "lg:pl-[4.5rem]" : "lg:pl-64"}`}>
-        <main id="contenu" className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
+        <main id="contenu" className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-12 lg:py-14">
           {children}
         </main>
       </div>
@@ -130,24 +165,54 @@ export function CoqueAdmin({ children, version, email }: Props) {
   );
 }
 
-function ContenuMenu({ chemin, replie, version, email }: { chemin: string; replie: boolean; version: string; email: string }) {
-  const lien = `flex items-center gap-3 py-2.5 text-sm transition-colors ${replie ? "justify-center px-0" : "px-6"}`;
+/** « 1 nouvelle demande », « 3 nouvelles demandes ». */
+export function libelleNouvelles(n: number): string {
+  return `${n} nouvelle${n > 1 ? "s" : ""} demande${n > 1 ? "s" : ""}`;
+}
+
+/** Pastille orange du nombre de nouvelles demandes (noire sur la ligne active, qui est orange). */
+function Pastille({ nombre, actif, replie }: { nombre: number; actif: boolean; replie: boolean }) {
+  const couleurs = actif ? "bg-nuit text-or" : "bg-or text-nuit";
+  return (
+    <span
+      aria-hidden="true"
+      className={`${couleurs} inline-flex min-w-6 items-center justify-center px-1.5 font-display text-sm leading-6 tabular-nums ${
+        replie ? "absolute right-2 top-1 min-w-5 px-1 text-xs leading-5" : "ml-auto"
+      }`}
+    >
+      {nombre > 99 ? "99+" : nombre}
+    </span>
+  );
+}
+
+function ContenuMenu({ chemin, replie, version, email, nouvelles }: { chemin: string; replie: boolean; version: string; email: string; nouvelles: number | null }) {
+  const lien = `relative flex items-center gap-3 py-3 transition-colors ${replie ? "justify-center" : "px-3"}`;
+  const secondaire = `flex items-center gap-3 py-2.5 text-sm transition-colors ${replie ? "justify-center px-0" : "px-6"}`;
   return (
     <>
-      <nav aria-label="Back office" className="flex-1 overflow-y-auto py-4">
-        <ul className="flex flex-col gap-0.5">
+      <nav aria-label="Back office" className="flex-1 overflow-y-auto py-5">
+        <ul className="flex flex-col gap-1">
           {MENU.map((s) => {
             const actif = estActive(s.href, chemin);
+            const pastille = s.href === "/admin/demandes" && nouvelles ? nouvelles : 0;
             return (
-              <li key={s.href}>
+              <li key={s.href} className={replie ? "px-2" : "px-3"}>
                 <Link
                   href={s.href}
                   aria-current={actif ? "page" : undefined}
-                  title={replie ? s.libelle : undefined}
-                  className={`${lien} border-l-2 ${actif ? "border-or bg-nuit-3 text-or" : "border-transparent text-ivoire hover:text-or"}`}
+                  title={replie ? (pastille ? `${s.libelle} — ${libelleNouvelles(pastille)}` : s.libelle) : undefined}
+                  className={`${lien} font-display text-[1.0625rem] uppercase tracking-[0.06em] ${
+                    actif ? "bg-or text-nuit" : "text-ivoire hover:bg-nuit-2 hover:text-or"
+                  }`}
                 >
-                  <Icone nom={s.icone} />
+                  <Icone nom={s.icone} className="size-5 shrink-0" />
                   <span className={replie ? "sr-only" : ""}>{s.libelle}</span>
+                  {pastille > 0 && (
+                    <>
+                      <Pastille nombre={pastille} actif={actif} replie={replie} />
+                      <span className="sr-only"> ({libelleNouvelles(pastille)})</span>
+                    </>
+                  )}
                   {!replie && !s.disponible && <span className="ml-auto text-[0.6875rem] uppercase tracking-[0.12em] text-sable/60">bientôt</span>}
                 </Link>
               </li>
@@ -157,20 +222,20 @@ function ContenuMenu({ chemin, replie, version, email }: { chemin: string; repli
       </nav>
 
       <div className="border-t border-ligne py-3">
-        <Link href="/" target="_blank" rel="noopener" title={replie ? "Voir le site" : undefined} className={`${lien} text-sable hover:text-or`}>
+        <Link href="/" target="_blank" rel="noopener" title={replie ? "Voir le site" : undefined} className={`${secondaire} text-sable hover:text-or`}>
           <Icone nom="site" />
           <span className={replie ? "sr-only" : ""}>Voir le site</span>
         </Link>
-        {/* Numéro de version au-dessus de la déconnexion (badge réservé à Cédric, seul utilisateur). */}
-        <p className={`py-2 text-xs tracking-[0.08em] text-sable/70 ${replie ? "text-center" : "px-6"}`} title={email}>
-          {replie ? `v${version}` : <>Version {version}</>}
-        </p>
         <form action={seDeconnecter}>
-          <button type="submit" title={replie ? "Se déconnecter" : undefined} className={`${lien} w-full text-sable hover:text-or`}>
+          <button type="submit" title={replie ? "Se déconnecter" : undefined} className={`${secondaire} w-full text-sable hover:text-or`}>
             <Icone nom="sortie" />
             <span className={replie ? "sr-only" : ""}>Se déconnecter</span>
           </button>
         </form>
+        {/* Numéro de version (réservé à Cédric, seul utilisateur). */}
+        <p className={`pt-2 text-[0.6875rem] uppercase tracking-[0.16em] text-sable/60 ${replie ? "text-center" : "px-6"}`} title={email}>
+          {replie ? `v${version}` : <>Version {version}</>}
+        </p>
       </div>
     </>
   );

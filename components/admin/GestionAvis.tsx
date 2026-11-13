@@ -18,7 +18,7 @@ import { FORMULAIRE_VIDE, formulaireDepuisAvis, type ErreursAvis, type Formulair
 import { extrait } from "@/lib/avis/selection";
 import type { Avis } from "@/lib/avis/types";
 import { classesBouton } from "@/components/ui/Bouton";
-import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_PASTILLE } from "./champs";
 import { CLASSES_DANGER, ConfirmDialog } from "./ConfirmDialog";
 import { FicheAvis } from "./FicheAvis";
 import { Modale } from "./Modale";
@@ -36,7 +36,6 @@ export type ActionsAvis = {
 
 const AIDE_MISE_A_JOUR = "Chaque modification est enregistrée automatiquement ; le site public se met à jour à la visite suivante d'une page.";
 const ERREUR_RESEAU = "Le serveur ne répond pas (connexion perdue ou session expirée). Rechargez la page puis réessayez.";
-const CLASSES_PASTILLE = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs tracking-[0.02em]";
 
 /** Message des emplacements uniques retirés à un autre avis. */
 function messageRetrait(r: Retrait): string {

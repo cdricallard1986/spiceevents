@@ -14,7 +14,7 @@ import {
 } from "@/lib/journal/admin";
 import { CATEGORIES, type Categorie } from "@/lib/journal/constantes";
 import { classesBouton } from "@/components/ui/Bouton";
-import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET } from "./champs";
 import { PillArticle } from "./PillArticle";
 import { useToasts } from "./Toasts";
 
@@ -26,7 +26,6 @@ const ONGLETS: { valeur: FiltresArticles["statut"]; libelle: string }[] = [
   { valeur: "tous", libelle: "Tous" },
 ];
 
-const CLASSES_ONGLET = "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors";
 
 function formaterDate(date: string | null): string | null {
   if (!date) return null;

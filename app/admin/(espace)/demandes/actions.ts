@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { compterNouvellesDemandes } from "@/lib/admin/compteurs";
 import { exigerAdmin } from "@/lib/admin/garde";
 import type { ResultatSuivi } from "@/lib/demandes/admin";
 import { validerSuivi } from "@/lib/demandes/schema";
@@ -8,7 +9,7 @@ import { COLONNES_SUIVI, type SuiviDemande } from "@/lib/demandes/types";
 
 // ⚠️ Fichier « use server » : chaque export est un point d'entrée HTTP public,
 // appelable par n'importe qui avec n'importe quels arguments. Ici une seule
-// action : `exigerAdmin()` en tête, puis Zod (lib/demandes/schema.ts), écriture
+// action d'écriture et un comptage : `exigerAdmin()` en tête, puis Zod (lib/demandes/schema.ts), écriture
 // avec le client de SESSION (RLS : est_admin(), droit `update` limité aux
 // colonnes statut et note_interne) — jamais la clé service_role.
 // Pas de suppression : la purge RGPD sera une tâche planifiée.
@@ -30,4 +31,10 @@ export async function enregistrerSuiviDemande(entree: unknown): Promise<Resultat
   if (!data) return { ok: false, message: "Demande introuvable : rechargez la page." };
   revalidatePath("/admin/demandes");
   return { ok: true, suivi: data as SuiviDemande };
+}
+
+/** Pastille du menu : nombre de nouvelles demandes (relu à chaque page et quand la fenêtre revient au premier plan). */
+export async function nombreNouvellesDemandes(): Promise<number | null> {
+  const { supabase } = await exigerAdmin();
+  return compterNouvellesDemandes(supabase);
 }

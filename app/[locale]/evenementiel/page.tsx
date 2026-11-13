@@ -16,6 +16,7 @@ import { GrillePhotos } from "@/components/common/GrillePhotos";
 import { Section } from "@/components/common/Section";
 import { Bouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
+import { photosEnTete } from "@/lib/photos/lecture";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -40,11 +41,13 @@ export default async function PageEvenementiel({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = EVENEMENTIEL[locale];
+  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  const entete = await photosEnTete("evenementiel", locale);
   const avisClients = grilleCitations(avisDeCategorie(await avisPublies(), "evenement"), locale);
 
   return (
     <>
-      <EnTetePage image="presta-gala-salle" surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
+      <EnTetePage image={entete} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro}>
         <Bouton href="/contact">{locale === "fr" ? "Parler de mon événement" : "Tell us about your event"}</Bouton>
         <Bouton href="/animations" variante="contour">{locale === "fr" ? "Nos animations" : "Our entertainment"}</Bouton>
       </EnTetePage>

@@ -3,9 +3,9 @@ import { exigerAdmin } from "@/lib/admin/garde";
 import { sectionDe } from "@/lib/admin/navigation";
 import { sourcePhotos } from "@/lib/photos/source";
 import { COLONNES_LIAISON, COLONNES_PHOTO, type Liaison, type Photo } from "@/lib/photos/types";
-import { Icone } from "@/components/admin/Icones";
 import { GestionPhotos } from "@/components/admin/GestionPhotos";
 import { ajouterAGalerie, creerUrlEnvoi, echangerOrdrePhotos, enregistrerPhoto, modifierPhoto, retirerDeGalerie, supprimerPhoto } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Photos" };
 
@@ -30,15 +30,15 @@ export default async function PagePhotos() {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 max-w-2xl text-sable">
-        Les photos de la page Galerie et des pages d&apos;animations : ajout, ordre, retrait, texte alternatif. Après chaque modification, le site public se
-        met à jour à la visite suivante d&apos;une page.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            Les photos du site : diaporamas en haut des pages, page Galerie, pages des animations. Ouvrez une photo pour cocher tous les endroits où
+            elle apparaît. Après chaque modification, le site public se met à jour à la visite suivante d&apos;une page.
+          </>
+        }
+      />
 
       {siteSurFichiers && (
         <p className="mt-6 max-w-2xl border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">

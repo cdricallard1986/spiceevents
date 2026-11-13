@@ -18,7 +18,7 @@ import {
   type ResultatSuppressionPhoto,
   type ResultatUrlEnvoi,
 } from "@/lib/photos/admin";
-import { BUCKET_MEDIAS } from "@/lib/photos/constantes";
+import { BUCKET_MEDIAS, MESSAGE_ENTETE_INADAPTEE, convientEnTete, estGalerieEntete, libelleGalerie } from "@/lib/photos/constantes";
 import { cheminEnvoi } from "@/lib/photos/envoi";
 import { ETIQUETTE_GALERIES } from "@/lib/photos/lecture";
 import {
@@ -101,7 +101,9 @@ export async function enregistrerPhoto(entree: unknown): Promise<ResultatEnregis
 
   let liaison: Liaison | null = null;
   let avertissement: string | undefined;
-  if (galerie) {
+  if (galerie && estGalerieEntete(galerie) && !convientEnTete(photo)) {
+    avertissement = `La photo est enregistrée dans la photothèque, mais pas ajoutée à l'en-tête : ${MESSAGE_ENTETE_INADAPTEE}`;
+  } else if (galerie) {
     const r = await lierEnFin(supabase, galerie, [photo.id]);
     if (r.ok) liaison = r.liaisons[0] ?? null;
     else avertissement = `La photo est enregistrée dans la photothèque, mais n'a pas pu être ajoutée à la galerie : ajoutez-la depuis la photothèque. (${r.message})`;
@@ -148,6 +150,14 @@ export async function ajouterAGalerie(entree: unknown): Promise<ResultatAjout> {
   const presentes = new Set((deja ?? []).map((l) => String(l.photo_id)));
   const nouvelles = photoIds.filter((id) => !presentes.has(id));
   if (nouvelles.length === 0) return { ok: true, liaisons: [] };
+
+  // Un en-tête est en plein écran : seulement des photos en paysage, assez grandes.
+  if (estGalerieEntete(galerie)) {
+    const { data: dims, error: erreurDims } = await supabase.from("photos").select("id, largeur, hauteur").in("id", nouvelles);
+    if (erreurDims) return echec("Ajout à l'en-tête", erreurDims);
+    if ((dims ?? []).length !== nouvelles.length) return INTROUVABLE;
+    if ((dims ?? []).some((d) => !convientEnTete(d))) return { ok: false, message: MESSAGE_ENTETE_INADAPTEE };
+  }
   const r = await lierEnFin(supabase, galerie, nouvelles);
   if (r.ok) revalidateTag(ETIQUETTE_GALERIES);
   return r;
@@ -159,6 +169,14 @@ export async function retirerDeGalerie(entree: unknown): Promise<ResultatRetrait
   const v = schemaPhotoDansGalerie.safeParse(entree);
   if (!v.success) return INTROUVABLE;
   const { galerie, photoId } = v.data;
+
+  // Un diaporama d'en-tête garde toujours au moins une photo.
+  if (estGalerieEntete(galerie)) {
+    const { count: total, error: erreurTotal } = await supabase.from("galeries_photos").select("photo_id", { count: "exact", head: true }).eq("galerie", galerie);
+    if (erreurTotal) return echec("Retrait de l'en-tête", erreurTotal);
+    if ((total ?? 0) <= 1) return { ok: false, message: `${libelleGalerie(galerie)} : c'est la dernière photo. Ajoutez-en une autre avant de retirer celle-ci.` };
+  }
+
   const { data, error } = await supabase.from("galeries_photos").delete().eq("galerie", galerie).eq("photo_id", photoId).select("photo_id");
   if (error) return echec("Retrait de la galerie", error);
   if (!data || data.length === 0) return { ok: false, message: "Cette photo n'est déjà plus dans la galerie. Rechargez la page." };

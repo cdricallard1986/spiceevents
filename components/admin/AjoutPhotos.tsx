@@ -14,6 +14,7 @@ import { AIDE_ALT, ChampsPhoto, ERREUR_RESEAU } from "./FichePhoto";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { Modale } from "./Modale";
 import { useToasts } from "./Toasts";
+import { CLASSES_ONGLET, CLASSES_PASTILLE } from "./champs";
 
 /** Server Actions de l'ajout (injectées pour pouvoir tester le composant). */
 export type ActionsAjout = {
@@ -47,7 +48,6 @@ type Element = {
 
 const LIBELLES_ETAT: Record<Etat, string> = { attente: "Prête", envoi: "Envoi…", fait: "Ajoutée", echec: "Échec" };
 
-const CLASSES_ONGLET = "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors";
 
 /**
  * Ajout de photos à une galerie : envoi de nouveaux fichiers (sélection
@@ -340,7 +340,7 @@ export function AjoutPhotos({
                         </p>
                         <span
                           role="status"
-                          className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs ${
+                          className={`${CLASSES_PASTILLE} ${
                             e.etat === "fait" ? "border-succes/60 text-succes" : e.etat === "echec" ? "border-erreur text-erreur" : e.etat === "envoi" ? "border-or/60 text-or" : "border-ligne text-sable"
                           }`}
                         >

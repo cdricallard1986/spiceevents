@@ -5,6 +5,7 @@ import type { EtatConnexion } from "@/lib/admin/connexion";
 import { LIMITES_CONNEXION, type ChampConnexion } from "@/lib/admin/constantes";
 import { classesBouton } from "@/components/ui/Bouton";
 import { useToasts } from "./Toasts";
+import { CLASSES_LIBELLE } from "./champs";
 
 type Props = {
   /** Server Action `seConnecter` (injectée pour pouvoir tester le composant). */
@@ -49,7 +50,7 @@ export function FormulaireConnexion({ action, suite }: Props) {
       {suite && <input type="hidden" name="suite" value={suite} />}
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="connexion-email" className="text-[0.8125rem] tracking-[0.08em] text-sable">
+        <label htmlFor="connexion-email" className={CLASSES_LIBELLE}>
           Email
         </label>
         <input
@@ -71,7 +72,7 @@ export function FormulaireConnexion({ action, suite }: Props) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="connexion-motDePasse" className="text-[0.8125rem] tracking-[0.08em] text-sable">
+        <label htmlFor="connexion-motDePasse" className={CLASSES_LIBELLE}>
           Mot de passe
         </label>
         <input {...attributs("motDePasse")} type="password" required maxLength={LIMITES_CONNEXION.motDePasse} autoComplete="current-password" />

@@ -2,7 +2,9 @@ import Image from "next/image";
 import { adressePhoto } from "@/lib/photos/selection";
 import type { Photo } from "@/lib/photos/types";
 
-export const CLASSES_PASTILLE = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs tracking-[0.02em]";
+import { CLASSES_PASTILLE } from "./champs";
+
+export { CLASSES_PASTILLE };
 
 /**
  * Vignette d'une photo du back office (fichier du site ou du bucket `medias`),

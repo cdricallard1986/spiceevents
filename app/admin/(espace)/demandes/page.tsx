@@ -3,9 +3,9 @@ import { exigerAdmin } from "@/lib/admin/garde";
 import { sectionDe } from "@/lib/admin/navigation";
 import { LIMITE_CHARGEMENT } from "@/lib/demandes/constantes";
 import { COLONNES_DEMANDE, type Demande } from "@/lib/demandes/types";
-import { Icone } from "@/components/admin/Icones";
 import { GestionDemandes } from "@/components/admin/GestionDemandes";
 import { enregistrerSuiviDemande } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Demandes" };
 
@@ -28,15 +28,15 @@ export default async function PageDemandes() {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 max-w-2xl text-sable">
-        Les demandes reçues par le formulaire de contact, les plus récentes en tête. Ouvrez une demande pour rappeler, écrire ou suivre où vous en
-        êtes : le statut et la note interne ne sont visibles qu&apos;ici.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            Les demandes reçues par le formulaire de contact, les plus récentes en tête. Ouvrez une demande pour rappeler, écrire ou suivre où vous en
+            êtes : le statut et la note interne ne sont visibles qu&apos;ici.
+          </>
+        }
+      />
 
       <div className="mt-10">
         {error ? (

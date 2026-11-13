@@ -1,4 +1,5 @@
 import type { CleImage } from "@/lib/images";
+import type { PhotoAffichee } from "@/lib/photos/types";
 import { Photo } from "@/components/ui/Photo";
 
 /**
@@ -11,13 +12,16 @@ import { Photo } from "@/components/ui/Photo";
 export const SCRIPT_TIRAGE =
   "(function(){var f=document.currentScript.parentNode.children,n=f.length-1,i=Math.floor(Math.random()*n);if(i>0){f[0].hidden=true;f[i].hidden=false}})()";
 
-export function FondAleatoire({ images, sizes = "100vw" }: { images: CleImage[]; sizes?: string }) {
+/** Une photo : clé du registre, ou photo lue en base (diaporama géré dans le back office). */
+export type PhotoFond = CleImage | PhotoAffichee;
+
+export function FondAleatoire({ images, sizes = "100vw" }: { images: readonly PhotoFond[]; sizes?: string }) {
   return (
     <div className="absolute inset-0">
-      {images.map((cle, i) => (
+      {images.map((p, i) => (
         // L'attribut `hidden` change avant l'hydratation : écart attendu.
-        <div key={cle} className="absolute inset-0" hidden={i > 0} suppressHydrationWarning>
-          <Photo cle={cle} remplir sizes={sizes} />
+        <div key={typeof p === "string" ? p : p.src} className="absolute inset-0" hidden={i > 0} suppressHydrationWarning>
+          {typeof p === "string" ? <Photo cle={p} remplir sizes={sizes} /> : <Photo photo={p} remplir sizes={sizes} />}
         </div>
       ))}
       <script dangerouslySetInnerHTML={{ __html: SCRIPT_TIRAGE }} />

@@ -1,5 +1,6 @@
-// Écrit supabase/migrations/0007_import_galeries.sql à partir des galeries du
-// code (lib/photos/import-sql.ts), puis vérifie le fichier écrit.
+// Écrit supabase/migrations/0007_import_galeries.sql (galeries) et
+// 0011_entetes_photos.sql (diaporamas d'en-tête) à partir des listes du code
+// (lib/photos/import-sql.ts), puis vérifie les fichiers écrits.
 //
 //   node outils/generer_import_galeries.mjs
 //
@@ -8,7 +9,7 @@
 // ECRIRE_IMPORT_GALERIES=1 pour qu'il l'écrive d'abord.
 import { spawnSync } from "node:child_process";
 
-const r = spawnSync("npx", ["vitest", "run", "lib/photos/import-sql.test.ts"], {
+const r = spawnSync("npx", ["vitest", "run", "lib/photos/import-sql.test.ts", "lib/photos/import-entetes.test.ts"], {
   stdio: "inherit",
   env: { ...process.env, ECRIRE_IMPORT_GALERIES: "1" },
 });

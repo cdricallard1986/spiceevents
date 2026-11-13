@@ -4,9 +4,9 @@ import { sectionDe } from "@/lib/admin/navigation";
 import { COLONNES_LISTE, type ArticleListe } from "@/lib/journal/admin";
 import { nettoyerBrouillonsVides } from "@/lib/journal/nettoyage";
 import { sourceArticles } from "@/lib/journal/source";
-import { Icone } from "@/components/admin/Icones";
 import { GestionJournal } from "@/components/admin/GestionJournal";
 import { creerArticle } from "./actions";
+import { EnTeteAdmin } from "@/components/admin/EnTeteAdmin";
 
 export const metadata: Metadata = { title: "Journal" };
 
@@ -26,15 +26,15 @@ export default async function PageJournal() {
 
   return (
     <>
-      <p className="surtitre mb-3">Back office</p>
-      <h1 className="flex items-center gap-4 font-display text-4xl leading-tight md:text-5xl">
-        <Icone nom={section.icone} className="size-8 text-or" />
-        {section.libelle}
-      </h1>
-      <p className="mt-4 max-w-2xl text-sable">
-        Les articles du journal : rédaction dans l&apos;éditeur visuel, photos, publication. Tout est enregistré automatiquement ; un article publié
-        apparaît sur le site à la visite suivante d&apos;une page.
-      </p>
+      <EnTeteAdmin
+        section={section}
+        intro={
+          <>
+            Les articles du journal : rédaction dans l&apos;éditeur visuel, photos, publication. Tout est enregistré automatiquement ; un article publié
+            apparaît sur le site à la visite suivante d&apos;une page.
+          </>
+        }
+      />
 
       {siteSurFichiers && (
         <p className="mt-6 max-w-2xl border-l-2 border-erreur bg-nuit-3 px-4 py-3 text-sm text-ivoire">

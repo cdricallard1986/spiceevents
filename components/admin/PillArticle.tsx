@@ -1,6 +1,6 @@
 import type { StatutArticle } from "@/lib/journal/types";
+import { CLASSES_PASTILLE } from "./champs";
 
-const CLASSES_PASTILLE = "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs tracking-[0.02em]";
 
 /** Pastille du statut d'un article : publié, brouillon, ou retiré du site (brouillon déjà publié une fois). */
 export function PillArticle({ statut, dejaPublie }: { statut: StatutArticle; dejaPublie: boolean }) {

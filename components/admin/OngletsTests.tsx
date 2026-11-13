@@ -67,7 +67,7 @@ function messageSql(e: unknown): string {
 function Pastille({ etat }: { etat: EtatPastille }) {
   const p = pastille(etat);
   return (
-    <span title={p.libelle} className={`inline-flex min-w-7 items-center justify-center rounded-full px-2 py-0.5 text-xs font-semibold tabular-nums ${TONS[p.ton]}`}>
+    <span title={p.libelle} className={`inline-flex min-w-7 items-center justify-center px-2 py-0.5 text-xs font-semibold tabular-nums ${TONS[p.ton]}`}>
       <span aria-hidden="true">{p.signe}</span>
       <span className="sr-only">({p.libelle})</span>
     </span>

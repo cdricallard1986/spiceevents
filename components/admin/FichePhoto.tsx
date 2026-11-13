@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useId, useRef, useState } from "react";
 import { useModalAutosave } from "@/hooks/useModalAutosave";
-import { estSupprimable, galeriesDeLaPhoto, nomPhoto, type ResultatPhoto, type ResultatSuppressionPhoto } from "@/lib/photos/admin";
-import { LIMITES_PHOTOS, libelleGalerie } from "@/lib/photos/constantes";
+import { estSupprimable, galeriesDeLaPhoto, nomPhoto, type ResultatAjout, type ResultatPhoto, type ResultatRetrait, type ResultatSuppressionPhoto } from "@/lib/photos/admin";
+import { FAMILLES_GALERIES, GALERIES, LIMITES_PHOTOS, MESSAGE_ENTETE_INADAPTEE, convientEnTete, libelleGalerie } from "@/lib/photos/constantes";
 import { formulaireDepuisPhoto, type ErreursPhoto, type FormulairePhoto } from "@/lib/photos/schema";
 import { adressePhoto } from "@/lib/photos/selection";
 import type { Liaison, Photo } from "@/lib/photos/types";
@@ -15,6 +15,7 @@ import { CLASSES_DANGER, ConfirmDialog } from "./ConfirmDialog";
 import { Modale } from "./Modale";
 import { PillStatut } from "./PillStatut";
 import { useToasts } from "./Toasts";
+import { CLASSES_LIBELLE } from "./champs";
 
 export const AIDE_ALT =
   "Décrivez la photo pour Google et les personnes malvoyantes (lecteurs d'écran) : ce qu'on y voit, en une phrase (« Mariés sur la piste sous des faisceaux dorés »).";
@@ -80,7 +81,101 @@ function useErreurs() {
 export type ActionsFiche = {
   modifier: (id: string, champs: FormulairePhoto) => Promise<ResultatPhoto>;
   supprimer: (id: string) => Promise<ResultatSuppressionPhoto>;
+  /** Emplacements (cases de la fiche) : ajout en fin de liste, retrait. */
+  ajouter: (entree: { galerie: string; photoIds: string[] }) => Promise<ResultatAjout>;
+  retirer: (entree: { galerie: string; photoId: string }) => Promise<ResultatRetrait>;
 };
+
+/**
+ * « Où apparaît cette photo » : une case par emplacement du site (diaporamas
+ * d'en-tête, page Galerie, pages des animations). Cocher l'ajoute à la fin de
+ * la liste, décocher l'en retire ; enregistré aussitôt. Une photo trop petite
+ * ou en portrait ne peut pas entrer dans un en-tête, et la dernière photo d'un
+ * en-tête ne peut pas en sortir.
+ */
+export function EmplacementsPhoto({
+  photo,
+  liaisons,
+  actions,
+  onLiaisons,
+}: {
+  photo: Photo;
+  liaisons: readonly Liaison[];
+  actions: Pick<ActionsFiche, "ajouter" | "retirer">;
+  onLiaisons: (maj: (liste: Liaison[]) => Liaison[]) => void;
+}) {
+  const { afficher } = useToasts();
+  const [enCours, setEnCours] = useState<string | null>(null);
+  const presentes = new Set(liaisons.filter((l) => l.photo_id === photo.id).map((l) => l.galerie));
+  const nombre = (galerie: string) => liaisons.filter((l) => l.galerie === galerie).length;
+  const adaptee = convientEnTete(photo);
+
+  async function basculer(galerie: string, cocher: boolean) {
+    setEnCours(galerie);
+    try {
+      if (cocher) {
+        const r = await actions.ajouter({ galerie, photoIds: [photo.id] });
+        if (!r.ok) return afficher(r.message, "erreur");
+        onLiaisons((l) => [...l, ...r.liaisons]);
+        afficher(`Ajoutée : ${libelleGalerie(galerie)}.`);
+      } else {
+        const r = await actions.retirer({ galerie, photoId: photo.id });
+        if (!r.ok) return afficher(r.message, "erreur");
+        onLiaisons((l) => l.filter((x) => !(x.galerie === galerie && x.photo_id === photo.id)));
+        afficher(`Retirée : ${libelleGalerie(galerie)}.`);
+        if (r.avertissement) afficher(r.avertissement, "erreur");
+      }
+    } catch {
+      afficher(ERREUR_RESEAU, "erreur");
+    } finally {
+      setEnCours(null);
+    }
+  }
+
+  return (
+    <fieldset className="flex flex-col gap-6">
+      <legend className={`${CLASSES_LIBELLE} mb-1`}>Où apparaît cette photo</legend>
+      {presentes.size === 0 && <p className="-mt-3 text-sm text-sable">Nulle part pour l&apos;instant : cochez les emplacements où l&apos;afficher.</p>}
+      {FAMILLES_GALERIES.map((f) => (
+        <div key={f.famille}>
+          <p className="font-display text-lg leading-tight text-ivoire">{f.libelle}</p>
+          <p className="mt-1 text-xs text-sable/80">
+            {f.aide}
+            {f.famille === "entete" && !adaptee ? ` ${MESSAGE_ENTETE_INADAPTEE}` : ""}
+          </p>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            {GALERIES.filter((g) => g.famille === f.famille).map((g) => {
+              const coche = presentes.has(g.valeur);
+              const derniere = f.famille === "entete" && coche && nombre(g.valeur) <= 1;
+              const bloquee = (f.famille === "entete" && !coche && !adaptee) || derniere;
+              return (
+                <li key={g.valeur}>
+                  <label
+                    title={derniere ? "Dernière photo de cet en-tête : ajoutez-en une autre avant de la retirer." : undefined}
+                    className={`flex min-h-11 items-center gap-3 border px-3 py-2 text-sm transition-colors ${
+                      coche ? "border-or bg-or/10 text-ivoire" : "border-ligne text-sable"
+                    } ${bloquee || enCours ? "cursor-not-allowed opacity-60" : "cursor-pointer hover:border-or hover:text-ivoire"}`}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={coche}
+                      disabled={bloquee || enCours !== null}
+                      onChange={(e) => void basculer(g.valeur, e.target.checked)}
+                      className="size-4 shrink-0 accent-[var(--color-or)]"
+                    />
+                    <span className="min-w-0 flex-1">{g.libelle}</span>
+                    {enCours === g.valeur && <span className="text-xs text-sable">…</span>}
+                    {derniere && <span className="text-[0.6875rem] uppercase tracking-[0.12em] text-sable">Seule photo</span>}
+                  </label>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </fieldset>
+  );
+}
 
 type Confirmation = "supprimer" | "fermer" | null;
 
@@ -95,6 +190,7 @@ export function FichePhoto({
   galerie,
   actions,
   onMaj,
+  onLiaisons,
   onSupprimee,
   onRetirer,
   onFermer,
@@ -105,6 +201,8 @@ export function FichePhoto({
   galerie?: string;
   actions: ActionsFiche;
   onMaj: (photo: Photo) => void;
+  /** Emplacements cochés ou décochés dans la fiche. */
+  onLiaisons: (maj: (liste: Liaison[]) => Liaison[]) => void;
   onSupprimee: (id: string) => void;
   onRetirer?: () => void;
   onFermer: () => void;
@@ -223,27 +321,16 @@ export function FichePhoto({
             </figcaption>
           </figure>
           <div className="flex flex-col gap-5">
-            <div>
-              <p className="text-[0.8125rem] tracking-[0.08em] text-sable">Galeries</p>
-              {galeries.length === 0 ? (
-                <p className="mt-1 text-sm text-sable">Dans aucune galerie : elle n&apos;apparaît pas sur le site.</p>
-              ) : (
-                <ul className="mt-2 flex flex-wrap gap-2">
-                  {galeries.map((g) => (
-                    <li key={g} className="inline-flex items-center rounded-full border border-ligne px-2.5 py-0.5 text-xs text-ivoire">
-                      {libelleGalerie(g)}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
             {!estSupprimable(photo) && (
               <p className="border-l-2 border-ligne bg-nuit-3 px-4 py-3 text-sm text-sable">
                 Cette photo fait partie des fichiers du site (livrés avec le code) : elle ne peut pas être supprimée ici. Pour ne plus l&apos;afficher,
-                retirez-la des galeries.
+                décochez ses emplacements ci-dessous.
               </p>
             )}
           </div>
+        </div>
+        <div className="mt-8 border-t border-ligne pt-6">
+          <EmplacementsPhoto photo={photo} liaisons={liaisons} actions={actions} onLiaisons={onLiaisons} />
         </div>
         <div className="mt-8 border-t border-ligne pt-6">
           <ChampsPhoto valeur={fiche.valeur} modifier={fiche.modifier} erreurs={erreurs} />

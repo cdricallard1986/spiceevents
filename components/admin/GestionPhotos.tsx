@@ -14,7 +14,7 @@ import {
   type ResultatSuppressionPhoto,
   type ResultatUrlEnvoi,
 } from "@/lib/photos/admin";
-import { BUCKET_MEDIAS, GALERIES, MINIMUM_PHOTOS_OPTION, estGalerieOption, libelleGalerie } from "@/lib/photos/constantes";
+import { BUCKET_MEDIAS, FAMILLES_GALERIES, GALERIES, MINIMUM_PHOTOS_OPTION, estGalerieEntete, estGalerieOption, libelleGalerie } from "@/lib/photos/constantes";
 import type { TypeImage } from "@/lib/photos/envoi";
 import { preparerPhoto } from "@/lib/photos/navigateur";
 import type { FormulairePhoto } from "@/lib/photos/schema";
@@ -24,7 +24,7 @@ import { clientNavigateur } from "@/lib/supabase/client";
 import { classesBouton } from "@/components/ui/Bouton";
 import { AjoutPhotos, type OutilsEnvoi } from "./AjoutPhotos";
 import { ApercuPhoto, CLASSES_PASTILLE, PillOrigine } from "./ApercuPhoto";
-import { CLASSES_CHAMP, CLASSES_LIBELLE } from "./champs";
+import { CLASSES_CHAMP, CLASSES_LIBELLE, CLASSES_ONGLET } from "./champs";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { ERREUR_RESEAU, FichePhoto } from "./FichePhoto";
 import { useToasts } from "./Toasts";
@@ -52,7 +52,6 @@ export const OUTILS_NAVIGATEUR: OutilsEnvoi = {
   },
 };
 
-const CLASSES_ONGLET = "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors";
 const CLASSES_FLECHE =
   "flex size-10 items-center justify-center border border-ligne text-lg text-sable transition-colors hover:border-or hover:text-or disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ligne disabled:hover:text-sable";
 
@@ -77,7 +76,8 @@ export function GestionPhotos({
   const [photos, setPhotos] = useState<Photo[]>(photosInitiales);
   const [liaisons, setLiaisons] = useState<Liaison[]>(liaisonsInitiales);
   const [onglet, setOnglet] = useState<"galeries" | "phototheque">("galeries");
-  const [galerie, setGalerie] = useState<string>(GALERIES[0].valeur);
+  // À l'ouverture : la galerie Mariages (la plus utilisée), pas le premier en-tête de la liste.
+  const [galerie, setGalerie] = useState<string>("galerie_mariages");
   const [ouverte, setOuverte] = useState<Ouverte>(null);
   const [ajout, setAjout] = useState(false);
   const [aRetirer, setARetirer] = useState<Photo | null>(null);
@@ -88,6 +88,7 @@ export function GestionPhotos({
   const dansLaGalerie = photosDeLaGalerie(photos, liaisons, galerie);
   const photoOuverte = ouverte ? photos.find((p) => p.id === ouverte.id) : undefined;
   const option = estGalerieOption(galerie);
+  const entete = estGalerieEntete(galerie);
 
   async function deplacer(photo: Photo, sens: "monter" | "descendre") {
     const i = dansLaGalerie.findIndex((p) => p.id === photo.id);
@@ -173,23 +174,18 @@ export function GestionPhotos({
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div className="flex flex-col gap-2 sm:min-w-80">
               <label htmlFor="photos-galerie" className={CLASSES_LIBELLE}>
-                Galerie
+                Emplacement
               </label>
               <select id="photos-galerie" value={galerie} onChange={(e) => setGalerie(e.target.value)} className={CLASSES_CHAMP}>
-                <optgroup label="Page Galerie">
-                  {GALERIES.filter((g) => !g.option).map((g) => (
-                    <option key={g.valeur} value={g.valeur}>
-                      {g.libelle}
-                    </option>
-                  ))}
-                </optgroup>
-                <optgroup label="Pages des animations">
-                  {GALERIES.filter((g) => g.option).map((g) => (
-                    <option key={g.valeur} value={g.valeur}>
-                      {g.libelle}
-                    </option>
-                  ))}
-                </optgroup>
+                {FAMILLES_GALERIES.map((f) => (
+                  <optgroup key={f.famille} label={f.libelle}>
+                    {GALERIES.filter((g) => g.famille === f.famille).map((g) => (
+                      <option key={g.valeur} value={g.valeur}>
+                        {f.famille === "entete" ? `En-tête — ${g.libelle}` : g.libelle}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
               </select>
             </div>
             <div className="flex flex-wrap items-center gap-4">
@@ -217,8 +213,11 @@ export function GestionPhotos({
             </p>
           )}
           <p className="mt-6 text-xs text-sable/80">
-            Les flèches changent l&apos;ordre des photos sur la page. « Retirer » enlève la photo de cette galerie seulement : elle reste dans la photothèque.
+            {entete
+              ? "Une de ces photos est tirée au hasard à chaque visite, en plein écran (l'ordre ne compte pas). « Retirer » l'enlève de cet en-tête seulement ; l'en-tête garde toujours au moins une photo."
+              : "Les flèches changent l'ordre des photos sur la page. « Retirer » enlève la photo de cette galerie seulement : elle reste dans la photothèque."}
             {option ? ` La galerie d'une animation ne s'affiche qu'à partir de ${MINIMUM_PHOTOS_OPTION} photos.` : ""}
+            {" "}Pour choisir tous les emplacements d&apos;une photo d&apos;un coup, ouvrez sa fiche.
           </p>
           {dansLaGalerie.length === 0 ? (
             <p className="mt-4 border border-ligne bg-nuit-2 px-5 py-8 text-center text-sable">
@@ -264,7 +263,7 @@ export function GestionPhotos({
                       <div className="mt-auto flex flex-wrap gap-2">
                         <PillOrigine photo={p} />
                         <span className={`${CLASSES_PASTILLE} ${n === 0 ? "border-ligne text-sable/80" : "border-ligne text-ivoire"}`}>
-                          {n === 0 ? "Dans aucune galerie" : `Dans ${n} galerie${n > 1 ? "s" : ""}`}
+                          {n === 0 ? "Nulle part sur le site" : `${n} emplacement${n > 1 ? "s" : ""}`}
                         </span>
                       </div>
                     </div>
@@ -282,8 +281,9 @@ export function GestionPhotos({
           photo={photoOuverte}
           liaisons={liaisons}
           galerie={ouverte?.depuisGalerie ? galerie : undefined}
-          actions={{ modifier: actions.modifier, supprimer: actions.supprimer }}
+          actions={{ modifier: actions.modifier, supprimer: actions.supprimer, ajouter: actions.ajouterAGalerie, retirer: actions.retirer }}
           onMaj={(maj) => setPhotos((l) => l.map((p) => (p.id === maj.id ? maj : p)))}
+          onLiaisons={setLiaisons}
           onSupprimee={apresSuppression}
           onRetirer={() => setARetirer(photoOuverte)}
           onFermer={() => setOuverte(null)}

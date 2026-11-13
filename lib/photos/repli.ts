@@ -1,9 +1,13 @@
 import { OPTIONS } from "@/contenu/options";
 import { PHOTOS_EVENEMENTS, PHOTOS_MARIAGES } from "@/contenu/pages/galerie";
+import { IMAGES_ACCUEIL } from "@/contenu/pages/accueil";
+import { IMAGES_ENTETE_EVENEMENTIEL } from "@/contenu/pages/evenementiel";
+import { IMAGES_ACCUEIL_MARIAGES } from "@/contenu/pages/mariages";
 import { contenuOption } from "@/contenu/pages/options";
+import { IMAGES_ENTETE_SON_LUMIERE } from "@/contenu/pages/son-et-lumiere";
 import { IMAGES, type CleImage } from "@/lib/images";
 import { uuidV5 as uuidV5Brut } from "@/lib/uuid";
-import { galerieOption } from "./constantes";
+import { galerieEntete, galerieOption, type PageEntete } from "./constantes";
 import type { Liaison, LigneGalerie, Photo } from "./types";
 
 /**
@@ -95,8 +99,32 @@ export function liaisonsDeRepli(): Liaison[] {
   );
 }
 
-/** Les galeries au format de la lecture publique (liaison + photo). */
+/**
+ * Diaporamas d'en-tête des pages (novembre 2026), tels que le code les
+ * affichait avant de passer en base : import de la migration 0011, générée à
+ * partir d'ici et vérifiée par import-entetes.test.ts.
+ */
+export const ENTETES_REPLI: Readonly<Record<PageEntete, readonly CleImage[]>> = {
+  accueil: IMAGES_ACCUEIL,
+  mariages: IMAGES_ACCUEIL_MARIAGES,
+  evenementiel: IMAGES_ENTETE_EVENEMENTIEL,
+  "son-et-lumiere": IMAGES_ENTETE_SON_LUMIERE,
+};
+
+/** Photos des en-têtes, chacune une fois (y compris celles déjà importées par 0007 : la base les ignore). */
+export function photosEntetesDeRepli(): Photo[] {
+  return [...new Set(Object.values(ENTETES_REPLI).flat())].map(photoDuSite);
+}
+
+/** Liaisons `entete:<page>` → photo, rang 10, 20, 30… */
+export function liaisonsEntetesDeRepli(): Liaison[] {
+  return (Object.entries(ENTETES_REPLI) as [PageEntete, readonly CleImage[]][]).flatMap(([page, cles]) =>
+    cles.map((cle, i) => ({ galerie: galerieEntete(page), photo_id: idPhotoSite(cle), ordre: (i + 1) * PAS_ORDRE })),
+  );
+}
+
+/** Les galeries et les en-têtes au format de la lecture publique (liaison + photo). */
 export function lignesDeRepli(): LigneGalerie[] {
-  const parId = new Map(photosDeRepli().map((p) => [p.id, p]));
-  return liaisonsDeRepli().map((l) => ({ ...l, photo: parId.get(l.photo_id)! }));
+  const parId = new Map([...photosDeRepli(), ...photosEntetesDeRepli()].map((p) => [p.id, p]));
+  return [...liaisonsDeRepli(), ...liaisonsEntetesDeRepli()].map((l) => ({ ...l, photo: parId.get(l.photo_id)! }));
 }

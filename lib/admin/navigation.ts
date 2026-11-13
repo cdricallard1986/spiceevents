@@ -9,6 +9,8 @@ export type IconeSection = "accueil" | "avis" | "journal" | "photos" | "demandes
 export type Section = {
   href: string;
   libelle: string;
+  /** Seconde moitié du titre de la page, en orange (charte Nocturne) : « Photos. *Vos plus belles nuits.* » */
+  accroche: string;
   description: string;
   icone: IconeSection;
   disponible: boolean;
@@ -17,6 +19,7 @@ export type Section = {
 export const ACCUEIL_ADMIN: Section = {
   href: "/admin",
   libelle: "Accueil",
+  accroche: "Prêt à pimenter ?",
   description: "Vue d'ensemble du back office.",
   icone: "accueil",
   disponible: true,
@@ -26,6 +29,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/avis",
     libelle: "Avis",
+  accroche: "Ce qu'ils en disent.",
     description: "Avis des mariés : texte, traduction, pages où ils apparaissent, ordre.",
     icone: "avis",
     disponible: true,
@@ -33,6 +37,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/journal",
     libelle: "Journal",
+  accroche: "Le carnet pimenté.",
     description: "Articles du journal : rédaction, photos, publication.",
     icone: "journal",
     disponible: true,
@@ -40,13 +45,15 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/photos",
     libelle: "Photos",
-    description: "Photos des galeries : ajout, ordre, texte alternatif.",
+  accroche: "Vos plus belles nuits.",
+    description: "Photos du site : diaporamas des en-têtes, galeries, ordre, texte alternatif.",
     icone: "photos",
     disponible: true,
   },
   {
     href: "/admin/demandes",
     libelle: "Demandes",
+  accroche: "Ils veulent du piment.",
     description: "Demandes reçues par le formulaire de contact, statut et notes.",
     icone: "demandes",
     disponible: true,
@@ -54,6 +61,7 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/tests",
     libelle: "Tests",
+  accroche: "Sous le capot.",
     description: "Comportements SQL, audit des droits, tests automatiques, configuration.",
     icone: "tests",
     disponible: true,
@@ -61,12 +69,15 @@ export const SECTIONS: readonly Section[] = [
   {
     href: "/admin/emails",
     libelle: "Emails",
+  accroche: "Le courrier qui part.",
     description: "Envoi réel des emails du formulaire à une adresse de test.",
     icone: "emails",
     disponible: true,
-  },  {
+  },
+  {
     href: "/admin/compte",
     libelle: "Mon compte",
+  accroche: "Votre clé du back office.",
     description: "Votre adresse de connexion et le changement de mot de passe.",
     icone: "compte",
     disponible: true,

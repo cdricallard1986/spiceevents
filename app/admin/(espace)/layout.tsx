@@ -1,5 +1,7 @@
 import paquet from "@/package.json";
+import { compterNouvellesDemandes } from "@/lib/admin/compteurs";
 import { exigerAdmin } from "@/lib/admin/garde";
+import { nombreNouvellesDemandes } from "./demandes/actions";
 import { CoqueAdmin } from "@/components/admin/CoqueAdmin";
 
 /**
@@ -8,9 +10,10 @@ import { CoqueAdmin } from "@/components/admin/CoqueAdmin";
  * réévaluée à chaque navigation) ; la vérification est mise en cache par requête.
  */
 export default async function LayoutEspace({ children }: { children: React.ReactNode }) {
-  const { utilisateur } = await exigerAdmin();
+  const { supabase, utilisateur } = await exigerAdmin();
+  const nouvelles = await compterNouvellesDemandes(supabase);
   return (
-    <CoqueAdmin version={paquet.version} email={utilisateur.email ?? ""}>
+    <CoqueAdmin version={paquet.version} email={utilisateur.email ?? ""} nouvellesDemandes={nouvelles} relireDemandes={nombreNouvellesDemandes}>
       {children}
     </CoqueAdmin>
   );

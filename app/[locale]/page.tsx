@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
-import { ACCUEIL, IMAGES_ACCUEIL } from "@/contenu/pages/accueil";
+import { ACCUEIL } from "@/contenu/pages/accueil";
 import { ANIMATIONS } from "@/contenu/pages/animations";
 import { OPTIONS } from "@/contenu/options";
 import { SITE } from "@/contenu/site";
@@ -21,6 +21,7 @@ import { Section } from "@/components/common/Section";
 import { Bouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { DerniersArticles } from "@/components/journal/DerniersArticles";
+import { photosEnTete } from "@/lib/photos/lecture";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -36,6 +37,8 @@ export default async function Accueil({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = ACCUEIL[locale];
+  // Diaporama d'en-tête choisi dans le back office (fiche de chaque photo).
+  const entete = await photosEnTete("accueil", locale);
   const fr = locale === "fr";
   // Avis choisis dans le back office (emplacements « Accueil — grand avis » et « Accueil — grille ») :
   // le grand d'abord, puis la grille, sans doublon.
@@ -47,7 +50,7 @@ export default async function Accueil({ params }: Props) {
   return (
     <>
       {/* Une nuit de mariage ou d'événement tirée au hasard à chaque visite */}
-      <EnTetePage image={IMAGES_ACCUEIL} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} pleinEcran>
+      <EnTetePage image={entete} surtitre={c.hero.surtitre} titre={c.hero.titre} intro={c.hero.intro} pleinEcran>
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href="/animations" variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">

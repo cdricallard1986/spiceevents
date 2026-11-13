@@ -18,6 +18,9 @@ type SonEtLumiere = {
   appel: { titre: string; texte: string };
 };
 
+/** Photos d'en-tête de la page (secours : la liste vit en base, `entete:son-et-lumiere`, gérée dans le back office). */
+export const IMAGES_ENTETE_SON_LUMIERE: CleImage[] = ["son-lumiere-installation", "son-lumiere-regie-lets-dance"];
+
 export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = {
   fr: {
     seo: {

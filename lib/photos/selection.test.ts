@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { GALERIES, galerieOption, libelleGalerie, estGalerieConnue, urlPublique } from "./constantes";
+import { GALERIES, convientEnTete, estGalerieConnue, estGalerieEntete, galerieEntete, galerieOption, libelleGalerie, urlPublique } from "./constantes";
 import { altEnLangue, galerieEnLangue, photosDeLaGalerie } from "./selection";
 import { idPhotoSite, liaisonsDeRepli, photosDeRepli, uuidV5 } from "./repli";
 import { sourcePhotos } from "./source";
@@ -26,10 +26,14 @@ describe("source des galeries", () => {
 });
 
 describe("galeries", () => {
-  it("propose les deux galeries de la page Galerie, puis une par animation", () => {
-    expect(GALERIES.slice(0, 2).map((g) => g.libelle)).toEqual(["Galerie — Mariages", "Galerie — Événements"]);
-    expect(GALERIES).toHaveLength(10);
-    expect(GALERIES.slice(2).every((g) => g.option && g.valeur.startsWith("option:"))).toBe(true);
+  it("propose les diaporamas d'en-tête, les deux galeries de la page Galerie, puis une par animation", () => {
+    expect(GALERIES.slice(0, 4).map((g) => g.valeur)).toEqual(["entete:accueil", "entete:mariages", "entete:evenementiel", "entete:son-et-lumiere"]);
+    expect(GALERIES.slice(0, 4).every((g) => g.famille === "entete" && !g.option)).toBe(true);
+    expect(GALERIES.slice(4, 6).map((g) => g.libelle)).toEqual(["Galerie — Mariages", "Galerie — Événements"]);
+    expect(GALERIES).toHaveLength(14);
+    expect(GALERIES.slice(6).every((g) => g.option && g.famille === "option" && g.valeur.startsWith("option:"))).toBe(true);
+    expect(libelleGalerie(galerieEntete("mariages"))).toBe("En-tête Mariages");
+    expect(estGalerieEntete("entete:accueil")).toBe(true);
     expect(libelleGalerie(galerieOption("bar-a-vinyles"))).toBe("Page Bar à vinyles");
     expect(libelleGalerie("option:retiree")).toBe("option:retiree (galerie inconnue)");
     expect(estGalerieConnue("galerie_mariages")).toBe(true);
@@ -37,7 +41,13 @@ describe("galeries", () => {
   });
 
   it("chaque galerie respecte le CHECK de la table", () => {
-    for (const g of GALERIES) expect(g.valeur).toMatch(/^(galerie_mariages|galerie_evenements|option:[a-z0-9-]+)$/);
+    for (const g of GALERIES) expect(g.valeur).toMatch(/^(galerie_mariages|galerie_evenements|option:[a-z0-9-]+|entete:[a-z0-9-]+)$/);
+  });
+
+  it("une photo d'en-tête est en paysage et assez large pour le plein écran", () => {
+    expect(convientEnTete({ largeur: 2400, hauteur: 1600 })).toBe(true);
+    expect(convientEnTete({ largeur: 1200, hauteur: 800 })).toBe(false);
+    expect(convientEnTete({ largeur: 2400, hauteur: 2400 })).toBe(false);
   });
 
   it("donne l'adresse publique du bucket medias, ouverte à next/image dans next.config.ts", async () => {
