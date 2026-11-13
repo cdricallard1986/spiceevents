@@ -4,6 +4,7 @@ import { SITE } from "@/contenu/site";
 import { LienBackOffice } from "./LienBackOffice";
 import { Logo } from "./Logo";
 import { liensPiedPour } from "./navigation";
+import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
 
 export async function PiedDePage() {
   const locale = await getLocale();
@@ -23,7 +24,7 @@ export async function PiedDePage() {
           </Link>
           <p className="max-w-sm text-sable">{t("accroche")}</p>
           <p className="text-sm text-ivoire">
-            {t("awards")} <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
+            <LienWeddingAwards libelle={t("awards")} />
           </p>
         </div>
 

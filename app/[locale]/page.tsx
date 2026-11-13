@@ -5,7 +5,6 @@ import { Link } from "@/i18n/navigation";
 import { ACCUEIL } from "@/contenu/pages/accueil";
 import { ANIMATIONS } from "@/contenu/pages/animations";
 import { OPTIONS } from "@/contenu/options";
-import { SITE } from "@/contenu/site";
 import { avisPublies } from "@/lib/avis/lecture";
 import { avisDeLEmplacement, grandAvis, grilleCitations } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
@@ -22,6 +21,7 @@ import { Bouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { DerniersArticles } from "@/components/journal/DerniersArticles";
 import { photosEnTete } from "@/lib/photos/lecture";
+import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -54,7 +54,7 @@ export default async function Accueil({ params }: Props) {
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href="/animations" variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">
-          Wedding Awards Mariages.net — <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
+          <LienWeddingAwards libelle="Wedding Awards Mariages.net" separateur=" — " />
         </span>
       </EnTetePage>
 

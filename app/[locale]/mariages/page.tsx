@@ -25,6 +25,7 @@ import { Section } from "@/components/common/Section";
 import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
+import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -65,7 +66,7 @@ export default async function PageMariages({ params }: Props) {
         <Bouton href="/contact">{c.hero.ctaPrincipal} →</Bouton>
         <Bouton href={{ pathname: "/mariages", hash: "methode" }} variante="contour">{c.hero.ctaSecondaire}</Bouton>
         <span className="text-sm text-ivoire/85">
-          Wedding Awards Mariages.net — <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
+          <LienWeddingAwards libelle="Wedding Awards Mariages.net" separateur=" — " />
         </span>
       </EnTetePage>
 

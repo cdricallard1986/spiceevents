@@ -9,6 +9,7 @@ import { Accent } from "@/components/common/Accent";
 import { BandeauPiment } from "@/components/common/BandeauPiment";
 import { FormulaireContact } from "@/components/contact/FormulaireContact";
 import { envoyerDemande } from "./actions";
+import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -78,7 +79,7 @@ export default async function PageContact({ params }: Props) {
             <div className="border border-ligne bg-nuit-2 p-8">
               <p className="font-display text-xl">{c.awards.titre}</p>
               <p className="mt-2 text-sm text-sable">
-                {c.awards.texte} <span className="text-or">{SITE.weddingAwards.join(" · ")}</span>
+                <LienWeddingAwards libelle={c.awards.texte} />
               </p>
             </div>
 

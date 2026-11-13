@@ -21,7 +21,7 @@ function texteDemandes(d: ResumeDemandes): string {
 
 /**
  * Accueil du back office (charte Nocturne) : salutation, chiffres clés, puis
- * une carte numérotée par section. Composant d'affichage seul : la page lit
+ * une carte par section. Composant d'affichage seul : la page lit
  * les chiffres en base.
  */
 export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; chiffres: Chiffre[]; demandes: ResumeDemandes | null }) {
@@ -59,9 +59,9 @@ export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; ch
 
       <h2 className="surtitre mb-6 mt-14">Tout le back office</h2>
       <ul className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {SECTIONS.map((s, i) => (
+        {SECTIONS.map((s) => (
           <li key={s.href}>
-            <CarteSection section={s} numero={i + 1} demandes={s.href === "/admin/demandes" ? demandes : null} />
+            <CarteSection section={s} demandes={s.href === "/admin/demandes" ? demandes : null} />
           </li>
         ))}
       </ul>
@@ -69,13 +69,10 @@ export function TableauDeBord({ salut, chiffres, demandes }: { salut: string; ch
   );
 }
 
-function CarteSection({ section: s, numero, demandes }: { section: Section; numero: number; demandes: ResumeDemandes | null }) {
+function CarteSection({ section: s, demandes }: { section: Section; demandes: ResumeDemandes | null }) {
   return (
     <Link href={s.href} className={`group relative flex h-full flex-col gap-4 overflow-hidden p-6 transition-colors hover:border-or ${CLASSES_PANNEAU}`}>
-      <span className="flex items-start justify-between gap-3">
-        <span className="font-display text-sm tracking-[0.2em] text-or tabular-nums">{String(numero).padStart(2, "0")}</span>
-        <Icone nom={s.icone} className="size-6 text-sable transition-colors group-hover:text-or" />
-      </span>
+      <Icone nom={s.icone} className="size-7 text-or" />
       <span className="font-display text-3xl leading-none text-ivoire">
         {s.libelle}
         {!s.disponible && <span className="ml-3 align-middle text-[0.6875rem] tracking-[0.12em] text-sable/60">bientôt</span>}
