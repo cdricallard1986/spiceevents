@@ -1,3 +1,4 @@
+import { SITE } from "@/contenu/site";
 import { describe, expect, it } from "vitest";
 import { echapper, emailAccuse, emailNotification, formaterDate, formaterTelephone } from "./email";
 import type { Demande } from "./schema";
@@ -158,5 +159,15 @@ describe("emailAccuse (au couple)", () => {
   it("ne contient que des liens fixes (site, téléphone)", () => {
     const e = emailAccuse(DEMANDE, CONFIG);
     expect(liens(e.html).every((l) => l.startsWith("https://www.spiceevents.fr") || l === "tel:+33676403776")).toBe(true);
+  });
+});
+
+describe("logo", () => {
+  it("affiche le logo du site en tête des deux emails, avec un texte de remplacement", () => {
+    for (const e of [emailNotification(DEMANDE, CONFIG), emailAccuse(DEMANDE, CONFIG)]) {
+      expect(e.html).toContain(`<img src="${SITE.logoEmail}"`);
+      expect(e.html).toContain('alt="Spice Events"');
+    }
+    expect(SITE.logoEmail).toMatch(/^https:\/\/.+\.png$/);
   });
 });

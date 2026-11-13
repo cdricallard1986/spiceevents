@@ -100,7 +100,7 @@ function gabarit(titre: string, accroche: string, corps: string, langue: Langue)
 <tr><td align="center" style="padding:32px 16px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:${c.carte};border:1px solid ${c.ligne}">
 <tr><td style="padding:28px 32px 0">
-<p style="margin:0;font-family:${POLICE_TITRE};font-size:26px;font-weight:bold;letter-spacing:0.02em;text-transform:uppercase;line-height:1;color:${c.texte}">Spice<span style="color:${c.or}"> Events</span></p>
+<a href="${SITE.url}" style="text-decoration:none"><img src="${SITE.logoEmail}" width="150" height="87" alt="Spice Events" style="display:block;width:150px;height:auto;border:0;font-family:${POLICE_TITRE};font-size:26px;font-weight:bold;text-transform:uppercase;color:${c.texte}"></a>
 </td></tr>
 <tr><td style="padding:24px 32px 0">
 <h1 style="margin:0;font-family:${POLICE_TITRE};font-weight:bold;font-size:34px;line-height:1.02;text-transform:uppercase;color:${c.texte}">${echapper(titre)} <span style="color:${c.or}">${echapper(accroche)}</span></h1>

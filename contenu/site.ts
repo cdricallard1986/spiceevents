@@ -2,6 +2,12 @@
 export const SITE = {
   nom: "Spice Events",
   url: "https://www.spiceevents.fr",
+  /**
+   * Logo des emails (lettres claires, 600 × 349) : adresse absolue sur le domaine
+   * Vercel du site, en ligne dès aujourd'hui et qui le reste après la bascule de
+   * www.spiceevents.fr (encore sur Strikingly en novembre 2026).
+   */
+  logoEmail: "https://spiceevents.vercel.app/marque/logo-spice-clair.png",
   telephone: "+33676403776",
   telephoneAffiche: "06 76 40 37 76",
   email: "cedric@spiceevents.fr",
