@@ -378,6 +378,27 @@
     "fr": "Première danse en noir et blanc, dans la fumée lourde, entre deux fontaines d'étincelles froides, sous un lustre fleuri",
     "en": "A black-and-white first dance in low fog between two cold-spark fountains, under a floral chandelier"
    }
+  },
+  "presta-bal-gerbes-etincelles-nuit": {
+   "fichier": "pexels_ouverture-bal-gerbes-etincelles-nuit.jpg",
+   "alt": {
+    "fr": "Mariés qui dansent dans la fumée lourde devant un mur de gerbes d'étincelles, de nuit",
+    "en": "A couple dancing in low fog in front of a wall of sparks at night"
+   }
+  },
+  "presta-bal-fleurs-etincelles-lyres": {
+   "fichier": "pexels-chatgpt_ouverture-bal-fleurs-lyres.jpg",
+   "alt": {
+    "fr": "Mariés main dans la main dans la fumée lourde, entre deux fontaines d'étincelles froides, devant un parterre de fleurs blanches et des lyres",
+    "en": "A couple holding hands in low fog between two cold-spark fountains, in front of white flowers and moving-head lights"
+   }
+  },
+  "presta-bal-boules-facettes-noir-blanc": {
+   "fichier": "pexels_ouverture-bal-boules-facettes-nb.jpg",
+   "alt": {
+    "fr": "Ouverture de bal en noir et blanc, dans la fumée lourde, entourée de fontaines d'étincelles et de boules à facettes",
+    "en": "A black-and-white first dance in low fog, surrounded by spark fountains and mirror balls"
+   }
   }
  }
 }
