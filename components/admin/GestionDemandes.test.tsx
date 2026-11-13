@@ -134,6 +134,7 @@ describe("GestionDemandes — fiche", () => {
       "href",
       `mailto:juliette@example.com?subject=${encodeURIComponent("Votre demande — Spice Events")}`,
     );
+    expect(within(fiche).getByRole("link", { name: "Écrire" })).toHaveAttribute("target", "_blank");
     const whatsapp = within(fiche).getByRole("link", { name: "WhatsApp" });
     expect(whatsapp).toHaveAttribute("href", "https://wa.me/33612345678");
     expect(whatsapp).toHaveAttribute("rel", "noopener noreferrer");

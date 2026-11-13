@@ -59,7 +59,8 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
             </a>
           )}
           {ecrire && (
-            <a href={ecrire} className={classesBouton("contour")}>
+            // Nouvel onglet : la messagerie web (Gmail…) s'ouvre à côté, le back office reste ouvert.
+            <a href={ecrire} target="_blank" rel="noopener noreferrer" className={classesBouton("contour")}>
               Écrire
             </a>
           )}
