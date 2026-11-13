@@ -69,7 +69,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
       },
       {
         option: "ouverture-de-bal",
-        image: "presta-bal-etincelles-salle",
+        image: "presta-bal-fumee-etincelles-chapiteau",
         surtitre: "Le moment où tout s'arrête",
         titre: "Une première danse qui pétille.",
       },
@@ -177,7 +177,7 @@ export const ANIMATIONS: Bilingue<Animations> = {
       },
       {
         option: "ouverture-de-bal",
-        image: "presta-bal-etincelles-salle",
+        image: "presta-bal-fumee-etincelles-chapiteau",
         surtitre: "The moment everything stops",
         titre: "A first dance that sparkles.",
       },

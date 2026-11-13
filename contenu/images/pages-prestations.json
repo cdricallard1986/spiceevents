@@ -364,6 +364,13 @@
     "fr": "Feu d'artifice de jour : un éventail de fumées multicolores au-dessus d'une arche de cérémonie",
     "en": "Daytime fireworks: a fan of multicoloured smoke above a ceremony arch"
    }
+  },
+  "presta-bal-fumee-etincelles-chapiteau": {
+   "fichier": "pexels-chatgpt_ouverture-bal-fumee-etincelles.jpg",
+   "alt": {
+    "fr": "Mariés qui ouvrent le bal dans la fumée lourde, entre deux fontaines d'étincelles froides, sous le regard des invités",
+    "en": "A couple's first dance in low fog between two cold-spark fountains, with guests looking on"
+   }
   }
  }
 }
