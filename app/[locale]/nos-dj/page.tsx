@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { NOS_DJ, type Membre } from "@/contenu/pages/nos-dj";
+import { NOS_DJ } from "@/contenu/pages/nos-dj";
+import { initiales, type CarteEquipe } from "@/lib/equipe/affichage";
+import { equipePubliee } from "@/lib/equipe/lecture";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
@@ -20,12 +22,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/nos-dj", seo: NOS_DJ[locale].seo, image: "mariage-soiree-regie" });
 }
 
-/** Initiales d'un nom (« David G. » → « DG », « DJ Pan's » → « P »). */
-function initiales(nom: string): string {
-  const mots = nom.replace(/^DJ\s+/i, "").split(/\s+/).filter(Boolean);
-  return mots.map((m) => m[0]).join("").slice(0, 2).toUpperCase();
-}
-
 /** Étiquettes de style d'un membre (capitales fines, charte Nocturne). */
 function Styles({ styles }: { styles: string[] }) {
   return (
@@ -40,12 +36,12 @@ function Styles({ styles }: { styles: string[] }) {
 }
 
 /** Carte d'un DJ ou d'un musicien : son portrait, ou son monogramme en attendant. */
-function CarteMembre({ m }: { m: Membre }) {
+function CarteMembre({ m }: { m: CarteEquipe }) {
   return (
     <article id={m.id} className="flex h-full scroll-mt-28 flex-col border border-ligne bg-nuit-2">
       <div className="relative aspect-[3/2] overflow-hidden border-b border-ligne bg-nuit-3">
-        {m.image ? (
-          <Photo cle={m.image} remplir cadrage={m.cadrage} sizes="(min-width: 1024px) 40rem, 100vw" />
+        {m.photo ? (
+          <Photo photo={m.photo} remplir cadrage={m.cadrage} sizes="(min-width: 1024px) 40rem, 100vw" />
         ) : (
           <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center font-display text-[7rem] leading-none text-or/25 md:text-[9rem]">
             {initiales(m.nom)}
@@ -89,6 +85,9 @@ export default async function PageNosDj({ params }: Props) {
   setRequestLocale(locale);
   const c = NOS_DJ[locale];
   const f = c.fondateur;
+  const equipe = await equipePubliee(locale);
+  const djs = equipe.filter((m) => m.groupe === "dj");
+  const musiciens = equipe.filter((m) => m.groupe === "musicien");
 
   return (
     <>
@@ -128,27 +127,31 @@ export default async function PageNosDj({ params }: Props) {
         </div>
       </section>
 
-      {/* Les DJ de l'équipe */}
-      <Section surtitre={c.equipe.surtitre} titre={c.equipe.titre} intro={c.equipe.intro} alterne>
-        <ul className="grid gap-6 lg:grid-cols-2">
-          {c.equipe.membres.map((m) => (
-            <li key={m.id}>
-              <CarteMembre m={m} />
-            </li>
-          ))}
-        </ul>
-      </Section>
+      {/* Les DJ de l'équipe (back office : /admin/dj) */}
+      {djs.length > 0 && (
+        <Section surtitre={c.equipe.surtitre} titre={c.equipe.titre} intro={c.equipe.intro} alterne>
+          <ul className="grid gap-6 lg:grid-cols-2">
+            {djs.map((m) => (
+              <li key={m.id}>
+                <CarteMembre m={m} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       {/* Musiciens en live */}
-      <Section surtitre={c.musiciens.surtitre} titre={c.musiciens.titre} intro={c.musiciens.intro}>
-        <ul className="grid gap-6 lg:grid-cols-2">
-          {c.musiciens.membres.map((m) => (
-            <li key={m.id}>
-              <CarteMembre m={m} />
-            </li>
-          ))}
-        </ul>
-      </Section>
+      {musiciens.length > 0 && (
+        <Section surtitre={c.musiciens.surtitre} titre={c.musiciens.titre} intro={c.musiciens.intro}>
+          <ul className="grid gap-6 lg:grid-cols-2">
+            {musiciens.map((m) => (
+              <li key={m.id}>
+                <CarteMembre m={m} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       {/* La méthode commune */}
       <Section surtitre={c.methode.surtitre} titre={c.methode.titre} alterne>

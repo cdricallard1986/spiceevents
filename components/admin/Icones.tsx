@@ -4,6 +4,7 @@ import type { IconeSection } from "@/lib/admin/navigation";
 const TRACES: Record<IconeSection | "burger" | "fermer" | "replier" | "deplier" | "site" | "sortie", string> = {
   accueil: "M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10",
   avis: "M4 5h16v11H9l-5 4V5zM8 9h8M8 12h5",
+  dj: "M4 15v-3a8 8 0 0116 0v3M4 14h3v6H4zM17 14h3v6h-3z",
   journal: "M5 4h11l3 3v13H5zM8 9h8M8 13h8M8 17h5",
   photos: "M3 6h18v13H3zM3 15l5-5 4 4 3-3 6 6M15.5 9.5h.01",
   demandes: "M3 6h18v12H3zM3 7l9 6 9-6",

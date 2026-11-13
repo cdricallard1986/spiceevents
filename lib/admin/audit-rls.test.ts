@@ -70,6 +70,9 @@ function baseSaine() {
       // RLS : l'anonyme voit les 43 avis publiés, aucun avis non publié.
       "select:avis?publie=true": { erreur: null, lignes: 43 },
       "select:avis?publie=false": VIDE,
+      // Équipe : les 6 fiches publiées, aucune fiche retirée du site.
+      "select:equipe?publie=true": { erreur: null, lignes: 6 },
+      "select:equipe?publie=false": VIDE,
       // Photos et galeries : publiques. Storage : envoi refusé, rien de listable.
       "select:photos": { erreur: null, lignes: 57 },
       "select:galeries_photos": { erreur: null, lignes: 60 },
@@ -84,6 +87,7 @@ function baseSaine() {
       "select:audit_log": { erreur: null, lignes: 3 },
       "select:demandes_contact": { erreur: null, lignes: 12 },
       "select:avis": { erreur: null, lignes: 45 },
+      "select:equipe": { erreur: null, lignes: 7 },
       "select:articles": { erreur: null, lignes: 38 },
       "select:photos": { erreur: null, lignes: 57 },
       "select:galeries_photos": { erreur: null, lignes: 60 },
@@ -154,8 +158,8 @@ describe("lancerAudit", () => {
     const clients = baseSaine();
     const select = vi.spyOn(clients.admin, "select");
     await lancerAudit({ clients, nettoyer: null });
-    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "articles", "photos", "galeries_photos", "demandes_contact"]);
-    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis", "photos", "galeries_photos", "articles"]);
+    expect(select.mock.calls.map((c) => c[0])).toEqual(["audit_log", "avis", "equipe", "articles", "photos", "galeries_photos", "demandes_contact"]);
+    expect(clients.visiteur.inserts).toEqual(["demandes_contact", "avis", "equipe", "photos", "galeries_photos", "articles"]);
     expect(clients.admin.inserts).toEqual(["demandes_contact"]);
   });
 
@@ -226,6 +230,8 @@ describe("lancerAudit — avis", () => {
       { operation: "delete", table: "demandes_contact", id: ID_INEXISTANT },
       { operation: "update", table: "avis", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.avis },
       { operation: "delete", table: "avis", id: ID_INEXISTANT },
+      { operation: "update", table: "equipe", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.equipe },
+      { operation: "delete", table: "equipe", id: ID_INEXISTANT },
       { operation: "update", table: "photos", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.photos },
       { operation: "delete", table: "photos", id: ID_INEXISTANT },
       { operation: "update", table: "galeries_photos", id: ID_INEXISTANT, valeurs: MODIFICATIONS_FICTIVES.galeries_photos },
@@ -419,6 +425,7 @@ describe("liste des vérifications", () => {
       "rpc:est_admin:autorisé",
       "select:audit_log:autorisé",
       "select:avis:autorisé",
+      "select:equipe:autorisé",
       "select:articles:autorisé",
       "select:photos:autorisé",
       "select:galeries_photos:autorisé",
@@ -431,6 +438,18 @@ describe("liste des vérifications", () => {
     ]);
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "avis")!.filtre).toBeUndefined();
     expect(VERIFICATIONS.find((x) => x.role === "admin" && x.cible === "est_admin")!.valeur).toBe(true);
+  });
+
+  it("équipe : le visiteur lit les fiches publiées, aucune fiche retirée, et n'écrit rien ; l'admin lit tout", () => {
+    const visiteur = VERIFICATIONS.filter((x) => x.role === "visiteur" && x.cible === "equipe");
+    expect(visiteur.map((x) => `${x.operation}:${JSON.stringify(x.filtre ?? {})}:${x.attendu}`)).toEqual([
+      'select:{"publie":true}:autorisé',
+      'select:{"publie":false}:vide',
+      "insert:{}:refusé",
+      "update:{}:refusé",
+      "delete:{}:refusé",
+    ]);
+    expect(LIGNES_FICTIVES.equipe).toMatchObject({ publie: false });
   });
 
   it("articles : le visiteur lit les publiés, aucun brouillon, et n'écrit rien ; l'admin lit tout", () => {

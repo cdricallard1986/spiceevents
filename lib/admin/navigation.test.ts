@@ -3,7 +3,7 @@ import { MENU, estActive, sectionDe } from "./navigation";
 
 describe("navigation du back office", () => {
   it("propose les sections prévues au plan, dans l'ordre", () => {
-    expect(MENU.map((s) => s.libelle)).toEqual(["Accueil", "Avis", "Journal", "Photos", "Demandes", "Tests", "Emails", "Mon compte"]);
+    expect(MENU.map((s) => s.libelle)).toEqual(["Accueil", "Avis", "DJ", "Journal", "Photos", "Demandes", "Tests", "Emails", "Mon compte"]);
     expect(new Set(MENU.map((s) => s.href)).size).toBe(MENU.length);
   });
 

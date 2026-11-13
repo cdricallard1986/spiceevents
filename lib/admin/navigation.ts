@@ -4,7 +4,7 @@
  * affiche « bientôt disponible »).
  */
 
-export type IconeSection = "accueil" | "avis" | "journal" | "photos" | "demandes" | "tests" | "emails" | "compte";
+export type IconeSection = "accueil" | "avis" | "dj" | "journal" | "photos" | "demandes" | "tests" | "emails" | "compte";
 
 export type Section = {
   href: string;
@@ -32,6 +32,14 @@ export const SECTIONS: readonly Section[] = [
   accroche: "Ce qu'ils en disent.",
     description: "Avis des mariés : texte, traduction, pages où ils apparaissent, ordre.",
     icone: "avis",
+    disponible: true,
+  },
+  {
+    href: "/admin/dj",
+    libelle: "DJ",
+  accroche: "Ceux qui font danser.",
+    description: "DJ et musiciens de la page Nos DJ : présentation, photo, ordre, publication.",
+    icone: "dj",
     disponible: true,
   },
   {

@@ -84,6 +84,27 @@ export const VERIFICATIONS: readonly Verification[] = [
   { libelle: "Modifier un avis par l'API", role: "visiteur", cible: "avis", operation: "update", attendu: "refusé" },
   { libelle: "Supprimer un avis par l'API", role: "visiteur", cible: "avis", operation: "delete", attendu: "refusé" },
   {
+    libelle: "Lire les DJ publiés",
+    role: "visiteur",
+    cible: "equipe",
+    operation: "select",
+    filtre: { publie: true },
+    attendu: "autorisé",
+    note: "Les DJ publiés sont publics : ce sont les cartes de la page Nos DJ.",
+  },
+  {
+    libelle: "Lire les DJ non publiés",
+    role: "visiteur",
+    cible: "equipe",
+    operation: "select",
+    filtre: { publie: false },
+    attendu: "vide",
+    note: "Une fiche retirée du site (DJ qui ne travaille plus avec vous) ne doit être visible que dans le back office.",
+  },
+  { libelle: "Créer une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "insert", attendu: "refusé" },
+  { libelle: "Modifier une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "update", attendu: "refusé" },
+  { libelle: "Supprimer une fiche DJ par l'API", role: "visiteur", cible: "equipe", operation: "delete", attendu: "refusé" },
+  {
     libelle: "Lire les photos des galeries",
     role: "visiteur",
     cible: "photos",
@@ -157,6 +178,14 @@ export const VERIFICATIONS: readonly Verification[] = [
     operation: "select",
     attendu: "autorisé",
     note: "Le back office voit aussi les avis non publiés.",
+  },
+  {
+    libelle: "Lire toutes les fiches DJ, publiées ou non",
+    role: "admin",
+    cible: "equipe",
+    operation: "select",
+    attendu: "autorisé",
+    note: "Le back office voit aussi les fiches retirées du site.",
   },
   {
     libelle: "Lire tous les articles, publiés ou brouillons",
@@ -236,6 +265,14 @@ export const LIGNES_FICTIVES: Record<string, Record<string, unknown>> = {
     texte_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
     publie: false,
   },
+  // Non publiée : même créée par une faille, elle ne serait jamais visible sur le site.
+  equipe: {
+    nom: "AUDIT RLS — LIGNE FICTIVE",
+    role_fr: "À supprimer",
+    accroche_fr: "Ligne fictive de l'audit RLS du back office.",
+    presentation_fr: "Ligne fictive de l'audit RLS du back office : elle n'aurait jamais dû pouvoir être créée. À supprimer.",
+    publie: false,
+  },
   photos: {
     origine: "stockage",
     chemin: "galeries/audit-rls/ligne-fictive-a-supprimer.jpg",
@@ -274,6 +311,7 @@ export const MODIFICATIONS_FICTIVES: Record<string, Record<string, unknown>> = {
   avis: { auteurs: "AUDIT RLS — MODIFICATION FICTIVE" },
   demandes_contact: { statut: "perdue", note_interne: "AUDIT RLS — MODIFICATION FICTIVE" },
   photos: { alt_fr: "AUDIT RLS — MODIFICATION FICTIVE" },
+  equipe: { nom: "AUDIT RLS — MODIFICATION FICTIVE" },
   galeries_photos: { ordre: 999999 },
   articles: { titre: "AUDIT RLS — MODIFICATION FICTIVE" },
 };
