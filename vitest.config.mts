@@ -9,7 +9,7 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     include: ["**/*.test.{ts,tsx}"],
-    exclude: ["node_modules/**", ".next/**", "site-actuel/**"],
+    exclude: ["node_modules/**", ".next/**", "site-actuel/**", ".claude/**"],
     setupFiles: ["./vitest.setup.ts"],
     // next-intl importe « next/navigation » sans extension : à faire résoudre par Vite.
     server: { deps: { inline: ["next-intl"] } },

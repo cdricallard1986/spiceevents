@@ -34,3 +34,6 @@ next-env.d.ts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Copies de travail des agents (worktrees) : jamais versionnées ni vérifiées
+.claude/
