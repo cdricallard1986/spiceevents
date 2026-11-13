@@ -73,7 +73,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
       membres: [
         {
           id: "antoine",
-          nom: "Antoine Doussat",
+          nom: "Antoine D.",
           role: "DJ",
           styles: ["Mariages", "Mariages internationaux"],
           accroche: "Le dernier arrivé, déjà salué par les mariés.",
@@ -87,7 +87,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "kevin",
-          nom: "Kevin Ramboatiana",
+          nom: "Kevin R.",
           role: "DJ",
           styles: ["Électro", "Funk", "French Touch"],
           accroche: "Né en 1992, il baigne dans la musique depuis toujours.",
@@ -117,7 +117,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "david",
-          nom: "David Gentio",
+          nom: "David G.",
           role: "DJ",
           styles: ["House", "Deep house", "Mariages"],
           accroche: "Depuis ses 15 ans, David vous fait danser.",
@@ -128,7 +128,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "lucas",
-          nom: "Lucas Magro",
+          nom: "Lucas M.",
           role: "DJ et musicien",
           styles: ["Funk", "Rock", "Disco", "Actuel"],
           accroche: "De la technique à la magie.",
@@ -205,7 +205,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
       membres: [
         {
           id: "antoine",
-          nom: "Antoine Doussat",
+          nom: "Antoine D.",
           role: "DJ",
           styles: ["Weddings", "International weddings"],
           accroche: "The newest member, already praised by couples.",
@@ -219,7 +219,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "kevin",
-          nom: "Kevin Ramboatiana",
+          nom: "Kevin R.",
           role: "DJ",
           styles: ["Electro", "Funk", "French Touch"],
           accroche: "Born in 1992, he has grown up surrounded by music.",
@@ -249,7 +249,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "david",
-          nom: "David Gentio",
+          nom: "David G.",
           role: "DJ",
           styles: ["House", "Deep house", "Weddings"],
           accroche: "David has been getting people dancing since he was 15.",
@@ -260,7 +260,7 @@ export const NOS_DJ: Bilingue<NosDj> = {
         },
         {
           id: "lucas",
-          nom: "Lucas Magro",
+          nom: "Lucas M.",
           role: "DJ and musician",
           styles: ["Funk", "Rock", "Disco", "Current hits"],
           accroche: "From technique to magic.",

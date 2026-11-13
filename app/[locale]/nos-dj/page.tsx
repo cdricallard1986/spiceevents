@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return metadonnees({ locale, href: "/nos-dj", seo: NOS_DJ[locale].seo, image: "mariage-soiree-regie" });
 }
 
-/** Initiales d'un nom (« David Gentio » → « DG », « DJ Pan's » → « P »). */
+/** Initiales d'un nom (« David G. » → « DG », « DJ Pan's » → « P »). */
 function initiales(nom: string): string {
   const mots = nom.replace(/^DJ\s+/i, "").split(/\s+/).filter(Boolean);
   return mots.map((m) => m[0]).join("").slice(0, 2).toUpperCase();
