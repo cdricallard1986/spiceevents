@@ -137,7 +137,7 @@ export function CoqueAdmin({ children, version, email, nouvellesDemandes, relire
       >
         <div className={`flex items-center border-b border-ligne ${replie ? "h-24 justify-center" : "h-28 justify-between pl-6 pr-3"}`}>
           {!replie && (
-            <Link href="/admin" className="flex shrink-0 flex-col gap-2">
+            <Link href="/admin" className="flex shrink-0 flex-col items-start gap-2">
               <Logo className="h-12" />
               <span className="text-[0.625rem] font-semibold uppercase tracking-[0.32em] text-or">Back office</span>
             </Link>

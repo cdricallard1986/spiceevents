@@ -187,6 +187,22 @@ describe("GestionDemandes — fiche", () => {
     expect(filtre(/^Nouvelles 1$/)).toBeInTheDocument();
   });
 
+  it("« Marquer comme traitée » passe une nouvelle demande en « Rappelée », enregistré seul", async () => {
+    const actions = rendre();
+    fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Juliette Martin" }));
+    const fiche = screen.getByRole("dialog", { name: "Juliette Martin" });
+    fireEvent.click(within(fiche).getByRole("button", { name: "✓ Marquer comme traitée" }));
+    expect(within(fiche).getByLabelText("Statut")).toHaveValue("rappelee");
+    expect(within(fiche).queryByRole("button", { name: "✓ Marquer comme traitée" })).not.toBeInTheDocument();
+    await waitFor(() => expect(actions.enregistrer).toHaveBeenCalledWith({ id: "Juliette", statut: "rappelee", note_interne: "" }), { timeout: 2000 });
+  });
+
+  it("pas de « Marquer comme traitée » sur une demande déjà suivie", () => {
+    rendre();
+    fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Pierre Martin" }));
+    expect(within(screen.getByRole("dialog", { name: "Pierre Martin" })).queryByRole("button", { name: "✓ Marquer comme traitée" })).not.toBeInTheDocument();
+  });
+
   it("compteur de la note : 5 000 caractères au plus", () => {
     rendre();
     fireEvent.click(screen.getByRole("button", { name: "Ouvrir la demande de Juliette Martin" }));

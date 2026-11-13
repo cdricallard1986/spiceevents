@@ -27,8 +27,9 @@ type Props = {
 
 /**
  * Fiche d'une demande de contact : coordonnées et liens (appeler, écrire,
- * WhatsApp), détails de l'événement, message tel qu'il a été saisi (texte
- * brut, jamais interprété en HTML), puis le suivi : statut et note interne.
+ * WhatsApp, « Marquer comme traitée » pour une nouvelle demande), détails de
+ * l'événement, message tel qu'il a été saisi (texte brut, jamais interprété en
+ * HTML), puis le suivi : statut et note interne.
  */
 export function FicheDemande({ demande: d, valeur, modifier }: Props) {
   const id = useId();
@@ -68,6 +69,12 @@ export function FicheDemande({ demande: d, valeur, modifier }: Props) {
             <a href={whatsapp} target="_blank" rel="noopener noreferrer" className={classesBouton("contour")}>
               WhatsApp
             </a>
+          )}
+          {/* Raccourci : une nouvelle demande prise en charge passe en « Rappelée » (sort de la pastille du menu). */}
+          {valeur.statut === "nouvelle" && (
+            <button type="button" onClick={() => modifier({ statut: "rappelee" })} className={classesBouton("contour")}>
+              ✓ Marquer comme traitée
+            </button>
           )}
         </div>
         <dl className="mt-5 grid gap-x-6 gap-y-4 sm:grid-cols-2">
