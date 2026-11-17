@@ -80,6 +80,27 @@ describe("FormulaireContact", () => {
     await waitFor(() => expect(screen.getByLabelText(/Vos prénoms/)).toHaveValue("Julie & Thomas"));
   });
 
+  it("garde le type d’événement choisi après une erreur, et après une deuxième erreur", async () => {
+    const action = vi.fn(
+      async (_e: EtatFormulaire, fd: FormData): Promise<EtatFormulaire> => ({
+        statut: "erreur",
+        message: "Certains champs sont à vérifier.",
+        erreurs: { invites: "Indiquez un nombre entier entre 1 et 2000." },
+        valeurs: { type: String(fd.get("type") ?? ""), invites: "4567" },
+      }),
+    );
+    rendre(action);
+    const type = () => screen.getByLabelText(/Type d.événement/) as HTMLSelectElement;
+    fireEvent.change(type(), { target: { value: "mariage" } });
+    envoyer();
+    await waitFor(() => expect(screen.getByLabelText(/Nombre d.invités/)).toHaveAttribute("aria-invalid", "true"));
+    await waitFor(() => expect(type().value).toBe("mariage"));
+    envoyer();
+    await waitFor(() => expect(action).toHaveBeenCalledTimes(2));
+    await waitFor(() => expect(type().value).toBe("mariage"));
+    expect(action.mock.calls[1][1].get("type")).toBe("mariage");
+  });
+
   it("ne désactive jamais les champs pendant l’envoi ; seul le bouton l’indique", async () => {
     let terminer: (e: EtatFormulaire) => void = () => {};
     const action = vi.fn(() => new Promise<EtatFormulaire>((r) => (terminer = r)));

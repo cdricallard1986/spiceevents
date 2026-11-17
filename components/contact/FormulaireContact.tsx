@@ -40,6 +40,10 @@ export function FormulaireContact({ action, locale, textes }: Props) {
   const [etat, envoyer, enCours] = useActionState(action, { statut: "initial" });
   // Le toast se ferme (bouton ou minuterie) sans effacer les erreurs des champs.
   const [toastFerme, setToastFerme] = useState<EtatFormulaire | null>(null);
+  // Après une erreur, React remet le formulaire à zéro puis reprend les valeurs saisies
+  // (`defaultValue`). Une liste déroulante, elle, ne reprend sa valeur qu'à sa création :
+  // on la recrée à chaque réponse en erreur pour garder le type d’événement choisi.
+  const [tourType, setTourType] = useState(0);
 
   const erreurs = etat.statut === "erreur" ? etat.erreurs : {};
   const valeur = (champ: Champ) => (etat.statut === "erreur" ? (etat.valeurs[champ] ?? "") : "");
@@ -56,6 +60,10 @@ export function FormulaireContact({ action, locale, textes }: Props) {
       refType.current.value = type;
     }
   }, []);
+
+  useEffect(() => {
+    if (etat.statut === "erreur") setTourType((n) => n + 1);
+  }, [etat]);
 
   useEffect(() => {
     if (etat.statut === "succes") {
@@ -103,7 +111,7 @@ export function FormulaireContact({ action, locale, textes }: Props) {
       {etat.statut === "erreur" && toastFerme !== etat && (
         <div
           role="alert"
-          className="fixed left-1/2 top-4 z-50 flex w-[calc(100%-2rem)] max-w-xl -translate-x-1/2 items-start gap-4 rounded-2xl border border-erreur sm:rounded-full bg-nuit-2 px-5 py-2.5 text-sm text-ivoire shadow-lg"
+          className="fixed left-1/2 top-4 z-50 flex w-[calc(100%-2rem)] max-w-xl -translate-x-1/2 items-start gap-4 border border-erreur bg-nuit-2 px-5 py-2.5 text-sm text-ivoire shadow-lg"
         >
           <p className="flex-1">{etat.message}</p>
           <button
@@ -154,7 +162,7 @@ export function FormulaireContact({ action, locale, textes }: Props) {
         </Champ>
 
         <Champ champ="type" libelle={textes.type} erreur={erreurs.type}>
-          <select {...attributs("type")} ref={refType} required defaultValue={valeur("type")}>
+          <select key={tourType} {...attributs("type")} ref={refType} required defaultValue={valeur("type")}>
             <option value="" disabled>
               {textes.typeChoisir}
             </option>
