@@ -40,7 +40,7 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     seo: {
       titre: "Nos DJ de mariage et de soirée en Île-de-France | Spice Events",
       description:
-        "Cédric (DJ Dioz) et les DJ de l’équipe Spice Events : électro, funk, house, pop-rock avec guitariste, et un saxophoniste pour le live. Une même méthode pour chaque mariage.",
+        "Cédric (DJ Dioz) et les DJ de l’équipe Spice Events : électro, funk, house, pop-rock avec guitariste. Une même méthode pour chaque mariage.",
     },
     hero: {
       surtitre: "L’équipe",
@@ -71,6 +71,7 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     },
     musiciens: {
       surtitre: "En live",
+      // Section affichée seulement si un musicien est publié dans le back office (DJ › section « Musiciens en live »).
       titre: "Un saxophone *sur vos platines*.",
       intro: "Pour le vin d’honneur ou la soirée, un musicien joue en live sur les mix du DJ.",
     },
@@ -93,7 +94,7 @@ export const NOS_DJ: Bilingue<NosDj> = typographier({
     seo: {
       titre: "Our wedding & party DJs in Paris | Spice Events",
       description:
-        "Cédric (DJ Dioz) and the Spice Events DJs: electro, funk, house, pop-rock with a guitarist, plus a saxophonist for live sets. The same method for every wedding.",
+        "Cédric (DJ Dioz) and the Spice Events DJs: electro, funk, house, pop-rock with a guitarist. The same method for every wedding.",
     },
     hero: {
       surtitre: "The team",
