@@ -198,51 +198,54 @@ export default async function PageMariages({ params }: Props) {
         </div>
       </section>
 
-      {/* Méthode : cible de l’ancienne page /accompagnement. Nuvio, l’espace de préparation, en encart à la suite. */}
+      {/* Méthode : cible de l’ancienne page /accompagnement */}
       <Section id="methode" surtitre={c.methode.surtitre} titre={c.methode.titre} intro={c.methode.intro} alterne>
         <Etapes etapes={c.methode.etapes} />
+      </Section>
 
-        <div className="mt-14 grid items-center gap-10 border border-ligne bg-nuit p-6 md:mt-20 md:p-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
+      {/* Nuvio (maquette Nocturne) : le texte à gauche, un aperçu de l’espace de préparation à droite */}
+      <section className="py-20 md:py-28">
+        <div className="conteneur grid items-center gap-14 lg:grid-cols-[1fr_1fr] lg:gap-20">
           <div>
-            <LogoNuvio className="mb-6 text-xl" />
-            <p className="surtitre mb-3">{c.nuvio.surtitre}</p>
-            <h3 className="font-display text-3xl leading-[1.05] md:text-4xl">
+            <LogoNuvio className="mb-8 text-2xl" />
+            <p className="surtitre mb-4">{c.nuvio.surtitre}</p>
+            <h2 className="font-display text-4xl leading-[1] md:text-[3.25rem]">
               <Accent texte={c.nuvio.titre} />
-            </h3>
-            <p className="mt-4 max-w-lg text-sable">{c.nuvio.texte}</p>
-            <a href={SITE.nuvio} target="_blank" rel="noopener" className={`${classesBouton("lien")} mt-6`}>
+            </h2>
+            <p className="mt-6 max-w-lg text-lg text-sable">{c.nuvio.texte}</p>
+            <a href={SITE.nuvio} target="_blank" rel="noopener" className={`${classesBouton("lien")} mt-8`}>
               {c.nuvio.lien} ↗
             </a>
           </div>
 
-            {/* Aperçu illustratif : ce que les mariés retrouvent dans Nuvio */}
-            <div aria-hidden="true" className="hidden border border-ligne bg-nuit-3 p-7 shadow-2xl md:p-9 lg:block lg:rotate-[1.5deg]">
-              <div className="flex items-center justify-between">
-                <LogoNuvio className="text-lg" />
-                <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[#c5b9e4]">{c.nuvio.apercu.surtitre}</span>
-              </div>
-              <p className="mt-8 text-2xl font-semibold tracking-tight">{c.nuvio.apercu.titre}</p>
-              <p className="mt-1 text-sm text-sable">{c.nuvio.apercu.texte}</p>
-              <div className="mt-6 flex items-center gap-4">
-                <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-ligne">
-                  <div className="h-full w-[74%] rounded-full bg-[linear-gradient(90deg,#a85cf2,#6247ee)]" />
-                </div>
-                <span className="text-xs text-sable">{c.nuvio.apercu.avancement} 74 %</span>
-              </div>
-              <ul className="mt-6">
-                {c.nuvio.points.map((point, i) => (
-                  <li key={point} className="flex items-center justify-between border-t border-ligne py-3.5 text-[0.9375rem]">
-                    {point}
-                    <span className="text-[#c5b9e4]">{["✓", "♪", "✍", "→"][i % 4]}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-[0.6875rem] text-sable/70">{c.nuvio.apercu.note}</p>
+          {/* Aperçu illustratif : ce que les mariés retrouvent dans Nuvio */}
+          <div aria-hidden="true" className="border border-ligne bg-nuit-2 p-7 shadow-2xl md:p-9 lg:rotate-[1.5deg]">
+            <div className="flex items-center justify-between">
+              <LogoNuvio className="text-lg" />
+              <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-[#c5b9e4]">{c.nuvio.apercu.surtitre}</span>
             </div>
+            <p className="mt-8 text-2xl font-semibold tracking-tight">{c.nuvio.apercu.titre}</p>
+            <p className="mt-1 text-sm text-sable">{c.nuvio.apercu.texte}</p>
+            <div className="mt-6 flex items-center gap-4">
+              <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-ligne">
+                <div className="h-full w-[74%] rounded-full bg-[linear-gradient(90deg,#a85cf2,#6247ee)]" />
+              </div>
+              <span className="text-xs text-sable">{c.nuvio.apercu.avancement} 74 %</span>
+            </div>
+            <ul className="mt-6">
+              {c.nuvio.points.map((point, i) => (
+                <li key={point} className="flex items-center justify-between border-t border-ligne py-3.5 text-[0.9375rem]">
+                  {point}
+                  <span className="text-[#c5b9e4]">{["✓", "♪", "✍", "→"][i % 4]}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-[0.6875rem] text-sable/70">{c.nuvio.apercu.note}</p>
+          </div>
         </div>
-      </Section>
+      </section>
 
-      <Section surtitre={c.photos.surtitre} titre={c.photos.titre}>
+      <Section surtitre={c.photos.surtitre} titre={c.photos.titre} className="border-t border-ligne">
         <GrillePhotos cles={PHOTOS} />
         <Bouton href="/galerie" variante="lien" className="mt-10">{c.photos.lien} →</Bouton>
       </Section>
