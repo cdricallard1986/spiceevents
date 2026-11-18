@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { formaterDate } from "@/lib/journal/articles";
 import { srcImage } from "@/lib/journal/constantes";
 import type { Article } from "@/lib/journal/types";
 import { classesBouton } from "@/components/ui/Bouton";
@@ -16,9 +15,12 @@ type Props = {
 /** Vignette d’un article du journal, vers sa page (même présentation que `CarteOption`). */
 export function CarteArticle({ article: a, enAvant = false, compact = false }: Props) {
   const href = { pathname: "/journal/[slug]", params: { slug: a.slug } } as const;
+  // Pas de date affichée (choix de Cédric, novembre 2026) : les conseils ne vieillissent pas,
+  // et « 2021 » sur une carte ferait croire à un site à l’abandon. Google la reçoit toujours
+  // (données structurées), et elle trie les articles.
   const meta = (
     <p className="surtitre">
-      {a.categorie} · {formaterDate(a.date)}
+      {a.categorie} · {a.lecture} min
     </p>
   );
 

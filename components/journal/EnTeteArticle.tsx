@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { ancreCategorie, formaterDate } from "@/lib/journal/articles";
+import { ancreCategorie } from "@/lib/journal/articles";
 import { srcImage } from "@/lib/journal/constantes";
 import type { Article } from "@/lib/journal/types";
 
@@ -31,7 +31,7 @@ export function EnTeteArticle({ article: a }: { article: Article }) {
         <h1 className="max-w-[18em] font-display text-4xl leading-[1.02] md:text-6xl">{a.titre}</h1>
         {a.sousTitre && <p className="mt-6 max-w-2xl text-lg text-ivoire/90 md:text-xl">{a.sousTitre}</p>}
         <p className="mt-8 text-sm text-ivoire/85">
-          <time dateTime={a.date}>{formaterDate(a.date)}</time> · {a.lecture} min de lecture
+          {a.lecture} min de lecture
         </p>
       </div>
     </section>
