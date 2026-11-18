@@ -25,4 +25,12 @@ describe("CatalogueFiltrable", () => {
     fireEvent.click(screen.getByRole("button", { name: "Tout découvrir" }));
     expect(visibles()).toHaveLength(3);
   });
+
+  it("ramène la bande au début quand on change de filtre (téléphone)", () => {
+    render(<CatalogueFiltrable cartes={cartes} categories={categories} libelleTout="Tout découvrir" libelleFiltres="Filtrer" />);
+    const bande = document.querySelector("ul")!;
+    bande.scrollLeft = 240;
+    fireEvent.click(screen.getByRole("button", { name: "Souvenirs" }));
+    expect(bande.scrollLeft).toBe(0);
+  });
 });

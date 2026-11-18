@@ -35,7 +35,8 @@ export function CatalogueFiltrable({ cartes, categories, libelleTout, libelleFil
               aria-pressed={choisi}
               onClick={() => {
                 setActif(cle);
-                bande.current?.scrollTo({ left: 0 });
+                // scrollLeft plutôt que scrollTo() : même effet, et présent partout (y compris sous jsdom).
+                if (bande.current) bande.current.scrollLeft = 0;
               }}
               className={`border px-5 py-3 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] transition-colors ${
                 choisi ? "border-or bg-or text-nuit" : "border-ligne text-ivoire hover:border-or hover:text-or"
