@@ -22,21 +22,17 @@ export function GrandAvis({ citation, auteurs, image, langue }: { citation: stri
   );
 }
 
-/** Grille d’avis (page Avis, bas des pages) : le texte de chaque avis est déjà choisi (citation, extrait ou texte complet). */
-export function GrilleAvis({ liste }: { liste: AvisAffiche[] }) {
+/** Carte d’un avis : le texte est déjà choisi (citation, extrait ou texte complet). */
+export function CarteAvis({ avis: a, tabIndex }: { avis: AvisAffiche; tabIndex?: number }) {
   return (
-    <ul className="columns-1 gap-6 md:columns-2 lg:columns-3">
-      {liste.map((a) => (
-        <li key={a.cle} className="mb-6 break-inside-avoid border border-ligne bg-nuit-2 p-8">
-          <figure>
-            <blockquote lang={a.langue} className="text-[0.9375rem] leading-relaxed text-ivoire/90">« {a.texte} »</blockquote>
-            <figcaption className="mt-6">
-              <span className="block font-display text-xl">{a.auteurs}</span>
-              {a.role && <span className="text-sm text-sable">{a.role}</span>}
-            </figcaption>
-          </figure>
-        </li>
-      ))}
-    </ul>
+    <li tabIndex={tabIndex} className="mb-6 break-inside-avoid border border-ligne bg-nuit-2 p-8 focus-visible:outline-2 focus-visible:outline-or">
+      <figure>
+        <blockquote lang={a.langue} className="text-[0.9375rem] leading-relaxed text-ivoire/90">« {a.texte} »</blockquote>
+        <figcaption className="mt-6">
+          <span className="block font-display text-xl">{a.auteurs}</span>
+          {a.role && <span className="text-sm text-sable">{a.role}</span>}
+        </figcaption>
+      </figure>
+    </li>
   );
 }

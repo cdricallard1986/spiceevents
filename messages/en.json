@@ -17,7 +17,9 @@
     "accueil": "Spice Events, back to home",
     "principale": "Main navigation",
     "langue": "Change language",
-    "autreLangue": "Français"
+    "autreLangue": "Français",
+    "appeler": "Call Cédric on {numero}",
+    "whatsapp": "Message Cédric on WhatsApp"
   },
   "pied": {
     "accroche": "DJ, sound, lighting and entertainment: the spice in your weddings and nights out in Paris and Île-de-France.",

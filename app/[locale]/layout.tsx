@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
 import { policeDisplay, policeTexte } from "@/lib/polices";
 import { SITE } from "@/contenu/site";
+import { BarreContactMobile } from "@/components/layout/BarreContactMobile";
 import { EnTete } from "@/components/layout/EnTete";
 import { Apparitions } from "@/components/layout/Apparitions";
 import { Parallaxe } from "@/components/layout/Parallaxe";
@@ -63,6 +64,7 @@ export default async function LayoutLangue({
           <EnTete />
           <main id="contenu">{children}</main>
           <PiedDePage />
+          <BarreContactMobile />
           <Apparitions />
           <Parallaxe />
           <PillNouvelleVersion />

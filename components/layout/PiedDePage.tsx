@@ -15,8 +15,9 @@ export async function PiedDePage() {
   const titre = "mb-5 text-[0.75rem] font-semibold uppercase tracking-[0.22em] text-or";
   const lien = "text-sable transition-colors hover:text-ivoire";
 
+  // Marge basse sur téléphone (`pb-16`) : la barre de contact fixe ne recouvre pas les derniers liens.
   return (
-    <footer className="border-t border-ligne bg-nuit-2">
+    <footer className="border-t border-ligne bg-nuit-2 pb-16 sm:pb-0">
       <div className="conteneur grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="flex flex-col gap-5">
           <Link href="/" aria-label={tn("accueil")} className="self-start">

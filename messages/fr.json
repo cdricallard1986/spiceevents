@@ -17,7 +17,9 @@
     "accueil": "Spice Events, retour à l'accueil",
     "principale": "Navigation principale",
     "langue": "Changer de langue",
-    "autreLangue": "English"
+    "autreLangue": "English",
+    "appeler": "Appeler Cédric au {numero}",
+    "whatsapp": "Écrire à Cédric sur WhatsApp"
   },
   "pied": {
     "accroche": "DJ, son, lumière et animations : le piment de vos mariages et de vos nuits en Île-de-France.",

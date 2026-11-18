@@ -8,7 +8,7 @@ import { avisDeCategorie, grilleTextes } from "@/lib/avis/selection";
 import { metadonnees } from "@/lib/seo/metadonnees";
 import { Accent } from "@/components/common/Accent";
 import { AppelContact } from "@/components/common/AppelContact";
-import { GrilleAvis } from "@/components/common/Avis";
+import { AvisParLots } from "@/components/common/AvisParLots";
 import { EnTetePage } from "@/components/common/EnTetePage";
 import { Etoiles, NOTE_MARIAGES_NET } from "@/components/common/NoteMariagesNet";
 import { Section } from "@/components/common/Section";
@@ -28,7 +28,7 @@ export default async function PageAvis({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const c = PAGE_AVIS[locale];
-  // Tous les avis publiés, en entier, dans l’ordre réglé dans le back office.
+  // Tous les avis publiés, en entier, dans l’ordre réglé dans le back office ; affichés par lots (« Voir plus d’avis »).
   const tous = await avisPublies();
   const mariages = grilleTextes(avisDeCategorie(tous, "mariage"), locale);
   const evenements = grilleTextes(avisDeCategorie(tous, "evenement"), locale);
@@ -87,11 +87,11 @@ export default async function PageAvis({ params }: Props) {
       </section>
 
       <Section surtitre={c.mariages.surtitre} titre={c.mariages.titre}>
-        <GrilleAvis liste={mariages} />
+        <AvisParLots liste={mariages} locale={locale} />
       </Section>
 
       <Section surtitre={c.evenements.surtitre} titre={c.evenements.titre} className="border-t border-ligne">
-        <GrilleAvis liste={evenements} />
+        <AvisParLots liste={evenements} locale={locale} />
       </Section>
 
       <Section surtitre={c.mariagesNet.surtitre} titre={c.mariagesNet.titre} intro={c.mariagesNet.texte} alterne>

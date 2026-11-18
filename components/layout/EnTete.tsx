@@ -28,6 +28,9 @@ export function EnTete() {
   }, []);
   useEffect(() => {
     document.body.style.overflow = ouvert ? "hidden" : "";
+    // Menu ouvert : la barre de contact du bas (BarreContactMobile) se retire.
+    if (ouvert) document.documentElement.dataset.menu = "ouvert";
+    else delete document.documentElement.dataset.menu;
   }, [ouvert]);
 
   const fond = defile || ouvert ? "bg-nuit/90 backdrop-blur-md border-ligne" : "bg-transparent border-transparent";
