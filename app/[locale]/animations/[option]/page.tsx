@@ -21,6 +21,7 @@ import { GrillePhotos } from "@/components/common/GrillePhotos";
 import { JsonLd } from "@/components/common/JsonLd";
 import { Section } from "@/components/common/Section";
 import { Bouton } from "@/components/ui/Bouton";
+import { CLASSES_BANDE, CLASSES_CARTE_BANDE } from "@/components/common/bande";
 
 type Props = { params: Promise<{ locale: Locale; option: string }> };
 
@@ -145,9 +146,9 @@ export default async function PageOption({ params }: Props) {
       {avisOption && <GrandAvis citation={avisOption.texte} auteurs={avisOption.auteurs} langue={avisOption.langue} image={c.imageAvis ?? c.image} />}
 
       <Section surtitre={fr ? "À combiner" : "Mix and match"} titre={fr ? "D’autres idées pour *votre fête*." : "More ideas for *your celebration*."}>
-        <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className={`${CLASSES_BANDE} sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4`}>
           {autresOptions(option).map((o) => (
-            <li key={o.slug.fr}>
+            <li key={o.slug.fr} className={CLASSES_CARTE_BANDE}>
               <CarteOption option={o} locale={locale} />
             </li>
           ))}

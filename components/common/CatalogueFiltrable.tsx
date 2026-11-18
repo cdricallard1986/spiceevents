@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
+import { CLASSES_BANDE, CLASSES_CARTE_BANDE } from "./bande";
 
 export type CarteCatalogue = { cle: string; categorie: string; contenu: ReactNode };
 
@@ -13,11 +14,13 @@ type Props = {
 };
 
 /**
- * Grille de cartes avec boutons de filtre par catégorie. Toutes les cartes sont
+ * Cartes avec boutons de filtre par catégorie (grille ; bande à faire glisser
+ * sur téléphone). Toutes les cartes sont
  * dans le HTML (Google, sans JavaScript) ; un filtre ne fait que masquer les autres.
  */
 export function CatalogueFiltrable({ cartes, categories, libelleTout, libelleFiltres }: Props) {
   const [actif, setActif] = useState<string | null>(null);
+  const bande = useRef<HTMLUListElement>(null);
   const boutons: [string | null, string][] = [[null, libelleTout], ...Object.entries(categories)];
 
   return (
@@ -30,7 +33,10 @@ export function CatalogueFiltrable({ cartes, categories, libelleTout, libelleFil
               key={libelle}
               type="button"
               aria-pressed={choisi}
-              onClick={() => setActif(cle)}
+              onClick={() => {
+                setActif(cle);
+                bande.current?.scrollTo({ left: 0 });
+              }}
               className={`border px-5 py-3 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] transition-colors ${
                 choisi ? "border-or bg-or text-nuit" : "border-ligne text-ivoire hover:border-or hover:text-or"
               }`}
@@ -40,9 +46,10 @@ export function CatalogueFiltrable({ cartes, categories, libelleTout, libelleFil
           );
         })}
       </div>
-      <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Téléphone : une bande à faire glisser ; changer de filtre la ramène au début. */}
+      <ul ref={bande} className={`${CLASSES_BANDE} sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4`}>
         {cartes.map((c) => (
-          <li key={c.cle} hidden={actif !== null && c.categorie !== actif} data-categorie={c.categorie}>
+          <li key={c.cle} hidden={actif !== null && c.categorie !== actif} data-categorie={c.categorie} className={CLASSES_CARTE_BANDE}>
             {c.contenu}
           </li>
         ))}

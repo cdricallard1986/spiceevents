@@ -21,6 +21,7 @@ import { Photo } from "@/components/ui/Photo";
 import { DerniersArticles } from "@/components/journal/DerniersArticles";
 import { photosEnTete } from "@/lib/photos/lecture";
 import { LienWeddingAwards } from "@/components/common/LienWeddingAwards";
+import { CLASSES_BANDE, CLASSES_CARTE_BANDE } from "@/components/common/bande";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -115,9 +116,9 @@ export default async function Accueil({ params }: Props) {
       </section>
 
       <Section surtitre={c.animations.surtitre} titre={c.animations.titre}>
-        <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className={`${CLASSES_BANDE} sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4`}>
           {OPTIONS.slice(0, 4).map((o) => (
-            <li key={o.slug.fr}>
+            <li key={o.slug.fr} className={CLASSES_CARTE_BANDE}>
               <CarteOption option={o} locale={locale} />
             </li>
           ))}

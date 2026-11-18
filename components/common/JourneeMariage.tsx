@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { Modale } from "@/components/admin/Modale";
 import { Photo } from "@/components/ui/Photo";
 import { ROMAINS } from "./Etapes";
+import { CLASSES_BANDE, CLASSES_CARTE_BANDE } from "./bande";
 
 export type MomentAffiche = {
   titre: string;
@@ -30,10 +31,9 @@ export function JourneeMariage({ moments, locale, etiquette }: Props) {
   return (
     <>
       {/* Téléphone : une bande à faire glisser (la carte suivante dépasse), au lieu de cinq grandes cartes empilées. */}
-      <ol className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scroll-padding-inline:1.25rem] [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-5 [&::-webkit-scrollbar]:hidden">
+      <ol className={`${CLASSES_BANDE} sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-5`}>
         {moments.map((moment, i) => (
-          // `relative` : le texte réservé aux lecteurs d’écran (`sr-only`, en position absolue) reste dans sa carte, sinon il élargit la page.
-          <li key={moment.titre} className="relative w-[72vw] shrink-0 snap-start sm:w-auto">
+          <li key={moment.titre} className={CLASSES_CARTE_BANDE}>
             <button
               type="button"
               onClick={() => setOuvert(i)}

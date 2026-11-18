@@ -17,6 +17,7 @@ import { Bouton, classesBouton } from "@/components/ui/Bouton";
 import { Photo } from "@/components/ui/Photo";
 import { photosEnTete } from "@/lib/photos/lecture";
 import { LecteurYoutube } from "@/components/common/LecteurYoutube";
+import { CLASSES_BANDE, CLASSES_CARTE_BANDE } from "@/components/common/bande";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -166,9 +167,9 @@ export default async function PageSonEtLumiere({ params }: Props) {
 
       {/* Les installations qui s’appuient sur cette technique */}
       <Section titre={c.liens.titre} intro={c.liens.texte}>
-        <ul className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className={`${CLASSES_BANDE} sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4`}>
           {options.map((o) => (
-            <li key={o.slug.fr}>
+            <li key={o.slug.fr} className={CLASSES_CARTE_BANDE}>
               <CarteOption option={o} locale={locale} />
             </li>
           ))}
