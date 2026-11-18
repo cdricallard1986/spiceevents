@@ -5,7 +5,7 @@ import type { Etape } from "@/contenu/types";
 export const ROMAINS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
 
 /**
- * Étapes numérotées en chiffres romains. Sur grand écran (≥ 1280 px), toutes
+ * Étapes numérotées en chiffres romains, sur deux colonnes dès le téléphone. Sur grand écran (≥ 1280 px), toutes
  * sur une seule ligne, quel que soit leur nombre ; entre 1024 et 1280 px, une
  * ligne jusqu’à 4 étapes, sinon 3 par ligne (colonnes trop étroites au-delà).
  */
@@ -15,7 +15,7 @@ export function Etapes({ etapes }: { etapes: Etape[] }) {
   return (
     <ol
       style={colonnes}
-      className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[repeat(var(--etapes-lg),minmax(0,1fr))] xl:grid-cols-[repeat(var(--etapes),minmax(0,1fr))] xl:gap-x-8"
+      className="grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-10 lg:grid-cols-[repeat(var(--etapes-lg),minmax(0,1fr))] xl:grid-cols-[repeat(var(--etapes),minmax(0,1fr))] xl:gap-x-8"
     >
       {etapes.map((e, i) => (
         <li key={e.titre} className="border-t border-ligne pt-6">

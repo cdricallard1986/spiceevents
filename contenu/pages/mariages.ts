@@ -57,7 +57,7 @@ type Mariages = {
     paragraphes: string[];
     differences: Etape[];
     lien: string;
-    /** Au-dessus du mix vidéo de Cédric (DJ Dioz). */
+    /** Lien vers le mix vidéo de Cédric (DJ Dioz) sur YouTube. */
     mix: string;
     /** Lien vers la page « Nos DJ ». */
     equipe: string;
@@ -229,7 +229,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
       ],
       lien: "En savoir plus sur Cédric",
-      mix: "Écoutez Cédric aux platines (DJ Dioz) : un mix pour toutes les générations.",
+      mix: "Écouter son mix",
       equipe: "Rencontrer les DJ de l’équipe",
     },
     video: {
@@ -468,7 +468,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
         },
       ],
       lien: "More about Cédric",
-      mix: "Hear Cédric on the decks (DJ Dioz): a mix for every generation.",
+      mix: "Listen to his mix",
       equipe: "Meet the team’s DJs",
     },
     video: {

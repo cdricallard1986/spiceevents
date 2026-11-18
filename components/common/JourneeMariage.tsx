@@ -29,9 +29,11 @@ export function JourneeMariage({ moments, locale, etiquette }: Props) {
 
   return (
     <>
-      <ol className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
+      {/* Téléphone : une bande à faire glisser (la carte suivante dépasse), au lieu de cinq grandes cartes empilées. */}
+      <ol className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 [scroll-padding-inline:1.25rem] [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-10 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-5 [&::-webkit-scrollbar]:hidden">
         {moments.map((moment, i) => (
-          <li key={moment.titre}>
+          // `relative` : le texte réservé aux lecteurs d’écran (`sr-only`, en position absolue) reste dans sa carte, sinon il élargit la page.
+          <li key={moment.titre} className="relative w-[72vw] shrink-0 snap-start sm:w-auto">
             <button
               type="button"
               onClick={() => setOuvert(i)}
