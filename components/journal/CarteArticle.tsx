@@ -42,7 +42,7 @@ export function CarteArticle({ article: a, enAvant = false, compact = false }: P
           {meta}
           <h2 className="mt-4 font-display text-4xl leading-[1.08] group-hover:text-or md:text-5xl">{a.titre}</h2>
           <p className="mt-6 text-lg text-sable">{a.description}</p>
-          <span className={`${classesBouton("lien")} mt-8`}>Lire l’article · {a.lecture} min →</span>
+          <span className={`${classesBouton("lien")} mt-8`}>Lire l’article →</span>
         </div>
       </Link>
     );
