@@ -84,8 +84,8 @@ describe("mot de passe oublié", () => {
 });
 
 describe("adresse du lien", () => {
-  it("jamais déduite de la requête : variables système de Vercel seulement", () => {
-    expect(origineDesLiens({ VERCEL_ENV: "production", VERCEL_PROJECT_PRODUCTION_URL: "spiceevents.vercel.app" })).toBe("https://spiceevents.vercel.app");
+  it("jamais déduite de la requête : adresse du site en production, variables de Vercel sur les aperçus", () => {
+    expect(origineDesLiens({ VERCEL_ENV: "production", VERCEL_PROJECT_PRODUCTION_URL: "spiceevents.uk" })).toBe("https://www.spiceevents.fr");
     expect(origineDesLiens({ VERCEL_ENV: "preview", VERCEL_BRANCH_URL: "spiceevents-git-dev-x.vercel.app", VERCEL_URL: "autre.vercel.app" })).toBe("https://spiceevents-git-dev-x.vercel.app");
     expect(origineDesLiens({})).toBe("http://localhost:3000");
   });

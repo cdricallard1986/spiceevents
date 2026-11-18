@@ -1,3 +1,4 @@
+import { SITE } from "@/contenu/site";
 import type { Journal } from "@/lib/contact/traitement";
 import type { MagasinTentatives } from "./connexion";
 import { DUREE_MINIMALE_MS, LIMITE_CONNEXION, debutFenetreConnexion, empreinteTentative } from "./limite";
@@ -53,10 +54,13 @@ export type DependancesReinitialisation = {
 /**
  * Adresse du lien de l’email, sur le déploiement qui l’envoie. Jamais déduite
  * de l’en-tête Host de la requête (un en-tête forgé enverrait le jeton vers un
- * autre site) : variables système de Vercel seulement.
+ * autre site) : adresse du site en production, variables système de Vercel
+ * sur les aperçus. Pas VERCEL_PROJECT_PRODUCTION_URL en production : Vercel y
+ * met le plus court des domaines, et spiceevents.uk (même longueur que
+ * spiceevents.fr) renvoie tout vers l’accueil anglais, jeton perdu.
  */
 export function origineDesLiens(env: Record<string, string | undefined>): string {
-  if (env.VERCEL_ENV === "production" && env.VERCEL_PROJECT_PRODUCTION_URL) return `https://${env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  if (env.VERCEL_ENV === "production") return SITE.url;
   const apercu = env.VERCEL_BRANCH_URL ?? env.VERCEL_URL;
   if (env.VERCEL_ENV && apercu) return `https://${apercu}`;
   return "http://localhost:3000";
