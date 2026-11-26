@@ -103,10 +103,10 @@ export default async function PageSeineEtMarne({ params }: Props) {
         </Bouton>
       </Section>
 
-      {/* Ce que nous anticipons dans les lieux du 77. */}
-      <Section surtitre={c.conseils.surtitre} titre={c.conseils.titre} intro={c.conseils.intro} alterne>
+      {/* Les atouts des lieux du 77 (seulement ce qui les met en valeur). */}
+      <Section surtitre={c.atouts.surtitre} titre={c.atouts.titre} intro={c.atouts.intro} alterne>
         <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {c.conseils.liste.map((x) => (
+          {c.atouts.liste.map((x) => (
             <li key={x.titre}>
               <h3 className="text-xl font-semibold tracking-tight">{x.titre}</h3>
               <p className="mt-3 text-[0.9375rem] text-sable">{x.texte}</p>
@@ -122,6 +122,19 @@ export default async function PageSeineEtMarne({ params }: Props) {
           </Bouton>
         </div>
       </Section>
+
+      {/* Anecdote : la fête de Vaux-le-Vicomte. */}
+      <section className="py-20 md:py-28">
+        <div className="conteneur">
+          <div className="max-w-3xl border-l-2 border-or pl-6 md:pl-10">
+            <p className="surtitre mb-4">{c.anecdote.surtitre}</p>
+            <h2 className="font-display text-4xl leading-[1.08] md:text-5xl">
+              <Accent texte={c.anecdote.titre} />
+            </h2>
+            <p className="mt-6 text-lg text-sable">{c.anecdote.texte}</p>
+          </div>
+        </div>
+      </section>
 
       <AppelContact titre={c.appel.titre} texte={c.appel.texte} bouton={c.appel.bouton} />
     </>

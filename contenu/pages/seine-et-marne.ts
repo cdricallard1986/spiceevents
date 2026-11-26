@@ -10,6 +10,9 @@ import { typographier } from "@/lib/typographie";
  * vient des mariages réellement animés dans le 77 (planning et dossiers des
  * mariés de Cédric, novembre 2026) et des avis déjà publiés sur le site.
  * Communes vérifiées sur les fiches publiques des lieux.
+ *
+ * Règle de Cédric : ne parler des lieux que pour les mettre en valeur (aucune
+ * contrainte, aucun défaut).
  */
 
 type Lieu = {
@@ -28,7 +31,8 @@ type SeineEtMarne = {
   promesse: { surtitre: string; titre: string; paragraphes: string[] };
   lieux: { surtitre: string; titre: string; intro: string; liste: Lieu[]; aussi: string };
   avis: { surtitre: string; titre: string; liste: Citation[] };
-  conseils: { surtitre: string; titre: string; intro: string; liste: { titre: string; texte: string }[] };
+  atouts: { surtitre: string; titre: string; intro: string; liste: { titre: string; texte: string }[] };
+  anecdote: { surtitre: string; titre: string; texte: string };
   /** Une seule photo par endroit : jamais deux photos d’un même mariage côte à côte. */
   photos: { entete: CleImage; promesse: CleImage };
   appel: { titre: string; texte: string; bouton: string };
@@ -44,14 +48,14 @@ export const SEINE_ET_MARNE: SeineEtMarne = typographier({
     surtitre: "Seine-et-Marne · 77",
     titre: "DJ mariage *en Seine-et-Marne*",
     intro:
-      "Châteaux de la Brie, corps de ferme, prieurés et domaines : nous connaissons les lieux de réception du 77, leurs salles, leurs contraintes et la meilleure façon d’y faire danser vos invités jusqu’au bout de la nuit.",
+      "Châteaux de la Brie, corps de ferme, prieurés et domaines : nous connaissons les lieux de réception du 77, leurs salles, leurs charmes et la meilleure façon d’y faire danser vos invités jusqu’au bout de la nuit.",
   },
   promesse: {
     surtitre: "Un département que nous connaissons",
-    titre: "Chaque lieu a *son caractère*. Nous l’anticipons.",
+    titre: "Chaque lieu a *son caractère*. Nous le mettons en valeur.",
     paragraphes: [
-      "En Seine-et-Marne, on se marie rarement dans une simple salle : une cérémonie dans le jardin, un cocktail devant la véranda, un dîner dans une grange, la soirée dans une autre salle. Ces lieux sont superbes, mais ils demandent une vraie préparation technique.",
-      "Avant votre mariage, nous étudions le plan du lieu et le déroulé de votre journée : où placer la sonorisation pour chaque moment, comment éclairer chaque espace, où ranger le matériel et à quelle heure tout doit être prêt. Le jour J, il n’y a plus de surprise : il reste la fête.",
+      "En Seine-et-Marne, on se marie rarement dans une simple salle : une cérémonie dans le jardin, un cocktail devant la véranda, un dîner dans une grange, la soirée dans une autre salle. Chaque moment de la journée a son décor, et nous préparons la technique pour que chacun brille.",
+      "Avant votre mariage, nous étudions le plan du lieu et le déroulé de votre journée : où placer la sonorisation pour chaque moment, comment éclairer chaque espace, et à quelle heure tout doit être prêt. Le jour J, il ne reste que la fête.",
     ],
   },
   lieux: {
@@ -78,7 +82,7 @@ export const SEINE_ET_MARNE: SeineEtMarne = typographier({
         commune: "Grisy-Suisnes",
         mariages: "Octobre 2024",
         texte:
-          "Un ancien prieuré privatisé pour la journée : cérémonie à la chapelle, cocktail devant la salle (ou au cloître s’il pleut), dîner et piste dans deux salles différentes, avec des enceintes supplémentaires pour que chaque espace ait le bon son. Un thème fantaisie jusque dans la musique, et des invités encore sur la piste à 5 h.",
+          "Un ancien prieuré privatisé pour la journée : cérémonie à la chapelle, cocktail devant la salle ou au cloître, dîner et piste dans deux salles, chacune avec sa sonorisation. Un thème fantaisie jusque dans la musique, et des invités encore sur la piste à 5 h.",
       },
       {
         nom: "Ferme d’Orsonville",
@@ -90,9 +94,9 @@ export const SEINE_ET_MARNE: SeineEtMarne = typographier({
       {
         nom: "Château du Vivier",
         commune: "Fontenay-Trésigny",
-        mariages: "2 mariages, 2015 et 2026",
+        mariages: "4 mariages, de 2012 à 2026",
         texte:
-          "Environ 130 invités : cérémonie laïque, vidéoprojection, livre d’or audio, bar à vinyles, éclairage extérieur, et un dîner dans une salle séparée de la piste.",
+          "Le dernier en date : environ 130 invités, cérémonie laïque, vidéoprojection, livre d’or audio, bar à vinyles, le château éclairé à la nuit tombée, et un dîner dans une salle séparée de la piste.",
       },
       {
         nom: "Domaine du Parc",
@@ -141,37 +145,48 @@ export const SEINE_ET_MARNE: SeineEtMarne = typographier({
       },
     ],
   },
-  conseils: {
-    surtitre: "Bon à savoir",
-    titre: "Se marier dans un lieu du 77 : *ce que nous anticipons*",
-    intro: "Ce que nous ont appris les châteaux, fermes et domaines du département.",
+  atouts: {
+    surtitre: "Pourquoi le 77",
+    titre: "Les atouts des lieux *de Seine-et-Marne*",
+    intro: "Ce que nous aimons dans les châteaux, fermes et domaines du département, et comment nous en tirons le meilleur.",
     liste: [
       {
-        titre: "Plusieurs espaces, un seul fil musical",
+        titre: "Un décor pour chaque moment",
         texte:
-          "Cérémonie au jardin, cocktail en terrasse, dîner dans une salle, soirée dans une autre : nous prévoyons une sonorisation déportée pour que chaque moment ait son ambiance, sans coupure entre deux espaces.",
+          "Jardin pour la cérémonie, terrasse ou véranda pour le cocktail, grange ou orangerie pour le dîner, une salle pour danser : la journée change de décor, et la musique suit d’un espace à l’autre.",
       },
       {
-        titre: "Un plan B en cas de pluie",
+        titre: "Des cérémonies en plein air",
         texte:
-          "Un cocktail prévu dehors peut se replier dans un cloître, une véranda ou une grange. Nous convenons avec vous et le lieu de l’endroit où se replier, pour que la musique suive sans improvisation.",
+          "Parcs, jardins, cloîtres : des cadres naturels pour une cérémonie laïque. Nous la sonorisons pour que chaque mot soit entendu, avec la musique de votre entrée au bon moment.",
       },
       {
-        titre: "Granges, charpentes et vieilles pierres",
+        titre: "Charpentes et vieilles pierres",
         texte:
-          "Ces volumes sont magnifiques mais résonnent. Nous adaptons le placement et le réglage des enceintes pour un son clair au dîner comme sur la piste, et un éclairage qui met en valeur la charpente plutôt que de l’écraser.",
+          "Granges, prieurés, châteaux : des volumes et des matières que la lumière sublime. Nous éclairons la charpente et les murs pour révéler le lieu à la nuit tombée.",
       },
       {
-        titre: "Limiteurs, détecteurs et horaires",
+        titre: "La fête jusqu’au bout de la nuit",
         texte:
-          "Limiteur de son, détecteurs de fumée sensibles, heure de fin imposée : nous les vérifions avec le lieu dès le premier échange, pour choisir les bonnes animations et éviter toute coupure le soir même.",
+          "Beaucoup de domaines sont privatisés pour vous seuls : nos mariés ont dansé jusqu’à 5 h au Prieuré de Vernelle comme au Grand Hôtel du Bois.",
       },
       {
-        titre: "Accès et installation",
+        titre: "Vos invités dorment sur place",
         texte:
-          "Marches, chemin de terre, accès véhicule limité : nous posons ces questions avant le mariage pour installer et désinstaller en toute discrétion, sans gêner le traiteur ni vos invités.",
+          "Nombre de domaines logent les invités : personne ne surveille sa montre ni la route du retour, et la piste en profite.",
+      },
+      {
+        titre: "La campagne aux portes de Paris",
+        texte:
+          "Vallée de la Marne, plateaux de la Brie, forêts de Ferrières ou de Fontainebleau : un mariage à la campagne, à environ une heure de Paris pour vos invités.",
       },
     ],
+  },
+  anecdote: {
+    surtitre: "Le saviez-vous ?",
+    titre: "La fête *la plus célèbre* de Seine-et-Marne",
+    texte:
+      "Le 17 août 1661, Nicolas Fouquet reçoit Louis XIV au château de Vaux-le-Vicomte : comédie de Molière, festin préparé par Vatel, feu d’artifice au-dessus des jardins de Le Nôtre. La fête est si éblouissante que le roi fait arrêter son hôte moins de trois semaines plus tard, puis confie Versailles aux mêmes artistes. En Seine-et-Marne, une belle fête marque les esprits depuis plus de trois siècles : à nous d’écrire la vôtre.",
   },
   photos: { entete: "mariage-soiree-faisceaux", promesse: "maison-mariage-charpente" },
   appel: {
