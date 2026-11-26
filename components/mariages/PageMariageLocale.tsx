@@ -24,6 +24,8 @@ const LIBELLES = {
  */
 export function PageMariageLocale({ c, locale, href }: Props) {
   const l = LIBELLES[locale];
+  // Guillemets de la langue : « » avec espaces fines en français, “ ” en anglais.
+  const guillemets = locale === "fr" ? ["«\u202F", "\u202F»"] : ["\u201C", "\u201D"];
   const ariane = filAriane([
     { nom: l.accueil, url: adresse("/", locale) },
     { nom: l.mariages, url: adresse("/mariages", locale) },
@@ -80,7 +82,7 @@ export function PageMariageLocale({ c, locale, href }: Props) {
           {c.avis.liste.map((a) => (
             <li key={a.auteurs + a.contexte}>
               <figure className="flex h-full flex-col border-l-2 border-or pl-6">
-                <blockquote className="text-lg text-ivoire">« {a.texte} »</blockquote>
+                <blockquote className="text-lg text-ivoire">{guillemets[0] + a.texte + guillemets[1]}</blockquote>
                 <figcaption className="mt-4 text-sm text-sable">
                   <span className="font-semibold text-ivoire">{a.auteurs}</span> · {a.contexte}
                 </figcaption>
