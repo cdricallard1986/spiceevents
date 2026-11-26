@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { OPTIONS } from "@/contenu/options";
 import { routing } from "@/i18n/routing";
-import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, OPTIONS_RETIREES, redirections } from "./redirections";
+import { ANCIENNES_OPTIONS, ANCIENNES_PAGES, ARTICLES_RETIRES, DOMAINE_ANGLAIS, OPTIONS_RETIREES, SLUGS_OPTIONS, redirections, redirectionsTraductions } from "./redirections";
 
 /** Chemins internes FR valides, dynamiques résolus avec les vrais slugs d’options. */
 const cheminsValides = new Set<string>([
@@ -40,6 +40,7 @@ describe("redirections 301", () => {
     for (const r of liste) {
       if (r.destination.includes(":")) continue; // motifs (/journal/:slug)
       if (r.source in OPTIONS_RETIREES) continue; // vérifiées à part (adresses anglaises)
+      if (r.destination.startsWith("/en/")) continue; // fausses traductions : vérifiées à part
       const page = r.destination.split("#")[0];
       expect(cheminsValides.has(page), `${r.source} → ${r.destination}`).toBe(true);
     }
@@ -79,6 +80,22 @@ describe("redirections 301", () => {
     for (const h of ["spiceevents.uk", "www.spiceevents.uk"]) expect(hote.test(h)).toBe(true);
     for (const h of ["spiceevents.fr", "www.spiceevents.fr", "spiceevents.vercel.app", "spiceeventsXuk"]) expect(hote.test(h)).toBe(false);
     expect(liste.slice(1).every((r) => !r.has)).toBe(true);
+  });
+
+  it("recopient fidèlement les slugs des options", () => {
+    expect(SLUGS_OPTIONS).toEqual(OPTIONS.map((o) => [o.slug.fr, o.slug.en]));
+  });
+
+  it("rattrapent les fausses traductions relevées en 404 par Google, sans masquer une vraie page", () => {
+    const r = Object.fromEntries(redirectionsTraductions().map((x) => [x.source, x.destination]));
+    expect(r["/animations/vinyl-bar"]).toBe("/animations/bar-a-vinyles");
+    expect(r["/en/entertainment/feux-d-artifice-de-jour"]).toBe("/en/entertainment/daytime-fireworks");
+    expect(r["/en/journal/:slug"]).toBe("/journal/:slug");
+    expect(r["/en/journal"]).toBe("/journal");
+    expect(r["/animations/photobooth"]).toBeUndefined();
+    const existantes = OPTIONS.flatMap((o) => [`/animations/${o.slug.fr}`, `/en/entertainment/${o.slug.en}`]);
+    for (const destination of Object.values(r)) if (!destination.includes(":") && destination !== "/journal") expect(existantes).toContain(destination);
+    for (const source of Object.keys(r)) expect(existantes).not.toContain(source);
   });
 
   it("ne redirigent pas une page vers elle-même", () => {

@@ -11,6 +11,11 @@ export const routing = defineRouting({
   locales,
   defaultLocale: "fr",
   localePrefix: "as-needed",
+  // Pas d’en-tête HTTP « Link » de traductions : next-intl y garde le slug de la
+  // page d’origine (/en/entertainment/feux-d-artifice-de-jour, /en/journal/…),
+  // des adresses qui n’existent pas et que Google a relevées en 404 (nov. 2026).
+  // Les vraies traductions sont déclarées par chaque page (balises hreflang).
+  alternateLinks: false,
   pathnames: {
     "/": "/",
     "/mariages": { fr: "/mariages", en: "/weddings" },

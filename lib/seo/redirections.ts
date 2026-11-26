@@ -27,6 +27,9 @@ export const ANCIENNES_OPTIONS: Record<string, string> = {
   "/guirlandes-lumineuses": "guirlandes-lumineuses",
   "/sonorisation-ceremonie-laique": "sonorisation-ceremonie-laique",
   "/sonorisation-deportee": "sonorisation-deportee",
+  // Versions plus anciennes du site, encore citées dans le texte des articles.
+  "/le-photobooth": "photobooth",
+  "/le-bar-a-vinyles": "bar-a-vinyles",
 };
 
 /** Anciennes pages fusionnées ou renommées. */
@@ -47,6 +50,26 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/blog": "/journal",
   // Murs d’eau & végétaux : prestation retirée (novembre 2026).
   "/mur-d-eau-and-vegetal": "/animations",
+  // Versions plus anciennes du site (liens dans le texte des articles du journal,
+  // et peut-être sur d’autres sites) : toutes testées en 404 en novembre 2026.
+  "/vos-thematiques-au-choix": "/mariages",
+  "/mariage-exception-paris": "/mariages",
+  "/animations-mariage-celebration": "/animations",
+  "/animations-soiree-privee": "/animations",
+  "/options-mariage-eclairage-son": "/son-et-lumiere",
+  "/notre-materiel": "/son-et-lumiere",
+  "/materiel": "/son-et-lumiere",
+  "/options-soiree-privee": "/evenementiel",
+  "/private-party-formules": "/evenementiel",
+  "/formule-soiree-corporate": "/evenementiel",
+  "/nos-dj-d-exception": "/nos-dj",
+  "/galerie-mariage": "/galerie",
+  "/on-vous-rappelle": "/contact",
+  "/des-evenements-plus-green": "/a-propos",
+  "/amis-partenaires": "/a-propos",
+  // Adresses Strikingly terminées par un tiret, relevées en 404 par Google.
+  "/options-mariage-": "/animations",
+  "/animations-": "/animations",
 };
 
 /** Pages d’option retirées du nouveau site (adresse FR et EN) → page Animations de la même langue. */
@@ -73,6 +96,40 @@ export const ARTICLES_RETIRES: Record<string, string> = {
   "enterrer-sa-vie-de-celibataire": "/journal",
 };
 
+/**
+ * Slugs [fr, en] des pages d’option, recopiés de `contenu/options.ts` (ce fichier
+ * est chargé par `next.config.ts`, qui ne résout pas les alias `@/`). Un test
+ * vérifie qu’ils restent identiques.
+ */
+export const SLUGS_OPTIONS: readonly (readonly [string, string])[] = [
+  ["ouverture-de-bal", "first-dance-effects"],
+  ["bar-a-vinyles", "vinyl-bar"],
+  ["livre-d-or-audio", "audio-guestbook"],
+  ["photobooth", "photobooth"],
+  ["guirlandes-lumineuses", "string-lights"],
+  ["feux-d-artifice-de-jour", "daytime-fireworks"],
+  ["sonorisation-ceremonie-laique", "ceremony-sound"],
+  ["sonorisation-deportee", "multi-room-sound"],
+];
+
+/**
+ * Adresses de traduction fausses, annoncées à Google jusqu’en novembre 2026 par
+ * l’en-tête « Link » de next-intl (slug de l’autre langue gardé tel quel) :
+ * option sous le slug de l’autre langue → bonne page ; journal en anglais
+ * (inexistant, le journal est en français) → article français.
+ */
+export function redirectionsTraductions(): Redirection[] {
+  const liste: Redirection[] = [];
+  for (const [fr, en] of SLUGS_OPTIONS) {
+    if (fr === en) continue;
+    liste.push({ source: `/animations/${en}`, destination: `/animations/${fr}`, permanent: true });
+    liste.push({ source: `/en/entertainment/${fr}`, destination: `/en/entertainment/${en}`, permanent: true });
+  }
+  liste.push({ source: "/en/journal", destination: "/journal", permanent: true });
+  liste.push({ source: "/en/journal/:slug", destination: "/journal/:slug", permanent: true });
+  return liste;
+}
+
 export function redirections(): Redirection[] {
   const liste: Redirection[] = [
     {
@@ -94,6 +151,7 @@ export function redirections(): Redirection[] {
   for (const [slug, destination] of Object.entries(ARTICLES_RETIRES)) {
     liste.push({ source: `/blog/${slug}`, destination, permanent: true });
   }
+  liste.push(...redirectionsTraductions());
   liste.push({ source: "/blog/categories/:categorie*", destination: "/journal", permanent: true });
   // Articles conservés : même slug, nouveau dossier.
   liste.push({ source: "/blog/:slug", destination: "/journal/:slug", permanent: true });
