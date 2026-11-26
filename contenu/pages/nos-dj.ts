@@ -38,7 +38,7 @@ const MIX_CEDRIC = "https://www.youtube.com/watch?v=zchNbRcZ_gI";
 export const NOS_DJ: Bilingue<NosDj> = typographier({
   fr: {
     seo: {
-      titre: "Nos DJ de mariage et de soirée en Île-de-France | Spice Events",
+      titre: "Nos DJ de mariage et de soirée | Spice Events",
       description:
         "Cédric (DJ Dioz) et les DJ de l’équipe Spice Events : électro, funk, house, pop-rock avec guitariste. Une même méthode pour chaque mariage.",
     },

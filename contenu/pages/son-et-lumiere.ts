@@ -25,9 +25,9 @@ export const IMAGES_ENTETE_SON_LUMIERE: CleImage[] = ["son-lumiere-installation"
 export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
   fr: {
     seo: {
-      titre: "Sonorisation et éclairage de mariage et d’événement : notre matériel | Spice Events",
+      titre: "Sonorisation et éclairage de mariage | Spice Events",
       description:
-        "L-Acoustics, Yamaha, Pioneer DJ, Shure : un matériel son et lumière professionnel, testé en atelier avant chaque date, avec secours sur place. Paris et Île-de-France.",
+        "L-Acoustics, Yamaha, Pioneer DJ, Shure : un matériel son et lumière professionnel, testé en atelier avant chaque date, avec secours sur place. Île-de-France.",
     },
     hero: {
       surtitre: "Son & lumière",
@@ -157,9 +157,9 @@ export const SON_ET_LUMIERE: Bilingue<SonEtLumiere> = typographier({
   },
   en: {
     seo: {
-      titre: "Wedding and event sound and lighting: our equipment | Spice Events",
+      titre: "Wedding sound and lighting equipment | Spice Events",
       description:
-        "L-Acoustics, Yamaha, Pioneer DJ, Shure: professional sound and lighting, tested in the workshop before every date, with backup on site. Paris and Île-de-France.",
+        "L-Acoustics, Yamaha, Pioneer DJ, Shure: professional sound and lighting, tested in the workshop before every date, with backup on site. Paris area.",
     },
     hero: {
       surtitre: "Sound & lighting",

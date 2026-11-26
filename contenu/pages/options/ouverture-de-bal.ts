@@ -9,7 +9,7 @@ export const OUVERTURE_DE_BAL: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Ouverture de bal : étincelles froides & fumée lourde | Spice Events",
+        titre: "Ouverture de bal : étincelles froides & fumée lourde",
         description:
           "Étincelles froides et fumée lourde synchronisées avec votre première danse : un effet spectaculaire, testé et sécurisé. Mariages à Paris et en Île-de-France.",
       },
@@ -47,7 +47,7 @@ export const OUVERTURE_DE_BAL: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Spectacular first dance: cold sparks & low fog | Spice Events, Paris",
+        titre: "First dance effects: cold sparks & low fog | Spice Events",
         description:
           "Cold sparks and low fog synchronised with your first dance: a show-stopping effect, tested and safe. Weddings in Paris and across Île-de-France.",
       },

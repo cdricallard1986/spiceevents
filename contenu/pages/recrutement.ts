@@ -14,7 +14,7 @@ type Recrutement = {
 /** Page publiée en français seulement. */
 export const RECRUTEMENT: Recrutement = typographier({
   seo: {
-    titre: "Recrutement : DJ généraliste mariages et événements — Spice Events",
+    titre: "Recrutement : DJ mariages et événements | Spice Events",
     description:
       "Spice Events recrute un DJ généraliste pour animer des mariages et des événements en Île-de-France : profil recherché, missions et candidature.",
   },

@@ -12,9 +12,9 @@ export const GUIRLANDES_LUMINEUSES: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Guirlandes guinguette pour mariage en Île-de-France | Spice Events",
+        titre: "Guirlandes guinguette pour mariage | Spice Events",
         description:
-          "Guirlandes guinguette en intérieur comme en extérieur : une lumière chaude pour le cocktail, le dîner et la piste. Installation sur mesure et sécurisée, Paris et Île-de-France.",
+          "Guirlandes guinguette en intérieur comme en extérieur : une lumière chaude pour le cocktail, le dîner et la piste. Installation sécurisée en Île-de-France.",
       },
       hero: {
         surtitre: "Décor lumineux · Guirlandes",

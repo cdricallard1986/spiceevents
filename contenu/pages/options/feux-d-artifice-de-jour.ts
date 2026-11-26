@@ -8,7 +8,7 @@ export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Feu d’artifice de jour pour mariage : poudre multicolore | Spice Events",
+        titre: "Feu d’artifice de jour pour mariage | Spice Events",
         description:
           "Un feu d’artifice de jour aux fumées multicolores pour la sortie de cérémonie ou la photo de groupe. Mariages et événements à Paris et en Île-de-France.",
       },
@@ -50,7 +50,7 @@ export const FEUX_D_ARTIFICE_DE_JOUR: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Daytime wedding fireworks with coloured powder | Spice Events",
+        titre: "Daytime wedding fireworks in Paris | Spice Events",
         description:
           "Daytime fireworks with multicoloured smoke for your ceremony exit or group photo. Weddings and events in Paris and the Île-de-France region.",
       },

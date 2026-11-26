@@ -35,7 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = metadonnees({
     locale,
     href: { pathname: "/journal/[slug]", params: { slug } },
-    seo: { titre: `${a.titre} — Spice Events`, description: a.description },
+    // Google affiche une soixantaine de caractères : le nom du site seulement s’il tient.
+    seo: { titre: a.titre.length <= 45 ? `${a.titre} — Spice Events` : a.titre, description: a.description },
     type: "article",
   });
   // `metadonnees` n’accepte que les photos du registre : on remplace l’image de partage par la couverture.

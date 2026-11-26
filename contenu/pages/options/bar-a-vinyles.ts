@@ -9,9 +9,9 @@ export const BAR_A_VINYLES: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Bar à vinyles pour mariage et soirée en Île-de-France | Spice Events",
+        titre: "Bar à vinyles mariage en Île-de-France | Spice Events",
         description:
-          "Vos invités choisissent un vinyle, le DJ l’intègre à la soirée : une animation conviviale et participative pour votre mariage ou votre événement à Paris et en Île-de-France.",
+          "Vos invités choisissent un vinyle, le DJ l’intègre à la soirée : une animation conviviale et participative pour votre mariage ou événement en Île-de-France.",
       },
       hero: {
         surtitre: "Animation · Bar à vinyles",

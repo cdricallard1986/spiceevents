@@ -72,9 +72,9 @@ type Mariages = {
 export const MARIAGES: Bilingue<Mariages> = typographier({
   fr: {
     seo: {
-      titre: "DJ mariage Paris & Île-de-France : musique, son, lumière | Spice Events",
+      titre: "DJ mariage à Paris et en Île-de-France | Spice Events",
       description:
-        "DJ de mariage primé aux Wedding Awards Mariages.net : préparation sur mesure, de la cérémonie laïque à la soirée, sonorisation et éclairage haut de gamme. Paris et Île-de-France.",
+        "DJ de mariage primé aux Wedding Awards Mariages.net : préparation sur mesure, de la cérémonie laïque à la soirée, son et lumière haut de gamme. Île-de-France.",
     },
     hero: {
       surtitre: "Mariages · Paris & Île-de-France",
@@ -313,7 +313,7 @@ export const MARIAGES: Bilingue<Mariages> = typographier({
     seo: {
       titre: "Wedding DJ in Paris: music, sound & lighting | Spice Events",
       description:
-        "Award-winning wedding DJ (Mariages.net Wedding Awards): tailored planning from the ceremony to the party, with premium sound and lighting. Paris and the Île-de-France region.",
+        "Award-winning wedding DJ (Mariages.net Wedding Awards): tailored planning from ceremony to party, with premium sound and lighting. Paris and Île-de-France.",
     },
     hero: {
       surtitre: "Weddings · Paris & Île-de-France",

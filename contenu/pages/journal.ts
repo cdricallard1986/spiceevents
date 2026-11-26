@@ -17,7 +17,7 @@ export const JOURNAL: Journal = typographier({
   seo: {
     titre: "Journal : conseils mariage, DJ, son & lumière — Spice Events",
     description:
-      "Conseils pour votre mariage, choix du DJ, musique, technique son et lumière, animations et mariages réalisés : le journal de Spice Events, DJ en Île-de-France.",
+      "Conseils pour votre mariage, choix du DJ, musique, son et lumière, animations et mariages réalisés : le journal de Spice Events, DJ en Île-de-France.",
   },
   hero: {
     surtitre: "Le journal",

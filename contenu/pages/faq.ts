@@ -25,7 +25,7 @@ type PageFaq = {
 export const FAQ: Bilingue<PageFaq> = typographier({
   fr: {
     seo: {
-      titre: "FAQ DJ mariage — musique, technique, réservation | Spice Events",
+      titre: "FAQ DJ mariage : musique, technique, réservation",
       description:
         "Vos questions sur notre DJ de mariage en Île-de-France : choix de la musique, horaires, micro, matériel son et lumière, animations, acompte et réservation.",
     },
@@ -253,9 +253,9 @@ export const FAQ: Bilingue<PageFaq> = typographier({
   },
   en: {
     seo: {
-      titre: "Wedding DJ FAQ — music, equipment, booking | Spice Events, Paris area",
+      titre: "Wedding DJ FAQ: music, equipment, booking | Spice Events",
       description:
-        "Your questions about our wedding DJ service in Paris and Île-de-France: choosing the music, timings, microphone use, sound and lighting, entertainment, deposit and booking.",
+        "Your questions about our wedding DJ service in Paris: choosing the music, timings, microphones, sound and lighting, entertainment, deposit and booking.",
     },
     hero: {
       surtitre: "Frequently asked questions",

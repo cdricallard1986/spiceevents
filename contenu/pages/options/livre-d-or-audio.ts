@@ -7,9 +7,9 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Livre d’or audio pour mariage : le téléphone vintage | Spice Events",
+        titre: "Livre d’or audio mariage : téléphone vintage | Spice Events",
         description:
-          "Un téléphone vintage pour recueillir les messages vocaux de vos invités : un souvenir à réécouter pour toujours. Mariages et événements à Paris et en Île-de-France.",
+          "Un téléphone vintage pour recueillir les messages vocaux de vos invités : un souvenir à réécouter pour toujours. Mariages et événements en Île-de-France.",
       },
       hero: {
         surtitre: "Animation · Livre d’or audio",
@@ -53,7 +53,7 @@ export const LIVRE_D_OR_AUDIO: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Audio guestbook for weddings: the vintage phone | Spice Events, Paris",
+        titre: "Audio guestbook for weddings in Paris | Spice Events",
         description:
           "A vintage telephone to collect your guests' voice messages: a keepsake to listen to again and again. Weddings and events in Paris and Île-de-France.",
       },

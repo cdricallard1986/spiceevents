@@ -12,9 +12,9 @@ type Galerie = {
 export const GALERIE: Bilingue<Galerie> = typographier({
   fr: {
     seo: {
-      titre: "Galerie photos — mariages et événements | Spice Events, Île-de-France",
+      titre: "Galerie photos de mariages et d'événements | Spice Events",
       description:
-        "Premières danses, dîners mis en lumière, châteaux illuminés, soirées d’entreprise : une sélection de photos de mariages et d’événements animés par Spice Events.",
+        "Premières danses, dîners mis en lumière, châteaux illuminés, soirées d’entreprise : une sélection de nos mariages et événements en Île-de-France.",
     },
     hero: {
       surtitre: "Galerie",
@@ -26,7 +26,7 @@ export const GALERIE: Bilingue<Galerie> = typographier({
   },
   en: {
     seo: {
-      titre: "Photo gallery — weddings and events | Spice Events, Paris area",
+      titre: "Photo gallery: weddings and events | Spice Events",
       description:
         "First dances, beautifully lit dinners, illuminated châteaux, corporate parties: a selection of photos from weddings and events by Spice Events.",
     },

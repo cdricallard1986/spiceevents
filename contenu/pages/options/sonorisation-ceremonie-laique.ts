@@ -9,7 +9,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Sonorisation de cérémonie laïque en Île-de-France | Spice Events",
+        titre: "Sonorisation de cérémonie laïque | Spice Events",
         description:
           "Micros, musiques et diffusion douce pour votre cérémonie laïque : chaque mot entendu, du premier au dernier rang, même en plein air. Paris et Île-de-France.",
       },
@@ -55,7 +55,7 @@ export const SONORISATION_CEREMONIE_LAIQUE: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Wedding ceremony sound in Paris & Île-de-France | Spice Events",
+        titre: "Wedding ceremony sound in Paris | Spice Events",
         description:
           "Microphones, music and gentle sound for your celebrant-led ceremony: every word heard from the front row to the back, even outdoors. Paris and Île-de-France.",
       },

@@ -132,7 +132,7 @@ export const CONFIDENTIALITE: Bilingue<PageLegale> = typographier({
     seo: {
       titre: "Politique de confidentialité — Spice Events",
       description:
-        "Comment Spice Events traite les données du formulaire de contact : finalité, base légale, durée de conservation, sous-traitants, vos droits RGPD et mesure d’audience sans cookie.",
+        "Comment Spice Events traite les données du formulaire de contact : finalité, durée de conservation, sous-traitants, vos droits RGPD, mesure d’audience.",
     },
     hero: { surtitre: "Vos données", titre: "Politique de *confidentialité*" },
     miseAJour: "Dernière mise à jour : 16 octobre 2026",

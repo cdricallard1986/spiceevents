@@ -10,7 +10,7 @@ export const PHOTOBOOTH: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Photobooth mariage en Île-de-France : 400 tirages inclus | Spice Events",
+        titre: "Photobooth mariage : 400 tirages inclus | Spice Events",
         description:
           "Borne photo pour mariage et événement : 400 tirages, cadre personnalisé, photos numériques envoyées dès le lundi. Options sur devis. Paris et Île-de-France.",
       },
@@ -57,7 +57,7 @@ export const PHOTOBOOTH: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Wedding photobooth in Paris: 400 prints included | Spice Events",
+        titre: "Wedding photobooth: 400 prints included | Spice Events",
         description:
           "Photo booth for weddings and events: 400 prints, a custom frame, digital copies sent the Monday after. Extras on request. Paris and Île-de-France.",
       },

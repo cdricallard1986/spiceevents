@@ -37,9 +37,9 @@ export const CATEGORIES_ANIMATIONS: Record<string, CategorieAnimation> = typogra
 export const ANIMATIONS: Bilingue<Animations> = typographier({
   fr: {
     seo: {
-      titre: "Animations de mariage et de soirée en Île-de-France | Spice Events",
+      titre: "Animations de mariage en Île-de-France | Spice Events",
       description:
-        "Photobooth, bar à vinyles, livre d’or audio, ouverture de bal, guirlandes, feux d’artifice de jour, sonorisation de cérémonie : des animations sur mesure pour votre mariage en Île-de-France.",
+        "Photobooth, bar à vinyles, livre d’or audio, ouverture de bal, guirlandes, feux d’artifice de jour : des animations sur mesure pour votre mariage.",
     },
     intro: {
       surtitre: "Les petits plus, les grands souvenirs",
@@ -135,9 +135,9 @@ export const ANIMATIONS: Bilingue<Animations> = typographier({
   },
   en: {
     seo: {
-      titre: "Wedding entertainment in Paris: photobooth, vinyl bar & more | Spice Events",
+      titre: "Wedding entertainment in Paris | Spice Events",
       description:
-        "Photobooth, vinyl bar, audio guestbook, first-dance effects, string lights, daytime fireworks, ceremony sound: tailored entertainment for your wedding in Paris and Île-de-France.",
+        "Photobooth, vinyl bar, audio guestbook, first-dance effects, string lights, daytime fireworks: tailored entertainment for your wedding in Paris.",
     },
     intro: {
       surtitre: "Little extras, lasting memories",

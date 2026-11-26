@@ -31,9 +31,9 @@ export const IMAGES_ENTETE_EVENEMENTIEL: CleImage[] = ["presta-gala-salle"];
 export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
   fr: {
     seo: {
-      titre: "Soirées privées & événements d’entreprise en Île-de-France | Spice Events",
+      titre: "Soirées privées & événements d’entreprise | Spice Events",
       description:
-        "Anniversaires, soirées privées, séminaires, galas, lancements de produit : direction musicale, sonorisation, éclairage et coordination clé en main à Paris et en Île-de-France.",
+        "Anniversaires, soirées privées, séminaires, galas : direction musicale, sonorisation, éclairage et coordination clé en main à Paris et en Île-de-France.",
     },
     hero: {
       surtitre: "Événementiel · Soirées privées & entreprises",
@@ -153,9 +153,9 @@ export const EVENEMENTIEL: Bilingue<Evenementiel> = typographier({
   },
   en: {
     seo: {
-      titre: "DJ for private parties & corporate events in Paris | Spice Events",
+      titre: "Private party & corporate event DJ in Paris | Spice Events",
       description:
-        "Birthdays, private parties, seminars, galas, product launches: music direction, sound, lighting and turnkey coordination in Paris and the Île-de-France region.",
+        "Birthdays, private parties, seminars, galas, product launches: music, sound, lighting and turnkey coordination in Paris and the Île-de-France region.",
     },
     hero: {
       surtitre: "Events · Private & corporate",

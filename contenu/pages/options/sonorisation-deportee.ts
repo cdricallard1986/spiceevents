@@ -9,7 +9,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
   textes: {
     fr: {
       seo: {
-        titre: "Sonorisation déportée pour mariage et événement | Spice Events",
+        titre: "Sonorisation déportée pour mariage | Spice Events",
         description:
           "Cérémonie, cocktail, dîner, salle annexe : une sonorisation coordonnée dans chaque espace, sans coupure. Mariages et événements à Paris et en Île-de-France.",
       },
@@ -49,7 +49,7 @@ export const SONORISATION_DEPORTEE: ContenuOption = typographier({
     },
     en: {
       seo: {
-        titre: "Multi-room sound for weddings and events in Paris | Spice Events",
+        titre: "Multi-room sound for weddings in Paris | Spice Events",
         description:
           "Ceremony, drinks, dinner, side room: coordinated sound in every space, with no break. Weddings and events in Paris and the Île-de-France region.",
       },

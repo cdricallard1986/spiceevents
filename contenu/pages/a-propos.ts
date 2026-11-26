@@ -26,9 +26,9 @@ type APropos = {
 export const A_PROPOS: Bilingue<APropos> = typographier({
   fr: {
     seo: {
-      titre: "Cédric Allard, DJ mariage et fondateur de Spice Events — Île-de-France",
+      titre: "Cédric Allard, DJ mariage et fondateur de Spice Events",
       description:
-        "Le parcours de Cédric Allard, fondateur de Spice Events, nos valeurs et notre exigence technique avec MX Événement : son, lumière et matériel de secours, à Paris et en Île-de-France.",
+        "Le parcours de Cédric Allard, fondateur de Spice Events, nos valeurs et notre exigence technique : son, lumière et matériel de secours, en Île-de-France.",
     },
     hero: {
       surtitre: "À propos · Cédric Allard",
@@ -153,9 +153,9 @@ export const A_PROPOS: Bilingue<APropos> = typographier({
   },
   en: {
     seo: {
-      titre: "Cédric Allard, wedding DJ and founder of Spice Events — Paris area",
+      titre: "Cédric Allard, wedding DJ and founder of Spice Events",
       description:
-        "Meet Cédric Allard, founder of Spice Events: his story, our values and our technical standards with MX Événement — sound, lighting and backup equipment in Paris and Île-de-France.",
+        "Meet Cédric Allard, founder of Spice Events: his story, our values and our technical standards, with sound, lighting and backup equipment in the Paris area.",
     },
     hero: {
       surtitre: "About · Cédric Allard",

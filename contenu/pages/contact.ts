@@ -41,9 +41,9 @@ type Contact = {
 export const CONTACT: Bilingue<Contact> = typographier({
   fr: {
     seo: {
-      titre: "Contact & devis — DJ mariage à Paris et en Île-de-France | Spice Events",
+      titre: "Contact & devis DJ mariage en Île-de-France | Spice Events",
       description:
-        "Demandez un devis pour votre DJ de mariage ou d’événement à Paris et en Île-de-France. Cédric vous répond personnellement, dans les meilleurs délais. Formulaire ou 06 76 40 37 76.",
+        "Demandez un devis pour votre DJ de mariage ou d’événement en Île-de-France. Cédric vous répond personnellement. Formulaire ou 06 76 40 37 76.",
     },
     hero: {
       surtitre: "Contact · Devis",
@@ -113,9 +113,9 @@ export const CONTACT: Bilingue<Contact> = typographier({
   },
   en: {
     seo: {
-      titre: "Contact & quote — wedding DJ in Paris & Île-de-France | Spice Events",
+      titre: "Contact & quote: wedding DJ in Paris | Spice Events",
       description:
-        "Ask for a quote for your wedding or event DJ in Paris and the Île-de-France region. Cédric replies to every request personally. Use the form or call +33 6 76 40 37 76.",
+        "Ask for a quote for your wedding or event DJ in Paris and Île-de-France. Cédric replies to every request personally. Use the form or call +33 6 76 40 37 76.",
     },
     hero: {
       surtitre: "Contact · Quote",

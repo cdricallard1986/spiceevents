@@ -37,7 +37,7 @@ export const IMAGES_ACCUEIL: CleImage[] = [
 export const ACCUEIL: Bilingue<Accueil> = typographier({
   fr: {
     seo: {
-      titre: "DJ mariage en Île-de-France — son, lumière & animations | Spice Events",
+      titre: "DJ mariage, son & lumière en Île-de-France | Spice Events",
       description:
         "DJ de mariage primé aux Wedding Awards Mariages.net : préparation sur mesure, sonorisation et éclairage haut de gamme, animations. Paris et Île-de-France.",
     },
@@ -93,7 +93,7 @@ export const ACCUEIL: Bilingue<Accueil> = typographier({
   },
   en: {
     seo: {
-      titre: "Wedding DJ in Paris & Île-de-France — sound, lighting & entertainment | Spice Events",
+      titre: "Wedding DJ, sound & lighting in Paris | Spice Events",
       description:
         "Award-winning wedding DJ (Mariages.net Wedding Awards): tailored preparation, premium sound and lighting, entertainment. Paris and the Île-de-France region.",
     },
