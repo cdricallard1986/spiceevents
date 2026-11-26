@@ -17,6 +17,7 @@ export type EntreePlan = {
 const PAGES: { chemin: Chemin; priorite: number }[] = [
   { chemin: "/", priorite: 1 },
   { chemin: "/mariages", priorite: 0.95 },
+  { chemin: "/mariages/seine-et-marne", priorite: 0.8 },
   { chemin: "/contact", priorite: 0.9 },
   { chemin: "/animations", priorite: 0.8 },
   { chemin: "/avis", priorite: 0.8 },

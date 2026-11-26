@@ -19,6 +19,7 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/mariages": { fr: "/mariages", en: "/weddings" },
+    "/mariages/seine-et-marne": "/mariages/seine-et-marne",
     "/animations": { fr: "/animations", en: "/entertainment" },
     "/animations/[option]": { fr: "/animations/[option]", en: "/entertainment/[option]" },
     "/evenementiel": { fr: "/evenementiel", en: "/events" },
@@ -39,8 +40,8 @@ export const routing = defineRouting({
 
 export type Chemin = keyof typeof routing.pathnames;
 
-/** Pages publiées seulement en français (le journal et le recrutement). */
-export const PAGES_FR_SEULEMENT: readonly Chemin[] = ["/journal", "/journal/[slug]", "/recrutement"];
+/** Pages publiées seulement en français (journal, recrutement, pages locales des départements). */
+export const PAGES_FR_SEULEMENT: readonly Chemin[] = ["/journal", "/journal/[slug]", "/recrutement", "/mariages/seine-et-marne"];
 
 /** Chemins sans paramètre (utilisables directement dans un lien). */
 export type CheminStatique = Exclude<Chemin, `${string}[${string}]${string}`>;

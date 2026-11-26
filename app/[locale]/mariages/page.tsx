@@ -252,7 +252,15 @@ export default async function PageMariages({ params }: Props) {
 
       <Section surtitre={c.faq.surtitre} titre={c.faq.titre} alterne>
         <Faq questions={c.faq.questions} />
-        <Bouton href="/faq" variante="lien" className="mt-10">{c.faq.lien} →</Bouton>
+        <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+          <Bouton href="/faq" variante="lien">{c.faq.lien} →</Bouton>
+          {/* Page locale, en français seulement (lien interne utile au référencement local). */}
+          {locale === "fr" && (
+            <Bouton href="/mariages/seine-et-marne" variante="lien">
+              Vous vous mariez en Seine-et-Marne ? →
+            </Bouton>
+          )}
+        </div>
       </Section>
 
       <DerniersArticles locale={locale} surtitre="Journal" titre="Conseils pour *votre mariage*" categories={CATEGORIES_MARIAGE} />
