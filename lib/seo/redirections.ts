@@ -48,6 +48,7 @@ export const ANCIENNES_PAGES: Record<string, string> = {
   "/animations-tendances": "/animations",
   "/on-recrute": "/recrutement",
   "/blog": "/journal",
+  "/_blog": "/journal",
   // Murs d’eau & végétaux : prestation retirée (novembre 2026).
   "/mur-d-eau-and-vegetal": "/animations",
   // Versions plus anciennes du site (liens dans le texte des articles du journal,
@@ -150,9 +151,13 @@ export function redirections(): Redirection[] {
   }
   for (const [slug, destination] of Object.entries(ARTICLES_RETIRES)) {
     liste.push({ source: `/blog/${slug}`, destination, permanent: true });
+    liste.push({ source: `/blog/${slug}.amp`, destination, permanent: true });
   }
   liste.push(...redirectionsTraductions());
   liste.push({ source: "/blog/categories/:categorie*", destination: "/journal", permanent: true });
+  // Versions AMP des articles Strikingly (« /blog/<slug>.amp », relevées par Google) :
+  // vers l’article, sans le « .amp ». Avant la règle générique, qui les prendrait sinon.
+  liste.push({ source: "/blog/:slug([^/]+)\\.amp", destination: "/journal/:slug", permanent: true });
   // Articles conservés : même slug, nouveau dossier.
   liste.push({ source: "/blog/:slug", destination: "/journal/:slug", permanent: true });
   return liste;

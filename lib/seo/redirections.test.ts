@@ -98,6 +98,20 @@ describe("redirections 301", () => {
     for (const source of Object.keys(r)) expect(existantes).not.toContain(source);
   });
 
+  it("envoient les anciennes versions AMP des articles vers l’article, avant la règle générique", async () => {
+    // Le même moteur d’adresses que Next (non typé) : on teste la règle telle qu’elle sera lue.
+    // @ts-expect-error module interne de Next sans déclaration de types
+    const { match } = (await import("next/dist/compiled/path-to-regexp")) as { match: (motif: string) => (adresse: string) => unknown };
+    const amp = liste.findIndex((r) => r.source.endsWith("\\.amp"));
+    expect(amp).toBeGreaterThanOrEqual(0);
+    expect(amp).toBeLessThan(liste.findIndex((r) => r.source === "/blog/:slug"));
+    expect(liste[amp].destination).toBe("/journal/:slug");
+    expect(match(liste[amp].source)("/blog/livre-d-or-audio.amp")).toMatchObject({ params: { slug: "livre-d-or-audio" } });
+    expect(match(liste[amp].source)("/blog/livre-d-or-audio")).toBe(false);
+    const retire = Object.keys(ARTICLES_RETIRES)[0];
+    expect(liste.find((r) => r.source === `/blog/${retire}.amp`)?.destination).toBe(ARTICLES_RETIRES[retire]);
+  });
+
   it("ne redirigent pas une page vers elle-même", () => {
     for (const [source, destination] of Object.entries(ANCIENNES_PAGES)) expect(source).not.toBe(destination);
   });
